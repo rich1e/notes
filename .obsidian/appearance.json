@@ -1,0 +1,10 @@
+{
+  "translucency": false,
+  "cssTheme": "Things",
+  "accentColor": "",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "theme-minimal-excalidraw"
+  ],
+  "baseFontSize": 14
+}
