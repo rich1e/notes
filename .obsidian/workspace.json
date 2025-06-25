@@ -16,33 +16,8 @@
               "icon": "Memos",
               "title": "Thino"
             }
-          },
-          {
-            "id": "f8c1a4771c6b3d44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "flowchart.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "flowchart"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,20 +111,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "flowchart.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of flowchart"
+              "title": "Outline"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 416.5,
+    "collapsed": true
   },
   "right": {
     "id": "064593a9d8021565",
@@ -285,10 +260,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f8c1a4771c6b3d44",
+  "active": "43b5c57333491320",
   "lastOpenFiles": [
-    "Untitled.md",
+    "buckets/daily/2025-06-25_Wednesday.md",
+    "buckets/daily/2025-06-24_Tuesday.md",
     "flowchart.md",
+    "Untitled.md",
     "uniapp.md",
     "Uniapp develop.md",
     "content/posts/test.md",
@@ -323,8 +300,6 @@
     "buckets/daily/2025-06-04_Wednesday.md",
     "buckets/daily/2025-06-03_Tuesday.md",
     "剧本3.md",
-    "buckets/daily/2025-05-30_Friday.md",
-    "buckets/daily/2025-05-29_Thursday.md",
-    "buckets/daily/2025-05-26_Monday.md"
+    "buckets/daily/2025-05-30_Friday.md"
   ]
 }
