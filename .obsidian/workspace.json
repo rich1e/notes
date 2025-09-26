@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "71eaa8b10c425f81",
+        "id": "6e414721ecb297af",
         "type": "tabs",
         "children": [
           {
-            "id": "43b5c57333491320",
+            "id": "b9017f4f0f34f098",
             "type": "leaf",
             "state": {
               "type": "thino_view",
@@ -50,8 +50,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           },
           {
@@ -94,8 +94,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
@@ -189,8 +189,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -233,8 +233,8 @@
             "state": {
               "type": "timeline",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "timeline"
             }
           }
         ]
@@ -246,6 +246,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -260,8 +261,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "43b5c57333491320",
+  "active": "b9017f4f0f34f098",
   "lastOpenFiles": [
+    "buckets/daily/2025-09-26_Friday.md",
+    "meta/Pasted image 20250924112727.png",
+    "buckets/daily/2025-09-24_Wednesday.md",
     "buckets/daily/2025-06-25_Wednesday.md",
     "buckets/daily/2025-06-24_Tuesday.md",
     "flowchart.md",
@@ -280,7 +284,6 @@
     "images/imgs/figure_2017-02-15T041818.jpg",
     "images/imgs/figure_2017-02-15T041721.jpg",
     "images/imgs/figure_2017-02-15T041710.jpg",
-    "images/imgs/figure_2017-02-15T041654.jpg",
     "buckets/daily/2025-06-13_Friday.md",
     "剧本4.md",
     "content/posts",
@@ -298,8 +301,6 @@
     "buckets/daily/2025-06-09_Monday.md",
     "buckets/daily/2025-06-05_Thursday.md",
     "buckets/daily/2025-06-04_Wednesday.md",
-    "buckets/daily/2025-06-03_Tuesday.md",
-    "剧本3.md",
-    "buckets/daily/2025-05-30_Friday.md"
+    "buckets/daily/2025-06-03_Tuesday.md"
   ]
 }

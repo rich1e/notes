@@ -5,12 +5,12 @@
       "path": "剧本5.md"
     },
     {
-      "basename": "flowchart",
-      "path": "flowchart.md"
-    },
-    {
       "basename": "uniapp",
       "path": "uniapp.md"
+    },
+    {
+      "basename": "flowchart",
+      "path": "flowchart.md"
     },
     {
       "basename": "Uniapp develop",
