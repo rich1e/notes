@@ -5,6 +5,46 @@
       "path": "剧本5.md"
     },
     {
+      "basename": "剧本3",
+      "path": "剧本3.md"
+    },
+    {
+      "basename": "vscode-vim-indent-object",
+      "path": "work-records/vscode-vim-indent-object.md"
+    },
+    {
+      "basename": "vscode-vim-fold",
+      "path": "work-records/vscode-vim-fold.md"
+    },
+    {
+      "basename": "vscode-vim-easymotion",
+      "path": "work-records/vscode-vim-easymotion.md"
+    },
+    {
+      "basename": "vscode-vim",
+      "path": "work-records/vscode-vim.md"
+    },
+    {
+      "basename": "vscode-markdown",
+      "path": "work-records/vscode-markdown.md"
+    },
+    {
+      "basename": "git-blame",
+      "path": "work-records/git-blame.md"
+    },
+    {
+      "basename": "git-open",
+      "path": "work-records/git-open.md"
+    },
+    {
+      "basename": "2023-09-21_Thursday",
+      "path": "buckets/daily/2023-09-21_Thursday.md"
+    },
+    {
+      "basename": "剧本2",
+      "path": "剧本2.md"
+    },
+    {
       "basename": "uniapp",
       "path": "uniapp.md"
     },
@@ -61,44 +101,12 @@
       "path": "work-records/vscode-vim-navigation.md"
     },
     {
-      "basename": "剧本3",
-      "path": "剧本3.md"
-    },
-    {
-      "basename": "git-blame",
-      "path": "work-records/git-blame.md"
-    },
-    {
-      "basename": "vscode-vim-indent-object",
-      "path": "work-records/vscode-vim-indent-object.md"
-    },
-    {
-      "basename": "vscode-vim-fold",
-      "path": "work-records/vscode-vim-fold.md"
-    },
-    {
-      "basename": "vscode-vim-easymotion",
-      "path": "work-records/vscode-vim-easymotion.md"
-    },
-    {
-      "basename": "vscode-vim",
-      "path": "work-records/vscode-vim.md"
-    },
-    {
-      "basename": "vscode-markdown",
-      "path": "work-records/vscode-markdown.md"
-    },
-    {
       "basename": "javascript-async-await",
       "path": "work-records/javascript-async-await.md"
     },
     {
       "basename": "git-remote-host-identification-has-changed",
       "path": "work-records/git-remote-host-identification-has-changed.md"
-    },
-    {
-      "basename": "git-open",
-      "path": "work-records/git-open.md"
     },
     {
       "basename": "command-tree",
@@ -191,10 +199,6 @@
     {
       "basename": "2023-11-24_Friday",
       "path": "buckets/daily/2023-11-24_Friday.md"
-    },
-    {
-      "basename": "2021年度规划-help",
-      "path": "2021/2021年度规划-help.md"
     }
   ],
   "omittedPaths": [],
