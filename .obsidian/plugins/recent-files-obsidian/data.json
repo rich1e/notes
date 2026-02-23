@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "龚毓麒",
+      "path": "龚毓麒.md"
+    },
+    {
+      "basename": "剧本2",
+      "path": "剧本2.md"
+    },
+    {
       "basename": "剧本5",
       "path": "剧本5.md"
+    },
+    {
+      "basename": "Git 分支管理建议",
+      "path": "Git 分支管理建议.md"
+    },
+    {
+      "basename": "HomePage",
+      "path": "HomePage.md"
+    },
+    {
+      "basename": "Message Center - App",
+      "path": "Message Center - App.md"
+    },
+    {
+      "basename": "NodeJS 日志系统设计",
+      "path": "NodeJS 日志系统设计.md"
+    },
+    {
+      "basename": "Uniapp develop",
+      "path": "Uniapp develop.md"
+    },
+    {
+      "basename": "uniapp",
+      "path": "uniapp.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "brew-weekly-template",
+      "path": "brew-weekly-template.md"
+    },
+    {
+      "basename": "剧本4",
+      "path": "剧本4.md"
+    },
+    {
+      "basename": "Mobile Development",
+      "path": "workspce/Mobile Development.md"
     },
     {
       "basename": "剧本3",
@@ -41,28 +89,12 @@
       "path": "buckets/daily/2023-09-21_Thursday.md"
     },
     {
-      "basename": "剧本2",
-      "path": "剧本2.md"
-    },
-    {
-      "basename": "uniapp",
-      "path": "uniapp.md"
-    },
-    {
       "basename": "flowchart",
       "path": "flowchart.md"
     },
     {
-      "basename": "Uniapp develop",
-      "path": "Uniapp develop.md"
-    },
-    {
       "basename": "test",
       "path": "content/posts/test.md"
-    },
-    {
-      "basename": "剧本4",
-      "path": "剧本4.md"
     },
     {
       "basename": "Obsidian：Blog",
@@ -137,28 +169,12 @@
       "path": "buckets/learn/git-workflow.md"
     },
     {
-      "basename": "Mobile Development",
-      "path": "workspce/Mobile Development.md"
-    },
-    {
-      "basename": "NodeJS 日志系统设计",
-      "path": "NodeJS 日志系统设计.md"
-    },
-    {
       "basename": "Draft",
       "path": "workspce/Draft.md"
     },
     {
       "basename": "mind - Attr 动态表单组件关系图",
       "path": "buckets/work-experience/max-optics/mind - Attr 动态表单组件关系图.md"
-    },
-    {
-      "basename": "NodeJS 日志系统设计",
-      "path": "NodeJS 日志系统设计.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "HomePage.md"
     },
     {
       "basename": "2023-06-12_Monday",
@@ -183,22 +199,6 @@
     {
       "basename": "mind - Attr 动态表单组件关系图",
       "path": "buckets/work-experience/max-optics/mind - Attr 动态表单组件关系图.md"
-    },
-    {
-      "basename": "Kanban",
-      "path": "workspce/Kanban.md"
-    },
-    {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "2024/深入浅出 Greasemonkey.md"
-    },
-    {
-      "basename": "Git",
-      "path": "buckets/learn/Git.md"
-    },
-    {
-      "basename": "2023-11-24_Friday",
-      "path": "buckets/daily/2023-11-24_Friday.md"
     }
   ],
   "omittedPaths": [],

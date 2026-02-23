@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bb44f65b1a86c94f",
+        "id": "ee440f7593492635",
         "type": "tabs",
         "children": [
           {
-            "id": "770ca2b3fce2fc9e",
+            "id": "5121c365dfbc81a9",
             "type": "leaf",
             "state": {
               "type": "thino_view",
@@ -81,8 +81,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "8607dfc46dce05dc",
@@ -142,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "workspce/Kanban.md",
+                "file": "NodeJS 日志系统设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Kanban"
+              "title": "Backlinks for NodeJS 日志系统设计"
             }
           },
           {
@@ -161,12 +160,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "workspce/Kanban.md",
+                "file": "NodeJS 日志系统设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Kanban"
+              "title": "Outgoing links from NodeJS 日志系统设计"
             }
           },
           {
@@ -190,8 +189,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -214,14 +213,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "剧本5.md"
+                "file": "NodeJS 日志系统设计.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 剧本5"
+              "title": "File properties for NodeJS 日志系统设计"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       },
       {
         "id": "99022f2b9cdd4d81",
@@ -262,9 +261,26 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "770ca2b3fce2fc9e",
+  "active": "5121c365dfbc81a9",
   "lastOpenFiles": [
+    "buckets/daily/2026-02-23_Monday.md",
+    "龚毓麒.md",
+    "剧本2.md",
     "剧本5.md",
+    "Git 分支管理建议.md",
+    "HomePage.md",
+    "Message Center - App.md",
+    "NodeJS 日志系统设计.md",
+    "Uniapp develop.md",
+    "uniapp.md",
+    "Untitled.md",
+    "brew-weekly-template.md",
+    "剧本4.md",
+    "buckets/daily/2026-01-27_Tuesday.md",
+    "buckets/daily/2026-01-26_Monday.md",
+    "workspce/Mobile Development.md",
+    "buckets/daily/2026-01-22_Thursday.md",
+    "剧本3.md",
     "work-records/vscode-vim-indent-object.md",
     "work-records/vscode-vim-fold.md",
     "work-records/vscode-vim-easymotion.md",
@@ -273,17 +289,7 @@
     "work-records/git-blame.md",
     "work-records/git-open.md",
     "buckets/daily/2023-09-21_Thursday.md",
-    "buckets/daily/2025-09-26_Friday.md",
     "meta/Pasted image 20250924112727.png",
-    "buckets/daily/2025-09-24_Wednesday.md",
-    "buckets/daily/2025-06-25_Wednesday.md",
-    "buckets/daily/2025-06-24_Tuesday.md",
-    "flowchart.md",
-    "Untitled.md",
-    "uniapp.md",
-    "Uniapp develop.md",
-    "content/posts/test.md",
-    "buckets/daily/2025-06-17_Tuesday.md",
     "workspce/meta/Pasted image 20240830164838.png",
     "workspce/meta/Pasted image 20240830164648.png",
     "images/vite-antd/image-20210927093545693.png",
@@ -293,15 +299,8 @@
     "images/imgs/figure_2017-02-15T041818.jpg",
     "images/imgs/figure_2017-02-15T041721.jpg",
     "images/imgs/figure_2017-02-15T041710.jpg",
-    "buckets/daily/2025-06-13_Friday.md",
-    "剧本4.md",
     "content/posts",
     "Untitled",
-    "content",
-    "buckets/templates/Obsidian：Blog.md",
-    "2025/如何抓取socket流量包？.md",
-    "buckets/templates/Obsidian：Read Record Template.md",
-    "buckets/templates/Obsidian：日记模板.md",
-    "buckets/templates/Obsidian：Day Planner Template.md"
+    "content"
   ]
 }

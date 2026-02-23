@@ -4,10 +4,10 @@
   "tabSize": 2,
   "useTab": false,
   "pdfExportSettings": {
-    "includeName": false,
+    "includeName": true,
     "pageSize": "A4",
     "landscape": true,
-    "margin": "0",
+    "margin": "2",
     "downscalePercent": 80
   },
   "vimMode": true,
