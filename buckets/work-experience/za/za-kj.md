@@ -186,12 +186,10 @@ https://developers.google.com/web/fundamentals/design-and-ui/input/touch/?hl=zh-
 https://github.com/moonbingbing/openresty-best-practices/blob/master/ngx/reverse_proxy.md
 http://webfuse.cn/2016/08/11/%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8babel/
 https://github.com/lmk123/blog/issues/45
-https://one.zhongan.com/fcp/young/index.html#!/registered
 http://www.css88.com/doc/lodash/#_mapcollection-iteratee_identity
 http://localhost:9527/#/table/inline_edit_table
 http://mockjs.com/examples.html#Random\.url\(\)
 http://localhost:8080/#/warning/overdue
-http://wiki.zhonganonline.com/pages/viewpage.action?pageId=17499517
 https://segmentfault.com/a/1190000007116797
 https://wsgzao.github.io/post/yum/
 
@@ -319,7 +317,6 @@ http://lilin.me/2017/05/02/ajax-with-cors/
 
 
 https://github.com/bailicangdu/vue2-elm
-http://wiki.zhonganonline.com/pages/viewpage.action?pageId=16765002
 https://github.com/vuejs/vue-hackernews-2.0/blob/master/build/webpack.base.config.js
 https://www.cnblogs.com/ghj1976/archive/2013/04/19/3030159.html
 https://github.com/vuejs-templates/webpack/tree/master/template/build

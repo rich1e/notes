@@ -124,7 +124,6 @@ https://imys.net/20161110/vue-unit-test-start.html
 http://www.jianshu.com/p/a515fbbdd1b2
 https://github.com/MarxJiao/vue-karma-test
 https://imys.net/20161110/vue-unit-test-start.html
-http://gitlab.zhonganonline.com/gongyuqi/car-finance
 https://aotu.io/notes/2016/10/13/vue2/
 http://blog.csdn.net/fungleo/article/details/53199436
 https://juejin.im/post/5868985461ff4b0057794959

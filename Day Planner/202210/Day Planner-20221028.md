@@ -5,7 +5,7 @@ gantt
     axisFormat %H:%M
     %% Current Time: 18:35:23
     section Tasks
-    开始工作     :09-30, 15mm
+    开始工作了     :09-30, 15mm
     检查邮件和群信息     :09-45, 15mm
     Attr.vue 动态表单梳理     :10-00, 70mm
     吃午饭🥣     :11-10, 110mm

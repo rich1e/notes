@@ -1,60 +1,104 @@
 {
   "recentFiles": [
     {
-      "basename": "龚毓麒",
-      "path": "龚毓麒.md"
-    },
-    {
-      "basename": "剧本2",
-      "path": "剧本2.md"
-    },
-    {
-      "basename": "剧本5",
-      "path": "剧本5.md"
+      "basename": "未命名",
+      "path": "未命名.md"
     },
     {
       "basename": "Git 分支管理建议",
       "path": "Git 分支管理建议.md"
     },
     {
-      "basename": "HomePage",
-      "path": "HomePage.md"
+      "basename": "brew script",
+      "path": "2026/brew script.md"
     },
     {
-      "basename": "Message Center - App",
-      "path": "Message Center - App.md"
+      "basename": "Chezmoi 简明教程",
+      "path": "2026/Chezmoi 简明教程.md"
     },
     {
-      "basename": "NodeJS 日志系统设计",
-      "path": "NodeJS 日志系统设计.md"
+      "basename": "剧本5",
+      "path": "剧本5.md"
     },
     {
-      "basename": "Uniapp develop",
-      "path": "Uniapp develop.md"
+      "basename": "Pasted image 20250117133116",
+      "path": "meta/Pasted image 20250117133116.png"
+    },
+    {
+      "basename": "Pasted image 20250117132452",
+      "path": "meta/Pasted image 20250117132452.png"
+    },
+    {
+      "basename": "Pasted image 20241129101831",
+      "path": "meta/Pasted image 20241129101831.png"
+    },
+    {
+      "basename": "Pasted image 20240807125018",
+      "path": "meta/Pasted image 20240807125018.png"
+    },
+    {
+      "basename": "Pasted image 20240807124637",
+      "path": "meta/Pasted image 20240807124637.png"
+    },
+    {
+      "basename": "Pasted image 20240807123714",
+      "path": "meta/Pasted image 20240807123714.png"
+    },
+    {
+      "basename": "Pasted image 20240807122537",
+      "path": "meta/Pasted image 20240807122537.png"
     },
     {
       "basename": "uniapp",
       "path": "uniapp.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
+      "basename": "Uniapp develop",
+      "path": "Uniapp develop.md"
     },
     {
-      "basename": "brew-weekly-template",
-      "path": "brew-weekly-template.md"
+      "basename": "NodeJS 日志系统设计",
+      "path": "NodeJS 日志系统设计.md"
     },
     {
-      "basename": "剧本4",
-      "path": "剧本4.md"
+      "basename": "view-chartsview",
+      "path": "work-records/view-chartsview.md"
+    },
+    {
+      "basename": "view-flowchart",
+      "path": "work-records/view-flowchart.md"
     },
     {
       "basename": "Mobile Development",
       "path": "workspce/Mobile Development.md"
     },
     {
-      "basename": "剧本3",
-      "path": "剧本3.md"
+      "basename": "2026-02-25_Wednesday",
+      "path": "buckets/daily/2026-02-25_Wednesday.md"
+    },
+    {
+      "basename": "git-commit",
+      "path": "buckets/learn/git-commit.md"
+    },
+    {
+      "basename": "Daily Record",
+      "path": "workspce/Daily Record.md"
+    },
+    {
+      "basename": "HomePage",
+      "path": "HomePage.md"
+    },
+    {
+      "basename": "龚毓麒",
+      "path": "龚毓麒.md"
+    },
+    {
+      "basename": "Message Center - App",
+      "path": "Message Center - App.md"
+    },
+    {
+      "basename": "brew-weekly-template",
+      "path": "brew-weekly-template.md"
     },
     {
       "basename": "vscode-vim-indent-object",
@@ -89,10 +133,6 @@
       "path": "buckets/daily/2023-09-21_Thursday.md"
     },
     {
-      "basename": "flowchart",
-      "path": "flowchart.md"
-    },
-    {
       "basename": "test",
       "path": "content/posts/test.md"
     },
@@ -119,10 +159,6 @@
     {
       "basename": "Pasted image 20250612164237",
       "path": "meta/Pasted image 20250612164237.png"
-    },
-    {
-      "basename": "Daily Record",
-      "path": "workspce/Daily Record.md"
     },
     {
       "basename": "2023-04-10_Monday",
@@ -163,42 +199,6 @@
     {
       "basename": "git-multiple-coexist",
       "path": "buckets/learn/git-multiple-coexist.md"
-    },
-    {
-      "basename": "git-workflow",
-      "path": "buckets/learn/git-workflow.md"
-    },
-    {
-      "basename": "Draft",
-      "path": "workspce/Draft.md"
-    },
-    {
-      "basename": "mind - Attr 动态表单组件关系图",
-      "path": "buckets/work-experience/max-optics/mind - Attr 动态表单组件关系图.md"
-    },
-    {
-      "basename": "2023-06-12_Monday",
-      "path": "buckets/daily/2023-06-12_Monday.md"
-    },
-    {
-      "basename": "2023-08-22_Tuesday",
-      "path": "buckets/daily/2023-08-22_Tuesday.md"
-    },
-    {
-      "basename": "vscode-vim-surround",
-      "path": "work-records/vscode-vim-surround.md"
-    },
-    {
-      "basename": "Draft",
-      "path": "workspce/Draft.md"
-    },
-    {
-      "basename": "2023-03-16_Thursday",
-      "path": "buckets/daily/2023-03-16_Thursday.md"
-    },
-    {
-      "basename": "mind - Attr 动态表单组件关系图",
-      "path": "buckets/work-experience/max-optics/mind - Attr 动态表单组件关系图.md"
     }
   ],
   "omittedPaths": [],

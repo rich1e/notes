@@ -1,5 +1,6 @@
 ---
 title: "Homebrew 更新周报 · 第 {{YYYYMMDD}} 期"
+link: homebrew-weekly-update-{{YYYYMMDD}}
 date: {{YYYY-MM-DD}}
 tags:
   - Homebrew

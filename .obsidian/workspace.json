@@ -41,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -68,7 +68,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -78,10 +78,11 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "8607dfc46dce05dc",
@@ -116,7 +117,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "大纲"
             }
           }
         ]
@@ -246,14 +247,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "bases:新建数据库": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-memos:Thino": false,
@@ -263,44 +264,44 @@
   },
   "active": "5121c365dfbc81a9",
   "lastOpenFiles": [
-    "buckets/daily/2026-02-23_Monday.md",
-    "龚毓麒.md",
-    "剧本2.md",
-    "剧本5.md",
+    "未命名.md",
+    "buckets/daily/2026-03-22_星期日.md",
+    "buckets/daily/2026-03-22_Sunday.md",
+    "buckets/daily/2026-03-20_Friday.md",
+    "buckets/daily/2026-03-18_Wednesday.md",
+    "buckets/daily/2026-03-17_Tuesday.md",
+    "buckets/daily/2026-03-13_星期五.md",
+    "buckets/daily/2026-03-12_Thursday.md",
     "Git 分支管理建议.md",
-    "HomePage.md",
-    "Message Center - App.md",
-    "NodeJS 日志系统设计.md",
-    "Uniapp develop.md",
-    "uniapp.md",
+    "buckets/daily/2026-03-11_Wednesday.md",
+    "buckets/daily/2026-03-10_Tuesday.md",
+    "2026/brew script.md",
+    "2026/Chezmoi 简明教程.md",
     "Untitled.md",
-    "brew-weekly-template.md",
-    "剧本4.md",
-    "buckets/daily/2026-01-27_Tuesday.md",
-    "buckets/daily/2026-01-26_Monday.md",
+    "2026",
+    "剧本5.md",
+    "meta/Pasted image 20250117133116.png",
+    "meta/Pasted image 20250117132452.png",
+    "meta/Pasted image 20241129101831.png",
+    "meta/Pasted image 20240807125018.png",
+    "meta/Pasted image 20240807124637.png",
+    "meta/Pasted image 20240807123714.png",
+    "meta/Pasted image 20240807122537.png",
+    "uniapp.md",
+    "Uniapp develop.md",
+    "NodeJS 日志系统设计.md",
+    "work-records/view-chartsview.md",
+    "work-records/view-flowchart.md",
     "workspce/Mobile Development.md",
-    "buckets/daily/2026-01-22_Thursday.md",
-    "剧本3.md",
-    "work-records/vscode-vim-indent-object.md",
-    "work-records/vscode-vim-fold.md",
-    "work-records/vscode-vim-easymotion.md",
-    "work-records/vscode-vim.md",
-    "work-records/vscode-markdown.md",
-    "work-records/git-blame.md",
-    "work-records/git-open.md",
-    "buckets/daily/2023-09-21_Thursday.md",
+    "剧本1.md",
+    "Untitled Kanban.md",
+    "buckets/daily/2026-02-25_Wednesday.md",
+    "buckets/learn/git-commit.md",
+    "workspce/Daily Record.md",
     "meta/Pasted image 20250924112727.png",
     "workspce/meta/Pasted image 20240830164838.png",
     "workspce/meta/Pasted image 20240830164648.png",
-    "images/vite-antd/image-20210927093545693.png",
-    "images/mac-utils/main.png",
-    "images/mac-utils/image-20210222170147427.png",
-    "images/mac-utils/20191119202623.png",
-    "images/imgs/figure_2017-02-15T041818.jpg",
-    "images/imgs/figure_2017-02-15T041721.jpg",
-    "images/imgs/figure_2017-02-15T041710.jpg",
     "content/posts",
-    "Untitled",
     "content"
   ]
 }
