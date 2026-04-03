@@ -1,2 +1,12 @@
 .obsidian/plugins/obsidian-mkdocs-publisher/env
 .obsidian/plugins/obsidian-mkdocs-publisher/logs.txt
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# AI assistant config (may contain sensitive data)
+.claude/
+
+# Obsidian workspace state (local UI state, no need to track)
+.obsidian/workspace.json
