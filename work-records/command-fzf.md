@@ -27,3 +27,9 @@ title: fzf & fzf-tab & # forgit
 [Meet Forgit: A Tool for Using Git More Interactively | by Amine Elhattami | Better Programming](https://betterprogramming.pub/how-to-make-your-git-command-line-interactions-seamless-769d5c148097)
 
 ```
+
+## 相关笔记
+
+- [[work-records/git-open]] — git open（同为 zsh 工具生态）
+- [[work-records/command-tldr]] — tldr 快速查看命令说明
+- [[work-records/shell-scripts]] — Shell 脚本常用技巧

@@ -49,3 +49,8 @@ flowchart TD
     P -- @formUpdate/@search/@reset事件 --> Q[父组件]
     Q -- 请求接口，刷新表格数据 --> R[表格展示]
 ```
+
+## 相关笔记
+
+- [[work-records/view-chartsview]] — ChartsView 数据可视化
+- [[work-records/Git 分支管理建议]] — 分支管理规范（使用了 mermaid 流程图）

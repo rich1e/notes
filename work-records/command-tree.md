@@ -127,3 +127,8 @@ $ tree -I 'node_modules|.git' -L 2 -a
 ├── README.md
 └── renovate.json
 ```
+
+## 相关笔记
+
+- [[work-records/command-exa]] — exa 命令（现代化的 ls/tree 替代）
+- [[work-records/shell-scripts]] — Shell 脚本（使用了 tree 命令）

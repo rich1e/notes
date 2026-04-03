@@ -9,6 +9,7 @@
       "folderName": "github-publisher"
     },
     "tokenPath": "%configDir%/plugins/%pluginID%/env",
+    "tokenSecret": "",
     "api": {
       "tiersForApi": "Github Free/Pro/Team (default)",
       "hostname": ""
@@ -92,10 +93,12 @@
       "internal": false,
       "unshared": false,
       "wiki": true,
+      "wikiDisplayText": false,
       "slugify": "lower",
       "unlink": false,
       "relativePath": true,
-      "textPrefix": "/"
+      "textPrefix": "/",
+      "slugifyAnchor": "disable"
     }
   },
   "embed": {

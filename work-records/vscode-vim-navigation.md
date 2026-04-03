@@ -38,3 +38,10 @@
 同一个窗口下，多个 `Tab` 页面之间的切换使用 `gt/gT`
 
 [如何在 VS Code 中优雅的使用 Vim - 知乎](https://zhuanlan.zhihu.com/p/512935904)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-easymotion]] — EasyMotion 快速跳转
+- [[work-records/vscode-vim-sneak]] — Sneak 双字符跳转
+- [[work-records/vscode-vim-search]] — 搜索命令

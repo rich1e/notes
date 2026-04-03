@@ -61,4 +61,9 @@
 -   `/` + `#` 向上查找（精确匹配）
 -   `/` + `*` 向下查找（精确匹配）
 
-  
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-sneak]] — Sneak 双字符跳转（与 EasyMotion 配合）
+- [[work-records/vscode-vim-navigation]] — 窗口导航与分屏
+- [[work-records/vscode-vim-search]] — 搜索命令

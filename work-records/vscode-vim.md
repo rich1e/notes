@@ -30,3 +30,17 @@ vim 中有很多快捷键，还有各种扩展插件，为了避免按键冲突�
 [完全用 Vim 工作 | Harttle Land](https://harttle.land/vim-practice.html)
 [干活向的 vim 配置](https://a-wing.top/vim/2021/03/21/work_vim_config)
 [visual studio vim mode | 🌹 喇賽的人 Blog 🌹](https://www.blog.lasai.com.tw/2020/07/05/visual-studio-vim-mode/)
+
+## 相关笔记
+
+- [[work-records/vscode-vim-navigation]] — 窗口导航与分屏
+- [[work-records/vscode-vim-search]] — 搜索命令
+- [[work-records/vscode-vim-easymotion]] — EasyMotion 快速跳转
+- [[work-records/vscode-vim-sneak]] — Sneak 双字符跳转
+- [[work-records/vscode-vim-surround]] — Surround 成对符号编辑
+- [[work-records/vscode-vim-text-object]] — 文本对象
+- [[work-records/vscode-vim-indent-object]] — 缩进对象
+- [[work-records/vscode-vim-fold]] — 代码折叠
+- [[work-records/vscode-vim-replace]] — 替换模式
+- [[work-records/vscode-vim-multicursor]] — 多光标
+- [[work-records/vscode-markdown]] — VSCode Markdown 插件

@@ -315,3 +315,9 @@ MR 要求：
 - 需要生产可追溯性
 - 使用 GitLab + CI/CD
 - 强调流程一致性而非个人习惯
+
+## 相关笔记
+
+- [[work-records/git-flow]] — Git 常用工作流命令（commit / branch / tag / revert）
+- [[work-records/git-blame]] — git blame 逐行追溯作者
+- [[work-records/view-flowchart]] — Mermaid 流程图（本文分支图使用了 mermaid）

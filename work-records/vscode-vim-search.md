@@ -34,3 +34,10 @@
 参考
 
 [百发百中：掌握搜索命令 | Just Vim It](https://vim.nauxscript.com/vim/day-8.html)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-easymotion]] — EasyMotion 快速跳转（含行内搜索 f/t）
+- [[work-records/vscode-vim-sneak]] — Sneak 双字符跳转
+- [[work-records/vscode-vim-replace]] — 替换模式

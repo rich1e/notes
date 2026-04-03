@@ -1,13 +1,25 @@
 {
-  "pluginList": [],
-  "pluginSubListFrozenVersion": [],
+  "pluginList": [
+    "YishenTu/claudian"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "YishenTu/claudian",
+      "version": "latest"
+    }
+  ],
   "themesList": [],
   "updateAtStartup": true,
   "updateThemesAtStartup": true,
-  "ribbonIconEnabled": true,
+  "enableAfterInstall": true,
   "loggingEnabled": false,
   "loggingPath": "BRAT-log",
   "loggingVerboseEnabled": false,
   "debuggingMode": true,
-  "notificationsEnabled": true
+  "notificationsEnabled": true,
+  "globalTokenName": "",
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false,
+  "ribbonIconEnabled": true
 }

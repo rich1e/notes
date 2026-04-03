@@ -1,20 +1,184 @@
 {
   "recentFiles": [
     {
-      "basename": "未命名",
-      "path": "未命名.md"
+      "basename": "javascript-async-await",
+      "path": "work-records/javascript-async-await.md"
     },
     {
       "basename": "Git 分支管理建议",
-      "path": "Git 分支管理建议.md"
+      "path": "work-records/Git 分支管理建议.md"
+    },
+    {
+      "basename": "command-fzf",
+      "path": "work-records/command-fzf.md"
+    },
+    {
+      "basename": "git-blame",
+      "path": "work-records/git-blame.md"
+    },
+    {
+      "basename": "command-tldr",
+      "path": "work-records/command-tldr.md"
+    },
+    {
+      "basename": "command-exa",
+      "path": "work-records/command-exa.md"
+    },
+    {
+      "basename": "Archives File",
+      "path": "workspce/Archives File.md"
+    },
+    {
+      "basename": "HomePage",
+      "path": "HomePage.md"
+    },
+    {
+      "basename": "brew-weekly-template",
+      "path": "brew-weekly-template.md"
+    },
+    {
+      "basename": "Mobile Development",
+      "path": "workspce/Mobile Development.md"
+    },
+    {
+      "basename": "2026-04-03_Friday",
+      "path": "buckets/daily/2026-04-03_Friday.md"
+    },
+    {
+      "basename": "Kanban",
+      "path": "workspce/Kanban.md"
+    },
+    {
+      "basename": "2022-12-06_Tuesday",
+      "path": "buckets/daily/2022-12-06_Tuesday.md"
+    },
+    {
+      "basename": "2022-10-20_Thursday",
+      "path": "buckets/daily/2022-10-20_Thursday.md"
+    },
+    {
+      "basename": "2022-10-13_Thursday",
+      "path": "buckets/daily/2022-10-13_Thursday.md"
+    },
+    {
+      "basename": "2022-10-09_Sunday",
+      "path": "buckets/daily/2022-10-09_Sunday.md"
+    },
+    {
+      "basename": "2022-10-08_Saturday",
+      "path": "buckets/daily/2022-10-08_Saturday.md"
+    },
+    {
+      "basename": "Chezmoi 简明教程",
+      "path": "2026/Chezmoi 简明教程.md"
+    },
+    {
+      "basename": "理财",
+      "path": "buckets/finance/理财.md"
+    },
+    {
+      "basename": "前端数据请求方式",
+      "path": "frontend/前端数据请求方式.md"
+    },
+    {
+      "basename": "前端开发调试新姿势 - Windows + WSL + VSCode",
+      "path": "frontend/前端开发调试新姿势 - Windows + WSL + VSCode.md"
+    },
+    {
+      "basename": "前端监控",
+      "path": "frontend/前端监控.md"
+    },
+    {
+      "basename": "前端工程自动化实践-文档篇",
+      "path": "frontend/前端工程自动化实践-文档篇.md"
+    },
+    {
+      "basename": "前端代码构建部署",
+      "path": "frontend/前端代码构建部署.md"
+    },
+    {
+      "basename": "混合开发",
+      "path": "frontend/混合开发.md"
+    },
+    {
+      "basename": "当下还有人知道 buble 吗？",
+      "path": "frontend/当下还有人知道 buble 吗？.md"
+    },
+    {
+      "basename": "360",
+      "path": "buckets/work-experience/360/360.md"
+    },
+    {
+      "basename": "查漏补缺",
+      "path": "buckets/technology/查漏补缺.md"
+    },
+    {
+      "basename": "Javascrip 装饰器",
+      "path": "buckets/learn/Javascrip 装饰器.md"
+    },
+    {
+      "basename": "mac-tips",
+      "path": "work-records/mac-tips.md"
+    },
+    {
+      "basename": "vscode-vim-navigation",
+      "path": "work-records/vscode-vim-navigation.md"
+    },
+    {
+      "basename": "vscode-vim",
+      "path": "work-records/vscode-vim.md"
+    },
+    {
+      "basename": "Day Planner-20221208",
+      "path": "Day Planner/Day Planner-20221208.md"
+    },
+    {
+      "basename": "Day Planner-20221206",
+      "path": "Day Planner/Day Planner-20221206.md"
+    },
+    {
+      "basename": "Day Planner-20221205",
+      "path": "Day Planner/Day Planner-20221205.md"
+    },
+    {
+      "basename": "Day Planner-20221202",
+      "path": "Day Planner/Day Planner-20221202.md"
+    },
+    {
+      "basename": "Day Planner-20221201",
+      "path": "Day Planner/Day Planner-20221201.md"
     },
     {
       "basename": "brew script",
       "path": "2026/brew script.md"
     },
     {
-      "basename": "Chezmoi 简明教程",
-      "path": "2026/Chezmoi 简明教程.md"
+      "basename": "Pasted image 20241020211350",
+      "path": "meta/Pasted image 20241020211350.png"
+    },
+    {
+      "basename": "Pasted image 20240807124838",
+      "path": "meta/Pasted image 20240807124838.png"
+    },
+    {
+      "basename": "Pasted image 20240807122537",
+      "path": "meta/Pasted image 20240807122537.png"
+    },
+    {
+      "basename": "Buckets",
+      "path": "workspce/Buckets.md"
+    },
+    {
+      "basename": "2023-02-02_Thursday",
+      "path": "buckets/daily/2023-02-02_Thursday.md"
+    },
+    {
+      "basename": "shell-scripts",
+      "path": "work-records/shell-scripts.md"
+    },
+    {
+      "basename": "git-flow",
+      "path": "work-records/git-flow.md"
     },
     {
       "basename": "剧本5",
@@ -35,170 +199,6 @@
     {
       "basename": "Pasted image 20240807125018",
       "path": "meta/Pasted image 20240807125018.png"
-    },
-    {
-      "basename": "Pasted image 20240807124637",
-      "path": "meta/Pasted image 20240807124637.png"
-    },
-    {
-      "basename": "Pasted image 20240807123714",
-      "path": "meta/Pasted image 20240807123714.png"
-    },
-    {
-      "basename": "Pasted image 20240807122537",
-      "path": "meta/Pasted image 20240807122537.png"
-    },
-    {
-      "basename": "uniapp",
-      "path": "uniapp.md"
-    },
-    {
-      "basename": "Uniapp develop",
-      "path": "Uniapp develop.md"
-    },
-    {
-      "basename": "NodeJS 日志系统设计",
-      "path": "NodeJS 日志系统设计.md"
-    },
-    {
-      "basename": "view-chartsview",
-      "path": "work-records/view-chartsview.md"
-    },
-    {
-      "basename": "view-flowchart",
-      "path": "work-records/view-flowchart.md"
-    },
-    {
-      "basename": "Mobile Development",
-      "path": "workspce/Mobile Development.md"
-    },
-    {
-      "basename": "2026-02-25_Wednesday",
-      "path": "buckets/daily/2026-02-25_Wednesday.md"
-    },
-    {
-      "basename": "git-commit",
-      "path": "buckets/learn/git-commit.md"
-    },
-    {
-      "basename": "Daily Record",
-      "path": "workspce/Daily Record.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "HomePage.md"
-    },
-    {
-      "basename": "龚毓麒",
-      "path": "龚毓麒.md"
-    },
-    {
-      "basename": "Message Center - App",
-      "path": "Message Center - App.md"
-    },
-    {
-      "basename": "brew-weekly-template",
-      "path": "brew-weekly-template.md"
-    },
-    {
-      "basename": "vscode-vim-indent-object",
-      "path": "work-records/vscode-vim-indent-object.md"
-    },
-    {
-      "basename": "vscode-vim-fold",
-      "path": "work-records/vscode-vim-fold.md"
-    },
-    {
-      "basename": "vscode-vim-easymotion",
-      "path": "work-records/vscode-vim-easymotion.md"
-    },
-    {
-      "basename": "vscode-vim",
-      "path": "work-records/vscode-vim.md"
-    },
-    {
-      "basename": "vscode-markdown",
-      "path": "work-records/vscode-markdown.md"
-    },
-    {
-      "basename": "git-blame",
-      "path": "work-records/git-blame.md"
-    },
-    {
-      "basename": "git-open",
-      "path": "work-records/git-open.md"
-    },
-    {
-      "basename": "2023-09-21_Thursday",
-      "path": "buckets/daily/2023-09-21_Thursday.md"
-    },
-    {
-      "basename": "test",
-      "path": "content/posts/test.md"
-    },
-    {
-      "basename": "Obsidian：Blog",
-      "path": "buckets/templates/Obsidian：Blog.md"
-    },
-    {
-      "basename": "如何抓取socket流量包？",
-      "path": "2025/如何抓取socket流量包？.md"
-    },
-    {
-      "basename": "Obsidian：Read Record Template",
-      "path": "buckets/templates/Obsidian：Read Record Template.md"
-    },
-    {
-      "basename": "Obsidian：日记模板",
-      "path": "buckets/templates/Obsidian：日记模板.md"
-    },
-    {
-      "basename": "Obsidian：Day Planner Template",
-      "path": "buckets/templates/Obsidian：Day Planner Template.md"
-    },
-    {
-      "basename": "Pasted image 20250612164237",
-      "path": "meta/Pasted image 20250612164237.png"
-    },
-    {
-      "basename": "2023-04-10_Monday",
-      "path": "buckets/daily/2023-04-10_Monday.md"
-    },
-    {
-      "basename": "vscode-vim-navigation",
-      "path": "work-records/vscode-vim-navigation.md"
-    },
-    {
-      "basename": "javascript-async-await",
-      "path": "work-records/javascript-async-await.md"
-    },
-    {
-      "basename": "git-remote-host-identification-has-changed",
-      "path": "work-records/git-remote-host-identification-has-changed.md"
-    },
-    {
-      "basename": "command-tree",
-      "path": "work-records/command-tree.md"
-    },
-    {
-      "basename": "command-tldr",
-      "path": "work-records/command-tldr.md"
-    },
-    {
-      "basename": "command-fzf",
-      "path": "work-records/command-fzf.md"
-    },
-    {
-      "basename": "command-exa",
-      "path": "work-records/command-exa.md"
-    },
-    {
-      "basename": "2023-04-18_Tuesday",
-      "path": "buckets/daily/2023-04-18_Tuesday.md"
-    },
-    {
-      "basename": "git-multiple-coexist",
-      "path": "buckets/learn/git-multiple-coexist.md"
     }
   ],
   "omittedPaths": [],

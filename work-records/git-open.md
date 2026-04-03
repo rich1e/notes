@@ -50,3 +50,9 @@ git config open.default.remote upstream
 [zsh oh-my-zsh 插件推荐 - 掘金](https://juejin.cn/post/6844903598300610568#heading-7)
 [git-open/git-open.1.md at master · paulirish/git-open](https://github.com/paulirish/git-open/blob/master/git-open.1.md)
 [ZSH 框架、插件、教程和主题](https://github.com/icopy-site/awesome-cn/blob/master/docs/awesome/awesome-zsh-plugins.md)
+
+## 相关笔记
+
+- [[work-records/git-flow]] — Git 常用工作流命令
+- [[work-records/Git 分支管理建议]] — GitLab Flow 分支管理规范
+- [[work-records/command-fzf]] — fzf 模糊搜索（同为 zsh 工具生态）

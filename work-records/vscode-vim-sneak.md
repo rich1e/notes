@@ -16,3 +16,9 @@ Description
 
 [GitHub - VSCodeVim/Vim: Vim for Visual Studio Code](https://github.com/VSCodeVim/Vim/#vim-sneak)
 [任意门：easymotion，让光标移动得随心所欲 | Just Vim It](https://vim.nauxscript.com/vim/day-9.html)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-easymotion]] — EasyMotion 快速跳转（与 Sneak 互补）
+- [[work-records/vscode-vim-search]] — 搜索命令

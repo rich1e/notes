@@ -13,3 +13,8 @@ node 版本支持语言切换
 
 ```
 
+## 相关笔记
+
+- [[work-records/command-fzf]] — fzf 模糊搜索（同类终端效率工具）
+- [[work-records/node-commands]] — Node 命令（tldr node 客户端）
+

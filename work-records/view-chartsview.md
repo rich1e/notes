@@ -271,3 +271,7 @@ options:
   enableSearchInteraction:
     operator: tag
 ```
+
+## 相关笔记
+
+- [[work-records/view-flowchart]] — Mermaid 流程图（同为可视化工具）

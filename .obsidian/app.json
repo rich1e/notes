@@ -12,7 +12,7 @@
   },
   "vimMode": true,
   "newLinkFormat": "absolute",
-  "attachmentFolderPath": "./meta",
+  "attachmentFolderPath": "assets",
   "showFrontmatter": true,
   "showUnsupportedFiles": true,
   "strictLineBreaks": false

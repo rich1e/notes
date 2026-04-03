@@ -19,3 +19,10 @@
 [Macbook 修改最近路径列表 Recent Places 数量 - 腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/1529950?cps_key=1d358d18a7a17b4a6df8d67a62fd3d3d)
 [VIM学习笔记 环绕字符编辑(surround)](http://yyq123.github.io/learn-vim/learn-vim-plugin-surround.html)
 [Vim 两款插件介绍：vim-surround 与 vim-commentary - 掘金](https://juejin.cn/post/6994406794286071838)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-text-object]] — 文本对象（与 surround 配合使用）
+- [[work-records/vscode-vim-fold]] — 代码折叠（使用了 vim-surround）
+- [[work-records/vscode-vim-indent-object]] — 缩进对象（使用了 vim-surround）

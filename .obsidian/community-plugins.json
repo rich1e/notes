@@ -37,5 +37,7 @@
   "cm-chs-patch",
   "global-proxy",
   "obsidian-mkdocs-publisher",
-  "obsidian-chartsview-plugin"
+  "obsidian-chartsview-plugin",
+  "claudian",
+  "attachment-management"
 ]

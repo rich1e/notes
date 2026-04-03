@@ -20,3 +20,8 @@
 [(3条消息) VSCode Vim j / k 移动会打开折叠代码块的 解决方案_就是爱吃肉ro的博客-CSDN博客_foldfix](https://blog.csdn.net/weixin_44510468/article/details/124191982)
 [Solution for VSCodeVim code folding issue (solves #1004) · Issue #4517 · VSCodeVim/Vim](https://github.com/VSCodeVim/Vim/issues/4517)
 
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-surround]] — Surround 插件（`vi{` 选中范围用到）
+- [[work-records/vscode-vim-indent-object]] — 缩进对象（`af` 扩大选择范围）

@@ -77,3 +77,7 @@ function asyncToGenerator(generatorFunc) {
 Ref
 
 [你知道async await是怎么实现的吗？ 我用20 行代码告诉你 - 掘金](https://juejin.cn/post/7229861468661252133)
+
+## 相关笔记
+
+- [[work-records/node-commands]] — Node/npm/pnpm 命令速查

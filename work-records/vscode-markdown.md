@@ -19,3 +19,7 @@
 参考
 
 [GitHub - Imymirror/mirror-vscode: Spacemacs like keybindings for Visual Studio Code](https://github.com/Imymirror/mirror-vscode#pasteurl)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — VSCode Vim 操作手册（同为 VSCode 插件）

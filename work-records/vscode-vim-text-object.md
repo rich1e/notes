@@ -32,3 +32,9 @@ vim 中的文本对象主要有这一些：
 -   `p` ：一个段落；以一个换行符间隔即为一个段落
 
 [继续深入：什么是文本对象？ | Just Vim It](https://vim.nauxscript.com/vim/day-6.html#vim-textobj-arguments-vim-textobj-entire)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-surround]] — Surround 成对符号编辑（配合文本对象）
+- [[work-records/vscode-vim-indent-object]] — 缩进对象（文本对象的扩展）

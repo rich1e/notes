@@ -31,3 +31,9 @@
 [Operate on an Indented Block of Lines with vim-indent-object | seanh.cc](https://www.seanh.cc/2020/08/08/vim-indent-object/)
 [My Experience Using Vim Keybindings In VSCode](https://michaelychen.medium.com/my-experience-using-vim-keybindings-in-vscode-ea6d335aa155)
 [开发利器：快速删除一个函数 | Just Vim It](https://vim.nauxscript.com/vim/day-16.html)
+
+## 相关笔记
+
+- [[work-records/vscode-vim]] — Vim 基础概念（motion / operator / leader）
+- [[work-records/vscode-vim-text-object]] — 文本对象（indent-object 是其扩展）
+- [[work-records/vscode-vim-surround]] — Surround 成对符号编辑

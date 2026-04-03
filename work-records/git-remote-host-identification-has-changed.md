@@ -47,3 +47,8 @@ Already up to date.
 [How To Fix the "Warning: Remote Host Identification Has Changed" Error](https://kinsta.com/knowledgebase/warning-remote-host-identification-has-changed/)
 [git问题解决：WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! - 简书](https://www.jianshu.com/p/775af5f7a1d3)
 [SSH连接错误”REMOTE HOST IDENTIFICATION HAS CHANGED!” – 行星带](https://beltxman.com/2534.html)
+
+## 相关笔记
+
+- [[work-records/git-flow]] — Git 常用工作流命令
+- [[work-records/git-open]] — git open 快速打开仓库页面

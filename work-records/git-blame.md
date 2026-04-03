@@ -63,3 +63,8 @@ Ref
 [git blame | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame)
 [Git blame 查看代码是谁写的 | 温欣爸比的博客](https://wxnacy.com/2019/05/21/git-blame/)
 [Git - git-blame Documentation](https://git-scm.com/docs/git-blame)
+
+## 相关笔记
+
+- [[work-records/git-flow]] — Git 常用工作流命令（含 blame 示例）
+- [[work-records/Git 分支管理建议]] — GitLab Flow 分支管理规范
