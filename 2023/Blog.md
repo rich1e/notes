@@ -22,15 +22,15 @@ _github-pages-challenge-rich1e
 977af2d598b3cb94cbb6933b55a1db
 ```
 
-![[Pasted image 20221209140322.png]]
+![[assets/2023/Blog/IMG-20260403174654004.png]]
 
-![[Pasted image 20221209141011.png]]
+![[assets/2023/Blog/IMG-20260403174654012.png]]
 
-![[Pasted image 20221215110059.png]]
+![[assets/2023/Blog/IMG-20260403174654024.png]]
 
-![[Pasted image 20221215110245.png]]
+![[assets/2023/Blog/IMG-20260403174654031.png]]
 
-![[Pasted image 20221215110534.png]]
+![[assets/2023/Blog/IMG-20260403174654042.png]]
 
 ```ad-note
 title: blog续费

@@ -25,7 +25,7 @@ netsh advfirewall reset
 systeminfo
 ```
 
-![[workspce/meta/企业微信截图_55837940-dc9e-4475-bddf-8e3639e4eec2.png]]
+![[assets/work-records/windows-settings/IMG-20260403174657948.png]]
 
 Ref
 

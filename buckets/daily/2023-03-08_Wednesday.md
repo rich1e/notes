@@ -31,15 +31,15 @@ title: mac & docker & windows
 
 ```
 
-![[Pasted image 20230308111926.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260403174655907.png]]
 
 ```sh
 git checkout wyffix2
 git log --since="2023-02-14" --until="2023-02-21" --pretty=format:"%h, %cd, %an : %s"
 ```
 
-![[Pasted image 20230308093654.png]]
+![[assets/2023/单机版启动缓慢调查/IMG-20260403174654670.png]]
 
-![[Pasted image 20230308140834.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260403174655930.png]]
 
-![[Pasted image 20230308140839.png]]
+![[assets/2023/单机版启动缓慢调查/IMG-20260403174654722.png]]

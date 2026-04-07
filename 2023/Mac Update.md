@@ -37,7 +37,7 @@ sysctl hw.physicalcpu
 sysctl hw.logicalcpu
 ```
 
-![[2023/meta/Pasted image 20230702111135.png]]
+![[assets/2023/Mac Update/IMG-20260403174654304.png]]
 
 参考：[在Mac OS系统下查看CPU型号以及核心数量 - 知乎](https://zhuanlan.zhihu.com/p/322291715)
 
@@ -45,9 +45,9 @@ sysctl hw.logicalcpu
 system_profiler SPHardwareDataType | grep 'Model Identifier'
 ```
 
-![[2023/meta/Pasted image 20230702111616.png]]
+![[assets/2023/Mac Update/IMG-20260403174654315.png]]
 
-![[images/2023/mac-update/Pasted image 20230319001939.png]]
+![[assets/2023/Mac Update/IMG-20260403174654334.png]]
 
 参考：
 
@@ -63,16 +63,16 @@ system_profiler SPHardwareDataType | grep 'Model Identifier'
 
 > 安装盘使用移动硬盘或者 U 盘均可，U 盘存储空间至少16G。
 
-![[images/2023/mac-update/Pasted image 20230319083743.png]]
+![[assets/2023/Mac Update/IMG-20260403174654347.png]]
 
 #### **下载 macOS 系统**
 
 -  Create macOS Installer（需要先安装 `OpenCore Legacy Patcher`）
-![[2023/meta/Pasted image 20230702124512.png]]
+![[assets/2023/Mac Update/IMG-20260403174654360.png]]
 
 - 或者直接[下载](https://swcdn.apple.com/content/downloads/36/06/042-01917-A_B57IOY75IU/oocuh8ap7y8l8vhu6ria5aqk7edd262orj/InstallAssistant.pkg)
 
-![[images/2023/mac-update/Pasted image 20230319072545.png]]
+![[assets/2023/Mac Update/IMG-20260403174654374.png]]
 
 参考：
 
@@ -84,7 +84,7 @@ system_profiler SPHardwareDataType | grep 'Model Identifier'
 sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/rich1e
 ```
 
-![[images/2023/mac-update/Pasted image 20230319084548.png]]
+![[assets/2023/Mac Update/IMG-20260403174654394.png]]
 
 参考：
 
@@ -109,11 +109,11 @@ sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallm
 
 选择要安装的磁盘，如下图，disk0 为电脑内置磁盘，默认分区的情况下，如果有两块磁盘，或者多个 USB 存储设备，都会列出，本例中 disk7 是一块 USB 接口的移动U盘，点击即可。
 
-![[images/2023/mac-update/Pasted image 20230319094212.png]]
+![[assets/2023/Mac Update/IMG-20260403174654405.png]]
 
-![[images/2023/mac-update/Pasted image 20230319094342.png]]
+![[assets/2023/Mac Update/IMG-20260403174654429.png]]
 
-![[images/2023/mac-update/Pasted image 20230319094601.png]]
+![[assets/2023/Mac Update/IMG-20260403174654442.png]]
 
 询问是否需要重启。
 
@@ -129,15 +129,15 @@ Would you like to reboot?
 
 重新启动 Mac，按住 `Option` 键不放，直到出现启动选择画面，选择带有 OpenCore 徽标的 `EFI Boot` 图标（按住 `Control` 键将使其成为默认引导条目）：
 
-![[2023/meta/Pasted image 20230702131158.png]]
+![[assets/2023/Mac Update/IMG-20260403174654454.png]]
 
 现在您已经加载了 `OpenCore`，“select Install macOS”：
 
-![[2023/meta/Pasted image 20230702131727.png]]
+![[assets/2023/Mac Update/IMG-20260403174654467.png]]
 
 您很快就会进入安装程序屏幕！如果在构建 `OCLP` 时启用了详细模式，那么屏幕上将会显示大量文本。从那以后，它就像任何普通的 macOS 安装一样。有关引导过程的示例，请参阅以下视频 [OpenCore Legacy Patcher Boot Process(opens new window)](https://www.youtube.com/watch?v=AN3zsbQV_n4)
 
-![[2023/meta/Pasted image 20230702132533.png]]
+![[assets/2023/Mac Update/IMG-20260403174654479.png]]
 
 1. 选择磁盘工具，抹掉原有磁盘（默认名称：Macintosh HD，格式：APFS）即可全新安装；
 2. 关闭磁盘工具，选择 “安装 macOS Ventura”；
@@ -149,25 +149,25 @@ Would you like to reboot?
 现在 `OpenCore` 是安装在 USB 接口的移动U盘的 `EFI` 分区，拔掉 移动U盘将无法正常启动，我们需要将 `OpenCore` 安装到 `Mac` 内置储存的 `EFI` 分区中，这样才能脱离 USB 存储正常启动。步骤与上文中 **构建和安装 OpenCore** 类似。
 #### 运行 `OpenCore Legacy Patcher`，点击 `Build and Install OpenCore` 再次 `Install OpenCore`。
 
-![[2023/meta/Pasted image 20230702135214.png]]
+![[assets/2023/Mac Update/IMG-20260403174654493.png]]
 
 #### `Install OpenCore` 时选择内置存储（通常是 `disk0`）。
 
-![[2023/meta/Pasted image 20230702135408.png]]
+![[assets/2023/Mac Update/IMG-20260403174654505.png]]
 
 #### 点击 `Settings` 根据需要更改设置，无需启动选择器即可无缝启动。
 
-![[2023/meta/Pasted image 20230702140025.png]]
+![[assets/2023/Mac Update/IMG-20260403174654518.png]]
 
 ### 补丁修复 `Post Install Root Patch`
 
 > 对于使用不受支持的 `GPU/Wi-Fi` 卡的用户，您需要运行 `Post Install Root Volume` 补丁以恢复功能。
 
-![[2023/meta/Pasted image 20230422214233.png]]
+![[assets/2023/Mac Update/IMG-20260403174654535.png]]
 
-![[2023/meta/Pasted image 20230422220814.png]]
+![[assets/2023/Mac Update/IMG-20260403174654545.png]]
 
-![[2023/meta/Pasted image 20230702140426.png]]
+![[assets/2023/Mac Update/IMG-20260403174654558.png]]
 
 
 ```md
@@ -182,7 +182,7 @@ Following Patches have been detected for your system:
 Would you like to apply these patches?
 ```
 
-![[2023/meta/Pasted image 20230806194428.png]]
+![[assets/2023/Mac Update/IMG-20260403174654570.png]]
 
 Ref
 

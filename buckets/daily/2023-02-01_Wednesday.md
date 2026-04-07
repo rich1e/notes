@@ -5,9 +5,9 @@ date: 2023-02-01 10:30:15
 ---
 
 
-![[Pasted image 20230201111152.png]]
+![[assets/buckets/daily/2023-02-01_Wednesday/IMG-20260403174655834.png]]
 
-![[Pasted image 20230201143312.png]]
+![[assets/buckets/daily/2023-02-01_Wednesday/IMG-20260403174655856.png]]
 
 ```ad-note
 title: 每日一跃

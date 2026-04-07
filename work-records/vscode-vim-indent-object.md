@@ -6,7 +6,7 @@
 
 ## 代码缩进
 
-![[vim-indent-object.gif]]
+![[assets/work-records/vscode-vim-indent-object/IMG-20260403174657805.gif]]
 
 `>ii` - 缩进当前缩进块
 `>ai` - 缩进当前缩进块和上一行
@@ -14,7 +14,7 @@
 
 ## 配合 `<Opeator>` 操作
 
-![[vim-indent-object-opeator.gif]]
+![[assets/work-records/vscode-vim-indent-object/IMG-20260403174657868.gif]]
 
 `ci'` - 删除 `''` 中的内容，并切换到 `Insert mode
 `ci[` - 删除 `[]` 中的内容，并切换到 `Insert mode

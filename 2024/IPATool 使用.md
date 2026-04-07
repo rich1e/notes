@@ -65,7 +65,7 @@ ipatool download -b com.tencent.xin -o wechat.ipa --purchase
 
 > failed to get account: failed to get item: The specified item could not be found in the keyring
 
-![[meta/Pasted image 20240807122537.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654745.png]]
 
 这个错误一般是因为没有 `login` 造成的原因，执行一下登录命令就解决了。
 
@@ -75,21 +75,21 @@ ipatool auth login -e 账号邮箱 -p 密码
 
 > auth code is required
 
-![[meta/Pasted image 20240807123714.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654755.png]]
 
 `2FA` **表示双重认证**，这个错误表示需要验证码，双重认证未通过。
 
 > request failed: failed to unmarshal json: invalid character '<' looking for beginning of value
 
-![[meta/Pasted image 20240807124637.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654767.png]]
 
 这个错误估计是搜索的**关键词不对，找不到结果**。修改一下关键词即可。
 
-![[meta/Pasted image 20240807124838.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654777.png]]
 
 > license is required
 
-![[meta/Pasted image 20240807125018.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654793.png]]
 
 这个错误的原因是，下载的 `app` 未获取许可 ，需要获取许可 `license` 才可以下载。解决方法有2种：
 
@@ -100,9 +100,9 @@ ipatool auth login -e 账号邮箱 -p 密码
 
 > failed to purchase item with param 'STDQ': failed to purchase app
 
-![[meta/Pasted image 20240807125657.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654808.png]]
 
-![[meta/Pasted image 20240807131020.png]]
+![[assets/2024/IPATool 使用/IMG-20260403174654818.png]]
 
 这个错误的出现的情况，有以上2种。原因可能是，**用户的账号需要接受应用商店中的条款和条件更改，从连接到给定的苹果ID的设备。** 所以，如果出现了这个错误，可以尝试在苹果设备上登录一下账号。
 

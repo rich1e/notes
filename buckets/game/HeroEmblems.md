@@ -67,7 +67,7 @@
 
 整个游戏很精致，玩了2遍。剧情丰富，还有隐藏的剧情需要玩家自己去发掘，Game Center 中有对应的5个隐藏成就。
 
-<img src="imgs/figure_2017-02-09T060234.jpg" alt="Image" style="zoom:25%;" />
+![[IMG-20260403184015006.jpg]]
 
 
 ## 写在开头
@@ -109,20 +109,20 @@
 国王病重，大贤者建议去寻找天空琉璃。
 公主冒冒失失冲出了皇宫，被红色恶魔抓住，皇冠掉落了。
 
-<img src="imgs/figure_2017-02-09T050808.jpg" style="zoom:25%;" />
+![[IMG-20260403184015001.jpg]]
 
 翠丝特是一个小财迷，捡起皇冠，欢喜不已。
 霍华德一行人营救去营救公主。
 
-<img src="imgs/figure_2017-02-09T050903.jpg" style="zoom:25%;" />
+![[IMG-20260403184015002.jpg]]
 
-<img src="imgs/figure_2017-02-09T051708.jpg" style="zoom:25%;" />
+![[IMG-20260403184015003.jpg]]
 
 > note：得到皇冠，后期能派上用场，先卖个关子。
 
 ## 罗德村
 
-<img src="imgs/figure_2017-02-09T052719.jpg" style="zoom:25%;" />
+![[IMG-20260403184015004.jpg]]
 
 遭遇村长被魔物追袭，霍华德一行人将其救下，并淮备消灭村里的魔物。
 
@@ -156,7 +156,7 @@
 
 红箱：技能 (翠丝特-淨化术)
 
-<img src="imgs/figure_2017-02-09T055435.jpg" style="zoom:25%;" />
+![[IMG-20260403184015005.jpg]]
 
 **BOSS**
 
@@ -190,7 +190,7 @@
 
 小矮人：单独出现！
 
-<img src="imgs/figure_2017-02-09T111015.jpg" style="zoom: 25%;" />
+![[IMG-20260403184015010.jpg]]
 
 **BOSS**
 
@@ -206,7 +206,7 @@
 
 ## 被遗忘的树林
 
-<img src="imgs/figure_2017-02-09T060603.jpg" style="zoom:25%;" />
+![[IMG-20260403184015007.jpg]]
 
 **关卡：**
 
@@ -216,11 +216,11 @@
 
 茶箱：太阳石板
 
-<img src="imgs/figure_2017-02-09T111131.jpg" style="zoom:25%;" />
+![[IMG-20260403184015011.jpg]]
 
 ## 漆黑的枯林
 
-<img src="imgs/figure_2017-02-09T061117.jpg" style="zoom:25%;" />
+![[IMG-20260403184015008.jpg]]
 
 **关卡：**
 
@@ -230,15 +230,15 @@
 
 茶箱：月亮石板
 
-<img src="imgs/figure_2017-02-09T085031.jpg" style="zoom:25%;" />
+![[IMG-20260403184015009.jpg]]
 
 ## 古代碉堡
 
-<img src="imgs/figure_2017-02-09T111435.jpg" style="zoom:25%;" />
+![[IMG-20260403184015012.jpg]]
 
-<img src="imgs/figure_2017-02-09T111450.jpg" style="zoom:25%;" />
+![[IMG-20260403184015013.jpg]]
 
-<img src="imgs/figure_2017-02-09T111522.jpg" style="zoom:25%;" />
+![[IMG-20260403184015014.jpg]]
 
 **关卡：**
 
@@ -258,7 +258,9 @@
 
 2F 蓝箱：S技能 (奥斯顿-天使的守护)
 
-<img src="imgs/figure_2017-02-12T082955.jpg" style="zoom:25%;" />
+![[IMG-20260403184016037.jpg]]
+
+![[IMG-20260403184015000.jpg]]
 
 **BOSS**
 
@@ -272,27 +274,27 @@
 
 物品：迷之红水晶
 
-<img src="imgs/figure_2017-02-09T112706.jpg" style="zoom:25%;" />
+![[IMG-20260403184015015.jpg]]
 
-<img src="imgs/figure_2017-02-09T120307.jpg" style="zoom:25%;" />
+![[IMG-20260403184015016.jpg]]
 
-<img src="imgs/figure_2017-02-09T120330.jpg" style="zoom:25%;" />
+![[IMG-20260403184015017.jpg]]
 
-<img src="imgs/figure_2017-02-09T120342.jpg" style="zoom:25%;" />
+![[IMG-20260403184016018.jpg]]
 
-<img src="imgs/figure_2017-02-09T120353.jpg" style="zoom:25%;" />
+![[IMG-20260403184016019.jpg]]
 
-<img src="imgs/figure_2017-02-09T122021.jpg" style="zoom:25%;" />
+![[IMG-20260403184016020.jpg]]
 
-<img src="imgs/figure_2017-02-09T122046.jpg" style="zoom:25%;" />
+![[IMG-20260403184016021.jpg]]
 
-<img src="imgs/figure_2017-02-09T122103.jpg" style="zoom:25%;" />
+![[IMG-20260403184016022.jpg]]
 
-<img src="imgs/figure_2017-02-09T122112.jpg" style="zoom:25%;" />
+![[IMG-20260403184016023.jpg]]
 
 ## 遗迹小岛
 
-<img src="imgs/figure_2017-02-12T073930.jpg" style="zoom:25%;" />
+![[IMG-20260403184016024.jpg]]
 
 **关卡：**
 
@@ -306,13 +308,13 @@
 
 这个关口小心迷路
 
-<img src="imgs/figure_2017-02-12T074204.jpg" style="zoom:25%;" />
+![[IMG-20260403184016025.jpg]]
 
-<img src="imgs/figure_2017-02-12T074215.jpg" style="zoom:25%;" />
+![[IMG-20260403184016026.jpg]]
 
-<img src="imgs/figure_2017-02-12T075239.jpg" style="zoom:25%;" />
+![[IMG-20260403184016027.jpg]]
 
-<img src="imgs/figure_2017-02-12T075313.jpg" style="zoom:25%;" />
+![[IMG-20260403184016028.jpg]]
 
 **物品：**
 
@@ -327,11 +329,11 @@
 
 物品：天空琉璃
 
-<img src="imgs/figure_2017-02-12T075329.jpg" style="zoom:25%;" />
+![[IMG-20260403184016029.jpg]]
 
 ## 萨亚拉城堡Part.1
 
-<img src="imgs/figure_2017-02-12T075403.jpg" style="zoom:25%;" />
+![[IMG-20260403184016030.jpg]]
 
 **关卡：**
 
@@ -339,7 +341,7 @@
 
 宝物库(A) 1小矮人(2)茶箱(8) --> 2迴廊 4/6茶箱(8)蓝箱(8)
 
-<img src="imgs/figure_2017-02-12T075511.jpg" style="zoom:25%;" />
+![[IMG-20260403184016031.jpg]]
 
 **物品：**
 
@@ -349,7 +351,7 @@
 
 2/2 蓝箱：技能 (霍华德-雷鸣斩)
 
-<img src="imgs/figure_2017-02-12T075538.jpg" style="zoom:25%;" />
+![[IMG-20260403184016032.jpg]]
 
 **BOSS**
 
@@ -363,17 +365,17 @@
 
 物品：无
 
-<img src="imgs/figure_2017-02-12T075614.jpg" style="zoom:25%;" />
+![[IMG-20260403184016033.jpg]]
 
 ## 神秘塔
 
 去往神秘塔的路上会遭遇几次小战役。
 
-<img src="imgs/figure_2017-02-12T082658.jpg" style="zoom:25%;" />
+![[IMG-20260403184016034.jpg]]
 
-<img src="imgs/figure_2017-02-12T082708.jpg" style="zoom:25%;" />
+![[IMG-20260403184016035.jpg]]
 
-<img src="imgs/figure_2017-02-12T082719.jpg" style="zoom:25%;" />
+![[IMG-20260403184016036.jpg]]
 
 **关卡：**
 
@@ -391,7 +393,7 @@
 
 茶箱：道具/$$
 
-<img src="imgs/figure_2017-02-12T095207.jpg" style="zoom:25%;" />
+![[IMG-20260403184016038.jpg]]
 
 **BOSS**
 
@@ -405,31 +407,29 @@
 
 物品：无
 
-<img src="imgs/figure_2017-02-12T170710.jpg" style="zoom:25%;" />
+![[IMG-20260403184016039.jpg]]
 
-<img src="imgs/figure_2017-02-12T170940.jpg" style="zoom:25%;" />
+![[IMG-20260403184016040.jpg]]
 
-<img src="imgs/figure_2017-02-12T170953.jpg" style="zoom:25%;" />
+![[IMG-20260403184016041.jpg]]
 
-<img src="imgs/figure_2017-02-12T171004.jpg" style="zoom:25%;" />
+![[IMG-20260403184016042.jpg]]
 
-<img src="imgs/figure_2017-02-12T171019.jpg" style="zoom:25%;" />
+![[IMG-20260403184016043.jpg]]
 
-<img src="imgs/figure_2017-02-12T171031.jpg" style="zoom:25%;" />
+![[IMG-20260403184016044.jpg]]
 
-<img src="imgs/figure_2017-02-12T171043.jpg" style="zoom:25%;" />
+![[IMG-20260403184016045.jpg]]
 
-<img src="imgs/figure_2017-02-12T171142.jpg" style="zoom:25%;" />
+![[IMG-20260403184016046.jpg]]
 
-<img src="imgs/figure_2017-02-12T171155.jpg" style="zoom:25%;" />
+![[IMG-20260403184016047.jpg]]
 
-<img src="imgs/figure_2017-02-12T171226.jpg" style="zoom:25%;" />
+![[IMG-20260403184016048.jpg]]
 
-<img src="imgs/figure_2017-02-12T171240.jpg" style="zoom:25%;" />
+![[IMG-20260403184016049.jpg]]
 
 ## 洛西亚镇
-
-![](imgs/figure_2017-02-12T171416.jpg)
 
 **纹章** *R3*
 
@@ -451,33 +451,33 @@
 
 ## 洛西亚港口
 
-<img src="imgs/figure_2017-02-12T173024.jpg" style="zoom:25%;" />
+![[IMG-20260403184017053.jpg]]
 
-<img src="imgs/figure_2017-02-12T173034.jpg" style="zoom:25%;" />
+![[IMG-20260403184017054.jpg]]
 
-<img src="imgs/figure_2017-02-12T173042.jpg" style="zoom:25%;" />
+![[IMG-20260403184017055.jpg]]
 
-<img src="imgs/figure_2017-02-12T173052.jpg" style="zoom:25%;" />
+![[IMG-20260403184017056.jpg]]
 
-<img src="imgs/figure_2017-02-12T173103.jpg" style="zoom:25%;" />
+![[IMG-20260403184017057.jpg]]
 
-<img src="imgs/figure_2017-02-12T173204.jpg" style="zoom:25%;" />
+![[IMG-20260403184017058.jpg]]
 
 ## 南方墓园
 
-<img src="imgs/figure_2017-02-12T172928.jpg" style="zoom:25%;" />
+![[IMG-20260403184017052.jpg]]
 
 **关卡：**
 
 坟墓区 1 --> 2 --> 3 --> 4蓝箱(6) --> 5 --> 6 BOSS
 
-<img src="imgs/figure_2017-02-13T104906.jpg" style="zoom:25%;" />
+![[IMG-20260403184017060.jpg]]
 
 **物品：**
 
 蓝箱：技能 (奥斯顿-粉碎一击)
 
-<img src="imgs/figure_2017-02-12T172827.jpg" style="zoom:25%;" />
+![[IMG-20260403184016050.jpg]]
 
 **BOSS**
 
@@ -491,9 +491,9 @@
 
 物品：罗盘
 
-<img src="imgs/figure_2017-02-12T172855.jpg" style="zoom:25%;" />
+![[IMG-20260403184017051.jpg]]
 
-<img src="imgs/figure_2017-02-13T104817.jpg" style="zoom:25%;" />
+![[IMG-20260403184017059.jpg]]
 
 ## 库洛依德镇
 
@@ -531,11 +531,11 @@
 
 小矮人：技能 (艾尔莎-混乱术)
 
-<img src="imgs/figure_2017-02-14T140215.jpg" style="zoom:25%;" />
+![[IMG-20260403184017064.jpg]]
 
-<img src="imgs/figure_2017-02-14T140004.jpg" style="zoom:25%;" />
+![[IMG-20260403184017061.jpg]]
 
-<img src="imgs/figure_2017-02-14T140035.jpg" style="zoom:25%;" />
+![[IMG-20260403184017062.jpg]]
 
 **BOSS**
 技能：冰晶 (倒数完毕冻结周围)
@@ -548,11 +548,11 @@
 
 物品：无
 
-<img src="imgs/figure_2017-02-14T140121.jpg" style="zoom:25%;" />
+![[IMG-20260403184017063.jpg]]
 
 ## 恶鬼森林
 
-<img src="imgs/figure_2017-02-15T041818.jpg" style="zoom:25%;" />
+![[IMG-20260403184017070.jpg]]
 
 **关卡：**
 
@@ -570,15 +570,15 @@ A 蓝箱：S技能 (霍华德-强夺)
 
 B 蓝箱：道具/$$
 
-<img src="imgs/figure_2017-02-15T041513.jpg" style="zoom:25%;" />
+![[IMG-20260403184017065.jpg]]
 
-<img src="imgs/figure_2017-02-15T041637.jpg" style="zoom:25%;" />
+![[IMG-20260403184017066.jpg]]
 
 **小BOSS**
 
 技能：锁链串
 
-<img src="imgs/figure_2017-02-15T041721.jpg" style="zoom:25%;" />
+![[IMG-20260403184017069.jpg]]
 
 **BOSS**
 
@@ -592,9 +592,9 @@ B 蓝箱：道具/$$
 
 物品：无
 
-<img src="imgs/figure_2017-02-15T041654.jpg" style="zoom:25%;" />
+![[IMG-20260403184017067.jpg]]
 
-<img src="imgs/figure_2017-02-15T041710.jpg" style="zoom:25%;" />
+![[IMG-20260403184017068.jpg]]
 
 ## 迷幻的洞窟
 

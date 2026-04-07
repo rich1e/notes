@@ -98,7 +98,7 @@ Trunk based Development，又叫 **主干开发** ，是一套代码分支管理
 
 ## 方案比较
 
-![WechatIMG430](WechatIMG430-7354793.jpeg)
+![WechatIMG430](assets/buckets/learn/Git%20实践/IMG-20260403174656513.jpeg)
 
 ## 实践方案
 

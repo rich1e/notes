@@ -24,34 +24,34 @@
 
 不同模块，列表内部展示样式不同，操作按钮也不同。
 
-![[meta/Pasted image 20241129102230.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655005.png]]
 
-![[meta/Pasted image 20241129102428.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655018.png]]
 
-![[meta/Pasted image 20241129102512.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655031.png]]
 
-![[meta/Pasted image 20241129102604.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655044.png]]
 
 ## 弹窗展示
 
-![[meta/Pasted image 20241129102954.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655062.png]]
 
-![[meta/Pasted image 20241129102801.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655084.png]]
 
-![[meta/Pasted image 20241129102836.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655100.png]]
 
-![[meta/Pasted image 20241129102852.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655114.png]]
 
 ## 权限功能
 
 进入 Notification Management，需要提供登陆和权限相关的接口。
 
-![[meta/Pasted image 20241129102109.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655133.png]]
 
 ## 消息推送
 
 Message Center **入口 Icon** 、**下拉弹窗**和**页面列表 title** 需要显示消息数目，与后端讨论将使用 `Web Socket` 技术实现。
 
-![[meta/Pasted image 20241129101831.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655146.png]]
 
-![[meta/Pasted image 20241129101909.png]]
+![[assets/2024/Message Center - WEB/IMG-20260403174655169.png]]

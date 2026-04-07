@@ -39,5 +39,6 @@
   "obsidian-mkdocs-publisher",
   "obsidian-chartsview-plugin",
   "claudian",
-  "attachment-management"
+  "attachment-management",
+  "obsidian-vega"
 ]

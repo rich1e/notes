@@ -381,22 +381,22 @@ UI模板 -> 功能函数: 调用
 ```
 
 ## UI视图
-![[Pasted image 20221115133830.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657113.png]]
 
-![[Pasted image 20221115133907.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657133.png]]
 
-![[Pasted image 20221115133943.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657151.png]]
 
-![[Pasted image 20221115133748.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657185.png]]
 
-![[Pasted image 20221115134013.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657204.png]]
 
 ## bind 数据回显
 
 > 抹平前后端数据字段的命名差异，提供易于理解、可维护的字段关系。
 
-![[Pasted image 20221116100939.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657222.png]]
 
-![[Pasted image 20221116101038.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657241.png]]
 
-![[Pasted image 20221116101750.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657259.png]]

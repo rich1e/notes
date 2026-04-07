@@ -15,14 +15,14 @@ https://www.jianshu.com/p/dce764d2835e
 
 > bat，一个`cat(1)`克隆，搭配语法高亮和 Git 集成。
 
-![Syntax highlighting example](68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67.png)
+![Syntax highlighting example](assets/buckets/lifestyle/mac-utils/IMG-20260403174656624.png)
 
 ref:
 https://github.com/sharkdp/bat
 
 > starship，轻量级、反应迅速，可定制的高颜值终端！
 
-![image-20210222171014335](image-20210222171014335.png)
+![image-20210222171014335](assets/buckets/lifestyle/mac-utils/IMG-20260403174656638.png)
 
 ref：
 https://starship.rs/

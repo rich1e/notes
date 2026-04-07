@@ -1,6 +1,6 @@
 #git 
 
-![[Pasted image 20230130094121.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260403174657642.png]]
 
 ## WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
@@ -20,9 +20,9 @@
 
 最佳做法如下：
 
-![[Pasted image 20230130104047.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260403174657671.png]]
 
-![[Pasted image 20230130104203.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260403174657698.png]]
 
 1. 检查 `git` 服务器 `ip` 地址
 ```sh

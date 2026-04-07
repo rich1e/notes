@@ -33,7 +33,7 @@ Ref：
 
 打开[下载页面](https://www.telerik.com/download/fiddler-everywhere)，下载 [v3.4.0 for mac](https://downloads.getfiddler.com/mac-arm64/Fiddler%20Everywhere%203.4.0.dmg)。
 
-![[Pasted image 20221104172553.png]]
+![[assets/2022/Fiddler Everywhere Crack 尝试/IMG-20260403174653950.png]]
 
 - Intel Chip 
 - Apple Silicon Chip - M1 / M2 的 mac 下载这个
@@ -98,7 +98,7 @@ Ie.licenseInfo.isTrialAvailable = false
 Ie.licenseInfo.hasValidLicense = true
 ```
 
-![[Pasted image 20221104180204.png]]
+![[assets/2022/Fiddler Everywhere Crack 尝试/IMG-20260403174653970.png]]
 
 `Fiddler.WebUi.il` 和 `FiddlerBackendSDK.il` 的修改，可[参考](https://github.com/msojocs/fiddler-everywhere-crack/blob/master/DETAIL.MD)。
 
@@ -129,9 +129,9 @@ Ie.licenseInfo.hasValidLicense = true
 
 4、重启即可。
 
-![[55bbb162-f346-416f-bc16-4845bb080226.png]]
+![[assets/2022/Fiddler Everywhere Crack 尝试/IMG-20260403174653983.png]]
 
-![[1bcbcb07-537c-4b08-a175-a0c309a824fd.png]]
+![[assets/2022/Fiddler Everywhere Crack 尝试/IMG-20260403174653994.png]]
 
 ## 禁用自动更新
 

@@ -33,15 +33,15 @@ Ref:
 
 Edit Mode Expansion (Mode Expansion)
 
-![[Pasted image 20221028164224.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单优化/IMG-20260403174657060.png]]
 
 Edit FDTD (FDTD)
 
-![[Pasted image 20221028164706.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单优化/IMG-20260403174657076.png]]
 
 ## 动态表单依赖和被引用关系
 
-![[Pasted image 20221108111704.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单优化/IMG-20260403174657093.png]]
 
 [[mind - Attr 动态表单组件关系图]]
 

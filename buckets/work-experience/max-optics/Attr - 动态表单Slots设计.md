@@ -134,9 +134,9 @@ const formConfig: ConfigType = {
 
 ## 项目应用
 
-![[Pasted image 20221208154851.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656813.png]]
 
-![[Pasted image 20221208155256.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656845.png]]
 
 ## 优化对比
 
@@ -145,18 +145,18 @@ const formConfig: ConfigType = {
 - UI 模板灵活扩展，可重复使用
 - Typescript 类型定义清晰，结合IDE提示属性字段类型，减少编码时错误
 
-![[Pasted image 20221208162727.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656862.png]]
 
-![[Pasted image 20221208162803.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656883.png]]
 
-![[Pasted image 20221208163704.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656903.png]]
 
-![[Pasted image 20221208163224.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656931.png]]
 
-![[Pasted image 20221208163322.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656949.png]]
 
-![[Pasted image 20221208163510.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656969.png]]
 
 ## npm 
 
-![[Pasted image 20221208164424.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260403174656986.png]]

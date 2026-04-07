@@ -5,15 +5,15 @@
 
 iOS[^1]：先安装 XCode，然后点击 settings，选择 Platforms，里面有各个版本的 Simulator。
 
-![[meta/Pasted image 20250117132452.png]]
+![[assets/2025/Uniapp develop/IMG-20260403174655228.png]]
 
 Android [^2] [^3] [^4]  ：推荐使用 Google 官方的开发工具 [Android Studio](https://developer.android.com/studio/install) 内置 Simulator 管理工具，可以安装各个版本。
 
-![[meta/Pasted image 20250117133033.png]]
+![[assets/2025/Uniapp develop/IMG-20260403174655243.png]]
 
-![[meta/Pasted image 20250117133116.png]]
+![[assets/2025/Uniapp develop/IMG-20260403174655258.png]]
 
-![[meta/Pasted image 20250117133142.png]]
+![[assets/2025/Uniapp develop/IMG-20260403174655272.png]]
 
 ## CPU类型[^5]
 

@@ -46,6 +46,96 @@ where contains(file.tags, "undone")
 
 [[Archives File]]
 
+## 笔记年度统计
+
+```dataviewjs
+// 统计2021-2026年的笔记数量
+const yearFolders = ['2021', '2022', '2023', '2024', '2025', '2026'];
+const yearStats = [];
+
+for (const year of yearFolders) {
+  const pages = dv.pages(`"${year}"`);
+  yearStats.push({
+    year: year,
+    count: pages.length
+  });
+}
+
+// 计算最大值用于比例
+const maxCount = Math.max(...yearStats.map(s => s.count));
+const total = yearStats.reduce((sum, s) => sum + s.count, 0);
+
+// 渲染
+const root = dv.el("div", "");
+
+// 顶部统计卡片
+const hdr = root.createEl("div", { attr: {
+    style: "display:flex;gap:28px;flex-wrap:wrap;margin-bottom:20px;" +
+           "padding:12px 18px;border-radius:10px;" +
+           "background:var(--background-secondary)"
+}});
+
+[
+    ["📅", "统计年份", `${yearFolders.length} 年`],
+    ["📝", "笔记总数", `${total} 篇`],
+    ["📊", "平均数量", `${Math.round(total/yearFolders.length)} 篇/年`],
+].forEach(([icon, label, val]) => {
+    const cell = hdr.createEl("div", { attr: { style: "display:flex;flex-direction:column;gap:3px" } });
+    cell.createEl("span", { text: `${icon}  ${label}`, attr: {
+        style: "font-size:0.68em;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em"
+    }});
+    cell.createEl("span", { text: val, attr: {
+        style: "font-size:0.95em;font-weight:600;color:var(--text-normal)"
+    }});
+});
+
+// 柱状图
+const chart = root.createEl("div", { attr: {
+    style: "display:flex;flex-direction:column;gap:8px;margin-top:12px"
+}});
+
+const COLORS = ["#7c6af7","#38bdf8","#34d399","#fb923c","#f472b6","#a78bfa"];
+
+yearStats.forEach((stat, i) => {
+    const pct = maxCount > 0 ? Math.round((stat.count / maxCount) * 100) : 0;
+    const color = COLORS[i % COLORS.length];
+
+    const row = chart.createEl("div", { attr: {
+        style: "display:flex;align-items:center;gap:12px"
+    }});
+
+    // 年份标签
+    row.createEl("span", { text: stat.year, attr: {
+        style: "min-width:60px;text-align:right;" +
+               "font-size:0.85em;font-weight:600;color:var(--text-accent)"
+    }});
+
+    // 进度条
+    const track = row.createEl("div", { attr: {
+        style: "flex:1;height:28px;border-radius:6px;overflow:hidden;" +
+               "background:var(--background-modifier-border)"
+    }});
+
+    const bar = track.createEl("div", { attr: {
+        style: `width:${Math.max(pct, 2)}%;height:100%;border-radius:6px;` +
+               `background:${color};opacity:.85;` +
+               "transition:width 0.3s ease"
+    }});
+
+    // 在柱状图内显示数量
+    bar.createEl("span", { text: stat.count, attr: {
+        style: "display:inline-block;padding:0 10px;line-height:28px;" +
+               "font-size:0.8em;font-weight:600;color:white"
+    }});
+
+    // 百分比
+    row.createEl("span", { text: `${pct}%`, attr: {
+        style: "min-width:45px;text-align:right;font-size:0.75em;" +
+               "color:var(--text-muted);font-variant-numeric:tabular-nums"
+    }});
+});
+```
+
 ## 标签统计
 
 ```dataviewjs
