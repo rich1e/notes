@@ -1,68 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "岛国游",
-      "path": "buckets/travel/岛国游.md"
+      "basename": "2026-03-20-feather",
+      "path": "Archives/2026-03-20-feather.md"
     },
     {
-      "basename": "HomePage",
-      "path": "HomePage.md"
-    },
-    {
-      "basename": "去日本笔记攻略",
-      "path": "buckets/travel/去日本笔记攻略.md"
-    },
-    {
-      "basename": "brew script",
-      "path": "2026/brew script.md"
+      "basename": "git-remote-host-identification-has-changed",
+      "path": "work-records/git-remote-host-identification-has-changed.md"
     },
     {
       "basename": "Mobile Development",
       "path": "workspce/Mobile Development.md"
     },
     {
-      "basename": "brew-weekly-template",
-      "path": "brew-weekly-template.md"
+      "basename": "Kanban",
+      "path": "workspce/Kanban.md"
     },
     {
-      "basename": "Chezmoi 简明教程",
-      "path": "2026/Chezmoi 简明教程.md"
+      "basename": "Front-end Technology",
+      "path": "workspce/Front-end Technology.md"
     },
     {
-      "basename": "2021-css",
-      "path": "2021/2021-css.md"
+      "basename": "Draft",
+      "path": "workspce/Draft.md"
     },
     {
-      "basename": "当下还有人知道 buble 吗？",
-      "path": "frontend/当下还有人知道 buble 吗？.md"
+      "basename": "Daily Record",
+      "path": "workspce/Daily Record.md"
     },
     {
-      "basename": "混合开发",
-      "path": "frontend/混合开发.md"
+      "basename": "Buckets",
+      "path": "workspce/Buckets.md"
     },
     {
-      "basename": "前端代码构建部署",
-      "path": "frontend/前端代码构建部署.md"
+      "basename": "Archives File",
+      "path": "workspce/Archives File.md"
     },
     {
-      "basename": "前端工程自动化实践-文档篇",
-      "path": "frontend/前端工程自动化实践-文档篇.md"
+      "basename": "HomePage",
+      "path": "HomePage.md"
     },
     {
-      "basename": "前端监控",
-      "path": "frontend/前端监控.md"
+      "basename": "windows-settings",
+      "path": "work-records/windows-settings.md"
     },
     {
-      "basename": "前端开发调试新姿势 - Windows + WSL + VSCode",
-      "path": "frontend/前端开发调试新姿势 - Windows + WSL + VSCode.md"
-    },
-    {
-      "basename": "前端数据请求方式",
-      "path": "frontend/前端数据请求方式.md"
+      "basename": "2025-04-11_Friday",
+      "path": "buckets/daily/2025-04-11_Friday.md"
     },
     {
       "basename": "Uniapp develop",
       "path": "2025/Uniapp develop.md"
+    },
+    {
+      "basename": "2022-12-12_Monday",
+      "path": "buckets/daily/2022-12-12_Monday.md"
+    },
+    {
+      "basename": "2025-03-19_Wednesday",
+      "path": "buckets/daily/2025-03-19_Wednesday.md"
+    },
+    {
+      "basename": "2025-05-26_Monday",
+      "path": "buckets/daily/2025-05-26_Monday.md"
+    },
+    {
+      "basename": "2025-04-02_Wednesday",
+      "path": "buckets/daily/2025-04-02_Wednesday.md"
+    },
+    {
+      "basename": "2025-05-22_Thursday",
+      "path": "buckets/daily/2025-05-22_Thursday.md"
+    },
+    {
+      "basename": "2025-05-16_Friday",
+      "path": "buckets/daily/2025-05-16_Friday.md"
+    },
+    {
+      "basename": "2022-11-16_Wednesday",
+      "path": "buckets/daily/2022-11-16_Wednesday.md"
     },
     {
       "basename": "uniapp",
@@ -89,28 +105,32 @@
       "path": "2024/Message Center - App.md"
     },
     {
-      "basename": "IPATool 使用",
-      "path": "2024/IPATool 使用.md"
-    },
-    {
       "basename": "brew install",
       "path": "2024/brew install.md"
-    },
-    {
-      "basename": "砸壳",
-      "path": "2024/砸壳.md"
     },
     {
       "basename": "游戏模拟器",
       "path": "2024/游戏模拟器.md"
     },
     {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "2024/深入浅出 Greasemonkey.md"
+      "basename": "砸壳",
+      "path": "2024/砸壳.md"
     },
     {
       "basename": "2024 手机模拟器游戏火热🔥",
       "path": "2024/2024 手机模拟器游戏火热🔥.md"
+    },
+    {
+      "basename": "深入浅出 Greasemonkey",
+      "path": "2024/深入浅出 Greasemonkey.md"
+    },
+    {
+      "basename": "IPATool 使用",
+      "path": "2024/IPATool 使用.md"
+    },
+    {
+      "basename": "单机版启动缓慢调查",
+      "path": "2023/单机版启动缓慢调查.md"
     },
     {
       "basename": "Vue3 组件库",
@@ -121,24 +141,8 @@
       "path": "2023/Mac Update.md"
     },
     {
-      "basename": "Mac & Vim",
-      "path": "2023/Mac & Vim.md"
-    },
-    {
       "basename": "Mac & Electron 跨端开发体验",
       "path": "2023/Mac & Electron 跨端开发体验.md"
-    },
-    {
-      "basename": "Lodash",
-      "path": "2023/Lodash.md"
-    },
-    {
-      "basename": "Javascript 函数式编程指南",
-      "path": "2023/Javascript 函数式编程指南.md"
-    },
-    {
-      "basename": "Homebrew",
-      "path": "2023/Homebrew.md"
     },
     {
       "basename": "Electron：WebSwapCGLLayer warning",
@@ -161,40 +165,40 @@
       "path": "2023/BEM 命名规范.md"
     },
     {
-      "basename": "自建 OSS",
-      "path": "2023/自建 OSS.md"
-    },
-    {
-      "basename": "单机版启动缓慢调查",
-      "path": "2023/单机版启动缓慢调查.md"
-    },
-    {
       "basename": "Fiddler Everywhere Crack 尝试",
       "path": "2022/Fiddler Everywhere Crack 尝试.md"
     },
     {
-      "basename": "Book Sync",
-      "path": "2022/Book Sync.md"
+      "basename": "brew script",
+      "path": "2026/brew script.md"
     },
     {
-      "basename": "Alienware",
-      "path": "2022/Alienware.md"
+      "basename": "brew-weekly-template",
+      "path": "brew-weekly-template.md"
     },
     {
-      "basename": "2022 learn",
-      "path": "2022/2022 learn.md"
+      "basename": "Obsidian：日记模板",
+      "path": "buckets/templates/Obsidian：日记模板.md"
     },
     {
-      "basename": "HeroEmblems",
-      "path": "buckets/game/HeroEmblems.md"
+      "basename": "岛国游",
+      "path": "buckets/travel/岛国游.md"
     },
     {
-      "basename": "IMG-20260403184015000",
-      "path": "assets/buckets/game/HeroEmblems/IMG-20260403184015000.jpg"
+      "basename": "2026-03-22_Sunday",
+      "path": "buckets/daily/2026-03-22_Sunday.md"
     },
     {
-      "basename": "IMG-20260403184015001",
-      "path": "assets/buckets/game/HeroEmblems/IMG-20260403184015001.jpg"
+      "basename": "2026-04-03_Friday",
+      "path": "buckets/daily/2026-04-03_Friday.md"
+    },
+    {
+      "basename": "2026-03-27_Friday",
+      "path": "buckets/daily/2026-03-27_Friday.md"
+    },
+    {
+      "basename": "2025-05-15_Thursday",
+      "path": "buckets/daily/2025-05-15_Thursday.md"
     }
   ],
   "omittedPaths": [],

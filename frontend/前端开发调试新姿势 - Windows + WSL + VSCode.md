@@ -20,7 +20,7 @@ scoop install vscode
 
 检查 Windows 版本，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定” 。 可通过选择“开始”>“设置”>“Windows 更新”>“检查更新”来更新到最新的 Windows 版本。
 
-![[IMG-20260403181734004.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331172.png]]
 
 WSL 有 2 种安装方式。为简单起见，通常建议使用 `wsl --install` 安装适用于 Linux 的 Windows 子系统。
 
@@ -80,7 +80,7 @@ wsl --set-default-version 2
 
   1. 打开 [Microsoft Store](https://aka.ms/wslstore)，并选择你偏好的 Linux 分发版。
 
-  ![[IMG-20260403181734005.png]]
+  ![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331193.png]]
 
   单击以下链接会打开每个分发版的 Microsoft Store 页面：
 
@@ -99,7 +99,7 @@ wsl --set-default-version 2
 
   2. 在分发版的页面中，选择“获取”。
 
-  ![[IMG-20260403181734006.png]]
+  ![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331220.png]]
 
 首次启动新安装的 Linux 分发版时，将打开一个控制台窗口，系统会要求你等待一分钟或两分钟，以便文件解压缩并存储到电脑上。 未来的所有启动时间应不到一秒。
 
@@ -114,7 +114,7 @@ wsl ~
 wslfetch
 ```
 
-![[IMG-20260403181734007.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331245.png]]
 
 ### WSL 基本命令[^WSL 官方文档]
 
@@ -238,7 +238,7 @@ nameserver 223.6.6.6
 
 ### Git
 
-![[IMG-20260403181734003.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331268.png]]
 
 **ssh 配置**
 
@@ -289,11 +289,11 @@ Hi rich1e! You've successfully authenticated, but GitHub does not provide shell 
 
 第一次运行 zsh 时会进入如下的配置引导页面：[^zsh 安装与配置：9步打造高效命令行]
 
-![[IMG-20260403181734001.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331292.png]]
 
 输入输入 `1` 后，就开始进行配置，如下：
 
-![[IMG-20260403181734002.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331318.png]]
 
 先选择 0，由于 zsh 配置较为复杂，推荐大家使用配置管理工具来配置 zsh[^Zsh - ArchWiki]，下面介绍如何使用 Oh-My-Zsh 来修改 zsh 的主题和安装常用的插件。
 
@@ -379,7 +379,7 @@ plugins=( [plugins...] incr)
     ➜  ~ vi /usr/share/doc/autojump/README.Debian
     ```
 
-![[IMG-20260403181734008.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331345.png]]
 
 2. 将下面的代码添加到 `~/.zshrc` 激活插件：
 
@@ -389,7 +389,7 @@ plugins=( [plugins...] incr)
 
 #### pokemonsay
 
-![[IMG-20260403181734012.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331364.png]]
 
 1. 安装插件
 
@@ -413,7 +413,7 @@ fortune | pokemonsay
 
 > fortune，随机语言；cowsay，是一个生成[ASCII](https://zh.m.wikipedia.org/wiki/ASCII)图片的程序
 
-![[IMG-20260403181734013.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331398.png]]
 
 fortune 是一个非常简单的小程序，几乎存在于所有的 unix、bsd、linux 操作系统上，它的功能很简单，就是从数据库中随机返回一句话。一些有趣的安装包：
 
@@ -424,11 +424,11 @@ sudo apt-get -y install fortunes-spam
 sudo apt-get -y install fortunes-debian-hints
 ```
 
-![[IMG-20260403181734014.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331419.png]]
 
 #### Oh-My-Zsh 常用命令
 
-![[IMG-20260403181734010.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331438.png]]
 
 ```shell
 # 更新
@@ -437,7 +437,7 @@ sudo apt-get -y install fortunes-debian-hints
 ➜  ~ source ~/.zshrc
 ```
 
-![[IMG-20260403181734011.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331461.png]]
 
 ### nvm
 
@@ -525,7 +525,7 @@ pyenv version
 
 ## VS Code 远程开发调试[^VS Code Remote Development]
 
-![[IMG-20260403181734009.png]]
+![[assets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260424143331497.png]]
 
 > https://zhuanlan.zhihu.com/p/432865918
 > https://www.zicode.com/blog/2022/04/14/wsl2%E7%A3%81%E7%9B%98%E8%AF%BB%E5%86%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/

@@ -1,5 +1,3 @@
-# Blog
-
 ```ad-note
 title: GitHub & Actions
 
@@ -22,15 +20,15 @@ _github-pages-challenge-rich1e
 977af2d598b3cb94cbb6933b55a1db
 ```
 
-![[assets/2023/Blog/IMG-20260403174654004.png]]
+![[assets/2023/Blog/IMG-20260424143323996.png]]
 
-![[assets/2023/Blog/IMG-20260403174654012.png]]
+![[assets/2023/Blog/IMG-20260424143324005.png]]
 
-![[assets/2023/Blog/IMG-20260403174654024.png]]
+![[assets/2023/Blog/IMG-20260424143324014.png]]
 
-![[assets/2023/Blog/IMG-20260403174654031.png]]
+![[assets/2023/Blog/IMG-20260424143324022.png]]
 
-![[assets/2023/Blog/IMG-20260403174654042.png]]
+![[assets/2023/Blog/IMG-20260424143324030.png]]
 
 ```ad-note
 title: blog续费

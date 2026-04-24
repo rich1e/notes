@@ -21,7 +21,7 @@ title: mac install electron error & RequestError: connect ETIMEDOUT
 
 **20221220**
 
-![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260403174655766.png]]
+![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260424143326117.png]]
 
 -   `GlobalParameters`与`Message`并排排列, 初始宽度比例为`6:4`, 两个窗口的父容器可进行高度调整, 两个并排窗口之间增加橡皮筋, 用户可自由拖动设置窗口宽度比例
 -   `GlobalParameters`中可对全局参数进行新增/修改/删除, 列宽根据内容自适应, 也点击表头进行排序
@@ -29,7 +29,7 @@ title: mac install electron error & RequestError: connect ETIMEDOUT
 
 **20221221**
 
-![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260403174655778.png]]
+![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260424143326141.png]]
 
 -   “两个窗口的父容器可进行高度调整”：会导致 CAD 重新绘制，不做。
 -   “全局参数进行新增/修改/删除”：新增：见上条评论中的 New 按钮；修改：在单元格双击可直接编辑；删除：上条评论中的图片，最后一列放置删除的图标。

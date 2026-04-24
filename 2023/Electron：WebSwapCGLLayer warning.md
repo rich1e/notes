@@ -1,6 +1,6 @@
 最近在本地运行 Electron 项目的时候，命令运行后很长一段时间，应用窗口并没有如期打开。发现控制台输出以下信息：
 
-![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260403174654222.png]]
+![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260424143324228.png]]
 
 带着疑问，上网查询了相关问题，**发现这个问题好像只发生在使用 ARM 芯片的 Mac 电脑上。**
 
@@ -14,13 +14,13 @@
 
 上面说，Chromium 也可能存在完全相同的问题。
 
-![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260403174654232.png]]
+![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260424143324241.png]]
 
 解决方法也很简单，重命名。将 **WebSwapCGLLayer** 改为 **WebSwapCGLLayerChromium**。
 
 项目当前使用的版本是 `v21.3.0`，然后查询了 Electron 修复版本的历史记录，最终找到 `v21.3.4`，该版本修复了 `WebSwapCGLLayer` 问题。
 
-![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260403174654243.png]]
+![[assets/2023/Electron：WebSwapCGLLayer warning/IMG-20260424143324259.png]]
 
 Ref
 

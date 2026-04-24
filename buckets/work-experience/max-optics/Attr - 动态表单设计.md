@@ -381,22 +381,22 @@ UI模板 -> 功能函数: 调用
 ```
 
 ## UI视图
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657113.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330683.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657133.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330700.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657151.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330713.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657185.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330733.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657204.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330753.png]]
 
 ## bind 数据回显
 
 > 抹平前后端数据字段的命名差异，提供易于理解、可维护的字段关系。
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657222.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330778.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657241.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330797.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260403174657259.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260424143330821.png]]

@@ -41,11 +41,11 @@ No further action is required.
       689,552 allocation units available on disk.
 ```
 
-![[assets/workspce/Draft/IMG-20260403174657973.png]]
+![[assets/workspce/Draft/IMG-20260424143331927.png]]
 
 ## Git
 
-![[assets/workspce/Draft/IMG-20260403174657997.png]]
+![[assets/workspce/Draft/IMG-20260424143331947.png]]
 
 [Git问题解决方案:不建议在没有为偏离分支指定合并策略时执行pull操作(Pulling without specifying how to reconcile divergent branches)_快乐李同学(李俊德-大连理工大学)的博客-CSDN博客](https://blog.csdn.net/wq6ylg08/article/details/114106272)
 

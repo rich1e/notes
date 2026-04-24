@@ -36,7 +36,7 @@
 
 如果真的泄露了有什么问题呢 ? 我也不知道可能导致什么，或许你可能收到下图这样的消息。
 
-![[assets/2023/Clash/IMG-20260403174654144.png]]
+![[assets/2023/Clash/IMG-20260424143324148.png]]
 
 我觉得还是尽量不要让他们知道这件事。虽然没有人知道具体的探测机制是什么，但很可能是从网络层面获取的。在一般的家庭网络拓扑中，[wireshark](https://www.wireshark.org/)可以看到什么内容，运营商就能看见什么内容，所以你使用114.114.114.114、223.5.5.5这样的DNS解析去访问了什么网站是很清晰的。
 
@@ -57,17 +57,17 @@
 
 安装成功后右侧**小地球应变为**==绿色==
 
-![[assets/2023/Clash/IMG-20260403174654155.png]]
+![[assets/2023/Clash/IMG-20260424143324159.png]]
 
 
-![[assets/2023/Clash/IMG-20260403174654174.png]]
+![[assets/2023/Clash/IMG-20260424143324177.png]]
 ### 设置并开启CFW TUN
 
 点击`TUN Mode` **旁边的齿轮 >** `Reset` **>** `Save`
 
-![[assets/2023/Clash/IMG-20260403174654187.png]]
+![[assets/2023/Clash/IMG-20260424143324189.png]]
 
-![[assets/2023/Clash/IMG-20260403174654197.png]]
+![[assets/2023/Clash/IMG-20260424143324201.png]]
 
 **DNS Servers**
 
@@ -94,7 +94,7 @@ ref: [CFW TUN 模式 - Oculus中文指南](https://ocguide.eyw015.com/quest-guid
 
 > https://github.com/Loyalsoldier/geoip
 
-![[assets/2023/Clash/IMG-20260403174654208.png]]
+![[assets/2023/Clash/IMG-20260424143324217.png]]
 
 
 orig
