@@ -26,3 +26,10 @@ title: CSS 打字机 & JS 打字机 & HTML中\n换行
 
 #css #typesetting #animation
 ```
+
+## 🔗 相关阅读
+- [[2023-01-31_Tuesday]]
+- [[2023-07-20_Thursday]]
+- [[2023-07-24_Monday]]
+- [[2023-09-19_Tuesday]]
+- [[2023-10-09_Monday]]

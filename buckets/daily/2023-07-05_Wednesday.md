@@ -12,3 +12,10 @@ uuid: 091556ec-e81f-bdd9-9d08-d1e3f3fc78c0
 - 11:34 [openlayers中文教程](https://linwei.xyz/ol3-primer/ch01/index.html)<br>OpenLayers 3简称ol3，它是一个开源的Web GIS引擎，使用了JavaScript、最新的HTML5技术及CSS技术，支持dom，canvas和webgl三种渲染方式。除了支持网页端，还支持移动端（目前移动端还不成熟，有待进一步完善）。在地图数据源方面，支持各种类型的瓦片地图，既支持在线的，也支持离线的。比如OSM, Bing, MapBox, Stamen, MapQuest等等；还支持各种矢量地图，比如GeoJSON，TopoJSON，KML，GML等等。随着OpenLayers 3的进一步发展，将支持更多的地图类型。<br>#OpenLayers #WebGIS ^js743y
 - 16:15 https://github.com/krausest/js-framework-benchmark 一些流行的JavaScript框架的性能比较<br>#framework
 - 16:17 [前端性能优化-优化大量图片加载&超大图片加载(附懒加载实现方案) - 掘金](https://juejin.cn/post/6944743489028489224)<br>[现代图片性能优化及体验优化指南 - 懒加载及异步图像解码方案 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/17162742.html)<br>#performance
+
+## 🔗 相关阅读
+- [[2023-06-30_Friday]]
+- [[2023-07-10_Monday]]
+- [[2024-04-11_Thursday]]
+- [[2024-04-18_Thursday]]
+- [[2024-04-29_Monday]]

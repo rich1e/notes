@@ -16,4 +16,11 @@ uuid: <% tp.user.get_guid() %>
   [前端处理blob实现预览pdf和下载zip通过blob对文件预览和下载的处理 最近刚好遇到对pdf文件和zip压缩文件的 - 掘金](https://juejin.cn/post/7104181019569291301)
   [javascript下载文件五种方式整理javascript下载文件五种方式，包括：window.location.hr - 掘金](https://juejin.cn/post/7280794176832520246)
   
-  #h5 #download #blob #javascript #pdf #excel  
+  #h5 #download #blob #javascript #pdf #excel
+
+## 🔗 相关阅读
+- [[2023-01-09_Monday]]
+- [[2023-02-13_Monday]]
+- [[2023-03-27_Monday]]
+- [[2023-04-20_Thursday]]
+- [[2023-05-16_Tuesday]]

@@ -31,4 +31,11 @@ uuid: <% tp.user.get_guid() %>
   [l0o0/jasminum: A Zotero add-on to retrive CNKI meta data. 一个简单的Zotero 插件，用于识别中文元数据](https://github.com/l0o0/jasminum)
   [ZotFile - Zotero 的高级 PDF 管理 --- ZotFile - Advanced PDF management for Zotero](https://zotfile.com/#how-to-install--set-up-zotfile)
   [redleafnew/delitemwithatt: Remove attachment(s) when delete the item(s) or collection in Zotero and JurisM.](https://github.com/redleafnew/delitemwithatt?tab=readme-ov-file)
-  #zotero  
+  #zotero
+
+## 🔗 相关阅读
+- [[2022-10-27_Thursday]]
+- [[2022-12-09_Friday]]
+- [[2023-01-13_Friday]]
+- [[2023-01-28_Saturday]]
+- [[2023-06-06_Tuesday]]

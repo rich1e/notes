@@ -11,4 +11,11 @@ uuid: <% tp.user.get_guid() %>
   [输入法规则（U模式输入）_拼音打字u模式偏旁部首输入-CSDN博客](https://blog.csdn.net/zhiyan18/article/details/122693801)
   [拼音打字的进阶技巧 - 知乎](https://zhuanlan.zhihu.com/p/660526728)
   
-  #windows #输入法 
+  #windows #输入法
+
+## 🔗 相关阅读
+- [[2023-06-06_Tuesday]]
+- [[2024-08-29_Thursday]]
+- [[2024-08-30_Friday]]
+- [[2024-09-11_Wednesday]]
+- [[2024-10-11_Friday]]

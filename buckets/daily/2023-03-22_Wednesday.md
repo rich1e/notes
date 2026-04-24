@@ -127,3 +127,10 @@ Ref
 
 [Homebrew — The Missing Package Manager for macOS (or Linux)](https://brew.sh/)
 [Brew tutorial | difyel - Tuorials](https://difyel.com/tutorial/brew-tutorial/index.html)
+
+## 🔗 相关阅读
+- [[2023-01-28_Saturday]]
+- [[2023-02-06_Monday]]
+- [[2023-02-13_Monday]]
+- [[2023-03-16_Thursday]]
+- [[2023-03-28_Tuesday]]

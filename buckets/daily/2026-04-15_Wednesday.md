@@ -23,4 +23,11 @@ uuid: <% tp.user.get_guid() %>
   [给nds游戏手动打反烧录补丁的方法-百度贴吧](https://tieba.baidu.com/p/8866483169?fid=514588&pid=150271993483&cid=150272774495#150272774495)
   [DeadSkullzJr's NDS(i) Cheat Databases | GBAtemp.net - The Independent Video Game Community](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711/)
   [clrmamepro --- clrmamepro](https://mamedev.emulab.it/clrmamepro/#docs)
-  #DSTWO #NDS #NDSi  
+  #DSTWO #NDS #NDSi
+
+## 🔗 相关阅读
+- [[2023-04-27_Thursday]]
+- [[2023-09-21_Thursday]]
+- [[2024-04-29_Monday]]
+- [[2024-05-05_Sunday]]
+- [[2024-06-25_Tuesday]]

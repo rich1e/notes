@@ -31,3 +31,10 @@ title: 每日一跃
 ```
 
 [[buckets/excalidraw/Drawing 2023-05-17 09.53.43.excalidraw]]
+
+## 🔗 相关阅读
+- [[2023-02-09_Thursday]]
+- [[2023-04-19_Wednesday]]
+- [[2023-05-26_Friday]]
+- [[2023-06-25_Sunday]]
+- [[2023-06-26_Monday]]

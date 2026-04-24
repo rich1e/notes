@@ -28,3 +28,6 @@ title: 每日一跃
 [如何使用 JavaScript 从 PDF 中提取并渲染页面](https://www.freecodecamp.org/chinese/news/extract-pdf-pages-render-with-javascript/)
 
 ```
+
+## 🔗 相关阅读
+- [[2023-03-30_Thursday]]

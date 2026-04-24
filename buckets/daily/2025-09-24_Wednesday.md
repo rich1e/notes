@@ -26,3 +26,10 @@ uuid: <% tp.user.get_guid() %>
   > brew tap 报错原因是，git 拉取代码时使用的是 https，通过 ssh 的方式可以避免该问题。
   
   #brew
+
+## 🔗 相关阅读
+- [[2023-02-06_Monday]]
+- [[2023-03-22_Wednesday]]
+- [[2023-04-14_Friday]]
+- [[2023-04-16_Sunday]]
+- [[2023-08-10_Thursday]]

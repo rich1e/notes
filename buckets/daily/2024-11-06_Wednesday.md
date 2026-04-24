@@ -12,4 +12,11 @@ uuid: <% tp.user.get_guid() %>
   [ChatGPT捷徑分享：「嘿賈維斯」取代iPhone Siri 語音助理教學 - 瘋先生](https://mrmad.com.tw/iphone-chatgpt-shortcut-siri-script)
   [如何讓Siri整合ChatGPT？用官方ChatGPT iPhone捷徑輕鬆實現 - 瘋先生](https://mrmad.com.tw/siri-chatgpt-shortcut)
   
-  #iOS #iPhone #chatgpt  
+  #iOS #iPhone #chatgpt
+
+## 🔗 相关阅读
+- [[2023-02-27_Monday]]
+- [[2023-03-28_Tuesday]]
+- [[2023-03-29_Wednesday]]
+- [[2023-03-30_Thursday]]
+- [[2023-04-07_Friday]]

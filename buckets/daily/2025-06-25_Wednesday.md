@@ -53,4 +53,11 @@ uuid: <% tp.user.get_guid() %>
   [1.3 Install with Docker](https://help.penpot.app/technical-guide/getting-started/docker/)
   [设计师狂喜，好用好看的原型设计软件，Figma替代品！-Penpot](https://mp.weixin.qq.com/s?__biz=MzU0ODk1ODQxOQ==&mid=2247485702&idx=1&sn=442c1f04e599f1d69919e7999d8c8307&chksm=fa8865528f7b2dc3829f91af9dbc1e10fec2d7e43cadc87e83a4ae268b6e48c6728719bcb160#rd)
   
-  #Penpot #Cursor #AI #MCP  
+  #Penpot #Cursor #AI #MCP
+
+## 🔗 相关阅读
+- [[2023-02-09_Thursday]]
+- [[2023-03-14_Tuesday]]
+- [[2023-03-24_Friday]]
+- [[2023-03-31_Friday]]
+- [[2023-04-04_Tuesday]]

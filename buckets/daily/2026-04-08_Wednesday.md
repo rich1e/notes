@@ -20,4 +20,11 @@ uuid: <% tp.user.get_guid() %>
   [(99+ 封私信 / 82 条消息) 开源 Claude Code 工程级开发插件 Superpowers 完整上手攻略 - 知乎](https://zhuanlan.zhihu.com/p/2014662982093801432)
   [(99+ 封私信 / 82 条消息) 实测爆火Skill：Superpowers+任务板，重新定义AI编程协作 - 知乎](https://zhuanlan.zhihu.com/p/1997746719430046522)
   [Superpowers 详细用法教程 - gyc567 - 博客园](https://www.cnblogs.com/gyc567/p/19510203)
-  #skill-superpowers #Skills  
+  #skill-superpowers #Skills
+
+## 🔗 相关阅读
+- [[2024-05-08_Wednesday]]
+- [[2025-06-03_Tuesday]]
+- [[2025-06-04_Wednesday]]
+- [[2025-06-24_Tuesday]]
+- [[2025-06-25_Wednesday]]

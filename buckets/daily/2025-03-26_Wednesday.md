@@ -21,4 +21,7 @@ uuid: <% tp.user.get_guid() %>
   [如何通过 WiFi 把手机中的电子书传送到 Kindle – 书伴](https://bookfere.com/post/613.html)
   [Kindle 怎么导入电子书（图解多种电子书导入方式） – 书伴](https://bookfere.com/post/459.html)
   
-  #kindle  
+  #kindle
+
+## 🔗 相关阅读
+- [[2024-06-08_Saturday]]

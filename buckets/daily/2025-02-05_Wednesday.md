@@ -32,4 +32,7 @@ uuid: <% tp.user.get_guid() %>
   [考勤表模板下载 -【快客excel】](https://www.kkexcel.com/biaoge/kaoqin/)
   [员工考勤表模板（可自动更新日期） -【快客excel】](https://www.kkexcel.com/biaoge/kaoqin/19.html#ecms)
   
-  #excel  
+  #excel
+
+## 🔗 相关阅读
+- [[2024-12-25_Wednesday]]

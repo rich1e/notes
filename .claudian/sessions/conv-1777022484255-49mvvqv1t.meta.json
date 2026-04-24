@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777022484255-49mvvqv1t",
+  "providerId": "claude",
+  "title": "# 统计 daily 目录中文件的标签数量\n\n我需要检查 @buckets/daily/ 目录...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777022484256,
+  "updatedAt": 1777023334434,
+  "lastResponseAt": 1777023334434,
+  "sessionId": "f9f1148f-998c-4859-b81f-fdff720e6825",
+  "providerState": {
+    "providerSessionId": "f9f1148f-998c-4859-b81f-fdff720e6825"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}

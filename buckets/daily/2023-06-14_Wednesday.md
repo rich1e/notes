@@ -79,3 +79,6 @@ nvm deactivate
 
 [node.js - nvm: Cannot uninstall currently-active node version - Stack Overflow](https://stackoverflow.com/questions/38775287/nvm-cannot-uninstall-currently-active-node-version)
 
+## 🔗 相关阅读
+- [[2023-07-10_Monday]]
+- [[2024-09-10_Tuesday]]

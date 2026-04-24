@@ -1,5 +1,3 @@
-# Windows Settings
-
 ## 初始化环境
 
 1. 申请机器；

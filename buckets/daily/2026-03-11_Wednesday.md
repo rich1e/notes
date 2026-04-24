@@ -24,3 +24,7 @@ uuid: <% tp.user.get_guid() %>
   [口袋妖怪心金 图文攻略（2） - 哔哩哔哩](https://www.bilibili.com/read/cv14561442/?opus_fallback=1)
   
   #Pokémon
+
+## 🔗 相关阅读
+- [[2026-03-12_Thursday]]
+- [[2026-03-13_Friday]]

@@ -54,4 +54,11 @@ uuid: <% tp.user.get_guid() %>
   [苹果手机居然可以运行windows linux MacOS 首款iOS虚拟机UTM（苹果iOS虚拟机） - YouTube](https://www.youtube.com/watch?v=x0sGWL8zQpg&ab_channel=%E6%B4%8B%E8%91%B1)
   [iPad能装Android系统,我错了，原来iPad真的能装Windows和MacOS系统-CSDN博客](https://blog.csdn.net/weixin_42306688/article/details/117665723)
   
-  #UTM #iOS  
+  #UTM #iOS
+
+## 🔗 相关阅读
+- [[2023-06-30_Friday]]
+- [[2023-07-05_Wednesday]]
+- [[2023-07-10_Monday]]
+- [[2023-07-14_Friday]]
+- [[2023-08-09_Wednesday]]

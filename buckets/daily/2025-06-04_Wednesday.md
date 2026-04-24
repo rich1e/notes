@@ -21,4 +21,11 @@ uuid: <% tp.user.get_guid() %>
   [Cursor – 模型上下文协议 --- Cursor – Model Context Protocol](https://docs.cursor.com/context/model-context-protocol#mcp-resources)
   [Framelink Figma MCP Server MCP Server](https://mcp.so/zh/server/Figma-Context-MCP/GLips?tab=comments)
   
-  #Cursor #MCP #Figma #AI  
+  #Cursor #MCP #Figma #AI
+
+## 🔗 相关阅读
+- [[2023-04-16_Sunday]]
+- [[2023-06-12_Monday]]
+- [[2023-10-30_Monday]]
+- [[2024-05-08_Wednesday]]
+- [[2024-09-29_Sunday]]

@@ -8,3 +8,10 @@ uuid: 098ee677-8fee-0df8-0bfb-ff2e110c7762
 
 - 13:01 [macOS 使用 QuickLook 预览高亮查看任意代码源文件 - 掘金](https://juejin.cn/post/6844904115936608270)<br>[sindresorhus/quick-look-plugins: List of useful Quick Look plugins for developers](https://github.com/sindresorhus/quick-look-plugins?tab=readme-ov-file)<br>[chamburr/glance: 🔎 All-in-one Quick Look plugin --- chamburr/glance：🔎多合一的快速查看插件](https://github.com/chamburr/glance)<br>#mac #quick-look
 - 16:34 [Telegram 不限速下载上传工具（适用于禁止转发保存内容） - SunPma'Blog](https://sunpma.com/1149.html)<br>[介绍 | tdl](https://docs.iyear.me/tdl/zh/)<br>#telegram #tdl
+
+## 🔗 相关阅读
+- [[2023-02-13_Monday]]
+- [[2023-02-21_Tuesday]]
+- [[2023-03-18_Saturday]]
+- [[2023-03-23_Thursday]]
+- [[2023-04-16_Sunday]]

@@ -86,3 +86,10 @@ title: iTerm2 配置
 [Hotkey](https://manual.raycast.com/hotkey)
 
 ```
+
+## 🔗 相关阅读
+- [[2022-12-31_Saturday]]
+- [[2023-01-31_Tuesday]]
+- [[2023-05-08_Monday]]
+- [[2023-05-22_Monday]]
+- [[2023-06-12_Monday]]

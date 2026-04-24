@@ -42,4 +42,11 @@ uuid: <% tp.user.get_guid() %>
   [Mac 提示 Operation not permitted 解决方法,Mac根目录下创建目录出现Read-only file system的问题 - 掘金](https://juejin.cn/post/6946094198235856932)
   [Mac提示operation not permitted解决方式_mac operation not permitted-CSDN博客](https://blog.csdn.net/alice_tl/article/details/89291455)
   
-  #mac  
+  #mac
+
+## 🔗 相关阅读
+- [[2023-02-09_Thursday]]
+- [[2023-02-13_Monday]]
+- [[2023-02-21_Tuesday]]
+- [[2023-03-18_Saturday]]
+- [[2023-03-23_Thursday]]

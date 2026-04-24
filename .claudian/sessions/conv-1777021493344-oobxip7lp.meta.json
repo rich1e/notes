@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777021493344-oobxip7lp",
+  "providerId": "claude",
+  "title": "为 Obsidian 笔记库中的 daily 目录创建笔记间链接",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777021493347,
+  "updatedAt": 1777022257808,
+  "lastResponseAt": 1777022257807,
+  "sessionId": "83aec5ec-d946-451b-b002-b735e8321c3a",
+  "providerState": {
+    "providerSessionId": "83aec5ec-d946-451b-b002-b735e8321c3a"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}

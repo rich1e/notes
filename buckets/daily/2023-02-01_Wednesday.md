@@ -42,3 +42,10 @@ title: 每日一跃
 
 关键词： #ShareX #LICEcap #Keycastr #GIPHY
 ```
+
+## 🔗 相关阅读
+- [[2023-05-13_Saturday]]
+- [[2023-06-09_Friday]]
+- [[2023-07-21_Friday]]
+- [[2023-07-26_Wednesday]]
+- [[2025-02-18_Tuesday]]

@@ -14,3 +14,10 @@ uuid: 558bbaf5-0fab-eafa-e770-14d23361e4e5
 - 16:41 stylelint 如何配置？<br><br>[Level up your CSS linting using Stylelint - LogRocket Blog](https://blog.logrocket.com/using-stylelint-improve-lint-css-scss-sass/)<br>[Customizing | Stylelint](https://stylelint.io/user-guide/customize/)<br>[Stylelint: The Style Sheet Linter We’ve Always Wanted — Smashing Magazine](https://www.smashingmagazine.com/2016/05/stylelint-the-style-sheet-linter-weve-always-wanted/)<br>[postcss/postcss-bem-linter: A BEM linter for postcss](https://github.com/postcss/postcss-bem-linter#defining-a-component)<br>[style-lint | BryanAdamss的博客](https://bryanadamss.github.io/2020/03/05/style-lint/)<br>[stylelint](https://stylelint.docschina.org/)<br>[simonsmith/stylelint-selector-bem-pattern: Stylelint plugin that incorporates postcss-bem-linter](https://github.com/simonsmith/stylelint-selector-bem-pattern)<br>[Sass Guidelines — Chinese translation](https://sass-guidelin.es/zh/#section-44)<br>[Stylelint该如何配置？Stylelint使用以及相关配置说明-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2218908?cps_key=1d358d18a7a17b4a6df8d67a62fd3d3d)<br>#stylelint
 - 17:32 [聊一聊Typescript中与this相关的类型定义 - 掘金](https://juejin.cn/post/6859914549341093896)<br>[详解Typescript里的This - 知乎](https://zhuanlan.zhihu.com/p/104565681)<br>#Typescript #class ^nhw4yb
 - 19:07 - this 缺乏类型定义；<br>- JSON 对象太大，未结构化；<br>- style 大文件，未分离；<br>- 清理第三方代码, e.g. vben；<br>- 未开启 ts 检查；（@ts-ignore, eslint-disable）<br>- setTimeout 优化；<br>- 优先使用组合模式而非继承；<br>- 使用有意义，可读性好的变量名（node, value, key）;<br>- switch case 判断条件超过3次以上；<br>- if / else if 判断条件超过3次以上；<br>- if / else if 嵌套超过2次以上；<br>- try / catch 中捕获的错误不做任何处理是没有意义的；<br>- 定义良好的可读性且易于检索的变量（ > 10，> 5）<br>- 科学计数直接用于运算 ^rcyyqo
+
+## 🔗 相关阅读
+- [[2022-10-21_Friday]]
+- [[2022-10-26_Wednesday]]
+- [[2022-12-30_Friday]]
+- [[2023-01-13_Friday]]
+- [[2023-01-30_Monday]]
