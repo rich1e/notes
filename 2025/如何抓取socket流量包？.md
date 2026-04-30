@@ -11,9 +11,9 @@
         
 3. 在 **SSL Proxying Settings** 中添加需要解密的域名或通配符（如 `*:*` 以捕获所有SSL流量）。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325344.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501654.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325356.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501684.png]]
 ### **步骤2：配置Mac系统代理**
 
 1. 打开 **系统偏好设置 > 网络 > 高级 > 代理**。
@@ -26,18 +26,18 @@
         
 3. 确保iOS模拟器继承此代理（模拟器默认共享Mac网络设置）。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325373.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501714.png]]
 ### **步骤3：在模拟器中安装Charles证书**
 
 1. 在模拟器中打开Safari，访问 `http://chls.pro/ssl` 下载证书。
     
 2. 安装证书后，进入 **设置 > 通用 > 关于 > 证书信任设置**，启用对Charles证书的完全信任。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325403.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501742.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325419.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501779.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325433.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501825.png]]
 
 ### **步骤4：配置Proxifier**
 
@@ -47,10 +47,10 @@
     
 3. **修改DNS配置**。编辑 **Proxifier DNS Settings**，选择 `Resolve hostnames through proxy`。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325453.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501857.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325470.png]]
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325485.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501900.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101501972.png]]
 ### **步骤5：捕获Socket流量**
 
 1. 配置完成后，**重启`Proxifier`**, 最好也**重启下`Charles`**，以确保配置生效。
@@ -63,9 +63,9 @@
 
 >截图中均出现了，`80fa3d23-f568-460f-9b4d-856381d2332a`。第一张图是 **console.log** 打印的日志，第二张图是 **Charles** 里面抓取的数据。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325502.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101502003.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325520.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101502029.png]]
 
 ## 🎬场景二：真机 + Charles + Shadowrocket
 
@@ -83,9 +83,9 @@
     
 4. **配置Shadowrocket**，新增代理服务，类型为Socks5，地址设置为电脑的局域网IP：`192.168.110.113`，端口`8889`（这个端口被Charles监听）。
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325534.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101502080.png]]
 
-![[assets/2025/如何抓取socket流量包？/IMG-20260424143325553.png]]
+![[assets/2025/如何抓取socket流量包？/IMG-20260430101502110.png]]
 
 ### **步骤5：捕获Socket流量**
 

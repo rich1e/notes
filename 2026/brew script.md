@@ -14,3 +14,7 @@
 
 - [教你使用 asciinema 录制命令行操作 - 知乎](https://zhuanlan.zhihu.com/p/28423868)
 - [API - asciinema docs](https://docs.asciinema.org/manual/server/api/)
+
+## try
+
+- [tobi/try: fresh directories for every vibe](https://github.com/tobi/try)

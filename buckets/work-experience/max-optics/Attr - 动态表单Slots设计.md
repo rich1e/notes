@@ -134,9 +134,9 @@ const formConfig: ConfigType = {
 
 ## 项目应用
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330337.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508706.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330362.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508740.png]]
 
 ## 优化对比
 
@@ -145,18 +145,18 @@ const formConfig: ConfigType = {
 - UI 模板灵活扩展，可重复使用
 - Typescript 类型定义清晰，结合IDE提示属性字段类型，减少编码时错误
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330397.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508764.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330413.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508801.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330483.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508840.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330529.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508874.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330547.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508901.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330564.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508932.png]]
 
 ## npm 
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260424143330586.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单Slots设计/IMG-20260430101508958.png]]

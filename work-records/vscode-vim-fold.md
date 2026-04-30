@@ -7,7 +7,7 @@
 `zM` - 折叠全部内容
 `zR` - 打开折叠的全部内容
 
-![[assets/work-records/vscode-vim-fold/IMG-20260424143331684.gif]]
+![[assets/work-records/vscode-vim-fold/IMG-20260430101510477.gif]]
 
 `vi{` 选中范围（使用了 `vim-surround`），`af` 扩大选择范围，直到指定内容全部选中， `zf` 折叠选中内容，`zo` 打开折叠内容。
 

@@ -8,15 +8,15 @@ date: 2023-03-22 10:50:54
 
 open `FDE Analysis`
 
-![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260424143326291.png]]
+![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260430101502758.png]]
 
 click `Mesh Structure`
 
-![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260424143326306.png]]
+![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260430101502825.png]]
 
 click `Calculate Modes`
 
-![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260424143326320.png]]
+![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260430101502863.png]]
 
 
 ```ad-note
