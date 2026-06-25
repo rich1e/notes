@@ -6,7 +6,7 @@
 exa -T --level=6 --ignore-glob="node_modules|mock|views|example|helper|public" --git-ignore --sort=ext
 ```
 
-![[assets/work-records/command-exa/IMG-20260430101510303.png]]
+![[assets/work-records/command-exa/IMG-20260430171339907.png]]
 
 ## 相关笔记
 

@@ -10,7 +10,7 @@ B[输入用户名和密码] ==> C[跳转项目管理页面]
 C[跳转项目管理页面] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509248.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338807.png]]
 
 - [API Document - login](http://192.168.91.37/api/login/)
 - [API Document - get_user](http://192.168.91.37/api/get_user/)
@@ -32,11 +32,11 @@ B[跳转CAD设计平台,弹出输入项目名称] ==> C[输入项目名称,点�
 C[输入项目名称,点击确认] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509295.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338853.png]]
 
 - [API Document - circle_summary](http://192.168.91.37/api/circle_summary/)
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509323.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338887.png]]
 
 - [API Document - check_token](http://192.168.91.37/api/check_token/)
 - [API Document - search_waveforms](http://192.168.91.37/api/search_waveforms/)
@@ -52,7 +52,7 @@ C[输入项目名称,点击确认] ==> BT(End)
 - [API Document - search_projects](http://192.168.91.37/api/search_projects/)
 - [API Document - search_projects](http://192.168.91.37/api/search_projects/)
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509361.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338921.png]]
 
 - [API Document - search_projects](http://192.168.91.37/api/search_projects/)
 - [API Document - search_projects](http://192.168.91.37/api/search_projects/)
@@ -80,16 +80,16 @@ E[添加/删除材料] ==> F[关闭弹窗]
 F[关闭弹窗] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509390.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338956.png]]
 
 - [API Document - get_public_materials](http://192.168.91.37/api/get_public_materials/)
 - [API Document - search_materials](http://192.168.91.37/api/search_materials/)
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509422.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171338990.png]]
 
 - [API Document - change_materials](http://192.168.91.37/api/change_materials/)
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509459.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339022.png]]
 
 - [API Document - create_material](http://192.168.91.37/api/create_material/)
 - [API Document - delete_material](http://192.168.91.37/api/delete_material/)
@@ -109,7 +109,7 @@ E[添加/删除波形] ==> F[关闭弹窗]
 F[关闭弹窗] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509499.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339050.png]]
 
 - [API Document - search_waveforms](http://192.168.91.37/api/search_waveforms/)
 - [API Document - change_waveforms](http://192.168.91.37/api/change_waveforms/)
@@ -133,7 +133,7 @@ B[CAD显示模型器件] ==> G[拖拽移动]
 G[拖拽移动] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509542.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339097.png]]
 
 - [API Document - autoSave_project](http://192.168.91.37/api/autoSave_project/)
 
@@ -154,7 +154,7 @@ B[CAD显示算法模拟器] ==> G[拖拽移动]
 G[拖拽移动] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509576.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339138.png]]
 
 - [API Document - save_project](http://192.168.91.37/api/save_project/)
 - [API Document - recalc_mesh](http://192.168.91.37/api/recalc_mesh/)
@@ -183,7 +183,7 @@ B[CAD显示模式源] ==> G[拖拽移动]
 G[拖拽移动] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509542.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339097.png]]
 
 - [API Document - autoSave_project](http://192.168.91.37/api/autoSave_project/)
 
@@ -208,11 +208,11 @@ B[CAD显示监视器] ==> G[拖拽移动]
 G[拖拽移动] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509542.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339097.png]]
 
 - [API Document - autoSave_project](http://192.168.91.37/api/autoSave_project/)
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509610.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339172.png]]
 
 - [API Document - autoSave_project](http://192.168.91.37/api/autoSave_project/)
 - [API Document - save_project](http://192.168.91.37/api/save_project/)
@@ -247,7 +247,7 @@ B[CAD显示Port] ==> G[拖拽移动]
 G[拖拽移动] ==> BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509542.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339097.png]]
 
 - [API Document - autoSave_project](http://192.168.91.37/api/autoSave_project/)
 
@@ -264,7 +264,7 @@ TB(Start) ==> A[重新计算网格]
 A[重新计算网格] ==>  BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509645.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339212.png]]
 
 - [API Document - save_project](http://192.168.91.37/api/save_project/)
 - [API Document - recalc_mesh](http://192.168.91.37/api/recalc_mesh/)
@@ -291,7 +291,7 @@ TB(Start) ==> A[Ctrl + s]
 A[Ctrl + s] ==>  BT(End)
 ```
 
-![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430101509681.png]]
+![[assets/buckets/work-experience/max-optics/Orca - 功能流程图和时序图/IMG-20260430171339248.png]]
 
 - [API Document - save_project](http://192.168.91.37/api/save_project/)
 - [API Document - load_project](http://192.168.91.37/api/load_project/)

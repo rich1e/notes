@@ -95,11 +95,11 @@ No analytics data has been sent yet (nor will any be during this **install** run
 
 执行官方脚本之后，需要再运行以下步骤。
 
-![[assets/2024/brew install/IMG-20260430101501242.png]]
+![[assets/2024/brew install/IMG-20260430171330647.png]]
 
 安装完成后，执行 `brew help`。
 
-![[assets/2024/brew install/IMG-20260430101501273.png]]
+![[assets/2024/brew install/IMG-20260430171330682.png]]
 
 
 

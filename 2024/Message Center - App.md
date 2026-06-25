@@ -25,30 +25,30 @@
 
 不同模块，列表内部展示样式不同，操作按钮也不同。
 
-![[assets/2024/Message Center - App/IMG-20260430101500594.png]]
+![[assets/2024/Message Center - App/IMG-20260430171329907.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500631.png]]
+![[assets/2024/Message Center - App/IMG-20260430171329937.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500662.png]]
+![[assets/2024/Message Center - App/IMG-20260430171329972.png]]
 
 ## 弹窗展示
 
-![[assets/2024/Message Center - App/IMG-20260430101500690.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330002.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500719.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330040.png]]
 
 ## 详情展示
 
-![[assets/2024/Message Center - App/IMG-20260430101500746.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330071.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500774.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330108.png]]
 
 ## 消息推送
 
 Message Center **入口 Icon** 、**下拉弹窗**和**页面列表 title** 需要显示消息数目、任务状态（下载中/已完成/toast提示），与后端讨论将使用 `Web Socket` 技术实现。
 
-![[assets/2024/Message Center - App/IMG-20260430101500827.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330135.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500856.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330165.png]]
 
-![[assets/2024/Message Center - App/IMG-20260430101500884.png]]
+![[assets/2024/Message Center - App/IMG-20260430171330201.png]]

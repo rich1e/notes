@@ -1,6 +1,6 @@
 #git 
 
-![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430101510343.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430171339946.png]]
 
 ## WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
@@ -20,9 +20,9 @@
 
 最佳做法如下：
 
-![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430101510368.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430171339980.png]]
 
-![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430101510405.png]]
+![[assets/work-records/git-remote-host-identification-has-changed/IMG-20260430171340013.png]]
 
 1. 检查 `git` 服务器 `ip` 地址
 ```sh

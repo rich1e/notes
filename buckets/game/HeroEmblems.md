@@ -67,7 +67,7 @@
 
 整个游戏很精致，玩了2遍。剧情丰富，还有隐藏的剧情需要玩家自己去发掘，Game Center 中有对应的5个隐藏成就。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101503836.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333251.jpg]]
 
 
 ## 写在开头
@@ -109,20 +109,20 @@
 国王病重，大贤者建议去寻找天空琉璃。
 公主冒冒失失冲出了皇宫，被红色恶魔抓住，皇冠掉落了。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101503874.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333288.jpg]]
 
 翠丝特是一个小财迷，捡起皇冠，欢喜不已。
 霍华德一行人营救去营救公主。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101503929.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333356.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101503982.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333407.jpg]]
 
 > note：得到皇冠，后期能派上用场，先卖个关子。
 
 ## 罗德村
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504054.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333466.jpg]]
 
 遭遇村长被魔物追袭，霍华德一行人将其救下，并淮备消灭村里的魔物。
 
@@ -156,7 +156,7 @@
 
 红箱：技能 (翠丝特-淨化术)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504123.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333529.jpg]]
 
 **BOSS**
 
@@ -190,7 +190,7 @@
 
 小矮人：单独出现！
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504176.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333594.jpg]]
 
 **BOSS**
 
@@ -206,7 +206,7 @@
 
 ## 被遗忘的树林
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504235.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333665.jpg]]
 
 **关卡：**
 
@@ -216,11 +216,11 @@
 
 茶箱：太阳石板
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504332.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333736.jpg]]
 
 ## 漆黑的枯林
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504392.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333806.jpg]]
 
 **关卡：**
 
@@ -230,15 +230,15 @@
 
 茶箱：月亮石板
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504456.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171333980.jpg]]
 
 ## 古代碉堡
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504568.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334032.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504635.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334121.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504686.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334172.jpg]]
 
 **关卡：**
 
@@ -258,9 +258,9 @@
 
 2F 蓝箱：S技能 (奥斯顿-天使的守护)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504748.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334229.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504848.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334315.jpg]]
 
 **BOSS**
 
@@ -274,27 +274,27 @@
 
 物品：迷之红水晶
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101504955.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334381.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505022.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334440.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505102.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334500.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505158.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334558.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505223.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334624.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505322.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334707.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505376.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334757.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505439.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334820.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505492.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334897.jpg]]
 
 ## 遗迹小岛
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505581.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171334962.jpg]]
 
 **关卡：**
 
@@ -308,13 +308,13 @@
 
 这个关口小心迷路
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505715.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335037.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505815.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335126.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505872.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335189.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505931.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335261.jpg]]
 
 **物品：**
 
@@ -329,11 +329,11 @@
 
 物品：天空琉璃
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101505975.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335314.jpg]]
 
 ## 萨亚拉城堡Part.1
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506026.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335409.jpg]]
 
 **关卡：**
 
@@ -341,7 +341,7 @@
 
 宝物库(A) 1小矮人(2)茶箱(8) --> 2迴廊 4/6茶箱(8)蓝箱(8)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506106.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335466.jpg]]
 
 **物品：**
 
@@ -351,7 +351,7 @@
 
 2/2 蓝箱：技能 (霍华德-雷鸣斩)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506154.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335517.jpg]]
 
 **BOSS**
 
@@ -365,17 +365,17 @@
 
 物品：无
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506201.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335596.jpg]]
 
 ## 神秘塔
 
 去往神秘塔的路上会遭遇几次小战役。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506251.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335631.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506315.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335675.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506367.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335725.jpg]]
 
 **关卡：**
 
@@ -393,7 +393,7 @@
 
 茶箱：道具/$$
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506421.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335770.jpg]]
 
 **BOSS**
 
@@ -407,27 +407,27 @@
 
 物品：无
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506471.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335846.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506524.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335930.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506581.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171335976.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506628.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336024.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506678.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336073.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506719.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336126.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506772.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336187.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506826.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336258.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506872.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336315.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506918.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336396.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101506966.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336446.jpg]]
 
 ## 洛西亚镇
 
@@ -451,33 +451,33 @@
 
 ## 洛西亚港口
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507014.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336497.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507075.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336545.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507123.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336614.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507172.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336664.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507222.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336712.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507274.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336762.jpg]]
 
 ## 南方墓园
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507332.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336810.jpg]]
 
 **关卡：**
 
 坟墓区 1 --> 2 --> 3 --> 4蓝箱(6) --> 5 --> 6 BOSS
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507389.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336871.jpg]]
 
 **物品：**
 
 蓝箱：技能 (奥斯顿-粉碎一击)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507438.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336920.jpg]]
 
 **BOSS**
 
@@ -491,9 +491,9 @@
 
 物品：罗盘
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507484.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171336974.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507547.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337025.jpg]]
 
 ## 库洛依德镇
 
@@ -531,11 +531,11 @@
 
 小矮人：技能 (艾尔莎-混乱术)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507584.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337072.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507627.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337130.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507675.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337181.jpg]]
 
 **BOSS**
 技能：冰晶 (倒数完毕冻结周围)
@@ -548,11 +548,11 @@
 
 物品：无
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507717.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337224.jpg]]
 
 ## 恶鬼森林
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507763.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337272.jpg]]
 
 **关卡：**
 
@@ -570,15 +570,15 @@ A 蓝箱：S技能 (霍华德-强夺)
 
 B 蓝箱：道具/$$
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507821.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337322.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507876.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337380.jpg]]
 
 **小BOSS**
 
 技能：锁链串
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507926.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337427.jpg]]
 
 **BOSS**
 
@@ -592,9 +592,9 @@ B 蓝箱：道具/$$
 
 物品：无
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101507981.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337476.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260430101508053.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260430171337526.jpg]]
 
 ## 迷幻的洞窟
 

@@ -23,7 +23,7 @@ netsh advfirewall reset
 systeminfo
 ```
 
-![[assets/work-records/windows-settings/IMG-20260430101510751.png]]
+![[assets/work-records/windows-settings/IMG-20260430171340362.png]]
 
 Ref
 

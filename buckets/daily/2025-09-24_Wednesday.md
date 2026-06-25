@@ -18,7 +18,7 @@ uuid: <% tp.user.get_guid() %>
   https://chromeenterprise.google/policies/?policy=ExtensionManifestV2Availability
    
 - 11:27
-  ![[assets/buckets/daily/2025-09-24_Wednesday/IMG-20260430101503731.png]]
+  ![[assets/buckets/daily/2025-09-24_Wednesday/IMG-20260430171333216.png]]
   ```sh
   brew tap rich1e/kit-tap git@github.com:rich1e/kit-tap.git
   ```

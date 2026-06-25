@@ -83,7 +83,7 @@ pnpm add eslint -D --filter @firmiana/eslint-config
 cd packages/eslint-config && npx eslint --init
 ```
 
-![[assets/2023/Vue3 组件库/IMG-20260430101500110.png]]
+![[assets/2023/Vue3 组件库/IMG-20260430171329402.png]]
 
 默认配置文件 `.eslintrc.js` 如下，将文件名称修改为 `vue-ts.js`。
 
@@ -156,7 +156,7 @@ module.exports = {
 
 再回到代码中选择 js 相关的代码就可以校验出来。
 
-![[assets/2023/Vue3 组件库/IMG-20260430101500137.png]]
+![[assets/2023/Vue3 组件库/IMG-20260430171329439.png]]
 
 编辑器提示和自动修复，还需要安装 `vscode-eslint` 插件并添加以下配置。
 
