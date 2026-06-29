@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "Mobile Development",
+      "path": "buckets/workspce/Mobile Development.md"
+    },
+    {
+      "basename": "Pnpm + git-worktree",
+      "path": "Chronicle/2026/Pnpm + git-worktree.md"
+    },
+    {
+      "basename": "NeoDS-模拟器使用指南",
+      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
+    },
+    {
+      "basename": "macOS-U盘清理与Spotlight保护目录问题",
+      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
+    },
+    {
+      "basename": "Chezmoi 简明教程",
+      "path": "Chronicle/2026/Chezmoi 简明教程.md"
+    },
+    {
+      "basename": "brew script",
+      "path": "Chronicle/2026/brew script.md"
+    },
+    {
       "basename": "Tmux 快捷键 & 速查表 & 简明教程",
       "path": "Clippings/Tmux 快捷键 & 速查表 & 简明教程.md"
     },
@@ -69,28 +93,8 @@
       "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
     },
     {
-      "basename": "Mobile Development",
-      "path": "buckets/workspce/Mobile Development.md"
-    },
-    {
       "basename": "IMG-20260629165057300",
       "path": "assets/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南/IMG-20260629165057300.jpg"
-    },
-    {
-      "basename": "NeoDS-模拟器使用指南",
-      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
-    },
-    {
-      "basename": "macOS-U盘清理与Spotlight保护目录问题",
-      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
-    },
-    {
-      "basename": "Chezmoi 简明教程",
-      "path": "Chronicle/2026/Chezmoi 简明教程.md"
-    },
-    {
-      "basename": "brew script",
-      "path": "Chronicle/2026/brew script.md"
     },
     {
       "basename": "Read Record-20230625",
@@ -107,10 +111,6 @@
     {
       "basename": "Comic",
       "path": "buckets/interest/Comic.md"
-    },
-    {
-      "basename": "Pnpm + git-worktree",
-      "path": "Chronicle/2026/Pnpm + git-worktree.md"
     },
     {
       "basename": "2021-浏览器渲染原理",
