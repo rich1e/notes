@@ -27,6 +27,13 @@ title: Wiki Index
 - [[skills/tmux]] — Tmux 快捷键速查与推荐配置
 - [[skills/terminal-music]] — macOS 终端本地音乐播放（afplay + shell 函数）
 
+## Projects
+
+- [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — AI 外呼热转坐席前端（React 19 + JsSIP + 信科 CC SDK）
+- [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]] — CC SDK 集成：useSoftbar Hook 封装 LaihuAPI
+- [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — 坐席状态机（agentState + callState 双层设计）
+- [[projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow]] — PhoneBar 热转/外呼完整通话流程
+
 ## References
 
 ## Synthesis

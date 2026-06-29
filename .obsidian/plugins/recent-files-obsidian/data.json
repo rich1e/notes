@@ -5,6 +5,22 @@
       "path": "index.md"
     },
     {
+      "basename": "call-center-sdk-integration",
+      "path": "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md"
+    },
+    {
+      "basename": "agent-state-machine",
+      "path": "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md"
+    },
+    {
+      "basename": "xk-ai-talk-desk-ui",
+      "path": "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
       "basename": "fire-emblem-new-mystery-prologue",
       "path": "journal/fire-emblem-new-mystery-prologue.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "游戏模拟器",
       "path": "Chronicle/2024/游戏模拟器.md"
-    },
-    {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
-    },
-    {
-      "basename": "2024 手机模拟器游戏火热🔥",
-      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
-    },
-    {
-      "basename": "Mac Update",
-      "path": "Chronicle/2023/Mac Update.md"
-    },
-    {
-      "basename": "Mac & Electron 跨端开发体验",
-      "path": "Chronicle/2023/Mac & Electron 跨端开发体验.md"
     }
   ],
   "omittedPaths": [],

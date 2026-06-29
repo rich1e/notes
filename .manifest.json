@@ -1,7 +1,20 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-06-29T09:30:00Z",
+  "last_updated": "2026-06-29T10:00:00Z",
+  "projects": {
+    "xk-ai-talk-desk-ui": {
+      "source_cwd": "/Users/rich1e/workspace/xk-dev_1.0.0",
+      "last_synced": "2026-06-29T10:00:00Z",
+      "last_commit_synced": "d2e2c42d26c723d419fc34ce7aa2f346141d2e75",
+      "pages_in_vault": [
+        "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md",
+        "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md",
+        "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md",
+        "projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow.md"
+      ]
+    }
+  },
   "sources": {
     "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
@@ -157,7 +170,7 @@
   "stats": {
     "total_sources_ingested": 15,
     "total_pages": 13,
-    "total_projects": 0,
+    "total_projects": 1,
     "last_full_rebuild": null
   }
 }
