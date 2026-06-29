@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "fire-emblem-new-mystery-prologue",
+      "path": "journal/fire-emblem-new-mystery-prologue.md"
+    },
+    {
       "basename": "Mobile Development",
       "path": "buckets/workspce/Mobile Development.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Mac & Electron 跨端开发体验",
       "path": "Chronicle/2023/Mac & Electron 跨端开发体验.md"
-    },
-    {
-      "basename": "Electron：WebSwapCGLLayer warning",
-      "path": "Chronicle/2023/Electron：WebSwapCGLLayer warning.md"
-    },
-    {
-      "basename": "Clash",
-      "path": "Chronicle/2023/Clash.md"
     }
   ],
   "omittedPaths": [],

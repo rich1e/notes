@@ -1,0 +1,163 @@
+{
+  "version": "1.0",
+  "created": "2026-06-29T09:16:46Z",
+  "last_updated": "2026-06-29T09:30:00Z",
+  "sources": {
+    "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 17418,
+      "modified_at": "2026-06-29T16:57:05Z",
+      "content_hash": "sha256:c88a43399eba6036fa9be0493ea513f548067b98813d369ee4962f10c5d3cc9f",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["skills/claude-code-token-optimization.md", "concepts/prompt-caching.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 41105,
+      "modified_at": "2026-06-29T16:51:54Z",
+      "content_hash": "sha256:5b20360ef72732444708033334d9da85f55148e9cba2f773fcd0abe8a232c9ff",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": ["skills/claude-code-settings.md"]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 配置管理完全指南 - 作用域、权限与企业部署.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 6389,
+      "modified_at": "2026-06-29T16:31:36Z",
+      "content_hash": "sha256:1ff30f27ecd7ead317ecc72a14067ffb41158e8f04a6bb94da8766bb30dba23e",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["skills/claude-code-settings.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Tmux 快捷键 & 速查表 & 简明教程.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 7968,
+      "modified_at": "2026-06-29T16:31:36Z",
+      "content_hash": "sha256:0f86b756012f031d0d23e9f9c8ddb9e4332bf985e8ad6bb200009ecd2bc7a966",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["skills/tmux.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 37591,
+      "modified_at": "2026-06-29T16:54:35Z",
+      "content_hash": "sha256:f4c395a8ec3f4a3675511b9602e7b3007d530508fd42d3f5704d0764c9d1724b",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["concepts/javascript-event-loop.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 36464,
+      "modified_at": "2026-06-29T16:53:19Z",
+      "content_hash": "sha256:c246d137603179aac06b36b80e2a3c5ac12b83b4652ad2a46be2c696bd6d0ca0",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["concepts/browser-process-model.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/前端常见面试-存储缓存篇.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 11414,
+      "modified_at": "2026-06-29T16:55:13Z",
+      "content_hash": "sha256:258505d4c1d09fbdeb78423831beec91e715b21d5d4d27e0f006f1bdc9e06e48",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["concepts/frontend-storage-cache.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 8532,
+      "modified_at": "2026-06-29T16:56:39Z",
+      "content_hash": "sha256:042d6eab9bd4cd1e9e336ce918dee514e36c1bbf0d01cda6990f3eadeeda8b3e",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["concepts/mobile-timer-accuracy.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/如何在终端中优雅地听歌.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 8689,
+      "modified_at": "2026-06-29T16:56:02Z",
+      "content_hash": "sha256:2936a721d5283fbf38e283a30e8b3798868682af9b33e242af2b9fc6b1a34fcb",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["skills/terminal-music.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Feather 签名工具.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 8087,
+      "modified_at": "2026-06-29T16:57:53Z",
+      "content_hash": "sha256:0be5efb0c2f38e6b272ddc845be34ab67a63499e4700c6299b30bda14639f47c",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["entities/feather-ios-sideload.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/NEOGEO.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 10786,
+      "modified_at": "2026-06-29T16:57:53Z",
+      "content_hash": "sha256:a08798c98e7d98d1b6dff5bf7910ce4b2aef11b4f3c34c96e2d2a85516764e80",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["entities/neogeo-mame.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/nds折腾.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 9149,
+      "modified_at": "2026-06-29T16:57:35Z",
+      "content_hash": "sha256:c5e3fecde0503abc0e8404a72f6b3d2b68792ffba938608e99ba871767338df3",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["entities/nds-flashcard.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 4988,
+      "modified_at": "2026-06-29T16:31:36Z",
+      "content_hash": "sha256:afb224c0e6a944735bfc2124d5534992e9ec9908fe76644b211ab6efb31208cc",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["journal/nds-flashcard-memories.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/序章-起承转结.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 7095,
+      "modified_at": "2026-06-29T16:57:53Z",
+      "content_hash": "sha256:aaaef64e5039d1da3a70cd84e7fed2f49886d58b76985647254887d3ad5b1ae7",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["journal/fire-emblem-new-mystery-prologue.md"],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/浅谈 R4iSDHC 用户体验.md": {
+      "ingested_at": "2026-06-29T09:30:00Z",
+      "size_bytes": 2494,
+      "modified_at": "2026-06-29T16:55:43Z",
+      "content_hash": "sha256:507706d41926be86e2d414c2aa0ddeb78283b3468c86e5773e4960ecb16245f0",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": ["entities/nds-flashcard.md"]
+    }
+  },
+  "stats": {
+    "total_sources_ingested": 15,
+    "total_pages": 13,
+    "total_projects": 0,
+    "last_full_rebuild": null
+  }
+}
