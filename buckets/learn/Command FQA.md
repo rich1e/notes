@@ -9,6 +9,6 @@ rich1e.me.		162	IN	A	15.197.142.173
 rich1e.me.		162	IN	A	3.33.152.147
 ```
 
-![image-20211208231306790](assets/buckets/learn/Command%20FQA/IMG-20260430171337579.png)
+![image-20211208231306790](assets/buckets/learn/Command%20FQA/IMG-20260629163136268.png)
 
-![image-20220702143226023](assets/buckets/learn/Command%20FQA/IMG-20260430171337635.png)
+![image-20220702143226023](assets/buckets/learn/Command%20FQA/IMG-20260629163136268-11.png)

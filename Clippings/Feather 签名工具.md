@@ -12,7 +12,7 @@ tags:
   - iOS
   - sideload
 ---
-![[assets/Clippings/Feather 签名工具/IMG-20260430171340672.jpeg]]
+![[assets/Clippings/Feather 签名工具/IMG-20260629163136142.jpeg]]
 
 发表于 2026年3月20日
 
@@ -32,7 +32,7 @@ tags:
 
 和全能签（轻松签、万能签）不同，它们的软件源已经是一条完整的黑灰产产业链了，自带有解锁码的功能来要求付费，Feather 所使用的软件源格式和 AltStore/SideStore 是一样的，都是 AltSource，软件内也可以直接导入 SideStore 的推荐软件源（换句话说，没有绿泡泡之类的玩意）：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340708.png|在 Feather 中添加和管理软件源。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8603.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136142.png|在 Feather 中添加和管理软件源。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8603.png)
 
 ### 插件注入
 
@@ -46,13 +46,13 @@ Feather 有相对完善的 Substrate/ **ElleKit** 插件注入机制，可以直
 
 Feather 有一个功能，称为 PPQ 保护，可以在签名的时候，在包名后加上一段长长的随机字符串，来绕过苹果的监管。可以在设置页的“签名选项”中找到这个功能：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340746.png|在 Feather 中启用 PPQ 保护。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8604.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143.png|在 Feather 中启用 PPQ 保护。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8604.png)
 
 ### 强制 Liquid Glass
 
 Feather 还可以在签名的时候修改框架信息来强制软件使用 iOS 26 的 Liquid Glass。同样是在签名选项里，拉到最底下就可以看见了：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340775.png|启用 Liquid Glass。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8605.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-23.png|启用 Liquid Glass。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8605.png)
 
 ### 机上安装
 
@@ -60,7 +60,7 @@ Feather 同样支持那个被玩烂的 [Pairing File](https://www.onmyodev.com/2
 
 可以在设置页的“安装”里找到这个功能，只需把“安装类型”从“服务器”修改为“idevice”即可。
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340808.png|使用本地回环安装软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8606.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-24.png|使用本地回环安装软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8606.png)
 
 至于其他的功能，是个签名工具应该都有，就不多做介绍了。
 
@@ -70,7 +70,7 @@ Feather 同样支持那个被玩烂的 [Pairing File](https://www.onmyodev.com/2
 
 接下来需要签名。我不管你怎么签名，总之，你需要一个 **付费开发者证书** ，免费的是不能用的！此外切记不要安装在 LiveContainer 中！
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340856.jpeg|对 Feather 安装包签名。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8607.jpeg)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136144.jpeg|对 Feather 安装包签名。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8607.jpeg)
 
 签名之后安装，用全能签的就用全能签装，用轻松签的就用轻松签装，富哥（指真的有付费开发者账号的）……富哥直接用 Xcode 装，总之不管怎么装，装上就行了！
 
@@ -94,11 +94,11 @@ https://community-apps.sidestore.io/sidecommunity.json
 
 接下来找到 OldOS，点击下载。
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340895.png|下载 OldOS 安装包。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8608.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136145.png|下载 OldOS 安装包。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8608.png)
 
 下载好之后就会出现在“资源库”中：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340930.png|下载好的 OldOS 出现在资源库中。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8609.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136147.png|下载好的 OldOS 出现在资源库中。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8609.png)
 
 如果是不在源里的软件，也可以直接点击资源库页面右上角的加号，导入.ipa 格式的安装包，或者输入网址让 Feather 帮你下载。
 
@@ -106,21 +106,21 @@ https://community-apps.sidestore.io/sidecommunity.json
 
 直接点击对应软件右侧的“签名”按钮，就会打开签名界面。
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340960.jpeg|使用 Feather 签名安装包。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8601.jpeg)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136148.jpeg|使用 Feather 签名安装包。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8601.jpeg)
 
 签名的时候可以自由修改软件的图标，名称，包名等，也可以选择要使用的证书。此外 Feather 还支持修改部分软件属性：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171340995.png|修改软件的属性。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8602.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136148.png|修改软件的属性。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8602.png)
 
 ### 安装软件
 
 签名好的软件会显示在资源库上方“已签名”一栏中，同时还会显示剩余天数。
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171341023.png|Feather 签名好的安装包列表。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8610.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136149.png|Feather 签名好的安装包列表。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8610.png)
 
 点击右侧的剩余天数就会直接开始安装：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260430171341056.png|安装已签名的软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8599.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136149-12.png|安装已签名的软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8599.png)
 
 不出意外的话软件就装上了。
 

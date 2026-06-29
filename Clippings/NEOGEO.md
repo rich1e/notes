@@ -39,13 +39,13 @@ MAME 0.260 里，这一类游戏，源代码 分类是 neogeo/neogeo.cpp，其�
 
 比如 官方原版 MAME 0.260 ，游戏列表中有个 Neo-Geo AES (NTSC)，缩写为 aes 。
 
-> ![../../_images/neogeo_aes.png](https://jjui.readthedocs.io/_images/neogeo_aes.png)
+> ![[assets/Clippings/NEOGEO/IMG-20260629165747304.png|../../_images/neogeo_aes.png]]
 
 游戏列表，进入下一层，显示的 AES 所拥有的 子游戏列表。
 
 > 此时，可以在 子游戏列表 中，找到熟悉的游戏，比如 kof97
 > 
-> > ![../../_images/neogeo_aes_sl.png](https://jjui.readthedocs.io/_images/neogeo_aes_sl.png)
+> > ![[assets/Clippings/NEOGEO/IMG-20260629165747651.png|../../_images/neogeo_aes_sl.png]]
 
 如上所说，官方原版的话，现在简单体验一下家用机 AES 还是挺简单的。
 
@@ -97,7 +97,7 @@ MAME 0.260 里，这一类游戏，源代码 分类是 neogeo/neogeo.cpp，其�
 
 > 进入街机 kof97 时，会有一个 bios 选择框，方便选择不同的 bios 版本。
 > 
-> > ![../../_images/neogeo_bios_select.png](https://jjui.readthedocs.io/_images/neogeo_bios_select.png)
+> > ![[assets/Clippings/NEOGEO/IMG-20260629165747944.png|../../_images/neogeo_bios_select.png]]
 
 如上所说，官方原版的话，现在简单体验一下不同版本的 bios ，还是很方便的。（以前的版本不是这样的）
 

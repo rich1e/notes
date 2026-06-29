@@ -25,7 +25,7 @@ curl -vv https://www.google.com
 
 ## FQA
 
-![[assets/buckets/technology/Clash/IMG-20260430171337931.png]]
+![[assets/buckets/technology/Clash/IMG-20260629163136280.png]]
 
 服务日志如下：
 

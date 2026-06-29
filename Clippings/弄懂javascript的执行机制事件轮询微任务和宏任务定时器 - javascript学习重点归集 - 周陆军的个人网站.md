@@ -30,7 +30,7 @@ tags:
 
 未来解决这个问题，JavaScript采用EventLoop 运行机制，就是在程序中设置两个线程：一个负责程序本身的运行，称为"主线程"；另一个负责主线程与其他进程（主要是各种I/O操作）的通信，被称为"EventLoop线程"（可以译为"消息线程"）。
 
-![EventLoop程序结构用于等待和发送消息和事件](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200616224939473195173.png)
+![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425842.png|EventLoop程序结构用于等待和发送消息和事件]]
 
 EventLoop程序结构用于等待和发送消息和事件
 
@@ -164,7 +164,7 @@ JavaScript的单线程，在于浏览器的reader进程 JavaScript解析与执�
 3. 一旦“执行栈”中的所有同步任务执行完毕，系统就会读取“任务队列”，将可执行的任务放在主线程执行。任务队列是一个先进先出的数据结构，排在前面的事件，优先被主线程读取。
 4. 主线程不断重复上面的第三步。
 
-![bg2014100801.jpg](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207220528546059906.jpg "20200207220528546059906.jpg")
+![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425847.jpg|bg2014100801.jpg]]
 
 **只要主线程空了，就会去读取"任务队列"，这就是JavaScript的运行环境。这个过程会不断重复。**
 
@@ -190,7 +190,7 @@ JavaScript的单线程，在于浏览器的reader进程 JavaScript解析与执�
 
 事件驱动的的实现过程主要靠事件循环完成。进程启动后就进入主循环。主循环的过程就是不停的从事件队列里读取事件。如果事件有关联的handle(也就是注册的callback)，就执行handle。
 
-![javascript执行流程](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207210148351964540.png "javascript执行流程") ![JavaScript任务队列](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207222245814452277.png "JavaScript任务队列")
+![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425854.png|javascript执行流程]] ![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425858.png|JavaScript任务队列]]
 
 除了放置异步任务的队列，“ **任务队列还放置定时器** ”，即指定某些代码在多长时间之后执行。
 
@@ -225,7 +225,7 @@ setInterval(fn,ms)不是每过ms秒会执行一次fn，而是每过ms秒，会�
 
 **micro-task(微任务)** ：Promise、process.nextTick
 
-![JavaScript 宏任务 微任务](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207210504726313584.png "JavaScript 宏任务 微任务") ![JavaScript宏任务微任务动图解析](https://www.zhoulujun.cn/uploadfile/images/2021/03/20210316115833456114355.gif "JavaScript宏任务微任务动图解析")
+![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425861.png|JavaScript 宏任务 微任务]] ![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425869.gif|JavaScript宏任务微任务动图解析]]
 
 对于JavaScript异步回调，如setTimeout、Promise、Async/Await 。
 
@@ -250,7 +250,7 @@ Node.js也是单线程的Event Loop，但是它的运行机制不同于浏览器
 - libuv库负责Node API的执行。它将不同的任务分配给不同的线程，形成一个Event Loop（事件循环），以异步的方式将任务的执行结果返回给V8引擎
 - V8引擎再将结果返回给用户
 
-![Node.js也是单线程的Event Loop](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207211657670930008.png "Node.js也是单线程的Event Loop")
+![[assets/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站/IMG-20260629165425875.png|Node.js也是单线程的Event Loop]]
 
 跟多深入的，推荐阅读《 [Chrom浏览器组件与进程/线程模型分析—优化前端性能](https://www.zhoulujun.cn/html/webfront/browser/webkit/2020_0610_8455.html) 》
 

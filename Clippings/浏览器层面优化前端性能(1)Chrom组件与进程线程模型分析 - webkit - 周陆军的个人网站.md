@@ -21,7 +21,7 @@ tags:
 
 而在应用程序中，为了满足功能的需要，启动的进程会创建另外的新的进程来处理其他任务，这些创建出来的新的进程拥有全新的独立的内存空间，不能与原来的进程内向内存，如果这些进程之间需要通信，可以通过IPC机制（Inter Process Communication）来进行。
 
-![IPC机制（Inter Process Communication）](https://www.zhoulujun.cn/uploadfile/images/2020/07/20200709172409426041744.png "IPC机制（Inter Process Communication）")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307514.png|IPC机制（Inter Process Communication）]]
 
 假如我们去开发一个浏览器，它的架构可以是一个单进程多线程的应用程序，也可以是一个使用IPC通信的多进程应用程序。
 
@@ -33,7 +33,7 @@ chrome浏览器与其他浏览器不同，chrome使用多个渲染引擎实例�
 
 浏览器大体上由以下几个组件组成，各个浏览器可能有一点不同。
 
-![浏览器组件.png](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610162017560699117.png "浏览器组件.png") ![20200610161237613310758.png](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610161237613310758.png "20200610161237613310758.png")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307522.png|浏览器组件.png]] ![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307527.png|20200610161237613310758.png]]
 
 - 界面控件 – 包括地址栏，前进后退，书签菜单等窗口上除了网页显示区域以外的部分
 - 浏览器引擎 – 查询与操作渲染引擎的接口
@@ -58,7 +58,7 @@ Google在宣传的时候一直都说，Chrome是one tab one process的模式。�
 
 把渲染放到另外个进程防止崩溃了影响主进程。webkit最初时候很多内存泄露。多进程能很大程度避免。一个进程关了，所有内存就回收了。其次，多进程安全性更好。如果blink被发现什么提权漏洞，例如写一段js就能控制整个chromium进程做任何事情，显然多进程可以把损失限制在渲染线程。渲染线程拿不到主进程的各种私密信息，例如别的域名下的密码。
 
-![多进程架构的好处](https://www.zhoulujun.cn/uploadfile/images/2020/07/20200709175547413064570.png "多进程架构的好处")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307531.png|多进程架构的好处]]
 
 ## 多线程模型
 
@@ -79,7 +79,7 @@ chrome进程模型下有
 	1995 年 Netscape 发明了NPAPI (Netscape plugin API)这个种架构，来帮助浏览器渲染一些HTML没有的东西。比如 PDF, 比如 视频， 以及等等。NPAPI不限制插件自由访问系统所有的API，而且和浏览器是平级运行的。现在已被禁用。 [PPAPI](https://code.google.com/p/ppapi/) 是谷歌提出的架构。
 - Pepper插件进程
 - 其他类型的进程，比如Linux的Zygote进程；Sandbox进程。
-![chrome进程架构图](https://pic4.zhimg.com/v2-8619595fb83d928eb6648f003b0a4ab9_r.jpg)
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307536.jpg|chrome进程架构图]]
 
 chrome进程架构图
 
@@ -103,7 +103,7 @@ io\_thread不仅负责Browser进程的I/O，而且其他Renderer的I/O请求也�
 
 对于Renderer进程，它们通常有两个线程：一个是Main thread，负责与主线程联系。另一个是Render thread，它们负责页面的渲染和交互
 
-![20200610161318112145652.png](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610161318112145652.png "20200610161318112145652.png")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307541.png|20200610161318112145652.png]]
 
 当我们是要浏览一个网页，我们会在浏览器的地址栏里输入URL，这个时候Browser Process会向这个URL发送请求，获取这个URL的HTML内容，然后将HTML交给Renderer Process，Renderer Process解析HTML内容，解析遇到需要请求网络的资源又返回来交给Browser Process进行加载，同时通知Browser Process，需要Plugin Process加载插件资源，执行插件代码。解析完成后，Renderer Process计算得到图像帧，并将这些图像帧交给GPU Process，GPU Process将其转化为图像显示屏幕。
 
@@ -149,7 +149,7 @@ Chrome的线程模型极力规避锁的存在，将锁限制了极小的范围�
 - network thread：处理网络请求，从网上获取数据（Chrome72以后，已将network thread单独摘成network service process，当然也可以通过 chrome://flags/#network-service-in-process修改配置，将其其作为线程运行在Browser Process中，感谢 @Popeye-Wz 的提出）；
 - storage thread： 控制文件等的访问；
 
-![Browser Process 划分出不同的工作线程](https://www.zhoulujun.cn/uploadfile/images/2020/07/20200709180013265814009.png "Browser Process 划分出不同的工作线程")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307545.png|Browser Process 划分出不同的工作线程]]
 
 ### 网页加载过程-导航过程
 
@@ -245,7 +245,7 @@ JavaScript事件队列等原因还是JavaScript线程与 定时触发器线程�
 
 如此循环，如下图
 
-![20200610173447689929215.png](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610173447689929215.png "20200610173447689929215.png")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307548.png|20200610173447689929215.png]]
 
 注意，总是要 **等待栈中的代码执行完毕后才会去读取事件队列中的事件**
 
@@ -305,7 +305,7 @@ Node.js也是单线程的Event Loop，但是它的运行机制不同于浏览器
 
 Node.js 采用 V8 作为 js 的解析引擎，而 I/O 处理方面使用了自己设计的 libuv，libuv 是一个基于事件驱动的跨平台抽象层，封装了不同操作系统一些底层特性，对外提供统一的 API，事件循环机制也是它里面的实现
 
-![Node.js也是单线程的Event Loop](https://www.zhoulujun.cn/uploadfile/images/2020/02/20200207211657670930008.png "Node.js也是单线程的Event Loop")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307552.png|Node.js也是单线程的Event Loop]]
 
 根据上图，Node.js的运行机制如下
 
@@ -325,7 +325,7 @@ libuv 引擎中的事件循环6个阶段
 
 libuv 引擎中的事件循环分为 6 个阶段，它们会按照顺序反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。
 
-![libuv 引擎中的事件循环分为 6 个阶段](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610183720955622127.png "libuv 引擎中的事件循环分为 6 个阶段")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307554.png|libuv 引擎中的事件循环分为 6 个阶段]]
 
 从上图中，大致看出 node 中的事件循环的顺序：
 
@@ -361,7 +361,7 @@ libuv 引擎中的事件循环分为 6 个阶段，它们会按照顺序反复�
 
 > 每个阶段都有一个先进先出的回调函数队列。只有一个阶段的回调函数队列清空了，该执行的回调函数都执行了，事件循环才会进入下一个阶段。
 
-![Node 与浏览器的 Event Loop 差异](https://www.zhoulujun.cn/uploadfile/images/2020/06/20200610184213638631458.png "Node 与浏览器的 Event Loop 差异")
+![[assets/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站/IMG-20260629165307557.png|Node 与浏览器的 Event Loop 差异]]
 
 nodejs 写的少，没有过多深入
 

@@ -6,7 +6,7 @@ date: 2023-03-08 10:43:03
 
 #aria2
 
-[[单机版启动缓慢调查]]
+[[Chronicle/2023/单机版启动缓慢调查]]
 
 [Mac下配置Aria2](https://gist.github.com/maboloshi/a4b1f27567319d4a42352aadd036a578)
 
@@ -31,18 +31,18 @@ title: mac & docker & windows
 
 ```
 
-![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260430171332157.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136165.png]]
 
 ```sh
 git checkout wyffix2
 git log --since="2023-02-14" --until="2023-02-21" --pretty=format:"%h, %cd, %an : %s"
 ```
 
-![[assets/2023/单机版启动缓慢调查/IMG-20260430171329565.png]]
+![[assets/Chronicle/2023/单机版启动缓慢调查/IMG-20260629163136066.png]]
 
-![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260430171332196.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136165-11.png]]
 
-![[assets/2023/单机版启动缓慢调查/IMG-20260430171329676.png]]
+![[assets/Chronicle/2023/单机版启动缓慢调查/IMG-20260629163136070.png]]
 
 ## 🔗 相关阅读
 - [[2024-12-02_Monday]]

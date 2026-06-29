@@ -734,15 +734,15 @@ awk 'BEGIN{
 
 以下 3 支官方影片涵蓋 Claude Code Terminal Configuration 的設定流程和使用環境：
 
-![YouTube video](https://i.ytimg.com/vi/6eBSHbLKuN0/hqdefault.jpg)
+![[assets/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南/IMG-20260629165057300.jpg|YouTube video]]
 
 Mastering Claude Code in 30 minutes — 終端機環境設定完整流程
 
-![YouTube video](https://i.ytimg.com/vi/gv0WHhKelSE/hqdefault.jpg)
+![[assets/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南/IMG-20260629165057303.jpg|YouTube video]]
 
 Claude Code Best Practices — settings.json 設定與環境變數管理
 
-![YouTube video](https://i.ytimg.com/vi/zrcCS9oHjtI/hqdefault.jpg)
+![[assets/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南/IMG-20260629165057306.jpg|YouTube video]]
 
 Claude Code on Desktop — 桌面版終端機設定與多平台使用
 

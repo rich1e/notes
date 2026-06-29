@@ -1,68 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "IPATool 使用",
-      "path": "2024/IPATool 使用.md"
+      "basename": "Tmux 快捷键 & 速查表 & 简明教程",
+      "path": "Clippings/Tmux 快捷键 & 速查表 & 简明教程.md"
     },
     {
-      "basename": "brew install",
-      "path": "2024/brew install.md"
+      "basename": "NEOGEO",
+      "path": "Clippings/NEOGEO.md"
     },
     {
-      "basename": "砸壳",
-      "path": "2024/砸壳.md"
+      "basename": "nds折腾",
+      "path": "Clippings/nds折腾.md"
     },
     {
-      "basename": "游戏模拟器",
-      "path": "2024/游戏模拟器.md"
+      "basename": "Mechanical Watch – Bartosz Ciechanowski",
+      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
     },
     {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "2024/深入浅出 Greasemonkey.md"
-    },
-    {
-      "basename": "2024 手机模拟器游戏火热🔥",
-      "path": "2024/2024 手机模拟器游戏火热🔥.md"
-    },
-    {
-      "basename": "Mac Update",
-      "path": "2023/Mac Update.md"
-    },
-    {
-      "basename": "Mac & Electron 跨端开发体验",
-      "path": "2023/Mac & Electron 跨端开发体验.md"
-    },
-    {
-      "basename": "Electron：WebSwapCGLLayer warning",
-      "path": "2023/Electron：WebSwapCGLLayer warning.md"
-    },
-    {
-      "basename": "Clash",
-      "path": "2023/Clash.md"
-    },
-    {
-      "basename": "Blog",
-      "path": "2023/Blog.md"
-    },
-    {
-      "basename": "Fiddler Everywhere Crack 尝试",
-      "path": "2022/Fiddler Everywhere Crack 尝试.md"
-    },
-    {
-      "basename": "2021-前端学习",
-      "path": "2021/2021-前端学习.md"
-    },
-    {
-      "basename": "HeroEmblems",
-      "path": "buckets/game/HeroEmblems.md"
-    },
-    {
-      "basename": "Archives File",
-      "path": "workspce/Archives File.md"
-    },
-    {
-      "basename": "What is the context Command in Claude Code",
-      "path": "Clippings/What is the context Command in Claude Code.md"
+      "basename": "Feather 签名工具",
+      "path": "Clippings/Feather 签名工具.md"
     },
     {
       "basename": "Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对",
@@ -73,132 +29,176 @@
       "path": "Clippings/Claude Code 配置管理完全指南 - 作用域、权限与企业部署.md"
     },
     {
-      "basename": "6個必調設定搞定 Claude Code Terminal Configuration 完整指南",
-      "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
-    },
-    {
-      "basename": "Mobile Development",
-      "path": "workspce/Mobile Development.md"
-    },
-    {
-      "basename": "Mechanical Watch – Bartosz Ciechanowski",
-      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
-    },
-    {
-      "basename": "如何在终端中优雅地听歌",
-      "path": "Clippings/如何在终端中优雅地听歌.md"
-    },
-    {
-      "basename": "Tmux 快捷键 & 速查表 & 简明教程",
-      "path": "Clippings/Tmux 快捷键 & 速查表 & 简明教程.md"
-    },
-    {
-      "basename": "command-exa",
-      "path": "work-records/command-exa.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "HomePage.md"
-    },
-    {
-      "basename": "Daily Record",
-      "path": "workspce/Daily Record.md"
-    },
-    {
-      "basename": "mac-tips",
-      "path": "work-records/mac-tips.md"
-    },
-    {
-      "basename": "brew-weekly-template",
-      "path": "brew-weekly-template.md"
-    },
-    {
-      "basename": "浅谈 R4iSDHC 用户体验",
-      "path": "Clippings/浅谈 R4iSDHC 用户体验.md"
-    },
-    {
-      "basename": "node-commands",
-      "path": "work-records/node-commands.md"
-    },
-    {
-      "basename": "Kanban",
-      "path": "workspce/Kanban.md"
-    },
-    {
-      "basename": "电波的电玩记忆-NDS世代 – 电波万事屋",
-      "path": "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md"
-    },
-    {
-      "basename": "nds折腾",
-      "path": "Clippings/nds折腾.md"
-    },
-    {
-      "basename": "弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站",
-      "path": "Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站.md"
-    },
-    {
-      "basename": "NEOGEO",
-      "path": "Clippings/NEOGEO.md"
-    },
-    {
-      "basename": "Feather 签名工具",
-      "path": "Clippings/Feather 签名工具.md"
-    },
-    {
       "basename": "移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站",
       "path": "Clippings/移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站.md"
-    },
-    {
-      "basename": "浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站",
-      "path": "Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站.md"
     },
     {
       "basename": "序章-起承转结",
       "path": "Clippings/序章-起承转结.md"
     },
     {
+      "basename": "如何在终端中优雅地听歌",
+      "path": "Clippings/如何在终端中优雅地听歌.md"
+    },
+    {
+      "basename": "浅谈 R4iSDHC 用户体验",
+      "path": "Clippings/浅谈 R4iSDHC 用户体验.md"
+    },
+    {
+      "basename": "前端常见面试-存储缓存篇",
+      "path": "Clippings/前端常见面试-存储缓存篇.md"
+    },
+    {
+      "basename": "弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站",
+      "path": "Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站.md"
+    },
+    {
+      "basename": "浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站",
+      "path": "Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站.md"
+    },
+    {
+      "basename": "电波的电玩记忆-NDS世代 – 电波万事屋",
+      "path": "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md"
+    },
+    {
       "basename": "第1章-マルスの旅立ち",
       "path": "Clippings/第1章-マルスの旅立ち.md"
     },
     {
-      "basename": "Pnpm + git-worktree",
-      "path": "2026/Pnpm + git-worktree.md"
+      "basename": "6個必調設定搞定 Claude Code Terminal Configuration 完整指南",
+      "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
     },
     {
-      "basename": "Chezmoi 简明教程",
-      "path": "2026/Chezmoi 简明教程.md"
+      "basename": "Mobile Development",
+      "path": "buckets/workspce/Mobile Development.md"
     },
     {
-      "basename": "macOS-U盘清理与Spotlight保护目录问题",
-      "path": "2026/macOS-U盘清理与Spotlight保护目录问题.md"
+      "basename": "IMG-20260629165057300",
+      "path": "assets/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南/IMG-20260629165057300.jpg"
     },
     {
       "basename": "NeoDS-模拟器使用指南",
-      "path": "2026/NeoDS-模拟器使用指南.md"
+      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
     },
     {
-      "basename": "IMG-20260430171341273",
-      "path": "assets/2026/NeoDS-模拟器使用指南/IMG-20260430171341273.png"
+      "basename": "macOS-U盘清理与Spotlight保护目录问题",
+      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
     },
     {
-      "basename": "IMG-20260430171341310",
-      "path": "assets/2026/NeoDS-模拟器使用指南/IMG-20260430171341310.png"
+      "basename": "Chezmoi 简明教程",
+      "path": "Chronicle/2026/Chezmoi 简明教程.md"
     },
     {
-      "basename": "前端代码构建部署",
-      "path": "frontend/前端代码构建部署.md"
+      "basename": "brew script",
+      "path": "Chronicle/2026/brew script.md"
     },
     {
-      "basename": "混合开发",
-      "path": "frontend/混合开发.md"
+      "basename": "Read Record-20230625",
+      "path": "buckets/Read Record/Read Record-20230625.md"
     },
     {
-      "basename": "当下还有人知道 buble 吗？",
-      "path": "frontend/当下还有人知道 buble 吗？.md"
+      "basename": "zsh 高阶玩法",
+      "path": "buckets/interest/zsh 高阶玩法.md"
     },
     {
-      "basename": "单机版启动缓慢调查",
-      "path": "2023/单机版启动缓慢调查.md"
+      "basename": "VSCode & Vim settings",
+      "path": "buckets/interest/VSCode & Vim settings.md"
+    },
+    {
+      "basename": "Comic",
+      "path": "buckets/interest/Comic.md"
+    },
+    {
+      "basename": "Pnpm + git-worktree",
+      "path": "Chronicle/2026/Pnpm + git-worktree.md"
+    },
+    {
+      "basename": "2021-浏览器渲染原理",
+      "path": "Chronicle/2021/2021-浏览器渲染原理.md"
+    },
+    {
+      "basename": "Fiddler Everywhere Crack 尝试",
+      "path": "Chronicle/2022/Fiddler Everywhere Crack 尝试.md"
+    },
+    {
+      "basename": "Book Sync",
+      "path": "Chronicle/2022/Book Sync.md"
+    },
+    {
+      "basename": "Alienware",
+      "path": "Chronicle/2022/Alienware.md"
+    },
+    {
+      "basename": "2022 learn",
+      "path": "Chronicle/2022/2022 learn.md"
+    },
+    {
+      "basename": "2021-前端数据结构与算法",
+      "path": "Chronicle/2021/2021-前端数据结构与算法.md"
+    },
+    {
+      "basename": "2021dev-网络通信基础",
+      "path": "Chronicle/2021/2021dev-网络通信基础.md"
+    },
+    {
+      "basename": "2021dev-前端容器与跨端技术",
+      "path": "Chronicle/2021/2021dev-前端容器与跨端技术.md"
+    },
+    {
+      "basename": "2021dev-前端微服务",
+      "path": "Chronicle/2021/2021dev-前端微服务.md"
+    },
+    {
+      "basename": "2021年度规划-help",
+      "path": "Chronicle/2021/2021年度规划-help.md"
+    },
+    {
+      "basename": "2021dev-前端基础",
+      "path": "Chronicle/2021/2021dev-前端基础.md"
+    },
+    {
+      "basename": "2021dev-前端框架",
+      "path": "Chronicle/2021/2021dev-前端框架.md"
+    },
+    {
+      "basename": "IPATool 使用",
+      "path": "Chronicle/2024/IPATool 使用.md"
+    },
+    {
+      "basename": "brew install",
+      "path": "Chronicle/2024/brew install.md"
+    },
+    {
+      "basename": "砸壳",
+      "path": "Chronicle/2024/砸壳.md"
+    },
+    {
+      "basename": "游戏模拟器",
+      "path": "Chronicle/2024/游戏模拟器.md"
+    },
+    {
+      "basename": "深入浅出 Greasemonkey",
+      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
+    },
+    {
+      "basename": "2024 手机模拟器游戏火热🔥",
+      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
+    },
+    {
+      "basename": "Mac Update",
+      "path": "Chronicle/2023/Mac Update.md"
+    },
+    {
+      "basename": "Mac & Electron 跨端开发体验",
+      "path": "Chronicle/2023/Mac & Electron 跨端开发体验.md"
+    },
+    {
+      "basename": "Electron：WebSwapCGLLayer warning",
+      "path": "Chronicle/2023/Electron：WebSwapCGLLayer warning.md"
+    },
+    {
+      "basename": "Clash",
+      "path": "Chronicle/2023/Clash.md"
     }
   ],
   "omittedPaths": [],

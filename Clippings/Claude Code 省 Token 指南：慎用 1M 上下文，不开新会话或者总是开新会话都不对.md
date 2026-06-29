@@ -32,7 +32,7 @@ tags:
 
 前两部分在同一个会话里几乎不变，但模型每次都要重新"读"一遍。聊了 20 轮之后，每条新消息可能要带上 10 万个 Token 的"旧行李"，既慢又贵。
 
-![LLM 每次从头读取三层输入结构](https://s.baoyu.io/imgs/2026-04-12/01-infographic-reading-from-scratch.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165657953.png|LLM 每次从头读取三层输入结构]]
 
 ## 提示缓存：把"笔记"存起来
 
@@ -56,7 +56,7 @@ tags:
 
 在同一个活跃会话里，前缀天然一致，每一轮只是在尾部追加新内容，缓存命中率很高。但如果你开了一个新会话，前缀从零开始，之前积累的缓存全部用不上。
 
-![提示缓存工作原理：首次全量计算，后续命中缓存](https://s.baoyu.io/imgs/2026-04-12/09-flowchart-cache-mechanism.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165657985.png|提示缓存工作原理：首次全量计算，后续命中缓存]]
 
 **第二，缓存有存活时间。** 根据 Claude Code 团队的说明，主智能体的缓存窗口是 1 小时，子智能体是 5 分钟。API 用户默认只有 5 分钟（可以付费开启 1 小时，但更贵）。每次缓存命中都会刷新计时器，只要你保持交互频率，缓存可以一直活着。
 
@@ -66,7 +66,7 @@ Claude Code 团队的原话：
 
 但 **缓存未命中的代价，随上下文长度增大而急剧增加** 。一个 200K 的缓存未命中和一个 1M 的缓存未命中，完全是两个量级的开销。
 
-![缓存命中 vs 缓存未命中成本对比](https://s.baoyu.io/imgs/2026-04-12/02-comparison-cache-hit-miss.png) ![前缀匹配决定缓存是否命中](https://s.baoyu.io/imgs/2026-04-12/10-infographic-cache-visualize.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658010.png|缓存命中 vs 缓存未命中成本对比]] ![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658031.png|前缀匹配决定缓存是否命中]]
 
 ## 三个反直觉的省钱策略
 
@@ -90,7 +90,7 @@ Anthropic 员工 Lydia Hallie 说的"闲置约一小时的大型会话，建议�
 
 比起控制输出长度，更有效的是控制输入质量。不要把 10000 行日志复制粘贴到对话里让 Claude 自己找错误，直接把日志文件路径发给它。Claude Code 会自己用 grep 之类的工具去检索需要的信息，只把相关内容拉进上下文。 **最便宜的 Token，永远是根本没进上下文的 Token。**
 
-![三个反直觉的省钱策略](https://s.baoyu.io/imgs/2026-04-12/03-infographic-three-strategies.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658042.png|三个反直觉的省钱策略]]
 
 ## 继续聊还是开新会话：一张决策表
 
@@ -114,7 +114,7 @@ Anthropic 员工 Lydia Hallie 说的"闲置约一小时的大型会话，建议�
 
 社区里有人反馈，一个会话只做一件事的工作方式，几乎不会触发配额问题。
 
-![继续聊 vs 开新会话决策流程](https://s.baoyu.io/imgs/2026-04-12/04-flowchart-session-decision.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658053.png|继续聊 vs 开新会话决策流程]]
 
 ## 1M 上下文窗口：慎用
 
@@ -152,7 +152,7 @@ Anthropic 员工 Lydia Hallie 说的"闲置约一小时的大型会话，建议�
 
 上下文接近 20 万 Token 时自动压缩摘要化，既保留上下文连续性，又防止成本失控。
 
-![1M 上下文窗口缓存过期风险](https://s.baoyu.io/imgs/2026-04-12/05-infographic-1m-context-risk.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658064.png|1M 上下文窗口缓存过期风险]]
 
 ## 六条操作规则
 
@@ -202,7 +202,7 @@ GitHub 的 `gh` 命令行工具比 GitHub MCP 服务器消耗的 Token 少得多
 
 匹配这些模式的文件会被排除在文件发现和搜索结果之外，读取操作也会被直接拒绝。模型有时候会陷入长达 5 分钟以上的代码库搜索循环，即便你指明了文件路径，它仍可能在背景中反复读取不相关文件。 `permissions.deny` 能从源头减少这种浪费。
 
-![六条操作规则速查](https://s.baoyu.io/imgs/2026-04-12/06-infographic-six-rules.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658072.png|六条操作规则速查]]
 
 ## 把部分工作委派出去
 
@@ -219,7 +219,7 @@ GitHub 的 `gh` 命令行工具比 GitHub MCP 服务器消耗的 Token 少得多
 ```bash
 claude mcp add codex -- npx -y @openai/codex-plugin-cc
 ```
-![主会话、子智能体与智能体团队的委派关系](https://s.baoyu.io/imgs/2026-04-12/07-framework-delegation.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658079.png|主会话、子智能体与智能体团队的委派关系]]
 
 ## 一些被澄清的误解
 
@@ -231,7 +231,7 @@ claude mcp add codex -- npx -y @openai/codex-plugin-cc
 
 > "我们在认真对待这件事，仍在持续调查。我们没有盲目相信内部指标。"
 
-![三大流言与官方澄清对比](https://s.baoyu.io/imgs/2026-04-12/08-comparison-myth-busting.png)
+![[assets/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对/IMG-20260629165658091.png|三大流言与官方澄清对比]]
 
 ---
 

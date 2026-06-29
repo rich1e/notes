@@ -12,7 +12,7 @@ tags:
 ---
 首先是拆壳图：
 
-![R4iSDHC 拆解图](https://jixun.uk/posts/2016/r4isdhc-simple-review/imgur_58k4WDC.jpg)
+![[assets/Clippings/浅谈 R4iSDHC 用户体验/IMG-20260629165535776.jpg|R4iSDHC 拆解图]]
 
 基本上和其他 R4 烧录卡没啥区别。
 
@@ -22,7 +22,7 @@ tags:
 
 启动时有三个选项 - 游戏、多媒体、设定：
 
-![Imgur](https://jixun.uk/posts/2016/r4isdhc-simple-review/imgur_SMeeJUT.jpg)
+![[assets/Clippings/浅谈 R4iSDHC 用户体验/IMG-20260629165535781.jpg|Imgur]]
 
 点进游戏后，他会将所有根目录以及子目录一层所有的 nds 文件列出来。
 
