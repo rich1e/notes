@@ -80,7 +80,7 @@ wsl --set-default-version 2
 
   1. 打开 [Microsoft Store](https://aka.ms/wslstore)，并选择你偏好的 Linux 分发版。
 
-  ![[assets/buckets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260629163136306-12.png]]
+  ![[assets/buckets/frontend/前端开发调试新姿势 - Windows + WSL + VSCode/IMG-20260629163136306-15.png]]
 
   单击以下链接会打开每个分发版的 Microsoft Store 页面：
 

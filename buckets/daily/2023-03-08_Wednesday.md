@@ -38,11 +38,11 @@ git checkout wyffix2
 git log --since="2023-02-14" --until="2023-02-21" --pretty=format:"%h, %cd, %an : %s"
 ```
 
-![[assets/Chronicle/2023/单机版启动缓慢调查/IMG-20260629163136066.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136066.png]]
 
-![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136165-11.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136165-14.png]]
 
-![[assets/Chronicle/2023/单机版启动缓慢调查/IMG-20260629163136070.png]]
+![[assets/buckets/daily/2023-03-08_Wednesday/IMG-20260629163136070.png]]
 
 ## 🔗 相关阅读
 - [[2024-12-02_Monday]]

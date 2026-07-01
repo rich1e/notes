@@ -383,11 +383,11 @@ UI模板 -> 功能函数: 调用
 ## UI视图
 ![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-31.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-40.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-32.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-41.png]]
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-33.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136297-42.png]]
 
 ![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136298.png]]
 
@@ -395,7 +395,7 @@ UI模板 -> 功能函数: 调用
 
 > 抹平前后端数据字段的命名差异，提供易于理解、可维护的字段关系。
 
-![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136298-11.png]]
+![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136298-14.png]]
 
 ![[assets/buckets/work-experience/max-optics/Attr - 动态表单设计/IMG-20260629163136299.png]]
 

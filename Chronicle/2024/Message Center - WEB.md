@@ -30,7 +30,7 @@
 
 ![[assets/Chronicle/2024/Message Center - WEB/IMG-20260629163136095.png]]
 
-![[assets/Chronicle/2024/Message Center - WEB/IMG-20260629163136095-11.png]]
+![[assets/Chronicle/2024/Message Center - WEB/IMG-20260629163136095-14.png]]
 
 ## 弹窗展示
 

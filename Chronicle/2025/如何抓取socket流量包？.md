@@ -13,7 +13,7 @@
 
 ![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136123.png]]
 
-![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136123-11.png]]
+![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136123-14.png]]
 ### **步骤2：配置Mac系统代理**
 
 1. 打开 **系统偏好设置 > 网络 > 高级 > 代理**。
@@ -37,7 +37,7 @@
 
 ![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136128.png]]
 
-![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136128-11.png]]
+![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136128-14.png]]
 
 ### **步骤4：配置Proxifier**
 
@@ -85,7 +85,7 @@
 
 ![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136137.png]]
 
-![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136137-11.png]]
+![[assets/Chronicle/2025/如何抓取socket流量包？/IMG-20260629163136137-14.png]]
 
 ### **步骤5：捕获Socket流量**
 

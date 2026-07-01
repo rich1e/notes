@@ -22,7 +22,7 @@ https://github.com/sharkdp/bat
 
 > starship，轻量级、反应迅速，可定制的高颜值终端！
 
-![image-20210222171014335](assets/buckets/lifestyle/mac-utils/IMG-20260629163136279-11.png)
+![image-20210222171014335](assets/buckets/lifestyle/mac-utils/IMG-20260629163136279-14.png)
 
 ref：
 https://starship.rs/
