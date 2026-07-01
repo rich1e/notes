@@ -183,11 +183,57 @@
       "project": null,
       "pages_created": [],
       "pages_updated": ["entities/nds-flashcard.md"]
+    },
+    "/Users/rich1e/workspace/code/notes/buckets/books/iOS 17 App Development for Beginners Get started with iOS app development using Swift 5.9, SwiftUI, and Xcode 15 (Arpit Kulsreshtha) (z-library.sk, 1lib.sk, z-lib.sk).epub": {
+      "ingested_at": "2026-07-01T00:00:00Z",
+      "size_bytes": 8893916,
+      "modified_at": "2026-03-18T09:22:37Z",
+      "content_hash": "sha256:1baf43141ac11b846882a9c14ce9414ec72f599bbd29e8a075d7ae4bb745e81e",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/ios17-app-development-book.md",
+        "concepts/swift-fundamentals.md",
+        "concepts/swiftui-framework.md",
+        "concepts/arc-memory-management.md",
+        "concepts/swift-concurrency.md",
+        "concepts/ios-app-architecture.md",
+        "skills/ios-data-persistence.md",
+        "skills/ios-networking.md",
+        "skills/ios-multithreading.md",
+        "skills/ios-app-store-publishing.md",
+        "skills/xcode-ide-guide.md",
+        "references/ios-design-patterns.md"
+      ],
+      "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/buckets/books/DSiSoftware.pdf": {
+      "ingested_at": "2026-07-01T00:00:00Z",
+      "size_bytes": 4718592,
+      "modified_at": "2026-04-29T09:18:00Z",
+      "content_hash": "sha256:295a54a542e4f6de46a0a76aeb4e52e9da9e7f0d18ad2368319d44676dcf5814",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/ique-dsi.md",
+        "entities/nintendo-wansui.md",
+        "skills/ique-dsi-camera.md",
+        "skills/ique-dsi-sound.md",
+        "skills/ique-dsi-wifi-setup.md",
+        "skills/ique-dsi-parental-control.md",
+        "skills/pictochat.md",
+        "skills/ique-ds-download-play.md",
+        "references/ique-dsi-menu-software.md",
+        "references/ique-dsi-system-settings.md",
+        "references/ique-dsi-wifi-glossary.md",
+        "references/ique-dsi-shop.md"
+      ],
+      "pages_updated": []
     }
   },
   "stats": {
-    "total_sources_ingested": 15,
-    "total_pages": 13,
+    "total_sources_ingested": 17,
+    "total_pages": 37,
     "total_projects": 1,
     "last_full_rebuild": null
   }

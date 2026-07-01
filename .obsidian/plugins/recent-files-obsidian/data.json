@@ -5,8 +5,52 @@
       "path": "index.md"
     },
     {
+      "basename": "ique-dsi-shop",
+      "path": "references/ique-dsi-shop.md"
+    },
+    {
+      "basename": "xk-ai-talk-desk-ui",
+      "path": "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md"
+    },
+    {
       "basename": "dayfold",
       "path": "projects/dayfold/dayfold.md"
+    },
+    {
+      "basename": "ios-app-store-publishing",
+      "path": "skills/ios-app-store-publishing.md"
+    },
+    {
+      "basename": "ios17-app-development-book",
+      "path": "entities/ios17-app-development-book.md"
+    },
+    {
+      "basename": "arc-memory-management",
+      "path": "concepts/arc-memory-management.md"
+    },
+    {
+      "basename": "swift-fundamentals",
+      "path": "concepts/swift-fundamentals.md"
+    },
+    {
+      "basename": "ios-app-architecture",
+      "path": "concepts/ios-app-architecture.md"
+    },
+    {
+      "basename": "ique-dsi-wifi-setup",
+      "path": "skills/ique-dsi-wifi-setup.md"
+    },
+    {
+      "basename": "ique-dsi",
+      "path": "entities/ique-dsi.md"
+    },
+    {
+      "basename": "ique-ds-download-play",
+      "path": "skills/ique-ds-download-play.md"
+    },
+    {
+      "basename": "DSiSoftware",
+      "path": "buckets/books/DSiSoftware.pdf"
     },
     {
       "basename": "swipe-to-delete-row",
@@ -35,10 +79,6 @@
     {
       "basename": "agent-state-machine",
       "path": "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md"
-    },
-    {
-      "basename": "xk-ai-talk-desk-ui",
-      "path": "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md"
     },
     {
       "basename": "hot",
@@ -159,46 +199,6 @@
     {
       "basename": "Comic",
       "path": "buckets/interest/Comic.md"
-    },
-    {
-      "basename": "2021-浏览器渲染原理",
-      "path": "Chronicle/2021/2021-浏览器渲染原理.md"
-    },
-    {
-      "basename": "Fiddler Everywhere Crack 尝试",
-      "path": "Chronicle/2022/Fiddler Everywhere Crack 尝试.md"
-    },
-    {
-      "basename": "Book Sync",
-      "path": "Chronicle/2022/Book Sync.md"
-    },
-    {
-      "basename": "Alienware",
-      "path": "Chronicle/2022/Alienware.md"
-    },
-    {
-      "basename": "2022 learn",
-      "path": "Chronicle/2022/2022 learn.md"
-    },
-    {
-      "basename": "2021-前端数据结构与算法",
-      "path": "Chronicle/2021/2021-前端数据结构与算法.md"
-    },
-    {
-      "basename": "2021dev-网络通信基础",
-      "path": "Chronicle/2021/2021dev-网络通信基础.md"
-    },
-    {
-      "basename": "2021dev-前端容器与跨端技术",
-      "path": "Chronicle/2021/2021dev-前端容器与跨端技术.md"
-    },
-    {
-      "basename": "2021dev-前端微服务",
-      "path": "Chronicle/2021/2021dev-前端微服务.md"
-    },
-    {
-      "basename": "2021年度规划-help",
-      "path": "Chronicle/2021/2021年度规划-help.md"
     }
   ],
   "omittedPaths": [],

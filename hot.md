@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-06-29T11:00:00Z
+updated: 2026-07-01T12:00:00Z
 ---
 
 # Hot Cache
@@ -9,9 +9,14 @@ updated: 2026-06-29T11:00:00Z
 
 ## Recent Activity
 
+- [2026-07-01T12:00:00Z] INGEST iOS 17 App Development for Beginners.epub — Arpit Kulsreshtha 著 iOS 17 开发入门书（Swift 5.9/SwiftUI/Xcode 15），蒸馏为 12 页：书籍实体、Swift 基础/SwiftUI 框架/ARC 内存/Swift 并发/iOS 架构模式（概念页）、数据持久化/网络编程/多线程/App Store 发布/Xcode IDE（技能页）、设计模式速查（参考页）
+- [2026-07-01T00:00:00Z] INGEST DSiSoftware.pdf — 神游 DSi 官方操作说明书（操作篇），蒸馏为 12 页：主机实体、趣照/趣音/Wi-Fi/亲子管理/PictoChat/下载游戏技能页、商店/系统设置/菜单软件/网络术语参考页、任天狗狗实体页
 - [2026-06-29T11:00:00Z] WIKI_UPDATE dayfold — 首次同步，创建 11 页：项目总览、架构概览、CloudKit 降级、SwiftUI context 注入、FetchRequest vs ObservedObject、抽屉导航、EntryEditor 图片脏标记、软删除回收箱、暖色主题 token、左滑删除容器、源码目录布局
-- [2026-06-29T10:00:00Z] WIKI_UPDATE xk-ai-talk-desk-ui — 首次同步，创建 4 页：项目总览、CC SDK 集成（useSoftbar）、坐席状态机、PhoneBar 通话流程
 - [2026-06-29T09:30:00Z] INGEST Clippings/ — 15 个网页剪藏蒸馏为 13 个 wiki 页面，覆盖 Claude Code 优化、前端核心概念、复古游戏与工具类知识
+
+## Key New Additions
+
+**iOS 17 知识集群（新建）**：已建立覆盖 iOS 开发全栈的 12 页互链体系。核心概念：Swift 5.9 类型系统+闭包+可选值（`concepts/swift-fundamentals`）、SwiftUI 声明式 UI+状态管理+已知 sheet 陷阱（`concepts/swiftui-framework`）、ARC 强/弱/无主引用+循环引用（`concepts/arc-memory-management`）、async/await+Task+Actor+MainActor（`concepts/swift-concurrency`）、MVC/MVVM/VIPER/Redux 对比（`concepts/ios-app-architecture`）。技能页：Core Data/SwiftData CRUD（与 dayfold 深度互链）、URLSession/Alamofire 网络、GCD/DispatchGroup 多线程、App Store 发布流程（证书→Archive→TestFlight）、Xcode 15 IDE 速查。参考页：GoF 23 种设计模式 + iOS 反模式清单。
 
 ## Active Threads
 
