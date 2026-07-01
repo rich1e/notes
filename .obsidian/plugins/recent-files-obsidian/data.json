@@ -5,6 +5,30 @@
       "path": "index.md"
     },
     {
+      "basename": "dayfold",
+      "path": "projects/dayfold/dayfold.md"
+    },
+    {
+      "basename": "swipe-to-delete-row",
+      "path": "projects/dayfold/skills/swipe-to-delete-row.md"
+    },
+    {
+      "basename": "source-tree",
+      "path": "projects/dayfold/references/source-tree.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "javascript-event-loop",
+      "path": "concepts/javascript-event-loop.md"
+    },
+    {
+      "basename": "browser-process-model",
+      "path": "concepts/browser-process-model.md"
+    },
+    {
       "basename": "call-center-sdk-integration",
       "path": "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "2021年度规划-help",
       "path": "Chronicle/2021/2021年度规划-help.md"
-    },
-    {
-      "basename": "2021dev-前端基础",
-      "path": "Chronicle/2021/2021dev-前端基础.md"
-    },
-    {
-      "basename": "2021dev-前端框架",
-      "path": "Chronicle/2021/2021dev-前端框架.md"
-    },
-    {
-      "basename": "IPATool 使用",
-      "path": "Chronicle/2024/IPATool 使用.md"
-    },
-    {
-      "basename": "brew install",
-      "path": "Chronicle/2024/brew install.md"
-    },
-    {
-      "basename": "砸壳",
-      "path": "Chronicle/2024/砸壳.md"
-    },
-    {
-      "basename": "游戏模拟器",
-      "path": "Chronicle/2024/游戏模拟器.md"
     }
   ],
   "omittedPaths": [],

@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-06-29T09:30:00Z*
+*This index is automatically maintained. Last updated: 2026-06-29T11:00:00Z*
 
 ## Concepts
 
@@ -29,6 +29,17 @@ title: Wiki Index
 
 ## Projects
 
+- [[projects/dayfold/dayfold]] — 暖色风格 iOS 日记 App（SwiftUI + Core Data/CloudKit + MapKit + WeatherKit）
+- [[projects/dayfold/concepts/architecture-overview]] — 抽屉式根容器 + MVVM + 共享 CoreDataStack 单例
+- [[projects/dayfold/concepts/core-data-cloudkit-fallback]] — CloudKit 134400 降级本地存储实现
+- [[projects/dayfold/concepts/swiftui-context-propagation]] — sheet/cover 必须显式注入 managedObjectContext
+- [[projects/dayfold/concepts/fetchrequest-vs-observedobject]] — 列表增删 vs 行内属性刷新的两套机制
+- [[projects/dayfold/concepts/drawer-architecture]] — 85% 屏宽抽屉 + 0.38/0.82 弹簧贯穿全 App
+- [[projects/dayfold/skills/entry-editor-image-dirty-tracking]] — imagesChanged 脏标记避免 MediaAsset 误删
+- [[projects/dayfold/skills/soft-delete-with-trash]] — deletedAt 时间戳 + FetchRequest predicate 隔离
+- [[projects/dayfold/skills/warm-theme-tokens]] — Color.warmPaper / Font.warmHeadline / .warmCard() 视觉 token
+- [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义左滑删除 + 速度阈值 + 圆角并入
+- [[projects/dayfold/references/source-tree]] — 源码目录布局与各模块职责
 - [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — AI 外呼热转坐席前端（React 19 + JsSIP + 信科 CC SDK）
 - [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]] — CC SDK 集成：useSoftbar Hook 封装 LaihuAPI
 - [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — 坐席状态机（agentState + callState 双层设计）

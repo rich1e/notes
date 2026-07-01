@@ -1,8 +1,26 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-06-29T10:00:00Z",
+  "last_updated": "2026-06-29T11:00:00Z",
   "projects": {
+    "dayfold": {
+      "source_cwd": "/Users/rich1e/workspace/code/dayfold",
+      "last_synced": "2026-06-29T11:00:00Z",
+      "last_commit_synced": "28d2f1a730351b28e4a32cef2727f61e2f532bd2",
+      "pages_in_vault": [
+        "projects/dayfold/dayfold.md",
+        "projects/dayfold/concepts/architecture-overview.md",
+        "projects/dayfold/concepts/core-data-cloudkit-fallback.md",
+        "projects/dayfold/concepts/swiftui-context-propagation.md",
+        "projects/dayfold/concepts/fetchrequest-vs-observedobject.md",
+        "projects/dayfold/concepts/drawer-architecture.md",
+        "projects/dayfold/skills/entry-editor-image-dirty-tracking.md",
+        "projects/dayfold/skills/soft-delete-with-trash.md",
+        "projects/dayfold/skills/warm-theme-tokens.md",
+        "projects/dayfold/skills/swipe-to-delete-row.md",
+        "projects/dayfold/references/source-tree.md"
+      ]
+    },
     "xk-ai-talk-desk-ui": {
       "source_cwd": "/Users/rich1e/workspace/xk-dev_1.0.0",
       "last_synced": "2026-06-29T10:00:00Z",
