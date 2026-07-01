@@ -1,8 +1,21 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-06-29T11:00:00Z",
+  "last_updated": "2026-07-01T12:00:00Z",
   "projects": {
+    "jrfed-zaxd-mediation-tool": {
+      "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
+      "last_synced": "2026-07-01T12:00:00Z",
+      "last_commit_synced": "bf506f56bff968576f315bf5a34534c9b0881f79",
+      "pages_in_vault": [
+        "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md",
+        "projects/jrfed-zaxd-mediation-tool/concepts/permission-system.md",
+        "projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture.md",
+        "projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage.md",
+        "projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world.md",
+        "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
+      ]
+    },
     "dayfold": {
       "source_cwd": "/Users/rich1e/workspace/code/dayfold",
       "last_synced": "2026-06-29T11:00:00Z",

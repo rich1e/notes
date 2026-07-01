@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-01T12:00:00Z*
+*This index is automatically maintained. Last updated: 2026-07-01T12:30:00Z*
 
 ## Concepts
 
@@ -63,6 +63,12 @@ title: Wiki Index
 - [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]] — CC SDK 集成：useSoftbar Hook 封装 LaihuAPI
 - [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — 坐席状态机（agentState + callState 双层设计）
 - [[projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow]] — PhoneBar 热转/外呼完整通话流程
+- [[projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool]] — 金融客服协谈助手 Chrome 扩展（MV3 + React + Zustand + Antd）
+- [[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]] — 菜单/按钮/浮窗三级权限管控，usePermission Hook
+- [[projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture]] — MV3 三层架构与 Content Script 双世界注入策略
+- [[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]] — Zustand persist + chromeStorage 适配器（禁止 localStorage）
+- [[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]] — 神策 SDK world:MAIN 注入方案
+- [[projects/jrfed-zaxd-mediation-tool/references/source-tree]] — 源码目录布局
 
 ## References
 

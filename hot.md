@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-01T12:00:00Z
+updated: 2026-07-01T12:30:00Z
 ---
 
 # Hot Cache
@@ -9,20 +9,22 @@ updated: 2026-07-01T12:00:00Z
 
 ## Recent Activity
 
+- [2026-07-01T12:30:00Z] WIKI_UPDATE jrfed-zaxd-mediation-tool — 首次同步，创建 6 页：项目总览（协谈工具 Chrome 扩展）、权限管控体系（usePermission Hook）、MV3 三层架构（Content Script 双世界注入）、Zustand+Chrome Storage 持久化、神策 SDK 双脚本方案、源码目录布局
 - [2026-07-01T12:00:00Z] INGEST iOS 17 App Development for Beginners.epub — Arpit Kulsreshtha 著 iOS 17 开发入门书（Swift 5.9/SwiftUI/Xcode 15），蒸馏为 12 页：书籍实体、Swift 基础/SwiftUI 框架/ARC 内存/Swift 并发/iOS 架构模式（概念页）、数据持久化/网络编程/多线程/App Store 发布/Xcode IDE（技能页）、设计模式速查（参考页）
 - [2026-07-01T00:00:00Z] INGEST DSiSoftware.pdf — 神游 DSi 官方操作说明书（操作篇），蒸馏为 12 页：主机实体、趣照/趣音/Wi-Fi/亲子管理/PictoChat/下载游戏技能页、商店/系统设置/菜单软件/网络术语参考页、任天狗狗实体页
-- [2026-06-29T11:00:00Z] WIKI_UPDATE dayfold — 首次同步，创建 11 页：项目总览、架构概览、CloudKit 降级、SwiftUI context 注入、FetchRequest vs ObservedObject、抽屉导航、EntryEditor 图片脏标记、软删除回收箱、暖色主题 token、左滑删除容器、源码目录布局
 - [2026-06-29T09:30:00Z] INGEST Clippings/ — 15 个网页剪藏蒸馏为 13 个 wiki 页面，覆盖 Claude Code 优化、前端核心概念、复古游戏与工具类知识
 
 ## Key New Additions
 
-**iOS 17 知识集群（新建）**：已建立覆盖 iOS 开发全栈的 12 页互链体系。核心概念：Swift 5.9 类型系统+闭包+可选值（`concepts/swift-fundamentals`）、SwiftUI 声明式 UI+状态管理+已知 sheet 陷阱（`concepts/swiftui-framework`）、ARC 强/弱/无主引用+循环引用（`concepts/arc-memory-management`）、async/await+Task+Actor+MainActor（`concepts/swift-concurrency`）、MVC/MVVM/VIPER/Redux 对比（`concepts/ios-app-architecture`）。技能页：Core Data/SwiftData CRUD（与 dayfold 深度互链）、URLSession/Alamofire 网络、GCD/DispatchGroup 多线程、App Store 发布流程（证书→Archive→TestFlight）、Xcode 15 IDE 速查。参考页：GoF 23 种设计模式 + iOS 反模式清单。
+**jrfed-zaxd-mediation-tool（新建）**：金融客服协谈助手 Chrome 扩展首次同步，创建 6 页。核心架构决策：MV3 三层（Background SW + SidePanel + Content Script），双 Content Script 解决神策 SDK 主世界注入问题（`world: "MAIN"`），`chrome.storage.local` 替代 localStorage 的 `chromeStorage` 适配器接入 Zustand persist，三级权限管控（MENU_/BTN_/FW_）通过 `usePermission` Hook 驱动条件渲染。
 
 ## Active Threads
 
-**dayfold（进行中）**：iOS 18+ 暖色日记 App，SwiftUI + Core Data/CloudKit 同步。核心架构：抽屉式导航（85% 屏宽）替代 TabBar，MVVM + 共享 CoreDataStack 单例，无 iCloud 自动降级本地。最近 30 个 commit 集中在 UI 打磨（列表样式/左滑删除/回收箱/地图页面），架构层面稳定。
+**jrfed-zaxd-mediation-tool（进行中）**：金融客服 Chrome 扩展，MV3 + React + Zustand + Antd。最近迭代聚焦权限管控：历史订单页 `BTN_EQUITY_HIST_QUERY` 缺失导致空白 bug、接口 URL 空格 404 问题均已修复。项目含提前结清/安抚金/权益计算/投诉列表/征信核身/供应商工单/原单退款共 9 个功能模块。
 
-**xk-ai-talk-desk-ui（进行中）**：AI 外呼热转坐席前端，`dev_1.0.0` 分支活跃开发。核心是 `useSoftbar` Hook 封装信科 LaihuAPI，事件驱动管理通话生命周期。当前迭代聚焦：热转/手动详情字段调整、电话条样式优化、日期组件优化。
+**dayfold（进行中）**：iOS 18+ 暖色日记 App，SwiftUI + Core Data/CloudKit 同步。核心架构：抽屉式导航（85% 屏宽）替代 TabBar，MVVM + 共享 CoreDataStack 单例，无 iCloud 自动降级本地。
+
+**xk-ai-talk-desk-ui（进行中）**：AI 外呼热转坐席前端，`dev_1.0.0` 分支活跃开发。核心是 `useSoftbar` Hook 封装信科 LaihuAPI，事件驱动管理通话生命周期。
 
 **Claude Code 知识集群**：已建立 `skills/claude-code-token-optimization` 和 `skills/claude-code-settings` 两个核心页面，`concepts/prompt-caching` 作为理论基础页面支撑两者。
 
@@ -30,6 +32,9 @@ updated: 2026-07-01T12:00:00Z
 
 ## Key Takeaways
 
+- **Chrome 扩展禁用 localStorage**：Content Script 与宿主页面共享 localStorage 会造成键名冲突，必须用 `chrome.storage.local`；通过 `chromeStorage` 适配器可直接接入 Zustand persist（[[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]]）
+- **神策 SDK 主世界注入**：Content Script 默认在隔离世界，无法访问 `window.sensorsData*`；用 `world: "MAIN"` 额外注入一个脚本初始化 SDK，两个脚本同一页面并存（[[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]]）
+- **权限控制无路由守卫**：侧边栏扩展没有 URL 变化，权限失效只通过 `usePermission` 隐藏 UI 元素，不做路由跳转（[[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]]）
 - **Core Data + CloudKit 优雅降级**：监听 `NSCocoaErrorDomain 134400` → 清空 `cloudKitContainerOptions` → 二次 `loadPersistentStores`，避免在无 iCloud 设备上刷错误日志
 - **SwiftUI sheet/cover 上下文不继承**：必须显式 `.environment(\.managedObjectContext, context)`，否则子视图写入不会触发外层 `@FetchRequest` 刷新（dayfold 历史上多个 fix 都围绕这个坑）
 - **EntryEditor 图片脏标记模式**：`@Published var images` 的 `didSet` + `isLoadingImages` 守卫，避免 auto-save 时把刚加载的旧图当"未改动"或"已改动"误判
