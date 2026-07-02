@@ -14,6 +14,10 @@ provenance:
   extracted: 0.90
   inferred: 0.10
   ambiguous: 0.00
+relationships:
+  - target: "[[skills/pictochat]]"
+    type: related_to
+
 ---
 
 # iQue DSi 内置软件一览
@@ -68,3 +72,7 @@ provenance:
 ## 照相机快捷键
 
 在 iQue DSi 菜单中，按 `[内] 或 [外]` 键可直接切换至照相机模式（拍摄的相片存入主机内存）。
+
+## Related
+
+- [[skills/pictochat]] — PictoChat（涂鸦聊天）操作指南

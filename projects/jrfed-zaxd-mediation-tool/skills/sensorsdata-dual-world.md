@@ -15,6 +15,10 @@ lifecycle: active
 lifecycle_changed: 2026-07-01
 created: 2026-07-01T12:00:00Z
 updated: 2026-07-01T12:00:00Z
+relationships:
+  - target: "[[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]]"
+    type: related_to
+
 ---
 
 # 神策 SDK 双世界注入方案
@@ -76,3 +80,7 @@ interface BaseTrackParams {
 
 - [[projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture]] — 架构概述
 - [[projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool]] — 项目总览
+
+## Related
+
+- [[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]] — >-

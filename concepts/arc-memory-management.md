@@ -14,6 +14,12 @@ provenance:
   extracted: 0.92
   inferred: 0.08
   ambiguous: 0.00
+relationships:
+  - target: "[[skills/ios-networking]]"
+    type: related_to
+  - target: "[[skills/ios-multithreading]]"
+    type: related_to
+
 ---
 
 # ARC 与内存安全
@@ -138,3 +144,5 @@ SwiftUI 推荐**值类型优先**：View、Model 用 struct；ViewModel/Service 
 - [[concepts/swift-concurrency]] — Actor 解决多线程内存冲突
 - [[projects/dayfold/concepts/core-data-cloudkit-fallback]] — CoreData 对象是引用类型
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[skills/ios-multithreading]] — iOS 多线程
+- [[skills/ios-networking]] — iOS 网络编程

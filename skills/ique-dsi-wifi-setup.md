@@ -14,6 +14,10 @@ provenance:
   extracted: 0.90
   inferred: 0.08
   ambiguous: 0.02
+relationships:
+  - target: "[[entities/nintendo-wansui]]"
+    type: related_to
+
 ---
 
 # iQue DSi Wi-Fi 联网设置指南
@@ -156,3 +160,5 @@ provenance:
 - [[references/ique-dsi-wifi-glossary]] — 网络术语解释（SSID/WEP/WPA/AOSS/WPS等）
 - [[references/ique-dsi-shop]] — 需要 Wi-Fi 才能访问
 - [[entities/ique-dsi]] — 主机概览
+
+- [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）

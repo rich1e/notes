@@ -14,6 +14,10 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
+relationships:
+  - target: "[[skills/ique-ds-download-play]]"
+    type: related_to
+
 ---
 
 # iQue DSi（神游 DSi）
@@ -94,3 +98,7 @@ iQue DSi 是 Nintendo DSi 的中国本地化版本，由**神游科技（中国�
 ## 主机初始化警告
 
 初始化将删除：已购软件数据、录制声音数据、音乐文件喜爱设置、鹦鹉记住的声音。**一旦初始化，数据无法恢复。**
+
+## Related
+
+- [[skills/ique-ds-download-play]] — iQue DS 下载游戏操作指南

@@ -14,6 +14,14 @@ provenance:
   extracted: 0.90
   inferred: 0.10
   ambiguous: 0.00
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: related_to
+  - target: "[[concepts/arc-memory-management]]"
+    type: related_to
+  - target: "[[concepts/swift-fundamentals]]"
+    type: related_to
+
 ---
 
 # iOS 多线程
@@ -173,3 +181,6 @@ queue.cancelAllOperations()
 - [[concepts/swift-concurrency]] — async/await、Actor（现代并发推荐方式）
 - [[skills/ios-networking]] — 网络请求的线程管理
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[concepts/swift-fundamentals]] — Swift 语言基础
+- [[concepts/arc-memory-management]] — ARC 与内存安全
+- [[concepts/swiftui-framework]] — SwiftUI 框架

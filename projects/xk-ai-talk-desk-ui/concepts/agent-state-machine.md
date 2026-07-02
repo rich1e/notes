@@ -15,6 +15,12 @@ lifecycle: draft
 lifecycle_changed: 2026-06-29
 created: 2026-06-29
 updated: 2026-06-29
+relationships:
+  - target: "[[projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool]]"
+    type: related_to
+  - target: "[[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]]"
+    type: related_to
+
 ---
 
 # 坐席状态机设计
@@ -76,3 +82,9 @@ IDLE → DIALING → RINGING_OUT → CONNECTED → HANGUP → AFTER_CALL
 
 - [[xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
 - [[xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
+
+## Related
+
+- [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — >-
+
+- [[projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool]] — >-

@@ -14,6 +14,12 @@ provenance:
   extracted: 0.90
   inferred: 0.08
   ambiguous: 0.02
+relationships:
+  - target: "[[skills/pictochat]]"
+    type: uses
+  - target: "[[entities/nintendo-wansui]]"
+    type: related_to
+
 ---
 
 # iQue DSi 亲子管理设置指南
@@ -24,7 +30,7 @@ provenance:
 
 | 可限制功能 | 说明 |
 |---|---|
-| **PictoChat（涂鸦聊天）** | 可限制使用 |
+| **[[skills/pictochat|PictoChat]]（涂鸦聊天）** | 可限制使用 |
 | **iQue DS 下载游戏** | 可限制使用 |
 | **iQue DSi 商店** | 可限制 iQue DSi 点数的使用（无法购买） |
 | **相片的交换** | 可限制通过无线连接交换相片 |
@@ -84,3 +90,5 @@ provenance:
 - [[references/ique-dsi-system-settings]] — 主机设置4页完整说明
 - [[references/ique-dsi-shop]] — iQue DSi 商店与点数
 - [[entities/ique-dsi]] — 主机概览
+
+- [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）

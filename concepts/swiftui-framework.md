@@ -14,6 +14,12 @@ provenance:
   extracted: 0.85
   inferred: 0.15
   ambiguous: 0.00
+relationships:
+  - target: "[[skills/ios-networking]]"
+    type: related_to
+  - target: "[[skills/ios-multithreading]]"
+    type: related_to
+
 ---
 
 # SwiftUI 框架
@@ -192,3 +198,7 @@ Xcode 15 支持 `#Preview` 宏简写：
 - [[projects/dayfold/concepts/swiftui-context-propagation]] — sheet context 注入陷阱
 - [[projects/dayfold/concepts/fetchrequest-vs-observedobject]] — FetchRequest vs ObservedObject
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[skills/ios-multithreading]] — iOS 多线程
+- [[skills/ios-networking]] — iOS 网络编程
+
+- [[skills/ios-networking]] — iOS 网络编程

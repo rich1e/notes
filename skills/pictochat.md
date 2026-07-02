@@ -14,6 +14,10 @@ provenance:
   extracted: 0.90
   inferred: 0.08
   ambiguous: 0.02
+relationships:
+  - target: "[[entities/nintendo-wansui]]"
+    type: related_to
+
 ---
 
 # PictoChat（涂鸦聊天）操作指南
@@ -109,3 +113,5 @@ PictoChat 可被[[skills/ique-dsi-parental-control|亲子管理]]限制使用。
 - [[entities/ique-dsi]] — 主机概览
 - [[references/ique-dsi-menu-software]] — 所有内置软件
 - [[skills/ique-dsi-parental-control]] — 亲子管理设置
+
+- [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）

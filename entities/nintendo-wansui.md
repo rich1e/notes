@@ -14,6 +14,20 @@ provenance:
   extracted: 0.85
   inferred: 0.12
   ambiguous: 0.03
+relationships:
+  - target: "[[skills/ique-ds-download-play]]"
+    type: related_to
+  - target: "[[skills/pictochat]]"
+    type: related_to
+  - target: "[[skills/ique-dsi-sound]]"
+    type: related_to
+  - target: "[[skills/ique-dsi-camera]]"
+    type: related_to
+  - target: "[[skills/ique-dsi-wifi-setup]]"
+    type: related_to
+  - target: "[[skills/ique-dsi-parental-control]]"
+    type: related_to
+
 ---
 
 # 任天狗狗（Nintendo Wansui）
@@ -48,3 +62,10 @@ provenance:
 - [[entities/ique-dsi]] — 主机硬件信息
 - [[references/ique-dsi-menu-software]] — 所有内置软件
 - [[references/ique-dsi-shop]] — 从商店免费重新下载
+
+- [[skills/ique-dsi-parental-control]] — iQue DSi 亲子管理设置指南
+- [[skills/ique-dsi-wifi-setup]] — iQue DSi Wi-Fi 联网设置指南
+- [[skills/ique-dsi-camera]] — iQue DSi趣照 — 相机功能操作指南
+- [[skills/ique-dsi-sound]] — iQue DSi趣音 — 录音与音乐播放操作指南
+- [[skills/pictochat]] — PictoChat（涂鸦聊天）操作指南
+- [[skills/ique-ds-download-play]] — iQue DS 下载游戏操作指南

@@ -15,6 +15,12 @@ lifecycle: active
 lifecycle_changed: 2026-07-01
 created: 2026-07-01T12:00:00Z
 updated: 2026-07-01T12:00:00Z
+relationships:
+  - target: "[[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]]"
+    type: related_to
+  - target: "[[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]]"
+    type: related_to
+
 ---
 
 # 权限管控体系
@@ -68,3 +74,9 @@ const { hasPermission, hasAnyPermission, hasAllPermissions } = usePermission();
 
 - [[projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool]] — 项目总览
 - [[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]] — 持久化方案
+
+## Related
+
+- [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — >-
+
+- [[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]] — >-

@@ -15,6 +15,10 @@ lifecycle: draft
 lifecycle_changed: 2026-06-29
 created: 2026-06-29
 updated: 2026-06-29
+relationships:
+  - target: "[[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]]"
+    type: related_to
+
 ---
 
 # xk-ai-talk-desk-ui
@@ -71,3 +75,7 @@ AI 外呼热转坐席工作台前端。核心场景：AI 智能客服与客户�
 - [[xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
 - [[xk-ai-talk-desk-ui/concepts/agent-state-machine]]
 - [[xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
+
+## Related
+
+- [[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]] — >-

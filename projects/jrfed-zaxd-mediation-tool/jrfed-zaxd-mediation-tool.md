@@ -15,6 +15,10 @@ lifecycle: active
 lifecycle_changed: 2026-07-01
 created: 2026-07-01T12:00:00Z
 updated: 2026-07-01T12:00:00Z
+relationships:
+  - target: "[[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]]"
+    type: related_to
+
 ---
 
 # jrfed-zaxd-mediation-tool — 金融客服协谈助手
@@ -92,3 +96,7 @@ Content Script 禁止使用 `localStorage` / `sessionStorage`。项目通过 `sr
 - [[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]] — Zustand + Chrome Storage 持久化
 - [[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]] — 神策 SDK 双脚本注入方案
 - [[projects/jrfed-zaxd-mediation-tool/references/source-tree]] — 源码目录布局
+
+## Related
+
+- [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — >-

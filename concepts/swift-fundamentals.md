@@ -14,6 +14,12 @@ provenance:
   extracted: 0.90
   inferred: 0.10
   ambiguous: 0.00
+relationships:
+  - target: "[[skills/ios-networking]]"
+    type: related_to
+  - target: "[[skills/ios-multithreading]]"
+    type: related_to
+
 ---
 
 # Swift 语言基础
@@ -197,3 +203,5 @@ struct Circle: Drawable {
 - [[concepts/swift-concurrency]] — async/await 并发
 - [[concepts/ios-app-architecture]] — MVC/MVVM 架构模式
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[skills/ios-multithreading]] — iOS 多线程
+- [[skills/ios-networking]] — iOS 网络编程

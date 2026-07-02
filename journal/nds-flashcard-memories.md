@@ -21,6 +21,8 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/nds-flashcard]]"
+  - target: "[[entities/neogeo-mame]]"
+    type: related_to
     type: related_to
 ---
 
@@ -79,3 +81,7 @@ NDSL 具备 Slot-1（NDS 插槽）和 Slot-2（GBA 插槽），折腾价值丰�
 ## 相关页面
 
 - [[entities/nds-flashcard]] — NDS 烧录卡技术详情与使用指南
+
+## Related
+
+- [[entities/neogeo-mame]] — NEOGEO / MAME 模拟器配置

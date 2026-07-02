@@ -19,6 +19,8 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/nds-flashcard]]"
+  - target: "[[journal/nds-flashcard-memories]]"
+    type: related_to
     type: related_to
 ---
 
@@ -66,3 +68,7 @@ MAME 使用 merged/split/non-merged 三种 ROM 集格式，NEOGEO 游戏通常�
 ## 相关页面
 
 - [[entities/nds-flashcard]] — NDS 烧录卡，同为复古游戏主题
+
+## Related
+
+- [[journal/nds-flashcard-memories]] — NDS 世代烧录卡回忆录

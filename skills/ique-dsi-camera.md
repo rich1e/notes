@@ -14,6 +14,10 @@ provenance:
   extracted: 0.88
   inferred: 0.10
   ambiguous: 0.02
+relationships:
+  - target: "[[entities/nintendo-wansui]]"
+    type: related_to
+
 ---
 
 # iQue DSi趣照 — 相机功能操作指南
@@ -120,3 +124,5 @@ provenance:
 - [[entities/ique-dsi]] — 主机硬件信息
 - [[references/ique-dsi-menu-software]] — 所有内置软件
 - [[skills/ique-dsi-sound]] — 趣音功能
+
+- [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）

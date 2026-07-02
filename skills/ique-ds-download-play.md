@@ -14,6 +14,10 @@ provenance:
   extracted: 0.88
   inferred: 0.10
   ambiguous: 0.02
+relationships:
+  - target: "[[entities/nintendo-wansui]]"
+    type: related_to
+
 ---
 
 # iQue DS 下载游戏操作指南
@@ -42,3 +46,5 @@ provenance:
 - [[entities/ique-dsi]] — 主机概览
 - [[references/ique-dsi-menu-software]] — 所有内置软件
 - [[skills/ique-dsi-parental-control]] — 亲子管理设置
+
+- [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）

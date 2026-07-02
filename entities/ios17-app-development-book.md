@@ -14,6 +14,20 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.00
+relationships:
+  - target: "[[concepts/arc-memory-management]]"
+    type: extends
+  - target: "[[concepts/swift-concurrency]]"
+    type: related_to
+  - target: "[[skills/ios-networking]]"
+    type: related_to
+  - target: "[[skills/ios-multithreading]]"
+    type: related_to
+  - target: "[[skills/ios-app-store-publishing]]"
+    type: extends
+  - target: "[[skills/xcode-ide-guide]]"
+    type: extends
+
 ---
 
 # iOS 17 App Development for Beginners
@@ -52,3 +66,4 @@ provenance:
 - [[concepts/swiftui-framework]] — SwiftUI 框架
 - [[concepts/ios-app-architecture]] — iOS 架构模式
 - [[projects/dayfold/dayfold]] — 本地 SwiftUI 项目
+

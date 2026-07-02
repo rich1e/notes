@@ -9,6 +9,7 @@ updated: 2026-07-01T12:30:00Z
 
 ## Recent Activity
 
+- [2026-07-02T00:10:00Z] CROSS_LINK — 扫描 61 页，新增 43 个链接，修改 24 个文件；typed relations 写入 frontmatter；仅剩 1 个孤立页面（entities/feather-ios-sideload）。主要连接：ios17-app-development-book ↔ arc/concurrency/networking/multithreading/xcode/appstore；nintendo-wansui ↔ 全部 ique-dsi 技能页；ios concepts ↔ ios skills 双向关联；两个跨项目链接（jrfed ↔ xk-ai-talk-desk）。
 - [2026-07-02T00:01:00Z] TAG_NORMALIZE — 规范化 76 个文件；保留 `dsi`/`DSTWO` 原样；删除占位标签 `标签1`/`标签2`；未知标签合并（`strategy`→`game`、`磁盘管理`→`macos`、`日本`→`travel` 等）；别名统一（`gcd`/`dispatchqueue`/`multithreading`→`concurrency`、`urlsession`/`alamofire`→`networking` 等）。
 - [2026-07-01T12:30:00Z] WIKI_UPDATE jrfed-zaxd-mediation-tool — 首次同步，创建 6 页：项目总览（协谈工具 Chrome 扩展）、权限管控体系（usePermission Hook）、MV3 三层架构（Content Script 双世界注入）、Zustand+Chrome Storage 持久化、神策 SDK 双脚本方案、源码目录布局
 - [2026-07-01T12:00:00Z] INGEST iOS 17 App Development for Beginners.epub — Arpit Kulsreshtha 著 iOS 17 开发入门书（Swift 5.9/SwiftUI/Xcode 15），蒸馏为 12 页：书籍实体、Swift 基础/SwiftUI 框架/ARC 内存/Swift 并发/iOS 架构模式（概念页）、数据持久化/网络编程/多线程/App Store 发布/Xcode IDE（技能页）、设计模式速查（参考页）

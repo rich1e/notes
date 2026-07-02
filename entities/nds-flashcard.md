@@ -22,6 +22,8 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/neogeo-mame]]"
+  - target: "[[journal/nds-flashcard-memories]]"
+    type: related_to
     type: related_to
 ---
 
@@ -84,3 +86,7 @@ R4iSDHC 是较主流的 R4 烧录卡品牌，相比早期 R4：
 ## 相关页面
 
 - [[entities/neogeo-mame]] — NEOGEO 街机模拟，同为复古游戏主题
+
+## Related
+
+- [[journal/nds-flashcard-memories]] — NDS 世代烧录卡回忆录

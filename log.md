@@ -15,3 +15,4 @@ title: Wiki Log
 - [2026-07-01T17:51] GRAPH_COLORIZE mode=combined groups=10 backup=graph.json.backup-20260701-1751
 - [2026-07-02T00:00:00Z] TAG_AUDIT total_unique_tags=189 alias_tags=111 unknown_tags=14 over_tagged_pages=12 untagged_pages=378 taxonomy_created=_meta/taxonomy.md
 - [2026-07-02T00:01:00Z] TAG_NORMALIZE tags_renamed=~100 pages_modified=76 skipped=dsi,DSTWO removed=标签1,标签2 unknown_merged=strategy→game,Brew Update→homebrew,shop→fintech,points→fintech,view→architecture,chrome→browser,webkit→browser,calibre→tools,磁盘管理→macos,spotlight→macos,日本→travel
+- [2026-07-02T00:10:00Z] CROSS_LINK pages_scanned=61 links_added=43 typed_relations_written=43 pages_modified=24 orphans_remaining=1(entities/feather-ios-sideload) misc_affinity_updated=0 promotion_candidates=0 QMD_skipped=QMD_WIKI_COLLECTION_unset

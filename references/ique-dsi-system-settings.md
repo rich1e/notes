@@ -14,6 +14,10 @@ provenance:
   extracted: 0.90
   inferred: 0.08
   ambiguous: 0.02
+relationships:
+  - target: "[[skills/pictochat]]"
+    type: uses
+
 ---
 
 # iQue DSi 主机设置参考
@@ -53,7 +57,7 @@ provenance:
 
 ### 用户信息说明
 
-- **签名**：在 PictoChat 中被看到，可在签名里输入对聊天对方的问候语或简单的自我介绍
+- **签名**：在 [[skills/pictochat|PictoChat]] 中被看到，可在签名里输入对聊天对方的问候语或简单的自我介绍
 - **用户颜色**：选择的颜色会在 iQue DSi 菜单等各处画面中使用
 
 ## 主机设置 3

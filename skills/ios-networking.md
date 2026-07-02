@@ -14,6 +14,12 @@ provenance:
   extracted: 0.88
   inferred: 0.12
   ambiguous: 0.00
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: related_to
+  - target: "[[concepts/arc-memory-management]]"
+    type: related_to
+
 ---
 
 # iOS 网络编程
@@ -187,3 +193,5 @@ request.setValue("application/json", forHTTPHeaderField: "Accept")
 - [[skills/ios-multithreading]] — 网络请求线程调度（GCD）
 - [[concepts/swift-fundamentals]] — Codable 协议
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[concepts/arc-memory-management]] — ARC 与内存安全
+- [[concepts/swiftui-framework]] — SwiftUI 框架
