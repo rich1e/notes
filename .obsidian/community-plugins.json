@@ -16,9 +16,7 @@
   "calendar",
   "periodic-notes",
   "obsidian-day-planner",
-  "obsidian-kanban",
   "obsidian-excalidraw-plugin",
-  "obsidian-mind-map",
   "quickadd",
   "obsidian-admonition",
   "obsidian-plantuml",
@@ -40,5 +38,6 @@
   "obsidian-chartsview-plugin",
   "claudian",
   "attachment-management",
-  "obsidian-vega"
+  "obsidian-vega",
+  "image-converter"
 ]

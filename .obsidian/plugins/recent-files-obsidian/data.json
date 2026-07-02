@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "岛国游",
+      "path": "buckets/travel/岛国游.md"
+    },
+    {
+      "basename": "IMG-20260701181457268",
+      "path": "assets/buckets/travel/岛国游/IMG-20260701181457268.jpeg"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "git-remote-host-identification-has-changed",
+      "path": "buckets/work-records/git-remote-host-identification-has-changed.md"
+    },
+    {
       "basename": "DeepSeeK 突然发布 DSpark，让 AI 的回答不再「挤牙膏」",
       "path": "Clippings/DeepSeeK 突然发布 DSpark，让 AI 的回答不再「挤牙膏」.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "log",
@@ -171,34 +183,6 @@
     {
       "basename": "移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站",
       "path": "Clippings/移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站.md"
-    },
-    {
-      "basename": "序章-起承转结",
-      "path": "Clippings/序章-起承转结.md"
-    },
-    {
-      "basename": "如何在终端中优雅地听歌",
-      "path": "Clippings/如何在终端中优雅地听歌.md"
-    },
-    {
-      "basename": "浅谈 R4iSDHC 用户体验",
-      "path": "Clippings/浅谈 R4iSDHC 用户体验.md"
-    },
-    {
-      "basename": "前端常见面试-存储缓存篇",
-      "path": "Clippings/前端常见面试-存储缓存篇.md"
-    },
-    {
-      "basename": "弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站",
-      "path": "Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站.md"
-    },
-    {
-      "basename": "浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站",
-      "path": "Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站.md"
-    },
-    {
-      "basename": "电波的电玩记忆-NDS世代 – 电波万事屋",
-      "path": "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md"
     }
   ],
   "omittedPaths": [],

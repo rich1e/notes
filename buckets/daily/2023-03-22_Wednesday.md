@@ -12,7 +12,7 @@ open `FDE Analysis`
 
 click `Mesh Structure`
 
-![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260629163136167-14.png]]
+![[assets/buckets/daily/2023-03-22_Wednesday/IMG-20260629163136167-20.png]]
 
 click `Calculate Modes`
 

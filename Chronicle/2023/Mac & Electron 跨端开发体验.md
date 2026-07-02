@@ -1,6 +1,6 @@
 ![[assets/Chronicle/2023/Mac & Electron 跨端开发体验/IMG-20260629163136041.png]]
 
-![[assets/Chronicle/2023/Mac & Electron 跨端开发体验/IMG-20260629163136041-15.png]]
+![[assets/Chronicle/2023/Mac & Electron 跨端开发体验/IMG-20260629163136041-21.png]]
 
 ![[assets/Chronicle/2023/Mac & Electron 跨端开发体验/IMG-20260629163136042.png]]
 
