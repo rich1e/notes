@@ -8,8 +8,7 @@ created: 2026-06-03
 description: Chrome支持以下几种进程模型：Process-per-site-instance Process-per-site Process-per-tab Single Process。Browser只有一个，主控整个系统的运行，管理Chrome大部分的日常事务；而Renderer则可以有多个，主要负责页面的渲染和显示。
 tags:
   - clippings
-  - Chrome
-  - WebKit
+  - browser
 ---
 现阶段的浏览器运行在一个单用户，多合作，多任务的操作系统中。一个糟糕的网页同样可以让一个现代的浏览器崩溃。其原因可能是一个插件出现bug,最终的结果是整个浏览器以及其他正在运行的标签被销毁。
 

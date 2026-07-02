@@ -1,7 +1,7 @@
 ---
 title: iQue DSi 商店与 iQue 点数
 category: references
-tags: [nintendo, ique, shop, points, dsi]
+tags: [nintendo, ique, fintech, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

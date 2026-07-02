@@ -8,8 +8,7 @@ created: 2026-07-01
 description: 大模型的尽头，是复杂的系统工程问题
 tags:
   - clippings
-  - AI
-  - Deepseek
+  - llm
 ---
 最近忙着大规模招兵买马的 DeepSeek，也始终没有忘记开源这条主线。
 

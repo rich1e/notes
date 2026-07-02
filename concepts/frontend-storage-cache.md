@@ -3,9 +3,7 @@ title: 前端存储与缓存
 category: concepts
 tags:
   - browser
-  - http-cache
-  - cookie
-  - localstorage
+  - performance
   - f2e
 summary: 浏览器端存储机制全览：Cookie、LocalStorage、SessionStorage 对比，HTTP 强缓存与协商缓存原理及最佳实践。
 sources:

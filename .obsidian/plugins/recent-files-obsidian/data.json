@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "nintendo-wansui",
+      "path": "entities/nintendo-wansui.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "岛国游",
+      "path": "buckets/travel/岛国游.md"
+    },
+    {
+      "basename": "log",
+      "path": "log.md"
+    },
+    {
       "basename": "HomePage",
       "path": "Dashboard/HomePage.md"
     },
@@ -25,20 +45,12 @@
       "path": "buckets/daily/delete.md"
     },
     {
-      "basename": "index",
-      "path": "index.md"
-    },
-    {
       "basename": "2021-react 经验总结",
       "path": "Chronicle/2021/2021-react 经验总结.md"
     },
     {
       "basename": "2021-vite",
       "path": "Chronicle/2021/2021-vite.md"
-    },
-    {
-      "basename": "岛国游",
-      "path": "buckets/travel/岛国游.md"
     },
     {
       "basename": "IMG-20260701181457268",
@@ -59,14 +71,6 @@
     {
       "basename": "自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬",
       "path": "Clippings/自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "log",
-      "path": "log.md"
     },
     {
       "basename": "jrfed-zaxd-mediation-tool",
@@ -195,10 +199,6 @@
     {
       "basename": "Mechanical Watch – Bartosz Ciechanowski",
       "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
-    },
-    {
-      "basename": "Feather 签名工具",
-      "path": "Clippings/Feather 签名工具.md"
     }
   ],
   "omittedPaths": [],

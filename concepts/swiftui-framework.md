@@ -1,7 +1,7 @@
 ---
 title: SwiftUI 框架
 category: concepts
-tags: [swiftui, ios, declarative-ui, swift, view]
+tags: [swiftui, ios, design-system, swift, architecture]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

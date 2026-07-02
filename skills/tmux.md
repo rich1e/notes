@@ -3,7 +3,6 @@ title: Tmux 快速参考
 category: skills
 tags:
   - tmux
-  - terminal
   - cli
   - tools
 summary: Tmux 终端复用器快捷键速查、配置要点及插件管理，适用于 Tmux 2.3+。

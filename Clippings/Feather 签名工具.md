@@ -8,9 +8,8 @@ created: 2026-04-27
 description: 本文介绍了 Feather 这款机上签名工具的使用，软件使用起来类似国内的万能签等工具，支持插件注入、随机包名、机上安装等使用功能，还支持 AltStore/SideStore 所使用的软件源，不过只能搭配付费开发者证书进行使用。
 tags:
   - clippings
-  - Feather
-  - iOS
   - sideload
+  - ios
 ---
 ![[assets/Clippings/Feather 签名工具/IMG-20260629163136142.jpeg]]
 

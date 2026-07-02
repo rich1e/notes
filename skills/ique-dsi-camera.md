@@ -1,7 +1,7 @@
 ---
 title: iQue DSi趣照 — 相机功能操作指南
 category: skills
-tags: [nintendo, ique, camera, photography, dsi]
+tags: [nintendo, ique, media, photography, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

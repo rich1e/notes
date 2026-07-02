@@ -5,7 +5,7 @@ tags:
   - game
   - retro-gaming
   - nds
-  - hardware
+  - handheld
 summary: Nintendo DS/NDSL 烧录卡使用指南：R4iSDHC 内核下载、TF 卡格式化、ROM 管理及多媒体功能。
 sources:
   - https://www.cnblogs.com/mcxw/p/16347794.html

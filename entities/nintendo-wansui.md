@@ -1,7 +1,7 @@
 ---
 title: 任天狗狗（Nintendo Wansui）
 category: entities
-tags: [nintendo, ique, game, virtual-pet, dsi]
+tags: [nintendo, ique, game, handheld, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

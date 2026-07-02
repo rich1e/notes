@@ -4,7 +4,6 @@ category: journal
 tags:
   - game
   - fire-emblem
-  - strategy
 summary: FE 新黑暗龙序章（起承转结）四部分关卡攻略，H 难度限定序章，涵盖胜利条件、敌军配置与注意事项。
 sources:
   - http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/x.htm

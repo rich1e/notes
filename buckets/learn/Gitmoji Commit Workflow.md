@@ -1,5 +1,5 @@
 ---
-tags: ["git","workflow","undone"]
+tags: [git, automation, undone]
 ---
 
 - Gitmoji Commit Workflow

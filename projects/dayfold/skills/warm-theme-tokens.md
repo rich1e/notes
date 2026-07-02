@@ -1,7 +1,7 @@
 ---
 title: 暖色主题色与字体
 category: project
-tags: [ios, swiftui, design-system, theming]
+tags: [ios, swiftui, design-system]
 sources: [projects/dayfold]
 summary: >-
   Color.warmPaper/Cream/Light/Brown/Accent/Gray/Dark 与 Font.warmTitle/Headline/Body/Caption/Footnote

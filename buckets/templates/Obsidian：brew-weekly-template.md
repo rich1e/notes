@@ -3,10 +3,9 @@ title: "Homebrew 更新周报 · 第 {{YYYYMMDD}} 期"
 link: homebrew-weekly-update-{{YYYYMMDD}}
 date: {{YYYY-MM-DD}}
 tags:
-  - Homebrew
-  - Brew Update
-  - CLI
-  - macOS
+  - homebrew
+  - cli
+  - macos
 description: {{一句话摘要}}
 ---
 

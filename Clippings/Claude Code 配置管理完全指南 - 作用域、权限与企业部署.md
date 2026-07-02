@@ -8,7 +8,7 @@ created: 2026-06-25
 description: 深度解析 Claude Code 四级配置作用域、权限系统、settings.json 格式及企业 MDM 托管部署方案，适合团队和企业用户。
 tags:
   - clippings
-  - Claude
+  - claude-code
 ---
 Claude Code 拥有灵活的多层级配置系统，从个人偏好到企业安全策略都能精细控制。理解这个配置体系对于团队协作和企业部署至关重要。
 

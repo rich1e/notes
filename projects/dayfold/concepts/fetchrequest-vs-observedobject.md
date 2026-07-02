@@ -1,7 +1,7 @@
 ---
 title: FetchRequest 与行内属性刷新
 category: project
-tags: [ios, swiftui, core-data, observed-object]
+tags: [ios, swiftui, core-data, state-management]
 sources: [projects/dayfold]
 summary: >-
   @FetchRequest 只感知对象集合增删；同一对象上的属性/关系变化需把 NSManagedObject

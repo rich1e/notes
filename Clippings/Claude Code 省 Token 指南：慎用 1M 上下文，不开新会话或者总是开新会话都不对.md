@@ -8,7 +8,7 @@ created: 2026-06-18
 description: 理解提示缓存机制，才能真正搞清楚 Claude Code 的成本结构——很多时候，继续聊比开新会话更省钱。
 tags:
   - clippings
-  - Claude
+  - claude-code
 ---
 [See all posts](https://baoyu.io/translations)
 

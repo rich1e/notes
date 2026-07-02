@@ -2,7 +2,7 @@
 title: >-
   Chrome 扩展 MV3 架构：三进程协作与 Content Script 注入策略
 category: concepts
-tags: [chrome-extension, manifest-v3, content-script, service-worker, sidepanel]
+tags: [chrome-extension]
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   MV3 三层架构：Background Service Worker + SidePanel + Content Script（注入全部 frame），划词浮窗仅顶层渲染，iframe 内通过 postMessage 上传识别结果。

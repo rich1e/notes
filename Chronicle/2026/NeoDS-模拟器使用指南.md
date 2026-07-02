@@ -1,8 +1,7 @@
 ---
 created: 2026-04-30
 tags:
-  - emulator
-  - neo-geo
+  - retro-gaming
   - nds
 ---
 

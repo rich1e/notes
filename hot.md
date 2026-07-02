@@ -9,6 +9,7 @@ updated: 2026-07-01T12:30:00Z
 
 ## Recent Activity
 
+- [2026-07-02T00:01:00Z] TAG_NORMALIZE — 规范化 76 个文件；保留 `dsi`/`DSTWO` 原样；删除占位标签 `标签1`/`标签2`；未知标签合并（`strategy`→`game`、`磁盘管理`→`macos`、`日本`→`travel` 等）；别名统一（`gcd`/`dispatchqueue`/`multithreading`→`concurrency`、`urlsession`/`alamofire`→`networking` 等）。
 - [2026-07-01T12:30:00Z] WIKI_UPDATE jrfed-zaxd-mediation-tool — 首次同步，创建 6 页：项目总览（协谈工具 Chrome 扩展）、权限管控体系（usePermission Hook）、MV3 三层架构（Content Script 双世界注入）、Zustand+Chrome Storage 持久化、神策 SDK 双脚本方案、源码目录布局
 - [2026-07-01T12:00:00Z] INGEST iOS 17 App Development for Beginners.epub — Arpit Kulsreshtha 著 iOS 17 开发入门书（Swift 5.9/SwiftUI/Xcode 15），蒸馏为 12 页：书籍实体、Swift 基础/SwiftUI 框架/ARC 内存/Swift 并发/iOS 架构模式（概念页）、数据持久化/网络编程/多线程/App Store 发布/Xcode IDE（技能页）、设计模式速查（参考页）
 - [2026-07-01T00:00:00Z] INGEST DSiSoftware.pdf — 神游 DSi 官方操作说明书（操作篇），蒸馏为 12 页：主机实体、趣照/趣音/Wi-Fi/亲子管理/PictoChat/下载游戏技能页、商店/系统设置/菜单软件/网络术语参考页、任天狗狗实体页

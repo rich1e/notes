@@ -1,5 +1,5 @@
 ---
-tags: ["undone","vue","vue3"]
+tags: [undone, vue]
 ---
 
 ## 参考

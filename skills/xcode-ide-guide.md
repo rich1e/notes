@@ -1,7 +1,7 @@
 ---
 title: Xcode IDE 入门
 category: skills
-tags: [xcode, ios, ide, simulator, playground, xcode-cloud]
+tags: [xcode, ios, xcode-cloud]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

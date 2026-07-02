@@ -3,9 +3,7 @@ title: macOS U盘清理与Spotlight保护目录问题
 date: 2026-04-30
 tags:
   - macos
-  - terminal
-  - 磁盘管理
-  - spotlight
+  - cli
 aliases:
   - macOS隐藏文件清理
   - dot_clean错误处理

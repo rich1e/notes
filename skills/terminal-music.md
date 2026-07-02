@@ -5,7 +5,6 @@ tags:
   - macos
   - cli
   - tools
-  - shell
 summary: 用 macOS 内置的 afplay + shell 函数实现终端随机播放本地音乐，支持关键字检索、切歌、暂停、自动续播。
 sources:
   - http://idle.systems/posts/terminal_music.html

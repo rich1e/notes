@@ -4,8 +4,7 @@ category: skills
 tags:
   - claude-code
   - settings
-  - configuration
-  - permissions
+  - security
 summary: Claude Code 四级配置作用域体系、settings.json 格式、权限系统及企业 MDM 托管部署方案。
 sources:
   - https://www.claudecode.xyz/articles/claude-code-mm4tlbbs

@@ -3,8 +3,6 @@ title: 浏览器进程/线程模型
 category: concepts
 tags:
   - browser
-  - chrome
-  - webkit
   - performance
 summary: Chrome 多进程架构分析：Browser 进程、Renderer 进程、Plugin 进程的职责分工及隔离优势，浏览器组件构成。
 sources:

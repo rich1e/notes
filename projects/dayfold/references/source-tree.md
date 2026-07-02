@@ -1,7 +1,7 @@
 ---
 title: Dayfold 源码目录布局
 category: project
-tags: [ios, swiftui, file-layout]
+tags: [ios, swiftui, architecture]
 sources: [projects/dayfold]
 summary: >-
   dayfold/dayfold/ 下的模块划分：Models / Services / ViewModels / Views

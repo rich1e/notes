@@ -1,5 +1,5 @@
 ---
-tags: ["game","it"]
+tags: [game]
 ---
 
 [史上最好用的硬件监控软件，微星Afterburner使用教程](https://www.bilibili.com/video/BV124411L7L8?vd_source=3710ff3fa57db21b813ef420454b2e16)

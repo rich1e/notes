@@ -1,7 +1,7 @@
 ---
 title: iQue DSi Wi-Fi 联网设置指南
 category: skills
-tags: [nintendo, ique, wifi, networking, dsi]
+tags: [nintendo, ique, networking, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

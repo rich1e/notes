@@ -13,3 +13,5 @@ title: Wiki Log
 - [2026-07-01T12:30:00Z] WIKI_UPDATE project=jrfed-zaxd-mediation-tool pages_updated=0 pages_created=6 source_cwd=/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool last_commit=bf506f5
 - [2026-07-01T17:49] GRAPH_COLORIZE mode=by-tag groups=10 backup=graph.json.backup-20260701-1749
 - [2026-07-01T17:51] GRAPH_COLORIZE mode=combined groups=10 backup=graph.json.backup-20260701-1751
+- [2026-07-02T00:00:00Z] TAG_AUDIT total_unique_tags=189 alias_tags=111 unknown_tags=14 over_tagged_pages=12 untagged_pages=378 taxonomy_created=_meta/taxonomy.md
+- [2026-07-02T00:01:00Z] TAG_NORMALIZE tags_renamed=~100 pages_modified=76 skipped=dsi,DSTWO removed=标签1,标签2 unknown_merged=strategy→game,Brew Update→homebrew,shop→fintech,points→fintech,view→architecture,chrome→browser,webkit→browser,calibre→tools,磁盘管理→macos,spotlight→macos,日本→travel

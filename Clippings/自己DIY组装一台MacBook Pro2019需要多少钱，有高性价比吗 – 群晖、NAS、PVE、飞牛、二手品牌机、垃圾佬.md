@@ -7,7 +7,7 @@ created: 2026-07-01
 description:
 tags:
   - clippings
-  - mac
+  - macos
 ---
 ## 自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗
 

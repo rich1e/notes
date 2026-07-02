@@ -1,7 +1,7 @@
 ---
 title: iQue DSi 网络术语表
 category: references
-tags: [nintendo, ique, networking, glossary, wifi]
+tags: [nintendo, ique, networking, glossary]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

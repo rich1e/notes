@@ -28,7 +28,7 @@
       "conflictResolution": "increment"
     }
   ],
-  "selectedFilenamePreset": "NoteName-Timestamp",
+  "selectedFilenamePreset": "Keep original name",
   "outputFormat": "NONE",
   "quality": 100,
   "colorDepth": 1,
@@ -109,7 +109,7 @@
       "ffmpegPreset": "medium"
     }
   ],
-  "selectedConversionPreset": "WEBP (75, no resizing)",
+  "selectedConversionPreset": "None",
   "globalPresets": [
     {
       "name": "WebP 75",
@@ -120,7 +120,7 @@
       "resizePreset": "Default (No Resize)"
     }
   ],
-  "selectedGlobalPreset": "WebP 75",
+  "selectedGlobalPreset": "",
   "linkFormatSettings": {
     "linkFormatPresets": [
       {
@@ -342,7 +342,7 @@
   "showSpaceSavedNotification": true,
   "revertToOriginalIfLarger": false,
   "minimumCompressionSavingsInKB": 30,
-  "enableImageCaptions": false,
+  "enableImageCaptions": true,
   "skipCaptionExtensions": "icns",
   "captionFontSize": "var(--font-smaller)",
   "captionColor": "var(--text-gray)",

@@ -8,8 +8,7 @@ description:
 tags:
   - clippings
   - game
-  - NEOGEO
-  - MAME
+  - retro-gaming
 ---
 MAME 0.260 里，这一类游戏，源代码 分类是 neogeo/neogeo.cpp，其它版本可能略有差异，你可以在游戏列表中把这一类找出来看一看。
 

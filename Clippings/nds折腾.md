@@ -8,7 +8,7 @@ created: 2026-06-03
 description: 开幕雷击 重新梳理我的NDSL折腾流程 下载内核， 解压后转移到格式化为FAT32格式的TF卡 TF卡内存大于64G，需要使用DiskGenius等软件格式化，从百度网盘下载绿色版的DiskGenius即可。 内核是什么？ 大家知道，R4卡是为DS系列制作的完美烧录卡之一，但是只有一张金卡没有用。我
 tags:
   - clippings
-  - NDS
+  - nds
   - DSTWO
 ---
 开幕雷击  

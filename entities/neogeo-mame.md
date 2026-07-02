@@ -4,8 +4,6 @@ category: entities
 tags:
   - game
   - retro-gaming
-  - emulator
-  - neogeo
 summary: MAME 模拟器中运行 NEOGEO 街机及 AES 家用机游戏的配置要点，包括 BIOS、ROM 管理与存档设置。
 sources:
   - https://jjui.readthedocs.io/mame/mame_configure/neogeo.html

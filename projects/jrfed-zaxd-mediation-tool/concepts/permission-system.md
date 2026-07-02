@@ -2,7 +2,7 @@
 title: >-
   权限管控体系（菜单级 + 按钮级 + 浮窗级）
 category: concepts
-tags: [chrome-extension, permission, rbac, zustand, react-hook]
+tags: [chrome-extension, security, zustand, react]
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   登录后从后端获取权限资源树，存入 Zustand Store，通过 usePermission Hook 在组件中控制菜单/按钮/浮窗的显示，无需路由守卫。

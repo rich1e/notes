@@ -2,10 +2,10 @@
 title: 移动端定时器精度问题
 category: concepts
 tags:
-  - mobile
+  - ios
   - javascript
   - browser
-  - bugfix
+  - debugging
 summary: 移动端 setInterval/setTimeout 因锁屏、APP 后台、页面卡顿导致计时不准的根因与解决方案（visibilitychange + Web Worker）。
 sources:
   - https://www.zhoulujun.cn/html/webfront/SGML/html5/2017_0927_8053.html

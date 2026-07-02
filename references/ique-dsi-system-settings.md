@@ -1,7 +1,7 @@
 ---
 title: iQue DSi 主机设置参考
 category: references
-tags: [nintendo, ique, settings, dsi, configuration]
+tags: [nintendo, ique, settings, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

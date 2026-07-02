@@ -1,7 +1,7 @@
 ---
 title: iOS 架构模式
 category: concepts
-tags: [ios, architecture, mvvm, mvc, viper, design-patterns, swiftui]
+tags: [ios, architecture, swiftui]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

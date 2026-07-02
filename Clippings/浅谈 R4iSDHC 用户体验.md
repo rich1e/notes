@@ -7,7 +7,7 @@ created: 2026-06-03
 description: 首先是拆壳图：基本上和其他 R4 烧录卡没啥区别。最不能忍的，还是它的系统内核。系统内核操作                启动时有三个选项 - 游戏、多媒体、设定：
 tags:
   - clippings
-  - R4
+  - flashcard
   - DSTWO
 ---
 首先是拆壳图：

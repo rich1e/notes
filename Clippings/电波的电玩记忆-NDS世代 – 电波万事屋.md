@@ -8,7 +8,7 @@ description: 说来遗憾，整个NDS世代对我来说是完全错过了的。�
 tags:
   - clippings
   - DSTWO
-  - R4
+  - flashcard
 ---
 说来遗憾，整个NDS世代对我来说是完全错过了的。那时见过的掌机只有GBA SP和PSP两种，等我知道有NDS这个存在时，3DS都已经发售一段时间了。
 

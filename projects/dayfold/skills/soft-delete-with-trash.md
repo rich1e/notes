@@ -1,7 +1,7 @@
 ---
 title: 软删除 + 回收箱
 category: project
-tags: [ios, swiftui, core-data, soft-delete, ux]
+tags: [ios, swiftui, core-data, persistence, design-system]
 sources: [projects/dayfold]
 summary: >-
   Entry 用 deletedAt 时间戳实现软删除，@FetchRequest 用 NSPredicate 隔离

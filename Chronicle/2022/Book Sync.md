@@ -1,5 +1,5 @@
 ---
-tags: ["calibre","book"]
+tags: [tools, book]
 ---
 
 [手把手教你用电脑端Calibre软件管理Calibre-web电子书库 - 极客角落 geekyes Calibre管理Calibre-web](https://www.geekyes.com/414.htm)

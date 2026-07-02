@@ -2,7 +2,7 @@
 title: >-
   坐席状态机设计
 category: concepts
-tags: [call-center, state-machine, zustand, react]
+tags: [call-center, state-management, zustand, react]
 sources: [projects/xk-ai-talk-desk-ui]
 summary: >-
   坐席状态分两层：agentState（业务层）与 callState（通话层），分别由 SDK 事件驱动，通话结束自动回归。

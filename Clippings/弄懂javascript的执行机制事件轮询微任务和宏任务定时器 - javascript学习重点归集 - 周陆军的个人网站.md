@@ -10,7 +10,7 @@ tags:
   - clippings
   - javascript
   - f2e
-  - develop
+  - programming
 ---
 浏览器线程与JavaScript异步
 

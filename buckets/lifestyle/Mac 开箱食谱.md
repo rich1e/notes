@@ -1,6 +1,6 @@
 ---
 title: Mac 开箱食谱
-tags: ["mac"]
+tags: [macos]
 notebook: hobby 兴趣
 ---
 

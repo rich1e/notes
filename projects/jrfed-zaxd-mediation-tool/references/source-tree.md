@@ -2,7 +2,7 @@
 title: >-
   源码目录布局与模块职责
 category: references
-tags: [chrome-extension, project-structure, react, typescript]
+tags: [chrome-extension, architecture, react, typescript]
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   jrfed-zaxd-mediation-tool 源码目录一览：content/ 为核心业务目录，划分 views/components/stores/hooks/utils 五层，背景脚本与侧边栏独立。

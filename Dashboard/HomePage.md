@@ -17,7 +17,7 @@ banner_y: 1
 
 ```dataview
 table file.mtime AS 修改时间
-from "work-records"
+from "buckets/work-records"
 sort file.mtime desc
 limit 5
 ```

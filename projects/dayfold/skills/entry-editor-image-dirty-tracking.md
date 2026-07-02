@@ -1,7 +1,7 @@
 ---
 title: EntryEditor 图片脏标记
 category: project
-tags: [ios, swiftui, core-data, media-asset, pattern]
+tags: [ios, swiftui, core-data, media, architecture]
 sources: [projects/dayfold]
 summary: >-
   用 @Published var images 的 didSet 维护 imagesChanged 布尔，保存时仅在

@@ -1,7 +1,7 @@
 ---
 title: Swift 语言基础
 category: concepts
-tags: [swift, ios, programming, type-system, closures]
+tags: [swift, ios, programming, type-system, concurrency]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

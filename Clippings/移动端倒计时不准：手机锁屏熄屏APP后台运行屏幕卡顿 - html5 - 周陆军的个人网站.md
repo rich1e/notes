@@ -8,9 +8,9 @@ created: 2026-06-03
 description: 使用home键、锁屏、按电源键熄屏等操作，把页面切到后台运行，倒计时就暂停了，再切回到前台运行回去看倒计时，时间不准确。下拉列表或者其他操作造成页面或者页面出现卡顿，倒计时也不准
 tags:
   - clippings
-  - Bugfix
-  - develop
-  - mobile
+  - debugging
+  - programming
+  - ios
 ---
 ## 息屏导致 js 定时器时间不准问
 

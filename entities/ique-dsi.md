@@ -1,7 +1,7 @@
 ---
 title: iQue DSi（神游 DSi）
 category: entities
-tags: [nintendo, handheld, gaming, ique, hardware]
+tags: [nintendo, handheld, game, ique]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

@@ -3,8 +3,6 @@ title: JavaScript 事件循环（Event Loop）
 category: concepts
 tags:
   - javascript
-  - event-loop
-  - async
   - browser
 summary: JavaScript 单线程执行模型与事件循环机制：调用栈、任务队列、微任务与宏任务的执行顺序。
 sources:

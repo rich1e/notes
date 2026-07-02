@@ -2,7 +2,7 @@
 title: >-
   xk-ai-talk-desk-ui
 category: projects
-tags: [react, typescript, webrtc, sip, call-center, zustand, antd]
+tags: [react, typescript, webrtc, call-center, zustand, antd]
 sources: [projects/xk-ai-talk-desk-ui]
 summary: >-
   AI 外呼热转坐席前端，基于 React 19 + JsSIP + 信科 CC SDK，承接 AI 智能客服转人工通话。
