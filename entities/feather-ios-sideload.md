@@ -8,8 +8,9 @@ tags:
 summary: 专为付费 Apple 开发者设计的 iOS 机上签名工具，支持 AltSource 软件源、dylib 插件注入、随机包名（PPQ 保护）和本地回环安装。
 sources:
   - https://www.onmyodev.com/2026/03/feather/
+  - https://www.onmyodev.com/2026/05/ios-sideloading-faq/
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-02
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -67,3 +68,9 @@ provenance:
 
 - **必须付费开发者证书**，免费 Apple ID 不可用
 - 证书有效期通常 1 年（企业证书会有吊销风险）
+- **无法开启 JIT**：付费证书 = 发布证书，不含 `get-task-allow` Entitlement，无法运行需要 JIT 的模拟器
+
+## 相关页面
+
+- [[skills/ios-sideloading-fundamentals]] — 证书类型、JIT 原理、SideStore vs LiveContainer 完整对比
+- [[skills/ios-emulator-setup]] — 需要 JIT 的模拟器（ManicEMU/MeloNX）安装指南

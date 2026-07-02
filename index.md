@@ -8,6 +8,7 @@ title: Wiki Index
 
 ## Concepts
 
+- [[concepts/llm-speculative-decoding]] — 推测解码加速 LLM 推理：草稿模型 + 并行验证，DSpark 半自回归架构
 - [[concepts/prompt-caching]] — LLM 提示缓存机制，KV 缓存复用原理
 - [[concepts/javascript-event-loop]] — JavaScript 事件循环：调用栈、微任务、宏任务
 - [[concepts/browser-process-model]] — Chrome 多进程架构，Renderer 进程与线程模型
@@ -32,6 +33,9 @@ title: Wiki Index
 
 - [[skills/claude-code-token-optimization]] — Claude Code Token 优化策略（提示缓存 + 会话管理）
 - [[skills/claude-code-settings]] — Claude Code 四级配置作用域与权限系统
+- [[skills/ios-sideloading-fundamentals]] — iOS 证书类型、JIT 原理、SideStore/LiveContainer 机制完整解析
+- [[skills/ios-emulator-setup]] — iOS 上的 3DS（ManicEMU）与 Switch（MeloNX）模拟器安装与 JIT 配置
+- [[skills/hackintosh-mini-build]] — 5000 元黑苹果小机箱（对标 Mac Studio），程序员装机指南
 - [[skills/tmux]] — Tmux 快捷键速查与推荐配置
 - [[skills/terminal-music]] — macOS 终端本地音乐播放（afplay + shell 函数）
 - [[skills/ique-dsi-camera]] — iQue DSi趣照 11种趣味相机、相册、幻灯片、照片管理完整操作
@@ -72,6 +76,7 @@ title: Wiki Index
 
 ## References
 
+- [[references/mechanical-watch-mechanics]] — 机械表七大部件与能量链原理速查
 - [[references/ique-dsi-menu-software]] — iQue DSi 所有内置软件图标一览及软件位置移动方法
 - [[references/ique-dsi-system-settings]] — iQue DSi 主机设置四页全部选项（软件管理/亮度/用户信息/亲子管理/互联网）
 - [[references/ique-dsi-wifi-glossary]] — iQue DSi 网络术语表（SSID/WEP/WPA/AOSS/WPS等）
@@ -83,4 +88,5 @@ title: Wiki Index
 ## Journal
 
 - [[journal/fire-emblem-new-mystery-prologue]] — FE 新·黑暗龙序章四部分攻略
+- [[journal/fire-emblem-mystery-chapter1]] — FE 新·黑暗龙第1章攻略：マルスの旅立ち
 - [[journal/nds-flashcard-memories]] — NDS 世代烧录卡横评回忆录

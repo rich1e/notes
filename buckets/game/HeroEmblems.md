@@ -109,7 +109,7 @@
 国王病重，大贤者建议去寻找天空琉璃。
 公主冒冒失失冲出了皇宫，被红色恶魔抓住，皇冠掉落了。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136191-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136191-24.jpg]]
 
 翠丝特是一个小财迷，捡起皇冠，欢喜不已。
 霍华德一行人营救去营救公主。
@@ -190,7 +190,7 @@
 
 小矮人：单独出现！
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136195-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136195-24.jpg]]
 
 **BOSS**
 
@@ -282,7 +282,7 @@
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136210.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136210-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136210-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136211.jpg]]
 
@@ -312,7 +312,7 @@
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136217.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136217-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136217-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136218.jpg]]
 
@@ -371,7 +371,7 @@
 
 去往神秘塔的路上会遭遇几次小战役。
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136225-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136225-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136227.jpg]]
 
@@ -423,7 +423,7 @@
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136237.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136237-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136237-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136238.jpg]]
 
@@ -457,7 +457,7 @@
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136242.jpg]]
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136242-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136242-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136243.jpg]]
 
@@ -491,7 +491,7 @@
 
 物品：罗盘
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136249-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136249-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136251.jpg]]
 
@@ -531,7 +531,7 @@
 
 小矮人：技能 (艾尔莎-混乱术)
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136251-21.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136251-24.jpg]]
 
 ![[assets/buckets/game/HeroEmblems/IMG-20260629163136253.jpg]]
 
@@ -578,7 +578,7 @@ B 蓝箱：道具/$$
 
 技能：锁链串
 
-![[assets/buckets/game/HeroEmblems/IMG-20260629163136261-20.jpg]]
+![[assets/buckets/game/HeroEmblems/IMG-20260629163136261-23.jpg]]
 
 **BOSS**
 

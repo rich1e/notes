@@ -98,7 +98,7 @@ Ie.licenseInfo.isTrialAvailable = false
 Ie.licenseInfo.hasValidLicense = true
 ```
 
-![[assets/Chronicle/2022/Fiddler Everywhere Crack 尝试/IMG-20260629163136020-21.png]]
+![[assets/Chronicle/2022/Fiddler Everywhere Crack 尝试/IMG-20260629163136020-24.png]]
 
 `Fiddler.WebUi.il` 和 `FiddlerBackendSDK.il` 的修改，可[参考](https://github.com/msojocs/fiddler-everywhere-crack/blob/master/DETAIL.MD)。
 

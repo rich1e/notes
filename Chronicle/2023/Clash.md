@@ -60,14 +60,14 @@
 ![[assets/Chronicle/2023/Clash/IMG-20260629163136037.png]]
 
 
-![[assets/Chronicle/2023/Clash/IMG-20260629163136037-21.png]]
+![[assets/Chronicle/2023/Clash/IMG-20260629163136037-24.png]]
 ### 设置并开启CFW TUN
 
 点击`TUN Mode` **旁边的齿轮 >** `Reset` **>** `Save`
 
 ![[assets/Chronicle/2023/Clash/IMG-20260629163136038.png]]
 
-![[assets/Chronicle/2023/Clash/IMG-20260629163136038-21.png]]
+![[assets/Chronicle/2023/Clash/IMG-20260629163136038-24.png]]
 
 **DNS Servers**
 

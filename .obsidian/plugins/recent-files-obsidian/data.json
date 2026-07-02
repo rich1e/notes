@@ -1,12 +1,116 @@
 {
   "recentFiles": [
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "index",
       "path": "index.md"
+    },
+    {
+      "basename": "source-tree",
+      "path": "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
+    },
+    {
+      "basename": "brew install",
+      "path": "Chronicle/2024/brew install.md"
+    },
+    {
+      "basename": "NodeJS 日志系统设计",
+      "path": "Chronicle/2024/NodeJS 日志系统设计.md"
+    },
+    {
+      "basename": "Message Center - WEB",
+      "path": "Chronicle/2024/Message Center - WEB.md"
+    },
+    {
+      "basename": "Message Center - App",
+      "path": "Chronicle/2024/Message Center - App.md"
+    },
+    {
+      "basename": "IPATool 使用",
+      "path": "Chronicle/2024/IPATool 使用.md"
+    },
+    {
+      "basename": "砸壳",
+      "path": "Chronicle/2024/砸壳.md"
+    },
+    {
+      "basename": "游戏模拟器",
+      "path": "Chronicle/2024/游戏模拟器.md"
+    },
+    {
+      "basename": "深入浅出 Greasemonkey",
+      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
+    },
+    {
+      "basename": "2024 手机模拟器游戏火热🔥",
+      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
+    },
+    {
+      "basename": "Uniapp develop",
+      "path": "Chronicle/2025/Uniapp develop.md"
+    },
+    {
+      "basename": "uniapp",
+      "path": "Chronicle/2025/uniapp.md"
+    },
+    {
+      "basename": "ideviceinstaller 调试 IOS 应用软件",
+      "path": "Chronicle/2025/ideviceinstaller 调试 IOS 应用软件.md"
+    },
+    {
+      "basename": "如何抓取socket流量包？",
+      "path": "Chronicle/2025/如何抓取socket流量包？.md"
+    },
+    {
+      "basename": "Pnpm + git-worktree",
+      "path": "Chronicle/2026/Pnpm + git-worktree.md"
+    },
+    {
+      "basename": "NeoDS-模拟器使用指南",
+      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
+    },
+    {
+      "basename": "macOS-U盘清理与Spotlight保护目录问题",
+      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
+    },
+    {
+      "basename": "Chezmoi 简明教程",
+      "path": "Chronicle/2026/Chezmoi 简明教程.md"
+    },
+    {
+      "basename": "brew script",
+      "path": "Chronicle/2026/brew script.md"
+    },
+    {
+      "basename": "自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬",
+      "path": "Clippings/自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬.md"
+    },
+    {
+      "basename": "MeloNX iOS Switch 模拟器教程",
+      "path": "Clippings/MeloNX iOS Switch 模拟器教程.md"
+    },
+    {
+      "basename": "Mechanical Watch – Bartosz Ciechanowski",
+      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
+    },
+    {
+      "basename": "ManicEMU iOS 3DS 模拟器教程",
+      "path": "Clippings/ManicEMU iOS 3DS 模拟器教程.md"
+    },
+    {
+      "basename": "iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲",
+      "path": "Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲.md"
+    },
+    {
+      "basename": "Feather 签名工具",
+      "path": "Clippings/Feather 签名工具.md"
+    },
+    {
+      "basename": "feather-ios-sideload",
+      "path": "entities/feather-ios-sideload.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "nintendo-wansui",
@@ -69,10 +173,6 @@
       "path": "Clippings/如何使用 5000 块组装一台顶配 Mac Studio.md"
     },
     {
-      "basename": "自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬",
-      "path": "Clippings/自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬.md"
-    },
-    {
       "basename": "jrfed-zaxd-mediation-tool",
       "path": "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md"
     },
@@ -99,106 +199,6 @@
     {
       "basename": "ios17-app-development-book",
       "path": "entities/ios17-app-development-book.md"
-    },
-    {
-      "basename": "arc-memory-management",
-      "path": "concepts/arc-memory-management.md"
-    },
-    {
-      "basename": "swift-fundamentals",
-      "path": "concepts/swift-fundamentals.md"
-    },
-    {
-      "basename": "ios-app-architecture",
-      "path": "concepts/ios-app-architecture.md"
-    },
-    {
-      "basename": "ique-dsi-wifi-setup",
-      "path": "skills/ique-dsi-wifi-setup.md"
-    },
-    {
-      "basename": "ique-dsi",
-      "path": "entities/ique-dsi.md"
-    },
-    {
-      "basename": "ique-ds-download-play",
-      "path": "skills/ique-ds-download-play.md"
-    },
-    {
-      "basename": "DSiSoftware",
-      "path": "buckets/books/DSiSoftware.pdf"
-    },
-    {
-      "basename": "swipe-to-delete-row",
-      "path": "projects/dayfold/skills/swipe-to-delete-row.md"
-    },
-    {
-      "basename": "source-tree",
-      "path": "projects/dayfold/references/source-tree.md"
-    },
-    {
-      "basename": "javascript-event-loop",
-      "path": "concepts/javascript-event-loop.md"
-    },
-    {
-      "basename": "browser-process-model",
-      "path": "concepts/browser-process-model.md"
-    },
-    {
-      "basename": "call-center-sdk-integration",
-      "path": "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md"
-    },
-    {
-      "basename": "agent-state-machine",
-      "path": "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md"
-    },
-    {
-      "basename": "hot",
-      "path": "hot.md"
-    },
-    {
-      "basename": "fire-emblem-new-mystery-prologue",
-      "path": "journal/fire-emblem-new-mystery-prologue.md"
-    },
-    {
-      "basename": "Mobile Development",
-      "path": "buckets/workspce/Mobile Development.md"
-    },
-    {
-      "basename": "Pnpm + git-worktree",
-      "path": "Chronicle/2026/Pnpm + git-worktree.md"
-    },
-    {
-      "basename": "NeoDS-模拟器使用指南",
-      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
-    },
-    {
-      "basename": "macOS-U盘清理与Spotlight保护目录问题",
-      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
-    },
-    {
-      "basename": "Chezmoi 简明教程",
-      "path": "Chronicle/2026/Chezmoi 简明教程.md"
-    },
-    {
-      "basename": "brew script",
-      "path": "Chronicle/2026/brew script.md"
-    },
-    {
-      "basename": "Tmux 快捷键 & 速查表 & 简明教程",
-      "path": "Clippings/Tmux 快捷键 & 速查表 & 简明教程.md"
-    },
-    {
-      "basename": "NEOGEO",
-      "path": "Clippings/NEOGEO.md"
-    },
-    {
-      "basename": "nds折腾",
-      "path": "Clippings/nds折腾.md"
-    },
-    {
-      "basename": "Mechanical Watch – Bartosz Ciechanowski",
-      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
     }
   ],
   "omittedPaths": [],

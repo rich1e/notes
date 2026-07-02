@@ -20,7 +20,7 @@
 
 项目当前使用的版本是 `v21.3.0`，然后查询了 Electron 修复版本的历史记录，最终找到 `v21.3.4`，该版本修复了 `WebSwapCGLLayer` 问题。
 
-![[assets/Chronicle/2023/Electron：WebSwapCGLLayer warning/IMG-20260629163136040-21.png]]
+![[assets/Chronicle/2023/Electron：WebSwapCGLLayer warning/IMG-20260629163136040-24.png]]
 
 Ref
 

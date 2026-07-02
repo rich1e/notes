@@ -9,6 +9,7 @@ updated: 2026-07-01T12:30:00Z
 
 ## Recent Activity
 
+- [2026-07-02T00:20:00Z] INGEST Clippings/（8个新文件）— 创建 6 页：**llm-speculative-decoding**（DSpark 推测解码框架，半自回归架构 + 置信度调度，DeepSeek 线上 60–85% 加速）；**ios-sideloading-fundamentals**（调试/发布证书区别、JIT 原理、SideStore/LiveContainer 机制对比，iOS 26.4 RPPairing 变化）；**ios-emulator-setup**（ManicEMU 3DS + MeloNX Switch 侧载配置，JIT 必须通过 StikDebug）；**hackintosh-mini-build**（5000 元黑苹果对标 Mac Studio + DIY MacBook Pro 2019 拆机件清单）；**mechanical-watch-mechanics**（机械表七部件能量链）；**fire-emblem-mystery-chapter1**（FE 第1章攻略）。更新 feather-ios-sideload 补充 JIT 局限说明。
 - [2026-07-02T00:10:00Z] CROSS_LINK — 扫描 61 页，新增 43 个链接，修改 24 个文件；typed relations 写入 frontmatter；仅剩 1 个孤立页面（entities/feather-ios-sideload）。主要连接：ios17-app-development-book ↔ arc/concurrency/networking/multithreading/xcode/appstore；nintendo-wansui ↔ 全部 ique-dsi 技能页；ios concepts ↔ ios skills 双向关联；两个跨项目链接（jrfed ↔ xk-ai-talk-desk）。
 - [2026-07-02T00:01:00Z] TAG_NORMALIZE — 规范化 76 个文件；保留 `dsi`/`DSTWO` 原样；删除占位标签 `标签1`/`标签2`；未知标签合并（`strategy`→`game`、`磁盘管理`→`macos`、`日本`→`travel` 等）；别名统一（`gcd`/`dispatchqueue`/`multithreading`→`concurrency`、`urlsession`/`alamofire`→`networking` 等）。
 - [2026-07-01T12:30:00Z] WIKI_UPDATE jrfed-zaxd-mediation-tool — 首次同步，创建 6 页：项目总览（协谈工具 Chrome 扩展）、权限管控体系（usePermission Hook）、MV3 三层架构（Content Script 双世界注入）、Zustand+Chrome Storage 持久化、神策 SDK 双脚本方案、源码目录布局
