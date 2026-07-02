@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "HomePage",
+      "path": "Dashboard/HomePage.md"
+    },
+    {
+      "basename": "Tag Links Generator",
+      "path": "Dashboard/Tag Links Generator.md"
+    },
+    {
+      "basename": "Batch Link Report",
+      "path": "Dashboard/Batch Link Report.md"
+    },
+    {
+      "basename": "Auto Link Suggestions",
+      "path": "Dashboard/Auto Link Suggestions.md"
+    },
+    {
+      "basename": "query",
+      "path": "buckets/daily/query.md"
+    },
+    {
+      "basename": "delete",
+      "path": "buckets/daily/delete.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "2021-react 经验总结",
+      "path": "Chronicle/2021/2021-react 经验总结.md"
+    },
+    {
+      "basename": "2021-vite",
+      "path": "Chronicle/2021/2021-vite.md"
+    },
+    {
       "basename": "岛国游",
       "path": "buckets/travel/岛国游.md"
     },
     {
       "basename": "IMG-20260701181457268",
       "path": "assets/buckets/travel/岛国游/IMG-20260701181457268.jpeg"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "git-remote-host-identification-has-changed",
@@ -43,10 +75,6 @@
     {
       "basename": "chrome-extension-architecture",
       "path": "projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture.md"
-    },
-    {
-      "basename": "Auto Link Suggestions",
-      "path": "buckets/daily/Auto Link Suggestions.md"
     },
     {
       "basename": "ique-dsi-shop",
@@ -171,18 +199,6 @@
     {
       "basename": "Feather 签名工具",
       "path": "Clippings/Feather 签名工具.md"
-    },
-    {
-      "basename": "Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对",
-      "path": "Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md"
-    },
-    {
-      "basename": "Claude Code 配置管理完全指南 - 作用域、权限与企业部署",
-      "path": "Clippings/Claude Code 配置管理完全指南 - 作用域、权限与企业部署.md"
-    },
-    {
-      "basename": "移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站",
-      "path": "Clippings/移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站.md"
     }
   ],
   "omittedPaths": [],
