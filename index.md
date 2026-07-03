@@ -19,6 +19,9 @@ title: Wiki Index
 - [[concepts/arc-memory-management]] — ARC 自动引用计数、强/弱/无主引用、循环引用解决方案
 - [[concepts/swift-concurrency]] — async/await、Task/TaskGroup、Actor 数据隔离、MainActor
 - [[concepts/ios-app-architecture]] — iOS 架构模式对比：MVC/MVVM/VIPER/Redux 及常见反模式
+- [[concepts/zustand-core-architecture]] — Zustand createStore 约 30 行核心：闭包 + Set`<Listener>` + 浅合并，StoreApi 接口设计
+- [[concepts/zustand-middleware-system]] — Zustand 中间件系统：StoreMutators 类型扩展、persist/devtools/immer/redux/subscribeWithSelector
+- [[concepts/zustand-react-integration]] — Zustand React 层：useSyncExternalStore + 选择器 + useShallow 浅比较防多余重渲染
 
 ## Entities
 
@@ -28,6 +31,7 @@ title: Wiki Index
 - [[entities/ique-dsi]] — 神游 DSi（iQue DSi）主机，型号 TWL-001(CHN)，双摄/Wi-Fi/内置软件
 - [[entities/nintendo-wansui]] — iQue DSi 内置任天狗狗虚拟宠物游戏
 - [[entities/ios17-app-development-book]] — iOS 17 App Development for Beginners（书籍），Arpit Kulsreshtha 著，Swift 5.9/SwiftUI/Xcode 15
+- [[entities/zustand]] — Zustand：pmndrs 出品的轻量 React 状态管理库，无 Provider，Hook 驱动，~1KB
 
 ## Skills
 
@@ -49,6 +53,9 @@ title: Wiki Index
 - [[skills/ios-networking]] — URLSession/Alamofire REST 请求、JSON 解码、连接可达性检测
 - [[skills/ios-multithreading]] — GCD 三种队列、QoS 优先级、DispatchGroup、NSOperation
 - [[skills/ios-app-store-publishing]] — 证书/Identifier/Profile 创建、Archive 打包、App Store Connect 配置、TestFlight
+- [[skills/zustand-patterns]] — Zustand 最佳实践：Slices、Flux 模式、外部 actions、重置状态、Map/Set、URL 同步
+- [[skills/zustand-ssr-nextjs]] — Zustand Next.js SSR：per-request store 工厂函数 + Context Provider 模式
+- [[skills/zustand-typescript]] — Zustand TypeScript：双括号语法原因、Slices 类型、中间件组合类型
 
 ## Projects
 
@@ -73,6 +80,14 @@ title: Wiki Index
 - [[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]] — Zustand persist + chromeStorage 适配器（禁止 localStorage）
 - [[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]] — 神策 SDK world:MAIN 注入方案
 - [[projects/jrfed-zaxd-mediation-tool/references/source-tree]] — 源码目录布局
+- [[projects/trek/trek]] — Trek 自托管实时协同旅行计划器（NestJS + React + SQLite + MCP）
+- [[projects/trek/concepts/architecture-overview]] — Monorepo 架构，NestJS 模块化后端 + React SPA + 单容器部署
+- [[projects/trek/concepts/addon-system]] — 管理员可切换的插件系统（Lists/Costs/Collab/Atlas/Journey/MCP 等）
+- [[projects/trek/concepts/mcp-server]] — 内置 MCP 服务器，OAuth 2.1，150+ 工具，27 个 scope
+- [[projects/trek/concepts/realtime-sync]] — WebSocket Room 模型广播 + MutationQueue 离线同步
+- [[projects/trek/concepts/auth-system]] — JWT + OIDC + WebAuthn Passkeys + TOTP MFA + OAuth 2.1
+- [[projects/trek/references/database-schema]] — SQLite 表结构（users/trips/days/places/addons 等）
+- [[projects/trek/references/environment-variables]] — 全量环境变量配置参考
 
 ## References
 

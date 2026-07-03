@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-01T12:00:00Z",
+  "last_updated": "2026-07-02T01:00:00Z",
   "projects": {
     "jrfed-zaxd-mediation-tool": {
       "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
@@ -43,6 +43,21 @@
         "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md",
         "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md",
         "projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow.md"
+      ]
+    },
+    "trek": {
+      "source_cwd": "/Users/rich1e/workspace/code/notes/_raw",
+      "last_synced": "2026-07-02T00:30:00Z",
+      "last_commit_synced": null,
+      "pages_in_vault": [
+        "projects/trek/trek.md",
+        "projects/trek/concepts/architecture-overview.md",
+        "projects/trek/concepts/addon-system.md",
+        "projects/trek/concepts/mcp-server.md",
+        "projects/trek/concepts/realtime-sync.md",
+        "projects/trek/concepts/auth-system.md",
+        "projects/trek/references/database-schema.md",
+        "projects/trek/references/environment-variables.md"
       ]
     }
   },
@@ -370,11 +385,48 @@
         "journal/fire-emblem-mystery-chapter1.md"
       ],
       "pages_updated": []
+    },
+    "_raw/trek.txt": {
+      "ingested_at": "2026-07-02T00:30:00Z",
+      "size_bytes": 0,
+      "modified_at": "2026-07-02T00:00:00Z",
+      "content_hash": "sha256:1e6b6da041569cfa79fc89c1ab04b5288f3de16d103714ba69124766e3f9a1cc",
+      "source_type": "document",
+      "project": "trek",
+      "pages_created": [
+        "projects/trek/trek.md",
+        "projects/trek/concepts/architecture-overview.md",
+        "projects/trek/concepts/addon-system.md",
+        "projects/trek/concepts/mcp-server.md",
+        "projects/trek/concepts/realtime-sync.md",
+        "projects/trek/concepts/auth-system.md",
+        "projects/trek/references/database-schema.md",
+        "projects/trek/references/environment-variables.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/zustand.txt": {
+      "ingested_at": "2026-07-02T01:00:00Z",
+      "size_bytes": 0,
+      "modified_at": "2026-07-02T00:00:00Z",
+      "content_hash": "sha256:89f5c3e308e5088e13a9a8cb89d68c86dcdbf216e7ec1262eebae5fae7236abe",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/zustand.md",
+        "concepts/zustand-core-architecture.md",
+        "concepts/zustand-middleware-system.md",
+        "concepts/zustand-react-integration.md",
+        "skills/zustand-patterns.md",
+        "skills/zustand-ssr-nextjs.md",
+        "skills/zustand-typescript.md"
+      ],
+      "pages_updated": []
     }
   },
   "stats": {
-    "total_sources_ingested": 25,
-    "total_pages": 43,
+    "total_sources_ingested": 27,
+    "total_pages": 58,
     "total_projects": 1,
     "last_full_rebuild": null
   }
