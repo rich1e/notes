@@ -108,17 +108,17 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 职责：统一收集原始资料，不做分类。
 
-| Skill | 功能说明 | 状态 |
-|---|---|---|
-| `wiki-ingest` | 导入任意来源（文档、PDF、Markdown、URL、文本导出）到知识库，自动生成互联页面 | ✅ |
-| `defuddle` | 用 Defuddle CLI 从网页提取干净 Markdown，去除导航和干扰内容，节省 token | ✅ |
-| `page-archiver` | 将网页存档至 Obsidian，含图片/视频等富媒体内容 | ✅ |
-| `pdf` | PDF 文本提取、表格解析、文档合并/拆分、表单处理 | ✅ |
-| `youtube-clipper` | 下载 YouTube 视频和字幕，AI 生成章节，剪辑片段并烧录双语字幕 | ✅ |
-| `imagemagick-processor` | 图片格式转换（JPG/PNG/WebP）、压缩、批量处理、元数据提取 | ✅ |
-| `weread-skills` | 微信读书：搜索书籍、管理书架、查看笔记划线、阅读统计 | ✅ |
-| `github-ingest` | 抓取 GitHub 仓库 README、Release Notes、Issue 等技术文档 | 🔧 |
-| `image-ocr` | 图片文字识别，将截图/扫描件转为可检索文本 | 🔧 |
+| Skill                   | 功能说明                                               | 状态  |
+| ----------------------- | -------------------------------------------------- | --- |
+| `wiki-ingest`           | 导入任意来源（文档、PDF、Markdown、URL、文本导出）到知识库，自动生成互联页面      | ✅   |
+| `defuddle`              | 用 Defuddle CLI 从网页提取干净 Markdown，去除导航和干扰内容，节省 token | ✅   |
+| `page-archiver`         | 将网页存档至 Obsidian，含图片/视频等富媒体内容                       | ✅   |
+| `pdf`                   | PDF 文本提取、表格解析、文档合并/拆分、表单处理                         | ✅   |
+| `youtube-clipper`       | 下载 YouTube 视频和字幕，AI 生成章节，剪辑片段并烧录双语字幕               | ✅   |
+| `imagemagick-processor` | 图片格式转换（JPG/PNG/WebP）、压缩、批量处理、元数据提取                 | ✅   |
+| `weread-skills`         | 微信读书：搜索书籍、管理书架、查看笔记划线、阅读统计                         | ✅   |
+| `github-ingest`         | 抓取 GitHub 仓库 README、Release Notes、Issue 等技术文档      | ✅  |
+| `image-ocr`             | 图片文字识别，将截图/扫描件转为可检索文本                              | 🔧  |
 
 资料统一进入 `_raw/`（待加工暂存）或 `buckets/`（分类存放）、`Clippings/`（网页裁剪）。
 
