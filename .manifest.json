@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-02T01:00:00Z",
+  "last_updated": "2026-07-03T08:50:59Z",
   "projects": {
     "jrfed-zaxd-mediation-tool": {
       "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
@@ -422,11 +422,36 @@
         "skills/zustand-typescript.md"
       ],
       "pages_updated": []
+    },
+    "https://github.com/Lularible/ptp-book": {
+      "ingested_at": "2026-07-03T08:50:59Z",
+      "size_bytes": 479810,
+      "modified_at": "2026-07-03T08:50:59Z",
+      "content_hash": "gitingest",
+      "source_type": "github_repo",
+      "github_repo": "Lularible/ptp-book",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "references/ptp-book-overview.md",
+        "concepts/ptp-ieee1588.md",
+        "concepts/ptp-bmca.md",
+        "concepts/ptp-clock-types.md",
+        "concepts/ptp-delay-measurement.md",
+        "concepts/ptp-tlv-extension.md",
+        "concepts/ptp-message-types.md",
+        "concepts/ptp-port-state-machine.md",
+        "entities/linuxptp.md",
+        "entities/white-rabbit.md",
+        "skills/ptp-implementation.md",
+        "skills/ptp-troubleshooting.md"
+      ],
+      "pages_updated": []
     }
   },
   "stats": {
-    "total_sources_ingested": 27,
-    "total_pages": 58,
+    "total_sources_ingested": 28,
+    "total_pages": 70,
     "total_projects": 1,
     "last_full_rebuild": null
   }

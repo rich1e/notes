@@ -5,6 +5,14 @@
       "path": "index.md"
     },
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "zustand-typescript",
+      "path": "skills/zustand-typescript.md"
+    },
+    {
       "basename": "source-tree",
       "path": "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
     },
@@ -109,10 +117,6 @@
       "path": "entities/feather-ios-sideload.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "nintendo-wansui",
       "path": "entities/nintendo-wansui.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "dayfold",
       "path": "projects/dayfold/dayfold.md"
-    },
-    {
-      "basename": "ios-app-store-publishing",
-      "path": "skills/ios-app-store-publishing.md"
-    },
-    {
-      "basename": "ios17-app-development-book",
-      "path": "entities/ios17-app-development-book.md"
     }
   ],
   "omittedPaths": [],

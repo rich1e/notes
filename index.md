@@ -4,10 +4,17 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-01T12:30:00Z*
+*This index is automatically maintained. Last updated: 2026-07-03T09:00:00Z*
 
 ## Concepts
 
+- [[concepts/ptp-ieee1588]] — IEEE 1588 精确时间协议，四时间戳法实现纳秒级分布式时钟同步
+- [[concepts/ptp-bmca]] — BMCA 最佳主时钟选举算法，基于 clockClass/Accuracy/priority 分布式选举
+- [[concepts/ptp-clock-types]] — PTP 四种时钟角色：GM 提供时间源，BC 转发，TC 补偿驻留延迟，OC 终端
+- [[concepts/ptp-delay-measurement]] — E2E 与 P2P 四时间戳延迟测量机制
+- [[concepts/ptp-tlv-extension]] — PTP TLV 插件系统，支撑 IEEE 1588-2019 向后兼容扩展
+- [[concepts/ptp-message-types]] — PTP 10 种报文：事件报文（需硬件时间戳）和通用报文
+- [[concepts/ptp-port-state-machine]] — PTP 端口 9 种状态，由 BMCA 结果和链路事件驱动转换
 - [[concepts/llm-speculative-decoding]] — 推测解码加速 LLM 推理：草稿模型 + 并行验证，DSpark 半自回归架构
 - [[concepts/prompt-caching]] — LLM 提示缓存机制，KV 缓存复用原理
 - [[concepts/javascript-event-loop]] — JavaScript 事件循环：调用栈、微任务、宏任务
@@ -32,6 +39,8 @@ title: Wiki Index
 - [[entities/nintendo-wansui]] — iQue DSi 内置任天狗狗虚拟宠物游戏
 - [[entities/ios17-app-development-book]] — iOS 17 App Development for Beginners（书籍），Arpit Kulsreshtha 著，Swift 5.9/SwiftUI/Xcode 15
 - [[entities/zustand]] — Zustand：pmndrs 出品的轻量 React 状态管理库，无 Provider，Hook 驱动，~1KB
+- [[entities/linuxptp]] — Linux 平台工业级 PTP 实现，包含 ptp4l/phc2sys/pmc 工具
+- [[entities/white-rabbit]] — CERN 开发的亚纳秒级时间同步协议，PTP 扩展 + DMTD 相位测量
 
 ## Skills
 
@@ -56,6 +65,8 @@ title: Wiki Index
 - [[skills/zustand-patterns]] — Zustand 最佳实践：Slices、Flux 模式、外部 actions、重置状态、Map/Set、URL 同步
 - [[skills/zustand-ssr-nextjs]] — Zustand Next.js SSR：per-request store 工厂函数 + Context Provider 模式
 - [[skills/zustand-typescript]] — Zustand TypeScript：双括号语法原因、Slices 类型、中间件组合类型
+- [[skills/ptp-implementation]] — ptp-lite 约 1000 行 C 实现：报文编解码、主时钟发布、从时钟偏移计算
+- [[skills/ptp-troubleshooting]] — PTP 故障排查：pmc 诊断工具、日志解读、常见问题处理
 
 ## Projects
 
@@ -97,6 +108,7 @@ title: Wiki Index
 - [[references/ique-dsi-wifi-glossary]] — iQue DSi 网络术语表（SSID/WEP/WPA/AOSS/WPS等）
 - [[references/ique-dsi-shop]] — iQue DSi 商店与 iQue 点数购买、充值、限制说明
 - [[references/ios-design-patterns]] — GoF 23 种设计模式速查（创建/结构/行为）+ iOS 常见反模式清单
+- [[references/ptp-book-overview]] — PTP技术书（Lularible），41节从思想实验到 LinuxPTP 源码到 ptp-lite 实现
 
 ## Synthesis
 

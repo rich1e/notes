@@ -108,17 +108,17 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 职责：统一收集原始资料，不做分类。
 
-| Skill                   | 功能说明                                               | 状态  |
-| ----------------------- | -------------------------------------------------- | --- |
-| `wiki-ingest`           | 导入任意来源（文档、PDF、Markdown、URL、文本导出）到知识库，自动生成互联页面      | ✅   |
-| `defuddle`              | 用 Defuddle CLI 从网页提取干净 Markdown，去除导航和干扰内容，节省 token | ✅   |
-| `page-archiver`         | 将网页存档至 Obsidian，含图片/视频等富媒体内容                       | ✅   |
-| `pdf`                   | PDF 文本提取、表格解析、文档合并/拆分、表单处理                         | ✅   |
-| `youtube-clipper`       | 下载 YouTube 视频和字幕，AI 生成章节，剪辑片段并烧录双语字幕               | ✅   |
-| `imagemagick-processor` | 图片格式转换（JPG/PNG/WebP）、压缩、批量处理、元数据提取                 | ✅   |
+| Skill                   | 功能说明                                                                     | 状态 |
+| ----------------------- | ---------------------------------------------------------------------------- |:---- |
+| `wiki-ingest`           | 导入任意来源（文档、PDF、Markdown、URL、文本导出）到知识库，自动生成互联页面 | ✅   |
+| `defuddle`              | 用 Defuddle CLI 从网页提取干净 Markdown，去除导航和干扰内容，节省 token      | ✅   |
+| `page-archiver`         | 将网页存档至 Obsidian，含图片/视频等富媒体内容                               | ✅   |
+| `pdf`                   | PDF 文本提取、表格解析、文档合并/拆分、表单处理                              | ✅   |
+| `youtube-clipper`       | 下载 YouTube 视频和字幕，AI 生成章节，剪辑片段并烧录双语字幕                 | ✅   |
+| `imagemagick-processor` | 图片格式转换（JPG/PNG/WebP）、压缩、批量处理、元数据提取                     | ✅   |
 | `weread-skills`         | 微信读书：搜索书籍、管理书架、查看笔记划线、阅读统计                         | ✅   |
-| `github-ingest`         | 抓取 GitHub 仓库 README、Release Notes、Issue 等技术文档      | ✅  |
-| `image-ocr`             | 图片文字识别，将截图/扫描件转为可检索文本                              | 🔧  |
+| `github-ingest`         | 抓取 GitHub 仓库 README、Release Notes、Issue 等技术文档                     | ✅   |
+| `image-ocr`             | 图片文字识别，将截图/扫描件转为可检索文本                                    | 🔧   |
 
 资料统一进入 `_raw/`（待加工暂存）或 `buckets/`（分类存放）、`Clippings/`（网页裁剪）。
 
@@ -126,16 +126,16 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 职责：将原始资料提炼为可复用知识。
 
-| Skill | 功能说明 | 状态 |
-|---|---|---|
-| `wiki-synthesize` | 扫描知识库，发现跨页面高频共现概念，自动生成综合分析页面 | ✅ |
-| `cross-linker` | 扫描全库，发现缺失的跨页面引用并自动补写 wikilink | ✅ |
-| `tag-taxonomy` | 基于受控词表对全库标签进行规范化，消除同义标签混乱 | ✅ |
-| `wiki-dedup` | 识别不同名但指向同一概念的页面（如"RSC"与"React Server Components"），合并去重 | ✅ |
-| `wiki-capture` | 将当前对话提炼为结构化知识页面存入知识库，支持快速暂存至 `_raw/` | ✅ |
-| `wiki-stage-commit` | 审查 `_staging/` 中的暂存页面，确认后升级到最终位置 | ✅ |
-| `concept-extractor` | 从长文中自动抽取核心概念，拆分生成独立知识节点 | 🔧 |
-| `note-splitter` | 将大段笔记按主题自动拆分为多个聚焦页面 | 🔧 |
+| Skill               | 功能说明                                                                       | 状态 |
+| ------------------- | ------------------------------------------------------------------------------ |:---- |
+| `wiki-synthesize`   | 扫描知识库，发现跨页面高频共现概念，自动生成综合分析页面                       | ✅   |
+| `cross-linker`      | 扫描全库，发现缺失的跨页面引用并自动补写 wikilink                              | ✅   |
+| `tag-taxonomy`      | 基于受控词表对全库标签进行规范化，消除同义标签混乱                             | ✅   |
+| `wiki-dedup`        | 识别不同名但指向同一概念的页面（如"RSC"与"React Server Components"），合并去重 | ✅   |
+| `wiki-capture`      | 将当前对话提炼为结构化知识页面存入知识库，支持快速暂存至 `_raw/`               | ✅   |
+| `wiki-stage-commit` | 审查 `_staging/` 中的暂存页面，确认后升级到最终位置                            | ✅   |
+| `concept-extractor` | 从长文中自动抽取核心概念，拆分生成独立知识节点                                 | 🔧   |
+| `note-splitter`     | 将大段笔记按主题自动拆分为多个聚焦页面                                         | 🔧   |
 
 输出为主题知识页面，并自动建立 Wiki Link、标签和关联。
 
@@ -143,17 +143,17 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 职责：持续维护知识库与项目文档。
 
-| Skill | 功能说明 | 状态 |
-|---|---|---|
-| `wiki-update` | 将当前项目的架构决策、模式、权衡提炼后同步至 `projects/<name>.md`，支持增量更新 | ✅ |
-| `wiki-history-ingest` | 批量导入 Claude / Codex / Pi / Copilot / Hermes 等 AI 工具的历史会话 | ✅ |
-| `impl-validator` | 验证实现是否与目标一致，输出 pass/warn/fail 裁决 | ✅ |
-| `daily-update` | 日常维护周期：检查各来源新鲜度、更新索引、重新生成 `hot.md` | ✅ |
-| `wiki-research` | 指定主题后自动多轮网络调研，结果整理归档至知识库 | ✅ |
-| `git-summary` | 读取 Git 提交历史，生成变更摘要和决策记录 | 🔧 |
-| `architecture-review` | 分析仓库结构，输出架构图与模块说明 | 🔧 |
-| `changelog-builder` | 基于 Git 提交自动构建结构化变更日志 | 🔧 |
-| `decision-log` | 提取并记录技术决策，形成可追溯的决策档案 | 🔧 |
+| Skill                 | 功能说明                                                                        | 状态 |
+| --------------------- | ------------------------------------------------------------------------------- |:---- |
+| `wiki-update`         | 将当前项目的架构决策、模式、权衡提炼后同步至 `projects/<name>.md`，支持增量更新 | ✅   |
+| `wiki-history-ingest` | 批量导入 Claude / Codex / Pi / Copilot / Hermes 等 AI 工具的历史会话            | ✅   |
+| `impl-validator`      | 验证实现是否与目标一致，输出 pass/warn/fail 裁决                                | ✅   |
+| `daily-update`        | 日常维护周期：检查各来源新鲜度、更新索引、重新生成 `hot.md`                     | ✅   |
+| `wiki-research`       | 指定主题后自动多轮网络调研，结果整理归档至知识库                                | ✅   |
+| `git-summary`         | 读取 Git 提交历史，生成变更摘要和决策记录                                       | 🔧   |
+| `architecture-review` | 分析仓库结构，输出架构图与模块说明                                              | 🔧   |
+| `changelog-builder`   | 基于 Git 提交自动构建结构化变更日志                                             | 🔧   |
+| `decision-log`        | 提取并记录技术决策，形成可追溯的决策档案                                        | 🔧   |
 
 建议在每次 Git Commit 或开发结束后执行。
 
@@ -161,19 +161,19 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 职责：周期性维护和复盘。
 
-| Skill | 功能说明 | 状态 |
-|---|---|---|
-| `wiki-lint` | 审计知识库健康状况：孤立页面、断链、陈旧内容、格式问题；`--consolidate` 模式可自动修复 | ✅ |
-| `wiki-status` | 显示各来源的导入状态与增量 delta，`insights` 模式分析图谱结构（枢纽页、桥接页、孤岛页）| ✅ |
-| `wiki-digest` | 生成指定周期（日/周/月）的知识摘要，以通讯体裁汇报近期所学 | ✅ |
-| `wiki-dashboard` | 使用 Obsidian Bases 或 Dataview 创建动态可查询的仪表板视图 | ✅ |
-| `graph-colorize` | 按标签、类别或可见性重写 `graph.json`，为图谱节点着色 | ✅ |
-| `wiki-query` | 在知识库中检索问题，支持多跳关联推理，返回带 wikilink 引用的综合答案 | ✅ |
-| `memory-bridge` | 按 AI 工具维度浏览、对比知识，发现不同工具间的知识盲区 | ✅ |
-| `daily-review` | 汇总当日 Daily Notes、提交和任务，生成每日复盘 | 🔧 |
-| `weekly-review` | 汇总本周学习、项目进展和技术决策，生成周报 | 🔧 |
-| `monthly-review` | 月度知识盘点，评估知识库增长和质量趋势 | 🔧 |
-| `orphan-finder` | 专项扫描无任何入链的孤立页面，输出待处理列表 | 🔧 |
+| Skill            | 功能说明                                                                                | 状态 |
+| ---------------- | --------------------------------------------------------------------------------------- | ---- |
+| `wiki-lint`      | 审计知识库健康状况：孤立页面、断链、陈旧内容、格式问题；`--consolidate` 模式可自动修复  | ✅   |
+| `wiki-status`    | 显示各来源的导入状态与增量 delta，`insights` 模式分析图谱结构（枢纽页、桥接页、孤岛页） | ✅   |
+| `wiki-digest`    | 生成指定周期（日/周/月）的知识摘要，以通讯体裁汇报近期所学                              | ✅   |
+| `wiki-dashboard` | 使用 Obsidian Bases 或 Dataview 创建动态可查询的仪表板视图                              | ✅   |
+| `graph-colorize` | 按标签、类别或可见性重写 `graph.json`，为图谱节点着色                                   | ✅   |
+| `wiki-query`     | 在知识库中检索问题，支持多跳关联推理，返回带 wikilink 引用的综合答案                    | ✅   |
+| `memory-bridge`  | 按 AI 工具维度浏览、对比知识，发现不同工具间的知识盲区                                  | ✅   |
+| `daily-review`   | 汇总当日 Daily Notes、提交和任务，生成每日复盘                                          | 🔧   |
+| `weekly-review`  | 汇总本周学习、项目进展和技术决策，生成周报                                              | 🔧   |
+| `monthly-review` | 月度知识盘点，评估知识库增长和质量趋势                                                  | 🔧   |
+| `orphan-finder`  | 专项扫描无任何入链的孤立页面，输出待处理列表                                            | 🔧   |
 
 ### 第五层：Automation（自动化）
 

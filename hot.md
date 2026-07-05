@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-02T01:00:00Z
+updated: 2026-07-03T09:00:00Z
 ---
 
 # Hot Cache
@@ -9,6 +9,8 @@ updated: 2026-07-02T01:00:00Z
 
 ## Recent Activity
 
+- [2026-07-03T09:10:00Z] CROSS_LINK — 扫描 12 个 PTP 新页面，新增 14 个链接，修改 7 个文件；PTP 知识孤岛内部已全部互联，无孤立页面。主要补全：ptp-bmca↔ptp-message-types、ptp-clock-types↔ptp-delay-measurement/linuxptp、ptp-tlv-extension↔white-rabbit、ptp-troubleshooting↔ptp-port-state-machine/ptp-delay-measurement。
+- [2026-07-03T09:00:00Z] INGEST `_raw/github-Lularible-ptp-book.md`（GitHub 仓库 Lularible/ptp-book，gitingest 抓取，52 文件，469KB）— 创建 12 页：PTP 书籍总览（references）、PTP 协议核心概念（concepts/ptp-ieee1588）、BMCA 选举算法（含 12 主时钟混战故障案例）、四种时钟角色（GM/BC/TC/OC）、E2E 与 P2P 四时间戳延迟测量、TLV 扩展机制、报文类型（10 种）、端口状态机（9 种状态）、LinuxPTP 实体（ptp4l/phc2sys/pmc/PI 伺服器/源码模块）、White Rabbit 实体（CERN，亚纳秒级，DMTD 相位测量）、ptp-lite 实现要点技能页、PTP 故障排查技能页。源文件已归档至 _raw/_archived/。
 - [2026-07-02T01:00:00Z] INGEST `_raw/zustand.txt`（Gitingest 导出，pmndrs/zustand 源码 + 文档，3.1 万行）— 创建 7 页：实体页（Zustand 定位与对比）、核心架构（createStore ~30 行实现：Object.is + 浅合并 + Set<Listener>，StoreApi 接口，双层 vanilla/react 架构）、中间件系统（StoreMutators 开放扩展类型，persist/devtools/immer/redux/subscribeWithSelector 详解）、React 集成（useSyncExternalStore 原理，useShallow 浅比较实现）、最佳实践（Slices/外部 Actions/重置/Map-Set/URL 同步）、SSR/Next.js（per-request store + Context 模式）、TypeScript（双括号语法原因、Slices 类型、中间件组合）。与 Trek 项目的 Zustand 使用已交叉链接。
 - [2026-07-02T00:30:00Z] INGEST `_raw/trek.txt`（Gitingest 导出，33 万行）— Trek 自托管旅行计划器，创建 8 页：项目总览、架构概览（NestJS 模块 + React Zustand 切片 + 离线优先 PWA）、插件系统（9 个插件管理员可切换）、MCP 服务器（OAuth 2.1 + 150 工具 + 27 scope）、实时同步（WebSocket Room 模型 + MutationQueue 离线队列）、认证系统（JWT/OIDC/Passkeys/MFA/OAuth 2.1）、数据库表结构（SQLite，~40 张表）、环境变量参考。
 - [2026-07-02T00:20:00Z] INGEST Clippings/（8个新文件）— 创建 6 页：**llm-speculative-decoding**（DSpark 推测解码框架，半自回归架构 + 置信度调度，DeepSeek 线上 60–85% 加速）；**ios-sideloading-fundamentals**（调试/发布证书区别、JIT 原理、SideStore/LiveContainer 机制对比，iOS 26.4 RPPairing 变化）；**ios-emulator-setup**（ManicEMU 3DS + MeloNX Switch 侧载配置，JIT 必须通过 StikDebug）；**hackintosh-mini-build**（5000 元黑苹果对标 Mac Studio + DIY MacBook Pro 2019 拆机件清单）；**mechanical-watch-mechanics**（机械表七部件能量链）；**fire-emblem-mystery-chapter1**（FE 第1章攻略）。更新 feather-ios-sideload 补充 JIT 局限说明。
@@ -20,6 +22,8 @@ updated: 2026-07-02T01:00:00Z
 - [2026-06-29T09:30:00Z] INGEST Clippings/ — 15 个网页剪藏蒸馏为 13 个 wiki 页面，覆盖 Claude Code 优化、前端核心概念、复古游戏与工具类知识
 
 ## Key New Additions
+
+**PTP（IEEE 1588）完整知识体系（新建）**：Lularible/ptp-book 蒸馏为 12 页。核心洞见：BMCA 的六属性比较（priority1→clockClass→clockAccuracy→offsetScaledLogVariance→priority2→clockIdentity）决定主时钟；四时间戳法假设链路对称是精度瓶颈；TLV 机制是 IEEE 1588-2008→2019 演进的基础；LinuxPTP PI 伺服控制器通过 adjtimex 实现平滑频率调整而非跳变。White Rabbit（CERN）通过 DMTD + L1_SYNC TLV 突破到亚纳秒精度。
 
 **jrfed-zaxd-mediation-tool（新建）**：金融客服协谈助手 Chrome 扩展首次同步，创建 6 页。核心架构决策：MV3 三层（Background SW + SidePanel + Content Script），双 Content Script 解决神策 SDK 主世界注入问题（`world: "MAIN"`），`chrome.storage.local` 替代 localStorage 的 `chromeStorage` 适配器接入 Zustand persist，三级权限管控（MENU_/BTN_/FW_）通过 `usePermission` Hook 驱动条件渲染。
 

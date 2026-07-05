@@ -4,6 +4,8 @@ title: Wiki Log
 
 # Wiki Log
 
+- [2026-07-03T09:10:00Z] CROSS_LINK pages_scanned=12 links_added=14 typed_relations_written=9 pages_modified=7 orphans_remaining=0 misc_affinity_updated=0 promotion_candidates=0
+- [2026-07-03T09:00:00Z] INGEST source="_raw/github-Lularible-ptp-book.md" pages_updated=0 pages_created=12 mode=raw github_repo="Lularible/ptp-book"
 - [2026-06-29T09:16:46Z] INIT vault_path="/Users/rich1e/workspace/code/notes" categories=concepts,entities,skills,references,synthesis,journal
 - [2026-06-29T09:30:00Z] INGEST source="Clippings/" pages_updated=0 pages_created=13 mode=append sources_ingested=15/17 skipped=2(binary-heavy)
 - [2026-06-29T10:00:00Z] WIKI_UPDATE project=xk-ai-talk-desk-ui pages_updated=0 pages_created=4 source_cwd=/Users/rich1e/workspace/xk-dev_1.0.0
