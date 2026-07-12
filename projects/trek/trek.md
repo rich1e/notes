@@ -1,4 +1,5 @@
 ---
+
 title: Trek — 自托管实时协同旅行计划器
 category: projects
 tags:
@@ -28,6 +29,8 @@ relationships:
   - target: "[[projects/trek/concepts/addon-system]]"
     type: related_to
   - target: "[[projects/trek/concepts/realtime-sync]]"
+    type: related_to
+  - target: "[[entities/zustand]]"
     type: related_to
 ---
 
@@ -82,7 +85,7 @@ relationships:
 | 语言 | TypeScript |
 | 样式 | Tailwind CSS |
 | 地图 | Leaflet + Mapbox GL |
-| 状态管理 | Zustand |
+| 状态管理 | [[entities/zustand|Zustand]] |
 | 实时通信 | WebSocket (ws) |
 | 认证 | JWT + OAuth 2.1 + OIDC + Passkeys (WebAuthn) + TOTP MFA |
 | 天气 | Open-Meteo（无需 key） |

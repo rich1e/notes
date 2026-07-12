@@ -9,7 +9,7 @@ summary: Tmux 终端复用器快捷键速查、配置要点及插件管理，适
 sources:
   - https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-08
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -37,6 +37,22 @@ tmux at [-t 会话名]              # 恢复会话
 tmux ls                          # 列出所有会话
 tmux kill-session -t 会话名      # 关闭会话
 ```
+
+## 关闭会话的其他方式
+
+除了 `tmux kill-session -t 会话名` 之外，还有 4 种关闭会话的替代方式：
+
+```bash
+tmux kill-server                 # 杀掉整个 tmux server（所有 session 一起关闭）
+tmux kill-session -a             # 关闭除当前 session 之外的全部
+tmux kill-session -a -t 目标名   # 关闭除指定 session 之外的全部
+```
+
+**命令行模式：** 在 PREFIX 提示符下输入 `:kill-session`，等价于关闭当前 session。
+
+**级联关闭：** 在 pane 内执行 `exit`（或按 `Ctrl+d`）退出 shell 时——若这是当前 window 的最后一个 pane，window 自动关闭；若这是当前 session 的最后一个 window，session 自动关闭。这是"清空"会话最自然的方式。
+
+> ⚠️ 注意 `PREFIX d` 只是**脱离**（detach）—— session 在后台保持运行，并未被关闭。
 
 ## 会话操作（PREFIX 后）
 

@@ -12,7 +12,7 @@ tags:
   - ManicEMU
   - 3DS
 ---
-![[assets/%E6%88%AA%E5%B1%8F2026-05-19-21.50.36.png]]
+![[assets/Clippings/ManicEMU iOS 3DS 模拟器教程/IMG-20260702164712739.png]]
 
 最后编辑于 2026年5月19日
 

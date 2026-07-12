@@ -23,6 +23,8 @@ relationships:
     type: related_to
   - target: "[[references/ptp-book-overview]]"
     type: derived_from
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: synthesized_in
 ---
 
 # PTP（精确时间协议，IEEE 1588）

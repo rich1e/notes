@@ -47,7 +47,7 @@ system_profiler SPHardwareDataType | grep 'Model Identifier'
 
 ![[assets/Chronicle/2023/Mac Update/IMG-20260629163136046.png]]
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136046-24.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136046-30.png]]
 
 参考：
 
@@ -111,9 +111,9 @@ sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallm
 
 ![[assets/Chronicle/2023/Mac Update/IMG-20260629163136054.png]]
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136054-46.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136054-58.png]]
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136054-47.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136054-59.png]]
 
 询问是否需要重启。
 
@@ -133,7 +133,7 @@ Would you like to reboot?
 
 现在您已经加载了 `OpenCore`，“select Install macOS”：
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136055-23.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136055-29.png]]
 
 您很快就会进入安装程序屏幕！如果在构建 `OCLP` 时启用了详细模式，那么屏幕上将会显示大量文本。从那以后，它就像任何普通的 macOS 安装一样。有关引导过程的示例，请参阅以下视频 [OpenCore Legacy Patcher Boot Process(opens new window)](https://www.youtube.com/watch?v=AN3zsbQV_n4)
 
@@ -153,7 +153,7 @@ Would you like to reboot?
 
 #### `Install OpenCore` 时选择内置存储（通常是 `disk0`）。
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136057-23.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136057-29.png]]
 
 #### 点击 `Settings` 根据需要更改设置，无需启动选择器即可无缝启动。
 
@@ -167,7 +167,7 @@ Would you like to reboot?
 
 ![[assets/Chronicle/2023/Mac Update/IMG-20260629163136062.png]]
 
-![[assets/Chronicle/2023/Mac Update/IMG-20260629163136062-23.png]]
+![[assets/Chronicle/2023/Mac Update/IMG-20260629163136062-29.png]]
 
 
 ```md

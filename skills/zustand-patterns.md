@@ -1,4 +1,5 @@
 ---
+
 title: Zustand 最佳实践与常见模式
 category: skills
 tags:
@@ -27,6 +28,8 @@ relationships:
   - target: "[[concepts/zustand-middleware-system]]"
     type: uses
   - target: "[[projects/trek/concepts/architecture-overview]]"
+    type: related_to
+  - target: "[[projects/trek/trek]]"
     type: related_to
 ---
 

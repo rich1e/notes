@@ -3,7 +3,6 @@ title: Trek 认证与安全系统
 category: concepts
 tags:
   - auth
-  - security
   - jwt
   - oauth
   - passkey
@@ -28,6 +27,8 @@ relationships:
     type: related_to
   - target: "[[projects/trek/concepts/mcp-server]]"
     type: uses
+  - target: "[[synthesis/trek-auth-system × trek-mcp-server]]"
+    type: synthesized_in
 ---
 
 # Trek 认证与安全系统

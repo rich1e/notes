@@ -1,4 +1,5 @@
 ---
+
 title: Trek 架构概览
 category: concepts
 tags:
@@ -27,6 +28,8 @@ relationships:
   - target: "[[projects/trek/concepts/realtime-sync]]"
     type: related_to
   - target: "[[projects/trek/references/database-schema]]"
+    type: related_to
+  - target: "[[entities/zustand]]"
     type: related_to
 ---
 
@@ -111,7 +114,7 @@ http.Server
 
 `server/src/services/` 包含迁移到 NestJS 前的旧版服务，NestJS 模块通过依赖注入调用它们。这是从 Express 向 NestJS 迁移过程中的"绞杀榕"模式残留。^[inferred]
 
-## 客户端架构：React + Zustand
+## 客户端架构：React + [[entities/zustand|Zustand]]
 
 ### 前端分层
 

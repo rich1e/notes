@@ -51,7 +51,7 @@ Feather 有一个功能，称为 PPQ 保护，可以在签名的时候，在包�
 
 Feather 还可以在签名的时候修改框架信息来强制软件使用 iOS 26 的 Liquid Glass。同样是在签名选项里，拉到最底下就可以看见了：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-47.png|启用 Liquid Glass。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8605.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-59.png|启用 Liquid Glass。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8605.png)
 
 ### 机上安装
 
@@ -59,7 +59,7 @@ Feather 同样支持那个被玩烂的 [Pairing File](https://www.onmyodev.com/2
 
 可以在设置页的“安装”里找到这个功能，只需把“安装类型”从“服务器”修改为“idevice”即可。
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-48.png|使用本地回环安装软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8606.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136143-60.png|使用本地回环安装软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8606.png)
 
 至于其他的功能，是个签名工具应该都有，就不多做介绍了。
 
@@ -119,7 +119,7 @@ https://community-apps.sidestore.io/sidecommunity.json
 
 点击右侧的剩余天数就会直接开始安装：
 
-[![[assets/Clippings/Feather 签名工具/IMG-20260629163136149-24.png|安装已签名的软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8599.png)
+[![[assets/Clippings/Feather 签名工具/IMG-20260629163136149-30.png|安装已签名的软件。]]](https://www.onmyodev.com/wp-content/uploads/2026/02/IMG_8599.png)
 
 不出意外的话软件就装上了。
 

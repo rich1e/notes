@@ -2,10 +2,12 @@
 title: Xcode IDE 入门
 category: skills
 tags: [xcode, ios, xcode-cloud]
-sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
+sources:
+  - "buckets/books/iOS 17 App Development for Beginners.epub"
+  - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
-summary: Xcode 15 核心功能：界面导航区/编辑区/调试区、项目配置、iOS 模拟器使用、Swift Playground、Organizer 管理、Xcode Cloud CI/CD 基础。
+updated: 2026-07-10T14:30:00Z
+summary: Xcode 15 核心功能：界面导航区/编辑区/调试区、Preview Canvas 实时预览（比模拟器更高效）、项目配置、Swift Playground、Organizer、Xcode Cloud CI/CD。
 base_confidence: 0.86
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
@@ -102,6 +104,51 @@ Cmd+R → 启动模拟器运行 App
 | 模拟摇晃 | Device → Shake |
 | 清除 App 数据 | Device → Erase All Content |
 
+## Preview Canvas — 实时预览（推荐工作流）
+
+Preview Canvas 是 SwiftUI 开发中**效率最高的反馈循环**，无需每次修改都启动模拟器：
+
+```
+Editor Area → Canvas 按钮（右上角）→ 或 Cmd+Opt+Return 切换 Canvas
+```
+
+**工作流对比：**
+
+| 方式 | 单次反馈时间 | 适合场景 |
+|---|---|---|
+| Preview Canvas | < 1 秒（增量编译） | UI 布局调整、颜色/字体微调 |
+| 模拟器 | 3–30 秒（冷启动） | 交互行为、导航流程、数据加载 |
+| 真机 | 15–60 秒 | 性能/传感器/推送测试 |
+
+**Canvas 实时预览技巧：**
+
+```swift
+#Preview {
+    ContentView()
+        .previewDisplayName("Default")
+}
+
+#Preview("Dark Mode") {
+    ContentView()
+        .preferredColorScheme(.dark)
+}
+
+#Preview("iPad") {
+    ContentView()
+        .previewDevice("iPad Pro (12.9-inch)")
+}
+```
+
+- 同一文件可定义多个 `#Preview`，Canvas 同时展示所有预览
+- Canvas 中可直接点击/滑动（有限交互），但完整手势需模拟器
+- `@State` 私有变量在 Canvas 中可用，但无法注入外部数据 — 需在 Preview 中提供 mock
+
+**`#Preview` vs `PreviewProvider`：**
+- `#Preview {}` 是 Xcode 15 新语法，简洁
+- `struct Foo_Previews: PreviewProvider` 是旧语法，Xcode 15 前的代码库仍在用
+
+CS193P Spring 2025 实践建议：**先用 Canvas 把布局做对，再开模拟器验证交互**。^[extracted from CS193P Lecture 1 takeaways]
+
 ## Swift Playground
 
 用于快速原型验证，无需完整 App 项目：
@@ -149,6 +196,7 @@ thread list            // 列出所有线程
 ## 关联页面
 
 - [[concepts/swift-fundamentals]] — Swift 语言基础
-- [[concepts/swiftui-framework]] — SwiftUI 开发
+- [[concepts/swiftui-framework]] — SwiftUI 开发（ViewBuilder / some View）
 - [[skills/ios-app-store-publishing]] — Xcode Archive 与发布
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[references/cs193p-spring-2025]] — Stanford CS193P 课程（Preview Canvas 最佳实践来源）

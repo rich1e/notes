@@ -1,7 +1,15 @@
 ---
+
 title: Dayfold 架构概览
 category: project
-tags: [ios, swiftui, architecture, core-data]
+tags:
+  - ios
+  - swiftui
+  - core-data
+  - architecture
+relationships:
+  - target: "[[projects/dayfold/dayfold]]"
+    type: related_to
 sources: [projects/dayfold]
 summary: >-
   抽屉式根容器 + MVVM + 共享 CoreDataStack 单例：App 注入 viewContext，
@@ -18,7 +26,7 @@ created: 2026-06-29T00:00:00Z
 updated: 2026-06-29T00:00:00Z
 ---
 
-# Dayfold 架构概览
+# [[projects/dayfold/dayfold|Dayfold]] 架构概览
 
 ## 三层结构
 

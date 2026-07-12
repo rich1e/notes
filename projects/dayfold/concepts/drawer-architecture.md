@@ -1,7 +1,15 @@
 ---
+
 title: 抽屉式导航实现
 category: project
-tags: [ios, swiftui, navigation, animation]
+tags:
+  - ios
+  - swiftui
+  - navigation
+  - animation
+relationships:
+  - target: "[[projects/dayfold/skills/swipe-to-delete-row]]"
+    type: related_to
 sources: [projects/dayfold]
 summary: >-
   MainTabView 用 ZStack + 85% 屏宽 DrawerView 替代 TabBar；内容区用 offset + spring 动画
@@ -82,7 +90,7 @@ tab 切换（`.paperDrop` transition 走 `easeOut(0.38)`）、侧栏行点击全
 
 ## 列表左滑删除与抽屉的冲突
 
-`NotebookDetailView` 的 `SwipeToDeleteRow` 内部用 `DragGesture(minimumDistance: 10)`，
+`NotebookDetailView` 的 `[[projects/dayfold/skills/swipe-to-delete-row|SwipeToDeleteRow]]` 内部用 `DragGesture(minimumDistance: 10)`，
 抽屉整体使用 `withAnimation(.spring(...))`；两者不冲突，因为 `NotebookDetailView` 是
 `fullScreenCover` 独立呈现，抽屉本身已经处于关闭态。`MainTabView` 抽屉内若要支持
 右滑关闭，可考虑用 `simultaneousGesture` 把抽屉开合手势与列表左滑手势解耦。

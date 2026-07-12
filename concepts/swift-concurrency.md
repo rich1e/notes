@@ -1,7 +1,16 @@
 ---
+
 title: Swift 并发
 category: concepts
-tags: [swift, concurrency, ios]
+tags:
+  - ios
+  - swift
+  - concurrency
+relationships:
+  - target: "[[projects/dayfold/dayfold]]"
+    type: uses
+  - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
+    type: synthesized_in
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

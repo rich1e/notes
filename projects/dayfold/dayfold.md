@@ -1,7 +1,13 @@
 ---
 title: Dayfold
 category: project
-tags: [ios, swiftui, core-data, cloudkit, weatherkit, personal, architecture]
+tags:
+  - ios
+  - swiftui
+  - core-data
+  - cloudkit
+  - weatherkit
+  - personal
 sources: [projects/dayfold]
 summary: >-
   暖色风格的 iOS 个人日记 App，MVVM + SwiftUI + Core Data/CloudKit；抽屉式导航，自定义

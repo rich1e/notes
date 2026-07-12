@@ -2,11 +2,13 @@
 title: Swift 语言基础
 category: concepts
 tags: [swift, ios, programming, type-system, concurrency]
-sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
+sources:
+  - "buckets/books/iOS 17 App Development for Beginners.epub"
+  - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
-summary: Swift 5.9 核心特性：类型系统、变量声明、集合类型、控制流、闭包、可选值与协议导向编程。
-base_confidence: 0.88
+updated: 2026-07-10T14:30:00Z
+summary: Swift 5.9 核心特性：类型系统、变量声明、集合类型、控制流、闭包、可选值与协议导向编程（函数式语言，非 OOP）。
+base_confidence: 0.90
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
 tier: core
@@ -176,6 +178,16 @@ do {
 }
 ```
 
+## Swift 是函数式 / 协议导向语言，不是 OOP
+
+Swift 的设计哲学与传统 OOP（Java/Python）有根本区别：
+
+- **主要数据结构是 `struct`**，而非 `class`。`struct` 是值类型，赋值时复制而非共享引用。
+- **"获得能力"通过遵从协议（conforming to protocols）实现**，而非通过继承父类。遵从一个协议可自动获得数百个附属函数（来自标准库的协议扩展）。
+- 函数式风格：`map/filter/reduce` + 不可变优先（`let` 优于 `var`）。^[inferred from CS193P Lecture 1]
+
+SwiftUI 本身就是这个设计的集中体现：每个视图是遵从 `View` 协议的 `struct`，而不是继承 `UIView`。
+
 ## 协议导向编程（POP）
 
 Swift 鼓励用**协议（Protocol）**替代继承：
@@ -196,12 +208,15 @@ struct Circle: Drawable {
 }
 ```
 
+遵从 `View` 协议的 `struct` 即可获得 SwiftUI 所有布局、动画、状态管理函数，无需继承任何基类。这正是 Paul Hegarty（CS193P）强调"SwiftUI 不是 OOP"的原因。^[inferred]
+
 ## 关联页面
 
-- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架（struct + View 协议的实践体现）
 - [[concepts/arc-memory-management]] — ARC 内存管理
 - [[concepts/swift-concurrency]] — async/await 并发
 - [[concepts/ios-app-architecture]] — MVC/MVVM 架构模式
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[references/cs193p-spring-2025]] — Stanford CS193P 课程参考（Paul Hegarty）
 - [[skills/ios-multithreading]] — iOS 多线程
 - [[skills/ios-networking]] — iOS 网络编程

@@ -12,7 +12,7 @@ tags:
   - SideStore
   - ios
 ---
-![[assets/%E8%B2%82%E8%9D%89-%E5%94%A4%E7%81%B5%E9%AD%85%E5%BD%B1-2048x1157.jpg]]
+![[assets/Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲/IMG-20260702164745362.jpg]]
 
 最后编辑于 2026年5月25日
 

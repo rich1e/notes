@@ -48,8 +48,8 @@ relationships:
 | `Follow_Up` | 主→从 | 两步模式下，携带 Sync 的精确发送时间戳 t1 |
 | `Delay_Resp` | 主→从（E2E） | 携带主时钟收到 Delay_Req 的时间戳 t4 |
 | `Pdelay_Resp_Follow_Up` | 邻居→发起方（P2P） | 两步模式下，携带 Pdelay_Resp 的精确发送时间戳 t3 |
-| `Announce` | 主→所有 | 广播时钟质量属性（clockClass/clockAccuracy 等），供 [[concepts/ptp-bmca\|BMCA]] 使用 |
-| `Management` | 管理→设备（双向）| 查询/设置 PTP 设备的数据集，携带[[concepts/ptp-tlv-extension\|TLV]] |
+| `Announce` | 主→所有 | 广播时钟质量属性（clockClass/clockAccuracy 等），供 [[concepts/ptp-bmca|BMCA]] 使用 |
+| `Management` | 管理→设备（双向）| 查询/设置 PTP 设备的数据集，携带[[concepts/ptp-tlv-extension|TLV]] |
 | `Signaling` | 任意 | 协商单播传输参数，携带 TLV |
 
 ## 报文头公共字段

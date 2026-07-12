@@ -1,8 +1,14 @@
 ---
+
 title: >-
   xk-ai-talk-desk-ui
 category: projects
-tags: [react, typescript, webrtc, call-center, zustand, antd]
+tags:
+  - react
+  - typescript
+  - webrtc
+  - call-center
+  - zustand
 sources: [projects/xk-ai-talk-desk-ui]
 summary: >-
   AI 外呼热转坐席前端，基于 React 19 + JsSIP + 信科 CC SDK，承接 AI 智能客服转人工通话。
@@ -18,7 +24,8 @@ updated: 2026-06-29
 relationships:
   - target: "[[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]]"
     type: related_to
-
+  - target: "[[entities/zustand]]"
+    type: uses
 ---
 
 # xk-ai-talk-desk-ui
@@ -32,7 +39,7 @@ AI 外呼热转坐席工作台前端。核心场景：AI 智能客服与客户�
 | 框架 | React 19 + TypeScript 6.0 |
 | 构建 | Vite 8，端口 5566 |
 | UI | Ant Design 6 + Pro Components + Tailwind CSS 4 |
-| 状态 | Zustand 5（persist 持久化到 localStorage） |
+| 状态 | [[entities/zustand|Zustand]] 5（persist 持久化到 localStorage） |
 | 路由 | React Router 7 |
 | 电话 SDK | JsSIP 3 + 信科 LaihuAPI（WebRTC + CC 双通道） |
 | HTTP | Axios，`/api` 代理到后端 |

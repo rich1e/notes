@@ -1,7 +1,15 @@
 ---
+
 title: iOS 架构模式
 category: concepts
-tags: [ios, architecture, swiftui]
+tags:
+  - ios
+  - swiftui
+  - architecture
+  - state-management
+relationships:
+  - target: "[[projects/dayfold/dayfold]]"
+    type: related_to
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z
@@ -34,7 +42,7 @@ Model ←→ Controller ←→ View
 
 ## MVVM（Model-View-ViewModel）
 
-SwiftUI 与 Combine 的**天然搭档**，dayfold 采用此架构。
+SwiftUI 与 Combine 的**天然搭档**，[[projects/dayfold/dayfold|dayfold]] 采用此架构。
 
 ```
 Model ← ViewModel → View（双向绑定）

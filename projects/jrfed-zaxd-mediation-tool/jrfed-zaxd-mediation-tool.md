@@ -1,8 +1,14 @@
 ---
+
 title: >-
   jrfed-zaxd-mediation-tool — 金融客服协谈助手 Chrome 扩展
 category: projects
-tags: [chrome-extension, react, typescript, zustand, antd, fintech]
+tags:
+  - chrome-extension
+  - react
+  - typescript
+  - zustand
+  - fintech
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   金融客服协谈助手：基于 Chrome Extension MV3 的侧边栏工具，为金融客服提供提前结清试算、权益计算、安抚金申请、投诉列表等一站式功能，含划词识别填充与完整权限管控。
@@ -11,14 +17,15 @@ provenance:
   inferred: 0.08
   ambiguous: 0.02
 base_confidence: 0.88
-lifecycle: active
+lifecycle: draft
 lifecycle_changed: 2026-07-01
 created: 2026-07-01T12:00:00Z
 updated: 2026-07-01T12:00:00Z
 relationships:
   - target: "[[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]]"
     type: related_to
-
+  - target: "[[entities/zustand]]"
+    type: uses
 ---
 
 # jrfed-zaxd-mediation-tool — 金融客服协谈助手
@@ -29,7 +36,7 @@ relationships:
 
 - 快捷键 `Cmd+B`（Mac）/ `Ctrl+B`（Windows）唤起侧边栏
 - 支持划词浮窗：划选文本后自动识别身份证号、手机号并填充查询表单
-- 查询条件和结果通过 Zustand + Chrome Storage 持久化，刷新不丢失
+- 查询条件和结果通过 [[entities/zustand|Zustand]] + Chrome Storage 持久化，刷新不丢失
 - 当前版本：`1.1.5`
 
 ## 技术栈

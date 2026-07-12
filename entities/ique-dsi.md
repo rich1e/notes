@@ -1,4 +1,5 @@
 ---
+
 title: iQue DSi（神游 DSi）
 category: entities
 tags: [nintendo, handheld, game, ique]
@@ -17,7 +18,6 @@ provenance:
 relationships:
   - target: "[[skills/ique-ds-download-play]]"
     type: related_to
-
 ---
 
 # iQue DSi（神游 DSi）

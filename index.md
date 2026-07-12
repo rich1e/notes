@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-03T09:00:00Z*
+*This index is automatically maintained. Last updated: 2026-07-10T14:30:00Z*
 
 ## Concepts
 
@@ -29,6 +29,11 @@ title: Wiki Index
 - [[concepts/zustand-core-architecture]] — Zustand createStore 约 30 行核心：闭包 + Set`<Listener>` + 浅合并，StoreApi 接口设计
 - [[concepts/zustand-middleware-system]] — Zustand 中间件系统：StoreMutators 类型扩展、persist/devtools/immer/redux/subscribeWithSelector
 - [[concepts/zustand-react-integration]] — Zustand React 层：useSyncExternalStore + 选择器 + useShallow 浅比较防多余重渲染
+- [[concepts/macos-window-switcher]] — macOS 窗口切换器：替代 Cmd+Tab 的 app→window 粒度扩展，含 Space 过滤/标签下钻/快速动作
+- [[concepts/asciidoc-markup]] — AsciiDoc 标记语言：表格/脚注/交叉引用/属性/条件内容内置，docs-as-code 友好
+- [[concepts/animation-easing-functions]] — 缓动函数：Penner 缓动 + Apple 参数化运动学 + 卷积滤波 + PD/PID 反馈控制四条路线
+- [[concepts/programming-pattern-categories]] — 编程模式五大分类（数据结构/并发/系统/内存/行为），按运行时职责切分，与 GoF 互补
+- [[concepts/fabric-patterns]] — Fabric Patterns：290+ 可复用 AI Prompt 单元，覆盖分析/提取/创作/安全等场景
 
 ## Entities
 
@@ -41,6 +46,12 @@ title: Wiki Index
 - [[entities/zustand]] — Zustand：pmndrs 出品的轻量 React 状态管理库，无 Provider，Hook 驱动，~1KB
 - [[entities/linuxptp]] — Linux 平台工业级 PTP 实现，包含 ptp4l/phc2sys/pmc 工具
 - [[entities/white-rabbit]] — CERN 开发的亚纳秒级时间同步协议，PTP 扩展 + DMTD 相位测量
+- [[entities/alttab]] — AltTab：lwouis 出品的开源 macOS 窗口切换器，悬停顶层预览 + 21 语言
+- [[entities/bettercmdtab]] — BetterCmdTab：rokartur 出品的永久免费开源 Cmd+Tab 替代，macOS 13+
+- [[entities/contexts]] — Contexts：边栏式 macOS 窗口切换器，触控板边缘下滑手势 + 多显示器独立边栏
+- [[entities/witch]] — Witch：Many Tricks 出品的付费窗口切换器，多粒度切换器并存
+- [[entities/battle-tested-patterns]] — Totoro-jam 出品的开源 46 模式目录项目（React/Linux/Go/PostgreSQL 等代码级编程模式，行号精确引用）
+- [[entities/fabric-ai]] — Fabric：danielmiessler 出品的开源 AI 增强框架，290+ Patterns，20+ AI 提供商，Go 编写
 
 ## Skills
 
@@ -49,7 +60,7 @@ title: Wiki Index
 - [[skills/ios-sideloading-fundamentals]] — iOS 证书类型、JIT 原理、SideStore/LiveContainer 机制完整解析
 - [[skills/ios-emulator-setup]] — iOS 上的 3DS（ManicEMU）与 Switch（MeloNX）模拟器安装与 JIT 配置
 - [[skills/hackintosh-mini-build]] — 5000 元黑苹果小机箱（对标 Mac Studio），程序员装机指南
-- [[skills/tmux]] — Tmux 快捷键速查与推荐配置
+- [[skills/tmux]] — Tmux 快捷键速查、推荐配置、关闭会话的 4 种替代方式（kill-server / kill-session -a / :kill-session / exit 级联）
 - [[skills/terminal-music]] — macOS 终端本地音乐播放（afplay + shell 函数）
 - [[skills/ique-dsi-camera]] — iQue DSi趣照 11种趣味相机、相册、幻灯片、照片管理完整操作
 - [[skills/ique-dsi-sound]] — iQue DSi趣音 麦克风录音、声音变换、SD卡 AAC 音乐播放
@@ -67,6 +78,8 @@ title: Wiki Index
 - [[skills/zustand-typescript]] — Zustand TypeScript：双括号语法原因、Slices 类型、中间件组合类型
 - [[skills/ptp-implementation]] — ptp-lite 约 1000 行 C 实现：报文编解码、主时钟发布、从时钟偏移计算
 - [[skills/ptp-troubleshooting]] — PTP 故障排查：pmc 诊断工具、日志解读、常见问题处理
+- [[skills/pattern-study-method]] — 用 battle-tested-patterns 系统学习 46 模式：4 阶段路径 + 配套练习 + AI 编程助手技能（adopt-pattern/audit-pattern）
+- [[skills/fabric-usage-patterns]] — Fabric CLI 高频用法：YouTube 分析、Shell 别名、REST API、Obsidian 集成
 
 ## Projects
 
@@ -109,8 +122,19 @@ title: Wiki Index
 - [[references/ique-dsi-shop]] — iQue DSi 商店与 iQue 点数购买、充值、限制说明
 - [[references/ios-design-patterns]] — GoF 23 种设计模式速查（创建/结构/行为）+ iOS 常见反模式清单
 - [[references/ptp-book-overview]] — PTP技术书（Lularible），41节从思想实验到 LinuxPTP 源码到 ptp-lite 实现
+- [[references/macos-window-switchers]] — macOS 窗口切换器对比速查：AltTab / BetterCmdTab / Contexts / Witch 在许可证/macOS 兼容/布局/触发方式上的差异
+- [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接
+- [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 + 5次作业 + 3周自选项目，SwiftUI 核心课
 
 ## Synthesis
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议理论 × LinuxPTP 工业实现：协议 vs 实现的工程空白（PI 伺服、PHC 桥接、硬件时间戳三级精度）
+- [[synthesis/trek-auth-system × trek-mcp-server]] — Trek 认证 × MCP 服务器：AI 客户端的认证特化（受众绑定、scope 切分、级联吊销、插件边界）
+- [[synthesis/zustand-core-architecture × zustand]] — Zustand 内部架构 × 库品牌：30 行不是省略，是有意暴露（vanilla 闭包 vs React 包装）
+- [[synthesis/arc-memory-management × swift-concurrency]] — ARC × Swift Concurrency：同一引用类型的两种正交安全机制（生命周期 vs 访问安全）
+- [[synthesis/macos-window-switcher × macos-window-switchers]] — macOS 窗口切换器 概念 × 对比：4 款独立工具为何解决同一问题（结构性局限）
+- [[synthesis/consolidation-2026-07-07]] — 2026-07-07 自动合并报告（wiki-lint --consolidate）：PTP 反斜杠修复、chapter1 孤儿拯救
+- [[synthesis/Research: Fabric AI Framework]] — Fabric AI 框架研究综合：Patterns 设计哲学、290+ Pattern 分类、多提供商架构、REST API
 
 ## Journal
 

@@ -1,8 +1,16 @@
 ---
+
 title: >-
   Zustand 5 + Chrome Storage 持久化：chromeStorage 适配器模式
 category: skills
-tags: [zustand, chrome-extension, state-management, persistence]
+tags:
+  - chrome-extension
+  - zustand
+  - persistence
+  - react
+relationships:
+  - target: "[[entities/zustand]]"
+    type: uses
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   Chrome 扩展中不能用 localStorage，通过封装 chrome.storage.local 的异步适配器接入 Zustand persist 中间件，实现跨页面状态持久化。
@@ -11,13 +19,13 @@ provenance:
   inferred: 0.06
   ambiguous: 0.02
 base_confidence: 0.91
-lifecycle: active
+lifecycle: draft
 lifecycle_changed: 2026-07-01
 created: 2026-07-01T12:00:00Z
 updated: 2026-07-01T12:00:00Z
 ---
 
-# Zustand 5 + Chrome Storage 持久化
+# [[entities/zustand|Zustand]] 5 + Chrome Storage 持久化
 
 ## 为什么不能用 localStorage
 

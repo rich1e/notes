@@ -2,10 +2,12 @@
 title: SwiftUI 框架
 category: concepts
 tags: [swiftui, ios, design-system, swift, architecture]
-sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
+sources:
+  - "buckets/books/iOS 17 App Development for Beginners.epub"
+  - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
-summary: SwiftUI 声明式 UI 框架核心：View 协议、布局容器（VStack/HStack/ZStack）、状态管理（@State/@Binding/@ObservedObject/@EnvironmentObject）、修饰符链式调用。
+updated: 2026-07-10T14:30:00Z
+summary: SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符链式调用。
 base_confidence: 0.90
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
@@ -40,7 +42,56 @@ struct ContentView: View {
 }
 ```
 
-`some View` 是不透明返回类型（Opaque Type），编译器推断具体类型。
+`some View` 是不透明返回类型（Opaque Type），编译器推断具体类型。当 `body` 包含 `if/else` 等分支时，实际返回的是 `ConditionalContent<A, B>` 等复杂泛型，`some View` 让调用者无需知晓这个细节。^[inferred]
+
+## ViewBuilder — 多 View 的 "Lego Bag"
+
+`body` 属性被 `@ViewBuilder` 隐式标注，使 Swift 可以将多个子表达式组合为一个 **tuple View**（类似 Lego 积木的装袋器）：
+
+```swift
+struct MyView: View {
+    var body: some View {     // body 由 @ViewBuilder 处理
+        Text("Line 1")        // 每行都是一个 View 表达式
+        Text("Line 2")        // 最终被打包成 TupleView<(Text, Text)>
+        if Bool.random() {
+            Image(systemName: "star")
+        }
+    }
+}
+```
+
+关键点：
+- `@ViewBuilder` 是一个 **result builder**，把多个 View 语句编译为 `TupleView`
+- **最多支持 10 个直接子视图**（超出需用 `Group` 包裹）
+- `if/else`、`switch` 在 ViewBuilder 闭包中被编译为 `ConditionalContent<A, B>`，而非运行时分支
+
+## 尾随闭包语法在 SwiftUI 中的意义
+
+SwiftUI API 大量使用尾随闭包（trailing closure），让代码更贴近 DSL 风格：
+
+```swift
+// 标准形式（verbose）
+VStack(alignment: .leading, spacing: 8, content: {
+    Text("Title")
+    Text("Subtitle")
+})
+
+// 尾随闭包语法（SwiftUI 风格）
+VStack(alignment: .leading, spacing: 8) {
+    Text("Title")
+    Text("Subtitle")
+}
+```
+
+当函数最后一个参数是闭包时，可将其移到括号外。若闭包是唯一参数，括号可完全省略：
+
+```swift
+Button("Tap me") {          // action 参数是唯一闭包，括号省略
+    doSomething()
+}
+```
+
+这就是为什么 SwiftUI 代码"看起来像声明而非函数调用"——实际上每层嵌套都是一个函数调用 + 尾随闭包。^[inferred]
 
 ## 布局容器
 
@@ -192,13 +243,13 @@ Xcode 15 支持 `#Preview` 宏简写：
 
 ## 关联页面
 
-- [[concepts/swift-fundamentals]] — Swift 语言基础
+- [[concepts/swift-fundamentals]] — Swift 语言基础（struct / 协议导向 / 尾随闭包）
 - [[concepts/swift-concurrency]] — async/await 在 SwiftUI 中的使用
 - [[projects/dayfold/dayfold]] — 实际 SwiftUI 项目参考
 - [[projects/dayfold/concepts/swiftui-context-propagation]] — sheet context 注入陷阱
 - [[projects/dayfold/concepts/fetchrequest-vs-observedobject]] — FetchRequest vs ObservedObject
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[references/cs193p-spring-2025]] — Stanford CS193P 课程（ViewBuilder / some View 讲解来源）
+- [[skills/xcode-ide-guide]] — Preview Canvas 实时预览工作流
 - [[skills/ios-multithreading]] — iOS 多线程
-- [[skills/ios-networking]] — iOS 网络编程
-
 - [[skills/ios-networking]] — iOS 网络编程

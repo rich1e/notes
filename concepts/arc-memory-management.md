@@ -19,6 +19,8 @@ relationships:
     type: related_to
   - target: "[[skills/ios-multithreading]]"
     type: related_to
+  - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
+    type: synthesized_in
 
 ---
 

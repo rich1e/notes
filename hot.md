@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-03T09:00:00Z
+updated: 2026-07-10T14:30:00Z
 ---
 
 # Hot Cache
@@ -9,49 +9,33 @@ updated: 2026-07-03T09:00:00Z
 
 ## Recent Activity
 
-- [2026-07-03T09:10:00Z] CROSS_LINK — 扫描 12 个 PTP 新页面，新增 14 个链接，修改 7 个文件；PTP 知识孤岛内部已全部互联，无孤立页面。主要补全：ptp-bmca↔ptp-message-types、ptp-clock-types↔ptp-delay-measurement/linuxptp、ptp-tlv-extension↔white-rabbit、ptp-troubleshooting↔ptp-port-state-machine/ptp-delay-measurement。
-- [2026-07-03T09:00:00Z] INGEST `_raw/github-Lularible-ptp-book.md`（GitHub 仓库 Lularible/ptp-book，gitingest 抓取，52 文件，469KB）— 创建 12 页：PTP 书籍总览（references）、PTP 协议核心概念（concepts/ptp-ieee1588）、BMCA 选举算法（含 12 主时钟混战故障案例）、四种时钟角色（GM/BC/TC/OC）、E2E 与 P2P 四时间戳延迟测量、TLV 扩展机制、报文类型（10 种）、端口状态机（9 种状态）、LinuxPTP 实体（ptp4l/phc2sys/pmc/PI 伺服器/源码模块）、White Rabbit 实体（CERN，亚纳秒级，DMTD 相位测量）、ptp-lite 实现要点技能页、PTP 故障排查技能页。源文件已归档至 _raw/_archived/。
-- [2026-07-02T01:00:00Z] INGEST `_raw/zustand.txt`（Gitingest 导出，pmndrs/zustand 源码 + 文档，3.1 万行）— 创建 7 页：实体页（Zustand 定位与对比）、核心架构（createStore ~30 行实现：Object.is + 浅合并 + Set<Listener>，StoreApi 接口，双层 vanilla/react 架构）、中间件系统（StoreMutators 开放扩展类型，persist/devtools/immer/redux/subscribeWithSelector 详解）、React 集成（useSyncExternalStore 原理，useShallow 浅比较实现）、最佳实践（Slices/外部 Actions/重置/Map-Set/URL 同步）、SSR/Next.js（per-request store + Context 模式）、TypeScript（双括号语法原因、Slices 类型、中间件组合）。与 Trek 项目的 Zustand 使用已交叉链接。
-- [2026-07-02T00:30:00Z] INGEST `_raw/trek.txt`（Gitingest 导出，33 万行）— Trek 自托管旅行计划器，创建 8 页：项目总览、架构概览（NestJS 模块 + React Zustand 切片 + 离线优先 PWA）、插件系统（9 个插件管理员可切换）、MCP 服务器（OAuth 2.1 + 150 工具 + 27 scope）、实时同步（WebSocket Room 模型 + MutationQueue 离线队列）、认证系统（JWT/OIDC/Passkeys/MFA/OAuth 2.1）、数据库表结构（SQLite，~40 张表）、环境变量参考。
-- [2026-07-02T00:20:00Z] INGEST Clippings/（8个新文件）— 创建 6 页：**llm-speculative-decoding**（DSpark 推测解码框架，半自回归架构 + 置信度调度，DeepSeek 线上 60–85% 加速）；**ios-sideloading-fundamentals**（调试/发布证书区别、JIT 原理、SideStore/LiveContainer 机制对比，iOS 26.4 RPPairing 变化）；**ios-emulator-setup**（ManicEMU 3DS + MeloNX Switch 侧载配置，JIT 必须通过 StikDebug）；**hackintosh-mini-build**（5000 元黑苹果对标 Mac Studio + DIY MacBook Pro 2019 拆机件清单）；**mechanical-watch-mechanics**（机械表七部件能量链）；**fire-emblem-mystery-chapter1**（FE 第1章攻略）。更新 feather-ios-sideload 补充 JIT 局限说明。
-- [2026-07-02T00:10:00Z] CROSS_LINK — 扫描 61 页，新增 43 个链接，修改 24 个文件；typed relations 写入 frontmatter；仅剩 1 个孤立页面（entities/feather-ios-sideload）。主要连接：ios17-app-development-book ↔ arc/concurrency/networking/multithreading/xcode/appstore；nintendo-wansui ↔ 全部 ique-dsi 技能页；ios concepts ↔ ios skills 双向关联；两个跨项目链接（jrfed ↔ xk-ai-talk-desk）。
-- [2026-07-02T00:01:00Z] TAG_NORMALIZE — 规范化 76 个文件；保留 `dsi`/`DSTWO` 原样；删除占位标签 `标签1`/`标签2`；未知标签合并（`strategy`→`game`、`磁盘管理`→`macos`、`日本`→`travel` 等）；别名统一（`gcd`/`dispatchqueue`/`multithreading`→`concurrency`、`urlsession`/`alamofire`→`networking` 等）。
-- [2026-07-01T12:30:00Z] WIKI_UPDATE jrfed-zaxd-mediation-tool — 首次同步，创建 6 页：项目总览（协谈工具 Chrome 扩展）、权限管控体系（usePermission Hook）、MV3 三层架构（Content Script 双世界注入）、Zustand+Chrome Storage 持久化、神策 SDK 双脚本方案、源码目录布局
-- [2026-07-01T12:00:00Z] INGEST iOS 17 App Development for Beginners.epub — Arpit Kulsreshtha 著 iOS 17 开发入门书（Swift 5.9/SwiftUI/Xcode 15），蒸馏为 12 页：书籍实体、Swift 基础/SwiftUI 框架/ARC 内存/Swift 并发/iOS 架构模式（概念页）、数据持久化/网络编程/多线程/App Store 发布/Xcode IDE（技能页）、设计模式速查（参考页）
-- [2026-07-01T00:00:00Z] INGEST DSiSoftware.pdf — 神游 DSi 官方操作说明书（操作篇），蒸馏为 12 页：主机实体、趣照/趣音/Wi-Fi/亲子管理/PictoChat/下载游戏技能页、商店/系统设置/菜单软件/网络术语参考页、任天狗狗实体页
-- [2026-06-29T09:30:00Z] INGEST Clippings/ — 15 个网页剪藏蒸馏为 13 个 wiki 页面，覆盖 Claude Code 优化、前端核心概念、复古游戏与工具类知识
-
-## Key New Additions
-
-**PTP（IEEE 1588）完整知识体系（新建）**：Lularible/ptp-book 蒸馏为 12 页。核心洞见：BMCA 的六属性比较（priority1→clockClass→clockAccuracy→offsetScaledLogVariance→priority2→clockIdentity）决定主时钟；四时间戳法假设链路对称是精度瓶颈；TLV 机制是 IEEE 1588-2008→2019 演进的基础；LinuxPTP PI 伺服控制器通过 adjtimex 实现平滑频率调整而非跳变。White Rabbit（CERN）通过 DMTD + L1_SYNC TLV 突破到亚纳秒精度。
-
-**jrfed-zaxd-mediation-tool（新建）**：金融客服协谈助手 Chrome 扩展首次同步，创建 6 页。核心架构决策：MV3 三层（Background SW + SidePanel + Content Script），双 Content Script 解决神策 SDK 主世界注入问题（`world: "MAIN"`），`chrome.storage.local` 替代 localStorage 的 `chromeStorage` 适配器接入 Zustand persist，三级权限管控（MENU_/BTN_/FW_）通过 `usePermission` Hook 驱动条件渲染。
+- [2026-07-10 14:30] INGEST — Stanford CS193P Spring 2025 Lecture 1（YouTube，fabric summarize 输出）。更新 3 页 + 新建 1 页。核心新知识：①Swift 是函数式/POP 不是 OOP；②ViewBuilder = `@ViewBuilder` result builder 把多个 View 打包为 TupleView（"bag of Lego"，最多 10 个子 View）；③`some View` 不透明返回类型减少复杂泛型暴露；④尾随闭包让 SwiftUI 看起来像声明标记；⑤Preview Canvas 反馈 < 1 秒 vs 模拟器 3–30 秒。新建课程参考页 [[references/cs193p-spring-2025]]。
+- [2026-07-09 08:00] WIKI_RESEARCH — Fabric AI 框架研究（danielmiessler/Fabric）。产出 4 页：entity card（fabric-ai）、concept（fabric-patterns：290+ Pattern 分类 + extract_wisdom 详解 + 9 种提示策略）、skill（fabric-usage-patterns：YouTube 分析/Shell 别名/REST API/Obsidian 集成）、synthesis（Research: Fabric AI Framework）。核心洞察：Fabric 解决 AI **集成**问题而非能力问题，Pattern = Unix 管道哲学在 AI 领域的实践。
+- [2026-07-08 07:19] INGEST — gitingest dump of Totoro-jam/battle-tested-patterns (4.1MB, 46 patterns catalog). Promoted to 4 cross-category pages: entity card + full catalog with line-cited "Proven In" links + categorization concept + study-method skill. Avoided per-pattern pages (already exist at source URL).
+- [2026-07-07 10:22] WIKI_SYNTHESIZE — created 5 cross-cutting synthesis pages. Co-occurrence matrix built from 108 pages; ~372 unresolved wikilinks filtered out (parser artifacts + generic `wikilink`/`wikilinks` terms). Top scored pairs filtered for cross-domain value.
+- [2026-07-07 14:50] TAG_NORMALIZE — 5 new taxonomy tags (ptp, ieee-1588, productivity, network-protocol, time-sync), unknown tags 55→50.
+- [2026-07-07 14:45] LIFECYCLE_FIX — 6 jrfed pages `active`→`draft` per user choice.
+- [2026-07-07 14:40] LINT — 13 typed-relationship `.md` artifacts fixed; 6 jrfed `lifecycle:active` flagged.
 
 ## Active Threads
 
-**jrfed-zaxd-mediation-tool（进行中）**：金融客服 Chrome 扩展，MV3 + React + Zustand + Antd。最近迭代聚焦权限管控：历史订单页 `BTN_EQUITY_HIST_QUERY` 缺失导致空白 bug、接口 URL 空格 404 问题均已修复。项目含提前结清/安抚金/权益计算/投诉列表/征信核身/供应商工单/原单退款共 9 个功能模块。
-
-**dayfold（进行中）**：iOS 18+ 暖色日记 App，SwiftUI + Core Data/CloudKit 同步。核心架构：抽屉式导航（85% 屏宽）替代 TabBar，MVVM + 共享 CoreDataStack 单例，无 iCloud 自动降级本地。
-
-**xk-ai-talk-desk-ui（进行中）**：AI 外呼热转坐席前端，`dev_1.0.0` 分支活跃开发。核心是 `useSoftbar` Hook 封装信科 LaihuAPI，事件驱动管理通话生命周期。
-
-**Claude Code 知识集群**：已建立 `skills/claude-code-token-optimization` 和 `skills/claude-code-settings` 两个核心页面，`concepts/prompt-caching` 作为理论基础页面支撑两者。
-
-**前端核心概念**：已建立 Event Loop → 浏览器进程模型 → 存储缓存 → 移动端定时器四页互链体系。
+- **CS193P Swift cluster (3 pages updated + 1 new, 2026-07-10)** — [[concepts/swift-fundamentals]] 补充 POP/非OOP 定性；[[concepts/swiftui-framework]] 补充 ViewBuilder + 尾随闭包详解；[[skills/xcode-ide-guide]] 补充 Preview Canvas 工作流对比表。[[references/cs193p-spring-2025]] 为 Paul Hegarty 课程新建参考页（双轨学习方法论 + Lecture 1 要点）。
+- **Fabric AI cluster (4 pages, 2026-07-09)** — entity + concept + skill + synthesis 四页。Fabric 用 290+ Pattern 把 AI 能力标准化为可复用 Prompt 单元。REST API + Ollama 兼容模式可作为统一 AI 网关。与 [[skills/claude-code-settings]] 同属 AI 工具配置知识域。`extract_wisdom` Pattern 是研究信息处理的参考设计。
+- **battle-tested-patterns cluster (4 pages, 2026-07-08)** — new reference cluster: 46 patterns organized by runtime responsibility (Data Structures / Concurrency / System / Memory / Behavioral). Cross-references [[references/ios-design-patterns]] (object-level GoF) for the orthogonal "object vs code" axis. Most-cited source repos: Linux Kernel > React > Go > PostgreSQL > LevelDB.
+- **5 new synthesis pages (2026-07-07)** — `ptp-ieee1588 × linuxptp` (theory vs implementation gap: PI servo, PHC bridging, hardware timestamp tiers), `trek-auth-system × trek-mcp-server` (AI-client auth specializations: audience binding, 27 scopes, cascading revocation, plugin boundaries), `zustand-core-architecture × zustand` (30 lines is intentional exposure not omission), `arc-memory-management × swift-concurrency` (orthogonal safety dimensions on reference types), `macos-window-switcher × macos-window-switchers` (4 indie tools solving same problem = structural macOS limitation).
+- **PTP cluster (6 pages, 2026-07-03)** — synthesis `ptp-ieee1588 × linuxptp` now serves as the cross-cluster hub for theory↔implementation questions.
+- **Trek cluster (8 pages, 2026-07-02)** — new synthesis cross-links auth-system ↔ mcp-server ↔ addon-system (plugin toggle invalidates MCP sessions).
+- **macOS window switcher cluster** — now has a synthesis explaining why 4 tools persist (Apple's app>window product philosophy + no official API).
 
 ## Key Takeaways
 
-- **Chrome 扩展禁用 localStorage**：Content Script 与宿主页面共享 localStorage 会造成键名冲突，必须用 `chrome.storage.local`；通过 `chromeStorage` 适配器可直接接入 Zustand persist（[[projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage]]）
-- **神策 SDK 主世界注入**：Content Script 默认在隔离世界，无法访问 `window.sensorsData*`；用 `world: "MAIN"` 额外注入一个脚本初始化 SDK，两个脚本同一页面并存（[[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]]）
-- **权限控制无路由守卫**：侧边栏扩展没有 URL 变化，权限失效只通过 `usePermission` 隐藏 UI 元素，不做路由跳转（[[projects/jrfed-zaxd-mediation-tool/concepts/permission-system]]）
-- **Core Data + CloudKit 优雅降级**：监听 `NSCocoaErrorDomain 134400` → 清空 `cloudKitContainerOptions` → 二次 `loadPersistentStores`，避免在无 iCloud 设备上刷错误日志
-- **SwiftUI sheet/cover 上下文不继承**：必须显式 `.environment(\.managedObjectContext, context)`，否则子视图写入不会触发外层 `@FetchRequest` 刷新（dayfold 历史上多个 fix 都围绕这个坑）
-- **EntryEditor 图片脏标记模式**：`@Published var images` 的 `didSet` + `isLoadingImages` 守卫，避免 auto-save 时把刚加载的旧图当"未改动"或"已改动"误判
-- **信科 CC SDK 集成关键**：双通道签入（CC only vs CC+WebRTC），外呼号码须加 `9` 前缀；`DeliveredEvt.dialogue` 携带 AI 对话历史，是热转场景的核心数据
-- Claude Code 提示缓存：**缓存热时继续聊比重开更便宜**；1M 上下文慎用（缓存失效代价极高）
-- 移动端定时器不准根因：浏览器对后台页面冻结定时器；解法：visibilitychange + 服务器时间差值
-- NDS 最佳烧录卡：DS Two（已停售）；GBA Slot-2：SuperCard Mini SD + SuperFW 固件
+- Vault health: ~112 pages (4 new from battle-tested-patterns ingest). battle-tested-patterns is the only third-party open-source project promoted as `entities/*` rather than `projects/*` (no local source to sync).
+- Pattern taxonomy: 5 categories × 46 patterns = a "code-level" complement to GoF's 23 object-level patterns. [[concepts/programming-pattern-categories]] is the conceptual hub. The catalog page [[references/pattern-catalog-battle-tested-patterns]] doubles as a "what projects should I read source for" reading list — most-cited (Linux/React/Go/PostgreSQL/LevelDB) are also classic interview sources.
+- Co-occurrence scoring insight: `entities/ios17-app-development-book` dominates raw counts (it's a book hub cited from every Swift concept page), but pairs centered on it are low synthesis value (book-as-catalog, not cross-domain). Filtered these out.
+- iQue DSi device×skill pairs similarly filtered (product-manual structure, not conceptual cross-pollination).
+- Strongest objections required in every synthesis: e.g. PTP×LinuxPTP asks "is the 'protocol gap' actually a portability feature?", Zustand asks "is 30 lines cherry-picked or representative?".
 
 ## Flagged Contradictions
 
 *None yet.*
+

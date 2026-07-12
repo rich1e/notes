@@ -1,7 +1,15 @@
 ---
+
 title: Dayfold 源码目录布局
 category: project
-tags: [ios, swiftui, architecture]
+tags:
+  - ios
+  - swift
+  - swiftui
+  - architecture
+relationships:
+  - target: "[[projects/dayfold/dayfold]]"
+    type: related_to
 sources: [projects/dayfold]
 summary: >-
   dayfold/dayfold/ 下的模块划分：Models / Services / ViewModels / Views
@@ -18,7 +26,7 @@ created: 2026-06-29T00:00:00Z
 updated: 2026-06-29T00:00:00Z
 ---
 
-# Dayfold 源码目录布局
+# [[projects/dayfold/dayfold|Dayfold]] 源码目录布局
 
 ```
 dayfold/

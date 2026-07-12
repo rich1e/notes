@@ -66,7 +66,11 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `type-system` | — | Type system concepts |
 | `memory` | `reference-counting`, `arc` | Memory management |
 | `networking` | — | Network protocols and concepts |
+| `network-protocol` | — | Specific network protocols (PTP, NTP, etc.) — narrower than `networking` |
+| `time-sync` | — | Time synchronization protocols and concepts |
 | `security` | `rbac` | Security concepts |
+| `ptp` | `precision-time-protocol` | Precision Time Protocol (IEEE 1588) — book-cluster anchor |
+| `ieee-1588` | `1588` | IEEE 1588 standard — pairs with `ptp` |
 
 ### AI / LLM
 
@@ -118,6 +122,7 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `book` | — | Books and reading |
 | `personal` | `diary` | Personal notes |
 | `photography` | — | Photography |
+| `productivity` | — | Personal productivity, workflows, GTD, time management |
 
 ---
 

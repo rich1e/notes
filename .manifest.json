@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-03T08:50:59Z",
+  "last_updated": "2026-07-09T06:45:13Z",
   "projects": {
     "jrfed-zaxd-mediation-tool": {
       "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
@@ -447,11 +447,175 @@
         "skills/ptp-troubleshooting.md"
       ],
       "pages_updated": []
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/a better Cmd+Tab window switcher for macOS.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 4311,
+      "modified_at": "2026-07-07T13:41:28Z",
+      "content_hash": "084d089a59df47140bed770887dd900d97f7301eb1f11c7ed480989f632976e4",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/bettercmdtab.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.340946+00:00",
+      "pages_produced": [
+        "entities/bettercmdtab.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/AltTab Pro.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 3429,
+      "modified_at": "2026-07-07T13:41:29Z",
+      "content_hash": "429bbd89de1ee6dce14720f90f5c508358990ecb2de4b897b2c7423d503aadb7",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/alttab.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.406283+00:00",
+      "pages_produced": [
+        "entities/alttab.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Markdown's Big Brother Say Hello to AsciiDoc.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 9901,
+      "modified_at": "2026-07-07T16:38:46Z",
+      "content_hash": "2ff2347a3d55749069cb98a2200d52a3290aa53ea5b764c67a2bb9050211de6d",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/asciidoc-markup.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.471628+00:00",
+      "pages_produced": [
+        "concepts/asciidoc-markup.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Radically simpler & faster window switcher for Mac.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 2805,
+      "modified_at": "2026-07-07T13:41:29Z",
+      "content_hash": "568837fb03decc26ab32da8a2ad562a2b7f3cbd56cfd5e8dc6d8d34f2bf84db1",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/contexts.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.534835+00:00",
+      "pages_produced": [
+        "entities/contexts.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Uneasy about easing functions.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 12851,
+      "modified_at": "2026-07-07T16:42:25Z",
+      "content_hash": "295dca68d8b3f50fcce7854fa78692a81d1384d85f61affe97b35e398f06cd28",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "concepts/animation-easing-functions.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.597712+00:00",
+      "pages_produced": [
+        "concepts/animation-easing-functions.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Witch.md": {
+      "ingested_at": "2026-07-07T13:50:00Z",
+      "size_bytes": 3315,
+      "modified_at": "2026-07-07T13:41:29Z",
+      "content_hash": "cd7629d1cc383999a5570faae6133c9ee4108603730297ac14368b5b0bbc58af",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "entities/witch.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-07T08:48:44.663385+00:00",
+      "pages_produced": [
+        "entities/witch.md",
+        "concepts/macos-window-switcher.md",
+        "references/macos-window-switchers.md"
+      ]
+    },
+    "https://github.com/Totoro-jam/battle-tested-patterns": {
+      "ingested_at": "2026-07-08T07:19:50Z",
+      "size_bytes": 4117403,
+      "modified_at": "2026-07-08T07:14:00Z",
+      "content_hash": "sha256:490209e0d35602ae38da76ec8d15c39aded163fa43c2a73c6b8603b1ee9832ba",
+      "source_type": "github_repo",
+      "github_repo": "Totoro-jam/battle-tested-patterns",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "entities/battle-tested-patterns.md",
+        "references/pattern-catalog-battle-tested-patterns.md",
+        "concepts/programming-pattern-categories.md",
+        "skills/pattern-study-method.md"
+      ],
+      "pages_updated": []
+    },
+    "https://github.com/danielmiessler/Fabric": {
+      "ingested_at": "2026-07-09T06:45:13Z",
+      "size_bytes": 5055168,
+      "modified_at": "2026-07-09T06:45:13Z",
+      "content_hash": "gitingest",
+      "source_type": "github_repo",
+      "github_repo": "danielmiessler/Fabric",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "entities/fabric-ai.md",
+        "concepts/fabric-patterns.md",
+        "skills/fabric-usage-patterns.md",
+        "synthesis/Research: Fabric AI Framework.md"
+      ],
+      "pages_updated": []
+    },
+    "https://www.youtube.com/watch?v=kCjDulwChRQ": {
+      "ingested_at": "2026-07-10T14:30:00Z",
+      "size_bytes": 1712,
+      "modified_at": "2026-07-10T14:30:00Z",
+      "content_hash": "sha256:231141cd21cbb52b36cfa8278a015dd3c6a869f1689b33839592fa1de4cbed86",
+      "source_type": "document",
+      "project": null,
+      "raw_source": "_raw/youtube-20260710-143000.md",
+      "raw_archived": "_raw/_archived/youtube-20260710-143000.md",
+      "pages_created": [
+        "references/cs193p-spring-2025.md"
+      ],
+      "pages_updated": [
+        "concepts/swift-fundamentals.md",
+        "concepts/swiftui-framework.md",
+        "skills/xcode-ide-guide.md"
+      ]
     }
   },
   "stats": {
-    "total_sources_ingested": 28,
-    "total_pages": 70,
+    "total_sources_ingested": 36,
+    "total_pages": 84,
     "total_projects": 1,
     "last_full_rebuild": null
   }

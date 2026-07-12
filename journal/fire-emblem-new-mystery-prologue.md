@@ -8,7 +8,7 @@ summary: FE 新黑暗龙序章（起承转结）四部分关卡攻略，H 难度
 sources:
   - http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/x.htm
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-07
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -26,6 +26,8 @@ relationships:
 
 > 序章为复刻作品 H 难度特有，分四部分：起、承、转、结。
 
+
+**下一章 →** [[journal/fire-emblem-mystery-chapter1]]
 ## 第一部分：起
 
 **胜利条件**：マルス 占领黄色区域王座

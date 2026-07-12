@@ -1,12 +1,188 @@
 {
   "recentFiles": [
     {
+      "basename": "arc-memory-management",
+      "path": "concepts/arc-memory-management.md"
+    },
+    {
+      "basename": "swift-fundamentals",
+      "path": "concepts/swift-fundamentals.md"
+    },
+    {
+      "basename": "swiftui-framework",
+      "path": "concepts/swiftui-framework.md"
+    },
+    {
+      "basename": "cs193p-spring-2025",
+      "path": "references/cs193p-spring-2025.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
     {
+      "basename": "github-danielmiessler-Fabric",
+      "path": "_raw/github-danielmiessler-Fabric.md"
+    },
+    {
+      "basename": "fabric-ai",
+      "path": "entities/fabric-ai.md"
+    },
+    {
+      "basename": "fabric-patterns",
+      "path": "concepts/fabric-patterns.md"
+    },
+    {
+      "basename": "fabric-usage-patterns",
+      "path": "skills/fabric-usage-patterns.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
+    },
+    {
+      "basename": "zustand-chrome-storage",
+      "path": "projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage.md"
+    },
+    {
+      "basename": "jrfed-zaxd-mediation-tool",
+      "path": "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md"
+    },
+    {
+      "basename": "zustand-core-architecture × zustand",
+      "path": "synthesis/zustand-core-architecture × zustand.md"
+    },
+    {
+      "basename": "pattern-study-method",
+      "path": "skills/pattern-study-method.md"
+    },
+    {
+      "basename": "programming-pattern-categories",
+      "path": "concepts/programming-pattern-categories.md"
+    },
+    {
+      "basename": "pattern-catalog-battle-tested-patterns",
+      "path": "references/pattern-catalog-battle-tested-patterns.md"
+    },
+    {
+      "basename": "ios-design-patterns",
+      "path": "references/ios-design-patterns.md"
+    },
+    {
+      "basename": "battle-tested-patterns",
+      "path": "entities/battle-tested-patterns.md"
+    },
+    {
+      "basename": "From the circle to epicycles",
+      "path": "Clippings/From the circle to epicycles.md"
+    },
+    {
+      "basename": "tmux",
+      "path": "skills/tmux.md"
+    },
+    {
+      "basename": "bettercmdtab",
+      "path": "entities/bettercmdtab.md"
+    },
+    {
+      "basename": "a better Cmd+Tab window switcher for macOS",
+      "path": "Clippings/a better Cmd+Tab window switcher for macOS.md"
+    },
+    {
+      "basename": "macos-window-switcher",
+      "path": "concepts/macos-window-switcher.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
+      "basename": "animation-easing-functions",
+      "path": "concepts/animation-easing-functions.md"
+    },
+    {
+      "basename": "alttab",
+      "path": "entities/alttab.md"
+    },
+    {
+      "basename": "asciidoc-markup",
+      "path": "concepts/asciidoc-markup.md"
+    },
+    {
+      "basename": "Uneasy about easing functions",
+      "path": "Clippings/Uneasy about easing functions.md"
+    },
+    {
+      "basename": "Markdown's Big Brother Say Hello to AsciiDoc",
+      "path": "Clippings/Markdown's Big Brother Say Hello to AsciiDoc.md"
+    },
+    {
+      "basename": "ManicEMU iOS 3DS 模拟器教程",
+      "path": "Clippings/ManicEMU iOS 3DS 模拟器教程.md"
+    },
+    {
+      "basename": "IMG-20260702164712739",
+      "path": "assets/Clippings/ManicEMU iOS 3DS 模拟器教程/IMG-20260702164712739.png"
+    },
+    {
+      "basename": "IMG-20260702164712754",
+      "path": "assets/Clippings/ManicEMU iOS 3DS 模拟器教程/IMG-20260702164712754.png"
+    },
+    {
+      "basename": "IMG-20260702164745362",
+      "path": "assets/Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲/IMG-20260702164745362.jpg"
+    },
+    {
+      "basename": "Mechanical Watch – Bartosz Ciechanowski",
+      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
+    },
+    {
+      "basename": "log",
+      "path": "log.md"
+    },
+    {
+      "basename": "Witch",
+      "path": "Clippings/Witch.md"
+    },
+    {
+      "basename": "Radically simpler & faster window switcher for Mac",
+      "path": "Clippings/Radically simpler & faster window switcher for Mac.md"
+    },
+    {
+      "basename": "AltTab Pro",
+      "path": "Clippings/AltTab Pro.md"
+    },
+    {
+      "basename": "shell-scripts",
+      "path": "buckets/work-records/shell-scripts.md"
+    },
+    {
+      "basename": "Daily Record",
+      "path": "buckets/workspce/Daily Record.md"
+    },
+    {
+      "basename": "mac-tips",
+      "path": "buckets/work-records/mac-tips.md"
+    },
+    {
+      "basename": "HomePage",
+      "path": "Dashboard/HomePage.md"
+    },
+    {
+      "basename": "Vault Health Check",
+      "path": "Dashboard/Vault Health Check.md"
+    },
+    {
+      "basename": "Tag Links Generator",
+      "path": "Dashboard/Tag Links Generator.md"
+    },
+    {
+      "basename": "Auto Link Suggestions",
+      "path": "Dashboard/Auto Link Suggestions.md"
+    },
+    {
+      "basename": "Batch Link Report",
+      "path": "Dashboard/Batch Link Report.md"
     },
     {
       "basename": "zustand-typescript",
@@ -23,178 +199,6 @@
     {
       "basename": "NodeJS 日志系统设计",
       "path": "Chronicle/2024/NodeJS 日志系统设计.md"
-    },
-    {
-      "basename": "Message Center - WEB",
-      "path": "Chronicle/2024/Message Center - WEB.md"
-    },
-    {
-      "basename": "Message Center - App",
-      "path": "Chronicle/2024/Message Center - App.md"
-    },
-    {
-      "basename": "IPATool 使用",
-      "path": "Chronicle/2024/IPATool 使用.md"
-    },
-    {
-      "basename": "砸壳",
-      "path": "Chronicle/2024/砸壳.md"
-    },
-    {
-      "basename": "游戏模拟器",
-      "path": "Chronicle/2024/游戏模拟器.md"
-    },
-    {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
-    },
-    {
-      "basename": "2024 手机模拟器游戏火热🔥",
-      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
-    },
-    {
-      "basename": "Uniapp develop",
-      "path": "Chronicle/2025/Uniapp develop.md"
-    },
-    {
-      "basename": "uniapp",
-      "path": "Chronicle/2025/uniapp.md"
-    },
-    {
-      "basename": "ideviceinstaller 调试 IOS 应用软件",
-      "path": "Chronicle/2025/ideviceinstaller 调试 IOS 应用软件.md"
-    },
-    {
-      "basename": "如何抓取socket流量包？",
-      "path": "Chronicle/2025/如何抓取socket流量包？.md"
-    },
-    {
-      "basename": "Pnpm + git-worktree",
-      "path": "Chronicle/2026/Pnpm + git-worktree.md"
-    },
-    {
-      "basename": "NeoDS-模拟器使用指南",
-      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
-    },
-    {
-      "basename": "macOS-U盘清理与Spotlight保护目录问题",
-      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
-    },
-    {
-      "basename": "Chezmoi 简明教程",
-      "path": "Chronicle/2026/Chezmoi 简明教程.md"
-    },
-    {
-      "basename": "brew script",
-      "path": "Chronicle/2026/brew script.md"
-    },
-    {
-      "basename": "自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬",
-      "path": "Clippings/自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬.md"
-    },
-    {
-      "basename": "MeloNX iOS Switch 模拟器教程",
-      "path": "Clippings/MeloNX iOS Switch 模拟器教程.md"
-    },
-    {
-      "basename": "Mechanical Watch – Bartosz Ciechanowski",
-      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
-    },
-    {
-      "basename": "ManicEMU iOS 3DS 模拟器教程",
-      "path": "Clippings/ManicEMU iOS 3DS 模拟器教程.md"
-    },
-    {
-      "basename": "iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲",
-      "path": "Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲.md"
-    },
-    {
-      "basename": "Feather 签名工具",
-      "path": "Clippings/Feather 签名工具.md"
-    },
-    {
-      "basename": "feather-ios-sideload",
-      "path": "entities/feather-ios-sideload.md"
-    },
-    {
-      "basename": "nintendo-wansui",
-      "path": "entities/nintendo-wansui.md"
-    },
-    {
-      "basename": "岛国游",
-      "path": "buckets/travel/岛国游.md"
-    },
-    {
-      "basename": "log",
-      "path": "log.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "Dashboard/HomePage.md"
-    },
-    {
-      "basename": "Tag Links Generator",
-      "path": "Dashboard/Tag Links Generator.md"
-    },
-    {
-      "basename": "Batch Link Report",
-      "path": "Dashboard/Batch Link Report.md"
-    },
-    {
-      "basename": "Auto Link Suggestions",
-      "path": "Dashboard/Auto Link Suggestions.md"
-    },
-    {
-      "basename": "query",
-      "path": "buckets/daily/query.md"
-    },
-    {
-      "basename": "delete",
-      "path": "buckets/daily/delete.md"
-    },
-    {
-      "basename": "2021-react 经验总结",
-      "path": "Chronicle/2021/2021-react 经验总结.md"
-    },
-    {
-      "basename": "2021-vite",
-      "path": "Chronicle/2021/2021-vite.md"
-    },
-    {
-      "basename": "IMG-20260701181457268",
-      "path": "assets/buckets/travel/岛国游/IMG-20260701181457268.jpeg"
-    },
-    {
-      "basename": "git-remote-host-identification-has-changed",
-      "path": "buckets/work-records/git-remote-host-identification-has-changed.md"
-    },
-    {
-      "basename": "DeepSeeK 突然发布 DSpark，让 AI 的回答不再「挤牙膏」",
-      "path": "Clippings/DeepSeeK 突然发布 DSpark，让 AI 的回答不再「挤牙膏」.md"
-    },
-    {
-      "basename": "如何使用 5000 块组装一台顶配 Mac Studio",
-      "path": "Clippings/如何使用 5000 块组装一台顶配 Mac Studio.md"
-    },
-    {
-      "basename": "jrfed-zaxd-mediation-tool",
-      "path": "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md"
-    },
-    {
-      "basename": "chrome-extension-architecture",
-      "path": "projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture.md"
-    },
-    {
-      "basename": "ique-dsi-shop",
-      "path": "references/ique-dsi-shop.md"
-    },
-    {
-      "basename": "xk-ai-talk-desk-ui",
-      "path": "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md"
-    },
-    {
-      "basename": "dayfold",
-      "path": "projects/dayfold/dayfold.md"
     }
   ],
   "omittedPaths": [],

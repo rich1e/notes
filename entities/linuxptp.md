@@ -21,6 +21,8 @@ relationships:
     type: implements
   - target: "[[skills/ptp-implementation]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: synthesized_in
 ---
 
 # LinuxPTP

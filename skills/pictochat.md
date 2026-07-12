@@ -1,7 +1,12 @@
 ---
 title: PictoChat（涂鸦聊天）操作指南
 category: skills
-tags: [nintendo, ique, nds, networking, dsi, webrtc]
+tags:
+  - nintendo
+  - ique
+  - nds
+  - networking
+  - dsi
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

@@ -1,4 +1,5 @@
 ---
+
 title: Trek 实时同步机制
 category: concepts
 tags:
@@ -23,6 +24,8 @@ relationships:
   - target: "[[projects/trek/concepts/architecture-overview]]"
     type: related_to
   - target: "[[projects/trek/trek]]"
+    type: related_to
+  - target: "[[entities/zustand]]"
     type: related_to
 ---
 
@@ -105,7 +108,7 @@ broadcastToUser(userId, { type: 'trip:invited', ... })
 
 ### remoteEventHandler — 事件派发器
 
-`client/src/store/slices/remoteEventHandler.ts` 是客户端实时同步的核心。它监听所有 WebSocket 事件类型，并将变更分派到对应的 Zustand slice：
+`client/src/store/slices/remoteEventHandler.ts` 是客户端实时同步的核心。它监听所有 WebSocket 事件类型，并将变更分派到对应的 [[entities/zustand|Zustand]] slice：
 
 ```
 WebSocket 事件

@@ -26,6 +26,8 @@ relationships:
     type: related_to
   - target: "[[concepts/zustand-react-integration]]"
     type: uses
+  - target: "[[synthesis/zustand-core-architecture × zustand]]"
+    type: synthesized_in
 ---
 
 # Zustand 核心架构 — createStore 与 StoreApi

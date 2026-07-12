@@ -1,4 +1,5 @@
 ---
+
 title: >-
   坐席状态机设计
 category: concepts
@@ -20,7 +21,8 @@ relationships:
     type: related_to
   - target: "[[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]]"
     type: related_to
-
+  - target: "[[entities/zustand]]"
+    type: related_to
 ---
 
 # 坐席状态机设计
@@ -70,7 +72,7 @@ IDLE → DIALING → RINGING_OUT → CONNECTED → HANGUP → AFTER_CALL
 
 | 数据 | 存储 | 原因 |
 |------|------|------|
-| token + user | localStorage（Zustand persist） | 跨 tab、跨刷新 |
+| token + user | localStorage（[[entities/zustand|Zustand]] persist） | 跨 tab、跨刷新 |
 | agentStateCode | sessionStorage | 断线重连恢复，tab 关闭清除 |
 | businessCode | sessionStorage | 同上 |
 
