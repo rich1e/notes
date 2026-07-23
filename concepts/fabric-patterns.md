@@ -9,7 +9,8 @@ created: 2026-07-09T08:00:00Z
 updated: 2026-07-09T08:00:00Z
 summary: >-
   Fabric Patterns 是结构化、可复用的 AI Prompt 单元，用 Markdown 编写，组织在独立目录中，覆盖 290+ 真实任务场景。
-lifecycle: active
+lifecycle: draft
+base_confidence: 0.75
 lifecycle_changed: 2026-07-09
 ---
 
@@ -134,3 +135,4 @@ fabric --pattern my-pattern -v '#role:expert' -v '#points:30'
 - [[entities/fabric-ai]] — Fabric 工具整体介绍
 - [[skills/fabric-usage-patterns]] — 高频用法与工作流集成
 - [[concepts/prompt-caching]] — LLM 提示缓存机制（相关背景）
+- [[Research: Fabric AI Framework]] — Research: Fabric AI Framework

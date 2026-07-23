@@ -1,7 +1,7 @@
 ---
 title: 自定义左滑删除容器
 category: project
-tags: [ios, swiftui, animation, design-system, architecture]
+tags: [ios, swiftui, animation, ux, architecture]
 sources: [projects/dayfold]
 summary: >-
   SwipeToDeleteRow 用 DragGesture + 速度阈值判断，半开显示固定 72pt 红色按钮，

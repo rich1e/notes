@@ -41,12 +41,12 @@ relationships:
 | 软件 | 页码 |
 |---|---|
 | 主机设置 | p.42 |
-| [[skills/ique-dsi-camera\|iQue DSi趣照]] | p.07 |
-| [[skills/ique-dsi-sound\|iQue DSi趣音]] | p.25 |
-| [[references/ique-dsi-shop\|iQue DSi商店]] | p.35 |
+| [[skills/ique-dsi-camera|iQue DSi趣照]] | p.07 |
+| [[skills/ique-dsi-sound|iQue DSi趣音]] | p.25 |
+| [[references/ique-dsi-shop|iQue DSi商店]] | p.35 |
 | iQue DS下载游戏 | p.38 |
-| [[skills/pictochat\|PictoChat（涂鸦聊天）]] | p.39 |
-| [[entities/nintendo-wansui\|任天狗狗]] | p.06 |
+| [[skills/pictochat|PictoChat（涂鸦聊天）]] | p.39 |
+| [[entities/nintendo-wansui|任天狗狗]] | p.06 |
 
 ## 卡式软件图标
 

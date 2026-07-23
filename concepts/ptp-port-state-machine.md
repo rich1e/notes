@@ -1,7 +1,7 @@
 ---
 title: PTP 端口状态机
 category: concepts
-tags: [ptp, ieee-1588, state-machine, protocol-design]
+tags: [ptp, ieee-1588, state-management, protocol-design]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
 updated: 2026-07-03T09:00:00Z

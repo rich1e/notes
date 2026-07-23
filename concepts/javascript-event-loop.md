@@ -90,3 +90,4 @@ Event Loop 是实现 JavaScript 异步的核心机制：
 
 - [[concepts/browser-process-model]] — 浏览器多进程架构，JS 线程所在的 Renderer 进程
 - [[concepts/frontend-storage-cache]] — 浏览器存储与缓存，与异步请求密切相关
+- [[mobile-timer-accuracy]] — mobile-timer-accuracy

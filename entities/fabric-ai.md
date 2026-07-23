@@ -8,7 +8,8 @@ created: 2026-07-09T08:00:00Z
 updated: 2026-07-09T08:00:00Z
 summary: >-
   danielmiessler 出品的开源 AI 增强框架，通过可复用的 Prompt 模块（Patterns）解决 AI 集成难题，Go 编写，支持 20+ AI 提供商。
-lifecycle: active
+lifecycle: draft
+base_confidence: 0.8
 lifecycle_changed: 2026-07-09
 ---
 
@@ -95,5 +96,6 @@ done
 ## 相关概念
 
 - [[concepts/fabric-patterns]] — Pattern 设计理念与分类
-- [[concepts/prompt-engineering-patterns]] — Fabric Patterns 所体现的提示工程思想
+- 提示工程思想 <!-- broken link: concepts/prompt-engineering-patterns does not exist -->
 - [[skills/fabric-usage-patterns]] — 高频使用场景与最佳实践
+- [[Research: Fabric AI Framework]] — Research: Fabric AI Framework

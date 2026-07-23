@@ -47,7 +47,7 @@ NTP 可以实现毫秒级同步，不够用于 5G 基站（需要 ±1.5μs）、
 |------|------|---------|
 | PTPv1 | IEEE 1588-2002 | 首个版本 |
 | PTPv2 | IEEE 1588-2008 | 重大重写，增加透明时钟、单播等 |
-| PTPv2.1 | IEEE 1588-2019 | 增加安全机制、高精度选项，通过 [[concepts/ptp-tlv-extension\|TLV]] 扩展 |
+| PTPv2.1 | IEEE 1588-2019 | 增加安全机制、高精度选项，通过 [[concepts/ptp-tlv-extension|TLV]] 扩展 |
 
 ## 基本原理：四时间戳法
 
@@ -108,7 +108,7 @@ PTP 用四个时间戳消除**单程网络延迟**的影响：
 | 电力系统 | ±1μs | IEC 61850 / C37.238 |
 | 工业自动化 | ±1μs | IEC 61158（PROFINET） |
 | 金融交易 | 100ns 时间戳 | FINRA CAT |
-| 科学实验 | 亚纳秒 | [[entities/white-rabbit\|White Rabbit]] |
+| 科学实验 | 亚纳秒 | [[entities/white-rabbit|White Rabbit]] |
 
 ## 与 NTP 的对比
 

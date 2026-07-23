@@ -8,7 +8,8 @@ created: 2026-07-09T08:00:00Z
 updated: 2026-07-09T08:00:00Z
 summary: >-
   Fabric CLI 的实际使用技巧：YouTube 分析、内容提炼、Obsidian 集成、REST API 服务模式、Shell 别名配置。
-lifecycle: active
+lifecycle: draft
+base_confidence: 0.75
 lifecycle_changed: 2026-07-09
 ---
 
@@ -173,3 +174,4 @@ fabric --addextension /path/to/extension.yaml
 
 - [[entities/fabric-ai]] — Fabric 工具整体介绍
 - [[concepts/fabric-patterns]] — Pattern 设计理念与分类目录
+- [[Research: Fabric AI Framework]] — Research: Fabric AI Framework

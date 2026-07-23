@@ -40,23 +40,23 @@ relationships:
 
 | 章节 | 主题 |
 |---|---|
-| Ch1 | [[skills/xcode-ide-guide\|Xcode IDE 入门]] |
-| Ch2 | [[concepts/swift-fundamentals\|Swift 语言基础]] |
+| Ch1 | [[skills/xcode-ide-guide|Xcode IDE 入门]] |
+| Ch2 | [[concepts/swift-fundamentals|Swift 语言基础]] |
 | Ch3 | 类、结构体、枚举 |
 | Ch4 | 协议、扩展、错误处理 |
-| Ch5 | [[concepts/arc-memory-management\|ARC 与内存安全]] |
+| Ch5 | [[concepts/arc-memory-management|ARC 与内存安全]] |
 | Ch6 | iOS 17 架构实现 |
 | Ch7 | UIKit 用户界面设计 |
-| Ch8 | [[concepts/swiftui-framework\|SwiftUI 用户界面设计]] |
-| Ch9 | [[concepts/swift-concurrency\|Swift 并发]] |
-| Ch10 | [[skills/ios-data-persistence\|SQLite 与 Core Data]] |
+| Ch8 | [[concepts/swiftui-framework|SwiftUI 用户界面设计]] |
+| Ch9 | [[concepts/swift-concurrency|Swift 并发]] |
+| Ch10 | [[skills/ios-data-persistence|SQLite 与 Core Data]] |
 | Ch11 | 文件管理（iCloud 同步） |
 | Ch12 | Core Location 与 MapKit |
 | Ch13 | 相机与照片库 |
-| Ch14 | [[skills/ios-multithreading\|iOS 多线程]] |
-| Ch15 | [[skills/ios-networking\|iOS 网络编程]] |
-| Ch16 | [[references/ios-design-patterns\|架构模式与反模式]] |
-| Ch17 | [[skills/ios-app-store-publishing\|发布到 App Store]] |
+| Ch14 | [[skills/ios-multithreading|iOS 多线程]] |
+| Ch15 | [[skills/ios-networking|iOS 网络编程]] |
+| Ch16 | [[references/ios-design-patterns|架构模式与反模式]] |
+| Ch17 | [[skills/ios-app-store-publishing|发布到 App Store]] |
 | Ch18 | Xcode Cloud CI/CD |
 | Ch19 | 新框架（RealityKit/VisionKit/ActivityKit） |
 

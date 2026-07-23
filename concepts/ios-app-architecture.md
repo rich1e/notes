@@ -153,3 +153,8 @@ func reducer(state: AppState, action: AppAction) -> AppState {
 - [[projects/dayfold/concepts/architecture-overview]] — dayfold 实际 MVVM 架构
 - [[references/ios-design-patterns]] — 23 种设计模式分类
 - [[entities/ios17-app-development-book]] — 来源书籍
+
+## 相关
+
+- [[ios-data-persistence]] — ios-data-persistence
+
