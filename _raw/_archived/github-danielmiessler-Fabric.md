@@ -42006,7 +42006,7 @@ Index of Gemini TTS voice samples demonstrating different AI voice characteristi
 
 New to Fabric? Start with these essential docs:
 
-1. **[../README.md](../README.md)** - Main project README with installation and basic usage
+1. **[../README.md](README.md)** - Main project README with installation and basic usage
 2. **[Shell-Completions.md](./Shell-Completions.md)** - Set up tab completion for better CLI experience
 3. **[YouTube-Processing.md](./YouTube-Processing.md)** - Learn one of Fabric's most popular features
 4. **[Desktop-Notifications.md](./Desktop-Notifications.md)** - Get notified when long tasks complete
@@ -44480,7 +44480,7 @@ fabric --help
 
 ---
 
-For more information about Fabric, visit the [main documentation](../README.md).
+For more information about Fabric, visit the [main documentation](README.md).
 
 
 
@@ -45142,7 +45142,7 @@ ln -sf ~/.config/fabric/.env.dev ~/.config/fabric/.env
 
 ### Fabric Documentation
 
-- [Fabric README](../README.md)
+- [Fabric README](README.md)
 - [Contexts and Sessions Tutorial](./contexts-and-sessions-tutorial.md)
 - [Using Speech-to-Text](./Using-Speech-To-Text.md)
 
@@ -46246,7 +46246,7 @@ Copilot indexes data from Microsoft 365 services. There may be a delay between w
 
 ### Fabric Documentation
 
-- [Fabric README](../README.md)
+- [Fabric README](README.md)
 - [Contexts and Sessions Tutorial](./contexts-and-sessions-tutorial.md)
 - [Other Vendor Setup Guides](./GitHub-Models-Setup.md)
 
@@ -47394,7 +47394,7 @@ Need help with Fabric? Here are the best ways to get assistance:
 
 Before reaching out, check these resources:
 
-- **[README.md](../README.md)** - Installation, usage, and examples
+- **[README.md](README.md)** - Installation, usage, and examples
 - **[docs/](./README.md)** - Detailed documentation
 - **[Patterns](../data/patterns/)** - Browse available AI patterns
 
@@ -48895,7 +48895,7 @@ fabric -g es -y "https://www.youtube.com/watch?v=VIDEO_ID" \
   --pattern translate
 ```
 
-For more patterns and advanced usage, see the main [Fabric documentation](../README.md).
+For more patterns and advanced usage, see the main [Fabric documentation](README.md).
 
 
 
