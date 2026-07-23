@@ -2,6 +2,9 @@
 title: 暖色主题色与字体
 category: project
 tags: [ios, swiftui, ux]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   Color.warmPaper/Cream/Light/Brown/Accent/Gray/Dark 与 Font.warmTitle/Headline/Body/Caption/Footnote
@@ -74,3 +77,7 @@ extension View {
 - 笔记本详情 / 编辑器：暗黑（`Color(hex: "2A2A30")` 背景 + 白色文字）。
 - 这种"主页面暖色 + 创作面暗黑"的设计对应"日常浏览 vs. 沉浸写作"的两种心境，
   是项目视觉语言的一部分。改主题时务必分别测试。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

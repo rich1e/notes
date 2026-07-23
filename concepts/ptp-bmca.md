@@ -23,6 +23,10 @@ relationships:
     type: related_to
   - target: "[[concepts/ptp-message-types]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: related_to
+  - target: "[[references/ptp-book-overview]]"
+    type: derived_from
 ---
 
 # PTP BMCA — 最佳主时钟选举算法
@@ -113,3 +117,8 @@ BMCA（Best Master Clock Algorithm）是 [[concepts/ptp-ieee1588|PTP]] 协议中
 ## LinuxPTP 实现
 
 [[entities/linuxptp]] 中 BMCA 实现在 `bmc.c` 文件，核心函数约 150 行，实现了完整的六属性比较逻辑。
+
+## 相关
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+- [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现

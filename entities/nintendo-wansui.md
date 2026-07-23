@@ -28,6 +28,8 @@ relationships:
   - target: "[[skills/ique-dsi-parental-control]]"
     type: related_to
 
+  - target: "[[references/ique-dsi-system-settings]]"
+    type: related_to
 ---
 
 # 任天狗狗（Nintendo Wansui）
@@ -69,3 +71,7 @@ relationships:
 - [[skills/ique-dsi-sound]] — iQue DSi趣音 — 录音与音乐播放操作指南
 - [[skills/pictochat]] — PictoChat（涂鸦聊天）操作指南
 - [[skills/ique-ds-download-play]] — iQue DS 下载游戏操作指南
+
+## 相关
+
+- [[references/ique-dsi-system-settings]] — iQue DSi 主机设置四页全部选项的快速参考，含软件管理、亮度、用户信息、闹钟、亲子管理、触摸屏校准、键盘操作等。

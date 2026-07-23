@@ -23,6 +23,10 @@ relationships:
     type: related_to
   - target: "[[entities/white-rabbit]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: related_to
+  - target: "[[references/ptp-book-overview]]"
+    type: derived_from
 ---
 
 # PTP TLV 扩展机制
@@ -107,3 +111,8 @@ TLV 附加在 [[concepts/ptp-message-types|PTP 报文]]的基础字段之后，�
 ## IEEE 1588-2019 的演进模式
 
 2019 版本相比 2008 版本，核心框架（BMCA、状态机、四时间戳）几乎未变，新增功能几乎全部通过新 TLV 类型引入。这印证了 TLV 机制作为"渐进增强"策略的有效性。
+
+## 相关
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+- [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现

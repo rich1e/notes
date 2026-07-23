@@ -21,6 +21,10 @@ relationships:
     type: related_to
   - target: "[[concepts/ptp-tlv-extension]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: related_to
+  - target: "[[references/ptp-book-overview]]"
+    type: derived_from
 ---
 
 # PTP 报文类型
@@ -82,3 +86,8 @@ PTP 支持多种传输层：
 | IEEE 802.3（L2）| 直接以太帧，目标 MAC 01:1B:19:00:00:00，延迟最低 |
 
 [[entities/linuxptp]] 默认使用 L2 多播（精度最高），也支持 L3 UDP。
+
+## 相关
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+- [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现

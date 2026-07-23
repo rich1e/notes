@@ -23,6 +23,10 @@ relationships:
     type: uses
   - target: "[[concepts/ptp-tlv-extension]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: related_to
+  - target: "[[references/ptp-book-overview]]"
+    type: derived_from
 ---
 
 # PTP 延迟测量 — E2E 与 P2P 四时间戳法
@@ -142,3 +146,8 @@ correctionField（最终）=
 硬件时间戳在网卡物理层或 MAC 层打戳，精度达纳秒级。
 
 Linux 通过 `SO_TIMESTAMPING` socket 选项启用硬件时间戳，详见 [[entities/linuxptp]]。
+
+## 相关
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+- [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现

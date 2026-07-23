@@ -22,6 +22,12 @@ relationships:
   - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
     type: synthesized_in
 
+  - target: "[[references/cs193p-spring-2025]]"
+    type: related_to
+  - target: "[[references/ios-design-patterns]]"
+    type: related_to
+  - target: "[[projects/dayfold/dayfold]]"
+    type: related_to
 ---
 
 # ARC 与内存安全
@@ -148,3 +154,9 @@ SwiftUI 推荐**值类型优先**：View、Model 用 struct；ViewModel/Service 
 - [[entities/ios17-app-development-book]] — 来源书籍
 - [[skills/ios-multithreading]] — iOS 多线程
 - [[skills/ios-networking]] — iOS 网络编程
+
+## 相关
+
+- [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 App 开发 + 5次作业 + 3周自选项目，Sw
+- [[references/ios-design-patterns]] — iOS/Swift 设计模式速查：创建型（5种）、结构型（7种）、行为型（11种）GoF 23种模式 + iOS 常见反模式清单。
+- [[projects/dayfold/dayfold]] — >-

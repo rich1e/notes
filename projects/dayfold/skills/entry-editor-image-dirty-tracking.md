@@ -2,6 +2,9 @@
 title: EntryEditor 图片脏标记
 category: project
 tags: [ios, swiftui, core-data, media, architecture]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   用 @Published var images 的 didSet 维护 imagesChanged 布尔，保存时仅在
@@ -90,3 +93,7 @@ private var imagesChanged = false
   不阻塞保存主流程；极端情况下面板会留下孤儿 jpg，由后续清理任务回收（目前未实现）。
 - `imagesChanged = false` **在 await 之后**才清，保证 await 期间用户改图也会被下一次
   save 感知。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

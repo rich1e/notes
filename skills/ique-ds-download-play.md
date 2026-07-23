@@ -18,6 +18,10 @@ relationships:
   - target: "[[entities/nintendo-wansui]]"
     type: related_to
 
+  - target: "[[references/ique-dsi-shop]]"
+    type: related_to
+  - target: "[[references/ique-dsi-system-settings]]"
+    type: related_to
 ---
 
 # iQue DS 下载游戏操作指南
@@ -48,3 +52,8 @@ relationships:
 - [[skills/ique-dsi-parental-control]] — 亲子管理设置
 
 - [[entities/nintendo-wansui]] — 任天狗狗（Nintendo Wansui）
+
+## 相关
+
+- [[references/ique-dsi-shop]] — iQue DSi 商店的使用条件、iQue 点数购买与充值方法及点卡使用限制。
+- [[references/ique-dsi-system-settings]] — iQue DSi 主机设置四页全部选项的快速参考，含软件管理、亮度、用户信息、闹钟、亲子管理、触摸屏校准、键盘操作等。

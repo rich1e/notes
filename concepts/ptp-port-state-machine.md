@@ -21,6 +21,10 @@ relationships:
     type: related_to
   - target: "[[entities/linuxptp]]"
     type: related_to
+  - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
+    type: related_to
+  - target: "[[references/ptp-book-overview]]"
+    type: derived_from
 ---
 
 # PTP 端口状态机
@@ -80,3 +84,8 @@ FAULTY → INITIALIZING（故障恢复后重新初始化）
 pmc -u -b 0 'GET PORT_DATA_SET'
 # 输出包含 portState 字段
 ```
+
+## 相关
+
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+- [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现

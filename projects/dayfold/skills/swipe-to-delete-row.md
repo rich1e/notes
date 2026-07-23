@@ -2,6 +2,9 @@
 title: 自定义左滑删除容器
 category: project
 tags: [ios, swiftui, animation, ux, architecture]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   SwipeToDeleteRow 用 DragGesture + 速度阈值判断，半开显示固定 72pt 红色按钮，
@@ -120,3 +123,7 @@ private struct SwipeToDeleteRow<Content: View>: View {
 - 不支持右滑展开（项目用不上）。
 - 同一行只支持一个删除动作；项目内 `TrashView` 用系统 `swipeActions` 实现"左滑恢复 +
   右滑删除"两个动作，不复用本容器。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

@@ -22,6 +22,8 @@ relationships:
   - target: "[[skills/ios-multithreading]]"
     type: related_to
 
+  - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
+    type: related_to
 ---
 
 # Swift 语言基础
@@ -220,3 +222,7 @@ struct Circle: Drawable {
 - [[references/cs193p-spring-2025]] — Stanford CS193P 课程参考（Paul Hegarty）
 - [[skills/ios-multithreading]] — iOS 多线程
 - [[skills/ios-networking]] — iOS 网络编程
+
+## 相关
+
+- [[synthesis/arc-memory-management × swift-concurrency]] — ARC 解决引用类型的生命周期问题（堆上何时释放），Actor 解决引用类型的并发访问问题（多线程何时安全读写）——两套机制作用在同一类型上但维度正交。

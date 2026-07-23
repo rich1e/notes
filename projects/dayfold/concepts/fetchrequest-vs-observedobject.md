@@ -2,6 +2,9 @@
 title: FetchRequest 与行内属性刷新
 category: project
 tags: [ios, swiftui, core-data, state-management]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   @FetchRequest 只感知对象集合增删；同一对象上的属性/关系变化需把 NSManagedObject
@@ -78,3 +81,7 @@ struct EntryRow: View {
   数据不一致 bug。
 - 缩略图加载用 `.task(id: thumbnailSourceID)`（绑定 filename 拼接串）而非一次性
   `.task`，保证 `MediaAsset` 集合变化（用户增删图片）时自动重载。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

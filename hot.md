@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-10T14:30:00Z
+updated: 2026-07-23T01:00:00Z
 ---
 
 # Hot Cache
@@ -9,9 +9,9 @@ updated: 2026-07-10T14:30:00Z
 
 ## Recent Activity
 
-- [2026-07-10 14:30] INGEST — Stanford CS193P Spring 2025 Lecture 1（YouTube，fabric summarize 输出）。更新 3 页 + 新建 1 页。核心新知识：①Swift 是函数式/POP 不是 OOP；②ViewBuilder = `@ViewBuilder` result builder 把多个 View 打包为 TupleView（"bag of Lego"，最多 10 个子 View）；③`some View` 不透明返回类型减少复杂泛型暴露；④尾随闭包让 SwiftUI 看起来像声明标记；⑤Preview Canvas 反馈 < 1 秒 vs 模拟器 3–30 秒。新建课程参考页 [[references/cs193p-spring-2025]]。
-- [2026-07-09 08:00] WIKI_RESEARCH — Fabric AI 框架研究（danielmiessler/Fabric）。产出 4 页：entity card（fabric-ai）、concept（fabric-patterns：290+ Pattern 分类 + extract_wisdom 详解 + 9 种提示策略）、skill（fabric-usage-patterns：YouTube 分析/Shell 别名/REST API/Obsidian 集成）、synthesis（Research: Fabric AI Framework）。核心洞察：Fabric 解决 AI **集成**问题而非能力问题，Pattern = Unix 管道哲学在 AI 领域的实践。
-- [2026-07-08 07:19] INGEST — gitingest dump of Totoro-jam/battle-tested-patterns (4.1MB, 46 patterns catalog). Promoted to 4 cross-category pages: entity card + full catalog with line-cited "Proven In" links + categorization concept + study-method skill. Avoided per-pattern pages (already exist at source URL).
+- [2026-07-23 01:00] CROSS_LINK — 42 链接新增，26 页修改，孤立页清零（0 残余）。主要集群：PTP 6 概念页 → synthesis + reference；macOS 窗口切换器 4 实体页 → synthesis；Dayfold 6 子页 → [[concepts/swiftui-framework]]；[[skills/hackintosh-mini-build]] 救援入 macOS cluster；ARC/Swift → references + synthesis。所有页现均有入链。
+- [2026-07-23 00:00] LINT_CONSOLIDATE — wiki-lint --consolidate：21 破损链接修复（20 反斜杠 artifact + 1 真实）；6 孤立页救援；4 Fabric 页 lifecycle:active→draft + base_confidence 补充；8 tag 别名规范化（NDS/state-machine/photography）。
+- [2026-07-10 14:30] INGEST — Stanford CS193P Spring 2025 Lecture 1（YouTube，fabric summarize 输出）。更新 3 页 + 新建 1 页。核心新知识：①Swift 函数式/POP 非 OOP；②ViewBuilder TupleView 机制；③`some View` 不透明类型；④尾随闭包；⑤Preview Canvas < 1 秒。新建 [[references/cs193p-spring-2025]]。
 - [2026-07-07 10:22] WIKI_SYNTHESIZE — created 5 cross-cutting synthesis pages. Co-occurrence matrix built from 108 pages; ~372 unresolved wikilinks filtered out (parser artifacts + generic `wikilink`/`wikilinks` terms). Top scored pairs filtered for cross-domain value.
 - [2026-07-07 14:50] TAG_NORMALIZE — 5 new taxonomy tags (ptp, ieee-1588, productivity, network-protocol, time-sync), unknown tags 55→50.
 - [2026-07-07 14:45] LIFECYCLE_FIX — 6 jrfed pages `active`→`draft` per user choice.

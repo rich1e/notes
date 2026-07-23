@@ -2,6 +2,9 @@
 title: iOS 数据持久化
 category: skills
 tags: [ios, core-data, swiftdata, persistence]
+relationships:
+  - target: "[[projects/dayfold/dayfold]]"
+    type: uses
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z
@@ -211,3 +214,7 @@ struct ContentView: View {
 - [[projects/dayfold/skills/entry-editor-image-dirty-tracking]] — MediaAsset 脏标记
 - [[concepts/swift-fundamentals]] — Swift 基础
 - [[entities/ios17-app-development-book]] — 来源书籍
+
+## 相关
+
+- [[projects/dayfold/dayfold]] — >-

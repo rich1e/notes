@@ -20,6 +20,8 @@ relationships:
     type: related_to
   - target: "[[references/macos-window-switchers]]"
     type: related_to
+  - target: "[[synthesis/macos-window-switcher × macos-window-switchers]]"
+    type: related_to
 ---
 
 # BetterCmdTab
@@ -61,3 +63,7 @@ brew install --cask bettercmdtab
 ```
 
 相关：[[concepts/macos-window-switcher]]、[[references/macos-window-switchers]]
+
+## 相关
+
+- [[synthesis/macos-window-switcher × macos-window-switchers]] — 概念页和参考表都存在，但真正的综合洞见是：4 个独立开发者在同一时间段、用不同设计取舍解决同一问题——这暗示 macOS 内置 Cmd+Tab 的局限是**结构

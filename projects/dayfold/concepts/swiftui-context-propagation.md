@@ -2,6 +2,9 @@
 title: SwiftUI 上下文注入与 FetchRequest 响应
 category: project
 tags: [ios, swiftui, core-data, debugging]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   sheet / fullScreenCover 不会自动继承父视图的 managedObjectContext，
@@ -72,3 +75,7 @@ context 的方式改为 `@Environment(\.managedObjectContext) private var contex
   独立 `@State` 日期，避免 SwiftUI 同帧捕获旧 `date` 值导致 `prefillDate` 失效。
 - `EntryDetailView` 早期有"双 sheet 冲突"问题，commit `280a4f7` 通过统一 `sheetMode`
   枚举解决（见 [[projects/dayfold/concepts/architecture-overview]]）。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

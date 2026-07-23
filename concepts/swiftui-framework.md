@@ -22,6 +22,10 @@ relationships:
   - target: "[[skills/ios-multithreading]]"
     type: related_to
 
+  - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
+    type: related_to
+  - target: "[[references/ios-design-patterns]]"
+    type: related_to
 ---
 
 # SwiftUI 框架
@@ -253,3 +257,8 @@ Xcode 15 支持 `#Preview` 宏简写：
 - [[skills/xcode-ide-guide]] — Preview Canvas 实时预览工作流
 - [[skills/ios-multithreading]] — iOS 多线程
 - [[skills/ios-networking]] — iOS 网络编程
+
+## 相关
+
+- [[synthesis/arc-memory-management × swift-concurrency]] — ARC 解决引用类型的生命周期问题（堆上何时释放），Actor 解决引用类型的并发访问问题（多线程何时安全读写）——两套机制作用在同一类型上但维度正交。
+- [[references/ios-design-patterns]] — iOS/Swift 设计模式速查：创建型（5种）、结构型（7种）、行为型（11种）GoF 23种模式 + iOS 常见反模式清单。

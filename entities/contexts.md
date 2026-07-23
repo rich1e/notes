@@ -20,6 +20,14 @@ relationships:
     type: related_to
   - target: "[[references/macos-window-switchers]]"
     type: related_to
+  - target: "[[synthesis/macos-window-switcher × macos-window-switchers]]"
+    type: related_to
+  - target: "[[entities/alttab]]"
+    type: related_to
+  - target: "[[entities/bettercmdtab]]"
+    type: related_to
+  - target: "[[entities/witch]]"
+    type: related_to
 ---
 
 # Contexts
@@ -59,3 +67,10 @@ macOS Ventura、Sonoma、Sequoia（v3.9）。
 付费软件，提供免费试用。
 
 相关：[[concepts/macos-window-switcher]]、[[references/macos-window-switchers]]
+
+## 相关
+
+- [[synthesis/macos-window-switcher × macos-window-switchers]] — 概念页和参考表都存在，但真正的综合洞见是：4 个独立开发者在同一时间段、用不同设计取舍解决同一问题——这暗示 macOS 内置 Cmd+Tab 的局限是**结构
+- [[entities/alttab]] — 开源 macOS 窗口切换器（lwouis 出品），免费版已覆盖核心需求，Pro 解锁多组快捷键与高级功能；兼容 macOS 10.13+，支持 21 种语言。
+- [[entities/bettercmdtab]] — rokartur 出品的免费开源 Cmd+Tab 替代品，永久免费、零遥测；三种布局（列表/网格/缩略图）+ 模糊搜索 + 标签下钻 + Space 过滤，ma
+- [[entities/witch]] — Many Tricks 出品的付费窗口切换器，可同时存在多个切换器（app/window/tab 三种粒度独立）；支持横向/纵向/菜单栏三种布局与搜索式切换；适

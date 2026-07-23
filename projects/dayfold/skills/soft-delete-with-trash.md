@@ -2,6 +2,9 @@
 title: 软删除 + 回收箱
 category: project
 tags: [ios, swiftui, core-data, persistence, ux]
+relationships:
+  - target: "[[concepts/swiftui-framework]]"
+    type: uses
 sources: [projects/dayfold]
 summary: >-
   Entry 用 deletedAt 时间戳实现软删除，@FetchRequest 用 NSPredicate 隔离
@@ -89,3 +92,7 @@ try? viewContext.save()
 软删除操作是普通的 `managedObject.setValue(_:forKey:)`，CloudKit 会把这条 mutation
 同步到其他设备。其他设备上对应的 `Entry` 也会被 FetchRequest predicate 过滤掉——回收箱
 **不会跨设备同步**。这是有意的设计：每个设备的"回收箱"代表本地用户操作历史。
+
+## 相关
+
+- [[concepts/swiftui-framework]] — SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符

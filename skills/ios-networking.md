@@ -20,6 +20,8 @@ relationships:
   - target: "[[concepts/arc-memory-management]]"
     type: related_to
 
+  - target: "[[references/ios-design-patterns]]"
+    type: related_to
 ---
 
 # iOS 网络编程
@@ -195,3 +197,7 @@ request.setValue("application/json", forHTTPHeaderField: "Accept")
 - [[entities/ios17-app-development-book]] — 来源书籍
 - [[concepts/arc-memory-management]] — ARC 与内存安全
 - [[concepts/swiftui-framework]] — SwiftUI 框架
+
+## 相关
+
+- [[references/ios-design-patterns]] — iOS/Swift 设计模式速查：创建型（5种）、结构型（7种）、行为型（11种）GoF 23种模式 + iOS 常见反模式清单。
