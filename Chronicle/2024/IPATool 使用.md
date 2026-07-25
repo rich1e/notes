@@ -75,7 +75,7 @@ ipatool auth login -e 账号邮箱 -p 密码
 
 > auth code is required
 
-![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136071-29.png]]
+![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136071-31.png]]
 
 `2FA` **表示双重认证**，这个错误表示需要验证码，双重认证未通过。
 
@@ -85,11 +85,11 @@ ipatool auth login -e 账号邮箱 -p 密码
 
 这个错误估计是搜索的**关键词不对，找不到结果**。修改一下关键词即可。
 
-![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-85.png]]
+![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-91.png]]
 
 > license is required
 
-![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-86.png]]
+![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-92.png]]
 
 这个错误的原因是，下载的 `app` 未获取许可 ，需要获取许可 `license` 才可以下载。解决方法有2种：
 
@@ -100,7 +100,7 @@ ipatool auth login -e 账号邮箱 -p 密码
 
 > failed to purchase item with param 'STDQ': failed to purchase app
 
-![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-87.png]]
+![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136072-93.png]]
 
 ![[assets/Chronicle/2024/IPATool 使用/IMG-20260629163136073.png]]
 

@@ -10,7 +10,7 @@ sources:
   - https://www.onmyodev.com/2026/03/feather/
   - https://www.onmyodev.com/2026/05/ios-sideloading-faq/
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -37,18 +37,19 @@ provenance:
 
 ### 插件注入
 - 支持 `.dylib` / `.deb` 格式的 Substrate/ElleKit 插件注入
-- 使用货真价实的越狱插件注入器（非 TweakLoader.dylib 方式）
+- 使用真实的越狱插件注入器，把插件注入待签名 App；这不同于 LiveContainer 只能借助 `TweakLoader.dylib` 加载独立 `.dylib` 的方式
 
 ### 随机包名（PPQ 保护）
 苹果对付费开发者签名盗版软件零容忍。PPQ 保护在签名时于包名后附加随机字符串，绕过包名监控。
 - 入口：设置 → 签名选项 → PPQ 保护
 
 ### 机上安装（无需外部服务器）
-通过 Pairing File + 本地回环实现设备自连接安装：
-- 设置 → 安装 → 安装类型改为 `idevice`
+通过 Pairing File + 本地回环实现设备自连接安装，无需外部安装服务器：
+- 入口：设置 → 安装
+- 将“安装类型”从“服务器”改为 `idevice`
 
 ### 其他
-- 强制启用 iOS 26 Liquid Glass 界面风格
+- 签名选项底部可通过修改框架信息，强制 App 使用 iOS 26 Liquid Glass 界面风格
 - 签名时可修改图标、名称、包名、软件属性
 
 ## 安装流程

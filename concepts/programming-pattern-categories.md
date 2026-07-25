@@ -94,3 +94,4 @@ relationships:
 - [[references/pattern-catalog-battle-tested-patterns]] — 46 模式完整目录
 - [[skills/pattern-study-method]] — 怎么用这套分类法系统学习
 - [[references/ios-design-patterns]] — Apple 生态的对象级设计模式（对照）
+- [[synthesis/programming-pattern-categories × ios-app-architecture]] — 代码级模式 vs 架构层模式的两层视角

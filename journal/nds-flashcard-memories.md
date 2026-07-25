@@ -10,7 +10,7 @@ summary: 错过 NDS 世代后补票的烧录卡折腾经历：DS Two、R4 COM �
 sources:
   - https://www.omega.im/866/
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"

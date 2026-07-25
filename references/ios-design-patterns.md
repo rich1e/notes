@@ -268,3 +268,7 @@ enum CallState { case idle, ringing, active, onHold }
 - [[concepts/arc-memory-management]] — Retain Cycle 解决方案
 - [[concepts/swift-concurrency]] — 取代 Callback Hell
 - [[entities/ios17-app-development-book]] — 来源书籍
+
+## 相关
+
+- [[synthesis/battle-tested-patterns × ios-design-patterns]] — GoF 对象模式与代码级数据生命周期模式的互补

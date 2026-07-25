@@ -29,7 +29,7 @@ title: mac install electron error & RequestError: connect ETIMEDOUT
 
 **20221221**
 
-![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260629163136158-29.png]]
+![[assets/buckets/daily/2022-12-21_Wednesday/IMG-20260629163136158-31.png]]
 
 -   “两个窗口的父容器可进行高度调整”：会导致 CAD 重新绘制，不做。
 -   “全局参数进行新增/修改/删除”：新增：见上条评论中的 New 按钮；修改：在单元格双击可直接编辑；删除：上条评论中的图片，最后一列放置删除的图标。

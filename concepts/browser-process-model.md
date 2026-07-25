@@ -8,7 +8,7 @@ summary: Chrome 多进程架构分析：Browser 进程、Renderer 进程、Plugi
 sources:
   - https://www.zhoulujun.cn/html/webfront/browser/webkit/2020_0610_8455.html
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -76,6 +76,32 @@ Chrome 与传统浏览器不同，采用**多进程架构**（而非单进程多
 - **异步 HTTP 请求线程**：处理网络请求回调
 
 **GUI 渲染线程与 JS 引擎线程互斥**：JS 执行期间渲染被挂起，这是 JS 阻塞导致页面卡顿的根本原因。
+
+## 导航（Navigation）流程
+
+参考 Zhoulujun 文章的精细化阶段分解：
+
+1. **处理输入** — UI thread 判断输入是搜索关键词还是 URL；若是搜索，跳默认搜索引擎
+2. **开始导航** — UI thread 把 URL 交给 network thread，UI thread 显示加载状态
+3. **读取响应** — network thread 解析 HTTP 报文，看 MIME 类型；HTML 进入渲染流程，其它走下载管理器；同步做 Safe Browsing + CORB 检查
+4. **查找渲染进程** — network thread 通知 UI thread；为优化延迟，浏览器在第二步就开始预查找/启动渲染进程；遇到重定向则重启
+5. **提交导航** — Browser 通过 IPC 发送导航确认，Renderer 接收数据后回传 IPC；地址栏小锁、history list 更新
+6. **初始化加载完成** — 页面 + 所有 iframe onload 后，Renderer 发 IPC；UI thread 停止 loading 图标
+
+> **注**：Chrome 72 之后 network thread 已被独立为 Network Service Process，通过 `chrome://flags/#network-service-in-process` 可降级回 Browser 进程内的线程模式。
+
+## SharedWorker 进程的特殊性
+
+SharedWorker 不隶属于某个 Render 进程，可被多个 Render 共享。Chrome 为每个相同 JS 的 SharedWorker **单独创建进程**，与 Tab 进程隔离。
+
+Worker vs SharedWorker 通信：
+
+```javascript
+// Worker — 一对一
+window.worker.port.postMessage('get')
+
+// SharedWorker — 多页共享；通过 port 通信
+```
 
 ## 相关页面
 

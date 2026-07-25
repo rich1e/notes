@@ -1,24 +1,140 @@
 {
   "recentFiles": [
     {
+      "basename": "使用 chezmoi & vscode, 管理你的 dotfiles",
+      "path": "Clippings/使用 chezmoi & vscode, 管理你的 dotfiles.md"
+    },
+    {
+      "basename": "NotebookLM 知识库接入 Claude：MCP 协议的握手与陷阱",
+      "path": "Clippings/NotebookLM 知识库接入 Claude：MCP 协议的握手与陷阱.md"
+    },
+    {
+      "basename": "chezmoi-templating-guide",
+      "path": "references/chezmoi-templating-guide.md"
+    },
+    {
+      "basename": "chezmoi-templating",
+      "path": "concepts/chezmoi-templating.md"
+    },
+    {
+      "basename": "chezmoi-attribute-prefixes",
+      "path": "concepts/chezmoi-attribute-prefixes.md"
+    },
+    {
+      "basename": "chezmoi-workflow",
+      "path": "concepts/chezmoi-workflow.md"
+    },
+    {
+      "basename": "chezmoi-three-state-model",
+      "path": "concepts/chezmoi-three-state-model.md"
+    },
+    {
+      "basename": "dotfile-manager",
+      "path": "concepts/dotfile-manager.md"
+    },
+    {
+      "basename": "chezmoi",
+      "path": "entities/chezmoi.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
     {
-      "basename": "github-danielmiessler-Fabric",
-      "path": "_raw/_archived/github-danielmiessler-Fabric.md"
+      "basename": "chezmoi 使用教程",
+      "path": "Clippings/chezmoi 使用教程.md"
+    },
+    {
+      "basename": "chezmoi：你的 dotfiles 管理神器",
+      "path": "Clippings/chezmoi：你的 dotfiles 管理神器.md"
+    },
+    {
+      "basename": "QSLSの站",
+      "path": "Clippings/QSLSの站.md"
+    },
+    {
+      "basename": "chezmoi 配置文件管理与密钥安全实践",
+      "path": "Clippings/chezmoi 配置文件管理与密钥安全实践.md"
+    },
+    {
+      "basename": "一条命令复刻我的 macOS 开发环境：chezmoi + nix-darwin 实战 1",
+      "path": "Clippings/一条命令复刻我的 macOS 开发环境：chezmoi + nix-darwin 实战 1.md"
+    },
+    {
+      "basename": "Chezmoi 部署与拉取教程",
+      "path": "Clippings/Chezmoi 部署与拉取教程.md"
+    },
+    {
+      "basename": "归档 用 Chezmoi 管理配置文件",
+      "path": "Clippings/归档 用 Chezmoi 管理配置文件.md"
+    },
+    {
+      "basename": "chezmoi：用一份 dotfiles 打通 macOS、Linux、Windows 三個作業系統",
+      "path": "Clippings/chezmoi：用一份 dotfiles 打通 macOS、Linux、Windows 三個作業系統.md"
+    },
+    {
+      "basename": "多台机器 dotfiles 难同步？chezmoi 模板加密、一条命令还原  X-CMD 一键安装",
+      "path": "Clippings/多台机器 dotfiles 难同步？chezmoi 模板加密、一条命令还原  X-CMD 一键安装.md"
+    },
+    {
+      "basename": "Research: Kimi K3",
+      "path": "synthesis/Research: Kimi K3.md"
+    },
+    {
+      "basename": "[图灵程序设计丛书].函数式编程思维 ([美] Neal Ford) (Z-Library)",
+      "path": "buckets/books/[图灵程序设计丛书].函数式编程思维 ([美] Neal Ford) (Z-Library).pdf"
+    },
+    {
+      "basename": "浅谈 R4iSDHC 用户体验",
+      "path": "Clippings/浅谈 R4iSDHC 用户体验.md"
+    },
+    {
+      "basename": "6個必調設定搞定 Claude Code Terminal Configuration 完整指南",
+      "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
+    },
+    {
+      "basename": "电波的电玩记忆-NDS世代 – 电波万事屋",
+      "path": "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md"
+    },
+    {
+      "basename": "Uneasy about easing functions",
+      "path": "Clippings/Uneasy about easing functions.md"
+    },
+    {
+      "basename": "Witch",
+      "path": "Clippings/Witch.md"
     },
     {
       "basename": "tmux",
       "path": "skills/tmux.md"
     },
     {
-      "basename": "zustand-core-architecture × zustand",
-      "path": "synthesis/zustand-core-architecture × zustand.md"
+      "basename": "kimi-delta-attention",
+      "path": "concepts/kimi-delta-attention.md"
+    },
+    {
+      "basename": "kimi-k3",
+      "path": "entities/kimi-k3.md"
+    },
+    {
+      "basename": "mixture-of-experts",
+      "path": "concepts/mixture-of-experts.md"
+    },
+    {
+      "basename": "ios-multithreading",
+      "path": "skills/ios-multithreading.md"
     },
     {
       "basename": "swift-fundamentals",
       "path": "concepts/swift-fundamentals.md"
+    },
+    {
+      "basename": "github-danielmiessler-Fabric",
+      "path": "_raw/_archived/github-danielmiessler-Fabric.md"
+    },
+    {
+      "basename": "zustand-core-architecture × zustand",
+      "path": "synthesis/zustand-core-architecture × zustand.md"
     },
     {
       "basename": "arc-memory-management",
@@ -83,122 +199,6 @@
     {
       "basename": "bettercmdtab",
       "path": "entities/bettercmdtab.md"
-    },
-    {
-      "basename": "a better Cmd+Tab window switcher for macOS",
-      "path": "Clippings/a better Cmd+Tab window switcher for macOS.md"
-    },
-    {
-      "basename": "macos-window-switcher",
-      "path": "concepts/macos-window-switcher.md"
-    },
-    {
-      "basename": "hot",
-      "path": "hot.md"
-    },
-    {
-      "basename": "animation-easing-functions",
-      "path": "concepts/animation-easing-functions.md"
-    },
-    {
-      "basename": "alttab",
-      "path": "entities/alttab.md"
-    },
-    {
-      "basename": "asciidoc-markup",
-      "path": "concepts/asciidoc-markup.md"
-    },
-    {
-      "basename": "Uneasy about easing functions",
-      "path": "Clippings/Uneasy about easing functions.md"
-    },
-    {
-      "basename": "Markdown's Big Brother Say Hello to AsciiDoc",
-      "path": "Clippings/Markdown's Big Brother Say Hello to AsciiDoc.md"
-    },
-    {
-      "basename": "ManicEMU iOS 3DS 模拟器教程",
-      "path": "Clippings/ManicEMU iOS 3DS 模拟器教程.md"
-    },
-    {
-      "basename": "IMG-20260702164712739",
-      "path": "assets/Clippings/ManicEMU iOS 3DS 模拟器教程/IMG-20260702164712739.png"
-    },
-    {
-      "basename": "IMG-20260702164712754",
-      "path": "assets/Clippings/ManicEMU iOS 3DS 模拟器教程/IMG-20260702164712754.png"
-    },
-    {
-      "basename": "IMG-20260702164745362",
-      "path": "assets/Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲/IMG-20260702164745362.jpg"
-    },
-    {
-      "basename": "Mechanical Watch – Bartosz Ciechanowski",
-      "path": "Clippings/Mechanical Watch – Bartosz Ciechanowski.md"
-    },
-    {
-      "basename": "log",
-      "path": "log.md"
-    },
-    {
-      "basename": "Witch",
-      "path": "Clippings/Witch.md"
-    },
-    {
-      "basename": "Radically simpler & faster window switcher for Mac",
-      "path": "Clippings/Radically simpler & faster window switcher for Mac.md"
-    },
-    {
-      "basename": "AltTab Pro",
-      "path": "Clippings/AltTab Pro.md"
-    },
-    {
-      "basename": "shell-scripts",
-      "path": "buckets/work-records/shell-scripts.md"
-    },
-    {
-      "basename": "Daily Record",
-      "path": "buckets/workspce/Daily Record.md"
-    },
-    {
-      "basename": "mac-tips",
-      "path": "buckets/work-records/mac-tips.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "Dashboard/HomePage.md"
-    },
-    {
-      "basename": "Vault Health Check",
-      "path": "Dashboard/Vault Health Check.md"
-    },
-    {
-      "basename": "Tag Links Generator",
-      "path": "Dashboard/Tag Links Generator.md"
-    },
-    {
-      "basename": "Auto Link Suggestions",
-      "path": "Dashboard/Auto Link Suggestions.md"
-    },
-    {
-      "basename": "Batch Link Report",
-      "path": "Dashboard/Batch Link Report.md"
-    },
-    {
-      "basename": "zustand-typescript",
-      "path": "skills/zustand-typescript.md"
-    },
-    {
-      "basename": "source-tree",
-      "path": "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
-    },
-    {
-      "basename": "brew install",
-      "path": "Chronicle/2024/brew install.md"
-    },
-    {
-      "basename": "NodeJS 日志系统设计",
-      "path": "Chronicle/2024/NodeJS 日志系统设计.md"
     }
   ],
   "omittedPaths": [],

@@ -75,3 +75,4 @@ relationships:
 
 - [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 App 开发 + 5次作业 + 3周自选项目，Sw
 - [[synthesis/arc-memory-management × swift-concurrency]] — ARC 解决引用类型的生命周期问题（堆上何时释放），Actor 解决引用类型的并发访问问题（多线程何时安全读写）——两套机制作用在同一类型上但维度正交。
+- [[synthesis/ios17-app-development-book × cs193p-spring-2025]] — 书（地图）vs 课（罗盘）：两条 iOS 学习路径

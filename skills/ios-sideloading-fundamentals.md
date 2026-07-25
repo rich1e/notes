@@ -5,7 +5,7 @@ tags: [ios, sideload, security]
 sources:
   - "https://www.onmyodev.com/2026/05/ios-sideloading-faq/"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-25
 summary: iOS 侧载完整机制：调试/发布证书区别、Entitlements 权限体系、描述文件有效期、SideStore 与 LiveContainer 的原理与适用场景、JIT 开启条件。
 base_confidence: 0.83
 lifecycle: draft
@@ -62,14 +62,16 @@ relationships:
 
 传统侧载工具，直接将 App 安装到系统，受证书体系全部限制。
 
-关键组件：
-- **minimuxer**：在 iOS 沙盒内实现 usbmuxd，使设备能自连接（模拟通过 Wi-Fi 连接的电脑）
-- **Anisette 服务器**：远程模拟 Xcode 签名服务，生成描述文件（这是账户里出现陌生 Mac 的原因）
-- **StosVPN/LocalDevVPN**：通过回环隧道模拟电脑正在监听 iOS 设备
+关键组件形成“设备自连 + 远程签名”链路：
+- **minimuxer**：电脑端 `usbmuxd` 的 iOS 精简实现，可在沙盒内工作，使设备通过系统已有的 Wi‑Fi 设备管理通道连接自身
+- **Anisette 服务器**：在远程服务器模拟 Xcode 的签名服务并向苹果请求描述文件；使用后 Apple 账户里出现陌生 MacBook/iMac，通常源于该模拟环境
+- **StosVPN/LocalDevVPN**：把发往指定地址的数据包交换源与目标后回送设备自身，建立本地回环隧道；配合 minimuxer，让 iOS 认为有电脑正在监听连接
 
 **为何需要 Wi-Fi**：iOS 的 iTunes Wi-Fi Sync 机制只在联网时激活，SideStore 借用这个通道。
 
-**iOS 26.4 的影响**：苹果将配对格式从 Lockdown 改为 RPPairing，旧方法（飞行模式欺骗 + 中途关隧道）不再有效，需要全程保持 StikDebug 开启和 Wi-Fi 连接。
+**iOS 26.4 的影响**：苹果废弃旧的 Lockdown 配对格式，改用 RPPairing。配对文件仍然需要，但飞行模式欺骗和连接后中途关闭回环隧道不再可用；SideStore 续签以及 StikDebug 启用 JIT 时需按工具要求保持 Wi‑Fi 和隧道连接。
+
+> 真实案例：[[misc/web-github-com-livecontainer-issues-1456]] — LiveContainer 3.7.14 Nightly + iPadOS 26.3 下 SideStore Refresh All 报 "Unable to manage profiles on the device"，维护者 hugeBlack 确认根因即 RPPairing 文件缺失或格式错误，建议用 `idevice_pair` (jkcoxson, v0.1.14+) 自行生成。
 
 ## LiveContainer 原理
 
@@ -93,10 +95,29 @@ JIT（Just-in-time Compilation）允许运行时动态写入可执行内存，iO
 
 **开启条件**：App 必须拥有 `get-task-allow` Entitlement（调试证书专属），且连接调试器。
 
+### JIT 工具分类
+
+| 类型 | 代表工具 / 场景 | 原理与限制 |
+|------|-----------------|------------|
+| 机上调试器模拟 | StikDebug | 借助配对文件、回环隧道与脚本模拟电脑调试器；iOS 26+ 通常要持续保持 Wi‑Fi、LocalDevVPN 与调试连接 |
+| 电脑端调试附加 | AltJIT 等 | 由真实电脑连接并附加目标进程，适用于部分旧系统与工具链 |
+| 容器内 JIT | LiveContainer | 容器以 JIT 运行内部 App，可绕过内部程序的代码签名，但仍取决于 LiveContainer 本体及系统版本支持 |
+| 越狱环境 | 越狱工具链 | 系统级放宽或移除 Code Signing 限制，能力最强，但设备和系统版本受限 |
+
 - **StikDebug**：模拟一台运行调试器的电脑，让 iOS 认为 App 正在被调试，自动允许 JIT
 - iOS 26+ 要求：全程保持 StikDebug 开启 + Wi-Fi 连接，否则 iOS 判定调试器断开 → App 闪退
 
 **iOS 18.4 前的旧方法**：直接利用 `get-task-allow` 抓进程开启 JIT；18.4 已堵漏。
+
+## 签名工具选择决策表
+
+| 首要需求 | 推荐方案 | 选择依据 |
+|----------|----------|----------|
+| 模拟器、虚拟机等需要 JIT | **SideStore**（配合 StikDebug 等 JIT 工具） | 免费开发者调试证书包含 `get-task-allow`；购买的发布证书不能替代 |
+| 需要更多签名选项、改包信息、插件注入或特定 Entitlement | **全能签 / Feather** | 面向付费发布证书，签名与注入功能更完整；能否使用某项 Entitlement 仍由证书和描述文件决定 |
+| 想减少 App ID 占用、集中运行多个 App | **LiveContainer** | 内部 App 不单独占用 App ID，共享容器本体的 Entitlements 和有效期 |
+
+> 选择顺序应先看 **JIT 与 Entitlement**，再看界面和便利性：JIT 需求优先 SideStore；功能、注入和 Entitlement 需求优先全能签或 [[entities/feather-ios-sideload|Feather]]。两类方案通常不能互换。
 
 ## 工具选型
 
@@ -111,3 +132,4 @@ JIT（Just-in-time Compilation）允许运行时动态写入可执行内存，iO
 
 - [[entities/feather-ios-sideload]] — 付费证书签名工具 Feather
 - [[skills/ios-app-store-publishing]] — 官方证书与发布流程对比
+- [[misc/web-github-com-livecontainer-issues-1456]] — LiveContainer #1456 案例：iPadOS 26.3 + RPPairing 缺失导致 SideStore Refresh All 失败

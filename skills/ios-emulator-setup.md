@@ -6,7 +6,7 @@ sources:
   - "https://www.onmyodev.com/2026/05/manicemu/"
   - "https://www.onmyodev.com/2026/05/melonx/"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-25
 summary: iOS 平台 3DS 模拟器（ManicEMU/Azahar 核心）和 Switch 模拟器（MeloNX/MeloVertex）的安装、JIT 配置与常见问题。
 base_confidence: 0.83
 lifecycle: draft
@@ -41,10 +41,10 @@ iOS 平台的高性能模拟器（3DS、Switch 等）依赖 **JIT** 才能达到
 
 ### 核心配置步骤
 
-1. **切换核心**：设置 → 模拟器核心 → 改为 **Azahar**（默认的 Citra 核心不支持 JIT）
-2. **启用 JIT**：通过 StikDebug 启动 ManicEMU（非从桌面直接打开），设置页应显示"JIT 可用"（绿色）
-3. **每个游戏单独开启 JIT**：游戏菜单 → 高级设置 → 开启 `use_cpu_jit`，保存
-4. **CPU 倍率**：`cpu_scale` 按设备实际性能调整，并非越高越好
+1. **切换核心**：设置 → 向下滚动到“模拟器核心” → 改为 **Azahar**；默认 Citra 核心不支持 JIT
+2. **带 JIT 启动**：从 StikDebug 使用 `manic.js` 启动 ManicEMU，而不是从桌面直接打开；返回设置页确认状态为绿色“JIT 可用”
+3. **每个游戏单独开启 JIT**：点游戏打开菜单 → 翻到“高级设置” → 开启 `use_cpu_jit` → 保存；该设置不是全局项，每个游戏都要重复一次
+4. **CPU 倍率**：`cpu_scale` 按设备实际性能逐步调整，并非越高越好；设备无法提供对应算力时，设置为 400% 也不会获得等比例性能
 
 ### 游戏格式
 
@@ -52,11 +52,12 @@ iOS 平台的高性能模拟器（3DS、Switch 等）依赖 **JIT** 才能达到
 
 ### Mii 问题
 
-游戏需要 Mii 时，需通过 Artic Base 功能从真机传输 NAND，或直接解压网上找到的 `nand.zip` 覆盖 ManicEMU 文件夹中的 3DS 目录。
+游戏需要 Mii 时，优先使用 **Artic Base** 从 3DS 真机向 ManicEMU 传输 NAND 数据；没有真机时，可将来源可靠的 `nand.zip` 解压后，覆盖 ManicEMU 文件夹中的 `3DS` 目录。导入真机 NAND 可能反过来使部分已解密游戏无法运行，因此应在“需要 Mii”与游戏兼容性之间取舍。
 
 ### 注意事项
 
-- **切勿依赖即时存档**：3DS 模拟尚不稳定，即时存档常导致游戏数据损坏。使用游戏内存档。
+- **App Store 版不能开启 JIT**：即使 StikDebug 的 Other 页面能找到并启动它，也不会为其启用 JIT；要获得 3DS 所需性能，必须安装侧载版
+- **切勿依赖即时存档**：3DS 模拟尚不稳定，即时存档可能导致游戏之后无法打开。应使用游戏内置存档，并把即时存档仅视为临时状态而非可靠进度。
 
 ---
 

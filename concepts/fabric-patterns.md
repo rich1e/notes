@@ -136,3 +136,4 @@ fabric --pattern my-pattern -v '#role:expert' -v '#points:30'
 - [[skills/fabric-usage-patterns]] — 高频用法与工作流集成
 - [[concepts/prompt-caching]] — LLM 提示缓存机制（相关背景）
 - [[Research: Fabric AI Framework]] — Research: Fabric AI Framework
+- [[synthesis/fabric-patterns × claude-code-settings]] — Prompt 层的 AI 标准化 vs 工具层的行为标准化

@@ -10,10 +10,10 @@ sources:
   - https://www.claudecode.xyz/articles/claude-code-mm4tlbbs
   - https://moksaweb.com/claude-code-terminal-configuration/
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: core
 lifecycle: draft
-lifecycle_changed: "2026-06-29"
+lifecycle_changed: "2026-07-25"
 base_confidence: 0.83
 provenance:
   extracted: 0.90
@@ -149,6 +149,35 @@ export HTTPS_PROXY=http://proxy.company.com:8080  # 企业代理
 }
 ```
 
+### 服务端托管（零接触部署）
+
+通过 Claude.ai 管理控制台，管理员可以从服务端推送配置：
+
+1. 登录 Claude.ai 管理控制台
+2. 进入 Settings → Claude Code
+3. 配置组织级设置
+4. 设置自动同步到所有该组织账号用户——无需在每台机器上手动部署
+
+## 配置文件备份
+
+Claude Code 自动创建带时间戳的配置文件备份，并**保留最近 5 个备份**，防止数据丢失。
+
+## 环境变量配置
+
+部分设置可通过环境变量覆盖：
+
+```bash
+# 禁用遥测
+export CLAUDE_CODE_DISABLE_TELEMETRY=1
+
+# 设置代理（企业环境）
+export HTTPS_PROXY=http://proxy.company.com:8080
+export HTTP_PROXY=http://proxy.company.com:8080
+
+# 禁用自动更新
+export CLAUDE_CODE_DISABLE_AUTOUPDATE=1
+```
+
 ## 最佳实践
 
 - **个人开发者**：偏好放 `~/.claude/settings.json`，敏感信息放 `CLAUDE.local.md`
@@ -159,3 +188,4 @@ export HTTPS_PROXY=http://proxy.company.com:8080  # 企业代理
 
 - [[skills/claude-code-token-optimization]] — Token 优化策略
 - [[skills/tmux]] — 终端复用，配合 Claude Code 使用
+- [[synthesis/fabric-patterns × claude-code-settings]] — Claude Code 配置与 Fabric Pattern 的 AI Unix 管道哲学

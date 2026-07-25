@@ -9,10 +9,10 @@ summary: 用 macOS 内置的 afplay + shell 函数实现终端随机播放本地
 sources:
   - http://idle.systems/posts/terminal_music.html
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
-lifecycle_changed: "2026-06-29"
+lifecycle_changed: "2026-07-25"
 base_confidence: 0.67
 provenance:
   extracted: 0.90

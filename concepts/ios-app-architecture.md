@@ -157,4 +157,4 @@ func reducer(state: AppState, action: AppAction) -> AppState {
 ## 相关
 
 - [[ios-data-persistence]] — ios-data-persistence
-
+- [[synthesis/programming-pattern-categories × ios-app-architecture]] — 架构层如何与代码级模式互补

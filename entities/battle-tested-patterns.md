@@ -119,3 +119,4 @@ lint → typecheck → test → verify-code → verify-mermaid → check:content
 - [[references/pattern-catalog-battle-tested-patterns]] — 46 模式目录与"Proven In"源链接
 - [[concepts/programming-pattern-categories]] — 五大分类（数据结构/并发/系统/内存/行为）思路
 - [[skills/pattern-study-method]] — 怎样用这个项目当系统学习材料
+- [[synthesis/battle-tested-patterns × ios-design-patterns]] — 代码级 46 模式与 GoF 23 种对象模式的坐标差异

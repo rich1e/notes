@@ -22,7 +22,7 @@
 
 ![[assets/buckets/work-records/git-remote-host-identification-has-changed/IMG-20260629163136332.png]]
 
-![[assets/buckets/work-records/git-remote-host-identification-has-changed/IMG-20260629163136332-30.png]]
+![[assets/buckets/work-records/git-remote-host-identification-has-changed/IMG-20260629163136332-32.png]]
 
 1. 检查 `git` 服务器 `ip` 地址
 ```sh

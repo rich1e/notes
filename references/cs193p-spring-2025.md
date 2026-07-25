@@ -107,6 +107,7 @@ VStack {        // 最后一个参数是 @ViewBuilder 闭包，可写在括号�
 
 - YouTube 播放列表：CS193P Spring 2025（搜索 "CS193P Paul Hegarty 2025"）
 - 官方课程页：`cs193p.sites.stanford.edu`
+- [[synthesis/ios17-app-development-book × cs193p-spring-2025]] — Stanford 课程与入门书的互补覆盖结构
 
 ## 关联页面
 

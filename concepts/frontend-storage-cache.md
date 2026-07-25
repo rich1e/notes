@@ -5,14 +5,14 @@ tags:
   - browser
   - performance
   - f2e
-summary: 浏览器端存储机制全览：Cookie、LocalStorage、SessionStorage 对比，HTTP 强缓存与协商缓存原理及最佳实践。
+summary: 浏览器端存储机制全览：Cookie、LocalStorage、SessionStorage 对比，HTTP 强缓存与协商缓存原理及最佳实践，含 Service Worker 缓存策略。
 sources:
   - https://segmentfault.com/a/1190000021857936
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
-lifecycle_changed: "2026-06-29"
+lifecycle_changed: "2026-07-25"
 base_confidence: 0.67
 provenance:
   extracted: 0.80
@@ -108,9 +108,78 @@ localStorage.clear()
 
 ## Service Worker 缓存
 
-Service Worker 可以拦截网络请求，实现离线缓存：
-- **Cache Storage API**：精细控制缓存策略
-- 策略：Cache First、Network First、Stale While Revalidate
+Service Worker 可以拦截网络请求，实现离线缓存。
+
+**核心 API**：`CacheStorage`（通过 `caches.open(name)` 获取 `Cache` 实例）
+
+```javascript
+// 预缓存资源
+caches.open('v1').then(cache => {
+  cache.addAll(['/index.html', '/app.js', '/style.css']);
+});
+
+// 拦截请求时返回缓存
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(cached => {
+      return cached || fetch(event.request);
+    })
+  );
+});
+```
+
+**三种经典策略**：
+
+| 策略 | 行为 | 适用场景 |
+|------|------|----------|
+| **Cache First** | 先读缓存，没有再走网络 | 静态资源（JS/CSS/字体） |
+| **Network First** | 先走网络，失败后回退缓存 | API 数据（实时性要求高） |
+| **Stale While Revalidate** | 先返回缓存（即便过期），同时后台拉新 | 内容型资源（博客、新闻） |
+
+```javascript
+// Stale While Revalidate 示例
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open('v1').then(cache =>
+      cache.match(event.request).then(cached => {
+        const networkFetch = fetch(event.request).then(response => {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+        return cached || networkFetch;
+      })
+    )
+  );
+});
+```
+
+## 常用 Cookie 工具函数
+
+Cookie 没有原生 `get/set` 方法，必须操作 `document.cookie` 字符串：
+
+```javascript
+// 写入（默认 30 天过期）
+function setCookie(name, value) {
+  const Days = 30;
+  const exp = new Date();
+  exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+  document.cookie = `${name}=${escape(value)};expires=${exp.toGMTString()}`;
+}
+
+// 读取
+function getCookie(name) {
+  const arr = document.cookie.match(new RegExp(`(^| )${name}=([^;]*)(;|$)`));
+  return arr ? unescape(arr[2]) : null;
+}
+
+// 删除（过期时间设为过去）
+function delCookie(name) {
+  const exp = new Date();
+  exp.setTime(exp.getTime() - 1);
+  const cval = getCookie(name);
+  if (cval != null) document.cookie = `${name}=${cval};expires=${exp.toGMTString()}`;
+}
+```
 
 ## 相关页面
 

@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-10T14:30:00Z*
+*This index is automatically maintained. Last updated: 2026-07-26T03:00:00Z*
 
 ## Concepts
 
@@ -34,6 +34,14 @@ title: Wiki Index
 - [[concepts/animation-easing-functions]] — 缓动函数：Penner 缓动 + Apple 参数化运动学 + 卷积滤波 + PD/PID 反馈控制四条路线
 - [[concepts/programming-pattern-categories]] — 编程模式五大分类（数据结构/并发/系统/内存/行为），按运行时职责切分，与 GoF 互补
 - [[concepts/fabric-patterns]] — Fabric Patterns：290+ 可复用 AI Prompt 单元，覆盖分析/提取/创作/安全等场景
+- [[concepts/mixture-of-experts]] — MoE 混合专家架构：稀疏激活降低每 token 算力，内存与算力的核心权衡
+- [[concepts/kimi-delta-attention]] — Kimi Delta Attention：Moonshot 提出的长上下文 KV 缓存优化，100 万 token 下最高 6.3× 加速
+- [[concepts/dotfile-manager]] — Dotfile 管理工具五大流派（裸 git/Stow/chezmoi/Nix/云同步）的设计空间与权衡
+- [[concepts/chezmoi-three-state-model]] — chezmoi 三态模型：源态/目标态/实际态，`apply` 是协调三个状态的过程
+- [[concepts/chezmoi-attribute-prefixes]] — chezmoi 17 个属性前缀（dot_/private_/encrypted_/modify_ 等），命名即元数据
+- [[concepts/chezmoi-templating]] — chezmoi 模板系统：Go text/template + sprig 扩展，按机器差异化
+- [[concepts/chezmoi-workflow]] — chezmoi 四动词工作流（add/edit/diff/apply）+ update/init + czpush/czpull/czapply 三段式别名
+- [[concepts/fourier-series]] — 傅里叶分析：单位圆 + Euler 公式串联复正弦、本轮链与傅里叶级数展开
 
 ## Entities
 
@@ -52,6 +60,10 @@ title: Wiki Index
 - [[entities/witch]] — Witch：Many Tricks 出品的付费窗口切换器，多粒度切换器并存
 - [[entities/battle-tested-patterns]] — Totoro-jam 出品的开源 46 模式目录项目（React/Linux/Go/PostgreSQL 等代码级编程模式，行号精确引用）
 - [[entities/fabric-ai]] — Fabric：danielmiessler 出品的开源 AI 增强框架，290+ Patterns，20+ AI 提供商，Go 编写
+- [[entities/kimi-k3]] — Kimi K3：全球首个 3T 级开权重 LLM（2.8T 参数，MoE），代码评测第一，2026-07-27 发布
+- [[entities/moonshot-ai]] — Moonshot AI（月之暗面）：Kimi 品牌开发商，K 系列超大规模模型，架构创新应对算力限制
+- [[entities/chezmoi]] — chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制，三态模型 + 模板 + 加密
+- [[entities/gnu-stow]] — GNU Stow：symlink 农场式 dotfile 管理器，最简镜像流派代表
 
 ## Skills
 
@@ -80,6 +92,11 @@ title: Wiki Index
 - [[skills/ptp-troubleshooting]] — PTP 故障排查：pmc 诊断工具、日志解读、常见问题处理
 - [[skills/pattern-study-method]] — 用 battle-tested-patterns 系统学习 46 模式：4 阶段路径 + 配套练习 + AI 编程助手技能（adopt-pattern/audit-pattern）
 - [[skills/fabric-usage-patterns]] — Fabric CLI 高频用法：YouTube 分析、Shell 别名、REST API、Obsidian 集成
+- [[skills/chezmoi-bitwarden-secrets]] — chezmoi Bitwarden 密钥注入 + 跨平台 Keychain/DPAPI 自动解锁 + git-filter-repo 历史清理
+
+## Synthesis
+
+- [[synthesis/Research: chezmoi]] — chezmoi 3 轮研究综合：三态模型 + 17 前缀 + Go 模板 + age/GPG + 四动词工作流
 
 ## Projects
 
@@ -125,6 +142,19 @@ title: Wiki Index
 - [[references/macos-window-switchers]] — macOS 窗口切换器对比速查：AltTab / BetterCmdTab / Contexts / Witch 在许可证/macOS 兼容/布局/触发方式上的差异
 - [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接
 - [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 + 5次作业 + 3周自选项目，SwiftUI 核心课
+- [[references/chezmoi-official-site]] — chezmoi.io 官方首页：五大特性 + 单命令引导 + 当前版本
+- [[references/chezmoi-templating-guide]] — 官方模板权威说明：Go text/template + sprig + 内置/数据/config 变量来源优先级
+- [[references/chezmoi-source-state-attributes]] — 17 个属性前缀 + 2 个后缀的完整参考
+- [[references/chezmoi-workflow-discussion]] — GitHub Discussions #2673：v3 方向 + 一周上手 + 七大常见坑
+- [[references/chezmoi-encryption-backends]] — chezmoi 加密三后端实操：GPG（非对称/对称）、Gnome Keyring（Linux+macOS Keychain）、KeePassXC（数据库化）
+- [[references/chezmoi-bitwarden-keychain]] — Bitwarden 模板注入密钥 + macOS Keychain / Windows DPAPI 免手输主密码 + git-filter-repo 历史清理
+- [[references/chezmoi-nix-darwin-integration]] — chezmoi + nix-darwin 分层组合：用户级配置 + 系统级声明，.chezmoidata.yaml profile + Justfile 维护命令
+- [[references/chezmoi-patterns-recipes]] — chezmoi 社区实战模式集：安装矩阵、文件名前缀、跨平台变量、加密矩阵、4 种 run_* 钩子、.chezmoiroot/.chezmoiignore 协作
+- [[references/kimi-k3-technical-overview]] — Kimi K3 技术深度分析：2.8T MoE、Delta Attention、QAT、基准、定价
+- [[references/kimi-k3-geopolitical-context]] — Kimi K3 地缘政治与市场背景：HBM 限制、算力绕过策略、DeepSeek 类比
+- [[references/kimi-k3-video-review-lingdu]] — 零度解说实测视频：DeepSWE/LiveBench 基准、虚拟机 Agent 演示、3D 生成、越狱
+- [[references/kimi-k3-video-analysis-reportify]] — 哈佛老徐深度分析：Kimi 官方原文、Anthropic Fable-5 禁令、国产芯片全球化路径
+- [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
 
 ## Synthesis
 
@@ -136,6 +166,16 @@ title: Wiki Index
 - [[synthesis/consolidation-2026-07-07]] — 2026-07-07 自动合并报告（wiki-lint --consolidate）：PTP 反斜杠修复、chapter1 孤儿拯救
 - [[synthesis/Research: Fabric AI Framework]] — Fabric AI 框架研究综合：Patterns 设计哲学、290+ Pattern 分类、多提供商架构、REST API
 - [[synthesis/consolidation-2026-07-23]] — 2026-07-23 自动合并报告（wiki-lint --consolidate）：21 个破损链接修复、6 个孤儿救援、4 个 Fabric lifecycle 修复、8 个 tag 规范化
+- [[synthesis/swift-fundamentals × swiftui-framework]] — Swift 类型系统是 SwiftUI 的运行时：函数式/POP 范式如何构成 SwiftUI DSL 的基础
+- [[synthesis/programming-pattern-categories × ios-app-architecture]] — 代码级五分类 × iOS 架构模式：横切面 vs 纵切面，三层模式语言覆盖不同粒度
+- [[synthesis/battle-tested-patterns × ios-design-patterns]] — GoF 对象模式 × battle-tested 代码模式：两套语言的坐标轴，组合使用才能覆盖两个维度
+- [[synthesis/ios17-app-development-book × cs193p-spring-2025]] — 书（地图）× 课（罗盘）：两条 iOS/SwiftUI 学习路径的互补结构
+- [[synthesis/fabric-patterns × claude-code-settings]] — Fabric Patterns × Claude Code 配置：AI Unix 管道哲学在 Prompt 层与工具层的平行实践
+- [[synthesis/Research: Kimi K3]] — Kimi K3 研究综合：3T 级 MoE、Delta Attention、代码第一、整体接近 Fable 5，2026-07-27 权重发布
+
+## Misc
+
+- [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
 
 ## Journal
 

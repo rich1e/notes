@@ -9,8 +9,9 @@ tags:
 summary: 移动端 setInterval/setTimeout 因锁屏、APP 后台、页面卡顿导致计时不准的根因与解决方案（visibilitychange + Web Worker）。
 sources:
   - https://www.zhoulujun.cn/html/webfront/SGML/html5/2017_0927_8053.html
+  - https://hcysun.me/2016/07/11/js-Worker-API-在倒计时中的使用/
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-25
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -88,6 +89,8 @@ const worker = new Worker('worker.js')
 worker.postMessage({ type: 'start', seconds: 60 })
 worker.onmessage = (e) => updateDisplay(e.data.count)
 ```
+
+> 列表页倒计时的 Worker 使用警告（来自 [hcysun.me 原文](https://hcysun.me/2016/07/11/js-Worker-API-在倒计时中的使用/)）：不要循环 `new Worker()` 多个实例——可能导致应用卡死，Hybrid App H5 页面尤其容易闪退。**只 `new` 一个 Worker**，所有列表项的倒计时共享 worker，回调里靠循环更新视图。另外部分 Android 机型的 webview 不支持 Worker，需做能力探测后退回 `setInterval`。
 
 ### 方案三：基于服务器时间的差值计算（最可靠）
 

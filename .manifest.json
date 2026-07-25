@@ -1,7 +1,29 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-09T06:45:13Z",
+  "last_updated": "2026-07-25T08:30:00Z",
+  "research": {
+    "chezmoi": {
+      "researched_at": "2026-07-25T02:27:13Z",
+      "rounds_completed": 3,
+      "sources_fetched": 9,
+      "pages_created": [
+        "references/chezmoi-official-site.md",
+        "references/chezmoi-templating-guide.md",
+        "references/chezmoi-source-state-attributes.md",
+        "references/chezmoi-workflow-discussion.md",
+        "concepts/dotfile-manager.md",
+        "concepts/chezmoi-three-state-model.md",
+        "concepts/chezmoi-attribute-prefixes.md",
+        "concepts/chezmoi-templating.md",
+        "concepts/chezmoi-workflow.md",
+        "entities/chezmoi.md",
+        "entities/gnu-stow.md",
+        "synthesis/Research: chezmoi.md"
+      ],
+      "pages_updated": []
+    }
+  },
   "projects": {
     "jrfed-zaxd-mediation-tool": {
       "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
@@ -66,14 +88,19 @@
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 17418,
       "modified_at": "2026-06-29T16:57:05Z",
-      "content_hash": "sha256:c88a43399eba6036fa9be0493ea513f548067b98813d369ee4962f10c5d3cc9f",
+      "content_hash": "sha256:bdcd82ad58a22efd239ca7fb5b2eb7520616887bfb8f0aa842dde7815052a764",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "skills/claude-code-token-optimization.md",
         "concepts/prompt-caching.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:57:54.387282+00:00",
+      "pages_produced": [
+        "skills/claude-code-token-optimization",
+        "concepts/prompt-caching"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
@@ -91,13 +118,17 @@
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 6389,
       "modified_at": "2026-06-29T16:31:36Z",
-      "content_hash": "sha256:1ff30f27ecd7ead317ecc72a14067ffb41158e8f04a6bb94da8766bb30dba23e",
+      "content_hash": "sha256:acc7e03c02eed9043f14f7cdc2d2b2c033262f06e4b54e5ab57bf0ddc9f850a0",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "skills/claude-code-settings.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:58:02.161465+00:00",
+      "pages_produced": [
+        "skills/claude-code-settings"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Tmux 快捷键 & 速查表 & 简明教程.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
@@ -115,131 +146,172 @@
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 37591,
       "modified_at": "2026-06-29T16:54:35Z",
-      "content_hash": "sha256:f4c395a8ec3f4a3675511b9602e7b3007d530508fd42d3f5704d0764c9d1724b",
+      "content_hash": "sha256:a558c84cf54e6af716b2a6040916dc48e7acc1edd42f83316a9877e81de3c635",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "concepts/javascript-event-loop.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T03:01:03.261707+00:00",
+      "pages_produced": [
+        "concepts/javascript-event-loop"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/浏览器层面优化前端性能(1)Chrom组件与进程线程模型分析 - webkit - 周陆军的个人网站.md": {
-      "ingested_at": "2026-06-29T09:30:00Z",
+      "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 36464,
       "modified_at": "2026-06-29T16:53:19Z",
-      "content_hash": "sha256:c246d137603179aac06b36b80e2a3c5ac12b83b4652ad2a46be2c696bd6d0ca0",
+      "content_hash": "sha256:056c4778a5247b8c88a7c4fa5c063d6cb401b1f543547f280240587eded2c638",
       "source_type": "document",
       "project": null,
-      "pages_created": [
+      "pages_created": [],
+      "pages_updated": [
         "concepts/browser-process-model.md"
       ],
-      "pages_updated": []
+      "last_ingested": "2026-07-25T02:55:07.374311+00:00",
+      "pages_produced": [
+        "concepts/browser-process-model.md"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/前端常见面试-存储缓存篇.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 11414,
       "modified_at": "2026-06-29T16:55:13Z",
-      "content_hash": "sha256:258505d4c1d09fbdeb78423831beec91e715b21d5d4d27e0f006f1bdc9e06e48",
+      "content_hash": "sha256:787d35b30868a248fdbc9bfa0054704c2d682e79b226d210530cfe97c034db21",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "concepts/frontend-storage-cache.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T03:00:24.414135+00:00",
+      "pages_produced": [
+        "concepts/frontend-storage-cache"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/移动端倒计时不准：手机锁屏熄屏APP后台运行屏幕卡顿 - html5 - 周陆军的个人网站.md": {
-      "ingested_at": "2026-06-29T09:30:00Z",
+      "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 8532,
       "modified_at": "2026-06-29T16:56:39Z",
-      "content_hash": "sha256:042d6eab9bd4cd1e9e336ce918dee514e36c1bbf0d01cda6990f3eadeeda8b3e",
+      "content_hash": "sha256:435573006e5cdde74b092b5792eb1a3c8c80c11b1c645d67accacc43885ca892",
       "source_type": "document",
       "project": null,
-      "pages_created": [
+      "pages_created": [],
+      "pages_updated": [
         "concepts/mobile-timer-accuracy.md"
       ],
-      "pages_updated": []
+      "last_ingested": "2026-07-25T02:55:23.425438+00:00",
+      "pages_produced": [
+        "concepts/mobile-timer-accuracy.md"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/如何在终端中优雅地听歌.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 8689,
       "modified_at": "2026-06-29T16:56:02Z",
-      "content_hash": "sha256:2936a721d5283fbf38e283a30e8b3798868682af9b33e242af2b9fc6b1a34fcb",
+      "content_hash": "sha256:4b99d539502b8f96bc2619a260f9abeb7251185cd9a9ad435b86b90824d538be",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "skills/terminal-music.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T03:00:45.052930+00:00",
+      "pages_produced": [
+        "skills/terminal-music"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Feather 签名工具.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 8087,
       "modified_at": "2026-06-29T16:57:53Z",
-      "content_hash": "sha256:0be5efb0c2f38e6b272ddc845be34ab67a63499e4700c6299b30bda14639f47c",
+      "content_hash": "sha256:703384d00ad15155158dda1811f54228852d30a9d8cd80880b65a1ac95413ca2",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "entities/feather-ios-sideload.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:58:15.488850+00:00",
+      "pages_produced": [
+        "entities/feather-ios-sideload",
+        "skills/ios-sideloading-fundamentals"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/NEOGEO.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 10786,
       "modified_at": "2026-06-29T16:57:53Z",
-      "content_hash": "sha256:a08798c98e7d98d1b6dff5bf7910ce4b2aef11b4f3c34c96e2d2a85516764e80",
+      "content_hash": "sha256:c8e621ef1e53ce662a552b849325a152ba418c0509119492dde277d8ae7a7f8a",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "entities/neogeo-mame.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:58:49.225820+00:00",
+      "pages_produced": [
+        "entities/neogeo-mame"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/nds折腾.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 9149,
       "modified_at": "2026-06-29T16:57:35Z",
-      "content_hash": "sha256:c5e3fecde0503abc0e8404a72f6b3d2b68792ffba938608e99ba871767338df3",
+      "content_hash": "sha256:8ae2142ba23b1cb97f00aa8d6c67a00374590319734d1c91aa5a24f1e30081cc",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "entities/nds-flashcard.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:59:55.387858+00:00",
+      "pages_produced": [
+        "entities/nds-flashcard"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md": {
-      "ingested_at": "2026-06-29T09:30:00Z",
+      "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 4988,
       "modified_at": "2026-06-29T16:31:36Z",
       "content_hash": "sha256:afb224c0e6a944735bfc2124d5534992e9ec9908fe76644b211ab6efb31208cc",
       "source_type": "document",
       "project": null,
-      "pages_created": [
+      "pages_created": [],
+      "pages_updated": [
         "journal/nds-flashcard-memories.md"
-      ],
-      "pages_updated": []
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/序章-起承转结.md": {
       "ingested_at": "2026-06-29T09:30:00Z",
       "size_bytes": 7095,
       "modified_at": "2026-06-29T16:57:53Z",
-      "content_hash": "sha256:aaaef64e5039d1da3a70cd84e7fed2f49886d58b76985647254887d3ad5b1ae7",
+      "content_hash": "sha256:27a15bd15af5191c9e7888e83eb1b1014b6f1534b954b4d2e14a3ef5b560922c",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "journal/fire-emblem-new-mystery-prologue.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T03:00:54.785307+00:00",
+      "pages_produced": [
+        "journal/fire-emblem-new-mystery-prologue"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/浅谈 R4iSDHC 用户体验.md": {
-      "ingested_at": "2026-06-29T09:30:00Z",
+      "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 2494,
       "modified_at": "2026-06-29T16:55:43Z",
-      "content_hash": "sha256:507706d41926be86e2d414c2aa0ddeb78283b3468c86e5773e4960ecb16245f0",
+      "content_hash": "sha256:eb175ec7046276383ed33183c2bb93d666524ada21f6340cfd76f6ed7b7c9fef",
       "source_type": "document",
       "project": null,
       "pages_created": [],
       "pages_updated": [
+        "entities/nds-flashcard.md"
+      ],
+      "last_ingested": "2026-07-25T02:54:57.655400+00:00",
+      "pages_produced": [
         "entities/nds-flashcard.md"
       ]
     },
@@ -305,13 +377,17 @@
       "ingested_at": "2026-07-02T09:18:27Z",
       "size_bytes": 6324,
       "modified_at": "2026-07-02T08:54:38Z",
-      "content_hash": "sha256:e8d9f08c3a78331b425a2a7b6cbb0eefd9aa9bc09b2c2f7c14fc531a0e554ea7",
+      "content_hash": "sha256:28d163110747d2ed36955960a19ac860f5e8bbf9c9c7c646ea93a739fe25f129",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "skills/ios-emulator-setup.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:58:39.155723+00:00",
+      "pages_produced": [
+        "skills/ios-emulator-setup"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/MeloNX iOS Switch 模拟器教程.md": {
       "ingested_at": "2026-07-02T09:18:27Z",
@@ -329,14 +405,18 @@
       "ingested_at": "2026-07-02T09:18:27Z",
       "size_bytes": 18393,
       "modified_at": "2026-07-02T08:48:12Z",
-      "content_hash": "sha256:50db5e777919949fea9d7126520a93777dca8990afd8e2c7030d142620eaa442",
+      "content_hash": "sha256:48fa7a9b7186a1c83181b45cc3735856449b9378b05cf9b60e48b64aa71e66b9",
       "source_type": "document",
       "project": null,
       "pages_created": [
         "skills/ios-sideloading-fundamentals.md",
         "entities/feather-ios-sideload.md"
       ],
-      "pages_updated": []
+      "pages_updated": [],
+      "last_ingested": "2026-07-25T02:59:42.138273+00:00",
+      "pages_produced": [
+        "skills/ios-sideloading-fundamentals"
+      ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Mechanical Watch – Bartosz Ciechanowski.md": {
       "ingested_at": "2026-07-02T09:18:27Z",
@@ -611,11 +691,255 @@
         "concepts/swiftui-framework.md",
         "skills/xcode-ide-guide.md"
       ]
+    },
+    "research:kimi-k3:2026-07-23": {
+      "type": "research",
+      "topic": "Kimi K3",
+      "researched_at": "2026-07-23T08:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 8,
+      "pages_created": [
+        "entities/kimi-k3.md",
+        "entities/moonshot-ai.md",
+        "concepts/mixture-of-experts.md",
+        "concepts/kimi-delta-attention.md",
+        "references/kimi-k3-technical-overview.md",
+        "references/kimi-k3-geopolitical-context.md",
+        "synthesis/Research: Kimi K3.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ]
+    },
+    "https://www.youtube.com/watch?v=8_JZehVSRAI": {
+      "type": "video",
+      "last_ingested": "2026-07-23T09:00:00Z",
+      "pages_produced": [
+        "references/kimi-k3-video-review-lingdu.md"
+      ],
+      "pages_updated": [
+        "entities/kimi-k3.md",
+        "synthesis/Research: Kimi K3.md",
+        "index.md"
+      ],
+      "source_type": "video"
+    },
+    "https://www.douyin.com/video/7664590818786692402": {
+      "type": "video",
+      "last_ingested": "2026-07-23T10:00:00Z",
+      "pages_produced": [
+        "references/kimi-k3-video-analysis-reportify.md"
+      ],
+      "pages_updated": [
+        "entities/kimi-k3.md",
+        "references/kimi-k3-geopolitical-context.md",
+        "synthesis/Research: Kimi K3.md",
+        "index.md"
+      ],
+      "source_type": "video"
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/归档 用 Chezmoi 管理配置文件.md": {
+      "ingested_at": "2026-07-25T08:30:00Z",
+      "size_bytes": 9483,
+      "modified_at": "2026-07-25T07:55:00Z",
+      "content_hash": "sha256:aa2c601aac1384f1dfccfa273c3d6496ecdb06d995467647a795764041878e5b",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/chezmoi-encryption-backends.md"
+      ],
+      "pages_updated": [
+        "concepts/chezmoi-workflow.md",
+        "concepts/chezmoi-templating.md",
+        "entities/gnu-stow.md"
+      ],
+      "last_ingested": "2026-07-25T02:54:45.226916+00:00",
+      "pages_produced": [
+        "concepts/chezmoi-workflow.md",
+        "concepts/chezmoi-templating.md",
+        "entities/gnu-stow.md",
+        "references/chezmoi-encryption-backends.md"
+      ]
+    },
+    "https://www.kimi.com/blog/kimi-k3": {
+      "last_ingested": "2026-07-23T12:00:00Z",
+      "content_hash": "sha256:kimi-blog-kimi-k3-official",
+      "source_type": "url",
+      "project": null,
+      "pages_produced": [
+        "references/kimi-k3-official-blog.md"
+      ],
+      "pages_updated": [
+        "entities/kimi-k3.md",
+        "concepts/kimi-delta-attention.md",
+        "synthesis/Research: Kimi K3.md",
+        "index.md"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Chezmoi 部署与拉取教程.md": {
+      "content_hash": "f64df38f28a284a4bd51d2d1da47e3c45b3ddc3fed64384c5e88009fe663e4d1",
+      "last_ingested": "2026-07-25T02:57:44.861274+00:00",
+      "pages_produced": [
+        "concepts/chezmoi-workflow"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/From the circle to epicycles.md": {
+      "content_hash": "d1605ffa4d71382f78c3bc86329de1912016aab9f77554906f1865c32f1e6406",
+      "last_ingested": "2026-07-25T02:58:25.354310+00:00",
+      "pages_produced": [
+        "concepts/fourier-series"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/QSLSの站.md": {
+      "content_hash": "bccda5bea78816a57bb24256e7a666776d92dd84a48c8ee8a3953ce26f184160",
+      "last_ingested": "2026-07-25T02:58:55.207042+00:00",
+      "pages_produced": [
+        "references/chezmoi-patterns-recipes"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/chezmoi 使用教程.md": {
+      "content_hash": "94107df369d26c64fd9ad636f14346913b3e5630412af9c3ea1fcf4f54dab371",
+      "last_ingested": "2026-07-25T02:59:03.971442+00:00",
+      "pages_produced": [
+        "references/chezmoi-patterns-recipes"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/chezmoi 配置文件管理与密钥安全实践.md": {
+      "content_hash": "9e1866ca222ed4b06c6b004dd6693099b706b65a9e281f5c7608b3421280c084",
+      "last_ingested": "2026-07-25T02:59:13.623291+00:00",
+      "pages_produced": [
+        "references/chezmoi-bitwarden-keychain"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/chezmoi：你的 dotfiles 管理神器.md": {
+      "content_hash": "94a40d7a9f84810b6a66f64d1106b2a938f52b47ddc447b4478f79eebf42416b",
+      "last_ingested": "2026-07-25T02:59:23.528858+00:00",
+      "pages_produced": [
+        "references/chezmoi-patterns-recipes"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/chezmoi：用一份 dotfiles 打通 macOS、Linux、Windows 三個作業系統.md": {
+      "content_hash": "ed9d01f087c41c1c2bb2bc23747f891edf129d9187f417c99d5c9fe3d0ec021b",
+      "last_ingested": "2026-07-25T02:59:35.744221+00:00",
+      "pages_produced": [
+        "references/chezmoi-patterns-recipes"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/一条命令复刻我的 macOS 开发环境：chezmoi + nix-darwin 实战 1.md": {
+      "content_hash": "de56cc6b65ae33590152b87746bdb9179da34f4efab5cfc5b8dd2ab14b99823d",
+      "last_ingested": "2026-07-25T03:00:10.832945+00:00",
+      "pages_produced": [
+        "references/chezmoi-nix-darwin-integration"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/多台机器 dotfiles 难同步？chezmoi 模板加密、一条命令还原  X-CMD 一键安装.md": {
+      "content_hash": "568be7ffd29dc4a6cc67d08347504fa42271fb6132e80ab99ed1f540edfcd3e6",
+      "last_ingested": "2026-07-25T03:00:35.915719+00:00",
+      "pages_produced": [
+        "references/chezmoi-patterns-recipes"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
+      "content_hash": "sha256:bdcd82ad58a22efd239ca7fb5b2eb7520616887bfb8f0aa842dde7815052a764",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "skills/claude-code-token-optimization",
+        "concepts/prompt-caching"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 配置管理完全指南 - 作用域、权限与企业部署.md": {
+      "content_hash": "sha256:acc7e03c02eed9043f14f7cdc2d2b2c033262f06e4b54e5ab57bf0ddc9f850a0",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "skills/claude-code-settings"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/Feather 签名工具.md": {
+      "content_hash": "sha256:703384d00ad15155158dda1811f54228852d30a9d8cd80880b65a1ac95413ca2",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "entities/feather-ios-sideload",
+        "skills/ios-sideloading-fundamentals"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/ManicEMU iOS 3DS 模拟器教程.md": {
+      "content_hash": "sha256:28d163110747d2ed36955960a19ac860f5e8bbf9c9c7c646ea93a739fe25f129",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "skills/ios-emulator-setup"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/NEOGEO.md": {
+      "content_hash": "sha256:c8e621ef1e53ce662a552b849325a152ba418c0509119492dde277d8ae7a7f8a",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "entities/neogeo-mame"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/iOS 证书、侧载、JIT、SideStore 和 LiveContainer 扫盲.md": {
+      "content_hash": "sha256:48fa7a9b7186a1c83181b45cc3735856449b9378b05cf9b60e48b64aa71e66b9",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "skills/ios-sideloading-fundamentals"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/nds折腾.md": {
+      "content_hash": "sha256:8ae2142ba23b1cb97f00aa8d6c67a00374590319734d1c91aa5a24f1e30081cc",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "entities/nds-flashcard"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/前端常见面试-存储缓存篇.md": {
+      "content_hash": "sha256:787d35b30868a248fdbc9bfa0054704c2d682e79b226d210530cfe97c034db21",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "concepts/frontend-storage-cache"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/如何在终端中优雅地听歌.md": {
+      "content_hash": "sha256:4b99d539502b8f96bc2619a260f9abeb7251185cd9a9ad435b86b90824d538be",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "skills/terminal-music"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/序章-起承转结.md": {
+      "content_hash": "sha256:27a15bd15af5191c9e7888e83eb1b1014b6f1534b954b4d2e14a3ef5b560922c",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "journal/fire-emblem-new-mystery-prologue"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/弄懂javascript的执行机制事件轮询微任务和宏任务定时器 - javascript学习重点归集 - 周陆军的个人网站.md": {
+      "content_hash": "sha256:a558c84cf54e6af716b2a6040916dc48e7acc1edd42f83316a9877e81de3c635",
+      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "pages_produced": [
+        "concepts/javascript-event-loop"
+      ]
+    },
+    "https://github.com/LiveContainer/LiveContainer/issues/1456": {
+      "ingested_at": "2026-07-26T03:00:00Z",
+      "source_url": "https://github.com/LiveContainer/LiveContainer/issues/1456",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-github-com-livecontainer-issues-1456.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-26T03:00:00Z",
+      "pages_produced": [
+        "misc/web-github-com-livecontainer-issues-1456.md"
+      ]
     }
   },
   "stats": {
-    "total_sources_ingested": 36,
-    "total_pages": 84,
+    "total_sources_ingested": 55,
+    "total_pages": 100,
     "total_projects": 1,
     "last_full_rebuild": null
   }

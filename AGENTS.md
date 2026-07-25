@@ -2,6 +2,8 @@
 
 A **skill-based framework** for building and maintaining an Obsidian knowledge base. No scripts or dependencies — everything is markdown instructions that you execute directly.
 
+**Always reply in Chinese**
+
 ## Configuration
 
 Resolve config using the Config Resolution Protocol in `llm-wiki/SKILL.md`:
