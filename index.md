@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-26T03:00:00Z*
+*This index is automatically maintained. Last updated: 2026-07-27T06:25:00Z*
 
 ## Concepts
 
@@ -30,6 +30,7 @@ title: Wiki Index
 - [[concepts/zustand-middleware-system]] — Zustand 中间件系统：StoreMutators 类型扩展、persist/devtools/immer/redux/subscribeWithSelector
 - [[concepts/zustand-react-integration]] — Zustand React 层：useSyncExternalStore + 选择器 + useShallow 浅比较防多余重渲染
 - [[concepts/macos-window-switcher]] — macOS 窗口切换器：替代 Cmd+Tab 的 app→window 粒度扩展，含 Space 过滤/标签下钻/快速动作
+- [[concepts/mcp-server-protocol-quirks]] — `claude mcp add` 默认项目级，`$HOME` 不被特殊处理，`--global` 才能真正全局（与 git config 一致）
 - [[concepts/asciidoc-markup]] — AsciiDoc 标记语言：表格/脚注/交叉引用/属性/条件内容内置，docs-as-code 友好
 - [[concepts/animation-easing-functions]] — 缓动函数：Penner 缓动 + Apple 参数化运动学 + 卷积滤波 + PD/PID 反馈控制四条路线
 - [[concepts/programming-pattern-categories]] — 编程模式五大分类（数据结构/并发/系统/内存/行为），按运行时职责切分，与 GoF 互补
@@ -37,6 +38,7 @@ title: Wiki Index
 - [[concepts/mixture-of-experts]] — MoE 混合专家架构：稀疏激活降低每 token 算力，内存与算力的核心权衡
 - [[concepts/kimi-delta-attention]] — Kimi Delta Attention：Moonshot 提出的长上下文 KV 缓存优化，100 万 token 下最高 6.3× 加速
 - [[concepts/dotfile-manager]] — Dotfile 管理工具五大流派（裸 git/Stow/chezmoi/Nix/云同步）的设计空间与权衡
+- [[concepts/shell-alias-taxonomy]] — Shell 别名分类体系：48 类 1250+ 别名的工程级组织方法
 - [[concepts/chezmoi-three-state-model]] — chezmoi 三态模型：源态/目标态/实际态，`apply` 是协调三个状态的过程
 - [[concepts/chezmoi-attribute-prefixes]] — chezmoi 17 个属性前缀（dot_/private_/encrypted_/modify_ 等），命名即元数据
 - [[concepts/chezmoi-templating]] — chezmoi 模板系统：Go text/template + sprig 扩展，按机器差异化
@@ -63,6 +65,8 @@ title: Wiki Index
 - [[entities/kimi-k3]] — Kimi K3：全球首个 3T 级开权重 LLM（2.8T 参数，MoE），代码评测第一，2026-07-27 发布
 - [[entities/moonshot-ai]] — Moonshot AI（月之暗面）：Kimi 品牌开发商，K 系列超大规模模型，架构创新应对算力限制
 - [[entities/chezmoi]] — chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制，三态模型 + 模板 + 加密
+- [[entities/sebastienrousseau-dotfiles]] — Trusted Shell Platform：chezmoi + dot CLI(53条) + 1250+ 别名的完整 shell 分发版
+- [[entities/trusted-shell-platform]] — Trusted Shell Platform 平台理念：幂等、声明式、跨平台 shell 环境分发
 - [[entities/gnu-stow]] — GNU Stow：symlink 农场式 dotfile 管理器，最简镜像流派代表
 
 ## Skills
@@ -93,6 +97,10 @@ title: Wiki Index
 - [[skills/pattern-study-method]] — 用 battle-tested-patterns 系统学习 46 模式：4 阶段路径 + 配套练习 + AI 编程助手技能（adopt-pattern/audit-pattern）
 - [[skills/fabric-usage-patterns]] — Fabric CLI 高频用法：YouTube 分析、Shell 别名、REST API、Obsidian 集成
 - [[skills/chezmoi-bitwarden-secrets]] — chezmoi Bitwarden 密钥注入 + 跨平台 Keychain/DPAPI 自动解锁 + git-filter-repo 历史清理
+- [[skills/vitepress-multilingual-docs]] — VitePress 22 语言文档站：SEO/PWA/无障碍/多语言同步策略
+- [[skills/chezmoi-vscode-integration]] — chezmoi edit/diff 配 VSCode（`code --wait` + `--diff`），dotfile 体验接近 IDE
+- [[skills/zellij-terminal-multiplexer]] — Rust 终端复用器，状态栏 + 提示键开箱即用，YAML 布局 + WebAssembly 插件
+- [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装：uv + cookbook auth + `claude mcp add --global`，23 个笔记本手工验证可读
 
 ## Synthesis
 
@@ -143,6 +151,7 @@ title: Wiki Index
 - [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接
 - [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 + 5次作业 + 3周自选项目，SwiftUI 核心课
 - [[references/chezmoi-official-site]] — chezmoi.io 官方首页：五大特性 + 单命令引导 + 当前版本
+- [[references/dot-cli-commands]] — dot CLI 53 条命令完整参考（Core/Diagnostics/Security/AI/Secrets 等 8 类）
 - [[references/chezmoi-templating-guide]] — 官方模板权威说明：Go text/template + sprig + 内置/数据/config 变量来源优先级
 - [[references/chezmoi-source-state-attributes]] — 17 个属性前缀 + 2 个后缀的完整参考
 - [[references/chezmoi-workflow-discussion]] — GitHub Discussions #2673：v3 方向 + 一周上手 + 七大常见坑
@@ -172,6 +181,11 @@ title: Wiki Index
 - [[synthesis/ios17-app-development-book × cs193p-spring-2025]] — 书（地图）× 课（罗盘）：两条 iOS/SwiftUI 学习路径的互补结构
 - [[synthesis/fabric-patterns × claude-code-settings]] — Fabric Patterns × Claude Code 配置：AI Unix 管道哲学在 Prompt 层与工具层的平行实践
 - [[synthesis/Research: Kimi K3]] — Kimi K3 研究综合：3T 级 MoE、Delta Attention、代码第一、整体接近 Fable 5，2026-07-27 权重发布
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — MoE 通用架构 × K3 首个 3T 实证：K3 用 Quantile Balancing/Per-Head Muon/SiTU/Gated MLA 重塑路由器与激活控制
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — KDA × K3：单点注意力创新嵌入全栈后变成「长程 Agent」系统基础
+- [[synthesis/concepts-dotfile-manager × entities-chezmoi]] — dotfile 五大流派 × chezmoi：中段定位的具体含义（比 Stow 复杂、比 Nix 简单、专注跨机器差异化）
+- [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — chezmoi 两条核心机制：模板（runtime 内容差异化）vs 命名前缀（文件系统语义元数据）
+- [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — PTP 四种时钟角色 × White Rabbit 工业实现：sub-ns 精度 + SyncE + 大量 TLV 扩展
 
 ## Misc
 

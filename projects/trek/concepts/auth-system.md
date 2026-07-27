@@ -28,7 +28,7 @@ relationships:
   - target: "[[projects/trek/concepts/mcp-server]]"
     type: uses
   - target: "[[synthesis/trek-auth-system × trek-mcp-server]]"
-    type: synthesized_in
+    type: related_to
 ---
 
 # Trek 认证与安全系统

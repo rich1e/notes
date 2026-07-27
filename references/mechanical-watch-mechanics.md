@@ -61,3 +61,6 @@ Bartosz Ciechanowski 交互文章 [Mechanical Watch](https://ciechanow.ski/mecha
 - 姿态（竖放/平放影响摆轮受到的重力）
 - 润滑油老化
 - 磁场干扰
+## 相关页面
+
+- [[journal/fire-emblem-new-mystery-prologue.md]]

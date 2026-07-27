@@ -9,19 +9,21 @@ summary: Tmux 终端复用器快捷键速查、配置要点及插件管理，适
 sources:
   - https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
 created: 2026-06-29
-updated: 2026-07-08
+updated: 2026-07-26
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
 base_confidence: 0.67
 provenance:
   extracted: 0.95
-  inferred: 0.05
-  ambiguous: 0.00
+  inferred: 0.04
+  ambiguous: 0.01
 relationships:
   - target: "[[skills/claude-code-settings]]"
     type: related_to
   - target: "[[skills/terminal-music]]"
+    type: related_to
+  - target: "[[skills/zellij-terminal-multiplexer]]"
     type: related_to
 ---
 
@@ -162,3 +164,4 @@ set -g @prefix_highlight_show_copy_mode 'on'
 
 - [[skills/claude-code-settings]] — Tmux 与 Claude Code session 配合使用
 - [[skills/terminal-music]] — 终端中优雅听歌
+- [[skills/zellij-terminal-multiplexer]] — tmux 友好的现代替代：Rust 写、YAML 布局、状态栏开箱即用

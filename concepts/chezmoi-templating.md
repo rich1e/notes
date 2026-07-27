@@ -155,3 +155,7 @@ X-CMD 教程还列出 1Password、Bitwarden、LastPass、KeePassXC、gopass、pa
 - [[concepts/chezmoi-workflow]]
 - [[concepts/dotfile-manager]]
 - [[references/chezmoi-templating-guide]]
+
+## 相关页面
+
+- [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — synthesis

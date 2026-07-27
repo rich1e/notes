@@ -74,3 +74,7 @@ WR 设备在不使用 WR 增强功能时完全兼容标准 PTP，可以与普通
 ## 相关
 
 - [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
+
+## 相关页面
+
+- [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — synthesis

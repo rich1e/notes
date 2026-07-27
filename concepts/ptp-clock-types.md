@@ -129,3 +129,7 @@ BC（汇聚层交换机）—— 隔离上下游延迟误差
 
 - [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议文本规定的是协议行为的最少集合，LinuxPTP 揭示了协议必须解决的工程空白：PI 伺服、PHC 桥接、硬件时间戳三级精度分层。
 - [[references/ptp-book-overview]] — Lularible 的开源 PTP 技术书，41节从时间本质到 LinuxPTP 源码再到手写 ptp-lite 实现
+
+## 相关页面
+
+- [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — synthesis

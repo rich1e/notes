@@ -27,7 +27,7 @@ relationships:
   - target: "[[projects/trek/concepts/addon-system]]"
     type: uses
   - target: "[[synthesis/trek-auth-system × trek-mcp-server]]"
-    type: synthesized_in
+    type: related_to
 ---
 
 # Trek MCP 服务器 — AI 集成接口

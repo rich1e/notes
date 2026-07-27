@@ -136,3 +136,7 @@ keyring 在用户登录时自动解锁，模板渲染即可拿到 token。
 - [[concepts/chezmoi-attribute-prefixes]]
 - [[references/chezmoi-templating-guide]]
 - [[references/chezmoi-official-site]]
+## 相关页面
+
+- [[references/chezmoi-patterns-recipes.md]]
+- [[concepts/chezmoi-workflow.md]]

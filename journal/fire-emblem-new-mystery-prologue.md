@@ -8,15 +8,15 @@ summary: FE 新黑暗龙序章（起承转结）四部分关卡攻略，H 难度
 sources:
   - http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/x.htm
 created: 2026-06-29
-updated: 2026-07-25
+updated: 2026-07-26
 lifecycle_changed: "2026-07-25"
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
-base_confidence: 0.50
+base_confidence: 0.55
 provenance:
-  extracted: 0.90
-  inferred: 0.08
+  extracted: 0.92
+  inferred: 0.06
   ambiguous: 0.02
 relationships:
   - target: "[[entities/nds-flashcard]]"

@@ -68,3 +68,5 @@ KDA 与 prefill 缓存结合，使 K3 能以有竞争力的 token 价格提供�
 - [[entities/kimi-k3]] — 使用此技术的模型
 - [[entities/moonshot-ai]] — 开发方
 - [[concepts/mixture-of-experts]] — K3 的另一个核心架构创新
+
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — synthesis

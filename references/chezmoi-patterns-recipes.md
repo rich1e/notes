@@ -254,6 +254,8 @@ chezmoi update
 
 ## 相关页面
 
+- [[concepts/chezmoi-workflow.md]]
+- [[references/chezmoi-encryption-backends.md]]
 - [[concepts/chezmoi-templating]] — 模板机制
 - [[concepts/chezmoi-attribute-prefixes]] — 命名作元数据
 - [[concepts/chezmoi-workflow]] — 四动词 + update/init

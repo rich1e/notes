@@ -7,17 +7,22 @@ sources:
   - "https://chezmoi.io/"
   - "https://axionl.me/p/%E5%BD%92%E6%A1%A3-%E7%94%A8-chezmoi-%E7%AE%A1%E7%90%86%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/#gnome-keyring"
   - "https://litearch.cn/obsidian/notes/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/%E7%BC%96%E7%A8%8B/Ops/17%E3%80%81chezmoi%20%E9%83%A8%E7%BD%B2%E7%BB%B4%E6%8A%A4%E6%95%99%E7%A8%8B.html"
+  - "https://www.shuzhiduo.com/A/kvJ3V17Xzg/"
+  - "https://github.com/twpayne/chezmoi/discussions/2424"
 created: 2026-07-25T02:27:13Z
-updated: 2026-07-25T10:00:00Z
+updated: 2026-07-26T10:00:00Z
 summary: chezmoi 工作流围绕 add/edit/diff/apply 四个动词；跨机同步可用 update，亦可用 czpush/czpull/czapply 三段式别名明确推送、拉取与部署边界。
 provenance:
-  extracted: 0.82
-  inferred: 0.13
-  ambiguous: 0.05
-base_confidence: 0.66
+  extracted: 0.85
+  inferred: 0.12
+  ambiguous: 0.03
+base_confidence: 0.70
 lifecycle: draft
 lifecycle_changed: 2026-07-25
 tier: supporting
+relationships:
+  - target: "[[skills/chezmoi-vscode-integration]]"
+    type: related_to
 ---
 
 # chezmoi Workflow — 四个动词 + 一次更新
@@ -73,9 +78,30 @@ sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply $GITHUB_USERNAME
 | 看管理清单 | `chezmoi managed` |
 | 停管（保留目标） | `chezmoi forget <file>` |
 
+## 编辑器与 diff 工具自定义
+
+`chezmoi edit` 默认跟随 `$VISUAL` / `$EDITOR`，`chezmoi diff` 默认走 `diff` 命令。两者都可在 `~/.config/chezmoi/chezmoi.toml` 中改成更顺手的工具。
+
+最常见的一组是 **VSCode** ([#2424](https://github.com/twpayne/chezmoi/discussions/2424))：
+
+```toml
+[edit]
+command = "code"
+args = ["--wait"]
+
+[diff]
+command = "code"
+args = ["--wait", "--diff", "{{ .Destination }}", "{{ .Target }}"]
+```
+
+`--wait` 必不可少——VSCode 默认非阻塞，chezmoi 需要等待编辑器关闭才能继续 diff/apply。
+
+详见 [[skills/chezmoi-vscode-integration]]。
+
 ## 相关链接
 
 - [[concepts/chezmoi-three-state-model]]
 - [[concepts/dotfile-manager]]
 - [[concepts/chezmoi-attribute-prefixes]]
 - [[references/chezmoi-workflow-discussion]]
+- [[skills/chezmoi-vscode-integration]]

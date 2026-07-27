@@ -22,7 +22,7 @@ relationships:
   - target: "[[skills/ptp-implementation]]"
     type: related_to
   - target: "[[synthesis/ptp-ieee1588 × linuxptp]]"
-    type: synthesized_in
+    type: related_to
 ---
 
 # LinuxPTP

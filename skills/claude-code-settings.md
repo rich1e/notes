@@ -10,11 +10,11 @@ sources:
   - https://www.claudecode.xyz/articles/claude-code-mm4tlbbs
   - https://moksaweb.com/claude-code-terminal-configuration/
 created: 2026-06-29
-updated: 2026-07-25
+updated: 2026-07-26
 tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-25"
-base_confidence: 0.83
+base_confidence: 0.85
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -23,6 +23,8 @@ relationships:
   - target: "[[skills/claude-code-token-optimization]]"
     type: related_to
   - target: "[[skills/tmux]]"
+    type: related_to
+  - target: "[[concepts/mcp-server-protocol-quirks]]"
     type: related_to
 ---
 
@@ -184,8 +186,23 @@ export CLAUDE_CODE_DISABLE_AUTOUPDATE=1
 - **团队协作**：权限规则和 Hook 放 `.claude/settings.json` 并提交 git，MCP 配置放 `.mcp.json`
 - **企业**：Managed 作用域强制安全策略，通过 MDM 统一部署
 
+## MCP servers 作用域（两层）
+
+`claude mcp add` 写入 `~/.claude.json` 时分两层：
+
+| 作用域 | 字段 | 用途 |
+|--------|------|------|
+| **全局** | 顶层 `mcpServers` | 所有项目、所有会话 |
+| **项目** | `projects.<路径>.mcpServers` | 仅该目录下的会话 |
+
+**关键陷阱**：`claude mcp add` 默认是项目级；`$HOME` 目录下的执行也是项目级（写入 `$HOME` 这条路径对应的项目条目）。想真正全局生效必须加 `--global`，规则与 `git config` 一致。
+
+详见 [[concepts/mcp-server-protocol-quirks]]。
+
 ## 相关页面
 
 - [[skills/claude-code-token-optimization]] — Token 优化策略
 - [[skills/tmux]] — 终端复用，配合 Claude Code 使用
+- [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装流程
+- [[concepts/mcp-server-protocol-quirks]] — `claude mcp add --global` 的作用域陷阱详解
 - [[synthesis/fabric-patterns × claude-code-settings]] — Claude Code 配置与 Fabric Pattern 的 AI Unix 管道哲学

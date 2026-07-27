@@ -95,6 +95,7 @@ const withPrefix = phone.startsWith('9') ? phone : `9${phone}`;
 
 ## 相关页面
 
+- [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md]]
 - [[xk-ai-talk-desk-ui/concepts/agent-state-machine]]
 - [[xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
 - [[xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]]

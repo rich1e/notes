@@ -9,8 +9,9 @@ sources:
   - "https://yangzh.cn/posts/posts/chezmoi-dotfiles-secrets.html"
   - "https://cn.x-cmd.com/install/chezmoi"
   - "https://juejin.cn/post/7589477341766352942"
+  - "https://github.com/sebastienrousseau/dotfiles.github.io"
 created: 2026-07-25T02:27:13Z
-updated: 2026-07-25T10:00:00Z
+updated: 2026-07-27T06:20:00Z
 summary: >-
   chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制分发，三态模型 + 模板 + 加密 + 脚本。
 provenance:
@@ -65,6 +66,10 @@ lifecycle_changed: 2026-07-25
 - macOS 可与 nix-darwin 分层协作，由 chezmoi 管用户级配置、nix-darwin 管系统包与 defaults，见 [[references/chezmoi-nix-darwin-integration]]。
 - 可用 bootstrap 脚本安装 chezmoi、age 和常用 CLI，再执行 `init --apply` 完成新机恢复。
 
+## 知名使用案例
+
+- [[entities/sebastienrousseau-dotfiles]] — Trusted Shell Platform，以 chezmoi 为核心状态管理层，叠加 dot CLI（53 条命令）和 1,250+ 别名，面向跨平台开发者分发
+
 ## 相关链接
 
 - [[concepts/dotfile-manager]]
@@ -79,3 +84,8 @@ lifecycle_changed: 2026-07-25
 - [[synthesis/Research: chezmoi]]
 - [[skills/chezmoi-bitwarden-secrets]]
 - [[references/chezmoi-nix-darwin-integration]]
+
+## 相关页面
+
+- [[synthesis/concepts-dotfile-manager × entities-chezmoi]] — synthesis
+- [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — synthesis

@@ -56,3 +56,5 @@ lifecycle_changed: 2026-07-23
 
 - [[entities/kimi-k3]] — 2.8T/896 专家 MoE 的具体实现
 - [[entities/moonshot-ai]] — Kimi K3 的开发商
+
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — synthesis

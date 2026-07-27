@@ -44,7 +44,7 @@ Pre-write git snapshot: `fcd71c4ecf5df4912ffae2c852fbfe12dd712e5b`
 
 ### 真实破损链接（1 个）
 
-- `entities/fabric-ai.md:98` — `[[concepts/prompt-engineering-patterns]]` 目标页不存在 → 转为注释文本：`提示工程思想 <!-- broken link -->`
+- `entities/fabric-ai.md:98` — ``concepts/prompt-engineering-patterns`` 目标页不存在 → 转为注释文本：`提示工程思想 <!-- broken link -->`
 
 ---
 
@@ -129,3 +129,6 @@ Pre-write git snapshot: `fcd71c4ecf5df4912ffae2c852fbfe12dd712e5b`
 - `llm` 的别名列 `Deepseek`，同时 `Deepseek` 的规范形式也是 `llm`（循环）
 - `ios` 与 `mobile` 互为别名（语义上不等价）
 - `macOS` 与 `macos` 互相对应（大小写规范化可以，但方向需统一）
+## 相关页面
+
+- [[synthesis/consolidation-2026-07-07.md]]

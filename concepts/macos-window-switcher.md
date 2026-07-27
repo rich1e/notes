@@ -30,7 +30,7 @@ relationships:
   - target: "[[entities/witch]]"
     type: related_to
   - target: "[[synthesis/macos-window-switcher × macos-window-switchers]]"
-    type: synthesized_in
+    type: related_to
 ---
 
 # macOS 窗口切换器

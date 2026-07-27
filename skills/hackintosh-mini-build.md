@@ -76,6 +76,8 @@ relationships:
 
 ## 相关页面
 
+- [[concepts/macos-window-switcher.md]]
+- [[references/cs193p-spring-2025.md]]
 - [[skills/xcode-ide-guide]] — macOS 上的 Xcode 开发环境
 - [[skills/terminal-music]] — macOS CLI 工具使用
 - [[concepts/macos-window-switcher]] — 替代 macOS 内置 Cmd+Tab 的应用/窗口/标签切换工具，核心价值是把"app 粒度"扩展为"window 粒度"，并加入标签下钻、Space 过滤、

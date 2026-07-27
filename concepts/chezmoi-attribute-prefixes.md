@@ -81,3 +81,7 @@ chezmoi 的核心理念：**不用额外 YAML/JSON 描述文件属性，直接�
 - [[concepts/chezmoi-templating]]
 - [[concepts/dotfile-manager]]
 - [[references/chezmoi-source-state-attributes]]
+
+## 相关页面
+
+- [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — synthesis

@@ -160,3 +160,6 @@ Kimi Agent 内置了可运行的虚拟机环境：
 - [[concepts/llm-speculative-decoding]] — 相关推理加速技术
 - [[concepts/prompt-caching]] — 相关 KV 缓存复用技术
 - [[synthesis/Research: Kimi K3]] — 综合研究报告
+
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — synthesis
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — synthesis

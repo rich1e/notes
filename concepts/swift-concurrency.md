@@ -10,7 +10,7 @@ relationships:
   - target: "[[projects/dayfold/dayfold]]"
     type: uses
   - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
-    type: synthesized_in
+    type: related_to
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

@@ -20,7 +20,7 @@ relationships:
   - target: "[[skills/ios-multithreading]]"
     type: related_to
   - target: "[[synthesis/arc-memory-management × swift-concurrency]]"
-    type: synthesized_in
+    type: related_to
 
   - target: "[[references/cs193p-spring-2025]]"
     type: related_to

@@ -145,3 +145,7 @@ endif::[]
 
 - [Tower Blog: AsciiDoc Quick Guide](https://www.git-tower.com/blog/asciidoc-quick-guide/)（本文主要来源）
 - adoc Studio 完整指南：<https://www.adoc-studio.app/blog/asciidoc-guide>
+## 相关页面
+
+- [[references/chezmoi-templating-guide.md]]
+- [[concepts/fabric-patterns.md]]

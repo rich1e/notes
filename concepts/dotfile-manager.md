@@ -60,6 +60,18 @@ lifecycle_changed: 2026-07-25
 
 dotfile manager 是 [[concepts/chezmoi-three-state-model]] 这类"声明式状态机"思路的最小可行案例——把代码与配置用同一种工程方法管理。其取舍逻辑（编译期差异 vs 运行期差异、单源 vs 多源）与 [[concepts/programming-pattern-categories]] 中的 Data Structures / Memory 模式同构。
 
+## 工程级完整案例
+
+**[[entities/sebastienrousseau-dotfiles]]（Trusted Shell Platform）** 展示了"声明式 dotfile 管理"的工业规模化：
+
+- chezmoi 作为底层状态机
+- 叠加 53 条 `dot` CLI 命令统一生命周期管理
+- 1,250+ 别名预置（48 类，见 [[concepts/shell-alias-taxonomy]]）
+- 22 语言文档站（[[skills/vitepress-multilingual-docs]]）
+- 诊断命令 14 条（`dot doctor`、`dot drift`、`dot chaos`）
+
+这是"裸 chezmoi"到"完整 shell 分发版"的典型演进路径。^[inferred]
+
 ## 相关链接
 
 - [[concepts/chezmoi-three-state-model]]
@@ -68,3 +80,7 @@ dotfile manager 是 [[concepts/chezmoi-three-state-model]] 这类"声明式状�
 - [[concepts/chezmoi-workflow]]
 - [[entities/chezmoi]]
 - [[entities/gnu-stow]]
+
+## 相关页面
+
+- [[synthesis/concepts-dotfile-manager × entities-chezmoi]] — synthesis

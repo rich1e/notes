@@ -145,7 +145,7 @@ npx skills add Totoro-jam/battle-tested-patterns/plugins/pattern-skills
 - **和你自己代码库的对照** — "我们项目里的 XX 是不是这个模式的实现？"
 - **面试时被问到的题** — "如果面试官问 MVCC，你能立刻说出 PostgreSQL 的 heap_page_prune 吗？"
 
-后续可以用 [[concepts/...]] 给单个模式单独开概念页（不是这次 ingest 的目标，避免重复）。
+后续可以用 `concepts/...` 给单个模式单独开概念页（不是这次 ingest 的目标，避免重复）。
 
 ## 提醒
 

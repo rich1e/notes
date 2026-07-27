@@ -10,14 +10,14 @@ sources:
   - https://www.onmyodev.com/2026/03/feather/
   - https://www.onmyodev.com/2026/05/ios-sideloading-faq/
 created: 2026-06-29
-updated: 2026-07-25
+updated: 2026-07-26
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
-base_confidence: 0.50
+base_confidence: 0.55
 provenance:
-  extracted: 0.90
-  inferred: 0.08
+  extracted: 0.92
+  inferred: 0.06
   ambiguous: 0.02
 ---
 
@@ -43,13 +43,15 @@ provenance:
 苹果对付费开发者签名盗版软件零容忍。PPQ 保护在签名时于包名后附加随机字符串，绕过包名监控。
 - 入口：设置 → 签名选项 → PPQ 保护
 
+### 强制 Liquid Glass
+签名选项底部可通过修改框架信息强制 App 使用 iOS 26 Liquid Glass 界面风格（适合老设备体验新系统观感）。
+
 ### 机上安装（无需外部服务器）
 通过 Pairing File + 本地回环实现设备自连接安装，无需外部安装服务器：
 - 入口：设置 → 安装
-- 将“安装类型”从“服务器”改为 `idevice`
+- 将"安装类型"从"服务器"改为 `idevice`
 
 ### 其他
-- 签名选项底部可通过修改框架信息，强制 App 使用 iOS 26 Liquid Glass 界面风格
 - 签名时可修改图标、名称、包名、软件属性
 
 ## 安装流程

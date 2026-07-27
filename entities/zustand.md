@@ -27,7 +27,7 @@ relationships:
   - target: "[[concepts/zustand-react-integration]]"
     type: related_to
   - target: "[[synthesis/zustand-core-architecture × zustand]]"
-    type: synthesized_in
+    type: related_to
 ---
 
 # Zustand — 轻量级 React 状态管理库

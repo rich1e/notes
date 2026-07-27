@@ -1,6 +1,66 @@
 {
   "recentFiles": [
     {
+      "basename": "dot-cli-commands",
+      "path": "references/dot-cli-commands.md"
+    },
+    {
+      "basename": "sebastienrousseau-dotfiles",
+      "path": "entities/sebastienrousseau-dotfiles.md"
+    },
+    {
+      "basename": "vitepress-multilingual-docs",
+      "path": "skills/vitepress-multilingual-docs.md"
+    },
+    {
+      "basename": "trusted-shell-platform",
+      "path": "entities/trusted-shell-platform.md"
+    },
+    {
+      "basename": "shell-alias-taxonomy",
+      "path": "concepts/shell-alias-taxonomy.md"
+    },
+    {
+      "basename": "dotfile-manager",
+      "path": "concepts/dotfile-manager.md"
+    },
+    {
+      "basename": "chezmoi-three-state-model",
+      "path": "concepts/chezmoi-three-state-model.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "zustand-core-architecture × zustand",
+      "path": "synthesis/zustand-core-architecture × zustand.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "zellij-terminal-multiplexer",
+      "path": "skills/zellij-terminal-multiplexer.md"
+    },
+    {
+      "basename": "Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具",
+      "path": "Clippings/Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具.md"
+    },
+    {
+      "basename": "ios-sideloading-fundamentals",
+      "path": "skills/ios-sideloading-fundamentals.md"
+    },
+    {
+      "basename": "web-github-com-livecontainer-issues-1456",
+      "path": "misc/web-github-com-livecontainer-issues-1456.md"
+    },
+    {
       "basename": "使用 chezmoi & vscode, 管理你的 dotfiles",
       "path": "Clippings/使用 chezmoi & vscode, 管理你的 dotfiles.md"
     },
@@ -25,20 +85,8 @@
       "path": "concepts/chezmoi-workflow.md"
     },
     {
-      "basename": "chezmoi-three-state-model",
-      "path": "concepts/chezmoi-three-state-model.md"
-    },
-    {
-      "basename": "dotfile-manager",
-      "path": "concepts/dotfile-manager.md"
-    },
-    {
       "basename": "chezmoi",
       "path": "entities/chezmoi.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "chezmoi 使用教程",
@@ -133,10 +181,6 @@
       "path": "_raw/_archived/github-danielmiessler-Fabric.md"
     },
     {
-      "basename": "zustand-core-architecture × zustand",
-      "path": "synthesis/zustand-core-architecture × zustand.md"
-    },
-    {
       "basename": "arc-memory-management",
       "path": "concepts/arc-memory-management.md"
     },
@@ -155,50 +199,6 @@
     {
       "basename": "fabric-patterns",
       "path": "concepts/fabric-patterns.md"
-    },
-    {
-      "basename": "fabric-usage-patterns",
-      "path": "skills/fabric-usage-patterns.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "zustand-chrome-storage",
-      "path": "projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage.md"
-    },
-    {
-      "basename": "jrfed-zaxd-mediation-tool",
-      "path": "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md"
-    },
-    {
-      "basename": "pattern-study-method",
-      "path": "skills/pattern-study-method.md"
-    },
-    {
-      "basename": "programming-pattern-categories",
-      "path": "concepts/programming-pattern-categories.md"
-    },
-    {
-      "basename": "pattern-catalog-battle-tested-patterns",
-      "path": "references/pattern-catalog-battle-tested-patterns.md"
-    },
-    {
-      "basename": "ios-design-patterns",
-      "path": "references/ios-design-patterns.md"
-    },
-    {
-      "basename": "battle-tested-patterns",
-      "path": "entities/battle-tested-patterns.md"
-    },
-    {
-      "basename": "From the circle to epicycles",
-      "path": "Clippings/From the circle to epicycles.md"
-    },
-    {
-      "basename": "bettercmdtab",
-      "path": "entities/bettercmdtab.md"
     }
   ],
   "omittedPaths": [],
