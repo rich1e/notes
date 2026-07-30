@@ -286,6 +286,28 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 Obsidian 的「排除文件夹」功能（`app.json` 的 `userIgnoreFilters`）只排除搜索结果、Graph View 和 Unlinked Mentions，**不能阻止** Dataview、obsidian-linter、omnisearch 等插件扫描文件。如需彻底排除，将目录改为点开头（如 `_raw/.archived`）是唯一可靠方案。
 
+### 断链扫描器改进（`_meta/lint-fix.py`）
+
+**背景**：`/wiki-lint` 内置的断链扫描器有两类误报——一是把代码块里的 bash 测试语法 `[[ -z "$var" ]]` 当成 wikilink（一次 lint 就误报 65 条），二是把 `sources/` 目录排除在扫描外，导致 Research 页对 `[[sources/...]]` 的引用全被标为断链（误报 40 条）。
+
+**方案**：改进版扫描器**不改动框架**，而是作为 vault 内独立工具存放于 `_meta/lint-fix.py`，随本仓库 git 管理。**原因**：`wiki-lint` 的 `SKILL.md` 位于 pipx 安装目录（`~/.local/pipx/venvs/obsidian-wiki/.../_data/skills/wiki-lint/`），执行 `pipx upgrade obsidian-wiki` 时整个 `_data/` 会被覆盖，直接改框架文件会在升级时无声丢失。放进 `_meta/` 则永久保留、不受框架升级影响。
+
+**改进点**：
+
+- `in_code_block()`——统计位置前的 ` ``` ` 数量，奇数即在代码块内，跳过（消除 65 条 bash 误报）
+- 将 `sources/` 从 `SKIP_DIRS` 移入 `WIKI`，视为一等 wiki 目录（`sources/` 页均有完整 frontmatter、`category: references`），解析 40 条 `[[sources/...]]` 链接
+- 归一化目标名，兼容 `synthesis/X × Y.md` 这类含空格与 `:` 的文件名
+- 输出行号，并将结果分为 6 类：`real_fix`（真断链→重定向）/ `placeholder_remove`（模板占位符）/ `not_built_remove`（待建概念，保留）/ `unresolved_remove`（需人工）/ `bash_artifact`（代码残留）/ `ok`
+
+**用法**（手动运行，不自动挂到 `/wiki-lint`）：
+
+```bash
+python3 _meta/lint-fix.py .              # 分类报告
+python3 _meta/lint-fix.py . --json       # 机器可读，供后续修复工具消费
+```
+
+`REDIRECTS`、`NOT_YET_BUILT`、`PLACEHOLDER_KEYS` 三张白名单为本 vault 手工维护，发现新模式时在脚本内追加。首次落地（2026-07-30）后，全库未解析 wikilink 从 40 降至 0。
+
 ## 最佳实践
 
 - 统一使用 `_raw/` 作为待加工原始资料的暂存入口，网页裁剪进 `Clippings/`，分类资料进 `buckets/`。
