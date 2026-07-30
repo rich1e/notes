@@ -12,3 +12,7 @@ lifecycle: draft
 lifecycle_changed: 2026-07-23
 base_confidence: 0.65
 ---
+
+## Related
+
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — MoE 教科书 vs K3 实证(Quantile Balancing / SiTU)

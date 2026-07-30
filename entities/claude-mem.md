@@ -71,3 +71,7 @@ claude-mem 通过 `mcp-search` MCP 服务器暴露 4 个工具，配合 3 层检
 - [[skills/claude-mem-memory-usage]] — 安装、检索、知识 agent、调优实操
 - [[entities/claude-code]] — 宿主 agent
 - [[concepts/mcp-server-protocol-quirks]] — 同类安装作用域坑
+
+## Related
+
+- [[synthesis/Research: claude-mem 长期记忆]] — 自身综合页(入口)

@@ -85,3 +85,7 @@ lifecycle_changed: 2026-07-27
 - concepts/scaling-laws
 - [[sources/stanford-cs336-spring2025]]
 - [[sources/li-hongyi-genai-2025]]
+
+## Related
+
+- [[synthesis/Research: 学习AI大模型]] — 综合页:2025 Test-Time Compute 范式转向的上下文

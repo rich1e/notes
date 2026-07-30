@@ -66,3 +66,7 @@ lifecycle_changed: "2026-07-29"
 - [[concepts/claude-code-hooks-lifecycle]] — 驱动这条流水线的 6 个 hook
 - [[skills/claude-mem-memory-usage]] — 把架构落成日常操作
 - [[concepts/prompt-caching]] — 同属「上下文复用」哲学（KV 缓存 vs 跨会话记忆）
+
+## Related
+
+- [[synthesis/Research: claude-mem 长期记忆]] — 综合页:capture→compress→inject 流水线的端到端实操

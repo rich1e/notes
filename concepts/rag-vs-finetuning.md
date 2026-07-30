@@ -95,3 +95,7 @@ lifecycle_changed: 2026-07-27
 - [[concepts/llm-learning-path]]
 - concepts/instruction-tuning
 - [[sources/sebastian-raschka-llms-from-scratch-book]]
+
+## Related
+
+- [[synthesis/Research: 学习AI大模型]] — 综合页:Prompt/RAG/FT 决策矩阵的完整版

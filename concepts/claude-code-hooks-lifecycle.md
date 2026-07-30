@@ -54,3 +54,7 @@ Claude Code 的 hook 系统允许插件在会话生命周期的特定节点执�
 - [[entities/claude-mem]] / [[concepts/claude-mem-memory-architecture]] — hook 驱动的记忆系统
 - [[skills/claude-code-settings]] — 配置作用域
 - [[concepts/mcp-server-protocol-quirks]] — MCP 服务器作用域
+
+## Related
+
+- [[synthesis/Research: claude-mem 长期记忆]] — 综合页:6 个 hook 装在 claude-mem 上的具体效果

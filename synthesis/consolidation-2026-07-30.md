@@ -54,7 +54,7 @@ relationships: []
 
 ### Skipped: bash test 误识别 (6 处,保留原文)
 
-`[[-z ""]]` / `[[-n ""]]` / `[[! -f ""]]` / `[[-z ""]]` 全部在 ```bash 代码块内, 是 bash test 语法不是 wikilink, lint 正则误识别。**未修改** (否则会破坏 bash 代码)。**未来改进**: lint 工具的 wikilink 扫描应跳过代码块。
+`[[ -z "$pw" ]]` / `[[ -n "$BW_SESSION" ]]` / `[[ ! -f "$cred_file" ]]` / `[[ -z "$ZELLIJ" ]]` 全部在 ```bash 代码块内, 是 bash test 语法不是 wikilink, lint 正则误识别。**未修改** (否则会破坏 bash 代码)。**未来改进**: lint 工具的 wikilink 扫描应跳过代码块。
 
 ## base_confidence 补全 (5 files)
 

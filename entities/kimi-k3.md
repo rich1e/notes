@@ -18,3 +18,8 @@ lifecycle: draft
 lifecycle_changed: 2026-07-23
 base_confidence: 0.7
 ---
+
+## Related
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — K3 的 MoE 实证:Per-Head Muon / Gated MLA
+
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — KDA 单独 6.3× 加速, 嵌入全栈后角色

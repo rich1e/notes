@@ -113,3 +113,7 @@ lifecycle_changed: 2026-07-27
 - [[concepts/llm-training-pipeline]]
 - concepts/transformer-architecture
 - [[sources/dakingrai-mech-interp-papers]]
+
+## Related
+
+- [[synthesis/Research: 学习AI大模型]] — 综合页:Mechanistic Interp 在 Scientist 轨道的位置

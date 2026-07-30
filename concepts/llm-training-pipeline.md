@@ -86,3 +86,7 @@ RLVR 是 2024 末–2025 的关键转向，代表作：DeepSeek-R1、OpenAI o1/o
 - concepts/scaling-laws
 - [[sources/andrej-karpathy-zero-to-hero]]
 - [[sources/stanford-cs336-spring2025]]
+
+## Related
+
+- [[synthesis/Research: 学习AI大模型]] — 综合页:三阶段训练流程 + Engineer/Scientist 双轨

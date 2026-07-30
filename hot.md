@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-30T03:08:00Z
+updated: 2026-07-30T03:45:00Z
 ---
 
 # Hot Cache
@@ -9,6 +9,7 @@ updated: 2026-07-30T03:08:00Z
 
 ## Recent Activity
 
+- [2026-07-30 03:45] ORPHAN_RESCUE — 9 orphan 接入图, 11 文件改写. **P0 修复** `synthesis/Research: claude-mem 长期记忆` 0→3 inlinks(从 claude-mem-memory-architecture / claude-code-hooks-lifecycle / entities/claude-mem 三处 hub 反向链入);**P1 修复** `synthesis/Research: 学习AI大模型` 0→4 inlinks(从 llm-training-pipeline / rag-vs-finetuning / test-time-compute / mechanistic-interpretability 四处反向链入);**bonus 修复** Kimi Delta Attention × K3 + MoE × K3 2 个 synthesis 各 0→2 inlinks(从 kimi-delta-attention / mixture-of-experts / entities/kimi-k3 反向链入, 之前 7-23 wiki-synthesize 漏反链). **lint 工具改进**: 改进版写到 `/tmp/lint-fix.py` — 跳过 code block(消除 6 个 bash `[[ -z "$pw" ]]` 误报) + 5 类分类(real_fix / placeholder_remove / not_built_remove / unresolved_remove / bash_artifact) + 行号定位 + 重定向表(可扩展). **剩余 5 orphan**: asciidoc-markup(偏个人偏好, P5) + 2 个 dayfold 内部参考(影响小, P4) + 2 个 audit/consolidation 报告(本就不应入 wiki 图). **40 个 unresolved 全部是 `sources/...` 引用** — research 资源被排除在 wiki 扫描外(本应如此), 但页内 wikilink 仍指向 `sources/xxx` 路径, 需人工决定: A) 把 sources/ 纳入 wiki 扫描; B) 把 `[[sources/xxx]]` 改成 markdown 链接 `[text](URL)`. 留待后续 review.
 - [2026-07-30 03:08] WIKI_SYNTHESIZE — 围绕 4 个被 cross-linker 救回的孤页(fourier-series / asciidoc-markup / hackintosh-mini-build / mechanical-watch-mechanics)挖出 3 个新合成页。
   - [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — **频域 vs 时域曲线构造的正交关系**:傅里叶/本轮链调「哪些频率存在」(频域),缓动函数调「时间如何插值」(时域)。Strongest objection:category error(分析 vs 构造),反驳:傅里叶级数工程上是 synthesis 工具,两者都是 generate。可检验 query:能否用傅里叶合成 cubic-bezier(0.4, 0, 0.2, 1) 形状?
   - [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — **摆轮+擒纵=PD 反馈控制器的物理实现**:游丝=stiffness(K_p),空气阻尼=damping(K_d),擒纵=离散 tick 量化。300 年前的钟表匠在做 spring 动画,只是输出是齿轮不是像素。

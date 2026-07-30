@@ -13,3 +13,7 @@ lifecycle: draft
 lifecycle_changed: 2026-07-23
 base_confidence: 0.65
 ---
+
+## Related
+
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — KDA 嵌入全栈后变"长程 Agent 基础"
