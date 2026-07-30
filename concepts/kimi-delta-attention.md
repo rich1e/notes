@@ -1,7 +1,7 @@
 ---
 title: Kimi Delta Attention
 category: concepts
-tags: [ai, llm, attention-mechanism, long-context]
+tags: [llm, attention-mechanism, long-context]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
   - "https://www.kimi.com/blog/kimi-k3"

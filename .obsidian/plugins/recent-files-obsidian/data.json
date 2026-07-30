@@ -1,6 +1,90 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "tmux",
+      "path": "skills/tmux.md"
+    },
+    {
+      "basename": "Research: DESIGN.md 工作流",
+      "path": "synthesis/Research: DESIGN.md 工作流.md"
+    },
+    {
+      "basename": "stitch-design-system",
+      "path": "projects/dayfold/references/stitch-design-system.md"
+    },
+    {
+      "basename": "google-stitch",
+      "path": "entities/google-stitch.md"
+    },
+    {
+      "basename": "dayfold",
+      "path": "projects/dayfold/dayfold.md"
+    },
+    {
+      "basename": "google-design-md-spec",
+      "path": "sources/google-design-md-spec.md"
+    },
+    {
+      "basename": "design-md-format-spec",
+      "path": "concepts/design-md-format-spec.md"
+    },
+    {
+      "basename": "stitch-design-md-docs",
+      "path": "sources/stitch-design-md-docs.md"
+    },
+    {
+      "basename": "awesome-design-md",
+      "path": "entities/awesome-design-md.md"
+    },
+    {
+      "basename": "voltagent",
+      "path": "entities/voltagent.md"
+    },
+    {
+      "basename": "web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration",
+      "path": "misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration.md"
+    },
+    {
+      "basename": "design-system-as-ai-context",
+      "path": "concepts/design-system-as-ai-context.md"
+    },
+    {
+      "basename": "claude-code-token-optimization",
+      "path": "skills/claude-code-token-optimization.md"
+    },
+    {
+      "basename": "claude-code",
+      "path": "entities/claude-code.md"
+    },
+    {
+      "basename": "andrej-karpathy-zero-to-hero",
+      "path": "sources/andrej-karpathy-zero-to-hero.md"
+    },
+    {
+      "basename": "andrej-karpathy",
+      "path": "entities/andrej-karpathy.md"
+    },
+    {
+      "basename": "li-hongyi-genai-2025",
+      "path": "sources/li-hongyi-genai-2025.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
+      "basename": "taxonomy",
+      "path": "_meta/taxonomy.md"
+    },
+    {
       "basename": "dot-cli-commands",
       "path": "references/dot-cli-commands.md"
     },
@@ -29,20 +113,8 @@
       "path": "concepts/chezmoi-three-state-model.md"
     },
     {
-      "basename": "index",
-      "path": "index.md"
-    },
-    {
       "basename": "zustand-core-architecture × zustand",
       "path": "synthesis/zustand-core-architecture × zustand.md"
-    },
-    {
-      "basename": "hot",
-      "path": "hot.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "zellij-terminal-multiplexer",
@@ -127,78 +199,6 @@
     {
       "basename": "Research: Kimi K3",
       "path": "synthesis/Research: Kimi K3.md"
-    },
-    {
-      "basename": "[图灵程序设计丛书].函数式编程思维 ([美] Neal Ford) (Z-Library)",
-      "path": "buckets/books/[图灵程序设计丛书].函数式编程思维 ([美] Neal Ford) (Z-Library).pdf"
-    },
-    {
-      "basename": "浅谈 R4iSDHC 用户体验",
-      "path": "Clippings/浅谈 R4iSDHC 用户体验.md"
-    },
-    {
-      "basename": "6個必調設定搞定 Claude Code Terminal Configuration 完整指南",
-      "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
-    },
-    {
-      "basename": "电波的电玩记忆-NDS世代 – 电波万事屋",
-      "path": "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md"
-    },
-    {
-      "basename": "Uneasy about easing functions",
-      "path": "Clippings/Uneasy about easing functions.md"
-    },
-    {
-      "basename": "Witch",
-      "path": "Clippings/Witch.md"
-    },
-    {
-      "basename": "tmux",
-      "path": "skills/tmux.md"
-    },
-    {
-      "basename": "kimi-delta-attention",
-      "path": "concepts/kimi-delta-attention.md"
-    },
-    {
-      "basename": "kimi-k3",
-      "path": "entities/kimi-k3.md"
-    },
-    {
-      "basename": "mixture-of-experts",
-      "path": "concepts/mixture-of-experts.md"
-    },
-    {
-      "basename": "ios-multithreading",
-      "path": "skills/ios-multithreading.md"
-    },
-    {
-      "basename": "swift-fundamentals",
-      "path": "concepts/swift-fundamentals.md"
-    },
-    {
-      "basename": "github-danielmiessler-Fabric",
-      "path": "_raw/_archived/github-danielmiessler-Fabric.md"
-    },
-    {
-      "basename": "arc-memory-management",
-      "path": "concepts/arc-memory-management.md"
-    },
-    {
-      "basename": "swiftui-framework",
-      "path": "concepts/swiftui-framework.md"
-    },
-    {
-      "basename": "cs193p-spring-2025",
-      "path": "references/cs193p-spring-2025.md"
-    },
-    {
-      "basename": "fabric-ai",
-      "path": "entities/fabric-ai.md"
-    },
-    {
-      "basename": "fabric-patterns",
-      "path": "concepts/fabric-patterns.md"
     }
   ],
   "omittedPaths": [],

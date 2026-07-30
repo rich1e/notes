@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-27T06:25:00Z*
+*This index is automatically maintained. Last updated: 2026-07-28T12:00:00Z*
 
 ## Concepts
 
@@ -30,7 +30,12 @@ title: Wiki Index
 - [[concepts/zustand-middleware-system]] — Zustand 中间件系统：StoreMutators 类型扩展、persist/devtools/immer/redux/subscribeWithSelector
 - [[concepts/zustand-react-integration]] — Zustand React 层：useSyncExternalStore + 选择器 + useShallow 浅比较防多余重渲染
 - [[concepts/macos-window-switcher]] — macOS 窗口切换器：替代 Cmd+Tab 的 app→window 粒度扩展，含 Space 过滤/标签下钻/快速动作
-- [[concepts/mcp-server-protocol-quirks]] — `claude mcp add` 默认项目级，`$HOME` 不被特殊处理，`--global` 才能真正全局（与 git config 一致）
+- [[concepts/mcp-server-protocol-quirks]] — `claude mcp add` 默认项目级，`$HOME` 不被特殊处理，`--global` 才能真正全局（与 git config 一致）；`-s user` 与 `--global` 同义
+- [[concepts/design-system-as-ai-context]] — DESIGN.md 把设计系统升级为 AI 硬约束输入，避免 agent 在 padding/spacing 等设计决策上反复耗 token
+- [[concepts/ai-tool-specialization]] — AI 工具栈专业化分工：让每个 agent 守一段（视觉/逻辑/数据），通过 MCP 协议级协作而非造 mega-agent
+- [[concepts/design-md-format-spec]] — DESIGN.md 文件 schema：YAML tokens + 8 必备 prose 章节（awesome-design-md 扩展到 11 节）
+- [[concepts/design-md-token-interpolation]] — `{path.to.token}` 引用机制：让组件保持"换主题 = 改一处"，借鉴 DTCG 2025.10
+- [[concepts/design-md-anti-patterns]] — Do's and Don'ts 章节约束 "AI taste"（默认漂向 gradient/glow/emoji 的均值审美）
 - [[concepts/asciidoc-markup]] — AsciiDoc 标记语言：表格/脚注/交叉引用/属性/条件内容内置，docs-as-code 友好
 - [[concepts/animation-easing-functions]] — 缓动函数：Penner 缓动 + Apple 参数化运动学 + 卷积滤波 + PD/PID 反馈控制四条路线
 - [[concepts/programming-pattern-categories]] — 编程模式五大分类（数据结构/并发/系统/内存/行为），按运行时职责切分，与 GoF 互补
@@ -44,6 +49,13 @@ title: Wiki Index
 - [[concepts/chezmoi-templating]] — chezmoi 模板系统：Go text/template + sprig 扩展，按机器差异化
 - [[concepts/chezmoi-workflow]] — chezmoi 四动词工作流（add/edit/diff/apply）+ update/init + czpush/czpull/czapply 三段式别名
 - [[concepts/fourier-series]] — 傅里叶分析：单位圆 + Euler 公式串联复正弦、本轮链与傅里叶级数展开
+- [[concepts/llm-training-pipeline]] — 现代 LLM 训练三阶段：预训练 → SFT → RLHF/RLVR（Karpathy 2025 教科书类比）
+- [[concepts/llm-learning-path]] — LLM 学习双轨（Engineer vs Scientist）+ 四阶段路径 + 时间预算
+- [[concepts/rag-vs-finetuning]] — Prompt / RAG / Fine-tuning 决策矩阵：知识 vs 行为的关键区分
+- [[concepts/test-time-compute]] — 2025 范式转向：推理时扩展 + RLVR（DeepSeek-R1 / OpenAI o1）
+- [[concepts/mechanistic-interpretability]] — 逆向工程神经网络内部电路：SAE、induction heads、circuit discovery
+- [[concepts/claude-mem-memory-architecture]] — claude-mem 记忆三段：hook 捕获 → haiku 压成 observation 存 SQLite+Chroma → 第二次会话起 SessionStart 注入
+- [[concepts/claude-code-hooks-lifecycle]] — Claude Code 6 个生命周期 hook（Setup/SessionStart/UserPromptSubmit/PostToolUse/PreToolUse/Stop），claude-mem 的挂载点
 
 ## Entities
 
@@ -66,11 +78,21 @@ title: Wiki Index
 - [[entities/moonshot-ai]] — Moonshot AI（月之暗面）：Kimi 品牌开发商，K 系列超大规模模型，架构创新应对算力限制
 - [[entities/chezmoi]] — chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制，三态模型 + 模板 + 加密
 - [[entities/sebastienrousseau-dotfiles]] — Trusted Shell Platform：chezmoi + dot CLI(53条) + 1250+ 别名的完整 shell 分发版
+- [[entities/google-stitch]] — Google Labs AI 设计工具（Gemini 2.5 Pro 驱动），输出 DESIGN.md 设计系统 + 结构化 HTML/CSS，可通过 MCP 与 Claude Code 协作
+- [[entities/claude-code]] — Anthropic 终端式 AI 编码 agent，承担逻辑与组件架构，通过 MCP 接外部服务、通过提示缓存控制 token
+- [[entities/google-labs-code-design]] — Google Labs 官方 DESIGN.md 规范仓库 + @google/design.md CLI（26.5K stars、Apache-2.0）
+- [[entities/awesome-design-md]] — VoltAgent 团队维护的 74 个真实站点 DESIGN.md 精选集（105K stars）
+- [[entities/voltagent]] — awesome-design-md 仓库与 getdesign.md 目录服务的运营组织
 - [[entities/trusted-shell-platform]] — Trusted Shell Platform 平台理念：幂等、声明式、跨平台 shell 环境分发
 - [[entities/gnu-stow]] — GNU Stow：symlink 农场式 dotfile 管理器，最简镜像流派代表
+- [[entities/andrej-karpathy]] — Andrej Karpathy：Zero to Hero / nanoGPT / nanochat 作者，LLM 教育事实标准制定者
+- [[entities/sebastian-raschka]] — Sebastian Raschka：《Build a Large Language Model (From Scratch)》作者，工程化 PyTorch 路线
+- [[entities/li-hongyi]] — 李宏毅：台大教授，中文 ML/GenAI 课程主讲，2025《生成式AI导论》
+- [[entities/claude-mem]] — claude-mem：thedotmack 出品的 Claude Code 长期记忆插件（Apache-2.0），hook 驱动，本地 SQLite+Chroma
 
 ## Skills
 
+- [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
 - [[skills/claude-code-token-optimization]] — Claude Code Token 优化策略（提示缓存 + 会话管理）
 - [[skills/claude-code-settings]] — Claude Code 四级配置作用域与权限系统
 - [[skills/ios-sideloading-fundamentals]] — iOS 证书类型、JIT 原理、SideStore/LiveContainer 机制完整解析
@@ -101,6 +123,8 @@ title: Wiki Index
 - [[skills/chezmoi-vscode-integration]] — chezmoi edit/diff 配 VSCode（`code --wait` + `--diff`），dotfile 体验接近 IDE
 - [[skills/zellij-terminal-multiplexer]] — Rust 终端复用器，状态栏 + 提示键开箱即用，YAML 布局 + WebAssembly 插件
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装：uv + cookbook auth + `claude mcp add --global`，23 个笔记本手工验证可读
+- [[skills/claude-code-mcp-auth-patterns]] — Claude Code MCP 两种鉴权范式：API key 头（轻量 5 分钟）vs OAuth Proxy（重度自动 refresh），含 `.env` 干扰 OAuth 的故障清单
+- [[skills/claude-mem-memory-usage]] — 在 Claude 中用 claude-mem 管长期记忆：插件市场装（别用 npm -g）→ 自动注入 → search/timeline/get_observations 3 层查历史 → /knowledge-agent 知识大脑 → settings 调优
 
 ## Synthesis
 
@@ -108,7 +132,7 @@ title: Wiki Index
 
 ## Projects
 
-- [[projects/dayfold/dayfold]] — 暖色风格 iOS 日记 App（SwiftUI + Core Data/CloudKit + MapKit + WeatherKit）
+- [[projects/dayfold/dayfold]] — 暖色风格 iOS 日记 App（SwiftUI + Core Data/CloudKit + MapKit + WeatherKit）+ Stitch 设计系统（暖灰深夜阅读室风格）
 - [[projects/dayfold/concepts/architecture-overview]] — 抽屉式根容器 + MVVM + 共享 CoreDataStack 单例
 - [[projects/dayfold/concepts/core-data-cloudkit-fallback]] — CloudKit 134400 降级本地存储实现
 - [[projects/dayfold/concepts/swiftui-context-propagation]] — sheet/cover 必须显式注入 managedObjectContext
@@ -119,6 +143,7 @@ title: Wiki Index
 - [[projects/dayfold/skills/warm-theme-tokens]] — Color.warmPaper / Font.warmHeadline / .warmCard() 视觉 token
 - [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义左滑删除 + 速度阈值 + 圆角并入
 - [[projects/dayfold/references/source-tree]] — 源码目录布局与各模块职责
+- [[projects/dayfold/references/stitch-design-system]] — Stitch 设计系统资产索引（Project ID、Asset ID、已生成屏幕、本地文件布局）
 - [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — AI 外呼热转坐席前端（React 19 + JsSIP + 信科 CC SDK）
 - [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]] — CC SDK 集成：useSoftbar Hook 封装 LaihuAPI
 - [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — 坐席状态机（agentState + callState 双层设计）
@@ -164,6 +189,11 @@ title: Wiki Index
 - [[references/kimi-k3-video-review-lingdu]] — 零度解说实测视频：DeepSWE/LiveBench 基准、虚拟机 Agent 演示、3D 生成、越狱
 - [[references/kimi-k3-video-analysis-reportify]] — 哈佛老徐深度分析：Kimi 官方原文、Anthropic Fable-5 禁令、国产芯片全球化路径
 - [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
+- [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
+- [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka Manning 2024 书 + GitHub 仓库：PyTorch 实现 GPT 全流程
+- [[sources/stanford-cs336-spring2025]] — Stanford CS336 (Hashimoto & Liang) Spring 2025：5 作业 + 19 讲座，数据/架构/系统/对齐全覆盖
+- [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》13 讲：中文母语零基础友好
+- [[sources/dakingrai-mech-interp-papers]] — 机制可解释性论文清单（配 arXiv:2407.02646 综述）：Techniques/Evaluation/Findings/Tools 四分组
 
 ## Synthesis
 
@@ -186,10 +216,18 @@ title: Wiki Index
 - [[synthesis/concepts-dotfile-manager × entities-chezmoi]] — dotfile 五大流派 × chezmoi：中段定位的具体含义（比 Stow 复杂、比 Nix 简单、专注跨机器差异化）
 - [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — chezmoi 两条核心机制：模板（runtime 内容差异化）vs 命名前缀（文件系统语义元数据）
 - [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — PTP 四种时钟角色 × White Rabbit 工业实现：sub-ns 精度 + SyncE + 大量 TLV 扩展
+- [[synthesis/Research: 学习AI大模型]] — LLM 学习系统化路径 3 轮研究综合：双轨 + 四阶段 + 三大资源坐标系 + 2025 Test-Time Compute 转向
+- [[synthesis/Research: claude-mem 长期记忆]] — claude-mem 研究综合：hook 驱动 capture→compress→inject 流水线，本地 SQLite+Chroma，第二次会话起注入，3 层检索省 10× token，本地免费/上云付费
 
 ## Misc
 
 - [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
+- [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Google Stitch + Claude Code MCP 协作实操：两种鉴权路径（API key header vs OAuth proxy），`-s user` 等价 `--global`，`.env` 文件干扰 OAuth 的故障清单
+- [[sources/awesome-design-md-repo]] — VoltAgent/awesome-design-md：74 个真实站点 DESIGN.md（Claude / Vercel / Notion / Stripe 等）的 inspired interpretation
+- [[sources/google-design-md-spec]] — google-labs-code/design.md：DESIGN.md 官方格式规范 + `@google/design.md` CLI（lint / diff）
+- [[sources/stitch-design-md-docs]] — Stitch 官方 DESIGN.md 文档（JS-rendered SPA，机器读不到正文）
+- [[sources/getdesign-md-marketplace]] — getdesign.md：VoltAgent 运营的 DESIGN.md 目录与私人订制服务
+- [[synthesis/Research: DESIGN.md 工作流]] — DESIGN.md 三轮研究综合：Google Labs 规范 + VoltAgent 74 个真实样本 + Stitch 自动产出 + Claude Code MCP 集成
 
 ## Journal
 

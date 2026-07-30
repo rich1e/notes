@@ -1,7 +1,7 @@
 ---
 title: chezmoi × 密码管理器：Bitwarden 模板注入与跨平台主密码保管
 category: references
-tags: [chezmoi, secrets, bitwarden, keychain, dotfiles, reference]
+tags: [chezmoi, secrets, bitwarden, dotfiles, reference]
 sources:
   - "https://yangzh.cn/posts/posts/chezmoi-dotfiles-secrets.html/"
 created: 2026-07-25T09:00:00Z

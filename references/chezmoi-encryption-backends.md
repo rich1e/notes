@@ -6,9 +6,8 @@ tags:
   - chezmoi
   - encryption
   - gpg
-  - gnome-keyring
-  - keepassxc
   - dotfiles
+  - security
 sources:
   - "https://axionl.me/p/%E5%BD%92%E6%A1%A3-%E7%94%A8-chezmoi-%E7%AE%A1%E7%90%86%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/#gnome-keyring"
 source_url: "https://axionl.me/p/%E5%BD%92%E6%A1%A3-%E7%94%A8-chezmoi-%E7%AE%A1%E7%90%86%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/#gnome-keyring"

@@ -7,7 +7,6 @@ tags:
   - core-data
   - cloudkit
   - weatherkit
-  - personal
 sources: [projects/dayfold]
 summary: >-
   暖色风格的 iOS 个人日记 App，MVVM + SwiftUI + Core Data/CloudKit；抽屉式导航，自定义
@@ -21,7 +20,7 @@ lifecycle: draft
 lifecycle_changed: 2026-06-29
 tier: core
 created: 2026-06-29T00:00:00Z
-updated: 2026-06-29T00:00:00Z
+updated: 2026-07-28T00:00:00Z
 ---
 
 # Dayfold
@@ -53,6 +52,18 @@ Container `iCloud.com.Yuqi.dayfold`。
   （`Color.warmPaper` / `Font.warmHeadline` / `.warmCard()`）。
 - [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义手势 + 速度阈值 + 角落圆角并入
   的左滑删除容器。
+
+## 设计系统（Stitch）
+
+- [[projects/dayfold/references/stitch-design-system]] — Google Stitch 设计系统资产索引（Project ID、Asset ID、已生成屏幕目录、本地文件布局）。
+
+Stitch Design System Asset ID：`assets/4b1bee32e3894e98a837dda03816a473`
+
+已生成屏幕：
+- **Home Screen**（`ce330a7e2e21401aaf0a59d56b99575d`）— 3D 笔记本封面定调页面
+- **Timeline Home**（`a388af4f3bcb409c96322277639b94d2`）— 主首页，Journal Card + FAB + Tab Bar ★
+
+生成新屏幕时带 `designSystem: "assets/4b1bee32e3894e98a837dda03816a473"` 参数，配色/字体/圆角自动统一。
 
 ## 引用
 

@@ -1,7 +1,7 @@
 ---
 title: Kimi Delta Attention × Kimi K3
 category: synthesis
-tags: [ai, llm, attention, optimization]
+tags: [llm, attention, optimization]
 sources:
   - "[[concepts/kimi-delta-attention]]"
   - "[[entities/kimi-k3]]"

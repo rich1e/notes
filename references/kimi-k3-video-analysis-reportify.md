@@ -1,7 +1,7 @@
 ---
 title: "时隔1年零5个月，又一个中国模型震惊全球（哈佛老徐·Reportify）"
 category: references
-tags: [ai, llm, chinese-ai, geopolitics, semiconductor]
+tags: [llm, chinese-ai, geopolitics, semiconductor]
 sources:
   - "https://www.douyin.com/video/7664590818786692402"
 source_url: "https://www.douyin.com/video/7664590818786692402"

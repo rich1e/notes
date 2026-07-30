@@ -1,7 +1,7 @@
 ---
 title: Kimi K3 Official Launch Blog
 category: references
-tags: [ai, llm, open-source, chinese-ai, large-scale-model]
+tags: [llm, open-source, chinese-ai, large-scale-model]
 sources:
   - "https://www.kimi.com/blog/kimi-k3"
 source_url: "https://www.kimi.com/blog/kimi-k3"

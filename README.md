@@ -76,6 +76,7 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 
 - `/wiki-ingest` 导入文档、PDF、Markdown 等资料
 - `/wiki-history-ingest` 导入历史聊天记录（Claude / Codex / Pi / OpenClaw 等）
+- `/github-ingest` 分析**github**仓库并整理成文档保存至`_raw`，再通过`/wiki-ingest`导入wiki
 
 ### 更新
 
@@ -263,6 +264,27 @@ hot.md                   # 会话热缓存，近期活动的语义快照（约 5
 ### 维护类
 
 - `/knowledge-refactor`：扫描重复、碎片化笔记，自动建议合并或拆分。
+
+## 已知问题与规范
+
+### `_raw/` 文件格式规范
+
+**问题**：gitingest 抓取的 GitHub 仓库内容会将仓库中所有文件拼接成一个文件。如果目标仓库本身是文档站（如 VitePress、MkDocs 构建的站点），每个页面都带有 YAML frontmatter，拼接后文件内会包含数百至数千个 `---` 分隔符。将此类文件保存为 `.md` 后缀时，Obsidian 的 Dataview、obsidian-linter、omnisearch 等插件会扫描全文所有 `---`，触发 O(n²) 解析或批量报警，导致索引报错。
+
+**规范**：`github-ingest` skill 保存的抓取结果统一使用 `.txt` 后缀（`_raw/github-<owner>-<repo>.txt`），避免 Obsidian 插件索引。wiki-ingest 读取文件内容不依赖后缀，传完整路径即可正常处理。
+
+**受影响仓库类型**：VitePress、MkDocs、Docusaurus、Jekyll、Hugo 等文档站仓库，以及任何每个 `.md` 文件都带 frontmatter 的仓库。普通代码仓库（frontmatter 数量 < 200）保存为 `.md` 通常无问题。
+
+**参考数据**：
+
+| 仓库 | `---` 数量 | 保存格式 | Obsidian 状态 |
+|------|-----------|---------|--------------|
+| `danielmiessler/Fabric` | 139 | `.md` | 正常 ✅ |
+| `sebastienrousseau/dotfiles.github.io`（VitePress，22 语言） | 2549 | `.txt` | 正常 ✅（原 `.md` 报错 ❌） |
+
+### `userIgnoreFilters` 的局限性
+
+Obsidian 的「排除文件夹」功能（`app.json` 的 `userIgnoreFilters`）只排除搜索结果、Graph View 和 Unlinked Mentions，**不能阻止** Dataview、obsidian-linter、omnisearch 等插件扫描文件。如需彻底排除，将目录改为点开头（如 `_raw/.archived`）是唯一可靠方案。
 
 ## 最佳实践
 

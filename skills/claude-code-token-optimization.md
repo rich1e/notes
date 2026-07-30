@@ -9,8 +9,9 @@ tags:
 summary: 理解 Claude Code 提示缓存机制，通过合理管理会话生命周期和上下文质量来降低 token 消耗。
 sources:
   - https://baoyu.io/blog/2026-04-06/claude-code-token-optimization
+  - https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a
 created: 2026-06-29
-updated: 2026-07-25
+updated: 2026-07-28
 tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-25"
@@ -137,7 +138,25 @@ Claude Code 团队在社区讨论中公开回应了几条流传很广的"配额�
 
 团队原话："我们在认真对待这件事，仍在持续调查。我们没有盲目相信内部指标。"
 
+## 设计决策吃 token 的特殊场景
+
+在没有显式设计系统的项目里调 UI，token 浪费特别严重——Sachin Sharma 在 Google Stitch + Claude Code 一文里记录的经验值：4–5 个会话就烧光上下文，几乎全花在 padding、间距、猜测字体上。
+
+机制：
+
+- Claude 不会"知道"你想要哪个 padding；只能通过对话来逼近。
+- 每轮"再贴近原来的样子"都触发一次完整上下文重读，且没命中任何缓存的"设计决策"。
+- 结果：真正留给逻辑、组件架构、构建配置的 token 所剩无几。
+
+**对策**：把设计 token 落到 `DESIGN.md` / `design-tokens.json`，并由 CLAUDE.md 引用——这样 token 表自然落在缓存前缀，后续 UI 迭代不会反复读它。详见 [[concepts/design-system-as-ai-context]]。
+
+更深一层的杠杆是**工具专业化**：让 Stitch 这类专门的设计 AI 承担视觉决策，Claude Code 只读 token 表负责实现。这条原则与 [[concepts/ai-tool-specialization]] 一致。
+
 ## 相关页面
 
 - [[skills/claude-code-settings]] — 配置文件详细说明
 - [[concepts/prompt-caching]] — 提示缓存原理
+- [[concepts/design-system-as-ai-context]] — DESIGN.md 让设计决策不再吃 token
+- [[concepts/ai-tool-specialization]] — 把视觉与逻辑拆给不同 agent
+- [[entities/google-stitch]] — 视觉侧的 AI 设计工具
+- [[entities/claude-code]] — 逻辑侧的编码 agent

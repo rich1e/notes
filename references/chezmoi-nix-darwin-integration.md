@@ -2,7 +2,7 @@
 title: >-
   chezmoi + nix-darwin：macOS 一键复刻开发环境的组合拳
 category: references
-tags: [chezmoi, nix-darwin, dotfiles, macos, declarative, reference]
+tags: [chezmoi, nix-darwin, dotfiles, macos, reference]
 sources:
   - "https://juejin.cn/post/7589477341766352942"
 created: 2026-07-25T09:00:00Z

@@ -75,15 +75,17 @@ If you're unsure about repo size, run without filtering first. If gitingest repo
 
 ## Output file
 
-Construct the final markdown file at:
+Construct the final file at:
 
 ```
-_raw/github-<owner>-<repo>.md
+_raw/github-<owner>-<repo>.txt
 ```
+
+**保存为 `.txt` 而非 `.md`**：gitingest 会将整个仓库所有文件拼接成一个文件，其中可能包含数百至数千个内嵌 YAML frontmatter 块（`---` 分隔符）。若保存为 `.md`，Obsidian 的 Dataview、obsidian-linter、omnisearch 等插件会扫描全文所有 `---`，触发 O(n²) 解析或批量报警，导致索引报错。`.txt` 后缀让 Obsidian 完全跳过此文件，wiki-ingest 读取时不受影响。
 
 The file must have this structure:
 
-```markdown
+```
 ---
 title: "<repo> GitHub 技术文档"
 category: references
@@ -112,8 +114,8 @@ import sys, datetime
 owner = '<owner>'
 repo = '<repo>'
 branch = '<branch>'
-now = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-date = datetime.datetime.utcnow().strftime('%Y-%m-%d')
+now = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
+date = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%d')
 
 with open('/tmp/github-{owner}-{repo}.txt', 'r', encoding='utf-8', errors='replace') as f:
     content = f.read()
@@ -137,11 +139,14 @@ github_branch: \"{branch}\"
 '''
 
 vault_path = '/Users/rich1e/workspace/code/notes'
-output_path = f'{vault_path}/_raw/github-{owner}-{repo}.md'
+output_path = f'{vault_path}/_raw/github-{owner}-{repo}.txt'
 with open(output_path, 'w', encoding='utf-8') as f:
     f.write(frontmatter + content)
 
+import os
+size = os.path.getsize(output_path)
 print(f'Saved: {output_path}')
+print(f'Size: {size:,} bytes ({size/1024/1024:.1f} MB)')
 ".format(owner=owner, repo=repo, branch=branch)
 ```
 
@@ -173,10 +178,10 @@ Read the current `.manifest.json`, merge the new entry, and write it back.
 After saving, tell the user:
 
 ```
-已保存：_raw/github-<owner>-<repo>.md
+已保存：_raw/github-<owner>-<repo>.txt
 
 下一步：运行 wiki-ingest 将其蒸馏为 wiki 页面
-  → "ingest _raw/github-<owner>-<repo>.md"
+  → "ingest _raw/github-<owner>-<repo>.txt"
   → 或者 "process the github-<repo> raw file"
 ```
 
@@ -189,4 +194,12 @@ After saving, tell the user:
 
 ## Re-ingesting
 
-If `_raw/github-<owner>-<repo>.md` already exists, tell the user and ask whether to overwrite (default: yes, update the `updated` timestamp).
+If `_raw/github-<owner>-<repo>.txt` already exists, tell the user and ask whether to overwrite (default: yes, update the `updated` timestamp).
+
+## 不要做什么
+
+- **不要保存为 `.md` 后缀**：gitingest 拼接的仓库内容通常含数百至数千个内嵌 `---` 分隔符（每个源文件的 frontmatter），会触发 Obsidian 插件报错
+- **不要在 wiki-ingest 时直接传 `.txt` 文件名前缀**：wiki-ingest 读取内容不依赖后缀，传完整路径即可
+- **不要对超过 30MB 的输出文件继续后续步骤**：直接警告用户，建议用 `--include-pattern "*.md"` 重跑
+- **不要把 vault_path 硬编码在 skill 里**：Python 脚本里的路径应从上下文（config/.env）解析，或直接使用当前 vault 路径；skill 示例中的路径仅为占位符
+- **不要把 GitHub token 打印到输出**：使用 `-t "$GITHUB_TOKEN"` 时，不要在 completion message 里回显 token 值

@@ -1,7 +1,7 @@
 ---
 title: "Kimi K3 突然爆火！实测到底有多强？（零度解说）"
 category: references
-tags: [ai, llm, chinese-ai, video-review]
+tags: [llm, chinese-ai, video-review]
 sources:
   - "https://www.youtube.com/watch?v=8_JZehVSRAI"
 source_url: "https://www.youtube.com/watch?v=8_JZehVSRAI"

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-26T10:00:00Z",
+  "last_updated": "2026-07-29T09:04:00Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -22,65 +22,65 @@
         "synthesis/Research: chezmoi.md"
       ],
       "pages_updated": []
-    }
-  },
-  "projects": {
-    "jrfed-zaxd-mediation-tool": {
-      "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
-      "last_synced": "2026-07-01T12:00:00Z",
-      "last_commit_synced": "bf506f56bff968576f315bf5a34534c9b0881f79",
-      "pages_in_vault": [
-        "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md",
-        "projects/jrfed-zaxd-mediation-tool/concepts/permission-system.md",
-        "projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture.md",
-        "projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage.md",
-        "projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world.md",
-        "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
+    },
+    "学习AI大模型": {
+      "researched_at": "2026-07-27T07:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 9,
+      "pages_created": [
+        "sources/andrej-karpathy-zero-to-hero.md",
+        "sources/sebastian-raschka-llms-from-scratch-book.md",
+        "sources/stanford-cs336-spring2025.md",
+        "sources/li-hongyi-genai-2025.md",
+        "sources/dakingrai-mech-interp-papers.md",
+        "concepts/llm-training-pipeline.md",
+        "concepts/llm-learning-path.md",
+        "concepts/rag-vs-finetuning.md",
+        "concepts/test-time-compute.md",
+        "concepts/mechanistic-interpretability.md",
+        "entities/andrej-karpathy.md",
+        "entities/sebastian-raschka.md",
+        "entities/li-hongyi.md",
+        "synthesis/Research: 学习AI大模型.md"
+      ],
+      "pages_updated": []
+    },
+    "DESIGN.md 工作流": {
+      "researched_at": "2026-07-28T01:00:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 5,
+      "pages_created": [
+        "sources/awesome-design-md-repo.md",
+        "sources/google-design-md-spec.md",
+        "sources/stitch-design-md-docs.md",
+        "sources/getdesign-md-marketplace.md",
+        "concepts/design-md-format-spec.md",
+        "concepts/design-md-token-interpolation.md",
+        "concepts/design-md-anti-patterns.md",
+        "entities/awesome-design-md.md",
+        "entities/google-labs-code-design.md",
+        "entities/voltagent.md",
+        "synthesis/Research: DESIGN.md 工作流.md"
+      ],
+      "pages_updated": [
+        "concepts/design-system-as-ai-context.md",
+        "skills/claude-code-mcp-auth-patterns.md",
+        "entities/google-stitch.md"
       ]
     },
-    "dayfold": {
-      "source_cwd": "/Users/rich1e/workspace/code/dayfold",
-      "last_synced": "2026-06-29T11:00:00Z",
-      "last_commit_synced": "28d2f1a730351b28e4a32cef2727f61e2f532bd2",
-      "pages_in_vault": [
-        "projects/dayfold/dayfold.md",
-        "projects/dayfold/concepts/architecture-overview.md",
-        "projects/dayfold/concepts/core-data-cloudkit-fallback.md",
-        "projects/dayfold/concepts/swiftui-context-propagation.md",
-        "projects/dayfold/concepts/fetchrequest-vs-observedobject.md",
-        "projects/dayfold/concepts/drawer-architecture.md",
-        "projects/dayfold/skills/entry-editor-image-dirty-tracking.md",
-        "projects/dayfold/skills/soft-delete-with-trash.md",
-        "projects/dayfold/skills/warm-theme-tokens.md",
-        "projects/dayfold/skills/swipe-to-delete-row.md",
-        "projects/dayfold/references/source-tree.md"
-      ]
-    },
-    "xk-ai-talk-desk-ui": {
-      "source_cwd": "/Users/rich1e/workspace/xk-dev_1.0.0",
-      "last_synced": "2026-06-29T10:00:00Z",
-      "last_commit_synced": "d2e2c42d26c723d419fc34ce7aa2f346141d2e75",
-      "pages_in_vault": [
-        "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md",
-        "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md",
-        "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md",
-        "projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow.md"
-      ]
-    },
-    "trek": {
-      "source_cwd": "/Users/rich1e/workspace/code/notes/_raw",
-      "last_synced": "2026-07-02T00:30:00Z",
-      "last_commit_synced": null,
-      "pages_in_vault": [
-        "projects/trek/trek.md",
-        "projects/trek/concepts/architecture-overview.md",
-        "projects/trek/concepts/addon-system.md",
-        "projects/trek/concepts/mcp-server.md",
-        "projects/trek/concepts/realtime-sync.md",
-        "projects/trek/concepts/auth-system.md",
-        "projects/trek/references/database-schema.md",
-        "projects/trek/references/environment-variables.md"
-      ]
+    "claude-mem 长期记忆": {
+      "researched_at": "2026-07-29T09:04:00Z",
+      "rounds_completed": 2,
+      "sources_fetched": 2,
+      "primary_source": "本地插件 v13.12.4（一手）+ GitHub README（交叉验证）",
+      "pages_created": [
+        "entities/claude-mem.md",
+        "concepts/claude-mem-memory-architecture.md",
+        "concepts/claude-code-hooks-lifecycle.md",
+        "skills/claude-mem-memory-usage.md",
+        "synthesis/Research: claude-mem 长期记忆.md"
+      ],
+      "pages_updated": []
     }
   },
   "sources": {
@@ -778,8 +778,8 @@
       ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/NotebookLM 知识库接入 Claude：MCP 协议的握手与陷阱.md": {
-      "content_hash": "5b0a2b808d2ae09beee9c93ede90e2b72b051fe44d3c28bd8c0f07bc8a1396af",
-      "last_ingested": "2026-07-26T00:26:44.456518+00:00",
+      "content_hash": "79c3de3a1057d28de85578f67c5701163fb81a245f00b4691689f6131aaebcda",
+      "last_ingested": "2026-07-28T18:30:00.000000+00:00",
       "pages_produced": [
         "skills/notebooklm-mcp-setup",
         "concepts/mcp-server-protocol-quirks"
@@ -821,11 +821,91 @@
         "concepts/dotfile-manager.md"
       ],
       "last_ingested": "2026-07-27T06:16:54Z"
+    },
+    "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a": {
+      "ingested_at": "2026-07-28T00:00:00Z",
+      "source_url": "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration.md",
+        "entities/google-stitch.md",
+        "entities/claude-code.md",
+        "concepts/design-system-as-ai-context.md",
+        "concepts/ai-tool-specialization.md",
+        "skills/claude-code-mcp-auth-patterns.md"
+      ],
+      "pages_updated": [
+        "concepts/mcp-server-protocol-quirks.md",
+        "skills/claude-code-token-optimization.md"
+      ],
+      "last_ingested": "2026-07-28T00:00:00Z"
+    }
+  },
+  "projects": {
+    "jrfed-zaxd-mediation-tool": {
+      "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
+      "last_synced": "2026-07-01T12:00:00Z",
+      "last_commit_synced": "bf506f56bff968576f315bf5a34534c9b0881f79",
+      "pages_in_vault": [
+        "projects/jrfed-zaxd-mediation-tool/jrfed-zaxd-mediation-tool.md",
+        "projects/jrfed-zaxd-mediation-tool/concepts/permission-system.md",
+        "projects/jrfed-zaxd-mediation-tool/concepts/chrome-extension-architecture.md",
+        "projects/jrfed-zaxd-mediation-tool/skills/zustand-chrome-storage.md",
+        "projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world.md",
+        "projects/jrfed-zaxd-mediation-tool/references/source-tree.md"
+      ]
+    },
+    "dayfold": {
+      "source_cwd": "/Users/rich1e/workspace/code/dayfold",
+      "last_synced": "2026-06-29T11:00:00Z",
+      "last_commit_synced": "28d2f1a730351b28e4a32cef2727f61e2f532bd2",
+      "pages_in_vault": [
+        "projects/dayfold/dayfold.md",
+        "projects/dayfold/concepts/architecture-overview.md",
+        "projects/dayfold/concepts/core-data-cloudkit-fallback.md",
+        "projects/dayfold/concepts/swiftui-context-propagation.md",
+        "projects/dayfold/concepts/fetchrequest-vs-observedobject.md",
+        "projects/dayfold/concepts/drawer-architecture.md",
+        "projects/dayfold/skills/entry-editor-image-dirty-tracking.md",
+        "projects/dayfold/skills/soft-delete-with-trash.md",
+        "projects/dayfold/skills/warm-theme-tokens.md",
+        "projects/dayfold/skills/swipe-to-delete-row.md",
+        "projects/dayfold/references/source-tree.md"
+      ]
+    },
+    "xk-ai-talk-desk-ui": {
+      "source_cwd": "/Users/rich1e/workspace/xk-dev_1.0.0",
+      "last_synced": "2026-06-29T10:00:00Z",
+      "last_commit_synced": "d2e2c42d26c723d419fc34ce7aa2f346141d2e75",
+      "pages_in_vault": [
+        "projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui.md",
+        "projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration.md",
+        "projects/xk-ai-talk-desk-ui/concepts/agent-state-machine.md",
+        "projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow.md"
+      ]
+    },
+    "trek": {
+      "source_cwd": "/Users/rich1e/workspace/code/notes/_raw",
+      "last_synced": "2026-07-02T00:30:00Z",
+      "last_commit_synced": null,
+      "pages_in_vault": [
+        "projects/trek/trek.md",
+        "projects/trek/concepts/architecture-overview.md",
+        "projects/trek/concepts/addon-system.md",
+        "projects/trek/concepts/mcp-server.md",
+        "projects/trek/concepts/realtime-sync.md",
+        "projects/trek/concepts/auth-system.md",
+        "projects/trek/references/database-schema.md",
+        "projects/trek/references/environment-variables.md"
+      ]
     }
   },
   "stats": {
-    "total_sources_ingested": 56,
-    "total_pages": 110,
+    "total_sources_ingested": 59,
+    "total_pages": 132,
     "total_projects": 1,
     "last_full_rebuild": null
   }

@@ -1,7 +1,7 @@
 ---
 title: PTP 协议理论 × LinuxPTP 工业实现
 category: synthesis
-tags: [ptp, ieee-1588, network-protocol, time-sync, distributed-systems, linux, open-source]
+tags: [ptp, ieee-1588, network-protocol, time-sync, linux]
 sources:
   - "[[concepts/ptp-ieee1588]]"
   - "[[entities/linuxptp]]"

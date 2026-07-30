@@ -5,12 +5,12 @@ tags:
   - mcp
   - claude-code
   - notebooklm
-  - ai
+  - llm
 summary: 通过 notebooklm-mcp-server 把 Google NotebookLM 笔记本接入 Claude Code，支持笔记本查询、资料源添加、Studio 内容生成。
 sources:
   - https://joydig.com/notebooklm-mcp-server-claude-code/
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-28
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-07-26"

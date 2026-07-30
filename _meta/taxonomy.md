@@ -54,6 +54,12 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `performance` | `http-cache`, `cookie`, `localstorage` | Web performance |
 | `design-system` | `theming`, `ux`, `ui-pattern`, `declarative-ui` | Design systems and UX patterns |
 | `webrtc` | `sip`, `jssip`, `phonebar` | Real-time communication |
+| `ux` | `design-system` | UX / interaction design |
+| `design-patterns` | `architecture` | Software design patterns (GoF, etc.) |
+| `nestjs` | — | NestJS framework |
+| `pwa` | — | Progressive Web Apps |
+| `markdown` | — | Markdown language/tooling |
+| `templates` | — | Templating systems (Templater, go-template) |
 
 ### General Programming
 
@@ -71,6 +77,22 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `security` | `rbac` | Security concepts |
 | `ptp` | `precision-time-protocol` | Precision Time Protocol (IEEE 1588) — book-cluster anchor |
 | `ieee-1588` | `1588` | IEEE 1588 standard — pairs with `ptp` |
+| `distributed-systems` | — | Distributed systems concepts |
+| `protocol-design` | — | Protocol design patterns and analysis |
+| `api-design` | — | API design patterns |
+| `auth` | — | Authentication / authorization |
+| `oauth` | — | OAuth protocol |
+| `settings` | — | Configuration / settings management |
+| `extensibility` | — | Plugin systems, addon patterns |
+| `actor` | `concurrency` | Actor model (Swift, Akka) |
+| `arc` | `memory` | ARC (Automatic Reference Counting) |
+| `linux` | — | Linux platform |
+| `open-source` | — | Open-source projects and topics |
+| `hardware` | — | Hardware concepts (GPU, network, devices) |
+| `stanford` | — | Stanford University courses/research |
+| `workflow` | `automation` | Workflow automation |
+| `semiconductor` | — | Semiconductor industry / chip design |
+| `geopolitics` | — | Geopolitical context (AI competition, etc.) |
 
 ### AI / LLM
 
@@ -81,6 +103,17 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `prompt-caching` | — | Prompt caching techniques |
 | `token-optimization` | — | Token usage optimization |
 | `automation` | `workflow` | Automation and workflows |
+| `prompt-engineering` | — | Prompt engineering techniques and patterns |
+| `ai-tools` | — | AI-powered tools (Cursor, Copilot, Fabric, etc.) |
+| `ai-integration` | — | Integrating AI into products / workflows |
+| `alignment` | — | Model alignment (SFT, RLHF, DPO, RLVR) |
+| `chinese-ai` | — | Chinese AI companies / models (Qwen, DeepSeek, Kimi, GLM) |
+| `large-scale-model` | — | Large-scale (multi-hundred-billion+) model references |
+| `interpretability` | — | Mechanistic interpretability, model understanding |
+| `algorithm` | — | Algorithm-level LLM concepts (not generic algorithms) |
+| `mcp` | — | Model Context Protocol servers and tools |
+| `career` | — | Career-related pages (LLM career paths, hiring) |
+| `course` | — | Educational course references |
 
 ### DevOps / Tooling
 
@@ -92,6 +125,12 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `homebrew` | `Homebrew`, `Brew Update` | Homebrew package manager |
 | `tmux` | — | tmux terminal multiplexer |
 | `sublime` | — | Sublime Text editor |
+| `dotfiles` | — | Dotfile management and configuration |
+| `chezmoi` | — | chezmoi tool specifically |
+| `stow` | — | GNU Stow tool |
+| `github` | — | GitHub-specific pages |
+| `zsh` | — | Zsh shell |
+| `shell` | `cli` | Shell scripting and configuration |
 
 ### Retro Gaming / Hardware
 
@@ -105,6 +144,7 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `fire-emblem` | `Fire-Emblem`, `fire-emblem` | Fire Emblem game series |
 | `flashcard` | `R4`, `DSTWO` | DS flashcard hardware |
 | `handheld` | `hardware`, `virtual-pet` | Portable gaming hardware |
+| `dsi` | `nds` | Nintendo DSi specifically (subset of NDS family) |
 
 ### Business / Work
 
@@ -136,6 +176,12 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `undone` | Incomplete notes |
 | `glossary` | Glossary / reference entries |
 | `report` | Reports and summaries |
+| `reference` | Reference / lookup pages (broader than `glossary`) |
+| `research` | Research synthesis pages |
+| `concept` | Concept-level pages (alias for `concepts/`) |
+| `entity` | Entity-level pages (alias for `entities/`) |
+| `consolidation` | wiki-lint consolidation reports |
+| `education` | Educational resources / courses |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Research: Kimi K3"
 category: synthesis
-tags: [ai, llm, chinese-ai, open-source, large-scale-model, research]
+tags: [llm, chinese-ai, open-source, large-scale-model, research]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-deepseek-western-compute/"

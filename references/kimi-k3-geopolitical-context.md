@@ -1,7 +1,7 @@
 ---
 title: Kimi K3 — Geopolitical & Market Context
 category: references
-tags: [ai, chinese-ai, geopolitics, semiconductor]
+tags: [llm, chinese-ai, geopolitics, semiconductor]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-deepseek-western-compute/"
   - "https://the-decoder.com/kimi-k3/"

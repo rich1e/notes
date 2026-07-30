@@ -1,7 +1,7 @@
 ---
 title: Trek 认证系统 × MCP 服务器 — AI 工具暴露的认证特化
 category: synthesis
-tags: [auth, oauth, mcp, api-design, ai-integration, security]
+tags: [auth, oauth, mcp, api-design, security]
 sources:
   - "[[projects/trek/concepts/auth-system]]"
   - "[[projects/trek/concepts/mcp-server]]"

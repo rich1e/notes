@@ -7,7 +7,6 @@ tags:
   - catalog
   - data-structures
   - concurrency
-  - systems
 sources:
   - "https://github.com/Totoro-jam/battle-tested-patterns"
 created: 2026-07-08T07:14:00Z

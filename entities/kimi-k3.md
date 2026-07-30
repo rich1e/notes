@@ -1,7 +1,7 @@
 ---
 title: Kimi K3
 category: entities
-tags: [ai, llm, open-source, chinese-ai, large-scale-model]
+tags: [llm, open-source, chinese-ai, large-scale-model]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
   - "https://the-decoder.com/kimi-k3-first-open-model-with-3-trillion-parameters/"

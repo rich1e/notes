@@ -8,8 +8,9 @@ tags:
 summary: claude mcp add 默认是项目级，写入 projects.<path>.mcpServers；只有 --global 才落顶层 mcpServers。$HOME 目录不会被特殊处理，规则与 git config 一致。
 sources:
   - https://joydig.com/notebooklm-mcp-server-claude-code/
+  - https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-28
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-07-26"
@@ -149,7 +150,21 @@ for p, v in d.get('projects', {}).items():
 
 MCP 是**最简化的两层**——理解这点可避免 90% 的"MCP 装上不生效"问题。
 
+## `-s user` 是 `--global` 的同义写法
+
+Google Stitch 文档使用 `-s user` 形式（`claude mcp add stitch ... -s user`），效果与 `--global` 等价——都写到 `~/.claude.json` 顶层 `mcpServers`。两种写法在文档里经常互换使用。
+
+```bash
+# 两种写法等价
+claude mcp add --global notebooklm-mcp -- /home/$USER/.local/bin/notebooklm-mcp
+claude mcp add -s user notebooklm-mcp -- /home/$USER/.local/bin/notebooklm-mcp
+```
+
+判断规则保持不变：**只要看到 `mcp add` 没有 `--global` / `-s user`，就是项目级**。
+
 ## 相关页面
 
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装流程
+- [[skills/claude-code-mcp-auth-patterns]] — Stitch 等外部 MCP 服务的两种鉴权路径
+- [[entities/google-stitch]] — `-s user` 写法的实际出处
 - [[skills/claude-code-settings]] — Claude Code 完整配置作用域

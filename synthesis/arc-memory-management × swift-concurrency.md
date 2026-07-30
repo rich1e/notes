@@ -1,7 +1,7 @@
 ---
 title: ARC 内存管理 × Swift 并发 — 同一引用类型的两种安全机制
 category: synthesis
-tags: [swift, ios, arc, actor, actor, arc, type-system]
+tags: [swift, ios, arc, actor, type-system]
 sources:
   - "[[concepts/arc-memory-management]]"
   - "[[concepts/swift-concurrency]]"

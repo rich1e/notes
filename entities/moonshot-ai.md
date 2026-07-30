@@ -1,7 +1,7 @@
 ---
 title: Moonshot AI (月之暗面)
 category: entities
-tags: [ai, chinese-ai, llm, research-lab]
+tags: [chinese-ai, llm, research-lab]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
   - "https://www.kimi.com/"

@@ -9,7 +9,7 @@ description: NotebookLM 擅长消化文档做问答，Claude 擅长推理和代�
 tags:
   - clippings
   - NotebookLM
-  - Claude
+  - claude-code
   - MCP
 ---
 NotebookLM 擅长消化文档做问答，Claude 擅长推理和代码，但两者之间的内容搬运一直是手动操作。MCP 协议本应是桥梁，我搭了一座，发现桥面上有几处坑。

@@ -15,5 +15,9 @@
   "attachmentFolderPath": "assets",
   "showFrontmatter": true,
   "showUnsupportedFiles": true,
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "userIgnoreFilters": [
+    "buckets/books/",
+    "_raw/"
+  ]
 }

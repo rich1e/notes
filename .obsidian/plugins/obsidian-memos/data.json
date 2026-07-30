@@ -112,7 +112,7 @@
   "MomentsIcon": "https://images.pexels.com/photos/256514/pexels-photo-256514.jpeg",
   "MomentsQuote": "Share your thino with the world",
   "DefaultThemeForThino": "focus",
-  "LastUpdatedVersion": "3.0.14",
+  "LastUpdatedVersion": "3.0.16",
   "ShareToThinoWithText": false,
   "ShareToThinoWithTextAppend": "",
   "ShareToThinoWithTextPrepend": "",
@@ -202,6 +202,7 @@
   },
   "general": {
     "tokenExpiresAt": 0,
-    "userInfo": null
+    "userInfo": null,
+    "thinoDevice": null
   }
 }
