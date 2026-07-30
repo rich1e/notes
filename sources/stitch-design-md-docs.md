@@ -32,13 +32,13 @@ provenance:
 
 ## 已知信息（从下游交叉验证）
 
-> **重要**：本页对 Stitch 官方 docs 的具体内容**几乎全部依赖下游来源**（awesome-design-md README、[google-labs-code/design.md](https://github.com/google-labs-code/design.md) 的 spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-...-integration]] 文章）。Stitch docs 本身是 JS-rendered SPA，defuddle 与 WebFetch 都拿不到正文——这是本研究的客观限制。^[ambiguous]
+> **重要**：本页对 Stitch 官方 docs 的具体内容**几乎全部依赖下游来源**（awesome-design-md README、[google-labs-code/design.md](https://github.com/google-labs-code/design.md) 的 spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] 文章）。Stitch docs 本身是 JS-rendered SPA，defuddle 与 WebFetch 都拿不到正文——这是本研究的客观限制。^[ambiguous]
 
 | 主题 | 内容 | 来源 |
 |------|------|------|
 | DESIGN.md 起源 | "A new concept introduced by Google Stitch" | [[sources/awesome-design-md-repo]] README |
 | 格式定义 | "A plain-text design system document that AI agents read to generate consistent UI" | 同上 |
-| 落地方式 | Stitch 生成 UI 时**自动产出** DESIGN.md，放在项目根目录，agent 后续读取保持一致 | [[misc/web-medium-com-devsecops-ai-...-integration]] |
+| 落地方式 | Stitch 生成 UI 时**自动产出** DESIGN.md，放在项目根目录，agent 后续读取保持一致 | [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] |
 | 与 Stitch MCP 集成 | 通过 `claude mcp add stitch --transport http https://stitch.googleapis.com/mcp ...` 让 Claude Code 远程 fetch DESIGN.md | [[skills/claude-code-mcp-auth-patterns]] |
 | 完整 spec | 严格以 [[sources/google-design-md-spec]] 为权威（Google Labs 官方 spec 仓库） | [[sources/google-design-md-spec]] |
 
@@ -54,4 +54,4 @@ provenance:
 - [[sources/google-design-md-spec]] — 官方规范仓库（机器可读 spec）
 - [[sources/awesome-design-md-repo]] — 74 个真实站点 DESIGN.md 精选集
 - [[concepts/design-md-format-spec]] — 规范总结
-- [[misc/web-medium-com-devsecops-ai-...-integration]] — Stitch → Claude Code 完整集成实操
+- [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Stitch → Claude Code 完整集成实操
