@@ -104,7 +104,7 @@ lifecycle_changed: 2026-07-27
 
 ## 关联
 
-- [[concepts/transformer-architecture]]
+- concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]
 - [[sources/andrej-karpathy-zero-to-hero]]
 - [[sources/sebastian-raschka-llms-from-scratch-book]]

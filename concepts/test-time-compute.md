@@ -81,7 +81,7 @@ lifecycle_changed: 2026-07-27
 ## 关联
 
 - [[concepts/llm-training-pipeline]]
-- [[concepts/rlvr]]
-- [[concepts/scaling-laws]]
+- concepts/rlvr
+- concepts/scaling-laws
 - [[sources/stanford-cs336-spring2025]]
 - [[sources/li-hongyi-genai-2025]]

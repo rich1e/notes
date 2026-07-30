@@ -59,5 +59,5 @@ Sebastian Raschka 是一位专注 LLM 教育的 AI 研究者与作者。著有�
 
 - [[sources/sebastian-raschka-llms-from-scratch-book]]
 - [[entities/andrej-karpathy]]
-- [[concepts/transformer-architecture]]
+- concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]

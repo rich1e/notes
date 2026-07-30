@@ -77,9 +77,9 @@ lifecycle_changed: 2026-07-27
 - [[concepts/rag-vs-finetuning]] — Prompt vs RAG vs Fine-tuning 的决策矩阵
 - [[concepts/test-time-compute]] — 2025 范式转向：推理时扩展 + RLVR
 - [[concepts/mechanistic-interpretability]] — SAE、induction heads、circuit discovery
-- [[concepts/transformer-architecture]] — 通用 Transformer 概念（已存在于 vault）
+- concepts/transformer-architecture — 通用 Transformer 概念（已存在于 vault）
 - [[concepts/mixture-of-experts]] — MoE 架构（已存在）
-- [[concepts/scaling-laws]] — Chinchilla 等 scaling law（应作为补充概念引用）
+- concepts/scaling-laws — Chinchilla 等 scaling law（应作为补充概念引用）
 
 ## Entities & Tools
 

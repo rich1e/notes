@@ -33,14 +33,14 @@ Pre-write git snapshot: `fcd71c4ecf5df4912ffae2c852fbfe12dd712e5b`
 
 ### 反斜杠伪链接（Parser Artifact，20 个）
 
-这些链接使用了 `[[target\|display]]` 格式，反斜杠导致链接目标解析失败。目标页面均存在，仅链接语法有误。
+这些链接使用了 `target\` 格式，反斜杠导致链接目标解析失败。目标页面均存在，仅链接语法有误。
 
 - `entities/ios17-app-development-book.md` — 10 个（`xcode-ide-guide\`、`swift-fundamentals\` 等）
 - `concepts/ptp-ieee1588.md` — 2 个（`ptp-tlv-extension\`、`white-rabbit\`）
 - `references/ique-dsi-menu-software.md` — 5 个（`ique-dsi-camera\`、`ique-dsi-sound\` 等）
 - `synthesis/consolidation-2026-07-07.md` — 3 个（`ptp-bmca\`、`ptp-tlv-extension\`、`page\`）
 
-修复方式：将 `[[target\|display]]` → `[[target|display]]`
+修复方式：将 `target\` → `target`
 
 ### 真实破损链接（1 个）
 

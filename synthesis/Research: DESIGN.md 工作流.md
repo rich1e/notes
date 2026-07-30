@@ -127,7 +127,7 @@ npx @google/design.md diff DESIGN.md DESIGN-v2.md   # 两份之间做 token-leve
 └────────────────────┘
 ```
 
-详见 [[skills/claude-code-mcp-auth-patterns]]（Stitch MCP 鉴权）+ [[misc/web-medium-com-devsecops-ai-...-integration]]（端到端实操）。
+详见 [[skills/claude-code-mcp-auth-patterns]]（Stitch MCP 鉴权）+ [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]]（端到端实操）。
 
 ### F7. "Inspired interpretation" 措辞是品牌保护
 
@@ -153,7 +153,7 @@ WebSearch 报告该项目 2026-04 上线后 10 天内涨到 40K stars，最终 1
 - [[concepts/design-md-format-spec]] — 文件 schema、8 必备章节、章节顺序
 - [[concepts/design-md-token-interpolation]] — `{path.to.token}` 引用机制
 - [[concepts/design-md-anti-patterns]] — Do's and Don'ts 与 "AI taste"
-- [[concepts/design-system-as-ai-context]] — 上游：DESIGN.md 为何是 AI agent 的硬约束输入（与上一轮 ingest 的 [[misc/web-medium-com-devsecops-ai-...-integration]] 互链）
+- [[concepts/design-system-as-ai-context]] — 上游：DESIGN.md 为何是 AI agent 的硬约束输入（与上一轮 ingest 的 [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] 互链）
 - [[concepts/ai-tool-specialization]] — 上下游：把视觉决策与代码执行分离到不同 agent
 
 ## Entities & Tools
@@ -169,7 +169,7 @@ WebSearch 报告该项目 2026-04 上线后 10 天内涨到 40K stars，最终 1
 
 ### C1. Stitch 官方 docs 是 JS-rendered SPA，机器读不到
 
-https://stitch.withgoogle.com/docs/design-md/overview/ 与 /specification/ 返回 200 但 defuddle/WebFetch 拿不到正文（Angular SPA）。本研究的 Stitch 相关信息主要靠下游交叉验证（awesome-design-md README、google-labs-code/design.md spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-...-integration]] 文章）。**这是客观限制，不是工具缺陷。** 详见 [[sources/stitch-design-md-docs]]。
+https://stitch.withgoogle.com/docs/design-md/overview/ 与 /specification/ 返回 200 但 defuddle/WebFetch 拿不到正文（Angular SPA）。本研究的 Stitch 相关信息主要靠下游交叉验证（awesome-design-md README、google-labs-code/design.md spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] 文章）。**这是客观限制，不是工具缺陷。** 详见 [[sources/stitch-design-md-docs]]。
 
 ### C2. "300+ DESIGN.md" vs "74 个" 的数字脱节
 
@@ -197,13 +197,13 @@ awesome-design-md 仓库的 74 个文件覆盖 11 章节（含 Iteration Guide +
 - [[sources/google-design-md-spec]] — 官方规范仓库 README + docs/spec.md
 - [[sources/stitch-design-md-docs]] — Stitch 官方 docs 入口（JS-rendered，机器读不到正文）
 - [[sources/getdesign-md-marketplace]] — VoltAgent 目录服务
-- [[misc/web-medium-com-devsecops-ai-...-integration]] — 上轮 ingest 的 Stitch + Claude Code 端到端实操文章
+- [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — 上轮 ingest 的 Stitch + Claude Code 端到端实操文章
 
 ## 在 vault 中的位置
 
 本合成页是"Stitch + Claude Code 工作流"知识集群的**第二轮加深**：
 
-- **上轮**（2026-07-28 INGEST_URL）：Sachin Sharma 的端到端实操 → [[misc/web-medium-com-devsecops-ai-...-integration]]
+- **上轮**（2026-07-28 INGEST_URL）：Sachin Sharma 的端到端实操 → [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]]
 - **本轮**（2026-07-28 WIKI_RESEARCH）：DESIGN.md 格式 + 仓库 + 工具链的实证
 
 未来如扩展，可触发：

@@ -54,5 +54,5 @@ Andrej Karpathy 是当代最有影响力的 AI 教育者之一。前 Tesla AI �
 
 - [[sources/andrej-karpathy-zero-to-hero]]
 - [[entities/sebastian-raschka]]
-- [[concepts/transformer-architecture]]
+- concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]

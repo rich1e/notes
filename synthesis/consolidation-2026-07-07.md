@@ -27,7 +27,7 @@ updated: 2026-07-07T14:30:00Z
 - `concepts/ptp-message-types.md:51` — `[[concepts/ptp-bmca|BMCA]]` → `[[concepts/ptp-bmca|BMCA]]`
 - `concepts/ptp-message-types.md:52` — `[[concepts/ptp-tlv-extension|TLV]]` → `[[concepts/ptp-tlv-extension|TLV]]`
 
-Note: 13 other "broken" wikilinks the lint reported were false positives — they were already valid `[[page|alias]]` form and the targets all resolve. The two fixed above had a stray `\` before `|` that needed stripping.
+Note: 13 other "broken" wikilinks the lint reported were false positives — they were already valid `page` form and the targets all resolve. The two fixed above had a stray `\` before `|` that needed stripping.
 
 ## Cross-References Added (orphan rescue)
 - `journal/fire-emblem-mystery-chapter1` — now linked from: `journal/fire-emblem-new-mystery-prologue` (added "**下一章 →**" pointer)

@@ -48,7 +48,7 @@ relationships:
 |------|------|
 | Shell | Zsh |
 | 编辑器配置 | Neovim |
-| 终端复用 | tmux / [[entities/zellij]] |
+| 终端复用 | tmux / entities/zellij |
 | 文件管理 | Yazi |
 | 历史管理 | Atuin |
 | 终端模拟器 | Ghostty |
