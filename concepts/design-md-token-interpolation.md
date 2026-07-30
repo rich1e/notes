@@ -17,11 +17,13 @@ provenance:
   extracted: 0.88
   inferred: 0.10
   ambiguous: 0.02
+    type: related_to
 relationships:
   - target: "[[concepts/design-md-format-spec]]"
     type: related_to
-  - target: "[[concepts/design-system-as-ai-context]]"
+  - target: "[[entities/awesome-design-md]]"
     type: related_to
+
 ---
 
 # DESIGN.md 的 token 引用与插值
@@ -75,7 +77,7 @@ button-primary-disabled:
     textColor: "{colors.muted}"
 ```
 
-awesome-design-md 实测样本（Notion 版本）：
+[[entities/awesome-design-md.md|awesome-design-md]] 实测样本（Notion 版本）：
 
 ```yaml
 button-primary:

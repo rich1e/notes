@@ -20,11 +20,13 @@ provenance:
 base_confidence: 0.50
 lifecycle: draft
 lifecycle_changed: 2026-07-25
+    type: uses
 relationships:
   - target: "[[concepts/chezmoi-templating]]"
     type: uses
-  - target: "[[concepts/chezmoi-attribute-prefixes]]"
-    type: uses
+  - target: "[[entities/chezmoi]]"
+    type: related_to
+
 ---
 
 # chezmoi 实用模式集：跨平台初始化、模板变量、加密与脚本钩子

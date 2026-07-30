@@ -19,9 +19,11 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-relationships:
-  - target: "[[skills/tmux]]"
     type: related_to
+relationships:
+  - target: "[[entities/chezmoi]]"
+    type: uses
+
 ---
 
 # Zellij — 终端复用器（tmux 友好替代）
@@ -206,4 +208,4 @@ copy_command "xclip -selection clipboard" # Linux
 ## 相关页面
 
 - [[skills/tmux]] — tmux 快捷键速查、配置、插件管理（TPM）
-- [[concepts/dotfile-manager]] — 通过 chezmoi 等工具管理 Zellij 配置（`config.kdl` + layouts）
+- [[concepts/dotfile-manager]] — 通过 [[entities/chezmoi.md|chezmoi]] 等工具管理 Zellij 配置（`config.kdl` + layouts）

@@ -20,9 +20,11 @@ base_confidence: 0.70
 lifecycle: draft
 lifecycle_changed: 2026-07-25
 tier: supporting
-relationships:
-  - target: "[[skills/chezmoi-vscode-integration]]"
     type: related_to
+relationships:
+  - target: "[[entities/chezmoi]]"
+    type: related_to
+
 ---
 
 # chezmoi Workflow — 四个动词 + 一次更新

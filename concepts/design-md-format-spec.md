@@ -16,13 +16,17 @@ provenance:
   extracted: 0.92
   inferred: 0.05
   ambiguous: 0.03
+    type: related_to
 relationships:
   - target: "[[concepts/design-system-as-ai-context]]"
     type: related_to
   - target: "[[concepts/design-md-token-interpolation]]"
     type: related_to
-  - target: "[[concepts/design-md-anti-patterns]]"
+  - target: "[[entities/awesome-design-md]]"
     type: related_to
+  - target: "[[entities/google-labs-code-design]]"
+    type: related_to
+
 ---
 
 # DESIGN.md 格式规范
@@ -58,7 +62,7 @@ relationships:
 └─────────────────────────────────────────────────────┘
 ```
 
-来源：[google-labs-code/design.md](https://github.com/google-labs-code/design.md) 官方 spec。
+来源：[[entities/google-labs-code-design.md|google-labs-code/design.md]](https://github.com/google-labs-code/design.md) 官方 spec。
 
 ## Token 类型
 
@@ -86,7 +90,7 @@ relationships:
 
 章节顺序与别名由 [google-labs-code/design.md spec](https://github.com/google-labs-code/design.md/blob/main/docs/spec.md) 规定。重复章节 → 报错拒绝；未知章节 → 保留不报错。
 
-## 章节内容（来自 awesome-design-md 真实样本）
+## 章节内容（来自 [[entities/awesome-design-md.md|awesome-design-md]] 真实样本）
 
 ### Overview（必备）
 

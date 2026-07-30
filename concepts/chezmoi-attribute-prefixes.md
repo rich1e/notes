@@ -17,6 +17,10 @@ provenance:
 base_confidence: 0.66
 lifecycle: draft
 lifecycle_changed: 2026-07-25
+relationships:
+  - target: "[[entities/chezmoi]]"
+    type: related_to
+
 ---
 
 # chezmoi Attribute Prefixes — 命名约定作元数据

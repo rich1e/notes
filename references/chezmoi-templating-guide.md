@@ -17,6 +17,10 @@ provenance:
 base_confidence: 0.67
 lifecycle: draft
 lifecycle_changed: 2026-07-25
+relationships:
+  - target: "[[entities/chezmoi]]"
+    type: related_to
+
 ---
 
 # chezmoi Templating — User Guide

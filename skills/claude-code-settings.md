@@ -19,13 +19,15 @@ provenance:
   extracted: 0.90
   inferred: 0.08
   ambiguous: 0.02
-relationships:
-  - target: "[[skills/claude-code-token-optimization]]"
     type: related_to
+relationships:
   - target: "[[skills/tmux]]"
     type: related_to
-  - target: "[[concepts/mcp-server-protocol-quirks]]"
+  - target: "[[skills/claude-code-token-optimization]]"
     type: related_to
+  - target: "[[concepts/fabric-patterns]]"
+    type: related_to
+
 ---
 
 # Claude Code 配置管理

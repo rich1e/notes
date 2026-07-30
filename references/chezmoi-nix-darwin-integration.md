@@ -16,11 +16,13 @@ provenance:
 base_confidence: 0.50
 lifecycle: draft
 lifecycle_changed: 2026-07-25
+    type: uses
 relationships:
   - target: "[[concepts/dotfile-manager]]"
     type: related_to
-  - target: "[[concepts/chezmoi-workflow]]"
-    type: uses
+  - target: "[[entities/chezmoi]]"
+    type: related_to
+
 ---
 
 # chezmoi + nix-darwin：macOS 一键复刻开发环境的组合拳

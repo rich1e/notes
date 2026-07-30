@@ -16,13 +16,15 @@ provenance:
 base_confidence: 0.95
 lifecycle: draft
 lifecycle_changed: 2026-07-23
+    type: uses
 relationships:
   - target: "[[entities/kimi-k3]]"
     type: derived_from
   - target: "[[concepts/kimi-delta-attention]]"
     type: uses
-  - target: "[[concepts/mixture-of-experts]]"
-    type: uses
+  - target: "[[entities/claude-code]]"
+    type: related_to
+
 ---
 
 # Kimi K3 Official Launch Blog
@@ -207,7 +209,7 @@ Kimi K3 的原生多模态架构（同一模型内理解文本、图像和视频
 2. **SWE Marathon**：K3 和 Claude 模型使用 Claude Code harness，评估基于 H20 校准分支；**Claude Fable 5 在 35% 任务中触发 fallback**
 3. **FrontierSWE**：K3 使用 KimiCode；GPT-5.6 Sol 使用 Codex；其余来自 frontierswe.com（截至 2026-07-16）
 4. **PostTrainBench**：K3 和 Fable 5 使用 Claude Code harness；3 次平均（H20 GPU）
-5. **GAIA v2**：采用 claude-code 压缩策略（300K token 触发），K3 在 1M 无压缩时得分 **90.4**
+5. **GAIA v2**：采用 [[entities/claude-code.md|claude-code]] 压缩策略（300K token 触发），K3 在 1M 无压缩时得分 **90.4**
 
 ### 多模态测试
 

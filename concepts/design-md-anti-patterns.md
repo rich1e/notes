@@ -16,13 +16,17 @@ provenance:
   extracted: 0.65
   inferred: 0.30
   ambiguous: 0.05
-relationships:
-  - target: "[[concepts/design-md-format-spec]]"
     type: related_to
+relationships:
   - target: "[[concepts/design-system-as-ai-context]]"
     type: related_to
-  - target: "[[concepts/ai-tool-specialization]]"
+  - target: "[[concepts/design-md-format-spec]]"
     type: related_to
+  - target: "[[entities/awesome-design-md]]"
+    type: related_to
+  - target: "[[entities/google-labs-code-design]]"
+    type: related_to
+
 ---
 
 # DESIGN.md 中的 AI 反模式与 Do's and Don'ts
@@ -42,7 +46,7 @@ relationships:
 
 ## Do's and Don'ts 章节的形式
 
-awesome-design-md 真实样本（Notion）的反模式段：
+[[entities/awesome-design-md.md|awesome-design-md]] 真实样本（Notion）的反模式段：
 
 ```markdown
 ## Do's and Don'ts
@@ -58,7 +62,7 @@ awesome-design-md 真实样本（Notion）的反模式段：
 - Don't apply the pastel tints to anything other than feature cards
 ```
 
-这类 `Do / Don't` 段是 spec 的第 8 必备章节，由 [google-labs-code/design.md](https://github.com/google-labs-code/design.md) 强制要求。
+这类 `Do / Don't` 段是 spec 的第 8 必备章节，由 [[entities/google-labs-code-design.md|google-labs-code/design.md]](https://github.com/google-labs-code/design.md) 强制要求。
 
 ## 反模式的几个常见分类
 
