@@ -133,3 +133,8 @@ Dave Pagurek（p5.js 贡献者）的判断：
 - [Apple kinematic easing paper](https://jcgt.org/published/0011/03/02/paper.pdf)
 - [Wang 2006 convolution paper](https://courses.cs.washington.edu/courses/cse464b/18wi/assignments/assignment_1/wang_2006.pdf)
 - [Disney's 12 principles of animation](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+
+## Related
+
+- [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — 频域合成的另一条曲线构造路线
+- [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 反馈控制(PD/PID)的物理实现:摆轮+擒纵

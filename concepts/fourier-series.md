@@ -143,3 +143,7 @@ $$
 - [[concepts/animation-easing-functions.md]]
 - [[concepts/javascript-event-loop.md]]
 - [[concepts/animation-easing-functions]] — 缓动函数也用曲线合成思路
+
+## Related
+
+- [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — 频域合成 vs 时域参数化的正交关系

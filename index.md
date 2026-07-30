@@ -129,6 +129,9 @@ title: Wiki Index
 ## Synthesis
 
 - [[synthesis/Research: chezmoi]] — chezmoi 3 轮研究综合：三态模型 + 17 前缀 + Go 模板 + age/GPG + 四动词工作流
+- [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — 频域合成(傅里叶/本轮链)与时域参数化(缓动函数)的正交关系,两条路线控制维度不同
+- [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 摆轮+擒纵是 PD 反馈控制器的物理实现,游丝=K_p,阻尼=K_d,与 spring 动画同源
+- [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 两个 macOS 用户的"模块化替代默认"范式,软件/硬件两侧的同构工匠精神
 
 ## Projects
 

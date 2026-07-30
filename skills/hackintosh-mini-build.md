@@ -83,3 +83,7 @@ relationships:
 - [[concepts/macos-window-switcher]] — 替代 macOS 内置 Cmd+Tab 的应用/窗口/标签切换工具，核心价值是把"app 粒度"扩展为"window 粒度"，并加入标签下钻、Space 过滤、
 - [[references/macos-window-switchers]] — 主流 macOS 窗口切换器横向对比：AltTab / BetterCmdTab / Contexts / Witch 在许可证、macOS 兼容、布局、触发方
 - [[synthesis/macos-window-switcher × macos-window-switchers]] — 概念页和参考表都存在，但真正的综合洞见是：4 个独立开发者在同一时间段、用不同设计取舍解决同一问题——这暗示 macOS 内置 Cmd+Tab 的局限是**结构
+
+## Related
+
+- [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 两个 macOS 用户的"模块化替代默认"范式

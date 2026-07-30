@@ -80,3 +80,7 @@ macOS 自带的 `Cmd+Tab` 是 **app 粒度** 切换器——它只切换应用�
 - **习惯 Windows Alt+Tab 体验** → Witch（按 app/window/tab 多切换器共存，菜单栏模式）
 
 具体对比见 [[references/macos-window-switchers]]。
+
+## Related
+
+- [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 同一哲学的硬件侧(攒机)实例

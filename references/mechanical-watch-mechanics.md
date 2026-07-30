@@ -64,3 +64,7 @@ Bartosz Ciechanowski 交互文章 [Mechanical Watch](https://ciechanow.ski/mecha
 ## 相关页面
 
 - [[journal/fire-emblem-new-mystery-prologue.md]]
+
+## Related
+
+- [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 摆轮+擒纵=PD 反馈控制器的物理实现
