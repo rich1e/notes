@@ -11,7 +11,7 @@ sources:
 created: 2026-07-02T01:00:00Z
 updated: 2026-07-02T01:00:00Z
 summary: Zustand 是 pmndrs 出品的小型 React 状态管理库，基于简化 Flux 原则，无需 Provider，以 Hook 为核心 API，支持 Vanilla/React 双模式。
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: 2026-07-02
 base_confidence: 0.85

@@ -9,6 +9,7 @@ updated: 2026-07-23T08:00:00Z
 summary: >-
   LLM 架构模式：将参数划分为多个专家模块，每次推理只激活少数专家，以极低的每 token 算力代价实现超大模型规模。
 lifecycle: draft
+tier: core
 lifecycle_changed: 2026-07-23
 base_confidence: 0.65
 ---

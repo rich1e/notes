@@ -19,7 +19,7 @@ provenance:
 base_confidence: 0.70
 lifecycle: draft
 lifecycle_changed: 2026-07-25
-tier: supporting
+tier: core
     type: related_to
 relationships:
   - target: "[[entities/chezmoi]]"

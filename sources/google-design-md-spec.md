@@ -12,6 +12,7 @@ updated: "2026-07-28T01:00:00Z"
 summary: "Google Labs 出品的 DESIGN.md 规范仓库 + npm CLI（@google/design.md, v0.4.0）。权威定义 DESIGN.md 文件 schema、token 类型、section 顺序，并提供 lint/diff 工具。"
 base_confidence: 0.85
 lifecycle: draft
+tier: supporting
 lifecycle_changed: "2026-07-28"
 provenance:
   extracted: 0.95

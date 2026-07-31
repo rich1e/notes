@@ -9,7 +9,7 @@ source_url: "https://stitch.withgoogle.com"
 created: "2026-07-28T00:00:00Z"
 updated: "2026-07-28T12:00:00Z"
 summary: "Google Labs 出品的 AI 设计工具，基于 Gemini 2.5 Pro，用自然语言生成 UI 屏幕、组件和 DESIGN.md 设计系统，并通过 MCP 与 Claude Code 等 agent 对接。"
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
 base_confidence: 0.45

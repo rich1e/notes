@@ -8,7 +8,7 @@ sources:
   - "https://github.com/VoltAgent/awesome-design-md"
 created: "2026-07-28T01:00:00Z"
 updated: "2026-07-28T01:00:00Z"
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
 base_confidence: 0.85

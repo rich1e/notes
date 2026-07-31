@@ -15,6 +15,7 @@ updated: 2026-07-23T12:00:00Z
 summary: >-
   Moonshot AI 发布的全球首个 3T 级开权重 LLM（2.8T 参数，MoE 896 专家）。专为 Agent 编程与知识工作设计，代码评测领先，整体能力接近 Fable 5 但略弱。
 lifecycle: draft
+tier: core
 lifecycle_changed: 2026-07-23
 base_confidence: 0.7
 ---

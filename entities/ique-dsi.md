@@ -10,7 +10,7 @@ summary: 神游科技（iQue）发行的中国版 Nintendo DSi，型号 TWL-001(
 base_confidence: 0.67
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.85
   inferred: 0.10

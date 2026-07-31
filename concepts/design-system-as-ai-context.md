@@ -7,7 +7,7 @@ sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
 created: "2026-07-28T00:00:00Z"
 updated: "2026-07-28T00:00:00Z"
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
 base_confidence: 0.42

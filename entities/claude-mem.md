@@ -21,6 +21,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.7
 lifecycle: draft
+tier: supporting
 lifecycle_changed: "2026-07-29"
 ---
 

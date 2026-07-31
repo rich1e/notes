@@ -18,7 +18,7 @@ summary: Swift 5.5+ 结构化并发：async/await、Task/TaskGroup、Actor 数�
 base_confidence: 0.88
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.88
   inferred: 0.12

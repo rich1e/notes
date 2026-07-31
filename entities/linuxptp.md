@@ -9,7 +9,7 @@ summary: "Linux 平台的工业级 PTP 实现，包含 ptp4l（协议）、phc2s
 base_confidence: 0.88
 lifecycle: draft
 lifecycle_changed: "2026-07-03"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.88
   inferred: 0.10

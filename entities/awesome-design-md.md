@@ -8,7 +8,7 @@ source_url: "https://github.com/VoltAgent/awesome-design-md"
 created: "2026-07-28T01:00:00Z"
 updated: "2026-07-28T01:00:00Z"
 summary: "VoltAgent 团队的 awesome-design-md 仓库，74 个真实站点 DESIGN.md 精选集（Claude / Vercel / Notion / Stripe / Linear 等），是 Stitch DESIGN.md 规范的最大下游样本集。"
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
 base_confidence: 0.78

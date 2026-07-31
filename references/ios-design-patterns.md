@@ -9,7 +9,7 @@ summary: iOS/Swift 设计模式速查：创建型（5种）、结构型（7种�
 base_confidence: 0.85
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.78
   inferred: 0.22

@@ -11,7 +11,7 @@ sources:
   - https://baoyu.io/blog/2026-04-06/claude-code-token-optimization
 created: 2026-06-29
 updated: 2026-06-29
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
 base_confidence: 0.67

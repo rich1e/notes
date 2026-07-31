@@ -18,6 +18,7 @@ provenance:
   ambiguous: 0.03
 base_confidence: 0.66
 lifecycle: draft
+tier: core
 lifecycle_changed: 2026-07-25
 relationships:
   - target: "[[entities/chezmoi]]"

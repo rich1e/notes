@@ -10,7 +10,7 @@ sources:
   - https://manytricks.com/witch/
 created: 2026-07-07
 updated: 2026-07-07
-tier: supporting
+tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-07"
 base_confidence: 0.60

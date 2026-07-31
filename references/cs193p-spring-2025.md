@@ -10,7 +10,7 @@ summary: Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周�
 base_confidence: 0.83
 lifecycle: draft
 lifecycle_changed: "2026-07-10"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.80
   inferred: 0.15

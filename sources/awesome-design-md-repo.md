@@ -10,6 +10,7 @@ updated: "2026-07-28T01:00:00Z"
 summary: "VoltAgent 团队维护的 DESIGN.md 精选集，含 74 个真实站点（Claude / Vercel / Notion / Linear / Stripe 等）的 design analysis，遵循 Google Labs 官方 DESIGN.md 规范。"
 base_confidence: 0.75
 lifecycle: draft
+tier: supporting
 lifecycle_changed: "2026-07-28"
 provenance:
   extracted: 0.90

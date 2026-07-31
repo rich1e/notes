@@ -9,7 +9,7 @@ summary: Arpit Kulsreshtha 著，Packt 出版，覆盖 Swift 5.9、SwiftUI、Xco
 base_confidence: 0.83
 lifecycle: draft
 lifecycle_changed: "2026-07-01"
-tier: supporting
+tier: core
 provenance:
   extracted: 0.95
   inferred: 0.05
