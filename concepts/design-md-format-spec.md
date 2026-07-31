@@ -2,7 +2,7 @@
 title: "DESIGN.md 格式规范"
 category: concepts
 tags: [design-system, design-tokens, ai-coding, format-spec, concept]
-summary: "DESIGN.md 是 Google Labs 提出的设计系统格式：YAML frontmatter 承载机器可读 token（colors/typography/rounded/spacing/components），Markdown body 按 8 个必备章节顺序承载人类可读 rationale。awesome-design-md 扩展到 11 章节（加 Iteration Guide 与 Known Gaps）。"
+summary: "DESIGN.md 是 Google Labs 提出的设计系统格式:YAML frontmatter 承载机器可读 token(colors/typography/spacing/components),Markdown body 按 8 个必备章节承载人类可读 rationale;awesome-design-md 扩展到 11 章节。"
 sources:
   - "https://github.com/google-labs-code/design.md"
   - "https://github.com/VoltAgent/awesome-design-md"
