@@ -1,7 +1,7 @@
 ---
 title: EntryEditor 图片脏标记
 category: project
-tags: [ios, swiftui, core-data, media, architecture]
+tags: [ios, swiftui, core-data, media, app-architecture]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

@@ -1,7 +1,7 @@
 ---
 title: Mixture-of-Experts (MoE)
 category: concepts
-tags: [llm, architecture, deep-learning]
+tags: [llm, model-architecture, deep-learning]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
 created: 2026-07-23T08:00:00Z

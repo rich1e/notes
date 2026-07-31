@@ -8,6 +8,8 @@ title: Wiki Index
 
 ## Concepts
 
+- [[concepts/serverless-image-hosting]] — 无服务器图床范式：边缘 serverless 函数 + 外包对象存储（R2/S3/Telegram）+ KV/D1 元数据，成本趋零、免运维、可移植
+- [[concepts/telegram-as-blob-storage]] — 把 Telegram/Discord 当免费对象存储的「白嫖」模式：上传即发消息、读取即 getFile，受制于 20MB/速率/政策
 - [[concepts/ptp-ieee1588]] — IEEE 1588 精确时间协议，四时间戳法实现纳秒级分布式时钟同步
 - [[concepts/ptp-bmca]] — BMCA 最佳主时钟选举算法，基于 clockClass/Accuracy/priority 分布式选举
 - [[concepts/ptp-clock-types]] — PTP 四种时钟角色：GM 提供时间源，BC 转发，TC 补偿驻留延迟，OC 终端
@@ -56,9 +58,20 @@ title: Wiki Index
 - [[concepts/mechanistic-interpretability]] — 逆向工程神经网络内部电路：SAE、induction heads、circuit discovery
 - [[concepts/claude-mem-memory-architecture]] — claude-mem 记忆三段：hook 捕获 → haiku 压成 observation 存 SQLite+Chroma → 第二次会话起 SessionStart 注入
 - [[concepts/claude-code-hooks-lifecycle]] — Claude Code 6 个生命周期 hook（Setup/SessionStart/UserPromptSubmit/PostToolUse/PreToolUse/Stop），claude-mem 的挂载点
+- [[concepts/weak-rng-key-generation]] — 弱随机数私钥生成漏洞：私钥安全取决于随机源的熵而非算法强度，MT19937（2^32 种子空间）可暴力枚举
+- [[concepts/workflow-automation-platform]] — 工作流自动化平台：节点+连线+DAG 低代码抽象，Zapier/Make/n8n 三主流对比
+- [[concepts/fair-code-license]] — 受限源码可用许可：可自托管可改可商用，但禁同质竞品；代表 n8n 的 Sustainable Use License
+- [[concepts/ai-agent-node-pattern]] — AI Agent 节点模式：把 LLM/工具/记忆/RAG/MCP 作为可视化一等节点
+- [[concepts/agent-operating-system]] — AOS：多会话连续 AI 工作流的五层 memory 框架（Handoff/Auto/claude-mem/ADR/KB）+ compact checkpoint 模板 + 事件驱动更新
+- [[concepts/transformer-architecture]] — Transformer：自注意力(Q/K/V+多头+位置编码)驱动的序列建模骨架，当代 LLM 统一底座
+- [[concepts/scaling-laws]] — Scaling laws：损失随参数/数据/算力呈幂律下降，Chinchilla 指出参数与数据应等比放大
+- [[concepts/instruction-tuning]] — 指令微调：预训练后用「指令-回答」SFT，把续写模型改造成听懂指令的助手
+- [[concepts/ai-agent]] — AI Agent：以 LLM 为大脑、感知-规划-行动闭环、工具调用+记忆的自主系统
 
 ## Entities
 
+- [[entities/cloudflare-imgbed]] — 开源自托管图床（MarSeventh，MIT）：Serverless+Docker 双部署、六大存储后端、Vue 3 前端，脱胎自 Telegraph-Image
+- [[entities/sanyue-imghub]] — CloudFlare ImgBed 的前端仓库（Vue 3 + Element Plus），前后端分离可独立换皮
 - [[entities/feather-ios-sideload]] — iOS 付费开发者签名工具 Feather
 - [[entities/nds-flashcard]] — NDS 烧录卡（R4 / DSTWO）使用指南
 - [[entities/neogeo-mame]] — NEOGEO / MAME 模拟器配置
@@ -89,6 +102,10 @@ title: Wiki Index
 - [[entities/sebastian-raschka]] — Sebastian Raschka：《Build a Large Language Model (From Scratch)》作者，工程化 PyTorch 路线
 - [[entities/li-hongyi]] — 李宏毅：台大教授，中文 ML/GenAI 课程主讲，2025《生成式AI导论》
 - [[entities/claude-mem]] — claude-mem：thedotmack 出品的 Claude Code 长期记忆插件（Apache-2.0），hook 驱动，本地 SQLite+Chroma
+- [[entities/n8n]] — n8n-io/n8n：fair-code 工作流自动化平台，TypeScript，2.0 起原生 multi-agent + MCP + Data Tables
+- [[entities/czlonkowski-n8n-mcp]] — czlonkowski/n8n-mcp：把 n8n API 暴露为 MCP server，让 Claude/Windsurf/Cursor 用自然语言搭 workflow
+- [[entities/zapier]] — Zapier：纯云无代码工作流自动化 SaaS，集成数量业界最多，n8n/Make 竞品
+- [[entities/make]] — Make（原 Integromat）：纯云工作流自动化 SaaS，可视化 scenario 画布最强
 
 ## Skills
 
@@ -192,11 +209,20 @@ title: Wiki Index
 - [[references/kimi-k3-video-review-lingdu]] — 零度解说实测视频：DeepSWE/LiveBench 基准、虚拟机 Agent 演示、3D 生成、越狱
 - [[references/kimi-k3-video-analysis-reportify]] — 哈佛老徐深度分析：Kimi 官方原文、Anthropic Fable-5 禁令、国产芯片全球化路径
 - [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
+- [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
 - [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
 - [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka Manning 2024 书 + GitHub 仓库：PyTorch 实现 GPT 全流程
 - [[sources/stanford-cs336-spring2025]] — Stanford CS336 (Hashimoto & Liang) Spring 2025：5 作业 + 19 讲座，数据/架构/系统/对齐全覆盖
 - [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》13 讲：中文母语零基础友好
 - [[sources/dakingrai-mech-interp-papers]] — 机制可解释性论文清单（配 arXiv:2407.02646 综述）：Techniques/Evaluation/Findings/Tools 四分组
+- [[sources/n8n-github-repo]] — n8n-io/n8n GitHub 仓库：198.7K stars，TypeScript，双许可（Sustainable Use + Enterprise），1500+ 集成
+- [[sources/n8n-official-home]] — n8n.io 官方主页：500+ 商业集成、Microsoft/NVIDIA/Meta 企业客户、SOC 2/GDPR 合规
+- [[sources/n8n-queue-mode]] — docs.n8n.io Queue Mode 文档：main/webhook/worker 三角色解耦、Redis BullMQ + Postgres 生产架构
+- [[sources/czlonkowski-n8n-mcp]] — czlonkowski/n8n-mcp：npx 一行配置，让 Claude 用自然语言搭 n8n workflow
+- [[sources/n8n-2-0-release]] — n8n 2.0（2025-12）：multi-agent 编排 + MCP client/server 一等节点 + 内建 Data Tables
+- [[sources/cloudflare-imgbed-github]] — MarSeventh/CloudFlare-ImgBed 主仓库：Serverless+Docker 双部署、多存储后端、MIT
+- [[sources/cloudflare-imgbed-docs]] — CloudFlare ImgBed 官方文档站：完整能力清单 + 架构（Vue 3/Hono/KV·D1/PBKDF2）
+- [[sources/telegraph-image-github]] — cf-pages/Telegraph-Image 上游：Cloudflare Pages + Telegram Bot API 免费图床，其局限催生 ImgBed
 
 ## Synthesis
 
@@ -221,11 +247,14 @@ title: Wiki Index
 - [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — PTP 四种时钟角色 × White Rabbit 工业实现：sub-ns 精度 + SyncE + 大量 TLV 扩展
 - [[synthesis/Research: 学习AI大模型]] — LLM 学习系统化路径 3 轮研究综合：双轨 + 四阶段 + 三大资源坐标系 + 2025 Test-Time Compute 转向
 - [[synthesis/Research: claude-mem 长期记忆]] — claude-mem 研究综合：hook 驱动 capture→compress→inject 流水线，本地 SQLite+Chroma，第二次会话起注入，3 层检索省 10× token，本地免费/上云付费
+- [[synthesis/Research: n8n]] — n8n 三轮调研综合：fair-code 开源工作流自动化平台，2.0 升 multi-agent + MCP + Data Tables，Queue Mode 成熟生产方案
+- [[synthesis/Research: CloudFlare ImgBed]] — CloudFlare ImgBed 三轮调研综合：MIT 开源自托管图床，Serverless+Docker 双部署，六存储后端，脱胎自 Telegraph-Image 并补足其单后端/配额局限
 
 ## Misc
 
 - [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
 - [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Google Stitch + Claude Code MCP 协作实操：两种鉴权路径（API key header vs OAuth proxy），`-s user` 等价 `--global`，`.env` 文件干扰 OAuth 的故障清单
+- [[misc/web-brainz-fun-bitcoin-seizure]] — brain-zhang 博文：美国政府大额比特币没收案不是攻破密码算法，而是利用弱私钥生成漏洞（MT19937/CVE-2023-39910），以 2025 DOJ 没收陈志/太子集团 12.7 万 BTC 为中心案例
 - [[sources/awesome-design-md-repo]] — VoltAgent/awesome-design-md：74 个真实站点 DESIGN.md（Claude / Vercel / Notion / Stripe 等）的 inspired interpretation
 - [[sources/google-design-md-spec]] — google-labs-code/design.md：DESIGN.md 官方格式规范 + `@google/design.md` CLI（lint / diff）
 - [[sources/stitch-design-md-docs]] — Stitch 官方 DESIGN.md 文档（JS-rendered SPA，机器读不到正文）

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-29T09:04:00Z",
+  "last_updated": "2026-07-31T09:20:33Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -81,6 +81,55 @@
         "synthesis/Research: claude-mem 长期记忆.md"
       ],
       "pages_updated": []
+    },
+    "n8n": {
+      "type": "research",
+      "topic": "n8n",
+      "researched_at": "2026-07-30T06:45:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 5,
+      "pages_created": [
+        "concepts/workflow-automation-platform.md",
+        "concepts/fair-code-license.md",
+        "concepts/ai-agent-node-pattern.md",
+        "entities/n8n.md",
+        "entities/czlonkowski-n8n-mcp.md",
+        "sources/n8n-github-repo.md",
+        "sources/n8n-official-home.md",
+        "sources/n8n-queue-mode.md",
+        "sources/czlonkowski-n8n-mcp.md",
+        "sources/n8n-2-0-release.md",
+        "synthesis/Research: n8n.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
+    },
+    "CloudFlare ImgBed": {
+      "type": "research",
+      "topic": "CloudFlare ImgBed",
+      "researched_at": "2026-07-31T06:29:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "pages_created": [
+        "sources/cloudflare-imgbed-github.md",
+        "sources/cloudflare-imgbed-docs.md",
+        "sources/telegraph-image-github.md",
+        "concepts/serverless-image-hosting.md",
+        "concepts/telegram-as-blob-storage.md",
+        "entities/cloudflare-imgbed.md",
+        "entities/sanyue-imghub.md",
+        "synthesis/Research: CloudFlare ImgBed.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
     }
   },
   "sources": {
@@ -842,6 +891,38 @@
         "skills/claude-code-token-optimization.md"
       ],
       "last_ingested": "2026-07-28T00:00:00Z"
+    },
+    "https://brainz.fun/blog/2026/06/01/mei-guo-zheng-fu-shi-ru-he-mei-shou-da-liang-bi-te-bi-de/": {
+      "last_ingested": "2026-07-30T06:12:00Z",
+      "content_hash": "sha256:brainz-fun-bitcoin-seizure-20260601",
+      "source_type": "url",
+      "project": null,
+      "promotion_status": "misc",
+      "pages_produced": [
+        "misc/web-brainz-fun-bitcoin-seizure.md",
+        "concepts/weak-rng-key-generation.md",
+        "references/cve-2023-39910.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ]
+    },
+    "_raw/agent-operating-system.txt": {
+      "ingested_at": "2026-07-31T03:00:00Z",
+      "archived_to": "_raw/_archived/agent-operating-system.txt",
+      "source_type": "user_draft",
+      "project": null,
+      "pages_produced": [
+        "concepts/agent-operating-system.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
     }
   },
   "projects": {
@@ -904,8 +985,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 59,
-    "total_pages": 132,
+    "total_sources_ingested": 66,
+    "total_pages": 160,
     "total_projects": 1,
     "last_full_rebuild": null
   }

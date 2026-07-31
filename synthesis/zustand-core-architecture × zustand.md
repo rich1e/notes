@@ -1,7 +1,7 @@
 ---
 title: Zustand 内部架构 × 库品牌定位 — "极简"是有意暴露而非省略
 category: synthesis
-tags: [state-management, react, architecture, zustand, design-patterns]
+tags: [state-management, react, zustand, design-patterns]
 sources:
   - "[[concepts/zustand-core-architecture]]"
   - "[[entities/zustand]]"

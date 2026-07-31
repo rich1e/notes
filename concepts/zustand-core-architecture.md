@@ -4,7 +4,6 @@ category: concepts
 tags:
   - state-management
   - react
-  - architecture
   - frontend
 sources:
   - "_raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)"

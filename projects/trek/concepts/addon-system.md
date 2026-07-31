@@ -5,7 +5,7 @@ tags:
   - addon
   - extensibility
   - feature-flags
-  - architecture
+  - system-architecture
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z

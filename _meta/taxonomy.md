@@ -26,7 +26,7 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `xcode` | `ide`, `simulator`, `playground` | Xcode IDE and toolchain |
 | `xcode-cloud` | — | Xcode Cloud CI/CD |
 | `app-store` | `publishing`, `testflight` | App Store / TestFlight |
-| `architecture` | `mvvm`, `mvc`, `viper`, `mvp` | App architecture patterns |
+| `app-architecture` | `mvvm`, `mvc`, `viper`, `mvp`, `architecture` | Client/app architecture patterns (iOS/SwiftUI/frontend) |
 | `networking` | `urlsession`, `alamofire`, `rest` | iOS networking |
 | `concurrency` | `async-await`, `gcd`, `actor`, `dispatchqueue`, `operation`, `multithreading` | Concurrency and threading |
 | `persistence` | `sqlite`, `userdefaults` | Local storage and persistence |
@@ -66,7 +66,9 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | Canonical | Aliases | Usage |
 |-----------|---------|-------|
 | `programming` | `software` | General programming concepts |
-| `architecture` | `design-patterns`, `pattern`, `anti-patterns` | Software architecture and patterns |
+| `system-architecture` | `distributed`, `backend-architecture` | System/backend/distributed architecture (services, queues, monorepo) |
+| `model-architecture` | `network-architecture` | ML/neural-network model architecture (MoE, transformer blocks, etc.) |
+| `codebase-structure` | `source-tree`, `project-layout` | Repository/source-tree organization |
 | `git` | — | Git version control |
 | `debugging` | `bugfix`, `Bugfix` | Debugging and bug fixes |
 | `type-system` | — | Type system concepts |

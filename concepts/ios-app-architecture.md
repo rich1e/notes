@@ -5,7 +5,7 @@ category: concepts
 tags:
   - ios
   - swiftui
-  - architecture
+  - app-architecture
   - state-management
 relationships:
   - target: "[[projects/dayfold/dayfold]]"

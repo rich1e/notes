@@ -3,7 +3,7 @@
 title: Trek 架构概览
 category: concepts
 tags:
-  - architecture
+  - system-architecture
   - nestjs
   - monorepo
   - full-stack

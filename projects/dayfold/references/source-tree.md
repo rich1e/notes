@@ -6,7 +6,7 @@ tags:
   - ios
   - swift
   - swiftui
-  - architecture
+  - codebase-structure
 relationships:
   - target: "[[projects/dayfold/dayfold]]"
     type: related_to
