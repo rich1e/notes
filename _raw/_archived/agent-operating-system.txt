@@ -1,0 +1,117 @@
+
+
+# Agent Operating System
+
+## 概述
+
+Agent Operating System（AOS）旨在支持连续多会话的 AI 工作流，解决上下文连续性、记忆持久化、任务交接和 compact 弹性等问题。AOS 能够让多轮任务协作不中断地进行，支持 AI agent 在长期任务中的知识积累、决策追踪和高效 handoff，防止因上下文丢失导致的信息遗忘和重复劳动。
+
+主要解决的问题：
+- 上下文连续性：让 agent 能在多 session、多人协作下延续任务上下文。
+- 记忆持久化：将重要信息、决策、知识沉淀为长期可用的 memory。
+- 任务 handoff：支持任务在 agent 之间、session 之间的顺畅交接。
+- compact 弹性：在上下文 compact 后仍能恢复核心进展和决策，不丢关键信息。
+
+## 五层架构
+
+1. **Handoff（Task Memory）**
+   - 作用：任务进展、当前上下文交接
+   - 存储内容：当前任务状态、进度、待办、上下文摘要
+   - 何时更新：每次任务进展、handoff、compact 前后
+   - 不应存：详细推理、长期知识、历史决策
+
+2. **Auto Memory（Working Memory）**
+   - 作用：当前 session 的工作记忆
+   - 存储内容：短期推理、步骤、临时信息
+   - 何时更新：每次 agent 推理、任务推进
+   - 不应存：长期知识、标准、决策记录
+
+3. **claude-mem（Semantic Memory）**
+   - 作用：沉淀为长期的语义知识
+   - 存储内容：稳定的知识点、通用事实、可迁移经验
+   - 何时更新：发现长期有用的知识、compact 后筛选
+   - 不应存：任务特定细节、一次性信息
+
+4. **ADR Memory（Decision Memory）**
+   - 作用：记录重要决策及其理由
+   - 存储内容：架构决策、理由、权衡、替代方案
+   - 何时更新：重大决策发生时、compact 后回顾
+   - 不应存：实现细节、未决策内容
+
+5. **Knowledge Base（Knowledge Memory）**
+   - 作用：标准、规范、长期知识库
+   - 存储内容：设计标准、规范、通用规则、最佳实践
+   - 何时更新：知识沉淀、标准变更
+   - 不应存：临时推理、任务状态、个人偏好
+
+## 架构图
+
+```
+Human
+  |
+  v
+Handoff (Task Memory)
+  |
+  v
+Auto Memory (Working Memory)
+  |
+  v
+claude-mem (Semantic Memory)
+  |
+  v
+ADR Memory (Decision Memory)
+  |
+  v
+Knowledge Base (Knowledge Memory)
+  |
+  v
+Git Repository
+```
+
+## Compact 的影响
+
+compact 过程主要丢失的是推理轨迹、未完成细节、失败尝试和隐含约束，而不仅仅是信息本身。compact 后 agent 只能保留精简后的核心知识和决策，丢失了很多过程性、上下文性的内容。因此，设计 memory 层时应关注哪些信息需要沉淀、哪些可以丢弃，并通过 checkpoint 保证关键进展不丢失。
+
+## Compact Checkpoint 策略
+
+将 compact 作为 checkpoint，同步当前进展和关键信息，便于后续恢复和 handoff。推荐 checkpoint 模板如下：
+
+```
+## Done
+- 已完成的任务、阶段性成果
+
+## Todo
+- 待办事项、后续任务
+
+## Decisions
+- 已作出的关键决策及理由
+
+## Risks
+- 已识别的风险与不确定性
+
+## Open Questions
+- 尚未解决的问题
+
+## Next Actions
+- 下一步具体行动
+
+## Candidate Long-term Memories
+- 候选的长期知识点/经验
+```
+
+## 事件驱动的 Memory Workflow
+
+各类 memory 的更新应以事件驱动为主，避免 end-of-session 式的大量总结。典型事件与 memory 更新关系如下：
+- 重要决策 -> ADR Memory
+- 长期知识发现 -> claude-mem
+- 标准/规范变更 -> Knowledge Base
+- 任务进展/交接 -> handoff
+- compact 发生 -> checkpoint
+
+## 设计原则
+
+- 单一职责：每层 memory 只负责一种类型的信息
+- 避免重复：信息只存储在最合适的一层
+- 增量更新：以事件驱动为主，避免仅在 session 结束时总结
+- compact 是同步点而非备份点：确保关键进展已 checkpoint
+- 与模型无关：memory 结构应支持多种模型/agent 互操作
