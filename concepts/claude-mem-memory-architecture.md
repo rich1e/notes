@@ -9,8 +9,9 @@ tags:
 sources:
   - https://github.com/thedotmack/claude-mem
   - "本地插件: ~/.claude/plugins/cache/thedotmack/claude-mem/13.12.4/skills/how-it-works/SKILL.md"
+  - "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md (兔兔AGI, 2026-03-03, 二手)"
 created: 2026-07-29T09:04:00Z
-updated: 2026-07-29T09:04:00Z
+updated: 2026-07-31T12:10:00Z
 summary: >-
   claude-mem 把跨会话记忆拆成三段：hook 捕获工具调用 → 便宜模型压成 observation 存 SQLite+Chroma
   → 第二次会话起 SessionStart 自动注入相关记忆。3 层检索省 10× token。
@@ -47,6 +48,26 @@ lifecycle_changed: "2026-07-29"
 - **注入量**：默认 `CLAUDE_MEM_CONTEXT_OBSERVATIONS=50` 条 observation + 最近 `CONTEXT_SESSION_COUNT=10` 个会话摘要。
 - **前置全库**：跑 `/learn-codebase` 可一次性把整个 repo 读进记忆（约 5 分钟，可选），把认知缓存前置。
 
+### 注入的第二形态：目录级 CLAUDE.md
+
+除了会话开头的 prompt 注入，claude-mem 还把记忆**落到文件系统**——为被操作的项目文件夹自动生成/维护 `CLAUDE.md`（`CLAUDE_MEM_FOLDER_INDEX_ENABLED` 控制）。流程：识别文件夹 → 查该目录相关 observation → 整理成活动时间线（observation ID、时间、类型 emoji、标题、预估 token）→ 写入并用 `<claude-mem-context>` 标签包裹。这利用了 Claude Code 原生「自动读目录 `CLAUDE.md`」的机制，把记忆变成**被动注入**（无需 MCP 调用即被读到）。
+
+关键设计：**`<claude-mem-context>` 标签之外的用户内容在重新生成时保留**——用户可在生成块上下写手工文档、目录指令、架构约定，与自动时间线共存。标签因此既是「自动生成区边界」，也是幂等重写的锚点。
+
+```
+# Authentication Module        ← 用户手写，保留
+This folder contains auth code.
+
+<claude-mem-context>           ← 系统自动生成/覆盖区
+# Recent Activity
+| ID | Time | Type | Title | Tokens |
+| #1234 | 4:30 PM | 🔵 | Implemented user auth | ~250 |
+</claude-mem-context>
+
+## Manual Notes                ← 用户手写，保留
+- OAuth providers go in /providers/
+```
+
 ## 3 层检索（省 10× token）
 
 查历史记忆遵循固定工作流，避免一次拉全量：
@@ -60,6 +81,12 @@ lifecycle_changed: "2026-07-29"
 ## 数据存哪、隐私边界
 
 全部在 `~/.claude-mem/`（SQLite + Chroma + logs + settings）。默认除压缩 provider 调用外不出机器。可选 cmem.ai Pro 云同步会上传 observation 叙述 + 完整 prompt——是**本地免费 / 上云付费**的明确边界。
+
+## 无尽模式（Endless Mode，beta）— 架构级扩展
+
+标准架构在约 50 次工具调用后会触上下文上限。beta 的**无尽模式**用**仿生记忆**思路把这一上限推到约 **1000 次工具使用（~20 倍）**：不再让原始工具输出在窗口里累积，而是**实时压缩每次调用的输出**，把 token 用量削减约 **95%**，从而把上下文增长的扩展复杂度从 **O(N²) 降到 O(N)**。
+
+这是把三段流水线里的「压缩」从**会话结束时的旁路**提前到**每次工具调用后的实时同步路径**——代价随之显性化：每次调用生成 observation 加 **60–90 秒延迟**。取舍逻辑：跨天/周的深度会话里延迟摊薄可接受；快速连续调用时延迟成瓶颈。经 Web 查看器（[[entities/claude-mem]]）→ 设置 → 版本频道切 beta 启用。
 
 ## 相关页面
 

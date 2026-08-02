@@ -22,13 +22,13 @@ _github-pages-challenge-rich1e
 
 ![[assets/Chronicle/2023/Blog/IMG-20260629163136023.png]]
 
-![[assets/Chronicle/2023/Blog/IMG-20260629163136023-63.png]]
+![[assets/Chronicle/2023/Blog/IMG-20260629163136023-65.png]]
 
-![[assets/Chronicle/2023/Blog/IMG-20260629163136023-64.png]]
+![[assets/Chronicle/2023/Blog/IMG-20260629163136023-66.png]]
 
 ![[assets/Chronicle/2023/Blog/IMG-20260629163136024.png]]
 
-![[assets/Chronicle/2023/Blog/IMG-20260629163136024-32.png]]
+![[assets/Chronicle/2023/Blog/IMG-20260629163136024-33.png]]
 
 ```ad-note
 title: blog续费

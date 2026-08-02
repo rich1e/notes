@@ -3,7 +3,7 @@ title: Trek 数据库表结构参考
 category: references
 tags:
   - database
-  - sqlite
+  - persistence
   - schema
   - reference
 sources:

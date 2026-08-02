@@ -892,6 +892,34 @@
       ],
       "last_ingested": "2026-07-28T00:00:00Z"
     },
+    "https://zhuanlan.zhihu.com/p/2013213227740325799": {
+      "ingested_at": "2026-07-31T00:00:00Z",
+      "source_url": "https://zhuanlan.zhihu.com/p/2013213227740325799",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-zhuanlan-zhihu-com-p-2013213227740325799.md"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-07-31T00:00:00Z"
+    },
+    "https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-guide.html": {
+      "ingested_at": "2026-07-31T00:00:00Z",
+      "source_url": "https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-guide.html",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-adamchanadam-github-io-agent-handoff-kit.md"
+      ],
+      "pages_updated": [
+        "concepts/agent-operating-system.md"
+      ],
+      "last_ingested": "2026-07-31T00:00:00Z"
+    },
     "https://brainz.fun/blog/2026/06/01/mei-guo-zheng-fu-shi-ru-he-mei-shou-da-liang-bi-te-bi-de/": {
       "last_ingested": "2026-07-30T06:12:00Z",
       "content_hash": "sha256:brainz-fun-bitcoin-seizure-20260601",
@@ -922,6 +950,23 @@
         "log.md",
         "hot.md",
         ".manifest.json"
+      ]
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md": {
+      "content_hash": "7343a3a1f8ce8e2c5acf588976fbc6de35aa40ac0045fe77ced2bbf9e68541a3",
+      "last_ingested": "2026-07-31T15:45:55.266643+00:00",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [],
+      "pages_updated": [
+        "entities/claude-mem.md",
+        "concepts/claude-mem-memory-architecture.md",
+        "concepts/claude-code-hooks-lifecycle.md"
+      ],
+      "pages_produced": [
+        "entities/claude-mem.md",
+        "concepts/claude-mem-memory-architecture.md",
+        "concepts/claude-code-hooks-lifecycle.md"
       ]
     }
   },
@@ -985,8 +1030,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 66,
-    "total_pages": 160,
+    "total_sources_ingested": 69,
+    "total_pages": 162,
     "total_projects": 1,
     "last_full_rebuild": null
   }

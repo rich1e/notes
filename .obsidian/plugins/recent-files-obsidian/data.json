@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略",
+      "path": "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
+    },
+    {
+      "basename": "agent-operating-system",
+      "path": "concepts/agent-operating-system.md"
+    },
+    {
+      "basename": "姚期智万字长文演讲！解析“ AI 研究的下一个层次”",
+      "path": "Clippings/姚期智万字长文演讲！解析“ AI 研究的下一个层次”.md"
+    },
+    {
+      "basename": "taxonomy",
+      "path": "_meta/taxonomy.md"
     },
     {
       "basename": "tmux",
@@ -79,10 +95,6 @@
     {
       "basename": "hot",
       "path": "hot.md"
-    },
-    {
-      "basename": "taxonomy",
-      "path": "_meta/taxonomy.md"
     },
     {
       "basename": "dot-cli-commands",
@@ -183,22 +195,6 @@
     {
       "basename": "Chezmoi 部署与拉取教程",
       "path": "Clippings/Chezmoi 部署与拉取教程.md"
-    },
-    {
-      "basename": "归档 用 Chezmoi 管理配置文件",
-      "path": "Clippings/归档 用 Chezmoi 管理配置文件.md"
-    },
-    {
-      "basename": "chezmoi：用一份 dotfiles 打通 macOS、Linux、Windows 三個作業系統",
-      "path": "Clippings/chezmoi：用一份 dotfiles 打通 macOS、Linux、Windows 三個作業系統.md"
-    },
-    {
-      "basename": "多台机器 dotfiles 难同步？chezmoi 模板加密、一条命令还原  X-CMD 一键安装",
-      "path": "Clippings/多台机器 dotfiles 难同步？chezmoi 模板加密、一条命令还原  X-CMD 一键安装.md"
-    },
-    {
-      "basename": "Research: Kimi K3",
-      "path": "synthesis/Research: Kimi K3.md"
     }
   ],
   "omittedPaths": [],

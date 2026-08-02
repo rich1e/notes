@@ -252,6 +252,8 @@ title: Wiki Index
 
 ## Misc
 
+- [[misc/web-adamchanadam-github-io-agent-handoff-kit]] — Adam Chan 的 npm 工具 Agent Handoff Kit(v0.3.56):一句 init 铺好交接文件 + 分任务工作规则包,让本地 AI agent(Claude Code/Codex/Gemini CLI 等)跨会话「开工/收工」接力,高风险操作强制预演+确认;是 [[concepts/agent-operating-system]] Handoff 层的工具化落地
+- [[misc/web-zhuanlan-zhihu-com-p-2013213227740325799]] — 知乎「技术极简主义」文章：Claude Code 两层项目记忆机制,CLAUDE.md（开发者手写规则,四级作用域）+ MEMORY.md/Auto Memory（Claude 自维护,200 行限制、按需加载主题文件）,含 @ 导入、.claude/rules/ 模块化、子智能体记忆
 - [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
 - [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Google Stitch + Claude Code MCP 协作实操：两种鉴权路径（API key header vs OAuth proxy），`-s user` 等价 `--global`，`.env` 文件干扰 OAuth 的故障清单
 - [[misc/web-brainz-fun-bitcoin-seizure]] — brain-zhang 博文：美国政府大额比特币没收案不是攻破密码算法，而是利用弱私钥生成漏洞（MT19937/CVE-2023-39910），以 2025 DOJ 没收陈志/太子集团 12.7 万 BTC 为中心案例

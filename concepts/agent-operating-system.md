@@ -142,9 +142,11 @@ Git Repository（事实层沉淀）
 - **Claude Code hooks lifecycle**:天然适合做"事件驱动"的载体——`PostToolUse` 触发观察、`SessionStart` 注入、`Stop` 触发 checkpoint
 - **Git Repository**:Knowledge Base 的事实层(决策、规范、标准最终落到文件可追溯)
 - **`hot.md` 续接机制**:本质是手工版的 Handoff 同步,本框架可视为其形式化
+- **Agent Handoff Kit**:**Handoff (Task Memory) 层的工具化落地**——`SESSION_HANDOFF.md` 交接文件 = Task Memory,「收工」= compact checkpoint 同步点,`RULE_PACKS.md` = 按任务加载工作规则;补足了 claude-mem 未覆盖的 Handoff/治理层 ^[inferred] [[misc/web-adamchanadam-github-io-agent-handoff-kit]]
 
 ## 相关
 
+- [[misc/web-adamchanadam-github-io-agent-handoff-kit]] — Handoff 层的现成工具实现(npm 包)
 - [[concepts/claude-mem-memory-architecture]] — Semantic Memory 层的技术实现
 - [[concepts/claude-code-hooks-lifecycle]] — 事件驱动机制的载体
 - [[synthesis/Research: claude-mem 长期记忆]] — 单层深度研究,本框架覆盖更广
@@ -160,6 +162,7 @@ extends:
 related_to:
   - "[[concepts/claude-code-hooks-lifecycle]]"    # 事件驱动载体
   - "[[concepts/ai-agent-node-pattern]]"          # 适用对象
+  - "[[misc/web-adamchanadam-github-io-agent-handoff-kit]]"  # Handoff 层工具化落地
 uses:
   - "[[entities/claude-mem]]"                     # Semantic Memory 实现
 ```

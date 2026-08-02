@@ -9,9 +9,10 @@ tags:
 sources:
   - https://github.com/thedotmack/claude-mem
   - "本地插件: ~/.claude/plugins/cache/thedotmack/claude-mem/13.12.4"
+  - "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md (兔兔AGI, 2026-03-03, 二手/v9.0.5 时代)"
 source_url: https://github.com/thedotmack/claude-mem
 created: 2026-07-29T09:04:00Z
-updated: 2026-07-29T09:04:00Z
+updated: 2026-07-31T12:10:00Z
 summary: >-
   Alex Newman (thedotmack) 出品的 Claude Code 记忆插件，Apache-2.0。用生命周期 hook 把每次
   Read/Edit/Bash 压成 observation 存入本地 SQLite+Chroma，下次会话自动注入相关上下文。
@@ -54,7 +55,21 @@ npx claude-mem install
 
 ## 检索接口
 
-claude-mem 通过 `mcp-search` MCP 服务器暴露 4 个工具，配合 3 层检索工作流（search → timeline → get_observations），见 [[skills/claude-mem-memory-usage]]。也提供 `/knowledge-agent` 把 observation 编译成可对话的「知识大脑」。
+claude-mem 通过 `mcp-search` MCP 服务器暴露 4 个工具，配合 3 层检索工作流（search → timeline → get_observations），见 [[skills/claude-mem-memory-usage]]。第 4 个工具 `__IMPORTANT` 不返回数据——它是对 Claude 可见的**工作流文档**，指导如何高效走三层检索 ^[inferred]。也提供 `/knowledge-agent` 把 observation 编译成可对话的「知识大脑」。
+
+## Web 查看器 + Worker HTTP API
+
+Worker 服务（Bun 管理，SessionStart 拉起、常驻）不只是 hook 的后端，还暴露一个 **HTTP API + Web 查看器 UI**，可在浏览器里实时可视化记忆流：实时 observation 流（emoji 标重要性）、会话时间线、搜索界面、设置面板、稳定版/beta 版本切换。健康检查 `curl http://localhost:<port>/api/health`。
+
+> **端口有版本差异** ^[ambiguous]：本地一手 `hooks.json`（v13.12.4）实证默认端口 **37702**（见 [[concepts/claude-code-hooks-lifecycle]]）；二手攻略（v9.0.5 时代）反复写 **37777** 并配 10 个搜索端点。以一手 37702 为准；旧版本或不同配置可能是 37777。端口冲突时用 `CLAUDE_MEM_WORKER_PORT` 改。UI 对基本使用非必需，但便于理解捕获了什么。
+
+## 目录级 CLAUDE.md（文件夹上下文）
+
+除全局记忆库外，claude-mem 还能为**被操作的项目文件夹自动生成 `CLAUDE.md`**，作为该目录的「活动时间线」补充全局库。机制：识别文件夹 → 查该目录相关 observation → 整理成时间线表（observation ID、时间、类型 emoji、标题、预估 token）→ 写入并用 `<claude-mem-context>` 标签包裹。**标签之外的用户内容在重新生成时保留**——可在生成块上下写自己的文档、目录指令、架构约定。由 `CLAUDE_MEM_FOLDER_INDEX_ENABLED` 开关控制。详见 [[concepts/claude-mem-memory-architecture]] 注入段。
+
+## 无尽模式（Endless Mode，beta）
+
+beta 通道提供**无尽模式**——延长单会话的仿生记忆架构：不再在约 50 次工具调用后触上下文上限，支持约 **1000 次工具使用（~20 倍）**；靠实时压缩工具输出削减约 **95% token**，把扩展复杂度从 **O(N²) 降到 O(N)**。代价：每次工具调用生成 observation 会**加 60–90 秒延迟**——跨天/周的深度会话可接受，快速连续调用时会成瓶颈。经 Web 查看器 → 设置 → 版本频道切 beta 启用。详见 [[concepts/claude-mem-memory-architecture]] 无尽模式小节。
 
 ## 依赖与要求
 
@@ -64,6 +79,12 @@ claude-mem 通过 `mcp-search` MCP 服务器暴露 4 个工具，配合 3 层检
 ## 隐私与云同步
 
 **默认全部本地**——除了发给压缩 provider（Claude/OpenRouter/Gemini）的调用外，数据不出机器，`npx claude-mem uninstall` 干净清除。用 `<private>` 标签排除敏感内容。**可选**付费云同步（cmem.ai Pro）会上传 observation 叙述和完整 prompt 文本——见 [[skills/claude-mem-memory-usage]] 的云同步小节。这是一个需要显式区分的点：**本地免费 vs 上云付费**。
+
+**双重标签系统**：`<private>`（用户控制，保护敏感内容不入库）+ `<claude-mem-context>`（系统级，标记自动生成区、防重复存储）。两者职责不同——前者是隐私边界，后者是幂等/去重标记。
+
+## 已知问题
+
+- **空 `CLAUDE.md`**：`v9.0.5` 已知 bug——目录级上下文会生成空 `CLAUDE.md`。临时解法：手动删已建目录、在 `.gitignore` 加模式，或等后续版本修复 ^[ambiguous]（二手来源，本地 v13.12.4 未复现）。
 
 ## 相关页面
 

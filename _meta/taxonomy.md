@@ -95,6 +95,11 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `workflow` | `automation` | Workflow automation |
 | `semiconductor` | — | Semiconductor industry / chip design |
 | `geopolitics` | — | Geopolitical context (AI competition, etc.) |
+| `workflow-automation` | `low-code`, `no-code` | Workflow automation platforms (n8n, Zapier, Make) — broader than `automation` |
+| `serverless` | — | Serverless / edge-function architecture |
+| `cloudflare` | — | Cloudflare platform (Pages/Workers/R2/KV/D1) |
+| `image-hosting` | — | Self-hosted image hosting /图床 |
+| `n8n` | — | n8n workflow-automation platform (entity cluster anchor) |
 
 ### AI / LLM
 
@@ -116,6 +121,10 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `mcp` | — | Model Context Protocol servers and tools |
 | `career` | — | Career-related pages (LLM career paths, hiring) |
 | `course` | — | Educational course references |
+| `ai-coding` | `ai-tooling` | AI-assisted coding workflows (DESIGN.md, Claude Code as coder, Stitch) |
+| `ai-agents` | `ai-agent`, `agentic-workflow`, `agent-architecture` | AI agent orchestration / multi-agent systems |
+| `deep-learning` | — | Neural-network fundamentals (transformer, scaling laws, MoE, instruction tuning) |
+| `stitch` | `google-stitch`, `google-labs` | Google Stitch AI design tool cluster |
 
 ### DevOps / Tooling
 
@@ -182,6 +191,7 @@ Canonical tag list for this vault. Max 5 tags per page (excluding `visibility/` 
 | `research` | Research synthesis pages |
 | `concept` | Concept-level pages (alias for `concepts/`) |
 | `entity` | Entity-level pages (alias for `entities/`) |
+| `source` | Source-material pages (alias for `sources/`) |
 | `consolidation` | wiki-lint consolidation reports |
 | `education` | Educational resources / courses |
 
@@ -264,4 +274,17 @@ simulator → xcode
 playground → xcode
 publishing → app-store
 testflight → app-store
+frontend → f2e
+sqlite → persistence
+hooks → react
+ai-tooling → ai-coding
+ai-agent → ai-agents
+agentic-workflow → ai-agents
+agent-architecture → ai-agents
+google-stitch → stitch
+google-labs → stitch
+low-code → workflow-automation
+no-code → workflow-automation
 ```
+
+> **模板例外**：`buckets/templates/` 下的 `标签1`/`标签2`/`关键字1` 是博客模板的填充占位符（配合 Templater `{{title}}` 等），**不是知识页 tag，tag 治理时跳过**。同理 `_meta/`、`Clippings/`、`.obsidian/` 不纳入 tag 审计。

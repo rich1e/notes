@@ -4,8 +4,7 @@ category: concepts
 tags:
   - react
   - state-management
-  - hooks
-  - frontend
+  - f2e
 sources:
   - "_raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)"
 created: 2026-07-02T01:00:00Z

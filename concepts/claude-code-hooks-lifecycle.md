@@ -8,8 +8,9 @@ tags:
 sources:
   - "本地插件: ~/.claude/plugins/cache/thedotmack/claude-mem/13.12.4/hooks/hooks.json"
   - https://github.com/thedotmack/claude-mem
+  - "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md (兔兔AGI, 2026-03-03, 二手)"
 created: 2026-07-29T09:04:00Z
-updated: 2026-07-29T09:04:00Z
+updated: 2026-07-31T12:10:00Z
 summary: >-
   claude-mem 靠 Claude Code 的 hook 系统运转：Setup 校验版本、SessionStart 注入记忆、
   UserPromptSubmit 初始化、PostToolUse 捕获、PreToolUse(Read) 补上下文、Stop 总结。
@@ -38,7 +39,7 @@ Claude Code 的 hook 系统允许插件在会话生命周期的特定节点执�
 | **PreToolUse** | `Read` | `file-context`——读文件前补充上下文 | **async: true** |
 | **Stop** | （全部） | `summarize`——会话结束时汇总本次 observation | **async: true** |
 
-> README 另称有 `SessionEnd`（共 6 hook 脚本）；本地 `hooks.json` 实际配置的是上述 6 个事件（其中 Setup + PreToolUse 是 SessionEnd 之外的补充）。捕获/总结类 hook 都是 `async`，不阻塞 Claude 主流程——这是关键设计：**记忆是旁路，不拖慢交互**。
+> README 另称有 `SessionEnd`（共 6 hook 脚本）；本地 `hooks.json` 实际配置的是上述 6 个事件（其中 Setup + PreToolUse 是 SessionEnd 之外的补充）。二手攻略给出 `SessionEnd` 的职责是**持久化存储数据 + 执行清理**（与 `Stop` 的「汇总生成摘要」分工：Stop 管总结、SessionEnd 管落盘与收尾）^[ambiguous]。捕获/总结类 hook 都是 `async`，不阻塞 Claude 主流程——这是关键设计：**记忆是旁路，不拖慢交互**。
 
 ## 为什么这样切分
 

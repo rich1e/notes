@@ -1,7 +1,7 @@
 ---
 title: Sanyue-ImgHub
 category: entities
-tags: [cloudflare, image-hosting, vue, frontend]
+tags: [cloudflare, image-hosting, vue, f2e]
 sources:
   - "https://github.com/MarSeventh/Sanyue-ImgHub"
 created: 2026-07-31T06:29:00Z

@@ -1,7 +1,7 @@
 ---
 title: "VitePress 多语言文档站构建"
 category: skills
-tags: [vitepress, docs, tools, frontend]
+tags: [vitepress, docs, tools, f2e]
 sources:
   - "https://github.com/sebastienrousseau/dotfiles.github.io"
   - "https://dotfiles.io"

@@ -4,7 +4,7 @@ category: entities
 tags:
   - state-management
   - react
-  - frontend
+  - f2e
   - zustand
 sources:
   - _raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)
