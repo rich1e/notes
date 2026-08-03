@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-07-31T09:20:33Z",
+  "last_updated": "2026-08-03T04:05:01Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -968,6 +968,57 @@
         "concepts/claude-mem-memory-architecture.md",
         "concepts/claude-code-hooks-lifecycle.md"
       ]
+    },
+    "https://github.com/kunchenguid/treehouse": {
+      "ingested_at": "2026-08-03T03:15:50Z",
+      "size_bytes": 476423,
+      "modified_at": "2026-08-03T03:15:50Z",
+      "content_hash": "gitingest",
+      "source_type": "github_repo",
+      "github_repo": "kunchenguid/treehouse",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "entities/treehouse.md",
+        "concepts/git-worktree-pool-pattern.md",
+        "concepts/worktree-durable-lease.md",
+        "concepts/atomic-state-recovery.md",
+        "concepts/safe-destroy-by-default.md",
+        "concepts/ai-agent-sandbox.md",
+        "skills/treehouse-cli.md",
+        "synthesis/Research: treehouse.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ],
+      "last_ingested": "2026-08-03T03:21:09Z"
+    },
+    "https://github.com/clay-good/OpenLore": {
+      "ingested_at": "2026-08-03T03:55:08Z",
+      "size_bytes": 13379028,
+      "modified_at": "2026-08-03T03:55:08Z",
+      "content_hash": "gitingest",
+      "source_type": "github_repo",
+      "github_repo": "clay-good/OpenLore",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "entities/openlore.md",
+        "concepts/static-analysis-knowledge-graph.md",
+        "concepts/deterministic-agent-memory.md",
+        "concepts/no-llm-hot-path.md",
+        "concepts/commit-gate-guardrails.md",
+        "skills/openlore-cli.md",
+        "synthesis/Research: OpenLore.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ],
+      "last_ingested": "2026-08-03T04:05:01Z"
     }
   },
   "projects": {
@@ -1030,8 +1081,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 69,
-    "total_pages": 162,
+    "total_sources_ingested": 71,
+    "total_pages": 177,
     "total_projects": 1,
     "last_full_rebuild": null
   }

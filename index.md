@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-28T12:00:00Z*
+*This index is automatically maintained. Last updated: 2026-08-03T12:40:00Z*
 
 ## Concepts
 
@@ -67,6 +67,15 @@ title: Wiki Index
 - [[concepts/scaling-laws]] — Scaling laws：损失随参数/数据/算力呈幂律下降，Chinchilla 指出参数与数据应等比放大
 - [[concepts/instruction-tuning]] — 指令微调：预训练后用「指令-回答」SFT，把续写模型改造成听懂指令的助手
 - [[concepts/ai-agent]] — AI Agent：以 LLM 为大脑、感知-规划-行动闭环、工具调用+记忆的自主系统
+- [[concepts/git-worktree-pool-pattern]] — git worktree 池化复用：detached HEAD 隔离 + acquire/use/return 状态机，保留依赖/构建缓存供下一 agent 立即使用
+- [[concepts/worktree-durable-lease]] — Worktree durable lease：进程无关的持久租约（128-bit LeaseID + LeaseHolder + LeasedAt），`--if-lease-id` ABA 防护条件 return
+- [[concepts/atomic-state-recovery]] — 状态文件原子写（temp+fsync+rename）与 corrupt 自愈：解析失败时扫描池目录重建条目，全部默认 leased 等用户显式确认
+- [[concepts/safe-destroy-by-default]] — 破坏性 CLI 默认安全设计：dry-run by default + 风险类别独立 opt-in（--include-unlanded/-in-use/-leased），拒绝 blanket --force
+- [[concepts/ai-agent-sandbox]] — AI 编码 agent 的工作树隔离：多 agent 并行写同一仓库所需的 acquire/lease/cache/safe-delete 五件套
+- [[concepts/static-analysis-knowledge-graph]] — 用图算法(import/call/types/tests/IaC/spec)替代 embedding 做代码检索与定位，确定性 + 可重放 + 可追 Evidence
+- [[concepts/deterministic-agent-memory]] — 确定性 agent 记忆：同问题同答案、stale 显式标注、引用可点回源码、与概率型 claude-mem 互补
+- [[concepts/no-llm-hot-path]] — Hot path 不放 LLM：确定性算法跑 hot,LLM 只在 generate/verify/consolidate 等 cold path opt-in
+- [[concepts/commit-gate-guardrails]] — Commit gate guardrails:drift(代码改了 spec 没改)+ decisions(决策未经人审)+ check_architecture(编辑时 layer 校验)三类独立 opt-in
 
 ## Entities
 
@@ -106,6 +115,8 @@ title: Wiki Index
 - [[entities/czlonkowski-n8n-mcp]] — czlonkowski/n8n-mcp：把 n8n API 暴露为 MCP server，让 Claude/Windsurf/Cursor 用自然语言搭 workflow
 - [[entities/zapier]] — Zapier：纯云无代码工作流自动化 SaaS，集成数量业界最多，n8n/Make 竞品
 - [[entities/make]] — Make（原 Integromat）：纯云工作流自动化 SaaS，可视化 scenario 画布最强
+- [[entities/treehouse]] — treehouse：kunchenguid 出品的 AI agent 并行 worktree 池 CLI（Go v2.1.1），无守护进程，durable lease + 原子 state 自愈 + safe-by-default destroy
+- [[entities/openlore]] — OpenLore：clay-good 出品的 AI agent 静态分析记忆层（TypeScript v2.1.x），hot path 0 LLM，MCP 73 tools / 6 capability family，substrate 默认 13 tools，commit gate + 架构不变量 guardrail
 
 ## Skills
 
@@ -142,6 +153,8 @@ title: Wiki Index
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装：uv + cookbook auth + `claude mcp add --global`，23 个笔记本手工验证可读
 - [[skills/claude-code-mcp-auth-patterns]] — Claude Code MCP 两种鉴权范式：API key 头（轻量 5 分钟）vs OAuth Proxy（重度自动 refresh），含 `.env` 干扰 OAuth 的故障清单
 - [[skills/claude-mem-memory-usage]] — 在 Claude 中用 claude-mem 管长期记忆：插件市场装（别用 npm -g）→ 自动注入 → search/timeline/get_observations 3 层查历史 → /knowledge-agent 知识大脑 → settings 调优
+- [[skills/treehouse-cli]] — treehouse CLI 日常用法：install/get/enter/return/prune/destroy 速查，ABA-safe 条件 return，损坏 state 恢复流程
+- [[skills/openlore-cli]] — OpenLore CLI 日常用法：install/orient/review/prove/enforce/mcp/drift,6 capability family,substrate preset 默认,commit gate 三件套
 
 ## Synthesis
 
@@ -249,6 +262,8 @@ title: Wiki Index
 - [[synthesis/Research: claude-mem 长期记忆]] — claude-mem 研究综合：hook 驱动 capture→compress→inject 流水线，本地 SQLite+Chroma，第二次会话起注入，3 层检索省 10× token，本地免费/上云付费
 - [[synthesis/Research: n8n]] — n8n 三轮调研综合：fair-code 开源工作流自动化平台，2.0 升 multi-agent + MCP + Data Tables，Queue Mode 成熟生产方案
 - [[synthesis/Research: CloudFlare ImgBed]] — CloudFlare ImgBed 三轮调研综合：MIT 开源自托管图床，Serverless+Docker 双部署，六存储后端，脱胎自 Telegraph-Image 并补足其单后端/配额局限
+- [[synthesis/Research: treehouse]] — treehouse 研究综合：把 git worktree 池化成 AI agent runtime 的 5 条独立但勾连的设计线（池化、dead agent 终止、lease、safe-destroy、crash-safe + 自愈）与 3 条可复用原则
+- [[synthesis/Research: OpenLore]] — OpenLore 研究综合:静态分析驱动的代码知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate,4 条设计线 + 4 条可复用原则,与 claude-mem/treehouse 形成 agent 本地基础设施三件套
 
 ## Misc
 
