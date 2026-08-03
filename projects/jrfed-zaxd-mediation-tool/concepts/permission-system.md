@@ -11,10 +11,11 @@ provenance:
   inferred: 0.12
   ambiguous: 0.03
 base_confidence: 0.84
-lifecycle: draft
-lifecycle_changed: 2026-07-01
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 created: 2026-07-01T12:00:00Z
-updated: 2026-07-01T12:00:00Z
+updated: 2026-08-03T05:47:33Z
 relationships:
   - target: "[[projects/jrfed-zaxd-mediation-tool/skills/sensorsdata-dual-world]]"
     type: related_to

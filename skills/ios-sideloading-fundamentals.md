@@ -5,11 +5,12 @@ tags: [ios, sideload, security]
 sources:
   - "https://www.onmyodev.com/2026/05/ios-sideloading-faq/"
 created: 2026-07-02
-updated: 2026-07-25
+updated: 2026-08-03T05:47:33Z
 summary: iOS 侧载完整机制：调试/发布证书区别、Entitlements 权限体系、描述文件有效期、SideStore 与 LiveContainer 的原理与适用场景、JIT 开启条件。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.85

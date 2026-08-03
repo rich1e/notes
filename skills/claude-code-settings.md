@@ -10,10 +10,11 @@ sources:
   - https://www.claudecode.xyz/articles/claude-code-mm4tlbbs
   - https://moksaweb.com/claude-code-terminal-configuration/
 created: 2026-06-29
-updated: 2026-07-26
+updated: 2026-08-03T05:47:33Z
 tier: core
-lifecycle: draft
-lifecycle_changed: "2026-07-25"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.85
 provenance:
   extracted: 0.90

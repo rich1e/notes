@@ -6,11 +6,12 @@ sources:
   - "https://www.onmyodev.com/2026/05/manicemu/"
   - "https://www.onmyodev.com/2026/05/melonx/"
 created: 2026-07-02
-updated: 2026-07-25
+updated: 2026-08-03T05:47:33Z
 summary: iOS 平台 3DS 模拟器（ManicEMU/Azahar 核心）和 Switch 模拟器（MeloNX/MeloVertex）的安装、JIT 配置与常见问题。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.80

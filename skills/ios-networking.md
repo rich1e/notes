@@ -4,11 +4,12 @@ category: skills
 tags: [ios, networking, swift]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iOS REST API 调用：URLSession（原生）与 Alamofire（第三方库）的 GET/POST 请求、JSON 解码、连接可达性检测（SCNetworkReachability）、App Transport Security 配置。
 base_confidence: 0.86
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.88

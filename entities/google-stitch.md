@@ -120,3 +120,7 @@ Claude Code Auto Mode 内置 Stage 2 分类器，会拦截：
 - [[entities/awesome-design-md]] — 74 个真实站点 DESIGN.md 精选集（VoltAgent 维护）
 - [[concepts/design-md-format-spec]] — DESIGN.md 文件 schema 与章节
 - [[synthesis/Research: DESIGN.md 工作流]] — 综合研究页
+
+## Related
+
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]]

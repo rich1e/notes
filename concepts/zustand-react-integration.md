@@ -8,11 +8,12 @@ tags:
 sources:
   - "_raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)"
 created: 2026-07-02T01:00:00Z
-updated: 2026-07-02T01:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Zustand React 层基于 React.useSyncExternalStore 实现，通过选择器订阅细粒度状态切片；useShallow 用稳定引用防止对象/数组选择器触发多余重渲染。
 tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.88
 provenance:
   extracted: 0.88

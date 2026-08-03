@@ -11,10 +11,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.02
 base_confidence: 0.87
-lifecycle: draft
-lifecycle_changed: 2026-07-01
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 created: 2026-07-01T12:00:00Z
-updated: 2026-07-01T12:00:00Z
+updated: 2026-08-03T05:47:33Z
 ---
 
 # Chrome 扩展 MV3 架构

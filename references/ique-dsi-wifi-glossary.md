@@ -4,11 +4,12 @@ category: references
 tags: [nintendo, ique, networking, glossary]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 互联网连接相关的网络术语（SSID/WEP/WPA/WPS/AOSS等）的中文解释。
 base_confidence: 0.95
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.97

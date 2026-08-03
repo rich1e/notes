@@ -4,11 +4,12 @@ category: concepts
 tags: [swift, arc, ios]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Swift ARC（自动引用计数）工作原理、强/弱/无主引用解决循环引用、内存冲突检测（独占访问规则）。
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.92

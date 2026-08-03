@@ -4,11 +4,12 @@ category: concepts
 tags: [ptp, ieee-1588, network-protocol, message-format]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "PTP 定义 10 种报文，分事件报文（需硬件时间戳）和通用报文，共同完成时间同步、延迟测量和网络管理"
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.88

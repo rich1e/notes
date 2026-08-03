@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-03T12:40:00Z*
+*This index is automatically maintained. Last updated: 2026-08-03T13:55:00Z*
 
 ## Concepts
 
@@ -264,6 +264,10 @@ title: Wiki Index
 - [[synthesis/Research: CloudFlare ImgBed]] — CloudFlare ImgBed 三轮调研综合：MIT 开源自托管图床，Serverless+Docker 双部署，六存储后端，脱胎自 Telegraph-Image 并补足其单后端/配额局限
 - [[synthesis/Research: treehouse]] — treehouse 研究综合：把 git worktree 池化成 AI agent runtime 的 5 条独立但勾连的设计线（池化、dead agent 终止、lease、safe-destroy、crash-safe + 自愈）与 3 条可复用原则
 - [[synthesis/Research: OpenLore]] — OpenLore 研究综合:静态分析驱动的代码知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate,4 条设计线 + 4 条可复用原则,与 claude-mem/treehouse 形成 agent 本地基础设施三件套
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent]] — AOS 五层 memory 框架 × agent 通用:框架对 agent 是约束还是赋能,五层中谁是 agent 自驱谁是框架强加
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]] — MCP 鉴权三层 + Stitch 实战:协议层故意简洁,鉴权复杂度甩给上层应用,OAuth proxy 对 .env 敏感
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]] — AOS 必须把 sandbox 当作隐式第六层:compact checkpoint 应包含 sandbox state(worktree path / HEAD / lease / dirty),否则 session resume 会撕裂
+- [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]] — Durable lease 让 AOS Handoff 有了"原子承诺"语义:--if-lease-id 把"我是上次那个人"写成状态文件 CAS,防止多人续写 Handoff 时撕裂
 
 ## Misc
 

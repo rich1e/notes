@@ -14,11 +14,12 @@ provenance:
   inferred: 0.20
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-06-29
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 created: 2026-06-29T00:00:00Z
-updated: 2026-06-29T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 ---
 
 # SwiftUI 上下文注入与 FetchRequest 响应

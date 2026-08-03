@@ -4,11 +4,12 @@ category: references
 tags: [nintendo, ique, fintech, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 商店的使用条件、iQue 点数购买与充值方法及点卡使用限制。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.92

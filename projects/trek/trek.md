@@ -11,11 +11,12 @@ tags:
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z
-updated: 2026-07-02T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Trek 是一个自托管、实时协同旅行计划器，支持地图、预算、行李清单、日志和 AI MCP 接口，采用 NestJS + React + SQLite 技术栈。
 tier: core
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.83
 provenance:
   extracted: 0.85

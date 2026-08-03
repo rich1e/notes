@@ -4,11 +4,12 @@ category: references
 tags: [nintendo, ique, programming, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 菜单中内置软件、卡式软件图标及软件位置移动方法的参考。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.90

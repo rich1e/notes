@@ -4,11 +4,12 @@ category: references
 tags: [nintendo, ique, settings, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 主机设置四页全部选项的快速参考，含软件管理、亮度、用户信息、闹钟、亲子管理、触摸屏校准、键盘操作等。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.90

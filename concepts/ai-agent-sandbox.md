@@ -117,3 +117,7 @@ treehouse 这一类工具的答案:**池化 worktree** —— 见 [[concepts/git
 - [[concepts/safe-destroy-by-default]]
 - [[concepts/agent-operating-system]] —— 上层
 - [[concepts/ai-agent]] —— 更大的 AI agent 生态
+
+## Related
+
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]]

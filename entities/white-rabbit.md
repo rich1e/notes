@@ -4,11 +4,12 @@ category: entities
 tags: [ptp, time-sync, hardware, physics, cern]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "CERN 开发的 White Rabbit 协议，在 PTP 基础上增加 DMTD 相位测量和 L1_SYNC TLV，实现亚纳秒级同步"
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: peripheral
 provenance:
   extracted: 0.80

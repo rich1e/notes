@@ -85,3 +85,9 @@ snapshot SHA: `8cad99e7`。若需回滚全部改动:
 git reset --hard 8cad99e7
 git clean -fd
 ```
+
+## See also
+
+- [[synthesis/consolidation-2026-07-26]] — earlier consolidation report
+- [[synthesis/consolidation-2026-07-31]] — next consolidation report
+- [[log]] — full audit log

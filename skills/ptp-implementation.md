@@ -4,11 +4,12 @@ category: skills
 tags: [ptp, c-language, implementation, networking]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "约 1000 行 C 实现的 ptp-lite，涵盖 PTP 报文编解码、主时钟发布和从时钟偏移计算的核心流程"
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.85

@@ -4,11 +4,12 @@ category: concepts
 tags: [ptp, ieee-1588, state-management, protocol-design]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "PTP 端口有 9 种状态，由 BMCA 结果和链路事件驱动转换，决定端口的主/从/被动/禁用角色"
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.88

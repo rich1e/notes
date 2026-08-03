@@ -9,11 +9,12 @@ tags:
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z
-updated: 2026-07-02T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Trek 使用 SQLite（better-sqlite3），所有表在 schema.ts 中初始化，核心表包括 users/trips/days/places/day_assignments，插件表在 schema 中预创建。
 tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.90
 provenance:
   extracted: 0.90

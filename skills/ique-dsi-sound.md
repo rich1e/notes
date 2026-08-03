@@ -4,11 +4,12 @@ category: skills
 tags: [nintendo, ique, media, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 趣音的麦克风录音、声音变换效果、SD 卡 AAC 音乐播放、声音叠加等完整操作指南。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.88

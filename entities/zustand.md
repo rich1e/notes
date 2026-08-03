@@ -9,11 +9,12 @@ tags:
 sources:
   - _raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)
 created: 2026-07-02T01:00:00Z
-updated: 2026-07-02T01:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Zustand 是 pmndrs 出品的小型 React 状态管理库，基于简化 Flux 原则，无需 Provider，以 Hook 为核心 API，支持 Vanilla/React 双模式。
 tier: core
-lifecycle: draft
-lifecycle_changed: 2026-07-02
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.85
 provenance:
   extracted: 0.9

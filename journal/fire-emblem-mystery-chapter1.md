@@ -5,11 +5,12 @@ tags: [game, fire-emblem]
 sources:
   - "http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/1.htm"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-08-03T05:47:33Z
 summary: FE 新黑暗龙第1章攻略：胜利条件为マルス制压城门，敌军配置与推进策略。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: peripheral
 provenance:
   extracted: 0.90

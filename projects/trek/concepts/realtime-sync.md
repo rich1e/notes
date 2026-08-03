@@ -10,11 +10,12 @@ tags:
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z
-updated: 2026-07-02T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Trek 通过 WebSocket 实现实时协同，采用 Room 模型（per-trip）广播变更；离线时用 MutationQueue + IndexedDB 缓存写操作，联网后自动回放。
 tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.82
 provenance:
   extracted: 0.82

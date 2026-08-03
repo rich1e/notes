@@ -6,11 +6,12 @@ sources:
   - "buckets/books/iOS 17 App Development for Beginners.epub"
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-10T14:30:00Z
+updated: 2026-08-03T05:47:33Z
 summary: SwiftUI 声明式 UI 框架核心：View 协议、ViewBuilder tuple 组合、`some View` 不透明类型、布局容器、状态管理、修饰符链式调用。
 base_confidence: 0.90
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.85

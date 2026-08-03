@@ -19,11 +19,12 @@ provenance:
   inferred: 0.08
   ambiguous: 0.02
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-29
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: peripheral
 created: 2026-06-29T00:00:00Z
-updated: 2026-06-29T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 ---
 
 # [[projects/dayfold/dayfold|Dayfold]] 源码目录布局

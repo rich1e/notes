@@ -4,11 +4,12 @@ category: skills
 tags: [nintendo, ique, networking, dsi]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: iQue DSi 四种 Wi-Fi 设置方法（AOSS/搜索接入点/USB Connector/手动）及高级 WPS 设置的完整步骤。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.90

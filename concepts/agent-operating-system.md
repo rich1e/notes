@@ -166,3 +166,9 @@ related_to:
 uses:
   - "[[entities/claude-mem]]"                     # Semantic Memory 实现
 ```
+
+## Related
+
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent]]
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]]
+- [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]]

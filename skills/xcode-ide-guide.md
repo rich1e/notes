@@ -6,11 +6,12 @@ sources:
   - "buckets/books/iOS 17 App Development for Beginners.epub"
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-10T14:30:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Xcode 15 核心功能：界面导航区/编辑区/调试区、Preview Canvas 实时预览（比模拟器更高效）、项目配置、Swift Playground、Organizer、Xcode Cloud CI/CD。
 base_confidence: 0.86
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.90

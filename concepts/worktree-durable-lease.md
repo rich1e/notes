@@ -149,3 +149,7 @@ lease 的关键不变量:**没有任何进程运行的 worktree 仍可处于 lea
 - state 原子写 + corrupt 自愈:[[concepts/atomic-state-recovery]]
 - 安全删除(含 leased 处理):[[concepts/safe-destroy-by-default]]
 - 实现:[[entities/treehouse]]
+
+## Related
+
+- [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]]

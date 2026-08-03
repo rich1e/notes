@@ -5,11 +5,12 @@ tags: [personal, book]
 sources:
   - "https://ciechanow.ski/mechanical-watch/"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-08-03T05:47:33Z
 summary: 机械表七大核心部件：主发条→发条盒→轮系→擒纵机构→摆轮→拨针轮→表盘，能量流动路径与各部件作用。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: peripheral
 provenance:
   extracted: 0.90

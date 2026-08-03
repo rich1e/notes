@@ -4,11 +4,12 @@ category: concepts
 tags: [ptp, ieee-1588, distributed-systems, algorithm]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "BMCA 是 PTP 的分布式主时钟选举算法，通过比较 clockClass/Accuracy/priority 决定谁当 Grandmaster"
 base_confidence: 0.92
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.92

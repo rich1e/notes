@@ -10,11 +10,12 @@ tags:
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z
-updated: 2026-07-02T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Trek 采用前后端分离的 monorepo 架构，NestJS 模块化后端 + React SPA 前端，通过构建脚本将 client/dist 复制到 server/public 实现单容器部署。
 tier: core
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.80
 provenance:
   extracted: 0.80

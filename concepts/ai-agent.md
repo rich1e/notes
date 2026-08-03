@@ -60,3 +60,7 @@ relationships:
 
 - [[concepts/instruction-tuning]] — 指令遵循是 Agent 可靠调工具的前提
 - [[sources/li-hongyi-genai-2025]] — 含 Agent 专讲
+
+## Related
+
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent]]

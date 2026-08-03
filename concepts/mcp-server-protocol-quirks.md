@@ -168,3 +168,7 @@ claude mcp add -s user notebooklm-mcp -- /home/$USER/.local/bin/notebooklm-mcp
 - [[skills/claude-code-mcp-auth-patterns]] — Stitch 等外部 MCP 服务的两种鉴权路径
 - [[entities/google-stitch]] — `-s user` 写法的实际出处
 - [[skills/claude-code-settings]] — Claude Code 完整配置作用域
+
+## Related
+
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]]

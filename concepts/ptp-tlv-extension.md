@@ -4,11 +4,12 @@ category: concepts
 tags: [ptp, ieee-1588, protocol-design, extensibility]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "PTP 的 TLV（Type-Length-Value）插件系统，在不修改基础报文格式的情况下扩展协议功能"
 base_confidence: 0.93
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: supporting
 provenance:
   extracted: 0.93

@@ -4,11 +4,12 @@ category: entities
 tags: [ptp, linux, open-source, tool]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "Linux 平台的工业级 PTP 实现，包含 ptp4l（协议）、phc2sys（时钟同步）和 pmc（管理）工具"
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.88

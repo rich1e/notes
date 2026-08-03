@@ -6,11 +6,12 @@ sources:
   - "buckets/books/iOS 17 App Development for Beginners.epub"
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-10T14:30:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Swift 5.9 核心特性：类型系统、变量声明、集合类型、控制流、闭包、可选值与协议导向编程（函数式语言，非 OOP）。
 base_confidence: 0.90
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.90

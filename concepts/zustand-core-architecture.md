@@ -8,11 +8,12 @@ tags:
 sources:
   - "_raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)"
 created: 2026-07-02T01:00:00Z
-updated: 2026-07-02T01:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Zustand 的 vanilla 核心是约 30 行代码：一个闭包持有 state + listeners Set，setState 做浅合并并通知订阅者，StoreApi 是唯一的公共接口。
 tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.88
 provenance:
   extracted: 0.88

@@ -4,11 +4,12 @@ category: entities
 tags: [ios, swift, swiftui, book, programming]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
-updated: 2026-07-01T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Arpit Kulsreshtha 著，Packt 出版，覆盖 Swift 5.9、SwiftUI、Xcode 15 的 iOS 17 入门开发书，共19章。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-01"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.95

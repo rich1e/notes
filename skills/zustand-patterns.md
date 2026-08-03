@@ -10,11 +10,12 @@ tags:
 sources:
   - "_raw/zustand.txt (Gitingest export, pmndrs/zustand, 2026-07-02)"
 created: 2026-07-02T01:00:00Z
-updated: 2026-07-02T01:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Zustand 推荐的模式：Slices 拆分大型 store、Flux 风格 colocate actions、外部 actions 模式、状态重置、Map/Set 使用、URL hash 同步等。
 tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.85
 provenance:
   extracted: 0.85

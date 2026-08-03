@@ -4,11 +4,12 @@ category: concepts
 tags: [ptp, ieee-1588, algorithm, network-protocol]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
-updated: 2026-07-03T09:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: "PTP 用四个时间戳消除单程网络延迟：E2E 测量端到端路径，P2P 逐链路测量并由透明时钟补偿"
 base_confidence: 0.92
-lifecycle: draft
-lifecycle_changed: "2026-07-03"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.92

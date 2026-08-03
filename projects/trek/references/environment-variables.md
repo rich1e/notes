@@ -9,11 +9,12 @@ tags:
 sources:
   - "_raw/trek.txt (Gitingest export, 2026-07-02)"
 created: 2026-07-02T00:00:00Z
-updated: 2026-07-02T00:00:00Z
+updated: 2026-08-03T05:47:33Z
 summary: Trek 通过环境变量配置，核心变量包括 ENCRYPTION_KEY、APP_URL（OIDC 必须）、SESSION_DURATION，MCP 相关变量控制速率和会话数量。
 tier: peripheral
-lifecycle: draft
-lifecycle_changed: "2026-07-02"
+lifecycle: reviewed
+lifecycle_changed: 2026-08-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.90
 provenance:
   extracted: 0.95
