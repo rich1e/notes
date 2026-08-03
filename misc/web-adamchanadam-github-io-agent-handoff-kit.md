@@ -7,6 +7,7 @@ sources:
 source_url: "https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-guide.html"
 created: "2026-07-31T00:00:00"
 updated: "2026-07-31T00:00:00"
+tier: peripheral
 summary: "Adam Chan 的 npm 工具 @adamchanadam/agent-handoff-kit（v0.3.56）:一句 init 在项目文件夹铺好交接文件 + 分任务工作规则包,让本地 AI agent(Claude Code/Codex/Gemini CLI 等)跨会话「开工/收工」接力,高风险操作强制停手确认。"
 affinity: {}
 promotion_status: misc

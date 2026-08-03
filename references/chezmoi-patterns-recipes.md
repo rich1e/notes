@@ -11,6 +11,7 @@ sources:
   - "https://cn.x-cmd.com/install/chezmoi"
 created: 2026-07-25T09:00:00Z
 updated: 2026-07-25T09:00:00Z
+tier: peripheral
 summary: >-
   社区积累的 chezmoi 实用模式:安装速查、文件名前缀解码、跨平台模板变量、age/gpg/git-crypt/SOPS 加密矩阵、run_once_/run_onchange_ 脚本钩子时序、.chezmoiroot 与 .chezmoiignore 协作、外部文件下载与维护命令。
 provenance:

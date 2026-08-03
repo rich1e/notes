@@ -6,6 +6,7 @@ sources:
   - "https://yangzh.cn/posts/posts/chezmoi-dotfiles-secrets.html/"
 created: 2026-07-25T09:00:00Z
 updated: 2026-07-25T09:00:00Z
+tier: peripheral
 summary: >-
   把 Bitwarden 作为模板函数注入密钥，macOS 用 Keychain、Windows 用 DPAPI 加密文件免去每次手输主密码；git-filter-repo 重写历史清除已泄露密钥。多主机同步时 Windows Store Python 幽灵、`stat` 方言、Bitwarden 本地缓存等坑位的修复方案。
 provenance:

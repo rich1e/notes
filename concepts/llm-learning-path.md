@@ -9,6 +9,7 @@ sources:
   - "http://cs336.stanford.edu/spring2025/"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   学习 LLM 不是单一直线，而是「工程师 vs 研究员」双轨 + 四阶段（基础/应用/原理/系统）；常见反模式是只学调用不学原理、或反过来。
 provenance:

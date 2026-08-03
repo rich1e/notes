@@ -7,6 +7,7 @@ sources:
   - "https://github.com/rasbt/LLMs-from-scratch"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   改造 LLM 的三种主流方式：prompt engineering（最便宜）、RAG（注入新知识）、fine-tuning（改风格/技能）；2025 共识是"先用 prompt，不行加 RAG，再不行才 fine-tune"。
 provenance:

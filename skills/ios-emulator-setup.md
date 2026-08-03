@@ -12,7 +12,7 @@ base_confidence: 0.83
 lifecycle: reviewed
 lifecycle_changed: 2026-08-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
-tier: supporting
+tier: peripheral
 provenance:
   extracted: 0.80
   inferred: 0.15

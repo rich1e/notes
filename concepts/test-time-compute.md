@@ -8,6 +8,7 @@ sources:
   - "https://speech.ee.ntu.edu.tw/~hylee/genai/2025-spring.php"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   2024 末–2025 关键转向：让模型在推理时"多想一会"（CoT 展开、verifier 引导搜索）而非一次吐完；用可验证奖励（RLVR）训练，无须人类反馈。代表：DeepSeek-R1、OpenAI o1/o3。
 provenance:

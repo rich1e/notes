@@ -15,7 +15,7 @@ provenance:
 base_confidence: 0.72
 lifecycle: draft
 lifecycle_changed: 2026-07-27
-tier: supporting
+tier: peripheral
 relationships:
   - target: "[[entities/sebastienrousseau-dotfiles]]"
     type: related_to

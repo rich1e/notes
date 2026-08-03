@@ -9,6 +9,7 @@ sources:
 source_url: "https://docs.n8n.io/hosting/scaling/queue-mode/"
 created: "2026-07-30"
 updated: "2026-07-30"
+tier: peripheral
 summary: "n8n 生产部署官方扩展方案：main + webhook + worker 三角色解耦，Redis BullMQ 任务队列，Postgres 元数据，6 类常见可靠性陷阱。"
 provenance:
   extracted: 0.75

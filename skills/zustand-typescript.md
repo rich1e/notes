@@ -11,7 +11,7 @@ sources:
 created: 2026-07-02T01:00:00Z
 updated: 2026-08-03T05:47:33Z
 summary: Zustand TypeScript 的核心是 create<T>()(...)（双括号） 而非 create<T>(...)，因为 State 泛型是不变的（invariant），无法从初始值自动推断。
-tier: supporting
+tier: peripheral
 lifecycle: reviewed
 lifecycle_changed: 2026-08-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"

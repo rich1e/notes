@@ -7,7 +7,7 @@ sources:
 summary: "通过 Claude Code 把 DESIGN.md 上传到 Google Stitch 项目的完整操作流程，含 Auto Mode 凭证检测问题的解法。"
 created: "2026-07-28T00:00:00Z"
 updated: "2026-07-28T00:00:00Z"
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
 base_confidence: 0.90

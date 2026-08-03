@@ -8,6 +8,7 @@ sources:
 source_url: "https://github.com/Dakingrai/awesome-mechanistic-interpretability-lm-papers"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   Dakingrai 维护的机制可解释性论文清单，按 taxonomy 分组（Techniques/Evaluation/Findings/Tools），配套 Rai et al. 2024 综述（arXiv:2407.02646）。
 provenance:

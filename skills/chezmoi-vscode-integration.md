@@ -12,7 +12,7 @@ sources:
   - https://github.com/twpayne/chezmoi/discussions/2424
 created: 2026-07-26
 updated: 2026-07-26
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-07-26"
 base_confidence: 0.55

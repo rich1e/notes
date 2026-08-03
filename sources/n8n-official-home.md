@@ -7,6 +7,7 @@ sources:
 source_url: "https://n8n.io/"
 created: "2026-07-30"
 updated: "2026-07-30"
+tier: peripheral
 summary: "n8n 官方营销页：定位 AI workflow automation platform，强调「可视化+代码」、500+ 集成、4.7/5 G2、200k+ 社区用户、Microsoft/NVIDIA/Meta 等企业客户、SOC 2/GDPR 合规。"
 provenance:
   extracted: 0.80

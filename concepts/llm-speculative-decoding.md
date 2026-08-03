@@ -11,7 +11,7 @@ summary: 推测解码通过轻量级草稿模型生成候选 token、目标模�
 base_confidence: 0.67
 lifecycle: draft
 lifecycle_changed: "2026-07-02"
-tier: supporting
+tier: peripheral
 provenance:
   extracted: 0.75
   inferred: 0.20

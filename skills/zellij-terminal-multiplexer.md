@@ -11,7 +11,7 @@ sources:
   - https://blog.csdn.net/2301_79518550/article/details/147495379
 created: 2026-07-26
 updated: 2026-07-26
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-07-26"
 base_confidence: 0.55

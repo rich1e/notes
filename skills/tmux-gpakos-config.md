@@ -13,7 +13,7 @@ sources:
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz/.tmux 实战用法:三步安装(自动/手动/manual)、改 `.tmux.conf.local` 走 `tmux_conf_*` 变量、`<prefix> r` 热重载、按 Powerline 字形换主题色、TMUX_CONF_LOCAL env 标记 active session、卸载只需 `rm` symlink + 备份。
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.85

@@ -8,6 +8,7 @@ sources:
 source_url: "https://stitch.withgoogle.com/docs/design-md/"
 created: "2026-07-28T01:00:00Z"
 updated: "2026-07-28T01:00:00Z"
+tier: peripheral
 summary: "Google Stitch 官方的 DESIGN.md 文档站点，包含 overview 与 specification 两页。Stitch 用自然语言生成 UI 时自动产出 DESIGN.md，agent 后续读取该文件保持视觉一致。"
 base_confidence: 0.75
 lifecycle: draft

@@ -6,6 +6,7 @@ sources:
   - "https://github.com/danielmiessler/Fabric"
 created: 2026-07-09T08:00:00Z
 updated: 2026-07-09T08:00:00Z
+tier: peripheral
 summary: >-
   Fabric CLI 的实际使用技巧：YouTube 分析、内容提炼、Obsidian 集成、REST API 服务模式、Shell 别名配置。
 lifecycle: draft

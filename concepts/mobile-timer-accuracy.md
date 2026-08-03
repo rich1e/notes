@@ -12,7 +12,7 @@ sources:
   - https://hcysun.me/2016/07/11/js-Worker-API-在倒计时中的使用/
 created: 2026-06-29
 updated: 2026-07-25
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
 base_confidence: 0.67

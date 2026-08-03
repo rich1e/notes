@@ -10,7 +10,7 @@ sources:
 created: 2026-06-29
 updated: 2026-07-26
 lifecycle_changed: "2026-07-25"
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
 base_confidence: 0.55

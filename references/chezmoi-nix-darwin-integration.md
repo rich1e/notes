@@ -7,6 +7,7 @@ sources:
   - "https://juejin.cn/post/7589477341766352942"
 created: 2026-07-25T09:00:00Z
 updated: 2026-07-25T10:00:00Z
+tier: peripheral
 summary: >-
   chezmoi 管用户级配置（点文件、模板、加密），nix-darwin 管系统级（包、macOS defaults、Homebrew、Dock/Finder），通过 run_* 钩子钩成单条命令；.chezmoidata.yaml shared/work/private profile 区分机器差异，Justfile 收敛日常维护。
 provenance:

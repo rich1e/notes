@@ -7,6 +7,7 @@ sources:
 source_url: "https://zhuanlan.zhihu.com/p/2013213227740325799"
 created: "2026-07-31T00:00:00"
 updated: "2026-07-31T00:00:00"
+tier: peripheral
 summary: "知乎文章系统梳理 Claude Code 的两层项目记忆：开发者手写的 CLAUDE.md（显式规则）与 Claude 自维护的 MEMORY.md/Auto Memory（自动积累经验），含作用域、200 行限制、@ 导入、.claude/rules/ 与子智能体记忆。"
 affinity: {}
 promotion_status: misc

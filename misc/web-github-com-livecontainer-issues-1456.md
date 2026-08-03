@@ -7,6 +7,7 @@ sources:
 source_url: "https://github.com/LiveContainer/LiveContainer/issues/1456"
 created: "2026-07-26T03:00:00Z"
 updated: "2026-07-26T03:00:00Z"
+tier: peripheral
 summary: "LiveContainer nightly 3.7.14 + iPadOS 26.3 下，SideStore 内置\"Refresh All\"触发 Unable to manage profiles；维护者结论是 iOS 26+ 须用 RPPairing 替代旧 Lockdown 配对文件。"
 affinity:
   "[[skills/ios-sideloading-fundamentals]]": 3

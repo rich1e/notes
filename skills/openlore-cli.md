@@ -14,7 +14,7 @@ sources:
 created: 2026-08-03T12:30:00Z
 updated: 2026-08-03T12:30:00Z
 summary: OpenLore 命令速查:install/orient/review/prove/enforce/mcp/drift,核心 MCP 工具族(navigate/change/remember/verify/coordinate/federate),6 capability family,substrate preset 默认。
-tier: supporting
+tier: peripheral
 lifecycle: draft
 lifecycle_changed: 2026-08-03
 base_confidence: 0.9

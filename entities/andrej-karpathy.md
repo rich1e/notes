@@ -7,6 +7,7 @@ sources:
   - "https://github.com/karpathy/nn-zero-to-hero"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   Andrej Karpathy：前 Tesla AI 总监、OpenAI 创始成员，现独立教育者。以「Neural Networks: Zero to Hero」视频系列、nanoGPT、nanochat 著称——LLM 教育的事实标准制定者。
 provenance:

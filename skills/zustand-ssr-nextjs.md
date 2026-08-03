@@ -11,7 +11,7 @@ sources:
 created: 2026-07-02T01:00:00Z
 updated: 2026-08-03T05:47:33Z
 summary: Next.js 中 Zustand store 是模块级全局变量，必须按请求创建（per-request store）并通过 Context 传递，以避免跨请求状态污染和水化不匹配。
-tier: supporting
+tier: peripheral
 lifecycle: reviewed
 lifecycle_changed: 2026-08-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"

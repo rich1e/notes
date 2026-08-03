@@ -15,7 +15,7 @@ provenance:
 base_confidence: 0.67
 lifecycle: draft
 lifecycle_changed: 2026-07-25
-tier: supporting
+tier: peripheral
 ---
 
 # chezmoi Bitwarden 密钥注入与跨平台解锁

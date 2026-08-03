@@ -7,6 +7,7 @@ sources:
   - "https://speech.ee.ntu.edu.tw/~hylee/genai/2025-spring.php"
 created: 2026-07-27T07:30:00Z
 updated: 2026-07-27T07:30:00Z
+tier: peripheral
 summary: >-
   李宏毅：台湾大学电机系教授，机器学习与生成式 AI 中文教育第一人。其 ML 课与 2025《生成式AI导论》是中文母语零基础入门的事实标准资源。
 provenance:
