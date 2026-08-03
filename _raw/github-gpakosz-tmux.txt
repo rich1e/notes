@@ -1,0 +1,3398 @@
+Directory structure:
+└── gpakosz-tmux/
+    ├── README.md
+    ├── install.sh
+    ├── LICENSE.MIT
+    ├── LICENSE.WTFPLv2
+    ├── .tmux.conf
+    ├── .tmux.conf.local
+    ├── .github/
+    │   └── funding.yml
+    └── .logo/
+        └── LICENSE
+
+================================================
+FILE: README.md
+================================================
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset=".logo/logomark+wordmark.svg">
+    <source media="(prefers-color-scheme: dark)" srcset=".logo/logomark+wordmark.svg">
+    <img alt="Oh my tmux! logo and wordmark" src=".logo/logomark+wordmark.svg">
+  </picture>
+</p>
+
+˗ˏˋ ★ ˎˊ˗ My self-contained, pretty and versatile tmux configuration, made with ❤️ ˗ˏˋ ★ ˎˊ˗
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://cloud.githubusercontent.com/assets/553208/19740585/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cloud.githubusercontent.com/assets/553208/19740585/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif">
+    <img alt="Oh my tmux! in action" src="https://cloud.githubusercontent.com/assets/553208/19740585/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif">
+  </picture>
+</p>
+
+Installation
+------------
+
+**Requirements:**
+
+  - tmux **`>= 2.6`** running on Linux, macOS, FreeBSD, OpenBSD, Windows
+    (WSL or Cygwin)
+  - awk, perl (optionally with Time::HiRes support for sub-second timestamps),
+    grep, and sed
+  - Outside of tmux, the `TERM` environment variable must be set to
+    `xterm-256color`
+
+⚠️ Before installing, you may want to backup your existing configuration.
+
+You can install Oh my tmux! at any of the following locations:
+- `~`
+- `$XDG_CONFIG_HOME/tmux`
+- `~/.config/tmux`
+
+**Automatic installation**
+
+Copy the following command and paste it in your terminal.
+```
+curl -fsSL "https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(date +%s)" | bash
+```
+
+**Manual installation in `~`**
+```
+$ cd
+$ git clone --single-branch https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .
+```
+
+**Manual installation in `$XDG_CONFIG_HOME/tmux`**
+```
+$ git clone --single-branch https://github.com/gpakosz/.tmux.git "/path/to/oh-my-tmux"
+$ mkdir -p "$XDG_CONFIG_HOME/tmux"
+$ ln -s /path/to/oh-my-tmux/.tmux.conf "$XDG_CONFIG_HOME/tmux/tmux.conf"
+$ cp /path/to/oh-my-tmux/.tmux.conf.local "$XDG_CONFIG_HOME/tmux/tmux.conf.local"
+```
+
+**Manual installation `~/.config/tmux`**
+```
+$ git clone --single-branch https://github.com/gpakosz/.tmux.git "/path/to/oh-my-tmux"
+$ mkdir -p ~/.config/tmux
+$ ln -s /path/to/oh-my-tmux/.tmux.conf ~/.config/tmux/tmux.conf
+$ cp /path/to/oh-my-tmux/.tmux.conf.local ~/.config/tmux/tmux.conf.local
+```
+⚠️ When installing `$XDG_CONFIG_HOME/tmux` or `~/.config/tmux`, the configuration
+file names don't have a leading `.` character.
+
+🚨 **You should never alter the main `.tmux.conf` or `tmux.conf` file. If you do,
+you're on your own. Instead, every customization should happen in your
+`.tmux.conf.local` or `tmux.conf.local` customization file copy.**
+
+If you're a Vim user, setting the `VISUAL` or `EDITOR` environment variable to
+`vim` will enable and further customize the `vi-style` key bindings (see tmux
+manual).
+
+If you're new to tmux, I recommend you to read the [tmux getting started
+guide][getting-started], as well as the [tmux 3: Productive Mouse-Free
+Development][bhtmux3] book by [@bphogan].
+
+Now proceed to [adjust] your `.local` customization file copy.
+
+[getting-started]: https://github.com/tmux/tmux/wiki/Getting-Started
+[bhtmux3]: https://pragprog.com/titles/bhtmux3/tmux-3/
+[@bphogan]: https://bphogan.com/
+[adjust]: #configuration
+
+Troubleshooting
+---------------
+
+  - **I believe something's not quite right**
+
+    Please, try make sure no tmux client or server process is currently running.
+
+    Then launch tmux with:
+    ```
+    $ tmux -f /dev/null -L test
+    ```
+
+    Which launches a new tmux client/server pair without loading any
+    configuration.
+
+    If the issue is still reproducing, please reach out to the tmux project for
+    support.
+
+    Otherwise, please open an issue describing what doesn't work and I'll do my
+    best to address it.
+
+  - **I tried to used `set`, `bind` and `unbind` in my `.local` customization
+    file, but Oh my tmux! overwrites my preferences**
+
+    When that happens append `#!important` to the line:
+
+    ```
+    bind c new-window -c '#{pane_current_path}' #!important
+    ```
+
+    ```
+    set -g default-terminal "screen-256color" #!important
+    ```
+
+  - **Status line is broken and/or gets duplicated at the bottom of the screen**
+
+    This could happen on Linux when the distribution provides a version of glib
+    that received Unicode 9.0 upgrades (glib `>= 2.50.1`) while providing a
+    version of glibc that didn't (glibc `< 2.26`). You may also configure
+    `LC_CTYPE` to use an `UTF-8` locale. Typically VTE based terminal emulators
+    rely on glib's `g_unichar_iswide()` function while tmux relies on glibc's
+    `wcwidth()` function. When these two functions disagree, display gets messed
+    up.
+
+    This can also happen on macOS when using iTerm2 and "Use Unicode version 9
+    character widths" is enabled in `Preferences... > Profiles > Text`
+
+    For that reason, the sample `.local` customization file stopped using
+    Unicode characters for which width changed in between Unicode 8.0 and 9.0
+    standards, as well as Emojis.
+
+  - **I installed Powerline and/or (patched) fonts but I can't see the Powerline
+    symbols**
+
+    **🤯 Please realize that you don't need to install [Powerline].**
+
+    You only need fonts patched with Powerline symbols or the standalone
+    `PowerlineSymbols.otf` font.
+
+    Then make sure your `.local` customization file copy uses the [Powerline
+    code points] for the
+    `tmux_conf_theme_left_separator_main`,
+    `tmux_conf_theme_left_separator_sub`,
+    `tmux_conf_theme_right_separator_main`
+    and `tmux_conf_theme_right_separator_sub` variables.
+
+[Powerline]: https://github.com/Lokaltog/powerline
+[Powerline code points]: #enabling-the-powerline-look
+
+Features
+--------
+
+  - `C-a` acts as secondary prefix, while keeping default `C-b` prefix
+  - Visual theme inspired by [Powerline][]
+  - [Maximize any pane to a new window with `<prefix> +`][maximize-pane]
+  - Mouse mode toggle with `<prefix> m`
+  - Laptop battery status line information
+  - Uptime status line information
+  - Optional highlight of focused pane
+  - Configurable new sessions, windows and panes behavior (to optionally retain
+    the current path)
+  - SSH/Mosh aware username and hostname status line information
+  - SSH/Mosh aware pane splitting (with automatic reconnection to the remote
+    server)
+  - Copy to OS clipboard (needs `xsel`, `xclip`, or `wl-copy` on Linux)
+  - Support for `\uXXXX` (BMP) and `\UXXXXXXXX` (supplementary plane) Unicode
+    escapes
+  - [PathPicker][] integration, if available
+  - [Urlscan][] (preferred) or [Urlview][] integration, if available
+
+[maximize-pane]: http://pempek.net/articles/2013/04/14/maximizing-tmux-pane-new-window/
+[PathPicker]: https://facebook.github.io/PathPicker/
+[Urlview]: https://packages.debian.org/stable/misc/urlview
+[Urlscan]: https://github.com/firecat53/urlscan
+
+The "Maximize any pane to a new window with `<prefix> +`" feature is different
+from the builtin `resize-pane -Z` command, as it allows you to further split a
+maximized pane. It's also more flexible by allowing you to maximize a pane to a
+new window, then change window, then go back and the pane is still in maximized
+state in its own window. You can then minimize a pane by using `<prefix> +`
+either from the source window or the maximized window.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://cloud.githubusercontent.com/assets/553208/9890858/ee3c0ca6-5c02-11e5-890e-05d825a46c92.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cloud.githubusercontent.com/assets/553208/9890858/ee3c0ca6-5c02-11e5-890e-05d825a46c92.gif">
+    <img alt="Maximizing a pane" src="https://cloud.githubusercontent.com/assets/553208/9890858/ee3c0ca6-5c02-11e5-890e-05d825a46c92.gif">
+  </picture>
+</p>
+
+Mouse mode allows you to set the active window, set the active pane, resize
+panes and automatically switches to copy-mode to select text.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://cloud.githubusercontent.com/assets/553208/9890797/8dffe542-5c02-11e5-9c06-a25b452e6fcc.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cloud.githubusercontent.com/assets/553208/9890797/8dffe542-5c02-11e5-9c06-a25b452e6fcc.gif">
+    <img alt="Mouse mode" src="https://cloud.githubusercontent.com/assets/553208/9890797/8dffe542-5c02-11e5-9c06-a25b452e6fcc.gif">
+  </picture>
+</p>
+
+Bindings
+--------
+
+tmux may be controlled from an attached client by using a key combination of a
+prefix key, followed by a command key. This configuration uses `C-a` as a
+secondary prefix while keeping `C-b` as the default prefix. In the following
+list of key bindings:
+  - `<prefix>` means you have to either hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd>
+  - `<prefix> c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>c</kbd>
+  - `<prefix> C-c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>Ctrl</kbd> + <kbd>c</kbd>
+
+This configuration uses the following bindings:
+
+  - `<prefix> e` opens the `.local` customization file copy with the editor
+    defined by the `VISUAL` or `EDITOR` environment variable (defaults to `vim`
+    when empty)
+  - `<prefix> r` reloads the configuration
+  - `C-l` clears both the screen **and** the tmux history
+
+  - `<prefix> C-c` creates a new session
+  - `<prefix> C-f` lets you switch to another session by name
+  - `<prefix> BTab` brings you to the last active session
+
+  - `<prefix> C-h` and `<prefix> C-l` let you navigate windows left/right
+    (default `<prefix> n` is unbound and `<prefix> p` is repurposed)
+  - `<prefix> C-S-H` and `<prefix> C-S-L` let you swap windows left/right
+    (requires `extended-keys` support)
+  - `<prefix> Tab` brings you to the last active window
+
+  - `<prefix> -` splits the current pane vertically
+  - `<prefix> _` splits the current pane horizontally
+  - `<prefix> h`, `<prefix> j`, `<prefix> k` and `<prefix> l` let you navigate
+    panes ala Vim
+  - `<prefix> H`, `<prefix> J`, `<prefix> K`, `<prefix> L` let you resize panes
+  - `<prefix> <` and `<prefix> >` let you swap panes
+  - `<prefix> +` maximizes the current pane to a new window
+
+  - `<prefix> m` toggles mouse mode on or off
+
+  - `<prefix> U` launches Urlscan (preferred) or Urlview, if available
+  - `<prefix> F` launches Facebook PathPicker, if available
+
+  - `<prefix> Enter` enters copy-mode
+  - `<prefix> b` lists the paste-buffers
+  - `<prefix> p` pastes from the top paste-buffer
+  - `<prefix> P` lets you choose the paste-buffer to paste from
+
+Additionally, `copy-mode-vi` matches [my own Vim configuration]
+
+[my own Vim configuration]: https://github.com/gpakosz/.vim.git
+
+Bindings for `copy-mode-vi`:
+
+  - `v` begins selection / visual mode
+  - `C-v` toggles between blockwise visual mode and visual mode
+  - `H` jumps to the start of line
+  - `L` jumps to the end of line
+  - `y` copies the selection to the top paste-buffer
+  - `Escape` cancels the current operation
+
+It's also possible to preserve the tmux stock bindings by setting the
+`tmux_conf_preserve_stock_bindings` variable to `true` in your `.local`
+customization file copy.
+
+Configuration
+-------------
+
+While this configuration tries to bring sane default settings, you may want to
+customize it further to your needs.
+
+🚨 Again, you should never alter the main `.tmux.conf` or `tmux.conf` file.
+If you do, you're on your own.
+
+Please refer to the sample `.local` customization file to know more about the
+variables that allow you to alter different behaviors. Upon successful
+installation, pressing `<prefix> e` will open your `.local` customization file
+copy with the editor defined by the `VISUAL` or `EDITOR` environment variable
+(defaults to `vim` when empty).
+
+### Enabling the Powerline look
+
+Powerline originated as a status-line plugin for Vim. Its popular eye-catching
+look is based on the use of special symbols:
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/55afd317-150b-42f0-9ef3-fa619be7b160">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/55afd317-150b-42f0-9ef3-fa619be7b160">
+    <img alt="Powerline symbols" src="https://github.com/user-attachments/assets/55afd317-150b-42f0-9ef3-fa619be7b160">
+  </picture>
+</p>
+
+To make use of these symbols, there are several options:
+
+  - Use a font that already bundles those: this is the case of the [Source Code
+    Pro][source code pro] font
+  - Use a [pre-patched font][powerline patched fonts]
+  - Use your preferred font along with the standalone [Powerline font][powerline
+    font] (that only contains the Powerline symbols): [this highly depends on
+    your operating system and your terminal emulator][terminal support], for
+    instance here's a screenshot of iTerm2 configured to use
+    `PowerlineSymbols.otf` for non ASCII symbols:
+    <p align="center">
+      <picture>
+        <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/553208/62243890-8232f500-b3de-11e9-9b8c-51a5d38bdaa8.png">
+        <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/553208/62243890-8232f500-b3de-11e9-9b8c-51a5d38bdaa8.png">
+        <img alt="iTerm2 + Powerline font" src="https://user-images.githubusercontent.com/553208/62243890-8232f500-b3de-11e9-9b8c-51a5d38bdaa8.png">
+      </picture>
+    </p>
+
+[source code pro]: https://github.com/adobe-fonts/source-code-pro/releases/latest
+[powerline patched fonts]: https://github.com/powerline/fonts
+[powerline font]: https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+[terminal support]: http://powerline.readthedocs.io/en/master/usage.html#usage-terminal-emulators
+
+Then edit your `.local` customization file copy (with `<prefix> e`) and adjust
+the following variables:
+
+```
+tmux_conf_theme_left_separator_main='\uE0B0'
+tmux_conf_theme_left_separator_sub='\uE0B1'
+tmux_conf_theme_right_separator_main='\uE0B2'
+tmux_conf_theme_right_separator_sub='\uE0B3'
+```
+
+The [Powerline manual] contains further details on how to install fonts
+containing the Powerline symbols.
+
+[Powerline manual]: http://powerline.readthedocs.org/en/latest/installation.html#fonts-installation
+
+### Configuring the status line
+
+Edit your `.local` customization file copy (`<prefix> e`) and adjust the
+`tmux_conf_theme_status_left` and `tmux_conf_theme_status_right` variables to
+your liking.
+
+This configuration supports the following builtin variables:
+
+  - `#{battery_bar}`: horizontal battery charge bar
+  - `#{battery_hbar}`: 1 character wide, horizontal battery charge bar
+  - `#{battery_vbar}`: 1 character wide, vertical battery charge bar
+  - `#{battery_percentage}`: battery percentage
+  - `#{battery_status}`: is battery charging or discharging?
+  - `#{circled_window_index}`: circled window number (from ⓪ to ⑳)
+  - `#{circled_session_name}`: circled session number (from ⓪ to ⑳)
+  - `#{hostname}`: SSH/Mosh aware hostname information
+  - `#{hostname_full}`: SSH/Mosh aware fully qualified hostname
+  - `#{hostname_ssh}`: SSH/Mosh aware hostname information, blank when not
+    connected to a remote server through SSH/Mosh
+  - `#{hostname_full_ssh}`: SSH/Mosh aware fully qualified hostname, blank when
+    not connected to a remote server through SSH/Mosh
+  - `#{loadavg}`: load average
+  - `#{mouse}`: is mouse mode enabled?
+  - `#{pairing}`: is the current session attached to more than one client?
+  - `#{pretty_pane_current_path}`: prettified `#{pane_current_path}` when its
+    length is too long
+  - `#{prefix}`: is prefix being depressed?
+  - `#{root}`: is the current user root?
+  - `#{synchronized}`: are the panes synchronized?
+  - `#{uptime_y}`: uptime years
+  - `#{uptime_d}`: uptime days, modulo 365 when `#{uptime_y}` is used
+  - `#{uptime_h}`: uptime hours
+  - `#{uptime_m}`: uptime minutes
+  - `#{uptime_s}`: uptime seconds
+  - `#{username}`: SSH/Mosh aware username information
+  - `#{username_ssh}`: SSH aware username information, blank when not connected
+    to a remote server through SSH/Mosh
+
+Beside the variables mentioned above, the `tmux_conf_theme_status_left` and
+`tmux_conf_theme_status_right` variables support the usual tmux syntax, e.g.
+using `#()` to call an external command that inserts weather information
+provided by [wttr.in]:
+```
+tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #(curl -m 1 wttr.in?format=3 2>/dev/null; sleep 900) , %R , %d %b | #{username}#{root} | #{hostname} '
+```
+The `sleep 900` call makes sure the network request is issued at most every 15
+minutes whatever the value of `status-interval`.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/553208/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/553208/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png">
+    <img alt="Weather information from wttr.in" src="https://user-images.githubusercontent.com/553208/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png">
+  </picture>
+</p>
+
+[wttr.in]: https://github.com/chubin/wttr.in#one-line-output
+
+💡 You can also define your own custom variables by defining your own POSIX
+shell functions, see the sample `.local` customization file for instructions.
+
+Finally, remember that `tmux_conf_theme_status_left` and
+`tmux_conf_theme_status_right` end up being given to tmux as `status-left` and
+`status-right` which means they're passed through `strftime()`. As such, the `%`
+character has a special meaning and needs to be escaped by doubling it, e.g.
+```
+tmux_conf_theme_status_right='#(echo foo %% bar)'
+```
+See also `man 3 strftime`.
+
+### Using TPM plugins
+
+This configuration comes with built-in [TPM] support:
+
+  - Use the `set -g @plugin ...` syntax to enable a plugin
+  - Whenever a plugin introduces a variable to be used in `status-left` or
+    `status-right`, you can use it in the `tmux_conf_theme_status_left` and
+    `tmux_conf_theme_status_right` variables, see instructions above 👆
+  - ⚠️ Do not add `set -g @plugin 'tmux-plugins/tpm'` to any configuration file
+  - ⛔️ Do not add `run '~/.tmux/plugins/tpm/tpm'` to any configuration file
+
+⚠️ The TPM bindings differ slightly from upstream:
+  - Installing plugins: `<prefix> I`
+  - Uninstalling plugins: `<prefix> M-u`
+  - Updating plugins: `<prefix> u`
+
+See the sample `.local` customization file for further instructions.
+
+[TPM]: https://github.com/tmux-plugins/tpm
+
+### Using Oh my tmux! on Windows
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/7f84a687-fb4d-4817-a445-419e63ccfac5">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/7f84a687-fb4d-4817-a445-419e63ccfac5">
+    <img alt="Windows Terminal + WSL" src="https://github.com/user-attachments/assets/7f84a687-fb4d-4817-a445-419e63ccfac5">
+  </picture>
+</p>
+
+⚠️ I don't recommend running this configuration with [Cygwin] anymore. Forking
+under Cygwin is extremely slow and this configuration issues a fair amount
+`run-shell` commands under the hood. As such, you will experience high CPU
+usage.
+
+Instead I recommend [Windows Subsystem for Linux][WSL] along with [Windows
+Terminal]. As an alternative, you may also consider using [Mintty as a terminal
+for WSL][wsltty].
+
+[Cygwin]: https://www.cygwin.com
+[WSL]: https://learn.microsoft.com/en-us/windows/wsl
+[wsltty]: https://github.com/mintty/wsltty
+[Windows Terminal]: https://aka.ms/terminal
+
+
+
+================================================
+FILE: install.sh
+================================================
+#!/usr/bin/env bash
+# Oh my tmux!
+# 💛🩷💙🖤❤️🤍
+# https://github.com/gpakosz/.tmux
+# (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
+#         without any warranty.
+#         Copyright 2012— Gregory Pakosz (@gpakosz).
+#
+# ------------------------------------------------------------------------------
+# 🚨 PLEASE REVIEW THE CONTENT OF THIS FILE BEFORE BLINDING PIPING TO CURL
+# ------------------------------------------------------------------------------
+{
+if [ ${EUID:-$(id -u)} -eq 0 ]; then
+  printf '❌ Do not execute this script as root!\n' >&2 && exit 1
+fi
+
+if [ -z "$BASH_VERSION" ]; then
+  printf '❌ This installation script requires bash\n' >&2 && exit 1
+fi
+
+if ! tmux -V >/dev/null 2>&1; then
+  printf '❌ tmux is not installed\n' >&2 && exit 1
+fi
+
+is_true() {
+  case "$1" in
+    true|yes|1)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+if ! is_true "$PERMISSIVE" && [ -n "$TMUX" ]; then
+  printf '❌ tmux is currently running, please terminate the server\n' >&2 && exit 1
+fi
+
+install() {
+  printf '🎢 Installing Oh my tmux! Buckle up!\n' >&2
+  printf '\n' >&2
+  now="$(date +'%Y%m%d%H%M%S').$$"
+  tilde='~'
+
+  for dir in "${XDG_CONFIG_HOME:-$HOME/.config}/tmux" "$HOME/.tmux"; do
+    if [ -d "$dir" ]; then
+      if ! is_true "$DRY_RUN" && ! mv "$dir" "$dir.$now"; then
+        printf '❌ %s directory exists, failed to back up → %s\n' "${dir/#"$HOME"/$tilde}" "${dir/#"$HOME"/$tilde}.$now" >&2 && exit 1
+      fi
+      printf '⚠️ %s directory exists, made a backup → %s\n' "${dir/#"$HOME"/$tilde}" "${dir/#"$HOME"/$tilde}.$now" >&2
+    fi
+  done
+
+  for conf in "$HOME/.tmux.conf" \
+              "$HOME/.tmux.conf.local" \
+              "${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+              "${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf.local"; do
+    if [ -L "$conf" ]; then
+      printf '⚠️ %s symlink exists, removing → 🗑️\n' "${conf/#"$HOME"/$tilde}" >&2
+      if ! is_true "$DRY_RUN"; then
+        rm -f "$conf"
+      fi
+    elif [ -f "$conf" ]; then
+      if ! is_true "$DRY_RUN" && ! mv "$conf" "$conf.$now"; then
+        printf '❌ %s file exists, failed to back up → %s\n' "${conf/#"$HOME"/$tilde}" "${conf/#"$HOME"/$tilde}.$now" >&2 && exit 1
+      fi
+      printf '⚠️ %s file exists, made a backup → %s\n' "${conf/#"$HOME"/$tilde}" "${conf/#"$HOME"/$tilde}.$now" >&2
+    fi
+  done
+
+  if [ -n "$XDG_CONFIG_HOME" ]; then
+    TMUX_CONF="$XDG_CONFIG_HOME/tmux/tmux.conf"
+  elif [ -d "$HOME/.config" ]; then
+    TMUX_CONF="$HOME/.config/tmux/tmux.conf"
+  else
+    TMUX_CONF="$HOME/.tmux.conf"
+  fi
+  TMUX_CONF_LOCAL="$TMUX_CONF.local"
+
+  TMUX_CONF_DIR=$(dirname "$TMUX_CONF")
+  if ! is_true "$DRY_RUN" && ! mkdir -p "$TMUX_CONF_DIR"; then
+    printf '❌ Failed to create %s\n' "${TMUX_CONF_DIR/#"$HOME"/$tilde}" >&2 && exit 1
+  fi
+
+  OH_MY_TMUX_CLONE_PATH="${XDG_DATA_HOME:-$HOME/.local/share}/tmux/oh-my-tmux"
+  if [ -d "$OH_MY_TMUX_CLONE_PATH" ]; then
+    if ! is_true "$DRY_RUN" && ! mv "$OH_MY_TMUX_CLONE_PATH" "$OH_MY_TMUX_CLONE_PATH.$now"; then
+      printf '❌ %s exists, failed to back up → %s\n' "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}" "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}.$now" >&2 && exit 1
+    fi
+    printf '⚠️ %s exists, made a backup → %s\n' "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}" "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}.$now" >&2
+  fi
+
+  printf '\n' >&2
+  printf '✅ Using %s\n' "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}" >&2
+  printf '✅ Using %s\n' "${TMUX_CONF/#"$HOME"/$tilde}" >&2
+  printf '✅ Using %s\n' "${TMUX_CONF_LOCAL/#"$HOME"/$tilde}" >&2
+
+  printf '\n' >&2
+  OH_MY_TMUX_REPOSITORY=${OH_MY_TMUX_REPOSITORY:-https://github.com/gpakosz/.tmux.git}
+  printf '⬇️ Cloning Oh my tmux! repository...\n' >&2
+  if ! is_true "$DRY_RUN"; then
+    mkdir -p "$(dirname "$OH_MY_TMUX_CLONE_PATH")"
+    if ! git clone -q --single-branch "$OH_MY_TMUX_REPOSITORY" "$OH_MY_TMUX_CLONE_PATH"; then
+      printf '❌ Failed to clone Oh my tmux! repository\n' >&2 && exit 1
+    fi
+  fi
+
+  printf '\n' >&2
+  if ! is_true "$DRY_RUN" && ! ln -snf "$OH_MY_TMUX_CLONE_PATH/.tmux.conf" "$TMUX_CONF"; then
+    printf '❌ Failed to symlink %s → %s\n' "${TMUX_CONF/#"$HOME"/$tilde}" "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}/.tmux.conf" >&2 && exit 1
+  fi
+  printf '✅ Symlinked %s → %s\n' "${TMUX_CONF/#"$HOME"/$tilde}" "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}/.tmux.conf" >&2
+  if ! is_true "$DRY_RUN" && ! cp "$OH_MY_TMUX_CLONE_PATH/.tmux.conf.local" "$TMUX_CONF_LOCAL"; then
+    printf '❌ Failed to copy %s → %s\n' "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}/.tmux.conf.local" "${TMUX_CONF_LOCAL/#"$HOME"/$tilde}" >&2 && exit 1
+  fi
+  printf '✅ Copied %s → %s\n' "${OH_MY_TMUX_CLONE_PATH/#"$HOME"/$tilde}/.tmux.conf.local" "${TMUX_CONF_LOCAL/#"$HOME"/$tilde}" >&2
+
+  tmux() {
+    ${TMUX_PROGRAM:-tmux} ${TMUX_SOCKET:+-S "$TMUX_SOCKET"} "$@"
+  }
+  if ! is_true "$DRY_RUN" && [ -n "$TMUX" ]; then
+    tmux set-environment -g TMUX_CONF "$TMUX_CONF"
+    tmux set-environment -g TMUX_CONF_LOCAL "$TMUX_CONF_LOCAL"
+    tmux source "$TMUX_CONF"
+  fi
+
+  if [ -n "$TMUX" ]; then
+    printf '\n' >&2
+    printf '⚠️ Installed Oh my tmux! while tmux was running...\n' >&2
+    printf '   → Existing sessions have outdated environment variables\n' >&2
+    printf '     • TMUX_CONF\n' >&2
+    printf '     • TMUX_CONF_LOCAL\n' >&2
+    printf '     • TMUX_PROGRAM\n' >&2
+    printf '     • TMUX_SOCKET\n' >&2
+    printf '   → Some other things may not work 🤷\n' >&2
+  fi
+
+  printf '\n' >&2
+  printf '🎉 Oh my tmux! successfully installed 🎉\n' >&2
+}
+
+if [ -p /dev/stdin ]; then
+  printf '✋ STOP\n' >&2
+  printf '   🤨 It looks like you are piping commands from the internet to your shell!\n' >&2
+  if ! : 2>/dev/null < /dev/tty; then
+    printf '   ⛔️ No terminal available to review the script...\n' >&2
+    printf '      → Download install.sh and run it directly instead of piping to bash\n' >&2
+    exit 1
+  else
+    printf "   🙏 Please take the time to review what's going to be executed...\n" >&2
+  fi
+
+  (
+    printf '\n' >&2
+
+    self() {
+      printf '# Oh my tmux!\n'
+      printf '# 💛🩷💙🖤❤️🤍\n'
+      printf '# https://github.com/gpakosz/.tmux\n'
+      printf '\n'
+
+      declare -f install
+    }
+
+    while :; do
+      printf '   Do you want to review the content? [Yes/No/Cancel] > ' >&2
+      if ! read -r answer; then
+        printf '\n⛔️ Installation aborted...\n' >&2 && exit 1
+      fi
+      case $(printf '%s\n' "$answer" | tr '[:upper:]' '[:lower:]') in
+        y|yes)
+          if command -v bat >/dev/null 2>&1; then
+            self | LESS='' bat --paging always --file-name install.sh
+          else
+            case "${VISUAL:-${EDITOR}}" in
+              *vim*) # vim, nvim, neovim ... compatible
+                self | ${VISUAL:-${EDITOR}} -c ':set syntax=tmux' -R -
+                ;;
+              *)
+                tput smcup 2>/dev/null
+                clear 2>/dev/null
+                self | LESS='-R' ${PAGER:-less}
+                tput rmcup 2>/dev/null
+                ;;
+            esac
+          fi
+          break
+          ;;
+        n|no)
+          break
+          ;;
+        c|cancel)
+          printf '\n' >&2
+          printf '⛔️ Installation aborted...\n' >&2 && exit 1
+          ;;
+      esac
+    done
+  ) < /dev/tty || exit 1
+  printf '\n' >&2
+fi
+
+install
+}
+
+
+
+================================================
+FILE: LICENSE.MIT
+================================================
+Copyright 2012— Gregory Pakosz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+================================================
+FILE: LICENSE.WTFPLv2
+================================================
+        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+
+
+================================================
+FILE: .tmux.conf
+================================================
+# : << 'EOF'
+# Oh my tmux!
+# 💛🩷💙🖤❤️🤍
+# https://github.com/gpakosz/.tmux
+# (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
+#         without any warranty.
+#         Copyright 2012— Gregory Pakosz (@gpakosz).
+#
+# ------------------------------------------------------------------------------
+# 🚨 DO NOT MODIFY THIS FILE
+#      instead, override your .local customization file copy, see README.md
+# ------------------------------------------------------------------------------
+
+
+# -- general -------------------------------------------------------------------
+
+set -g default-terminal "screen-256color"
+
+%if #{>=:#{s/^[^0-9]+//:#{version}},3.3}
+set -gF extended-keys '#{?#{||:#{m/ri:mintty|iTerm|WezTerm|ghostty,#{TERM_PROGRAM}},#{!=:#{XTERM_VERSION},}},always,off}' # needed by Control + Shift bindings
+%if #{>=:#{s/^[^0-9]+//:#{version}},3.5}
+set -g extended-keys-format csi-u
+%endif
+%elif #{>=:#{s/^[^0-9]+//:#{version}},3.2}
+set -gF extended-keys '#{?#{||:#{m/ri:mintty|iTerm|WezTerm|ghostty,#{TERM_PROGRAM}},#{!=:#{XTERM_VERSION},}},on,off}' # needed by Control + Shift bindings
+%endif
+set -s escape-time 10                     # faster command sequences
+set -sg repeat-time 600                   # increase repeat timeout
+set -s focus-events on
+
+set -g prefix2 C-a                        # GNU-Screen compatible prefix
+bind C-a send-prefix -2
+
+set -g history-limit 5000                 # boost history
+
+# edit configuration
+bind e new-window -n "#{TMUX_CONF_LOCAL}" sh -c '_E=${VISUAL:-${EDITOR:-vim}}; case "$_E" in *vim*) $_E -c ":set syntax=tmux" "$TMUX_CONF_LOCAL";; *) $_E "$TMUX_CONF_LOCAL";; esac && "$TMUX_PROGRAM" ${TMUX_SOCKET:+-S "$TMUX_SOCKET"} source "$TMUX_CONF" \; display "Configuration reloaded"'
+
+# reload configuration
+bind r run "sh -c '\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} source \"\$TMUX_CONF\"'" \; display "Configuration reloaded"
+
+
+# -- display -------------------------------------------------------------------
+
+set -g base-index 1           # start windows numbering at 1
+bind  0 select-window -t :=10 # and make <prefix> 0 select window with index 10
+setw -g pane-base-index 1     # make pane numbering consistent with windows
+
+setw -g automatic-rename on   # rename window to reflect current program
+set -g renumber-windows on    # renumber windows when a window is closed
+
+set -g set-titles on          # set terminal title
+
+set -g display-panes-time 800 # slightly longer pane indicators display time
+set -g display-time 1000      # slightly longer status messages display time
+
+set -g status-interval 10     # redraw status line every 10 seconds
+
+# clear both screen and history
+bind -n C-l send-keys C-l \; run 'sleep 0.2' \; clear-history
+
+# activity
+set -g monitor-activity on
+set -g visual-activity off
+
+
+# -- navigation ----------------------------------------------------------------
+
+# create session
+bind C-c new-session
+
+# find session
+bind C-f command-prompt -p '(find-session)' 'switch-client -t %%'
+
+# session navigation
+bind BTab switch-client -l  # move to last session
+
+# split current window horizontally
+bind - split-window -v
+# split current window vertically
+bind _ split-window -h
+
+# pane navigation
+bind -r h select-pane -L  # move left
+bind -r j select-pane -D  # move down
+bind -r k select-pane -U  # move up
+bind -r l select-pane -R  # move right
+bind > swap-pane -D       # swap current pane with the next one
+bind < swap-pane -U       # swap current pane with the previous one
+
+# maximize current pane
+bind + run "cut -c3- '#{TMUX_CONF}' | sh -s _maximize_pane '#{session_name}' '#D'"
+
+# pane resizing
+bind -r H resize-pane -L 2
+bind -r J resize-pane -D 2
+bind -r K resize-pane -U 2
+bind -r L resize-pane -R 2
+
+# window navigation
+unbind n
+unbind p
+bind -r C-h previous-window                             # select previous window
+bind -r C-l next-window                                 # select next window
+bind -r C-S-H swap-window -t -1 \; select-window -t -1  # swap current window with the previous one
+bind -r C-S-L swap-window -t +1 \; select-window -t +1  # swap current window with the next one
+bind Tab last-window                                    # move to last active window
+
+# toggle mouse
+bind m set -gF mouse '#{?mouse,off,on}' \; display "mouse: #{?mouse,on,off}"
+
+
+# -- facebook pathpicker -------------------------------------------------------
+
+bind F run "cut -c3- '#{TMUX_CONF}' | sh -s _fpp '#{pane_id}' '#{pane_current_path}'"
+
+
+# -- copy mode -----------------------------------------------------------------
+
+bind Enter copy-mode # enter copy mode
+
+bind -T copy-mode-vi v send -X begin-selection
+bind -T copy-mode-vi C-v send -X rectangle-toggle
+bind -T copy-mode-vi y send -X copy-selection-and-cancel
+bind -T copy-mode-vi Escape send -X cancel
+bind -T copy-mode-vi H send -X start-of-line
+bind -T copy-mode-vi L send -X end-of-line
+
+# copy to X11 clipboard
+if -b 'command -v xsel > /dev/null 2>&1' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - | xsel -i -b"'
+if -b '! command -v xsel > /dev/null 2>&1 && command -v xclip > /dev/null 2>&1' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - | xclip -i -selection clipboard >/dev/null 2>&1"'
+# copy to Wayland clipboard
+if -b '[ "$XDG_SESSION_TYPE" = "wayland" ] && command -v wl-copy > /dev/null 2>&1' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - | wl-copy"'
+# copy to macOS clipboard
+if -b 'command -v pbcopy > /dev/null 2>&1' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - | pbcopy"'
+# copy to Windows clipboard
+if -b 'command -v clip.exe > /dev/null 2>&1' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - | clip.exe"'
+if -b '[ -c /dev/clipboard ]' 'bind y run -b "\"\$TMUX_PROGRAM\" \${TMUX_SOCKET:+-S \"\$TMUX_SOCKET\"} save-buffer - > /dev/clipboard"'
+
+
+# -- buffers -------------------------------------------------------------------
+
+bind b list-buffers     # list paste buffers
+bind p paste-buffer -p  # paste from the top paste buffer
+bind P choose-buffer    # choose which buffer to paste from
+
+
+# -- 8< ------------------------------------------------------------------------
+
+%if #{==:#{TMUX_PROGRAM},}
+  run "exec sh -c 'TMUX_PROGRAM=\"\$(LSOF=\$(PATH=\"\$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin\" command -v lsof); \$LSOF -b -w -a -d txt -p #{pid} -Fn 2>/dev/null | perl -n -e \"if (s/(?:\s+\\([^\\s]+?\\))?\$//g && s/^n((?:.(?!dylib\$|so\$))+)\$/\\1/g) { print; exit } } exit 1; {\" 2>/dev/null || readlink \"/proc/#{pid}/exe\" 2>/dev/null)\"; [ \"\$(\"\$TMUX_PROGRAM\" display -p \"#{l:#{pid}}\" 2>/dev/null)\" = \"#{pid}\" ] || TMUX_PROGRAM=\"\$(command -v tmux || printf tmux)\"; \"\$TMUX_PROGRAM\" -S #{socket_path} set-environment -g TMUX_PROGRAM \"\$TMUX_PROGRAM\"'"
+%endif
+%if #{==:#{TMUX_SOCKET},}
+  run "exec sh -c '\"\$TMUX_PROGRAM\" -S #{socket_path} set-environment -g TMUX_SOCKET \"#{socket_path}\"'"
+%endif
+%if #{==:#{TMUX_CONF},}
+  run "exec sh -c '\"\$TMUX_PROGRAM\" set-environment -g TMUX_CONF \$(for conf in \"\$HOME/.tmux.conf\" \"\$XDG_CONFIG_HOME/tmux/tmux.conf\" \"\$HOME/.config/tmux/tmux.conf\"; do [ -f \"\$conf\" ] && printf \"%s\" \"\$conf\" && break; done)'"
+%endif
+%if #{==:#{TMUX_CONF_LOCAL},}
+  run "exec sh -c '\"\$TMUX_PROGRAM\" set-environment -g TMUX_CONF_LOCAL \"\$TMUX_CONF.local\"'"
+%endif
+
+run '"$TMUX_PROGRAM" -S #{socket_path} source "$TMUX_CONF_LOCAL"'
+run 'cut -c3- "$TMUX_CONF" | sh -s _apply_configuration'
+
+# EOF
+#
+# # exit the script if any statement returns a non-true return value
+# set -e
+#
+# unset SHELL
+#
+# unset GREP_OPTIONS
+# export LC_NUMERIC=C
+# # shellcheck disable=SC3041
+# [ -n "${BASH_VERSION:-}" ] && set +H 2>/dev/null || true
+#
+# _sed=$(command -v sed)
+# sed() {
+#   case " $* " in
+#     *" -E"*)
+#       : "${__sed_E_to_r=$(printf '' | "$_sed" -E 's///' 2>/dev/null || printf true)}"
+#       if [ -n "$__sed_E_to_r" ]; then
+#         n=$#; while [ "$n" -gt 0 ]; do arg=$1; shift; case $arg in -E*) arg=-r${arg#-E};; esac; set -- "$@" "$arg"; n=$(( n - 1 )); done
+#       fi
+#       ;;
+#   esac
+#   "$_sed" "$@"
+# }
+#
+# _awk=$(command -v awk)
+# awk() {
+#   LC_ALL='' LC_NUMERIC=C "$_awk" "$@"
+# }
+#
+# _uname_s() {
+#   : "${__uname_s:=$(uname -s)}"
+#   printf '%s\n' "$__uname_s"
+# }
+#
+# [ -z "$TMUX" ] && exit 255
+# if [ -z "$TMUX_SOCKET" ]; then
+#   # /path/to/socket,pid,session
+#   TMUX_SOCKET=${TMUX%%,*}
+# fi
+# if ! [ -x "$TMUX_PROGRAM" ]; then
+#   # force update TMUX_PROGRAM when existing program is gone
+#   # this usually happen when updating tmux without relaunching the server
+#   unset TMUX_PROGRAM
+# fi
+# if [ -z "$TMUX_PROGRAM" ]; then
+#   # /path/to/socket,pid,session
+#   TMUX_PID=${TMUX#*,}
+#   TMUX_PID=${TMUX_PID%%,*}
+#   TMUX_PROGRAM=$(lsof -b -w -a -d txt -p "$TMUX_PID" -Fn 2>/dev/null | perl -n -e "if (s/(?:\s+\([^\s]+?\))?$//g && s/^n((?:.(?!dylib$|so$))+)$/\1/g) { print; exit } } exit 1; {" 2>/dev/null || readlink "/proc/$TMUX_PID/exe" 2>/dev/null)
+#   [ "$("$TMUX_PROGRAM" -S "$TMUX_SOCKET" display -p '#{pid}' 2>/dev/null)" = "$TMUX_PID" ] || TMUX_PROGRAM=$(command -v tmux || printf tmux)
+#   tmux setenv -g TMUX_PROGRAM "$TMUX_PROGRAM"
+# fi
+# if [ "$TMUX_PROGRAM" = "tmux" ]; then
+#   tmux() {
+#     command tmux ${TMUX_SOCKET:+-S "$TMUX_SOCKET"} "$@"
+#   }
+# else
+#   tmux() {
+#     "$TMUX_PROGRAM" ${TMUX_SOCKET:+-S "$TMUX_SOCKET"} "$@"
+#   }
+# fi
+#
+# _tmux_version() {
+#   : "${__tmux_version:=$(tmux -V | perl -n -e '($l, $r) = $_ =~ /^[^0-9]+([0-9.]+)([a-z])?([-+].*)?$/; print $l * 1000 + ($r eq "" ? 0 : ord($r) - 96)')}"
+#   printf '%s\n' "$__tmux_version"
+# }
+#
+# _is_true() {
+#   case "$1" in
+#     true|yes|1)
+#       return 0
+#       ;;
+#     *)
+#       return 1
+#       ;;
+#   esac
+# }
+#
+# _is_enabled() {
+#   [ "$1" = "enabled" ]
+# }
+#
+# _is_disabled() {
+#   [ "$1" = "disabled" ]
+# }
+#
+# _circled() {
+#   circled_digits='⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳'
+#   if [ "$1" -ge 0 ] 2>/dev/null && [ "$1" -le 20 ] 2>/dev/null; then
+#     i=$1
+#     eval set -- "$circled_digits"
+#     shift "$i" && printf '%s\n' "$1"
+#   else
+#     printf '%s\n' "$1"
+#   fi
+# }
+#
+# _decode_unicode_escapes() {
+#   case "$*" in
+#     *\\u*|*\\U*)
+#       printf '%s' "$*" | perl -CS -pe 's/(\\u([0-9A-Fa-f]{1,4})|\\U([0-9A-Fa-f]{1,8}))/chr(hex($2.$3))/eg' 2>/dev/null
+#       ;;
+#     *)
+#       printf '%s' "$*"
+#       ;;
+#   esac
+# }
+#
+# _blank() {
+#   printf '%s' "$1" | perl -CS -pe 's/\p{M}//g; s/[\p{EA=W}\p{EA=F}]/  /g; s/./ /g'
+# }
+#
+# _pretty_path() {
+#   max_length=${1:-auto}; shift
+#   [ -n "$*" ] || return 0
+#   if [ "$max_length" = "auto" ]; then
+#     max_length=$(tmux -q display -p '#{client_width}' 2>/dev/null)
+#     max_length=$(( ${max_length:-80} / 5 ))
+#   fi
+#   { IFS=' '; cd "$*" && pwd || printf '%s' "$*";  } | perl -s -p -E '
+#     s|^\Q$HOME\E|~|;
+#     /^.{0,$max_length}$/ || s|(~?/[^/]+)(/[^/]+)(?:/.+)?(/[^/]+)$|$1$2/...$3|g;
+#     /^.{0,$max_length}$/ || s|(~?/[^/]+)(/[^/]+)(?:/.+)(/[^/]+)$|$1/...$3|g;' -- -HOME="$HOME" -max_length="$max_length"
+# }
+#
+# if command -v pkill > /dev/null 2>&1; then
+#   _pkillf() {
+#     pkill -f "$@" || true
+#   }
+# else
+#   case "$(_uname_s)" in
+#     *CYGWIN*)
+#       _pkillf() {
+#         while IFS= read -r pid; do
+#           [ -z "$pid" ] && continue
+#           kill "$pid" || true
+#         done  << EOF
+# $(grep -Eao "$@" /proc/*/cmdline | xargs -0 | sed -E -n 's,/proc/([0-9]+)/.+$,\1,pg')
+# EOF
+#       }
+#       ;;
+#     *)
+#       # shellcheck disable=SC2009
+#       _pkillf() {
+#         while IFS= read -r pid; do
+#           [ -z "$pid" ] && continue
+#           kill "$pid" || true
+#         done  << EOF
+# $(ps -x -o pid= -o command= | grep -E "$@" | awk '{ print $1 }')
+# EOF
+#       }
+#       ;;
+#   esac
+# fi
+#
+# if perl -MTime::HiRes -e1; then
+#   _timestamp() {
+#     while IFS= read -r line; do
+#       printf '\t%s\n' "$line" | perl -MPOSIX=strftime -MTime::HiRes=gettimeofday -pe '($s, $us) = gettimeofday(); printf ("[%s.%03d]", strftime("%Y-%m-%d %H:%M:%S", localtime $s), $us / 1000)'
+#     done
+#   }
+# else
+#   case "$(_uname_s)" in
+#     Darwin|DragonFly|*BSD)
+#       _timestamp() {
+#         while IFS= read -r line; do
+#           printf '[%s]\t%s\n' "$(date +"%Y-%m-%d %H:%M:%S.000")" "$line"
+#         done
+#       }
+#       ;;
+#     *)
+#       _timestamp() {
+#         while IFS= read -r line; do
+#           printf '[%s]\t%s\n' "$(date +"%Y-%m-%d %H:%M:%S.%3N")" "$line"
+#         done
+#       }
+#       ;;
+#   esac
+# fi
+#
+# _palette() {
+#   _n=$2
+#   # shellcheck disable=SC2086
+#   { set -f; IFS=',; '; set -- $1; unset IFS; set +f; }
+#   _palette_style=$1
+#   shift
+#
+#   case "$_palette_style" in
+#     gradient)
+#       _colors="colour196 colour202 colour208 colour214 colour220 colour226 colour190 colour154 colour118 colour82 colour46"
+#       ;;
+#     heat)
+#       _colors="colour243 colour245 colour247 colour144 colour143 colour142 colour184 colour214 colour208 colour202 colour196"
+#       ;;
+#     gradient*)
+#       _colors=${_palette_style##gradient(}
+#       case "$_colors" in
+#         *\))
+#           _colors=${_colors%)}
+#           ;;
+#         *)
+#           while [ $# -gt 0 ]; do
+#             _colors="$_colors${1+ }${1%%)}"
+#             [ "$1" != "${1%%)}" ] && { shift; break; }
+#             shift
+#           done
+#           ;;
+#       esac
+#       ;;
+#   esac
+#
+#   printf '%s ' "${1:-none}"
+#   printf '%s' "$_colors" | awk -v n="$_n" '{ for (i = 0; i < n - 1; ++i) printf "%s ", $(1 + i * NF / n); printf $NF }'
+# }
+#
+# _bar() {
+#   bar_palette=$1
+#   bar_symbol_empty=$2
+#   bar_symbol_full=$3
+#   bar_length=$4       # "auto" or number of columns
+#   bar_value=${5:-0}   # value between 0 and 1
+#
+#   if [ "$bar_length" = "auto" ]; then
+#     columns=${6:-$(tmux -q display -p '#{client_width}' 2> /dev/null || echo 80)}
+#     if [ "$columns" -ge 160 ]; then
+#       bar_length=12
+#     elif [ "$columns" -ge 130 ]; then
+#       bar_length=10
+#     elif [ "$columns" -ge 120 ]; then
+#       bar_length=8
+#     elif [ "$columns" -ge 100 ]; then
+#       bar_length=6
+#     else
+#       bar_length=4
+#     fi
+#   fi
+#
+#   case "$bar_palette" in
+#     heat|heat,*|gradient|gradient,*|"gradient("*")"|"gradient("*"),"*)
+#       # shellcheck disable=SC2046,SC2086
+#       set -- $(_palette "$bar_palette" "$bar_length")
+#       bg=$1
+#       shift
+#       palette=$*
+#       # shellcheck disable=SC2086
+#       set -- $palette
+#
+#       full=$(awk "BEGIN { printf \"%.0f\", ($bar_value) * $bar_length }")
+#       empty=$((bar_length - full))
+#       bar="#[bg=$bg]$(awk -v palette="$palette" -v full="$full" -v empty="$empty" -v sf="$bar_symbol_full" -v se="$bar_symbol_empty" 'BEGIN { n = split(palette, a, " "); for (i = 1; i <= full && i <= n; ++i) printf "#[fg=%s]%s", a[i], sf; for (i = full + 1; i <= full + empty && i <= n; ++i) printf "#[fg=%s]%s", a[i], se }')"
+#       i=$((full < 1 ? 1 : full > $# ? $# : full))
+#       shift $((i - 1))
+#       bar="$bar#[fg=$1]"
+#       ;;
+#     *,*,*,*|*\;*\;*\;*)
+#       ;;
+#     *,*,*|*\;*\;*)
+#       # shellcheck disable=SC2086
+#       { set -f; IFS=',;'; set -- $bar_palette; unset IFS; set +f; }
+#       full_fg=$1
+#       empty_fg=$2
+#       bg=${3:-none}
+#
+#       full=$(awk "BEGIN { printf \"%.0f\", ($bar_value) * $bar_length }")
+#       bar="#[bg=$bg]"
+#       if [ "$full" -gt 0 ]; then
+#         bar="$bar#[fg=$full_fg]$(awk -v n="$full" -v s="$bar_symbol_full" 'BEGIN { for (i = 0; i < n; ++i) printf "%s", s }')"
+#       fi
+#       empty=$((bar_length - full))
+#       if [ "$empty" -gt 0 ]; then
+#         bar="$bar#[fg=$empty_fg]$(awk -v n="$empty" -v s="$bar_symbol_empty" 'BEGIN { for (i = 0; i < n; ++i) printf "%s", s }')#[fg=$empty_fg]"
+#       fi
+#       ;;
+#   esac
+#
+#   printf '%s' "$bar"
+# }
+#
+# _cbar() {
+#   cbar_palette=$1
+#   cbar_symbols=$2
+#   cbar_symbols_alt=${cbar_symbols##*;}
+#   cbar_symbols=${cbar_symbols%;*}
+#   use_alt_symbols=${3:-0}
+#   cbar_value=${4:-0}
+#
+#   cbar_fg=default
+#   case "$cbar_palette" in
+#     heat|heat,*|gradient|gradient,*|"gradient("*")"|"gradient("*"),"*)
+#       # shellcheck disable=SC2046
+#       set -- $(_palette "$cbar_palette" 8)
+#       shift
+#
+#       full=$(awk "BEGIN { i = ($cbar_value) * 8; printf \"%.0f\", (i < 1 ? 1 : i > 8 ? 8 : i) }")
+#       shift $((full - 1))
+#       cbar_fg=$1
+#       ;;
+#     *,*,*,*|*\;*\;*\;*)
+#       ;;
+#     *,*,*|*\;*\;*)
+#       # shellcheck disable=SC2086
+#       { set -f; IFS=',;'; set -- $cbar_palette; unset IFS; set +f; }
+#
+#       i=$(awk "BEGIN { i = (($cbar_value) - 0.001) * $# + 1; printf \"%d\", (i < 1 ? 1 : i > $# ? $# : i) }")
+#       shift $((i - 1))
+#       cbar_fg=$1
+#       ;;
+#   esac
+#
+#   if [ "$use_alt_symbols" -eq 1 ]; then
+#     # shellcheck disable=SC2086
+#     set -- $cbar_symbols_alt
+#   else
+#     # shellcheck disable=SC2086
+#     set -- $cbar_symbols
+#   fi
+#   i=$(awk "BEGIN { i = ($cbar_value) * ($# - 1) + 1; printf \"%d\", (i < 1 ? 1 : i > $# ? $# : i) }")
+#   shift $((i - 1))
+#   cbar_symbol=$1
+#   cbar="#[fg=${cbar_fg}]${cbar_symbol?}"
+#
+#   printf '%s' "$cbar"
+# }
+#
+# _maximize_pane() {
+#   current_session=${1:-$(tmux display -p '#{session_name}')}
+#   current_pane=${2:-$(tmux display -p '#{pane_id}')}
+#
+#   dead_panes=$(tmux list-panes -s -t "$current_session" -F '#{pane_dead} #{pane_id} #{pane_start_command}' | grep -E -o '^1 %.+maximized.+$' || true)
+#   restore=$(printf "%s" "$dead_panes" | sed -n -E -e "s/^1 $current_pane .+maximized.+'(%[0-9]+)'\"?$/tmux swap-pane -s \1 -t $current_pane \; kill-pane -t $current_pane/p"\
+#                                            -e "s/^1 (%[0-9]+) .+maximized.+'$current_pane'\"?$/tmux swap-pane -s \1 -t $current_pane \; kill-pane -t \1/p")
+#
+#   if [ -z "$restore" ]; then
+#     [ "$(tmux list-panes -t "$current_session:" | wc -l)" -eq 1 ] && tmux display "Can't maximize with only one pane" && return
+#     info=$(tmux new-window -t "$current_session:" -F "#{session_name}:#{window_index}.#{pane_id}" -P "maximized... 2>/dev/null & \"$TMUX_PROGRAM\" ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} setw -t \"$current_session:\" remain-on-exit on; printf \"\\033[\$(tput lines);0fPane has been maximized, press <prefix>+ to restore\n\" '$current_pane'")
+#     session_window=${info%.*}
+#     new_pane=${info#*.}
+#
+#     retry=20
+#     while [ "$("$TMUX_PROGRAM" ${TMUX_SOCKET:+-S "$TMUX_SOCKET"} list-panes -t "$session_window" -F '#{session_name}:#{window_index}.#{pane_id} #{pane_dead}' 2>/dev/null)" != "$info 1" ] && [ "$retry" -ne 0 ]; do
+#       sleep 0.1
+#       retry=$((retry - 1))
+#     done
+#     if [ "$retry" -eq 0 ]; then
+#       tmux kill-window -t "$session_window" \; display 'Unable to maximize pane'
+#       return
+#     fi
+#
+#     tmux setw -t "$session_window" remain-on-exit off \; swap-pane -s "$current_pane" -t "$new_pane"
+#   else
+#     $restore || tmux kill-pane
+#   fi
+# }
+#
+# _win_battery_info() {
+#   if command -v wmic > /dev/null 2>&1; then
+#     wmic path Win32_Battery get BatteryStatus, EstimatedChargeRemaining 2> /dev/null | tr -d '\r' | tail -n +2
+#   elif command -v powershell > /dev/null 2>&1; then
+#     # shellcheck disable=SC2016
+#     powershell -NoProfile -Command 'Get-CimInstance Win32_Battery | ForEach-Object { "$($_.BatteryStatus) $($_.EstimatedChargeRemaining)" }' 2>/dev/null
+#   fi
+# }
+#
+# _battery_info() {
+#   battery_count=0
+#   battery_charge=0
+#   case "$(_uname_s)" in
+#     *Darwin*)
+#       # shellcheck disable=SC2046
+#       set -- $(pmset -g batt | awk '/InternalBattery/ && match($0, /[0-9]+%/) {
+#         percentage += substr($0, RSTART, RLENGTH-1)
+#         ++count
+#       } END {
+#         printf "%g %d\n", percentage / 100, count + 0
+#       }')
+#       battery_charge=$1
+#       battery_count=$2
+#       ;;
+#     *Linux*)
+#       unset battery_capacity
+#       for batpath in /sys/class/power_supply/*[Bb][Aa][Tt]*; do
+#         [ -d "$batpath" ] || continue
+#         unset scope
+#         [ -r "$batpath/scope" ] && read -r scope < "$batpath/scope" || true
+#         case "$scope" in
+#           [Dd]evice)
+#             continue
+#             ;;
+#         esac
+#         unset capacity
+#         if [ -r "$batpath/capacity" ]; then
+#           read -r capacity < "$batpath/capacity" || true
+#           [ "${capacity:-0}" -gt 100 ] 2>/dev/null && capacity=100
+#         elif [ -r "$batpath/energy_full" ] && [ -r "$batpath/energy_now" ]; then
+#           read -r now < "$batpath/energy_now" || true
+#           read -r full < "$batpath/energy_full" || true
+#           capacity=$(awk -v now="$now" -v full="$full" 'BEGIN { print (full > 0 ? int(now * 100 / full + 0.5) : 0) }')
+#         fi
+#         [ -z "$capacity" ] && continue
+#         battery_capacity=$((battery_capacity + capacity))
+#         battery_count=$((battery_count + 1))
+#       done
+#       battery_charge=$(awk -v capacity="$battery_capacity" 'BEGIN { print capacity / 100 }')
+#       ;;
+#     *CYGWIN*|*MSYS*|*MINGW*)
+#       unset battery_capacity
+#       while read -r status remaining; do
+#         case "$remaining" in
+#           ''|*[!0-9]*)
+#             continue
+#             ;;
+#         esac
+#         battery_capacity=$((battery_capacity + remaining))
+#         battery_count=$((battery_count + 1))
+#       done  << EOF
+# $(_win_battery_info || true)
+# EOF
+#       battery_charge=$(awk -v capacity="$battery_capacity" 'BEGIN { print capacity / 100 }')
+#       ;;
+#     *OpenBSD*)
+#       for batid in 0 1 2; do
+#         for unit in amphour watthour; do
+#           unset full
+#           full=$(sysctl -n "hw.sensors.acpibat$batid.${unit}0" 2>/dev/null) && break
+#         done
+#         [ -z "$full" ] && continue
+#         unset remaining
+#         remaining=$(sysctl -n "hw.sensors.acpibat$batid.${unit}3" 2>/dev/null) || continue
+#         battery_charge=$(awk -v charge="$battery_charge" -v remaining="$remaining" -v full="$full" 'BEGIN {
+#           split(remaining, r)
+#           split(full, f)
+#           print charge + (f[1] > 0 ? r[1] / f[1] : 0)
+#         }')
+#         battery_count=$((battery_count + 1))
+#       done
+#       ;;
+#     *FreeBSD*)
+#       life=$(sysctl -n 'hw.acpi.battery.life' 2>/dev/null)
+#       case "$life" in
+#         ''|*[!0-9]*)
+#           ;;
+#         *)
+#           battery_charge=$(awk -v life="$life" 'BEGIN { print life / 100 }')
+#           battery_count=1
+#           ;;
+#       esac
+#       ;;
+#   esac
+#   if [ "$battery_count" -ne 0 ]; then
+#     # shellcheck disable=SC2046
+#     set -- $(awk -v charge="$battery_charge" -v count="$battery_count" 'BEGIN {
+#       avg = charge / count
+#       printf "%g %.0f%%\n", avg, avg * 100
+#     }')
+#     battery_charge=$1
+#     battery_percentage=$2
+#   fi
+#
+#   if [ "$battery_charge" = 0 ]; then
+#     tmux  set -ug '@battery_percentage' \;\
+#           set -ug '@battery_charge'
+#   else
+#     tmux  set -g '@battery_percentage' "$battery_percentage" \;\
+#           set -g '@battery_charge' "$battery_charge"
+#   fi
+# }
+#
+# _battery_status() {
+#   battery_status_charging=$1
+#   battery_status_discharging=$2
+#
+#   case "$(_uname_s)" in
+#     *Darwin*)
+#       while IFS= read -r line; do
+#         case "$line" in
+#           *InternalBattery*[Dd]ischarging*)
+#             battery_discharging=1
+#             break
+#             ;;
+#           *InternalBattery*)
+#             battery_discharging=0
+#             ;;
+#         esac
+#       done  << EOF
+# $(pmset -g batt)
+# EOF
+#       ;;
+#     *Linux*)
+#       for batpath in /sys/class/power_supply/*[Bb][Aa][Tt]*; do
+#         [ -d "$batpath" ] || continue
+#         unset scope
+#         [ -r "$batpath/scope" ] && read -r scope < "$batpath/scope" || true
+#         case "$scope" in
+#           [Dd]evice)
+#             continue
+#             ;;
+#         esac
+#         unset status
+#         [ -r "$batpath/status" ] && read -r status < "$batpath/status" || true
+#         case "$status" in
+#           [Dd]ischarging)
+#             battery_discharging=1
+#             break
+#             ;;
+#           *)
+#             battery_discharging=0
+#             ;;
+#         esac
+#       done
+#       ;;
+#     *CYGWIN*|*MSYS*|*MINGW*)
+#       while read -r status remaining; do
+#         case "$status" in
+#           1)
+#             battery_discharging=1
+#             break
+#             ;;
+#           '')
+#             continue
+#             ;;
+#           *)
+#             battery_discharging=0
+#             ;;
+#         esac
+#       done  << EOF
+# $(_win_battery_info || true)
+# EOF
+#       ;;
+#     *OpenBSD*)
+#       for batid in 0 1 2; do
+#         state=$(sysctl -n "hw.sensors.acpibat$batid.raw0" 2>/dev/null) || continue
+#         case "$state" in
+#           1)
+#             battery_discharging=1
+#             break
+#             ;;
+#           *)
+#             battery_discharging=0
+#             ;;
+#         esac
+#       done
+#       ;;
+#     *FreeBSD*)
+#       state=$(sysctl -n 'hw.acpi.battery.state' 2>/dev/null)
+#       case "$state" in
+#         1)
+#           battery_discharging=1
+#           ;;
+#         ''|*[!0-9]*)
+#           ;;
+#         *)
+#           battery_discharging=0
+#           ;;
+#       esac
+#       ;;
+#   esac
+#
+#   if [ -z "$battery_discharging" ]; then
+#     tmux set -ug '@battery_status'
+#     return
+#   fi
+#
+#   if [ "$battery_discharging" -eq 1 ]; then
+#     battery_status="$battery_status_discharging"
+#   else
+#     battery_status="$battery_status_charging"
+#   fi
+#
+#   tmux set -g '@battery_status' "$battery_status" \;\
+#        set -g '@battery_discharging' "$battery_discharging" >/dev/null 2>/dev/null
+# }
+#
+# _pane_info() {
+#   pane_pid="$1"
+#   pane_tty="${2##/dev/}"
+#   case "$(_uname_s)" in
+#     *CYGWIN*)
+#       ps -al | tail -n +2 | awk -v pane_pid="$pane_pid" -v tty="$pane_tty" -v ssh="$(command -v ssh)" '
+#         ((/ssh/ && !/-W/ && !/tsh proxy ssh/ && !/sss_ssh_knownhostsproxy/) || !/ssh/) && !/(^|[[:space:]\/])tee([[:space:]]|$)/ && $5 == tty {
+#           user[$1] = $6; if (!child[$2]) child[$2] = $1
+#         }
+#         END {
+#           pid = pane_pid
+#           while (child[pid]) {
+#             file = "/proc/" pid "/cmdline"; getline command < file; close(file)
+#             gsub(/\0/, " ", command)
+#
+#             if (match(command, "^" ssh " |^ssh ")) {
+#               break
+#             }
+#             pid = child[pid]
+#           }
+#           file = "/proc/" pid "/cmdline"; getline command < file; close(file)
+#           gsub(/\0/, " ", command)
+#
+#           "id -un " user[pid] | getline username
+#           print pid":"username":"command
+#         }
+#       '
+#       ;;
+#     *Linux*)
+#       ps -t "$pane_tty" --sort=lstart -o user=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -o pid= -o ppid= -o command= | awk -v pane_pid="$pane_pid" -v ssh="$(command -v ssh)" '
+#         ((/ssh/ && !/-W/ && !/tsh proxy ssh/ && !/sss_ssh_knownhostsproxy/) || !/ssh/) && !/(^|[[:space:]\/])tee([[:space:]]|$)/ {
+#           user[$2] = $1; if (!child[$3]) child[$3] = $2; pid=$2; $1 = $2 = $3 = ""; command[pid] = substr($0,4)
+#         }
+#         END {
+#           pid = pane_pid
+#           while (child[pid]) {
+#             if (match(command[pid], "^" ssh " |^ssh ")) {
+#               break
+#             }
+#             pid = child[pid]
+#           }
+#
+#           print pid":"user[pid]":"command[pid]
+#         }
+#       '
+#       ;;
+#     *)
+#       ps -t "/dev/$pane_tty" -o user=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -o pid= -o ppid= -o command= | awk -v pane_pid="$pane_pid" -v ssh="$(command -v ssh)" '
+#         ((/ssh/ && !/-W/ && !/tsh proxy ssh/ && !/sss_ssh_knownhostsproxy/) || !/ssh/) && !/(^|[[:space:]\/])tee([[:space:]]|$)/ {
+#           user[$2] = $1; if (!child[$3]) child[$3] = $2; pid=$2; $1 = $2 = $3 = ""; command[pid] = substr($0,4)
+#         }
+#         END {
+#           pid = pane_pid
+#           while (child[pid]) {
+#             if (match(command[pid], "^" ssh " |^ssh ")) {
+#               break
+#             }
+#             pid = child[pid]
+#           }
+#
+#           print pid":"user[pid]":"command[pid]
+#         }
+#       '
+#       ;;
+#   esac
+# }
+#
+# _ssh_or_mosh_args() {
+#   case "$1" in
+#     *ssh*)
+#       args=$(printf '%s' "$1" | perl -n -e 'print if s/.*?(?:^|[\s\/])ssh\s+(.*)/\1/')
+#       ;;
+#     *mosh-client*)
+#       args=$(printf '%s' "$1" | perl -p -e 's/.*mosh-client -# (.*)\|.*$/$1/; s/-[^ ]*//g')
+#       ;;
+#   esac
+#
+#  printf '%s' "$args"
+# }
+#
+# _ssh() {
+#   username=$1; shift
+#   if [ "$username" != "$USER" ]; then
+#     sudo -nku "$username" ssh "$@" 2>/dev/null || command ssh -l "$username" "$@"
+#   else
+#     command ssh "$@"
+#   fi
+# }
+#
+# _username() {
+#   pane_pid=${1:-$(tmux display -p '#{pane_pid}')}
+#   pane_tty=${2:-$(tmux display -p '#{b:pane_tty}')}
+#   ssh_only=$3
+#
+#   pane_info=$(_pane_info "$pane_pid" "$pane_tty")
+#   command=${pane_info#*:}
+#   command_username=${command%%:*}
+#   command=${command#*:}
+#
+#   ssh_or_mosh_args=$(_ssh_or_mosh_args "$command")
+#   if [ -n "$ssh_or_mosh_args" ]; then
+#     # shellcheck disable=SC2086
+#     username=$(_ssh "$command_username" -G $ssh_or_mosh_args 2>/dev/null | awk '/^user / { print $2; exit }')
+#     # shellcheck disable=SC2086
+#     [ -z "$username" ] && username=$(_ssh "$command_username" -T -o BatchMode=yes -o ControlPath=none -o ProxyCommand="sh -c 'echo %%username%% %r >&2'" $ssh_or_mosh_args 2>&1 | awk '/^%username% / { print $2; exit }')
+#     # shellcheck disable=SC2086
+#     [ -z "$username" ] && username=$(_ssh "$command_username" -v -T -o BatchMode=yes -o ControlPath=none -o ProxyCommand=false -o IdentityFile='%%username%%/%r' $ssh_or_mosh_args 2>&1 | awk '/%username%/ { print substr($4,12); exit }')
+#   else
+#     if ! _is_true "$ssh_only"; then
+#       username="$command_username"
+#     fi
+#   fi
+#
+#   printf '%s\n' "$username"
+# }
+#
+# _hostname() {
+#   pane_pid=${1:-$(tmux display -p '#{pane_pid}')}
+#   pane_tty=${2:-$(tmux display -p '#{b:pane_tty}')}
+#   ssh_only=$3
+#   full=$4
+#   h_or_H=$5
+#
+#   pane_info=$(_pane_info "$pane_pid" "$pane_tty")
+#   command=${pane_info#*:}
+#   command_username=${command%%:*}
+#   command=${command#*:}
+#
+#   ssh_or_mosh_args=$(_ssh_or_mosh_args "$command")
+#   if [ -n "$ssh_or_mosh_args" ]; then
+#     # shellcheck disable=SC2086
+#     hostname=$(_ssh "$command_username" -G $ssh_or_mosh_args 2>/dev/null | awk '/^hostname / { print $2; exit }')
+#     # shellcheck disable=SC2086
+#     [ -z "$hostname" ] && hostname=$(_ssh "$command_username" -T -o BatchMode=yes -o ControlPath=none -o ProxyCommand="sh -c 'echo %%hostname%% %h >&2'" $ssh_or_mosh_args 2>&1 | awk '/^%hostname% / { print $2; exit }')
+#
+#     if ! _is_true "$full"; then
+#       case "$hostname" in
+#           *[A-Za-z-].*)
+#               hostname=${hostname%%.*}
+#               ;;
+#           127.0.0.1)
+#               hostname="localhost"
+#               ;;
+#       esac
+#     fi
+#   else
+#     if ! _is_true "$ssh_only"; then
+#       hostname="$h_or_H"
+#     fi
+#   fi
+#
+#   printf '%s\n' "$hostname"
+# }
+#
+# _uptime() {
+#   unset boot now
+#   case "$(_uname_s)" in
+#     *Darwin*|*FreeBSD*)
+#       boot=$(sysctl -n kern.boottime 2>/dev/null)
+#       boot=${boot#*sec = }
+#       boot=${boot%%,*}
+#       now=$(date +%s)
+#       ;;
+#     *Linux*|*CYGWIN*|*MSYS*|*MINGW*)
+#       boot=0
+#       [ -r /proc/uptime ] && read -r now _ < /proc/uptime 2>/dev/null || true
+#       ;;
+#     *OpenBSD*)
+#       boot=$(sysctl -n kern.boottime 2>/dev/null)
+#       now=$(date +%s)
+#       ;;
+#   esac
+#   if [ -n "$now" ] && [ -n "$boot" ]; then
+#     uptime=$(((${now%%.*}) - (${boot%%.*})))
+#     tmux set -g @uptime_y  $((uptime / 31536000))      \;\
+#          set -g @uptime_dy $(((uptime / 86400) % 365)) \;\
+#          set -g @uptime_d  $((uptime / 86400))         \;\
+#          set -g @uptime_h  $(((uptime / 3600) % 24))   \;\
+#          set -g @uptime_m  $(((uptime / 60) % 60))     \;\
+#          set -g @uptime_s  $((uptime % 60))
+#   else
+#     tmux set -ug @uptime_y  \;\
+#          set -ug @uptime_dy \;\
+#          set -ug @uptime_d  \;\
+#          set -ug @uptime_h  \;\
+#          set -ug @uptime_m  \;\
+#          set -ug @uptime_s
+#   fi
+# }
+#
+# _loadavg() {
+#   unset loadavg
+#   case "$(_uname_s)" in
+#     *Darwin*|*FreeBSD*)
+#       loadavg=$(sysctl -n vm.loadavg 2>/dev/null)
+#       loadavg=${loadavg#"{ "}
+#       loadavg=${loadavg%% *}
+#       ;;
+#     *Linux*|*CYGWIN*|*MSYS*|*MINGW*)
+#       [ -r /proc/loadavg ] && read -r loadavg _ < /proc/loadavg 2>/dev/null || true
+#       ;;
+#     *OpenBSD*)
+#       loadavg=$(sysctl -n vm.loadavg 2>/dev/null)
+#       loadavg=${loadavg%% *}
+#       ;;
+#   esac
+#   if [ -n "$loadavg" ]; then
+#     tmux set -g @loadavg "$loadavg"
+#   else
+#     tmux set -ug '@loadavg'
+#   fi
+# }
+#
+# _new_or_split_window_ssh() {
+#   tmux_command=$1
+#   pane_pid=${2:-$(tmux display -p '#{pane_pid}')}
+#   pane_tty=${3:-$(tmux display -p '#{b:pane_tty}')}
+#   shift 3
+#
+#   pane_info=$(_pane_info "$pane_pid" "$pane_tty")
+#   pane_command=${pane_info#*:}
+#   pane_command=${pane_command#*:}
+#
+#   case "$pane_command" in
+#     *mosh-client*)
+#       # shellcheck disable=SC2046
+#       tmux "$tmux_command" "$@" mosh $(printf '%s\n' "$pane_command" | sed -E -e 's/.*mosh-client -# (.*)\|.*$/\1/')
+#       ;;
+#     *ssh*)
+#       # shellcheck disable=SC2046
+#       tmux "$tmux_command" "$@" $(printf '%s\n' "$pane_command" | sed -e 's/;/\\;/g')
+#       ;;
+#     *)
+#       tmux "$tmux_command" "$@"
+#   esac
+# }
+#
+# _new_window() {
+#   _new_or_split_window_ssh new-window "$@"
+# }
+#
+# _new_window_ssh() {
+#   _new_window "$@"
+# }
+#
+# _split_window() {
+#   _new_or_split_window_ssh split-window "$@"
+# }
+#
+# _split_window_ssh() {
+#   _split_window "$@"
+# }
+#
+# _apply_tmux_256color() {
+#   case "$(tmux show -gv default-terminal)" in
+#     tmux-256color|tmux-direct)
+#       return
+#       ;;
+#   esac
+#
+#   # when tmux-256color is available, use it
+#   # on macOS though, make sure to use /usr/bin/infocmp to probe if it's available system wide
+#   case "$(_uname_s)" in
+#     *Darwin*)
+#       if /usr/bin/infocmp -x tmux-256color > /dev/null 2>&1; then
+#         tmux set -g default-terminal 'tmux-256color'
+#       fi
+#       ;;
+#      *)
+#       if command infocmp -x tmux-256color > /dev/null 2>&1; then
+#         tmux set -g default-terminal 'tmux-256color'
+#       fi
+#       ;;
+#   esac
+# }
+#
+# _apply_24b() {
+#   : "${tmux_conf_theme_24b_colour:=auto}"
+#   : "${tmux_conf_24b_colour:=$tmux_conf_theme_24b_colour}"
+#   if [ "$tmux_conf_24b_colour" = "auto" ]; then
+#     case "$COLORTERM" in
+#       truecolor|24bit)
+#         apply_24b=true
+#         ;;
+#     esac
+#     if [ "$apply_24b" = "" ] && [ "$(tput colors 2>/dev/null)" = "16777216" ]; then
+#       apply_24b=true
+#     fi
+#   elif _is_true "$tmux_conf_24b_colour"; then
+#     apply_24b=true
+#   fi
+#   if [ "$apply_24b" = "true" ]; then
+#     case "$TERM" in
+#       screen-*|tmux-*)
+#         ;;
+#       *)
+#         if [ "$(_tmux_version)" -ge 3200 ]; then
+#           tmux set -sa terminal-features ",*256col*:RGB"
+#         else
+#           tmux set -ga terminal-overrides ",*256col*:Tc"
+#         fi
+#         ;;
+#     esac
+#   fi
+# }
+#
+# _apply_bindings() {
+#   cfg=$(mktemp) || return 1
+#   trap 'rm -f "$cfg"* "$probe_socket"' EXIT
+#
+#   : "${tmux_conf_preserve_stock_bindings:=false}"
+#   tmux list-keys | awk '!/TMUX_CONF_LOCAL/ && /new-window|split[-_]window|new-session|copy-selection|copy-pipe/' > "$cfg"
+#   if _is_true "$tmux_conf_preserve_stock_bindings"; then
+#     probe_socket="$(dirname "$TMUX_SOCKET")/tmux-stock-bindings-$$"
+#     TMUX_SOCKET="$probe_socket" tmux -f /dev/null list-keys >> "$cfg" || true
+#     rm -f "$probe_socket"
+#   fi
+#
+#   # tmux 3.0 doesn't include 02254d1e5c881be95fd2fc37b4c4209640b6b266 and the
+#   # output of list-keys can be truncated
+#   perl -p -i -e "s/'#\{\?window_zoomed_flag,Unzoom,Zoom\}' 'z' \{resize-pane -$/'#{?window_zoomed_flag,Unzoom,Zoom}' 'z' {resize-pane -Z}\"/g" "$cfg"
+#
+#   : "${tmux_conf_new_window_retain_current_path:=false}"
+#   if ! _is_disabled "$tmux_conf_new_window_retain_current_path"; then
+#     perl -p -i -e "
+#       s/\brun-shell\b\s+(\"|')cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_new_window\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^\n]*?)(?:\s+-c\s+((?:\\\\{1,3}\")?|\"?|'?)#\{pane_current_path\}\4)([^\n]*?)\1/run-shell \1cut -c3- \2 | sh -s _new_window #\{pane_pid\} #\{b:pane_tty\}\3\5\1/g
+#       ;
+#       s/\brun-shell\b\s+(\"|')cut\s+-c3-\s+.+?\s+\|\s+sh\s+-s\s+_new_window\s+#\{pane_pid\}\s+#\{b:pane_tty\}(\s+.+?)?\1/new-window\2/g
+#       ;
+#       s/\bnew-window\b([^;}\n]*?)(?:\s+-c\s+((?:\\\\\")?|\"?|'?)#\{pane_current_path\}\2)/new-window\1/g" \
+#       "$cfg"
+#   fi
+#
+#   perl -p -i -e "
+#     s,\bnew-window\b((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!\bssh\b)[^\s]+))*)?(?:\s+(\bssh\b))((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!\bssh\b)[^\s]+))*)?,run-shell 'cut -c3- \"$TMUX_CONF\" | sh -s _new_window_ssh #\{pane_pid\} #\{b:pane_tty\}\1',g if /\bnew-window\b((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!ssh)[^\s]+))*)?(?:\s+(ssh))((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!ssh)[^\s]+))*)?/"\
+#   "$cfg"
+#
+#   : "${tmux_conf_new_window_reconnect_ssh:=false}"
+#   if ! _is_disabled "$tmux_conf_new_window_reconnect_ssh" && _is_true "$tmux_conf_new_window_reconnect_ssh"; then
+#     perl -p -i -e "s,\bnew-window\b([^;}\n\"]*),run-shell 'cut -c3- \"$TMUX_CONF\" | sh -s _new_window #\{pane_pid\} #\{b:pane_tty\}\1',g" "$cfg"
+#   fi
+#
+#   if ! _is_disabled "$tmux_conf_new_window_retain_current_path" && _is_true "$tmux_conf_new_window_retain_current_path"; then
+#     perl -p -i -e "
+#       s/(?<!{)\bnew-window\b(?!\s+(?:-|}))/{$&}/g if /\bdisplay-menu\b/
+#       ;
+#       s/\bnew-window\b/new-window -c '#{pane_current_path}'/g
+#       ;
+#       s/\brun-shell\b\s+'cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_new_window(_ssh)?\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^}\n']*)'/run-shell 'cut -c3- \1 | sh -s _new_window\2 #\{pane_pid\} #\{b:pane_tty\} -c \\\\\"#\{pane_current_path\}\\\\\"\3'/g if /\bdisplay-menu\b/
+#       ;
+#       s/\brun-shell\b\s+'cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_new_window(_ssh)?\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^}\n']*)'/run-shell 'cut -c3- \1 | sh -s _new_window\2 #\{pane_pid\} #\{b:pane_tty\} -c \"#\{pane_current_path\}\"\3'/g" \
+#       "$cfg"
+#   fi
+#
+#   : "${tmux_conf_new_pane_retain_current_path:=true}"
+#   if ! _is_disabled "$tmux_conf_new_pane_retain_current_path"; then
+#     perl -p -i -e "
+#       s/\brun-shell\b\s+(\"|')cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_split_window\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^\n]*?)(?:\s+-c\s+((?:\\\\{1,3}\")?|\"?|'?)#\{pane_current_path\}\4)([^\n]*?)\1/run-shell \1cut -c3- \2 | sh -s _split_window #\{pane_pid\} #\{b:pane_tty\}\3\5\1/g
+#       ;
+#       s/\brun-shell\b\s+(\"|')cut\s+-c3-\s+.+?\s+\|\s+sh\s+-s\s+_split_window\s+#\{pane_pid\}\s+#\{b:pane_tty\}(\s+.+?)?\1/split-window\2/g
+#       ;
+#       s/\bsplit-window\b([^;}\n]*?)(?:\s+-c\s+((?:\\\\\")?|\"?|'?)#\{pane_current_path\}\2)/split-window\1/g" \
+#       "$cfg"
+#   fi
+#
+#   perl -p -i -e "
+#     s,\bsplit-window\b((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!\bssh\b)[^\s]+))*)?(?:\s+(\bssh\b))((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!\bssh\b)[^\s]+))*)?,run-shell 'cut -c3- \"$TMUX_CONF\" | sh -s _split_window_ssh #\{pane_pid\} #\{b:pane_tty\}\1',g if /\bsplit-window\b((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!ssh)[^\s]+))*)?(?:\s+(ssh))((?:(?:[ \t]+-[abdfhkIvPSZ])|(?:[ \t]+-[celntF][ \t]+(?!ssh)[^\s]+))*)?/"\
+#   "$cfg"
+#
+#   : "${tmux_conf_new_pane_reconnect_ssh:=false}"
+#   if ! _is_disabled "$tmux_conf_new_pane_reconnect_ssh" && _is_true "$tmux_conf_new_pane_reconnect_ssh"; then
+#     perl -p -i -e "s,\bsplit-window\b([^;}\n\"]*),run-shell 'cut -c3- \"$TMUX_CONF\" | sh -s _split_window #\{pane_pid\} #\{b:pane_tty\}\1',g" "$cfg"
+#   fi
+#
+#   if ! _is_disabled "$tmux_conf_new_pane_retain_current_path" && _is_true "$tmux_conf_new_pane_retain_current_path"; then
+#     perl -p -i -e "
+#       s/(?<!{)\bsplit-window\b(?!\s+(?:-|}))/{$&}/g if /\bdisplay-menu\b/
+#       ;
+#       s/\bsplit-window\b/split-window -c '#{pane_current_path}'/g
+#       ;
+#       s/\brun-shell\b\s+'cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_split_window(_ssh)?\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^}\n']*)'/run-shell 'cut -c3- \1 | sh -s _split_window\2 #\{pane_pid\} #\{b:pane_tty\} -c \\\\\"#\{pane_current_path\}\\\\\"\3'/g if /\bdisplay-menu\b/
+#       ;
+#       s/\brun-shell\b\s+'cut\s+-c3-\s+(.+?)\s+\|\s+sh\s+-s\s+_split_window(_ssh)?\s+#\{pane_pid\}\s+#\{b:pane_tty\}([^}\n']*)'/run-shell 'cut -c3- \1 | sh -s _split_window\2 #\{pane_pid\} #\{b:pane_tty\} -c \"#\{pane_current_path\}\"\3'/g" \
+#       "$cfg"
+#   fi
+#
+#   : "${tmux_conf_new_session_prompt:=false}"
+#   if ! _is_disabled "$tmux_conf_new_session_prompt" && _is_true "$tmux_conf_new_session_prompt"; then
+#     perl -p -i -e "
+#       s/(?<!{)(?<!command-prompt -p )\b(new-session)\b(?!\s+(?:-|}))/{$&}/g if /\bdisplay-menu\b/
+#       ;
+#       s/(?<!\bcommand-prompt -p )\bnew-session\b(?! -s)/command-prompt -p new-session \"new-session -s '%%'\"/g" \
+#       "$cfg"
+#   else
+#     perl -p -i -e "s/\bcommand-prompt\s+-p\s+new-session\s+\"new-session\s+-s\s+'%%'\"/new-session/g" "$cfg"
+#   fi
+#
+#   : "${tmux_conf_new_session_retain_current_path:=false}"
+#   if ! _is_disabled "$tmux_conf_new_session_retain_current_path" && _is_true "$tmux_conf_new_session_retain_current_path"; then
+#     perl -p -i -e "
+#       s/(?<!\bcommand-prompt -p )\bnew-session\b/new-session -c '#{pane_current_path}'/g" \
+#       "$cfg"
+#   else
+#     perl -p -i -e "
+#       s/\bnew-session\b([^;}\n]*?)(?:\s+-c\s+((?:\\\\\")?|\"?|'?)#\{pane_current_path\}\2)/new-session\1/g" \
+#       "$cfg"
+#   fi
+#
+#   : "${tmux_conf_copy_to_os_clipboard:=false}"
+#   command -v xsel > /dev/null 2>&1 && clipboard_command='xsel -i -b'
+#   ! command -v xsel > /dev/null 2>&1 && command -v xclip > /dev/null 2>&1 && clipboard_command='xclip -i -selection clipboard > \/dev\/null 2>\&1'
+#   [ "$XDG_SESSION_TYPE" = "wayland" ] && command -v wl-copy > /dev/null 2>&1 && clipboard_command='wl-copy'
+#   command -v pbcopy > /dev/null 2>&1 && clipboard_command='pbcopy'
+#   command -v clip.exe > /dev/null 2>&1 && clipboard_command='clip\.exe'
+#   [ -c /dev/clipboard ] && clipboard_command='cat > \/dev\/clipboard'
+#
+#   if [ -n "${clipboard_command+set}" ]; then
+#     if ! _is_disabled "$tmux_conf_copy_to_os_clipboard" && _is_true "$tmux_conf_copy_to_os_clipboard"; then
+#       perl -p -i -e "s/(?!.*?$clipboard_command)\bcopy-(?:selection|pipe)(-end-of-line|-and-cancel|-end-of-line-and-cancel|-no-clear)?\b/copy-pipe\1 '$clipboard_command'/g" "$cfg"
+#     else
+#       if [ "$(_tmux_version)" -ge 3200 ]; then
+#         perl -p -i -e "s/\bcopy-pipe(-end-of-line|-and-cancel|-end-of-line-and-cancel|-no-clear)?\b\s+(\"|')?$clipboard_command\2?/copy-pipe\1/g" "$cfg"
+#       else
+#         perl -p -i -e "s/\bcopy-pipe(-end-of-line|-and-cancel|-end-of-line-and-cancel|-no-clear)?\b\s+(\"|')?$clipboard_command\2?/copy-selection\1/g" "$cfg"
+#       fi
+#     fi
+#   fi
+#
+#   # until tmux >= 3.0, output of tmux list-keys can't be consumed back by tmux source-file without applying some escapings
+#   awk < "$cfg" \
+#     '{i = $2 == "-T" ? 4 : 5; gsub(/^[;]$/, "\\\\&", $i); gsub(/^[$"#~]$/, "'"'"'&'"'"'", $i); gsub(/^['"'"']$/, "\"&\"", $i); print}' > "$cfg.in"
+#
+#   # ignore bindings with errors
+#   if ! tmux source-file "$cfg.in"; then
+#     if tmux source-file -v /dev/null 2> /dev/null; then
+#       verbose_flag='-v'
+#     fi
+#     while ! out=$(tmux source-file ${verbose_flag:+$verbose_flag} "$cfg.in"); do
+#       line=$(printf "%s" "$out" | tail -1 | cut -d':' -f2)
+#       before=$(wc -l < "$cfg.in")
+#       perl -n -i -e "if ($. != $line) { print }" "$cfg.in"
+#       after=$(wc -l < "$cfg.in")
+#       [ "$before" = "$after" ] && break
+#     done
+#   fi
+#
+#   : "${tmux_conf_urlscan_options:=--compact --dedupe}"
+#   if command -v urlscan > /dev/null 2>&1; then
+#     tmux bind U run "cut -c3- '#{TMUX_CONF}' | sh -s _urlscan '#{pane_id}' $tmux_conf_urlscan_options"
+#   elif command -v urlview > /dev/null 2>&1; then
+#     tmux bind U run "cut -c3- '#{TMUX_CONF}' | sh -s _urlview '#{pane_id}'"
+#   fi
+# }
+#
+# _apply_theme() {
+#   : "${tmux_conf_theme:=enabled}"
+#   if ! _is_disabled "$tmux_conf_theme"; then
+#
+#     # -- default theme -------------------------------------------------------
+#
+#     : "${tmux_conf_theme_colour_1:=#080808}"    # dark gray
+#     : "${tmux_conf_theme_colour_2:=#303030}"    # gray
+#     : "${tmux_conf_theme_colour_3:=#8a8a8a}"    # light gray
+#     : "${tmux_conf_theme_colour_4:=#00afff}"    # light blue
+#     : "${tmux_conf_theme_colour_5:=#ffff00}"    # yellow
+#     : "${tmux_conf_theme_colour_6:=#080808}"    # dark gray
+#     : "${tmux_conf_theme_colour_7:=#e4e4e4}"    # white
+#     : "${tmux_conf_theme_colour_8:=#080808}"    # dark gray
+#     : "${tmux_conf_theme_colour_9:=#ffff00}"    # yellow
+#     : "${tmux_conf_theme_colour_10:=#ff00af}"   # pink
+#     : "${tmux_conf_theme_colour_11:=#5fff00}"   # green
+#     : "${tmux_conf_theme_colour_12:=#8a8a8a}"   # light gray
+#     : "${tmux_conf_theme_colour_13:=#e4e4e4}"   # white
+#     : "${tmux_conf_theme_colour_14:=#080808}"   # dark gray
+#     : "${tmux_conf_theme_colour_15:=#080808}"   # dark gray
+#     : "${tmux_conf_theme_colour_16:=#d70000}"   # red
+#     : "${tmux_conf_theme_colour_17:=#e4e4e4}"   # white
+#
+#     # -- panes ---------------------------------------------------------------
+#
+#     : "${tmux_conf_theme_window_fg:=default}"
+#     : "${tmux_conf_theme_window_bg:=default}"
+#     : "${tmux_conf_theme_highlight_focused_pane:=false}"
+#     : "${tmux_conf_theme_focused_pane_fg:=default}"
+#     : "${tmux_conf_theme_focused_pane_bg:=$tmux_conf_theme_colour_2}"
+#
+#     window_style="fg=$tmux_conf_theme_window_fg,bg=$tmux_conf_theme_window_bg"
+#     if _is_true "$tmux_conf_theme_highlight_focused_pane"; then
+#       window_active_style="fg=$tmux_conf_theme_focused_pane_fg,bg=$tmux_conf_theme_focused_pane_bg"
+#     else
+#       window_active_style="default"
+#     fi
+#
+#     : "${tmux_conf_theme_pane_border_style:=thin}"
+#     : "${tmux_conf_theme_pane_border:=$tmux_conf_theme_colour_2}"
+#     : "${tmux_conf_theme_pane_active_border:=$tmux_conf_theme_colour_4}"
+#     : "${tmux_conf_theme_pane_border_fg:=$tmux_conf_theme_pane_border}"
+#     : "${tmux_conf_theme_pane_active_border_fg:=$tmux_conf_theme_pane_active_border}"
+#     case "$tmux_conf_theme_pane_border_style" in
+#       fat)
+#         : "${tmux_conf_theme_pane_border_bg:=$tmux_conf_theme_pane_border_fg}"
+#         : "${tmux_conf_theme_pane_active_border_bg:=$tmux_conf_theme_pane_active_border_fg}"
+#         ;;
+#       thin|*)
+#         : "${tmux_conf_theme_pane_border_bg:=default}"
+#         : "${tmux_conf_theme_pane_active_border_bg:=default}"
+#         ;;
+#     esac
+#
+#     : "${tmux_conf_theme_pane_indicator:=$tmux_conf_theme_colour_4}"
+#     : "${tmux_conf_theme_pane_active_indicator:=$tmux_conf_theme_colour_4}"
+#
+#     # -- status line ---------------------------------------------------------
+#
+#     : "${tmux_conf_theme_left_separator_main=}"
+#     : "${tmux_conf_theme_left_separator_sub=|}"
+#     : "${tmux_conf_theme_right_separator_main=}"
+#     : "${tmux_conf_theme_right_separator_sub=|}"
+#     tmux_conf_theme_left_separator_main=$(_decode_unicode_escapes "$tmux_conf_theme_left_separator_main")
+#     tmux_conf_theme_left_separator_sub=$(_decode_unicode_escapes "$tmux_conf_theme_left_separator_sub")
+#     tmux_conf_theme_right_separator_main=$(_decode_unicode_escapes "$tmux_conf_theme_right_separator_main")
+#     tmux_conf_theme_right_separator_sub=$(_decode_unicode_escapes "$tmux_conf_theme_right_separator_sub")
+#
+#     : "${tmux_conf_theme_message_fg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_message_bg:=$tmux_conf_theme_colour_5}"
+#     : "${tmux_conf_theme_message_attr:=bold}"
+#
+#     : "${tmux_conf_theme_message_command_fg:=$tmux_conf_theme_colour_5}"
+#     : "${tmux_conf_theme_message_command_bg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_message_command_attr:=bold}"
+#
+#     : "${tmux_conf_theme_mode_fg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_mode_bg:=$tmux_conf_theme_colour_5}"
+#     : "${tmux_conf_theme_mode_attr:=bold}"
+#
+#     : "${tmux_conf_theme_status_fg:=$tmux_conf_theme_colour_3}"
+#     : "${tmux_conf_theme_status_bg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_status_attr:=none}"
+#
+#     : "${tmux_conf_theme_terminal_title:=#h ❐ #S ● #I #W}"
+#
+#     : "${tmux_conf_theme_window_status_fg:=$tmux_conf_theme_colour_3}"
+#     : "${tmux_conf_theme_window_status_bg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_window_status_attr:=none}"
+#     _default='#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}'
+#     : "${tmux_conf_theme_window_status_format:=$_default}"
+#
+#     : "${tmux_conf_theme_window_status_current_fg:=$tmux_conf_theme_colour_1}"
+#     : "${tmux_conf_theme_window_status_current_bg:=$tmux_conf_theme_colour_4}"
+#     : "${tmux_conf_theme_window_status_current_attr:=bold}"
+#     _default='#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}'
+#     : "${tmux_conf_theme_window_status_current_format:=$_default}"
+#
+#     : "${tmux_conf_theme_window_status_activity_fg:=default}"
+#     : "${tmux_conf_theme_window_status_activity_bg:=default}"
+#     : "${tmux_conf_theme_window_status_activity_attr:=underscore}"
+#
+#     : "${tmux_conf_theme_window_status_bell_fg:=$tmux_conf_theme_colour_5}"
+#     : "${tmux_conf_theme_window_status_bell_bg:=default}"
+#     : "${tmux_conf_theme_window_status_bell_attr:=blink,bold}"
+#
+#     : "${tmux_conf_theme_window_status_last_fg:=$tmux_conf_theme_colour_4}"
+#     : "${tmux_conf_theme_window_status_last_bg:=$tmux_conf_theme_colour_2}"
+#     : "${tmux_conf_theme_window_status_last_attr:=none}"
+#
+#     if [ "$tmux_conf_theme_window_status_bg" = "$tmux_conf_theme_status_bg" ] || [ "$tmux_conf_theme_window_status_bg" = "default" ]; then
+#       spacer=''
+#       spacer_current=' '
+#     else
+#       spacer=' '
+#       spacer_current=' '
+#     fi
+#     if [ "$tmux_conf_theme_window_status_last_bg" = "$tmux_conf_theme_status_bg" ] || [ "$tmux_conf_theme_window_status_last_bg" = "default" ] ; then
+#       spacer_last=''
+#     else
+#       spacer_last=' '
+#     fi
+#     if [ "$tmux_conf_theme_window_status_activity_bg" = "$tmux_conf_theme_status_bg" ] || [ "$tmux_conf_theme_window_status_activity_bg" = "default" ] ; then
+#       spacer_activity=''
+#       spacer_last_activity="$spacer_last"
+#     else
+#       spacer_activity=' '
+#       spacer_last_activity=' '
+#     fi
+#     if [ "$tmux_conf_theme_window_status_bell_bg" = "$tmux_conf_theme_status_bg" ] || [ "$tmux_conf_theme_window_status_bell_bg" = "default" ] ; then
+#       spacer_bell=''
+#       spacer_last_bell="$spacer_last"
+#       spacer_activity_bell="$spacer_activity"
+#       spacer_last_activity_bell="$spacer_last_activity"
+#     else
+#       spacer_bell=' '
+#       spacer_last_bell=' '
+#       spacer_activity_bell=' '
+#       spacer_last_activity_bell=' '
+#     fi
+#     spacer="#{?window_last_flag,#{?window_activity_flag,#{?window_bell_flag,$spacer_last_activity_bell,$spacer_last_activity},#{?window_bell_flag,$spacer_last_bell,$spacer_last}},#{?window_activity_flag,#{?window_bell_flag,$spacer_activity_bell,$spacer_activity},#{?window_bell_flag,$spacer_bell,$spacer}}}"
+#     _fg() {
+#       case "$1" in
+#         ""|default)
+#           ;;
+#         *)
+#           printf '#[fg=%s]' "$1"
+#           ;;
+#       esac
+#     }
+#     _bg() {
+#       case "$1" in
+#         ""|default)
+#           ;;
+#         *)
+#           printf '#[bg=%s]' "$1"
+#           ;;
+#       esac
+#     }
+#     _attr() {
+#       case "$2" in
+#         ""|default)
+#           return 0
+#           ;;
+#       esac
+#       printf '#{?%s,#[none],}' "$1"
+#       _a=$2
+#       while [ -n "$_a" ]; do
+#         case "$_a" in
+#           *,*)
+#           printf '#{?%s,#[%s],}' "$1" "${_a%%,*}"; _a=${_a#*,}
+#           ;;
+#           *)
+#           printf '#{?%s,#[%s],}' "$1" "$_a"; _a=
+#           ;;
+#         esac
+#       done
+#       return 0
+#     }
+#     if [ "$(tmux show -g -v status-justify)" = "right" ]; then
+#       if [ -z "$tmux_conf_theme_right_separator_main" ]; then
+#         window_status_separator=' '
+#       else
+#         window_status_separator=''
+#       fi
+#       window_status_format="#[fg=$tmux_conf_theme_window_status_bg,bg=$tmux_conf_theme_status_bg,none]#{?window_last_flag,$(_fg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_fg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_fg "$tmux_conf_theme_window_status_bell_bg"),}$tmux_conf_theme_right_separator_main#[fg=$tmux_conf_theme_window_status_fg,bg=$tmux_conf_theme_window_status_bg,$tmux_conf_theme_window_status_attr]#{?window_last_flag,$(_fg "$tmux_conf_theme_window_status_last_fg"),}#{?window_last_flag,$(_bg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_fg "$tmux_conf_theme_window_status_activity_fg"),}#{?window_activity_flag,$(_bg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_fg "$tmux_conf_theme_window_status_bell_fg"),}#{?window_bell_flag,$(_bg "$tmux_conf_theme_window_status_bell_bg"),}$spacer$(_attr window_last_flag "$tmux_conf_theme_window_status_last_attr")$(_attr window_activity_flag "$tmux_conf_theme_window_status_activity_attr")$(_attr window_bell_flag "$tmux_conf_theme_window_status_bell_attr")$tmux_conf_theme_window_status_format#[none]$spacer#[fg=$tmux_conf_theme_status_bg,bg=$tmux_conf_theme_window_status_bg]#{?window_last_flag,$(_bg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_bg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_bg "$tmux_conf_theme_window_status_bell_bg"),}#[none]$tmux_conf_theme_right_separator_main"
+#       window_status_current_format="#[fg=$tmux_conf_theme_window_status_current_bg,bg=$tmux_conf_theme_status_bg,none]$tmux_conf_theme_right_separator_main#[fg=$tmux_conf_theme_window_status_current_fg,bg=$tmux_conf_theme_window_status_current_bg,$tmux_conf_theme_window_status_current_attr]$spacer_current$tmux_conf_theme_window_status_current_format$spacer_current#[fg=$tmux_conf_theme_status_bg,bg=$tmux_conf_theme_window_status_current_bg,none]$tmux_conf_theme_right_separator_main"
+#     else
+#       if [ -z "$tmux_conf_theme_left_separator_main" ]; then
+#         window_status_separator=' '
+#       else
+#         window_status_separator=''
+#       fi
+#       window_status_format="#[fg=$tmux_conf_theme_status_bg,bg=$tmux_conf_theme_window_status_bg,none]#{?window_last_flag,$(_bg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_bg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_bg "$tmux_conf_theme_window_status_bell_bg"),}$tmux_conf_theme_left_separator_main#[fg=$tmux_conf_theme_window_status_fg,bg=$tmux_conf_theme_window_status_bg,$tmux_conf_theme_window_status_attr]#{?window_last_flag,$(_fg "$tmux_conf_theme_window_status_last_fg"),}#{?window_last_flag,$(_bg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_fg "$tmux_conf_theme_window_status_activity_fg"),}#{?window_activity_flag,$(_bg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_fg "$tmux_conf_theme_window_status_bell_fg"),}#{?window_bell_flag,$(_bg "$tmux_conf_theme_window_status_bell_bg"),}$spacer$(_attr window_last_flag "$tmux_conf_theme_window_status_last_attr")$(_attr window_activity_flag "$tmux_conf_theme_window_status_activity_attr")$(_attr window_bell_flag "$tmux_conf_theme_window_status_bell_attr")$tmux_conf_theme_window_status_format#[none]$spacer#[fg=$tmux_conf_theme_window_status_bg,bg=$tmux_conf_theme_status_bg]#{?window_last_flag,$(_fg "$tmux_conf_theme_window_status_last_bg"),}#{?window_activity_flag,$(_fg "$tmux_conf_theme_window_status_activity_bg"),}#{?window_bell_flag,$(_fg "$tmux_conf_theme_window_status_bell_bg"),}$tmux_conf_theme_left_separator_main"
+#       window_status_current_format="#[fg=$tmux_conf_theme_status_bg,bg=$tmux_conf_theme_window_status_current_bg,none]$tmux_conf_theme_left_separator_main#[fg=$tmux_conf_theme_window_status_current_fg,bg=$tmux_conf_theme_window_status_current_bg,$tmux_conf_theme_window_status_current_attr]$spacer_current$tmux_conf_theme_window_status_current_format$spacer_current#[fg=$tmux_conf_theme_window_status_current_bg,bg=$tmux_conf_theme_status_bg]$tmux_conf_theme_left_separator_main"
+#     fi
+#
+#     # -- indicators
+#
+#     : "${tmux_conf_theme_pairing:=⚇}"                         # U+2687
+#     : "${tmux_conf_theme_pairing_fg:=none}"
+#     : "${tmux_conf_theme_pairing_bg:=none}"
+#     : "${tmux_conf_theme_pairing_attr:=none}"
+#
+#     : "${tmux_conf_theme_prefix:=⌨}"                           # U+2328
+#     : "${tmux_conf_theme_prefix_fg:=none}"
+#     : "${tmux_conf_theme_prefix_bg:=none}"
+#     : "${tmux_conf_theme_prefix_attr:=none}"
+#
+#     : "${tmux_conf_theme_mouse:=↗}"                             # U+2197
+#     : "${tmux_conf_theme_mouse_fg:=none}"
+#     : "${tmux_conf_theme_mouse_bg:=none}"
+#     : "${tmux_conf_theme_mouse_attr:=none}"
+#
+#     : "${tmux_conf_theme_root:=!}"
+#     : "${tmux_conf_theme_root_fg:=none}"
+#     : "${tmux_conf_theme_root_bg:=none}"
+#     : "${tmux_conf_theme_root_attr:=bold,blink}"
+#
+#     : "${tmux_conf_theme_synchronized:=⚏}"               # U+268F
+#     : "${tmux_conf_theme_synchronized_fg:=none}"
+#     : "${tmux_conf_theme_synchronized_bg:=none}"
+#     : "${tmux_conf_theme_synchronized_attr:=none}"
+#
+#     tmux_conf_theme_pairing=$(_decode_unicode_escapes "$tmux_conf_theme_pairing")
+#     tmux_conf_theme_prefix=$(_decode_unicode_escapes "$tmux_conf_theme_prefix")
+#     tmux_conf_theme_mouse=$(_decode_unicode_escapes "$tmux_conf_theme_mouse")
+#     tmux_conf_theme_root=$(_decode_unicode_escapes "$tmux_conf_theme_root")
+#     tmux_conf_theme_synchronized=$(_decode_unicode_escapes "$tmux_conf_theme_synchronized")
+#
+#     # -- status-left style
+#
+#     _default=' ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
+#     : "${tmux_conf_theme_status_left=$_default}"
+#     : "${tmux_conf_theme_status_left_fg:=$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8}"
+#     : "${tmux_conf_theme_status_left_bg:=$tmux_conf_theme_colour_9,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11}"
+#     : "${tmux_conf_theme_status_left_attr:=bold,none,none}"
+#
+#     if [ -n "$tmux_conf_theme_status_left" ]; then
+#       status_left=$(printf '%s\n' "$tmux_conf_theme_status_left" | sed \
+#         -e "s/#{pairing}/#[fg=$tmux_conf_theme_pairing_fg]#[bg=$tmux_conf_theme_pairing_bg]#[$tmux_conf_theme_pairing_attr]#{pairing}#[inherit]/g" \
+#         -e "s/#{prefix}/#[fg=$tmux_conf_theme_prefix_fg]#[bg=$tmux_conf_theme_prefix_bg]#[$tmux_conf_theme_prefix_attr]#{prefix}#[inherit]/g" \
+#         -e "s/#{mouse}/#[fg=$tmux_conf_theme_mouse_fg]#[bg=$tmux_conf_theme_mouse_bg]#[$tmux_conf_theme_mouse_attr]#{mouse}#[inherit]/g" \
+#         -e "s/#{synchronized}/#[fg=$tmux_conf_theme_synchronized_fg]#[bg=$tmux_conf_theme_synchronized_bg]#[$tmux_conf_theme_synchronized_attr]#{synchronized}#[inherit]/g" \
+#         -e "s/#{root}/#[fg=$tmux_conf_theme_root_fg]#[bg=$tmux_conf_theme_root_bg]#[$tmux_conf_theme_root_attr]#{root}#[inherit]/g")
+#
+#       status_left=$(printf '%s' "$status_left" | awk \
+#                         -v status_bg="$tmux_conf_theme_status_bg" \
+#                         -v fg_="$tmux_conf_theme_status_left_fg" \
+#                         -v bg_="$tmux_conf_theme_status_left_bg" \
+#                         -v attr_="$tmux_conf_theme_status_left_attr" \
+#                         -v mainsep="$tmux_conf_theme_left_separator_main" \
+#                         -v subsep="$tmux_conf_theme_left_separator_sub" '
+#         function subsplit(s, l, i, a, r)
+#         {
+#           l = split(s, a, ",")
+#           for (i = 1; i <= l; ++i)
+#           {
+#             o = split(a[i], _, "(") - 1
+#             c = split(a[i], _, ")") - 1
+#             open += o - c
+#             o_ = split(a[i], _, "{") - 1
+#             c_ = split(a[i], _, "}") - 1
+#             open_ += o_ - c_
+#             o__ = split(a[i], _, "[") - 1
+#             c__ = split(a[i], _, "]") - 1
+#             open__ += o__ - c__
+#             if (open < 0) open = 0; if (open_ < 0) open_ = 0; if (open__ < 0) open__ = 0
+#
+#             if (i == l)
+#               r = sprintf("%s%s", r, a[i])
+#             else if (open || open_ || open__)
+#               r = sprintf("%s%s,", r, a[i])
+#             else
+#               r = sprintf("%s%s#[fg=%s,bg=%s,%s]%s", r, a[i], fg[j], bg[j], attr[j], subsep)
+#           }
+#
+#           gsub(/#\[inherit\]/, sprintf("#[default]#[fg=%s,bg=%s,%s]", fg[j], bg[j], attr[j]), r)
+#           return r
+#         }
+#         BEGIN {
+#           FS = "|"
+#           l1 = split(fg_, fg, ",")
+#           l2 = split(bg_, bg, ",")
+#           l3 = split(attr_, attr, ",")
+#           l = l1 < l2 ? (l1 < l3 ? l1 : l3) : (l2 < l3 ? l2 : l3)
+#         }
+#         {
+#           for (i = j = 1; i <= NF; ++i)
+#           {
+#             if (open || open_ || open__)
+#               printf "|%s", subsplit($i)
+#             else
+#             {
+#               if (i > 1)
+#                 printf "#[fg=%s,bg=%s,none]%s#[fg=%s,bg=%s,%s]%s", bg[j_], bg[j], mainsep, fg[j], bg[j], attr[j], subsplit($i)
+#               else
+#                 printf "#[fg=%s,bg=%s,%s]%s", fg[j], bg[j], attr[j], subsplit($i)
+#             }
+#
+#             if (!open && !open_ && !open__)
+#             {
+#               j_ = j
+#               j = j % l + 1
+#             }
+#           }
+#           printf "#[fg=%s,bg=%s,none]%s", bg[j_], status_bg, mainsep
+#         }')
+#     fi
+#     status_left="$status_left "
+#
+#     # -- status-right style
+#
+#     _default=' #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} '
+#     : "${tmux_conf_theme_status_right=$_default}"
+#     : "${tmux_conf_theme_status_right_fg:=$tmux_conf_theme_colour_12,$tmux_conf_theme_colour_13,$tmux_conf_theme_colour_14}"
+#     : "${tmux_conf_theme_status_right_bg:=$tmux_conf_theme_colour_15,$tmux_conf_theme_colour_16,$tmux_conf_theme_colour_17}"
+#     : "${tmux_conf_theme_status_right_attr:=none,none,bold}"
+#
+#     if [ -n "$tmux_conf_theme_status_right" ]; then
+#       status_right=$(printf '%s\n' "$tmux_conf_theme_status_right" | sed \
+#         -e "s/#{pairing}/#[fg=$tmux_conf_theme_pairing_fg]#[bg=$tmux_conf_theme_pairing_bg]#[$tmux_conf_theme_pairing_attr]#{pairing}#[inherit]/g" \
+#         -e "s/#{prefix}/#[fg=$tmux_conf_theme_prefix_fg]#[bg=$tmux_conf_theme_prefix_bg]#[$tmux_conf_theme_prefix_attr]#{prefix}#[inherit]/g" \
+#         -e "s/#{mouse}/#[fg=$tmux_conf_theme_mouse_fg]#[bg=$tmux_conf_theme_mouse_bg]#[$tmux_conf_theme_mouse_attr]#{mouse}#[inherit]/g" \
+#         -e "s/#{synchronized}/#[fg=$tmux_conf_theme_synchronized_fg]#[bg=$tmux_conf_theme_synchronized_bg]#[$tmux_conf_theme_synchronized_attr]#{synchronized}#[inherit]/g" \
+#         -e "s/#{root}/#[fg=$tmux_conf_theme_root_fg]#[bg=$tmux_conf_theme_root_bg]#[$tmux_conf_theme_root_attr]#{root}#[inherit]/g")
+#
+#       status_right=$(printf '%s' "$status_right" | awk \
+#                         -v status_bg="$tmux_conf_theme_status_bg" \
+#                         -v fg_="$tmux_conf_theme_status_right_fg" \
+#                         -v bg_="$tmux_conf_theme_status_right_bg" \
+#                         -v attr_="$tmux_conf_theme_status_right_attr" \
+#                         -v mainsep="$tmux_conf_theme_right_separator_main" \
+#                         -v subsep="$tmux_conf_theme_right_separator_sub" '
+#         function subsplit(s, l, i, a, r)
+#         {
+#           l = split(s, a, ",")
+#           for (i = 1; i <= l; ++i)
+#           {
+#             o = split(a[i], _, "(") - 1
+#             c = split(a[i], _, ")") - 1
+#             open += o - c
+#             o_ = split(a[i], _, "{") - 1
+#             c_ = split(a[i], _, "}") - 1
+#             open_ += o_ - c_
+#             o__ = split(a[i], _, "[") - 1
+#             c__ = split(a[i], _, "]") - 1
+#             open__ += o__ - c__
+#             if (open < 0) open = 0; if (open_ < 0) open_ = 0; if (open__ < 0) open__ = 0
+#
+#             if (i == l)
+#               r = sprintf("%s%s", r, a[i])
+#             else if (open || open_ || open__)
+#               r = sprintf("%s%s,", r, a[i])
+#             else
+#               r = sprintf("%s%s#[fg=%s,bg=%s,%s]%s", r, a[i], fg[j], bg[j], attr[j], subsep)
+#           }
+#
+#           gsub(/#\[inherit\]/, sprintf("#[default]#[fg=%s,bg=%s,%s]", fg[j], bg[j], attr[j]), r)
+#           return r
+#         }
+#         BEGIN {
+#           FS = "|"
+#           l1 = split(fg_, fg, ",")
+#           l2 = split(bg_, bg, ",")
+#           l3 = split(attr_, attr, ",")
+#           l = l1 < l2 ? (l1 < l3 ? l1 : l3) : (l2 < l3 ? l2 : l3)
+#         }
+#         {
+#           for (i = j = 1; i <= NF; ++i)
+#           {
+#             if (open_ || open || open__)
+#               printf "|%s", subsplit($i)
+#             else
+#               printf "#[fg=%s,bg=%s,none]%s#[fg=%s,bg=%s,%s]%s", bg[j], (i == 1) ? status_bg : bg[j_], mainsep, fg[j], bg[j], attr[j], subsplit($i)
+#
+#             if (!open && !open_ && !open__)
+#             {
+#               j_ = j
+#               j = j % l + 1
+#             }
+#           }
+#         }')
+#     fi
+#     : "${status_right=}"
+#
+#     # -- clock ---------------------------------------------------------------
+#
+#     : "${tmux_conf_theme_clock_colour:=$tmux_conf_theme_colour_4}"
+#     : "${tmux_conf_theme_clock_style:=24}"
+#
+#     message_style="fg=$tmux_conf_theme_message_fg,bg=$tmux_conf_theme_message_bg,$tmux_conf_theme_message_attr"
+#     message_command_style="fg=$tmux_conf_theme_message_command_fg,bg=$tmux_conf_theme_message_command_bg,$tmux_conf_theme_message_command_attr"
+#     if [ "$(_tmux_version)" -ge 3700 ]; then
+#       message_style="$message_style,fill=$tmux_conf_theme_message_bg"
+#       message_command_style="$message_command_style,fill=$tmux_conf_theme_message_command_bg"
+#     fi
+#
+#     tmux setw -g window-style "$window_style" \; setw -g window-active-style "$window_active_style" \;\
+#          setw -g pane-border-style "fg=$tmux_conf_theme_pane_border_fg,bg=$tmux_conf_theme_pane_border_bg" \; set -g pane-active-border-style "fg=$tmux_conf_theme_pane_active_border_fg,bg=$tmux_conf_theme_pane_active_border_bg" \;\
+#          set -g display-panes-colour "$tmux_conf_theme_pane_indicator" \; set -g display-panes-active-colour "$tmux_conf_theme_pane_active_indicator" \;\
+#          set -g message-style "$message_style" \;\
+#          set -g message-command-style "$message_command_style" \;\
+#          setw -g mode-style "fg=$tmux_conf_theme_mode_fg,bg=$tmux_conf_theme_mode_bg,$tmux_conf_theme_mode_attr" \;\
+#          set -g status-style "fg=$tmux_conf_theme_status_fg,bg=$tmux_conf_theme_status_bg,$tmux_conf_theme_status_attr" \;\
+#          set -g status-left-style "fg=$tmux_conf_theme_status_fg,bg=$tmux_conf_theme_status_bg,$tmux_conf_theme_status_attr" \;\
+#          set -g status-right-style "fg=$tmux_conf_theme_status_fg,bg=$tmux_conf_theme_status_bg,$tmux_conf_theme_status_attr" \;\
+#          setw -g window-status-style "fg=$tmux_conf_theme_window_status_fg,bg=$tmux_conf_theme_window_status_bg,$tmux_conf_theme_window_status_attr" \;\
+#          setw -g window-status-current-style "fg=$tmux_conf_theme_window_status_current_fg,bg=$tmux_conf_theme_window_status_current_bg,$tmux_conf_theme_window_status_current_attr" \;\
+#          setw -g window-status-activity-style "fg=$tmux_conf_theme_window_status_activity_fg,bg=$tmux_conf_theme_window_status_activity_bg,$tmux_conf_theme_window_status_activity_attr" \;\
+#          setw -g window-status-bell-style "fg=$tmux_conf_theme_window_status_bell_fg,bg=$tmux_conf_theme_window_status_bell_bg,$tmux_conf_theme_window_status_bell_attr" \;\
+#          setw -g window-status-last-style "fg=$tmux_conf_theme_window_status_last_fg,bg=$tmux_conf_theme_window_status_last_bg,$tmux_conf_theme_window_status_last_attr" \;\
+#          setw -g window-status-separator "$window_status_separator" \;\
+#          setw -g clock-mode-colour "$tmux_conf_theme_clock_colour" \;\
+#          setw -g clock-mode-style "$tmux_conf_theme_clock_style"
+#   fi
+#
+#   # -- variables -------------------------------------------------------------
+#
+#   tmux_conf_theme_prefix_blank=$(_blank "$tmux_conf_theme_prefix")
+#   tmux_conf_theme_mouse_blank=$(_blank "$tmux_conf_theme_mouse")
+#
+#   : "${tmux_conf_theme_terminal_title:=$(tmux show -gv set-titles-string)}"
+#
+#   if [ "$(_tmux_version)" -ge 3200 ]; then
+#     pretty_current_path_max_length='#{e|/:#{client_width},5}'
+#   else
+#     pretty_current_path_max_length='auto'
+#   fi
+#
+#   set_titles_string=$(printf '%s' "$tmux_conf_theme_terminal_title" | sed \
+#     -e "s%#{circled_window_index}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#I')%g" \
+#     -e "s%#{circled_session_name}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#S')%g" \
+#     -e "s%#{pretty_pane_current_path}%#(cut -c3- '$TMUX_CONF' | sh -s _pretty_path '$pretty_current_path_max_length' '#{pane_current_path}')%g" \
+#     -e "s%#{username}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D')%g" \
+#     -e "s%#{hostname}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false false '#h' '#D')%g" \
+#     -e "s%#{hostname_full}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false true '#H' '#D')%g" \
+#     -e "s%#{username_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' true '#D')%g" \
+#     -e "s%#{hostname_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true false '#h' '#D')%g" \
+#     -e "s%#{hostname_full_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true true '#H' '#D')%g")
+#
+#   : "${window_status_format:=$(tmux show -gv window-status-format)}"
+#   window_status_format=$(printf '%s' "$window_status_format" | sed \
+#     -e "s%#{circled_window_index}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#I')%g" \
+#     -e "s%#{circled_session_name}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#S')%g" \
+#     -e "s%#{pretty_pane_current_path}%#(cut -c3- '$TMUX_CONF' | sh -s _pretty_path '$pretty_current_path_max_length' '#{pane_current_path}')%g" \
+#     -e "s%#{username}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D')%g" \
+#     -e "s%#{hostname}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false false '#h' '#D')%g" \
+#     -e "s%#{hostname_full}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false true '#H' '#D')%g" \
+#     -e "s%#{username_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' true '#D')%g" \
+#     -e "s%#{hostname_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true false '#h' '#D')%g" \
+#     -e "s%#{hostname_full_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true true '#H' '#D')%g")
+#
+#   : "${window_status_current_format:=$(tmux show -gv window-status-current-format)}"
+#   window_status_current_format=$(printf '%s' "$window_status_current_format" | sed \
+#     -e "s%#{circled_window_index}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#I')%g" \
+#     -e "s%#{circled_session_name}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#S')%g" \
+#     -e "s%#{pretty_pane_current_path}%#(cut -c3- '$TMUX_CONF' | sh -s _pretty_path '$pretty_current_path_max_length' '#{pane_current_path}')%g" \
+#     -e "s%#{username}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D')%g" \
+#     -e "s%#{hostname}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false false '#h' '#D')%g" \
+#     -e "s%#{hostname_full}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false true '#H' '#D')%g" \
+#     -e "s%#{username_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' true '#D')%g" \
+#     -e "s%#{hostname_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true false '#h' '#D')%g" \
+#     -e "s%#{hostname_full_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true true '#H' '#D')%g")
+#
+#   : "${status_left=$(tmux show -gv status-left)}"
+#   status_left=$(printf '%s' "$status_left" | sed \
+#     -e "s/#{pairing}/#{?session_many_attached,$tmux_conf_theme_pairing ,}/g" \
+#     -e "s/#{prefix}/#{?client_prefix,$tmux_conf_theme_prefix ,$tmux_conf_theme_prefix_blank }/g" \
+#     -e "s/#{mouse}/#{?mouse,$tmux_conf_theme_mouse ,$tmux_conf_theme_mouse_blank }/g" \
+#     -e "s%#{synchronized}%#{?pane_synchronized,$tmux_conf_theme_synchronized ,}%g" \
+#     -e "s%#{circled_session_name}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#S')%g" \
+#     -e "s%#{pretty_pane_current_path}%#(cut -c3- '$TMUX_CONF' | sh -s _pretty_path '$pretty_current_path_max_length' '#{pane_current_path}')%g" \
+#     -e "s%#{root}%#{?#{==:#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D'),root},$tmux_conf_theme_root,}%g")
+#
+#   : "${status_right=$(tmux show -gv status-right)}"
+#   status_right=$(printf '%s' "$status_right" | sed \
+#     -e "s/#{pairing}/#{?session_many_attached,$tmux_conf_theme_pairing ,}/g" \
+#     -e "s/#{prefix}/#{?client_prefix,$tmux_conf_theme_prefix ,$tmux_conf_theme_prefix_blank }/g" \
+#     -e "s/#{mouse}/#{?mouse,$tmux_conf_theme_mouse ,$tmux_conf_theme_mouse_blank }/g" \
+#     -e "s%#{synchronized}%#{?pane_synchronized,$tmux_conf_theme_synchronized ,}%g" \
+#     -e "s%#{circled_session_name}%#(cut -c3- '$TMUX_CONF' | sh -s _circled '#S')%g" \
+#     -e "s%#{pretty_pane_current_path}%#(cut -c3- '$TMUX_CONF' | sh -s _pretty_path '$pretty_current_path_max_length' '#{pane_current_path}')%g" \
+#     -e "s%#{root}%#{?#{==:#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D'),root},$tmux_conf_theme_root,}%g")
+#
+#   : "${tmux_conf_battery_bar_symbol_full:=◼}"        # U=25FC
+#   : "${tmux_conf_battery_bar_symbol_empty:=◻}"       # U=25FB
+#   : "${tmux_conf_battery_bar_length:=auto}"
+#   : "${tmux_conf_battery_bar_palette:=gradient}"
+#   : "${tmux_conf_battery_hbar_palette:=gradient}"
+#   : "${tmux_conf_battery_hbar_symbols:=▏ ▎ ▍ ▌ ▋ ▊ ▉ █}"
+#   : "${tmux_conf_battery_hbar_symbols_charging:=$tmux_conf_battery_hbar_symbols}"
+#   : "${tmux_conf_battery_vbar_palette:=gradient}"
+#   : "${tmux_conf_battery_vbar_symbols:=▁ ▂ ▃ ▄ ▅ ▆ ▇ █}"
+#   : "${tmux_conf_battery_vbar_symbols_charging:=$tmux_conf_battery_vbar_symbols}"
+#   : "${tmux_conf_battery_status_charging:=↑}"        # U+2191
+#   : "${tmux_conf_battery_status_discharging:=↓}"     # U+2193
+#   tmux_conf_battery_bar_symbol_full=$(_decode_unicode_escapes "$tmux_conf_battery_bar_symbol_full")
+#   tmux_conf_battery_bar_symbol_empty=$(_decode_unicode_escapes "$tmux_conf_battery_bar_symbol_empty")
+#   tmux_conf_battery_status_charging=$(_decode_unicode_escapes "$tmux_conf_battery_status_charging")
+#   tmux_conf_battery_status_discharging=$(_decode_unicode_escapes "$tmux_conf_battery_status_discharging")
+#
+#   _pkillf 'sh -s _battery_info'
+#   _battery_info
+#   if [ "$battery_charge" != 0 ]; then
+#     case "$status_left $status_right" in
+#       *'#{battery_'*|*'#{?battery_'*)
+#         bar_palette_sc=$(printf '%s' "$tmux_conf_battery_bar_palette" | tr ',' ';')
+#         hbar_palette_sc=$(printf '%s' "$tmux_conf_battery_hbar_palette" | tr ',' ';')
+#         vbar_palette_sc=$(printf '%s' "$tmux_conf_battery_vbar_palette" | tr ',' ';')
+#         status_left=$(printf '%s\n' "$status_left" | sed -E \
+#           -e 's%#\{\?battery_bar%#\{?@battery_percentage%g' \
+#           -e 's%#\{\?battery_hbar%#\{?@battery_percentage%g' \
+#           -e 's%#\{\?battery_vbar%#\{?@battery_percentage%g' \
+#           -e "s%#\{battery_bar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _bar '$bar_palette_sc' '$tmux_conf_battery_bar_symbol_empty' '$tmux_conf_battery_bar_symbol_full' '$tmux_conf_battery_bar_length' '#{@battery_charge}' '#{client_width}')%g" \
+#           -e "s%#\{battery_hbar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _cbar '$hbar_palette_sc' '$tmux_conf_battery_hbar_symbols;$tmux_conf_battery_hbar_symbols_charging' '#{?@battery_discharging,0,1}' '#{@battery_charge}' )%g" \
+#           -e "s%#\{battery_vbar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _cbar '$vbar_palette_sc' '$tmux_conf_battery_vbar_symbols;$tmux_conf_battery_vbar_symbols_charging' '#{?@battery_discharging,0,1}' '#{@battery_charge}' )%g" \
+#           -e 's%#\{(\?)?battery_status%#\{\1@battery_status%g' \
+#           -e 's%#\{(\?)?battery_percentage%#\{\1@battery_percentage%g')
+#         status_right=$(printf '%s\n' "$status_right" | sed -E \
+#           -e 's%#\{\?battery_bar%#\{?@battery_percentage%g' \
+#           -e 's%#\{\?battery_hbar%#\{?@battery_percentage%g' \
+#           -e 's%#\{\?battery_vbar%#\{?@battery_percentage%g' \
+#           -e "s%#\{battery_bar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _bar '$bar_palette_sc' '$tmux_conf_battery_bar_symbol_empty' '$tmux_conf_battery_bar_symbol_full' '$tmux_conf_battery_bar_length' '#{@battery_charge}' '#{client_width}')%g" \
+#           -e "s%#\{battery_hbar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _cbar '$hbar_palette_sc' '$tmux_conf_battery_hbar_symbols;$tmux_conf_battery_hbar_symbols_charging' '#{?@battery_discharging,0,1}' '#{@battery_charge}')%g" \
+#           -e "s%#\{battery_vbar\}%#(nice cut -c3- '$TMUX_CONF' | sh -s _cbar '$vbar_palette_sc' '$tmux_conf_battery_vbar_symbols;$tmux_conf_battery_vbar_symbols_charging' '#{?@battery_discharging,0,1}' '#{@battery_charge}')%g" \
+#           -e 's%#\{(\?)?battery_status%#\{\1@battery_status%g' \
+#           -e 's%#\{(\?)?battery_percentage%#\{\1@battery_percentage%g')
+#         status_right="#(echo; nice cut -c3- '$TMUX_CONF' | sh -s _battery_status '$tmux_conf_battery_status_charging' '$tmux_conf_battery_status_discharging')$status_right"
+#         interval=60
+#         if [ "$(_tmux_version)" -eq 3500 ]; then
+#           tmux run -b "exec sh -c 'trap \"[ -n \\\\\"\\\\\$sleep_pid\\\\\" ] && kill -9 \\\\\"\\\\\$sleep_pid\\\\\"; exit 0\" TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S \"#{socket_path}\" display -p \"#{l:#{pid}}\")\" = \"#{pid}\" ]; do nice cut -c3- \"$TMUX_CONF\" | sh -s _battery_info; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done'"
+#         elif [ "$(_tmux_version)" -ge 3200 ]; then
+#           tmux run -b "trap '[ -n \"\$sleep_pid\" ] && kill -9 \"\$sleep_pid\"; exit 0' TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _battery_info; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done"
+#         elif [ "$(_tmux_version)" -ge 2800 ]; then
+#           status_right="#(echo; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _battery_info; sleep $interval; done)$status_right"
+#         else
+#           status_right="#(echo; while :; do nice cut -c3- '$TMUX_CONF' | sh -s _battery_info; sleep $interval; done)$status_right"
+#         fi
+#         ;;
+#     esac
+#   fi
+#
+#   case "$status_left $status_right" in
+#     *'#{username}'*|*'#{hostname}'*|*'#{hostname_full}'*|*'#{username_ssh}'*|*'#{hostname_ssh}'*|*'#{hostname_full_ssh}'*)
+#       status_left=$(printf '%s\n' "$status_left" | sed \
+#         -e "s%#{username}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D')%g" \
+#         -e "s%#{hostname}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false false '#h' '#D')%g" \
+#         -e "s%#{hostname_full}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false true '#H' '#D')%g" \
+#         -e "s%#{username_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' true '#D')%g" \
+#         -e "s%#{hostname_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true false '#h' '#D')%g" \
+#         -e "s%#{hostname_full_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true true '#H' '#D')%g")
+#       status_right=$(printf '%s\n' "$status_right" | sed \
+#         -e "s%#{username}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' false '#D')%g" \
+#         -e "s%#{hostname}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false false '#h' '#D')%g" \
+#         -e "s%#{hostname_full}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' false true '#H' '#D')%g" \
+#         -e "s%#{username_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _username '#{pane_pid}' '#{b:pane_tty}' true '#D')%g" \
+#         -e "s%#{hostname_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true false '#h' '#D')%g" \
+#         -e "s%#{hostname_full_ssh}%#(cut -c3- '$TMUX_CONF' | sh -s _hostname '#{pane_pid}' '#{b:pane_tty}' true true '#H' '#D')%g")
+#       ;;
+#   esac
+#
+#   _pkillf 'sh -s _uptime'
+#   case "$status_left $status_right" in
+#     *'#{uptime_'*|*'#{?uptime_'*)
+#       status_left=$(printf '%s\n' "$status_left" | perl -p -e '
+#         ; s/#\{(\?)?uptime_y\b/#\{\1\@uptime_y/g
+#         ; s/#\{(\?)?uptime_d\b/#\{\1\@uptime_d/g
+#         ; s/\@uptime_d\b/\@uptime_dy/g if /\@uptime_y\b/
+#         ; s/#\{(\?)?uptime_h\b/#\{\1\@uptime_h/g
+#         ; s/#\{(\?)?uptime_m\b/#\{\1\@uptime_m/g
+#         ; s/#\{(\?)?uptime_s\b/#\{\1\@uptime_s/g')
+#       status_right=$(printf '%s\n' "$status_right" | perl -p -e '
+#         ; s/#\{(\?)?uptime_y\b/#\{\1\@uptime_y/g
+#         ; s/#\{(\?)?uptime_d\b/#\{\1\@uptime_d/g
+#         ; s/\@uptime_d\b/\@uptime_dy/g if /\@uptime_y\b/
+#         ; s/#\{(\?)?uptime_h\b/#\{\1\@uptime_h/g
+#         ; s/#\{(\?)?uptime_m\b/#\{\1\@uptime_m/g
+#         ; s/#\{(\?)?uptime_s\b/#\{\1\@uptime_s/g')
+#       interval=60
+#       case "$status_left $status_right" in
+#         *'#{@uptime_s}'*)
+#           interval=$(tmux show -gv status-interval)
+#           [ "$interval" -lt 1 ] && interval=1
+#           ;;
+#       esac
+#       if [ "$(_tmux_version)" -eq 3500 ]; then
+#         tmux run -b "exec sh -c 'trap \"[ -n \\\\\"\\\\\$sleep_pid\\\\\" ] && kill -9 \\\\\"\\\\\$sleep_pid\\\\\"; exit 0\" TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S \"#{socket_path}\" display -p \"#{l:#{pid}}\")\" = \"#{pid}\" ]; do nice cut -c3- \"$TMUX_CONF\" | sh -s _uptime; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done'"
+#       elif [ "$(_tmux_version)" -ge 3200 ]; then
+#           tmux run -b "trap '[ -n \"\$sleep_pid\" ] && kill -9 \"\$sleep_pid\"; exit 0' TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _uptime; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done"
+#       elif [ "$(_tmux_version)" -ge 2800 ]; then
+#         status_right="#(echo; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _uptime; sleep $interval; done)$status_right"
+#       else
+#         status_right="#(echo; while :; do nice cut -c3- '$TMUX_CONF' | sh -s _uptime; sleep $interval; done)$status_right"
+#       fi
+#       ;;
+#   esac
+#
+#   _pkillf 'sh -s _loadavg'
+#   case "$status_left $status_right" in
+#     *'#{loadavg'*|*'#{?loadavg'*)
+#       status_left=$(printf '%s\n' "$status_left" | sed -E \
+#         -e 's/#\{(\?)?loadavg/#\{\1@loadavg/g')
+#       status_right=$(printf '%s\n' "$status_right" | sed -E \
+#         -e 's/#\{(\?)?loadavg/#\{\1@loadavg/g')
+#       interval=$(tmux show -gv status-interval)
+#       [ "$interval" -lt 1 ] && interval=10
+#       if [ "$(_tmux_version)" -eq 3500 ]; then
+#         tmux run -b "exec sh -c 'trap \"[ -n \\\\\"\\\\\$sleep_pid\\\\\" ] && kill -9 \\\\\"\\\\\$sleep_pid\\\\\"; exit 0\" TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S \"#{socket_path}\" display -p \"#{l:#{pid}}\")\" = \"#{pid}\" ]; do nice cut -c3- \"$TMUX_CONF\" | sh -s _loadavg; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done'"
+#       elif [ "$(_tmux_version)" -ge 3200 ]; then
+#         tmux run -b "trap '[ -n \"\$sleep_pid\" ] && kill -9 \"\$sleep_pid\"; exit 0' TERM; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _loadavg; sleep $interval & sleep_pid=\$!; wait \"\$sleep_pid\"; sleep_pid=; done"
+#       elif [ "$(_tmux_version)" -ge 2800 ]; then
+#         status_right="#(echo; while [ \"\$(\"$TMUX_PROGRAM\" -S '#{socket_path}' display -p '#{l:#{pid}}')\" = \"#{pid}\" ]; do nice cut -c3- '$TMUX_CONF' | sh -s _loadavg; sleep $interval; done)$status_right"
+#       else
+#         status_right="#(echo; while :; do nice cut -c3- '$TMUX_CONF' | sh -s _loadavg; sleep $interval; done)$status_right"
+#       fi
+#       ;;
+#   esac
+#
+#   # -- custom variables ------------------------------------------------------
+#
+#   if [ -f "$TMUX_CONF_LOCAL" ] && [ "$(cut -c3- "$TMUX_CONF_LOCAL" | sh 2>/dev/null -s printf probe)" = "probe" ]; then
+#     replacements=$(perl -n -e 'print if s!^#\s+([a-zA-Z][a-zA-Z0-9_]*)\s*\(\)\s*{\s*(?:#.*)?\n!s%#\\\{\\Q\1\\E((?:\\s+(?:[^\{\}]+?|#\\{(?:[^\{\}]+?)\}))*)\\\}%#(cut -c3- '"'""$TMUX_CONF_LOCAL""'"' | sh -s \1\\1)%g; !p' "$TMUX_CONF_LOCAL")
+#     status_left=$(printf '%s\n' "$status_left" | perl -p -e "$replacements" || printf '%s\n' "$status_left")
+#     status_right=$(printf '%s\n' "$status_right" | perl -p -e "$replacements" || printf '%s\n' "$status_right")
+#   fi
+#
+#   # --------------------------------------------------------------------------
+#
+#   tmux set -g set-titles-string "$(_decode_unicode_escapes "$set_titles_string")" \;\
+#        setw -g window-status-format "$(_decode_unicode_escapes "$window_status_format")" \;\
+#        setw -g window-status-current-format "$(_decode_unicode_escapes "$window_status_current_format")" \;\
+#        set -g status-left-length 1000 \; set -g status-left "$(_decode_unicode_escapes "$status_left")" \;\
+#        set -g status-right-length 1000 \; set -g status-right "$(_decode_unicode_escapes "$status_right")"
+# }
+#
+# __apply_plugins() {
+#   TMUX_PLUGIN_MANAGER_PATH="$1"
+#   window_active="$2"
+#   tmux_conf_update_plugins_on_launch="$3"
+#   tmux_conf_update_plugins_on_reload="$4"
+#   tmux_conf_uninstall_plugins_on_reload="$5"
+#
+#   if [ "$(tmux show -sqv '@__apply_plugins')" = "true" ]; then
+#     # return early if we're already installing/updating tpm
+#     return 0
+#   fi
+#
+#   # wait for session to become available
+#   retry=20
+#   while [ -z "$(tmux display -p '#{session_id}' 2>/dev/null)" ] && [ "$retry" -ne 0 ]; do
+#     sleep 0.1
+#     retry=$((retry - 1))
+#   done
+#   if [ "$retry" -eq 0 ]; then
+#     # bail out if session didn't become available
+#     return 1
+#   fi
+#   tmux set -s '@__apply_plugins' true
+#   trap "tmux set -su '@__apply_plugins'" EXIT
+#
+#   if [ -z "$TMUX_PLUGIN_MANAGER_PATH" ]; then
+#     return 255
+#   fi
+#   mkdir -p "$TMUX_PLUGIN_MANAGER_PATH"
+#
+#   __discover_plugins() (
+#     probe_socket="$(dirname "$TMUX_SOCKET")/tmux-discover-plugins-$$"
+#     trap 'TMUX_SOCKET="$probe_socket" tmux -f /dev/null kill-server 2>/dev/null; rm -rf "$probe_socket"' EXIT
+#     TMUX_SOCKET="$probe_socket" tmux -f /dev/null start-server \; set-option exit-empty off
+#     ___discover_plugins() {
+#       depth=$((${depth:-0} + 1))
+#       IFS=${_IFS:-$IFS}
+#       # bail out when recursing too much
+#       if [ "$depth" -gt 100 ]; then
+#         depth=$((depth - 1))
+#         return 0
+#       fi
+#       for current_file in "$@"; do
+#         current_file="$(cd "${current_file%/*}" 2>/dev/null && pwd)/${current_file##*/}" || continue
+#         while IFS= read -r line; do
+#           if plugin=$(printf '%s\n' "$line" | perl -s -n -E 'print if s/^set-option\s+-g\s+\@plugin\s+//g or die' 2>/dev/null); then
+#             discovered_plugins="${discovered_plugins}${discovered_plugins:+ }${plugin}"
+#           elif next_files=$(printf '%s\n' "$line" | perl -s -n -E 's/(?<!\@)current_file/\@current_file/g ; exit 1 if /^source(?:-file)?(?:\s+-[a-zA-Z]+)*\s+-[a-zA-Z]*n[a-zA-Z]*/ ; print if s/^source(?:-file)?(?:\s+-[qFv]+)*\s*(.+?)$/\1/g or die' 2>/dev/null); then
+#             next_files=$(TMUX_SOCKET="$probe_socket" tmux -f /dev/null \
+#               set -g @current_file "$current_file" \; \
+#               display -pF "$next_files")
+#
+#             set --
+#             _IFS=$IFS
+#             IFS=$(printf '\nx')
+#             IFS=${IFS%?}
+#             while IFS= read -r line; do
+#               [ -n "$line" ] || continue
+#               # shellcheck disable=SC2086
+#               for file in $line; do set -- "$@" "$file"; done # glob expansion
+#             done <<EOF
+# $next_files
+# EOF
+#             IFS=$_IFS
+#             ___discover_plugins "$@"
+#           fi
+#         done << EOF
+# $(TMUX_SOCKET="$probe_socket" tmux -f /dev/null source -nvq "$current_file" | perl -s -n -E 'print if s/^\Q$current_file\E:\d+:\s*(set-option\s+-g\s+\@plugin\s+|source-file)/\1/g' -- -current_file="$current_file")
+# EOF
+#       done
+#       depth=$((depth - 1))
+#     }
+#     ___discover_plugins "$@"
+#     printf '%s\n' "$discovered_plugins"
+#   )
+#
+#   tpm_plugins=$(cat << EOF | tr ' ' '\n' | awk '/^[ \t]*$/ {next;}; !seen[$0]++ { gsub(/^[ \t]+/,"",$0); gsub(/[ \t]+$/,"",$0); print $0 }'
+#     $(__discover_plugins "$TMUX_CONF_LOCAL")
+# EOF
+#   )
+#   if [ -z "$tpm_plugins" ]; then
+#     if _is_true "$tmux_conf_uninstall_plugins_on_reload" && [ -d "$TMUX_PLUGIN_MANAGER_PATH/tpm" ]; then
+#       tmux display 'Uninstalling tpm and plugins...'
+#       tmux set-environment -gu TMUX_PLUGIN_MANAGER_PATH
+#       rm -rf "$TMUX_PLUGIN_MANAGER_PATH"
+#       tmux display 'Done uninstalling tpm and plugins...'
+#     fi
+#   else
+#     if [ "$(command tmux display -p '#{pid} #{version} #{socket_path}')" = "$("$TMUX_PROGRAM" display -p '#{pid} #{version} #{socket_path}')" ]; then
+#       tmux set-environment -g TMUX_PLUGIN_MANAGER_PATH "$TMUX_PLUGIN_MANAGER_PATH"
+#       tmux set -g '@tpm_plugins' "$tpm_plugins"
+#
+#       if [ -d "$TMUX_PLUGIN_MANAGER_PATH/tpm" ]; then
+#         [ -z "$(tmux show -gqv '@tpm-install')" ] && tmux set -g '@tpm-install' 'I'
+#         [ -z "$(tmux show -gqv '@tpm-update')" ] && tmux set -g '@tpm-update' 'u'
+#         [ -z "$(tmux show -gqv '@tpm-clean')" ] && tmux set -g '@tpm-clean' 'M-u'
+#         "$TMUX_PLUGIN_MANAGER_PATH/tpm/tpm" || tmux display "One or more tpm plugin(s) failed"
+#       fi
+#
+#       if curl -Ikfs -o /dev/null --connect-timeout 2 --max-time 2 https://github.com 2>/dev/null || GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null git ls-remote -hq https://github.com/gpakosz/.tmux.git master > /dev/null; then
+#         if [ ! -d "$TMUX_PLUGIN_MANAGER_PATH/tpm" ]; then
+#           install_tpm=true
+#           tmux display 'Installing tpm and plugins...'
+#           git clone --depth 1 https://github.com/tmux-plugins/tpm "$TMUX_PLUGIN_MANAGER_PATH/tpm"
+#         elif { [ -z "$window_active" ] && _is_true "$tmux_conf_update_plugins_on_launch"; } || { [ -n "$window_active" ] && _is_true "$tmux_conf_update_plugins_on_reload"; }; then
+#           update_tpm=true
+#           tmux display 'Updating tpm and plugins...'
+#           (cd "$TMUX_PLUGIN_MANAGER_PATH/tpm" && git fetch -q -p && git checkout -q master && git reset -q --hard origin/master)
+#         fi
+#         if [ "$install_tpm" = "true" ] || [ "$update_tpm" = "true" ]; then
+#           perl -0777 -p -i -e 's/git clone(?!\s+--depth\s+1)/git clone --depth 1/g
+#                               ;s/(install_plugin(.(?!&))*)\n(\s+)done/\1&\n\3done\n\3wait/g' "$TMUX_PLUGIN_MANAGER_PATH/tpm/scripts/install_plugins.sh"
+#           perl -p -i -e 's/git submodule update --init --recursive(?!\s+--depth\s+1)/git submodule update --init --recursive --depth 1/g' "$TMUX_PLUGIN_MANAGER_PATH/tpm/scripts/update_plugin.sh"
+#           perl -p -i -e 's,\$tmux_file\s+>/dev/null\s+2>\&1,$& || { tmux display "Plugin \$(basename \${plugin_path}) failed" && false; },' "$TMUX_PLUGIN_MANAGER_PATH/tpm/scripts/source_plugins.sh"
+#         fi
+#         if [ "$update_tpm" = "true" ]; then
+#           {
+#             {
+#               printf 'List of discovered tpm plugins: %s\n' "$(printf '%s\n' "$tpm_plugins" | paste -s -d ' ' -)" | _timestamp
+#               printf '%s\n' "Invoking $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins" | _timestamp
+#               "$TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins" 2>&1 | _timestamp
+#               printf '%s\n' "Invoking $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/update_plugins all" | _timestamp
+#               "$TMUX_PLUGIN_MANAGER_PATH/tpm/bin/update_plugins" all 2>&1 | _timestamp
+#               printf '%s\n' "Invoking $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/clean_plugins all" | _timestamp
+#               "$TMUX_PLUGIN_MANAGER_PATH/tpm/bin/clean_plugins" all 2>&1 | _timestamp
+#               cut -c3- "$TMUX_CONF" | sh -s _apply_important
+#               printf 'Done.\n' | _timestamp
+#               printf '\n'
+#             } >> "$TMUX_PLUGIN_MANAGER_PATH/tpm_log.txt"
+#
+#             tmux display 'Done updating tpm and plugins...'
+#           } || tmux display 'Failed updating tpm and plugins...'
+#         elif [ "$install_tpm" = "true" ]; then
+#           {
+#             {
+#               printf 'List of discovered tpm plugins: %s\n' "$(printf '%s\n' "$tpm_plugins" | paste -s -d ' ' -)" | _timestamp
+#               printf '%s\n' "Invoking $TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins" | _timestamp
+#               "$TMUX_PLUGIN_MANAGER_PATH/tpm/bin/install_plugins" 2>&1 | _timestamp
+#               cut -c3- "$TMUX_CONF" | sh -s _apply_important
+#               printf 'Done.\n' | _timestamp
+#             } >> "$TMUX_PLUGIN_MANAGER_PATH/tpm_log.txt"
+#
+#             tmux display 'Done installing tpm and plugins...'
+#
+#             [ -z "$(tmux show -gqv '@tpm-install')" ] && tmux set -g '@tpm-install' 'I'
+#             [ -z "$(tmux show -gqv '@tpm-update')" ] && tmux set -g '@tpm-update' 'u'
+#             [ -z "$(tmux show -gqv '@tpm-clean')" ] && tmux set -g '@tpm-clean' 'M-u'
+#             "$TMUX_PLUGIN_MANAGER_PATH/tpm/tpm" || tmux display "One or more tpm plugin(s) failed"
+#           } || tmux display 'Failed installing tpm and plugins...'
+#         fi
+#       else
+#         tmux display "GitHub doesn't seem to be reachable, skipping installing and/or updating tpm and plugins..."
+#       fi
+#     else
+#       if [ "$(_tmux_version)" -ge 3200 ]; then
+#         tmux run -b "exec sh -c 'sleep \$((#{display-time} / 1000)) && \"$TMUX_PROGRAM\" display -N -d 3000 \"Cannot use tpm which assumes a globally installed tmux\"'"
+#       else
+#         tmux run -b "exec sh -c 'sleep \$((#{display-time} / 1000)) && \"$TMUX_PROGRAM\" set display-time 3000 \; display \"Cannot use tpm which assumes a globally installed tmux\" \; set -u display-time'"
+#       fi
+#     fi
+#
+#     tmux set -gu '@tpm-install' \; set -gu '@tpm-update' \; set -gu '@tpm-clean' \; set -gu '@plugin'
+#   fi
+# }
+#
+# _apply_plugins() {
+#   : "${tmux_conf_update_plugins_on_launch:=true}"
+#   : "${tmux_conf_update_plugins_on_reload:=true}"
+#   : "${tmux_conf_uninstall_plugins_on_reload:=false}"
+#
+#   if [ -z "$TMUX_PLUGIN_MANAGER_PATH" ]; then
+#     if [ "$(dirname "$TMUX_CONF")" = "$HOME" ]; then
+#       TMUX_PLUGIN_MANAGER_PATH="$HOME/.tmux/plugins"
+#     else
+#       TMUX_PLUGIN_MANAGER_PATH="$(dirname "$TMUX_CONF")/plugins"
+#     fi
+#   fi
+#   tmux run -b "cut -c3- '$TMUX_CONF' | sh -s __apply_plugins '$TMUX_PLUGIN_MANAGER_PATH' '$window_active' '$tmux_conf_update_plugins_on_launch' '$tmux_conf_update_plugins_on_reload' '$tmux_conf_uninstall_plugins_on_reload'"
+# }
+#
+# _apply_important() {
+#   cfg=$(mktemp) || return 1
+#   trap 'rm -f "$cfg"*' EXIT
+#
+#   if perl -n -e 'print if /^\s*(?:set|bind|unbind).+?#!important\s*$/' "$TMUX_CONF_LOCAL" 2>/dev/null > "$cfg.local"; then
+#     if ! tmux source-file "$cfg.local"; then
+#       if tmux source-file -v /dev/null 2> /dev/null; then
+#         verbose_flag='-v'
+#       fi
+#       while ! out=$(tmux source-file ${verbose_flag:+$verbose_flag} "$cfg.local"); do
+#         line=$(printf "%s" "$out" | tail -1 | cut -d':' -f2)
+#         before=$(wc -l < "$cfg.local")
+#         perl -n -i -e "if ($. != $line) { print }" "$cfg.local"
+#         after=$(wc -l < "$cfg.local")
+#         [ "$before" = "$after" ] && break
+#       done
+#     fi
+#   fi
+# }
+#
+# _apply_configuration() {
+#   # shellcheck disable=SC2046
+#   tmux setenv -gu tmux_conf_dummy $(env | awk -F= '/^tmux_conf_/ { printf "; setenv -gu %s", $1 }')
+#
+#   window_active="$(tmux display -p '#{window_active}' 2>/dev/null || true)"
+#   if [ -z "$window_active" ]; then
+#     if [ "$(_tmux_version)" -lt 2600 ]; then
+#       tmux run -b 'tmux set display-time 3000 \; display "This configuration requires tmux 2.6+" \; set -u display-time \; run "sleep 3" \; kill-server'
+#       return
+#     fi
+#     if [ "$(_tmux_version)" -ge 3200 ]; then
+#       for cmd in perl sed awk; do
+#         if ! command -v "$cmd" > /dev/null 2>&1; then
+#           tmux run -b "tmux display -N -d 3000 'This configuration requires $cmd' \; run 'sleep 3' \; kill-server"
+#           return
+#         fi
+#       done
+#     else
+#       for cmd in perl sed awk; do
+#         if ! command -v "$cmd" > /dev/null 2>&1; then
+#           tmux run -b "tmux set display-time 3000 \; display 'This configuration requires $cmd' \; set -u display-time \; run 'sleep 3' \; kill-server"
+#           return
+#         fi
+#       done
+#     fi
+#   fi
+#   _tmux_server_version=$(tmux display -p '#{version}' | perl -n -e '($l, $r) = $_ =~ /^[^0-9]*([0-9.]+)([a-z])?([-+].*)?$/; print $l * 1000 + ($r eq "" ? 0 : ord($r) - 96)')
+#   if [ "$_tmux_server_version" != "$(_tmux_version)" ]; then
+#     if [ "$(_tmux_version)" -ge 3200 ]; then
+#       tmux run -b "tmux display -N -d 3000 '/!\\ Tmux client and server mismatch, please restart the server'"
+#     else
+#       tmux run -b "tmux set display-time 3000 \; display '/!\\ Tmux client and server mismatch, please restart the server' \; set -u display-time"
+#     fi
+#   fi
+#
+#   case "$(_uname_s)" in
+#     *CYGWIN*|*MSYS*)
+#       # prevent Cygwin and MSYS2 from cd-ing into home directory when evaluating /etc/profile
+#       tmux setenv -g CHERE_INVOKING 1
+#       ;;
+#   esac
+#
+#   _apply_tmux_256color
+#   _apply_24b&
+#   _apply_theme&
+#   _apply_bindings&
+#   wait || true
+#
+#   _apply_plugins
+#   _apply_important
+# }
+#
+# _urlview() {
+#   pane_id="$1"; shift
+#   tmux capture-pane -J -S - -E - -b "urlview-$pane_id" -t "$pane_id"
+#   if [ "$(_tmux_version)" -ge 3200 ]; then
+#     tmux display-popup -E -w 80% -h 80% "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'urlview-$pane_id' | urlview; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'urlview-$pane_id'"
+#   else
+#     tmux split-window "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'urlview-$pane_id' | urlview || true; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'urlview-$pane_id'"
+#   fi
+# }
+#
+# _urlscan() {
+#   pane_id="$1"; shift
+#   tmux capture-pane -J -S - -E - -b "urlscan-$pane_id" -t "$pane_id"
+#   if [ "$(_tmux_version)" -ge 3200 ]; then
+#     tmux display-popup -E -w 80% -h 80% "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'urlscan-$pane_id' | urlscan $*; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'urlscan-$pane_id'"
+#   else
+#     tmux split-window "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'urlscan-$pane_id' | urlscan $* || true; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'urlscan-$pane_id'"
+#   fi
+# }
+#
+# _fpp() {
+#   tmux capture-pane -J -S - -E - -b "fpp-$1" -t "$1"
+#   if [ "$(_tmux_version)" -ge 3200 ]; then
+#     tmux display-popup -E -d "$2" -w 80% -h 80% "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'fpp-$1' | fpp; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'fpp-$1'"
+#   else
+#     tmux split-window -c "$2" "'$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} show-buffer -b 'fpp-$1' | fpp || true; '$TMUX_PROGRAM' ${TMUX_SOCKET:+-S \"$TMUX_SOCKET\"} delete-buffer -b 'fpp-$1'"
+#   fi
+# }
+#
+# "$@"
+
+
+
+================================================
+FILE: .tmux.conf.local
+================================================
+# : << 'EOF'
+# Oh my tmux!
+# 💛🩷💙🖤❤️🤍
+# https://github.com/gpakosz/.tmux
+# (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
+#         without any warranty.
+#         Copyright 2012— Gregory Pakosz (@gpakosz).
+
+
+# -- bindings ------------------------------------------------------------------
+
+# preserve tmux stock bindings,
+# while adding bindings that don't conflict with these stock bindings
+# /!\ this disables some of Oh my tmux! bindings described in README.md
+#   - true
+#   - false (default)
+tmux_conf_preserve_stock_bindings=false
+
+
+# -- session creation ----------------------------------------------------------
+
+# prompt for session name when creating a new session, possible values are:
+#   - true
+#   - false (default)
+#   - disabled (do not modify new-session bindings)
+tmux_conf_new_session_prompt=false
+
+# new session retains current path, possible values are:
+#   - true
+#   - false (default)
+#   - disabled (do not modify new-session bindings)
+tmux_conf_new_session_retain_current_path=false
+
+
+# -- windows & pane creation ---------------------------------------------------
+
+# new window retains current path, possible values are:
+#   - true
+#   - false (default)
+#   - disabled (do not modify new-window bindings)
+tmux_conf_new_window_retain_current_path=false
+
+# new window tries to reconnect ssh sessions, possible values are:
+#   - true
+#   - false (default)
+#   - disabled (do not modify new-window bindings)
+tmux_conf_new_window_reconnect_ssh=false
+
+# new pane retains current path, possible values are:
+#   - true (default)
+#   - false
+#   - disabled (do not modify split-window bindings)
+tmux_conf_new_pane_retain_current_path=true
+
+# new pane tries to reconnect ssh sessions, possible values are:
+#   - true
+#   - false (default)
+#   - disabled (do not modify split-window bindings)
+tmux_conf_new_pane_reconnect_ssh=false
+
+
+# -- display -------------------------------------------------------------------
+
+# RGB 24-bit colour support, possible values are:
+#   - true
+#   - false
+#   - auto (default)
+#
+# automatic detection relies on the COLORTERM environment variable being defined
+# to 'truecolor' or '24bit' or '$ tput colors' answering '16777216'
+# see https://github.com/termstandard/colors
+tmux_conf_24b_colour=auto
+
+
+# -- theming -------------------------------------------------------------------
+
+# enable or disable theming:
+#   - enabled (default)
+#   - disabled
+# when disabled, all tmux_conf_theme_xxx variables are ignored except:
+#   - tmux_conf_theme_pairing
+#   - tmux_conf_theme_prefix
+#   - tmux_conf_theme_mouse
+#   - tmux_conf_theme_root
+#   - tmux_conf_theme_synchronized
+tmux_conf_theme=enabled
+
+# default theme
+tmux_conf_theme_colour_1="#080808"    # dark gray
+tmux_conf_theme_colour_2="#303030"    # gray
+tmux_conf_theme_colour_3="#8a8a8a"    # light gray
+tmux_conf_theme_colour_4="#00afff"    # light blue
+tmux_conf_theme_colour_5="#ffff00"    # yellow
+tmux_conf_theme_colour_6="#080808"    # dark gray
+tmux_conf_theme_colour_7="#e4e4e4"    # white
+tmux_conf_theme_colour_8="#080808"    # dark gray
+tmux_conf_theme_colour_9="#ffff00"    # yellow
+tmux_conf_theme_colour_10="#ff00af"   # pink
+tmux_conf_theme_colour_11="#5fff00"   # green
+tmux_conf_theme_colour_12="#8a8a8a"   # light gray
+tmux_conf_theme_colour_13="#e4e4e4"   # white
+tmux_conf_theme_colour_14="#080808"   # dark gray
+tmux_conf_theme_colour_15="#080808"   # dark gray
+tmux_conf_theme_colour_16="#d70000"   # red
+tmux_conf_theme_colour_17="#e4e4e4"   # white
+
+# default theme (ansi)
+#tmux_conf_theme_colour_1="colour0"
+#tmux_conf_theme_colour_2="colour8"
+#tmux_conf_theme_colour_3="colour8"
+#tmux_conf_theme_colour_4="colour14"
+#tmux_conf_theme_colour_5="colour11"
+#tmux_conf_theme_colour_6="colour0"
+#tmux_conf_theme_colour_7="colour15"
+#tmux_conf_theme_colour_8="colour0"
+#tmux_conf_theme_colour_9="colour11"
+#tmux_conf_theme_colour_10="colour13"
+#tmux_conf_theme_colour_11="colour10"
+#tmux_conf_theme_colour_12="colour8"
+#tmux_conf_theme_colour_13="colour15"
+#tmux_conf_theme_colour_14="colour0"
+#tmux_conf_theme_colour_15="colour0"
+#tmux_conf_theme_colour_16="colour1"
+#tmux_conf_theme_colour_17="colour15"
+
+# window style
+tmux_conf_theme_window_fg="default"
+tmux_conf_theme_window_bg="default"
+
+# highlight focused pane, possible values are:
+#   - true
+#   - false (default)
+tmux_conf_theme_highlight_focused_pane=false
+
+# focused pane colours:
+tmux_conf_theme_focused_pane_fg="default"
+tmux_conf_theme_focused_pane_bg="$tmux_conf_theme_colour_2"
+
+# pane border style, possible values are:
+#   - thin (default)
+#   - fat
+tmux_conf_theme_pane_border_style=thin
+
+# pane borders colours:
+tmux_conf_theme_pane_border="$tmux_conf_theme_colour_2"
+tmux_conf_theme_pane_active_border="$tmux_conf_theme_colour_4"
+%if #{>=:#{version},3.2}
+tmux_conf_theme_pane_active_border="#{?pane_in_mode,$tmux_conf_theme_colour_9,#{?synchronize-panes,$tmux_conf_theme_colour_16,$tmux_conf_theme_colour_4}}"
+%endif
+
+# pane indicator colours (when you hit <prefix> q)
+tmux_conf_theme_pane_indicator="$tmux_conf_theme_colour_4"
+tmux_conf_theme_pane_active_indicator="$tmux_conf_theme_colour_4"
+
+# status line style
+tmux_conf_theme_message_fg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_message_bg="$tmux_conf_theme_colour_5"
+tmux_conf_theme_message_attr="bold"
+
+# status line command style (<prefix> : Escape)
+tmux_conf_theme_message_command_fg="$tmux_conf_theme_colour_5"
+tmux_conf_theme_message_command_bg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_message_command_attr="bold"
+
+# window modes style
+tmux_conf_theme_mode_fg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_mode_bg="$tmux_conf_theme_colour_5"
+tmux_conf_theme_mode_attr="bold"
+
+# status line style
+tmux_conf_theme_status_fg="$tmux_conf_theme_colour_3"
+tmux_conf_theme_status_bg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_status_attr="none"
+
+# terminal title
+#   - built-in variables are:
+#     - #{circled_window_index}
+#     - #{circled_session_name}
+#     - #{hostname}
+#     - #{hostname_ssh}
+#     - #{hostname_full}
+#     - #{hostname_full_ssh}
+#     - #{pretty_pane_current_path}
+#     - #{username}
+#     - #{username_ssh}
+tmux_conf_theme_terminal_title="#h ❐ #S ● #I #W"
+
+# window status style
+#   - built-in variables are:
+#     - #{circled_window_index}
+#     - #{circled_session_name}
+#     - #{hostname}
+#     - #{hostname_ssh}
+#     - #{hostname_full}
+#     - #{hostname_full_ssh}
+#     - #{pretty_pane_current_path}
+#     - #{username}
+#     - #{username_ssh}
+tmux_conf_theme_window_status_fg="$tmux_conf_theme_colour_3"
+tmux_conf_theme_window_status_bg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_window_status_attr="none"
+tmux_conf_theme_window_status_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
+#tmux_conf_theme_window_status_format="#{circled_window_index} #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
+#tmux_conf_theme_window_status_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}"
+
+# window current status style
+#   - built-in variables are:
+#     - #{circled_window_index}
+#     - #{circled_session_name}
+#     - #{hostname}
+#     - #{hostname_ssh}
+#     - #{hostname_full}
+#     - #{hostname_full_ssh}
+#     - #{pretty_pane_current_path}
+#     - #{username}
+#     - #{username_ssh}
+tmux_conf_theme_window_status_current_fg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_window_status_current_bg="$tmux_conf_theme_colour_4"
+tmux_conf_theme_window_status_current_attr="bold"
+tmux_conf_theme_window_status_current_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
+#tmux_conf_theme_window_status_current_format="#{circled_window_index} #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
+#tmux_conf_theme_window_status_current_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}"
+
+# window activity status style
+tmux_conf_theme_window_status_activity_fg="default"
+tmux_conf_theme_window_status_activity_bg="default"
+tmux_conf_theme_window_status_activity_attr="underscore"
+
+# window bell status style
+tmux_conf_theme_window_status_bell_fg="$tmux_conf_theme_colour_5"
+tmux_conf_theme_window_status_bell_bg="default"
+tmux_conf_theme_window_status_bell_attr="blink,bold"
+
+# window last status style
+tmux_conf_theme_window_status_last_fg="$tmux_conf_theme_colour_4"
+tmux_conf_theme_window_status_last_bg="$tmux_conf_theme_colour_2"
+tmux_conf_theme_window_status_last_attr="none"
+
+# status left/right sections separators
+tmux_conf_theme_left_separator_main=""
+tmux_conf_theme_left_separator_sub="|"
+tmux_conf_theme_right_separator_main=""
+tmux_conf_theme_right_separator_sub="|"
+#tmux_conf_theme_left_separator_main='\uE0B0'  # /!\ you don't need to install Powerline
+#tmux_conf_theme_left_separator_sub='\uE0B1'   #   you only need fonts patched with
+#tmux_conf_theme_right_separator_main='\uE0B2' #   Powerline symbols or the standalone
+#tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see README.md
+
+# status left/right content:
+#   - separate main sections with "|"
+#   - separate subsections with ","
+#   - built-in variables are:
+#     - #{battery_bar}
+#     - #{battery_hbar}
+#     - #{battery_percentage}
+#     - #{battery_status}
+#     - #{battery_vbar}
+#     - #{circled_session_name}
+#     - #{hostname_ssh}
+#     - #{hostname}
+#     - #{hostname_full}
+#     - #{hostname_full_ssh}
+#     - #{loadavg}
+#     - #{mouse}
+#     - #{pairing}
+#     - #{prefix}
+#     - #{pretty_pane_current_path}
+#     - #{root}
+#     - #{synchronized}
+#     - #{uptime_y}
+#     - #{uptime_d} (modulo 365 when #{uptime_y} is used)
+#     - #{uptime_h}
+#     - #{uptime_m}
+#     - #{uptime_s}
+#     - #{username}
+#     - #{username_ssh}
+tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
+#tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} | #{pretty_pane_current_path} "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
+
+# status left style
+tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
+tmux_conf_theme_status_left_bg="$tmux_conf_theme_colour_9,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11"
+tmux_conf_theme_status_left_attr="bold,none,none"
+
+# status right style
+tmux_conf_theme_status_right_fg="$tmux_conf_theme_colour_12,$tmux_conf_theme_colour_13,$tmux_conf_theme_colour_14"
+tmux_conf_theme_status_right_bg="$tmux_conf_theme_colour_15,$tmux_conf_theme_colour_16,$tmux_conf_theme_colour_17"
+tmux_conf_theme_status_right_attr="none,none,bold"
+
+# pairing indicator
+tmux_conf_theme_pairing="⚇"                 # U+2687
+tmux_conf_theme_pairing_fg="none"
+tmux_conf_theme_pairing_bg="none"
+tmux_conf_theme_pairing_attr="none"
+
+# prefix indicator
+tmux_conf_theme_prefix="⌨"                  # U+2328
+tmux_conf_theme_prefix_fg="none"
+tmux_conf_theme_prefix_bg="none"
+tmux_conf_theme_prefix_attr="none"
+
+# mouse indicator
+tmux_conf_theme_mouse="↗"                   # U+2197
+tmux_conf_theme_mouse_fg="none"
+tmux_conf_theme_mouse_bg="none"
+tmux_conf_theme_mouse_attr="none"
+
+# root indicator
+tmux_conf_theme_root="!"
+tmux_conf_theme_root_fg="none"
+tmux_conf_theme_root_bg="none"
+tmux_conf_theme_root_attr="bold,blink"
+
+# synchronized indicator
+tmux_conf_theme_synchronized="⚏"            # U+268F
+tmux_conf_theme_synchronized_fg="none"
+tmux_conf_theme_synchronized_bg="none"
+tmux_conf_theme_synchronized_attr="none"
+
+# battery bar symbols
+tmux_conf_battery_bar_symbol_full="◼"
+tmux_conf_battery_bar_symbol_empty="◻"
+#tmux_conf_battery_bar_symbol_full="♥"
+#tmux_conf_battery_bar_symbol_empty="·"
+
+# battery bar length (in number of symbols), possible values are:
+#   - auto
+#   - a number, e.g. 5
+tmux_conf_battery_bar_length="auto"
+
+# battery bar palette, possible values are:
+#   - gradient (default)
+#   - heat
+#   - "colour_full_fg,colour_empty_fg,colour_bg"
+#   - gradient(colour_fg_1,colour_fg_2,...,colour_fg_n)
+tmux_conf_battery_bar_palette="gradient"
+#tmux_conf_battery_bar_palette="#d70000,#e4e4e4,#000000"   # red, white, black
+#tmux_conf_battery_bar_palette="gradient(#00afff,#47a2ff,#7c91ff,#ac7afb,#d65be2,#e163df,#eb6cdd,#f475db,#ec9ff1,#eac3fe,#efe2ff,#ffffff)"
+
+# battery hbar palette, possible values are:
+#   - gradient (default)
+#   - heat
+#   - "colour_low,colour_half,colour_full"
+#   - gradient(colour_fg_1,colour_fg_2,...,colour_fg_n)
+tmux_conf_battery_hbar_palette="gradient"
+#tmux_conf_battery_hbar_palette="#d70000,#ff5f00,#5fff00"  # red, orange, green
+#tmux_conf_battery_hbar_palette="gradient(#00afff,#47a2ff,#7c91ff,#ac7afb,#d65be2,#e163df,#eb6cdd,#f475db,#ec9ff1,#eac3fe,#efe2ff,#ffffff)"
+
+# battery hbar symbols
+tmux_conf_battery_hbar_symbols="▏ ▎ ▍ ▌ ▋ ▊ ▉ █"
+#tmux_conf_battery_hbar_symbols="    "           # (from Nerd Fonts)
+
+# battery vbar palette, possible values are:
+#   - gradient (default)
+#   - heat
+#   - "colour_low,colour_half,colour_full"
+#   - gradient(colour_fg_1,colour_fg_2,...,colour_fg_n)
+tmux_conf_battery_vbar_palette="gradient"
+#tmux_conf_battery_vbar_palette="#d70000,#ff5f00,#5fff00"  # red, orange, green
+#tmux_conf_battery_vbar_palette="gradient(#00afff,#47a2ff,#7c91ff,#ac7afb,#d65be2,#e163df,#eb6cdd,#f475db,#ec9ff1,#eac3fe,#efe2ff,#ffffff)"
+
+# battery vbar symbols
+tmux_conf_battery_vbar_symbols="▁ ▂ ▃ ▄ ▅ ▆ ▇ █"
+#tmux_conf_battery_vbar_symbols="󰁺 󰁻 󰁼 󰁽 󰁾 󰁿 󰂀 󰂁 󰂂 󰁹" # (from Nerd Fonts)
+
+# battery vbar symbols, when battery is charging (optional)
+#tmux_conf_battery_vbar_symbols_charging="󰢜 󰂆 󰂇 󰂈 󰢝 󰂉 󰢞 󰂊 󰂋 󰂅" # (from Nerd Fonts)
+
+# symbols used to indicate whether battery is charging or discharging
+tmux_conf_battery_status_charging="↑"       # U+2191
+tmux_conf_battery_status_discharging="↓"    # U+2193
+#tmux_conf_battery_status_charging="🔌"     # U+1F50C
+#tmux_conf_battery_status_discharging="🔋"  # U+1F50B
+
+# clock style (when you hit <prefix> t)
+# you may want to use %I:%M %p in place of %R in tmux_conf_theme_status_right
+tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_4"
+tmux_conf_theme_clock_style="24"
+
+
+# -- clipboard -----------------------------------------------------------------
+
+# in copy mode, copying selection also copies to the OS clipboard
+#   - true
+#   - false (default)
+#   - disabled
+# on Linux, this requires xsel, xclip or wl-copy
+tmux_conf_copy_to_os_clipboard=false
+
+
+# -- urlscan -------------------------------------------------------------------
+
+# options passed to urlscan
+tmux_conf_urlscan_options="--compact --dedupe"
+
+
+# -- user customizations -------------------------------------------------------
+
+# this is the place to override or undo settings
+
+# increase history size
+#set -g history-limit 10000
+
+# start with mouse mode enabled
+#set -g mouse on
+
+# force Vi mode
+#   really you should export VISUAL or EDITOR environment variable, see manual
+#set -g status-keys vi
+#set -g mode-keys vi
+
+# replace C-b by C-a instead of using both prefixes
+# set -gu prefix2
+# unbind C-a
+# unbind C-b
+# set -g prefix C-a
+# bind C-a send-prefix
+
+# if you don't want Oh my tmux! to alter a binding or a setting, use #!important
+# bind c new-window -c '#{pane_current_path}' #!important
+
+# move status line to top
+#set -g status-position top
+
+
+# -- tpm -----------------------------------------------------------------------
+
+# while I don't use tpm myself, many people requested official support so here
+# is a seamless integration that automatically installs plugins in parallel
+
+# whenever a plugin introduces a variable to be used in 'status-left' or
+# 'status-right', you can use it in 'tmux_conf_theme_status_left' and
+# 'tmux_conf_theme_status_right' variables.
+
+# by default, launching tmux will update tpm and all plugins
+#   - true (default)
+#   - false
+tmux_conf_update_plugins_on_launch=true
+
+# by default, reloading the configuration will update tpm and all plugins
+#   - true (default)
+#   - false
+tmux_conf_update_plugins_on_reload=true
+
+# by default, reloading the configuration will uninstall tpm and plugins when no
+# plugins are enabled
+#   - true
+#   - false (default)
+tmux_conf_uninstall_plugins_on_reload=false
+
+# /!\ the tpm bindings differ slightly from upstream:
+#   - installing plugins: <prefix> I
+#   - uninstalling plugins: <prefix> M-u
+#   - updating plugins: <prefix> u
+
+# /!\ do not add set -g @plugin 'tmux-plugins/tpm'
+# /!\ do not add run '~/.tmux/plugins/tpm/tpm'
+
+# /!\ the 'set -g @tpm_plugins' syntax is not supported
+# to enable a plugin, use the 'set -g @plugin' syntax:
+# visit https://github.com/tmux-plugins for available plugins
+#set -g @plugin 'tmux-plugins/tmux-copycat'
+#set -g @plugin 'tmux-plugins/tmux-cpu'
+#set -g @plugin 'tmux-plugins/tmux-resurrect'
+#set -g @plugin 'tmux-plugins/tmux-continuum'
+#set -g @continuum-restore 'on'
+
+
+# -- custom variables ----------------------------------------------------------
+
+# to define a custom #{foo} variable, define a POSIX shell function between the
+# '# EOF' and the '# "$@"' lines. Please note that the opening brace { character
+# must be on the same line as the function name otherwise the parse won't detect
+# it.
+#
+# then, use #{foo} in e.g. the 'tmux_conf_theme_status_left' or the
+# 'tmux_conf_theme_status_right' variables.
+
+# ------------------------------------------------------------------------------
+
+# # /!\ do not remove the following line
+# EOF
+#
+# # /!\ do not "uncomment" the functions: the leading "# " characters are needed
+#
+# # usage: #{weather}
+# weather() {                                         # see https://github.com/chubin/wttr.in#one-line-output
+#   curl -f -s -m 2 'wttr.in?format=3' || printf '\n' # /!\ make sure curl is installed
+#   sleep 900                                         # sleep for 15 minutes, throttle network requests whatever the value of status-interval
+# }
+#
+# # usage: #{online}
+# online() {
+#   ping -c 1 1.1.1.1 >/dev/null 2>&1 && printf '✔' || printf '✘'
+# }
+#
+# # usage: #{wan_ip_v4}
+# wan_ip_v4() {
+#   curl -f -s -m 2 -4 ifconfig.me
+#   sleep 300                                         # sleep for 5 minutes, throttle network requests whatever the value of status-interval
+# }
+#
+# # usage: #{wan_ip_v6}
+# wan_ip_v6() {
+#   curl -f -s -m 2 -6 ifconfig.me
+#   sleep 300                                         # sleep for 5 minutes, throttle network requests whatever the value of status-interval
+# }
+#
+# # usage: #{github_stars}, #{github_stars tmux/tmux}, ...
+# github_stars() {
+#   repository=${1##*https://github.com/}
+#   repository=${repository%% *}
+#   repository=${repository%%.git}
+#   url="https://api.github.com/repos/${repository:-gpakosz/.tmux}"
+#   curl -s "$url" | perl -MJSON::PP=decode_json -CO -0777 -E '$response = decode_json(readline *STDIN); say ($response->{stargazers_count})'
+#   sleep 300                                         # sleep for 5 minutes, throttle network requests whatever the value of status-interval
+# }
+#
+# "$@"
+# # /!\ do not remove the previous line
+# #     do not write below this line
+
+
+
+================================================
+FILE: .github/funding.yml
+================================================
+github: gpakosz
+
+
+
+================================================
+FILE: .logo/LICENSE
+================================================
+Oh my tmux! logo copyright (c) 2024, Gregory Pakosz <gregory.pakosz@gmail.com>
+
+Original tmux logo copyright (c) 2015, Jason Long <jason@jasonlong.me>
+See https://github.com/tmux/tmux/tree/master/logo
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+

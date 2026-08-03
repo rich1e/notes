@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略",
-      "path": "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md"
-    },
-    {
       "basename": "index",
       "path": "index.md"
+    },
+    {
+      "basename": "tmux-prefix-double-binding",
+      "path": "concepts/tmux-prefix-double-binding.md"
+    },
+    {
+      "basename": "tmux-key-notation-btab",
+      "path": "concepts/tmux-key-notation-btab.md"
+    },
+    {
+      "basename": "tmux-gpakos-config",
+      "path": "skills/tmux-gpakos-config.md"
+    },
+    {
+      "basename": "开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略",
+      "path": "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md"
     },
     {
       "basename": "agent-operating-system",
@@ -187,14 +199,6 @@
     {
       "basename": "chezmoi 配置文件管理与密钥安全实践",
       "path": "Clippings/chezmoi 配置文件管理与密钥安全实践.md"
-    },
-    {
-      "basename": "一条命令复刻我的 macOS 开发环境：chezmoi + nix-darwin 实战 1",
-      "path": "Clippings/一条命令复刻我的 macOS 开发环境：chezmoi + nix-darwin 实战 1.md"
-    },
-    {
-      "basename": "Chezmoi 部署与拉取教程",
-      "path": "Clippings/Chezmoi 部署与拉取教程.md"
     }
   ],
   "omittedPaths": [],

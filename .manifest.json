@@ -1019,6 +1019,25 @@
         "hot.md"
       ],
       "last_ingested": "2026-08-03T04:05:01Z"
+    },
+    "https://github.com/gpakosz/.tmux": {
+      "ingested_at": "2026-08-03T16:10:00Z",
+      "size_bytes": 151884,
+      "content_hash": "sha256:42f733fba2bebf85b9a98deba7d1d27275ecae3bb9c4bf0143688d82ccce61db",
+      "source_type": "github_repo",
+      "project": null,
+      "pages_created": [
+        "entities/gpakosz-tmux",
+        "concepts/tmux-prefix-double-binding",
+        "concepts/tmux-local-override-pattern",
+        "concepts/tmux-key-notation-btab",
+        "concepts/tmux-pane-maximize-stateful",
+        "concepts/tmux-config-importance-override",
+        "concepts/tmux-installer-safety-pattern",
+        "skills/tmux-gpakos-config"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-08-03T16:10:00Z"
     }
   },
   "projects": {
@@ -1081,8 +1100,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 71,
-    "total_pages": 177,
+    "total_sources_ingested": 65,
+    "total_pages": 185,
     "total_projects": 1,
     "last_full_rebuild": null
   }

@@ -15,7 +15,7 @@ provenance:
 base_confidence: 0.70
 lifecycle: draft
 lifecycle_changed: "2026-07-31"
-tier: supporting
+tier: core
 ---
 
 # Agent Operating System (AOS)

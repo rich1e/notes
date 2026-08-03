@@ -4,12 +4,17 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-03T13:55:00Z*
+*This index is automatically maintained. Last updated: 2026-08-03T16:10:00Z*
 
 ## Concepts
 
 - [[concepts/serverless-image-hosting]] — 无服务器图床范式：边缘 serverless 函数 + 外包对象存储（R2/S3/Telegram）+ KV/D1 元数据，成本趋零、免运维、可移植
-- [[concepts/telegram-as-blob-storage]] — 把 Telegram/Discord 当免费对象存储的「白嫖」模式：上传即发消息、读取即 getFile，受制于 20MB/速率/政策
+- [[concepts/tmux-config-importance-override]] — `#!important` 后缀标记让 perl sed 阶段保留用户原文 bind/set，绕过主 conf 后写覆盖
+- [[concepts/tmux-installer-safety-pattern]] — install.sh 的 5 道安全闸：拒绝 root、bash 必填、tmux 必装、PERMISSIVE+DRY_RUN、anti-piping TTY 复核
+- [[concepts/tmux-key-notation-btab]] — `B<Tab>` = `<prefix> Tab`、`B<C-c>` = `<prefix> C-c`：`B` 是 prefix 占位符
+- [[concepts/tmux-pane-maximize-stateful]] — `<prefix> +` 比 `resize-pane -Z` 强：maximize 到专用 window 后仍可 split，跨 window 保留状态
+- [[concepts/tmux-prefix-double-binding]] — `C-b`（默认）+ `C-a`（GNU Screen 兼容）双 prefix 共存，`send-prefix -2` 转发
+- [[concepts/tmux-local-override-pattern]] — 主 conf 不可改、`.local` 走 `tmux_conf_*` 变量覆写、`#!important` 解决冲突
 - [[concepts/ptp-ieee1588]] — IEEE 1588 精确时间协议，四时间戳法实现纳秒级分布式时钟同步
 - [[concepts/ptp-bmca]] — BMCA 最佳主时钟选举算法，基于 clockClass/Accuracy/priority 分布式选举
 - [[concepts/ptp-clock-types]] — PTP 四种时钟角色：GM 提供时间源，BC 转发，TC 补偿驻留延迟，OC 终端
@@ -101,6 +106,7 @@ title: Wiki Index
 - [[entities/chezmoi]] — chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制，三态模型 + 模板 + 加密
 - [[entities/sebastienrousseau-dotfiles]] — Trusted Shell Platform：chezmoi + dot CLI(53条) + 1250+ 别名的完整 shell 分发版
 - [[entities/google-stitch]] — Google Labs AI 设计工具（Gemini 2.5 Pro 驱动），输出 DESIGN.md 设计系统 + 结构化 HTML/CSS，可通过 MCP 与 Claude Code 协作
+- [[entities/gpakosz-tmux]] — gpakosz 自 2012 年维护的 tmux 配置（Oh my tmux!）：Powerline 主题、双 prefix、`<prefix> +` 跨 window maximize、`.local` 覆写层、WTFPLv2+MIT 双协议
 - [[entities/claude-code]] — Anthropic 终端式 AI 编码 agent，承担逻辑与组件架构，通过 MCP 接外部服务、通过提示缓存控制 token
 - [[entities/google-labs-code-design]] — Google Labs 官方 DESIGN.md 规范仓库 + @google/design.md CLI（26.5K stars、Apache-2.0）
 - [[entities/awesome-design-md]] — VoltAgent 团队维护的 74 个真实站点 DESIGN.md 精选集（105K stars）
@@ -127,6 +133,7 @@ title: Wiki Index
 - [[skills/ios-emulator-setup]] — iOS 上的 3DS（ManicEMU）与 Switch（MeloNX）模拟器安装与 JIT 配置
 - [[skills/hackintosh-mini-build]] — 5000 元黑苹果小机箱（对标 Mac Studio），程序员装机指南
 - [[skills/tmux]] — Tmux 快捷键速查、推荐配置、关闭会话的 4 种替代方式（kill-server / kill-session -a / :kill-session / exit 级联）
+- [[skills/tmux-gpakos-config]] — gpakosz/.tmux 实战：安装（自动/手动/XDG）、热重载、`.local` 定制、Powerline 字体、TMUX_CONF_LOCAL env、卸载
 - [[skills/terminal-music]] — macOS 终端本地音乐播放（afplay + shell 函数）
 - [[skills/ique-dsi-camera]] — iQue DSi趣照 11种趣味相机、相册、幻灯片、照片管理完整操作
 - [[skills/ique-dsi-sound]] — iQue DSi趣音 麦克风录音、声音变换、SD卡 AAC 音乐播放
