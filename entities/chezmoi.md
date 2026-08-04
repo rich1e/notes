@@ -82,6 +82,7 @@ lifecycle_changed: 2026-07-25
 - [[references/chezmoi-templating-guide]]
 - [[references/chezmoi-source-state-attributes]]
 - [[references/chezmoi-workflow-discussion]]
+- [[references/chezmoi-patterns-recipes]]
 - [[synthesis/Research: chezmoi]]
 - [[skills/chezmoi-bitwarden-secrets]]
 - [[references/chezmoi-nix-darwin-integration]]

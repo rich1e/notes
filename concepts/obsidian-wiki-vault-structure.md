@@ -22,9 +22,9 @@ provenance:
   ambiguous: 0.01
 relationships:
   - target: "[[entities/obsidian-wiki-framework]]"
-    type: documented_by
+    type: related_to
   - target: "[[concepts/wiki-framework-self-reference]]"
-    type: example_of
+    type: related_to
 ---
 
 # obsidian-wiki vault 标准结构

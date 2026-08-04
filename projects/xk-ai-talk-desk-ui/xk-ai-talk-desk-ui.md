@@ -47,8 +47,8 @@ AI 外呼热转坐席工作台前端。核心场景：AI 智能客服与客户�
 
 ## 核心模块
 
-- **[[xk-ai-talk-desk-ui/concepts/call-center-sdk-integration|CC SDK 集成]]** — `useSoftbar` Hook 封装信科 LaihuAPI，管理所有通话事件与状态机
-- **[[xk-ai-talk-desk-ui/concepts/agent-state-machine|坐席状态机]]** — Offline → Online ⇄ Rest，通话时自动切 Busy
+- **[[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration|CC SDK 集成]]** — `useSoftbar` Hook 封装信科 LaihuAPI，管理所有通话事件与状态机
+- **[[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine|坐席状态机]]** — Offline → Online ⇄ Rest，通话时自动切 Busy
 - **PhoneBar** — 电话条，所有通话操作的唯一入口（签入/签出、外呼、接听、挂断、转接、会议）
 - **CallSessionModal** — 通话弹窗，展示 AI 对话记录 + 坐席标注
 - **Dashboard** — 今日数据概览（接听数/拨打数/接起率等）
@@ -80,9 +80,9 @@ AI 外呼热转坐席工作台前端。核心场景：AI 智能客服与客户�
 
 ## 相关页面
 
-- [[xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
-- [[xk-ai-talk-desk-ui/concepts/agent-state-machine]]
-- [[xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
+- [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
+- [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]]
+- [[projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
 
 ## Related
 

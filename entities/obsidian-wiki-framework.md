@@ -25,9 +25,9 @@ relationships:
   - target: "[[entities/Ar9av]]"
     type: derived_from
   - target: "[[concepts/obsidian-wiki-vault-structure]]"
-    type: documented_by
+    type: related_to
   - target: "[[concepts/wiki-framework-self-reference]]"
-    type: example_of
+    type: related_to
 ---
 
 # obsidian-wiki 框架

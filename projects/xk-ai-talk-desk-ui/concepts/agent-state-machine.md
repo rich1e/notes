@@ -82,8 +82,8 @@ IDLE → DIALING → RINGING_OUT → CONNECTED → HANGUP → AFTER_CALL
 
 ## 相关页面
 
-- [[xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
-- [[xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
+- [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]]
+- [[projects/xk-ai-talk-desk-ui/skills/phonebar-call-flow]]
 
 ## Related
 
