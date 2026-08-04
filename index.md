@@ -9,6 +9,7 @@ title: Wiki Index
 ## Concepts
 
 - [[concepts/serverless-image-hosting]] — 无服务器图床范式：边缘 serverless 函数 + 外包对象存储（R2/S3/Telegram）+ KV/D1 元数据，成本趋零、免运维、可移植
+- [[concepts/telegram-as-blob-storage]] — 把 Telegram 当免费对象存储：上传即发消息、读取即 getFile，受 20MB/速率/政策限制的「脆弱白嫖」范式
 - [[concepts/tmux-config-importance-override]] — `#!important` 后缀标记让 perl sed 阶段保留用户原文 bind/set，绕过主 conf 后写覆盖
 - [[concepts/tmux-installer-safety-pattern]] — install.sh 的 5 道安全闸：拒绝 root、bash 必填、tmux 必装、PERMISSIVE+DRY_RUN、anti-piping TTY 复核
 - [[concepts/tmux-key-notation-btab]] — `B<Tab>` = `<prefix> Tab`、`B<C-c>` = `<prefix> C-c`：`B` 是 prefix 占位符
@@ -261,6 +262,10 @@ title: Wiki Index
 - [[synthesis/Research: Fabric AI Framework]] — Fabric AI 框架研究综合：Patterns 设计哲学、290+ Pattern 分类、多提供商架构、REST API
 - [[synthesis/consolidation-2026-07-23]] — 2026-07-23 自动合并报告（wiki-lint --consolidate）：21 个破损链接修复、6 个孤儿救援、4 个 Fabric lifecycle 修复、8 个 tag 规范化
 - [[synthesis/consolidation-2026-08-04]] — 2026-08-04 自动合并报告（wiki-lint --consolidate）：13 处 xk-ai-talk-desk-ui wikilink 双前缀断链修复、4 个孤儿救援、6 处 bad_type 关系（example_of/documented_by → related_to）
+- [[synthesis/consolidation-2026-07-26]] — 2026-07-26 自动合并报告（wiki-lint --consolidate）：3 真破损修复 + 10 孤儿救援
+- [[synthesis/consolidation-2026-07-30]] — 2026-07-30 自动合并报告（wiki-lint --consolidate）：孤儿救援与断链修复
+- [[synthesis/consolidation-2026-07-31]] — 2026-07-31 自动合并报告（wiki-lint --consolidate）：8 处真实断链修复（补建 transformer/scaling-laws/instruction-tuning/ai-agent + zapier/make 实体页）
+- [[synthesis/consolidation-2026-08-03]] — 2026-08-03 自动合并报告（wiki-lint --consolidate）：1 孤儿救援 + 71 lifecycle draft→reviewed
 - [[synthesis/swift-fundamentals × swiftui-framework]] — Swift 类型系统是 SwiftUI 的运行时：函数式/POP 范式如何构成 SwiftUI DSL 的基础
 - [[synthesis/programming-pattern-categories × ios-app-architecture]] — 代码级五分类 × iOS 架构模式：横切面 vs 纵切面，三层模式语言覆盖不同粒度
 - [[synthesis/battle-tested-patterns × ios-design-patterns]] — GoF 对象模式 × battle-tested 代码模式：两套语言的坐标轴，组合使用才能覆盖两个维度
