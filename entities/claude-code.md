@@ -68,3 +68,8 @@ Sachin Sharma 在 Google Stitch + Claude Code 一文中的定位很清晰：
 - [[skills/claude-code-mcp-auth-patterns]] — 接外部 MCP server 的两种鉴权范式
 - [[concepts/mcp-server-protocol-quirks]] — `claude mcp add` 的作用域陷阱
 - [[skills/notebooklm-mcp-setup]] — 接 NotebookLM 的具体流程
+
+## Related
+
+- [[synthesis/concepts-agent-operating-system × entities-claude-code]] — synthesis:AOS 五层记忆里宿主原生只兜底两层
+- [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — synthesis:可扩展性两支柱与共享的作用域陷阱

@@ -98,3 +98,4 @@ This folder contains auth code.
 ## Related
 
 - [[synthesis/Research: claude-mem 长期记忆]] — 综合页:capture→compress→inject 流水线的端到端实操
+- [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — synthesis:记忆(记什么)与配置(在哪生效)共享的作用域陷阱

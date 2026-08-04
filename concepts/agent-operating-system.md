@@ -172,3 +172,4 @@ uses:
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent]]
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]]
 - [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]]
+- [[synthesis/concepts-agent-operating-system × entities-claude-code]] — synthesis:AOS 五层 vs 宿主原生记忆的覆盖矩阵

@@ -282,6 +282,9 @@ title: Wiki Index
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]] — MCP 鉴权三层 + Stitch 实战:协议层故意简洁,鉴权复杂度甩给上层应用,OAuth proxy 对 .env 敏感
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]] — AOS 必须把 sandbox 当作隐式第六层:compact checkpoint 应包含 sandbox state(worktree path / HEAD / lease / dirty),否则 session resume 会撕裂
 - [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]] — Durable lease 让 AOS Handoff 有了"原子承诺"语义:--if-lease-id 把"我是上次那个人"写成状态文件 CAS,防止多人续写 Handoff 时撕裂
+- [[synthesis/concepts-agent-operating-system × entities-claude-code]] — AOS 五层记忆 × 宿主原生能力:Claude Code 只原生兜底 KB(CLAUDE.md)+ Working Memory(Auto Memory)两层,Handoff/Semantic/ADR 三层靠工具补齐,是"框架该补什么"的覆盖矩阵
+- [[synthesis/concepts-llm-training-pipeline × concepts-transformer-architecture]] — 架构 × 训练两条正交轴:架构(静态)给容量、训练(动态)给能力,能力涌现只在训练轴上;架构近年趋稳,前沿主战场移到训练
+- [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — 可扩展性两支柱:claude-mem 用 hook 扩展"记什么"、settings 用作用域控制"在哪生效",共享同一"装错 scope 静默失效"陷阱家族(npm -g / MCP --global / CLAUDE.md 覆盖)
 
 ## Misc
 

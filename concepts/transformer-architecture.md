@@ -58,3 +58,4 @@ relationships:
 - [[sources/andrej-karpathy-zero-to-hero]] — 手写 GPT 讲透注意力
 - [[sources/sebastian-raschka-llms-from-scratch-book]] — 从零实现 Transformer
 - [[sources/dakingrai-mech-interp-papers]] — 以 Transformer 为解析对象
+- [[synthesis/concepts-llm-training-pipeline × concepts-transformer-architecture]] — synthesis:架构(静态容量)与训练(动态能力)的正交分工

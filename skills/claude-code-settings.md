@@ -209,3 +209,4 @@ export CLAUDE_CODE_DISABLE_AUTOUPDATE=1
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装流程
 - [[concepts/mcp-server-protocol-quirks]] — `claude mcp add --global` 的作用域陷阱详解
 - [[synthesis/fabric-patterns × claude-code-settings]] — Claude Code 配置与 Fabric Pattern 的 AI Unix 管道哲学
+- [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — synthesis:作用域体系与 hook 记忆共享的「装错 scope 静默失效」陷阱
