@@ -160,3 +160,4 @@ Claude Code 团队在社区讨论中公开回应了几条流传很广的"配额�
 - [[concepts/ai-tool-specialization]] — 把视觉与逻辑拆给不同 agent
 - [[entities/google-stitch]] — 视觉侧的 AI 设计工具
 - [[entities/claude-code]] — 逻辑侧的编码 agent
+- [[skills/wiki-token-threshold-mechanics]] — wiki vault 侧的 token 账:为何 wiki-status 超阈值常是假警报

@@ -132,6 +132,7 @@ title: Wiki Index
 
 - [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
 - [[skills/claude-code-token-optimization]] — Claude Code Token 优化策略（提示缓存 + 会话管理）
+- [[skills/wiki-token-threshold-mechanics]] — wiki-status token 阈值机制:全量指标是"永不发生的最坏情况",真实 query 只 ~18K,超阈值多为假警报,根治靠调阈值而非降 tier
 - [[skills/claude-code-settings]] — Claude Code 四级配置作用域与权限系统
 - [[skills/ios-sideloading-fundamentals]] — iOS 证书类型、JIT 原理、SideStore/LiveContainer 机制完整解析
 - [[skills/ios-emulator-setup]] — iOS 上的 3DS（ManicEMU）与 Switch（MeloNX）模拟器安装与 JIT 配置

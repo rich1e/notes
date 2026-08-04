@@ -118,4 +118,5 @@ updated: <ISO timestamp>
 
 - 框架本体:[[entities/obsidian-wiki-framework]]
 - 自我引用拓扑:[[concepts/wiki-framework-self-reference]]
+- token 阈值机制:[[skills/wiki-token-threshold-mechanics]]
 - 框架 README:https://github.com/Ar9av/obsidian-wiki/blob/main/docs/architecture.md
