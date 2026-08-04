@@ -157,6 +157,7 @@ title: Wiki Index
 - [[skills/ptp-troubleshooting]] — PTP 故障排查：pmc 诊断工具、日志解读、常见问题处理
 - [[skills/pattern-study-method]] — 用 battle-tested-patterns 系统学习 46 模式：4 阶段路径 + 配套练习 + AI 编程助手技能（adopt-pattern/audit-pattern）
 - [[skills/fabric-usage-patterns]] — Fabric CLI 高频用法：YouTube 分析、Shell 别名、REST API、Obsidian 集成
+- [[skills/gitingest-token-error]] — gitingest 即便拿到合法 40 字 PAT 仍报 Invalid format，回退路径是 unset + 走公开仓库 git clone，根因未确认
 - [[skills/chezmoi-bitwarden-secrets]] — chezmoi Bitwarden 密钥注入 + 跨平台 Keychain/DPAPI 自动解锁 + git-filter-repo 历史清理
 - [[skills/vitepress-multilingual-docs]] — VitePress 22 语言文档站：SEO/PWA/无障碍/多语言同步策略
 - [[skills/chezmoi-vscode-integration]] — chezmoi edit/diff 配 VSCode（`code --wait` + `--diff`），dotfile 体验接近 IDE
