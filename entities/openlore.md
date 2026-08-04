@@ -11,7 +11,7 @@ tags:
   - mcp
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, commit d3393fa2, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, commit d3393fa2, 2026-08-03)
 created: 2026-08-03T12:05:00Z
 updated: 2026-08-03T12:05:00Z
 summary: TypeScript 编写的本地优先 agent 记忆与治理工具:静态分析生成代码知识图谱(call graph / types / tests / decisions / IaC),通过 MCP 暴露 73 个工具,hot path 无 LLM,确定性输出,可做 commit gate。
@@ -184,7 +184,7 @@ README 与 benchmark 公开宣称 **25 → 16 round-trips**(excalidraw),**−26%
 
 - 仓库:<https://github.com/clay-good/OpenLore>
 - npm:<https://www.npmjs.com/package/openlore>
-- 原始抓取:`_raw/github-clay-good-OpenLore.txt`
+- 原始抓取:`_raw/_archived/github-clay-good-OpenLore.txt`
 - 设计哲学:`docs/PHILOSOPHY.md`(本文档最值得引用的 41 行)
 - MCP 工具清单:`docs/mcp-tools.md`
 - 算法细节:`docs/ALGORITHMS.md`

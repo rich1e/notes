@@ -10,7 +10,7 @@ tags:
   - durable-state
 sources:
   - https://github.com/kunchenguid/treehouse
-  - _raw/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
+  - _raw/_archived/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
 created: 2026-08-03T11:50:00Z
 updated: 2026-08-03T11:50:00Z
 summary: 从 treehouse 的 12 个版本迭代看到一条清晰的演化主线:让 git worktree 池化 + 长期 lease + safe destroy + crash-safe state,每条线都先有"被现实撞出来的痛"再演进。可复用到任何"小型本地 runtime 状态"的工程上。
@@ -161,7 +161,7 @@ delete:
 [ ] 三平台都跑(linux/macOS/windows),用 build tag 隔离平台差异
 ```
 
-参考仓库路径:`_raw/github-kunchenguid-treehouse.txt`(gitingest 导出,commit `939cb59b`),2026-08-03。
+参考仓库路径:`_raw/_archived/github-kunchenguid-treehouse.txt`(gitingest 导出,commit `939cb59b`),2026-08-03。
 
 ## 相关链接
 

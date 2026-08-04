@@ -10,7 +10,7 @@ tags:
   - openlore
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:25:00Z
 updated: 2026-08-03T12:25:00Z
 summary: 在 commit 前用确定性工具拦住"不该过的提交":drift hook(代码改了 spec 没改)+ decision gate(决策未经人审)+ 架构不变量 guardrail(新 import 违反 layer 规则),失败显式可追。

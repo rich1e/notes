@@ -9,7 +9,7 @@ tags:
   - how-to
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz/.tmux 实战用法:三步安装(自动/手动/manual)、改 `.tmux.conf.local` 走 `tmux_conf_*` 变量、`<prefix> r` 热重载、按 Powerline 字形换主题色、TMUX_CONF_LOCAL env 标记 active session、卸载只需 `rm` symlink + 备份。

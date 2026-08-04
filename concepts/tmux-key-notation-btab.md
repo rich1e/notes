@@ -8,7 +8,7 @@ tags:
   - gpakosz
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz README 用 `B<Tab>`、`B<C-c>`、`B<C-f>` 等记号代替 `<prefix> Tab` / `<prefix> C-c` / `<prefix> C-f` —— `B` 是 prefix 占位符(Bind/Button),配合双 prefix 设计,文档层抽象掉 `C-b` vs `C-a` 的差异。

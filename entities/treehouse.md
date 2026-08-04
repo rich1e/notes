@@ -10,7 +10,7 @@ tags:
   - treehouse
 sources:
   - https://github.com/kunchenguid/treehouse
-  - _raw/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, commit 939cb59b, 2026-08-03)
+  - _raw/_archived/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, commit 939cb59b, 2026-08-03)
 created: 2026-08-03T11:15:00Z
 updated: 2026-08-03T11:15:00Z
 summary: Go 编写的 git worktree 池管理 CLI,为并行 AI 编码 agent 提供可重用、预热的隔离工作树,无守护进程,支持 durable lease、原子 state 自愈、safe-by-default destroy。
@@ -128,6 +128,6 @@ $ exit                           # 退出 subshell
 ## 引用
 
 - 仓库: <https://github.com/kunchenguid/treehouse>
-- 原始抓取: `_raw/github-kunchenguid-treehouse.txt`
+- 原始抓取: `_raw/_archived/github-kunchenguid-treehouse.txt`
 - AGENTS.md(项目内 agent 指南)
 - VISION.md(项目愿景)

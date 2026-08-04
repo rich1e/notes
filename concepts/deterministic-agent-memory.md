@@ -10,7 +10,7 @@ tags:
   - claude-mem
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:15:00Z
 updated: 2026-08-03T12:15:00Z
 summary: 用确定性算法(图分析 / BM25 / grep / git diff / 签名比对)而非 embedding 检索,给 agent 提供"事实层"记忆:同问题同答案、stale 显式标注、引用可点回源码。

@@ -10,7 +10,7 @@ tags:
   - rag
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:10:00Z
 updated: 2026-08-03T12:10:00Z
 summary: 用 import/导出 + 函数签名 + 控制流 + IaC 声明构建仓库级知识图谱(call graph / types / tests / decisions / specs),不依赖 LLM,确定性可重放,可 query 也可 evaluate。

@@ -9,7 +9,7 @@ tags:
   - treehouse
 sources:
   - https://github.com/kunchenguid/treehouse
-  - _raw/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
+  - _raw/_archived/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
 created: 2026-08-03T11:25:00Z
 updated: 2026-08-03T11:25:00Z
 summary: 把 worktree 占用与"进程是否在里头运行"解耦的持久租约:LeaseID(128-bit 随机)、LeaseHolder(标签)、LeasedAt 时间戳三件套,持锁原子写;带 ABA 防护的 conditional return(--if-lease-id)。

@@ -9,7 +9,7 @@ tags:
   - ai-agent
 sources:
   - https://github.com/Ar9av/obsidian-wiki
-  - _raw/github-Ar9av-obsidian-wiki.txt (gitingest export, Ar9av/obsidian-wiki main, 2026-08-04)
+  - _raw/_archived/github-Ar9av-obsidian-wiki.txt (gitingest export, Ar9av/obsidian-wiki main, 2026-08-04)
 created: 2026-08-04T11:35:00Z
 updated: 2026-08-04T11:35:00Z
 summary: GitHub 仓库 Ar9av/obsidian-wiki — 本 vault 使用的 SKILL-based Obsidian 知识库框架,39 个 markdown skill + Python CLI 包 + Chrome capture 扩展,源自 Andrej Karpathy 的 LLM Wiki gist,支持多 agent(Claude Code / Codex / Cursor / Windsurf / Gemini / Hermes / OpenClaw / Pi / Copilot / Kiro)。

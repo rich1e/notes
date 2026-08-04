@@ -10,7 +10,7 @@ tags:
   - safety
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:20:00Z
 updated: 2026-08-03T12:20:00Z
 summary: 把昂贵 / 非确定性 / 依赖网络的 LLM 调用挪出 hot path(每次 agent 都跑):确定性算法跑 hot,LLM 只在生成 / 验证 / 整合等冷路径 opt-in 介入。

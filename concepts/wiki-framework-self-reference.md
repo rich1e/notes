@@ -8,7 +8,7 @@ tags:
   - self-reference
 sources:
   - https://github.com/Ar9av/obsidian-wiki
-  - _raw/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
+  - _raw/_archived/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
 created: 2026-08-04T11:35:00Z
 updated: 2026-08-04T11:35:00Z
 summary: Ingest 框架本源仓库(Ar9av/obsidian-wiki)时的特殊拓扑:框架是 vault 的运行时,vault 的内容已通过 39 个 symlink + CLI 包 + 多 agent bootstrap 间接"持有"框架;直接 distill 等于把已有内容重复入库,正确做法只保留框架本体 / owner / 结构 3 页作为索引,框架细节指向已存在的 CLAUDE.md/hot.md/_meta/taxonomy 等页。
@@ -74,7 +74,7 @@ relationships:
        │
        │ ← gitingest clone
        ↓
-   _raw/github-Ar9av-obsidian-wiki.txt
+   _raw/_archived/github-Ar9av-obsidian-wiki.txt
        │
        │ ← wiki-ingest-with-token (本次)
        ↓

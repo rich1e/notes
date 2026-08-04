@@ -9,7 +9,7 @@ tags:
   - treehouse
 sources:
   - https://github.com/kunchenguid/treehouse
-  - _raw/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
+  - _raw/_archived/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
 created: 2026-08-03T11:20:00Z
 updated: 2026-08-03T11:20:00Z
 summary: 把 git worktree 池化为可重用资源:acquire 拿到一个已就绪的、保留依赖/缓存、互相不冲突的工作树,用完 return,reset 到 default branch HEAD 供下次 acquire。

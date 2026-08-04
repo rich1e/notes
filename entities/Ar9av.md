@@ -8,7 +8,7 @@ tags:
   - obsidian-wiki
 sources:
   - https://github.com/Ar9av/obsidian-wiki
-  - _raw/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
+  - _raw/_archived/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
 created: 2026-08-04T11:35:00Z
 updated: 2026-08-04T11:35:00Z
 summary: GitHub 用户 Ar9av(X: @_ar9av),obsidian-wiki SKILL-based 知识库框架的作者,基于 Karpathy 的 LLM Wiki gist 演化而来,MIT 协议,PyPI 包名 `obsidian-wiki`。

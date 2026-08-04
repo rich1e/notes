@@ -9,7 +9,7 @@ tags:
   - design-pattern
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz 设计:`.tmux.conf`(主)不可改,`.tmux.conf.local` 是用户唯一编辑入口;主 conf 通过 source + 探测变量存在性(`_is_disabled`/`_is_true`)合并用户偏好。`#!important` 解决冲突。模式:上游可升级 + 用户可定制 + 单向注入。

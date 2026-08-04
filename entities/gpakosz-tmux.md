@@ -10,7 +10,7 @@ tags:
   - gpakosz
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz 自 2012 年维护的"自洽、美观、多用"tmux 配置:Powerline 视觉主题、双 prefix (`C-b`/`C-a`)、`<prefix> +` 跨 window 保留状态的 pane maximize、可热重载的 `.tmux.conf.local` 覆写层、WTFPLv2 + MIT 双协议。

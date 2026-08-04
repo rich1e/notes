@@ -10,7 +10,7 @@ tags:
   - commit-gate
 sources:
   - https://github.com/clay-good/OpenLore
-  - _raw/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
+  - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:30:00Z
 updated: 2026-08-03T12:30:00Z
 summary: OpenLore 命令速查:install/orient/review/prove/enforce/mcp/drift,核心 MCP 工具族(navigate/change/remember/verify/coordinate/federate),6 capability family,substrate preset 默认。

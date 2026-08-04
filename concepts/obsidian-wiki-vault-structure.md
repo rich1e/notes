@@ -8,7 +8,7 @@ tags:
   - file-organization
 sources:
   - https://github.com/Ar9av/obsidian-wiki
-  - _raw/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
+  - _raw/_archived/github-Ar9av-obsidian-wiki.txt (gitingest export, 2026-08-04)
 created: 2026-08-04T11:35:00Z
 updated: 2026-08-04T11:35:00Z
 summary: obsidian-wiki vault 框架规定的目录结构:9 类目(concepts/entities/skills/references/synthesis/journal/projects/misc/sources) + 4 系统文件(index.md / log.md / hot.md / .manifest.json) + 3 内部目录(_meta/ / _insights.md / _raw/) + 2 可选目录(_staging/ / _readouts/),每个 wiki 页都有 title/category/tags/sources/created/updated 必备 frontmatter。

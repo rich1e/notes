@@ -10,7 +10,7 @@ tags:
   - parallel-agents
 sources:
   - https://github.com/kunchenguid/treehouse
-  - _raw/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
+  - _raw/_archived/github-kunchenguid-treehouse.txt (gitingest export, kunchenguid/treehouse, 2026-08-03)
 created: 2026-08-03T11:40:00Z
 updated: 2026-08-03T11:40:00Z
 summary: 为同时运行的多个 AI 编码 agent 各自分配一个隔离、可重用、可清理的 git worktree:detached HEAD 避免分支冲突,池复用保留依赖/构建缓存,durable lease 支持无人值守 long-running agent。

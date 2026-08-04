@@ -11,7 +11,7 @@ tags:
   - design-pattern
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: install.sh 通过 5 道闸保证用户资产安全:`EUID == 0` 直接退出、`$BASH_VERSION` 必须非空、`PERMISSIVE=1` 允许在 tmux 内运行、`DRY_RUN=1` 演练、`is_true()` 三态语义,以及发现 stdin 被 pipe 时主动请用户在 TTY 下复核脚本 —— 对抗 curl|bash 钓鱼。

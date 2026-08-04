@@ -8,7 +8,7 @@ tags:
   - gpakosz
 sources:
   - https://github.com/gpakosz/.tmux
-  - _raw/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
+  - _raw/_archived/github-gpakosz-tmux.txt (gitingest export, gpakosz/.tmux master, 2026-08-03)
 created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: tmux 允许 `prefix` 与 `prefix2` 两个前缀键共存 —— gpakosz 配置把 `C-b`(默认)与 `C-a`(GNU Screen 兼容)同时启用,降低老用户迁移成本,文档统一用 `<prefix>` 而非具体按键描述。
