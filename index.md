@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-03T16:10:00Z*
+*This index is automatically maintained. Last updated: 2026-08-04T11:35:00Z*
 
 ## Concepts
 
@@ -12,6 +12,8 @@ title: Wiki Index
 - [[concepts/tmux-config-importance-override]] — `#!important` 后缀标记让 perl sed 阶段保留用户原文 bind/set，绕过主 conf 后写覆盖
 - [[concepts/tmux-installer-safety-pattern]] — install.sh 的 5 道安全闸：拒绝 root、bash 必填、tmux 必装、PERMISSIVE+DRY_RUN、anti-piping TTY 复核
 - [[concepts/tmux-key-notation-btab]] — `B<Tab>` = `<prefix> Tab`、`B<C-c>` = `<prefix> C-c`：`B` 是 prefix 占位符
+- [[concepts/obsidian-wiki-vault-structure]] — obsidian-wiki 框架规定的目录布局：9 类目（concepts/entities/skills/references/synthesis/journal/projects/misc/sources）+ 4 系统文件（index.md/log.md/hot.md/.manifest.json）+ _meta/_insights/_raw 等内部目录
+- [[concepts/wiki-framework-self-reference]] — Ingest 框架本源仓库（Ar9av/obsidian-wiki）时的特殊拓扑：vault 已在用此框架，直接 distill 等于重复入库，只保留 3 页索引
 - [[concepts/tmux-pane-maximize-stateful]] — `<prefix> +` 比 `resize-pane -Z` 强：maximize 到专用 window 后仍可 split，跨 window 保留状态
 - [[concepts/tmux-prefix-double-binding]] — `C-b`（默认）+ `C-a`（GNU Screen 兼容）双 prefix 共存，`send-prefix -2` 转发
 - [[concepts/tmux-local-override-pattern]] — 主 conf 不可改、`.local` 走 `tmux_conf_*` 变量覆写、`#!important` 解决冲突
@@ -106,6 +108,8 @@ title: Wiki Index
 - [[entities/chezmoi]] — chezmoi：twpayne 维护的跨平台 dotfile 管理工具，单 Go 二进制，三态模型 + 模板 + 加密
 - [[entities/sebastienrousseau-dotfiles]] — Trusted Shell Platform：chezmoi + dot CLI(53条) + 1250+ 别名的完整 shell 分发版
 - [[entities/google-stitch]] — Google Labs AI 设计工具（Gemini 2.5 Pro 驱动），输出 DESIGN.md 设计系统 + 结构化 HTML/CSS，可通过 MCP 与 Claude Code 协作
+- [[entities/obsidian-wiki-framework]] — GitHub 仓库 Ar9av/obsidian-wiki — 本 vault 使用的 SKILL-based Obsidian 知识库框架，39 个 markdown skill + Python CLI + Chrome 捕获扩展，源自 Karpathy LLM Wiki gist
+- [[entities/Ar9av]] — obsidian-wiki 框架作者（GitHub @Ar9av / X @_ar9av），MIT 协议，PyPI 包名 `obsidian-wiki`
 - [[entities/gpakosz-tmux]] — gpakosz 自 2012 年维护的 tmux 配置（Oh my tmux!）：Powerline 主题、双 prefix、`<prefix> +` 跨 window maximize、`.local` 覆写层、WTFPLv2+MIT 双协议
 - [[entities/claude-code]] — Anthropic 终端式 AI 编码 agent，承担逻辑与组件架构，通过 MCP 接外部服务、通过提示缓存控制 token
 - [[entities/google-labs-code-design]] — Google Labs 官方 DESIGN.md 规范仓库 + @google/design.md CLI（26.5K stars、Apache-2.0）

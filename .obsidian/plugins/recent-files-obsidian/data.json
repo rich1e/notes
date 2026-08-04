@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "chezmoi-bitwarden-secrets",
+      "path": "skills/chezmoi-bitwarden-secrets.md"
+    },
+    {
+      "basename": "chezmoi",
+      "path": "entities/chezmoi.md"
+    },
+    {
+      "basename": "chezmoi-three-state-model",
+      "path": "concepts/chezmoi-three-state-model.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
@@ -133,10 +145,6 @@
       "path": "concepts/dotfile-manager.md"
     },
     {
-      "basename": "chezmoi-three-state-model",
-      "path": "concepts/chezmoi-three-state-model.md"
-    },
-    {
       "basename": "zustand-core-architecture × zustand",
       "path": "synthesis/zustand-core-architecture × zustand.md"
     },
@@ -181,10 +189,6 @@
       "path": "concepts/chezmoi-workflow.md"
     },
     {
-      "basename": "chezmoi",
-      "path": "entities/chezmoi.md"
-    },
-    {
       "basename": "chezmoi 使用教程",
       "path": "Clippings/chezmoi 使用教程.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "QSLSの站",
       "path": "Clippings/QSLSの站.md"
-    },
-    {
-      "basename": "chezmoi 配置文件管理与密钥安全实践",
-      "path": "Clippings/chezmoi 配置文件管理与密钥安全实践.md"
     }
   ],
   "omittedPaths": [],

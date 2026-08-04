@@ -1038,6 +1038,21 @@
       ],
       "pages_updated": [],
       "last_ingested": "2026-08-03T16:10:00Z"
+    },
+    "https://github.com/Ar9av/obsidian-wiki": {
+      "ingested_at": "2026-08-04T11:35:00Z",
+      "size_bytes": 1544351,
+      "content_hash": "sha256:704d824b1e7e04cc7d3ac78d684f83509fbbe2d9b63b35fe7fd4f23d52fe94b4",
+      "source_type": "github_repo",
+      "project": null,
+      "pages_created": [
+        "entities/obsidian-wiki-framework",
+        "entities/Ar9av",
+        "concepts/obsidian-wiki-vault-structure",
+        "concepts/wiki-framework-self-reference"
+      ],
+      "pages_updated": [],
+      "last_ingested": "2026-08-04T11:35:00Z"
     }
   },
   "projects": {
@@ -1100,8 +1115,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 65,
-    "total_pages": 185,
+    "total_sources_ingested": 66,
+    "total_pages": 189,
     "total_projects": 1,
     "last_full_rebuild": null
   }
