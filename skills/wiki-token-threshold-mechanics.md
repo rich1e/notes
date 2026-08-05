@@ -85,3 +85,4 @@ wiki-query 是**分层检索**(wiki-query SKILL 第 108/180 行):
 
 - 通用 token 优化:[[skills/claude-code-token-optimization]]
 - vault 结构与 tier 定义:[[concepts/obsidian-wiki-vault-structure]]
+- 同属框架运维:[[skills/obsidian-wiki-daily-cron-macos]] — launchd 每日维护定时任务安装
