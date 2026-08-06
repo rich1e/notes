@@ -1,8 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "gemini-notebook-mcp-cli-setup",
+      "path": "skills/gemini-notebook-mcp-cli-setup.md"
+    },
+    {
+      "basename": "nlm-artifact-id-required-for-download",
+      "path": "concepts/nlm-artifact-id-required-for-download.md"
+    },
+    {
+      "basename": "gemini-notebook-mcp-cli",
+      "path": "entities/gemini-notebook-mcp-cli.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "Research: Claude Code Agent Teams",
+      "path": "synthesis/Research: Claude Code Agent Teams.md"
+    },
+    {
+      "basename": "claude-code-agent-teams-ppt-content",
+      "path": "_staging/misc/claude-code-agent-teams-ppt-content.md"
+    },
+    {
+      "basename": "claude-code-agent-teams",
+      "path": "concepts/claude-code-agent-teams.md"
+    },
+    {
+      "basename": "notebooklm-mcp-setup",
+      "path": "skills/notebooklm-mcp-setup.md"
+    },
+    {
+      "basename": "claude-code-token-optimization",
+      "path": "skills/claude-code-token-optimization.md"
+    },
+    {
       "basename": "chezmoi-bitwarden-secrets",
       "path": "skills/chezmoi-bitwarden-secrets.md"
+    },
+    {
+      "basename": "tmux完全指南：让多个Claude Code Agent同时工作的终端基础",
+      "path": "Clippings/tmux完全指南：让多个Claude Code Agent同时工作的终端基础.md"
     },
     {
       "basename": "chezmoi",
@@ -11,10 +51,6 @@
     {
       "basename": "chezmoi-three-state-model",
       "path": "concepts/chezmoi-three-state-model.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "tmux-prefix-double-binding",
@@ -93,10 +129,6 @@
       "path": "concepts/design-system-as-ai-context.md"
     },
     {
-      "basename": "claude-code-token-optimization",
-      "path": "skills/claude-code-token-optimization.md"
-    },
-    {
       "basename": "claude-code",
       "path": "entities/claude-code.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "使用 chezmoi & vscode, 管理你的 dotfiles",
       "path": "Clippings/使用 chezmoi & vscode, 管理你的 dotfiles.md"
-    },
-    {
-      "basename": "NotebookLM 知识库接入 Claude：MCP 协议的握手与陷阱",
-      "path": "Clippings/NotebookLM 知识库接入 Claude：MCP 协议的握手与陷阱.md"
-    },
-    {
-      "basename": "chezmoi-templating-guide",
-      "path": "references/chezmoi-templating-guide.md"
-    },
-    {
-      "basename": "chezmoi-templating",
-      "path": "concepts/chezmoi-templating.md"
-    },
-    {
-      "basename": "chezmoi-attribute-prefixes",
-      "path": "concepts/chezmoi-attribute-prefixes.md"
-    },
-    {
-      "basename": "chezmoi-workflow",
-      "path": "concepts/chezmoi-workflow.md"
-    },
-    {
-      "basename": "chezmoi 使用教程",
-      "path": "Clippings/chezmoi 使用教程.md"
-    },
-    {
-      "basename": "chezmoi：你的 dotfiles 管理神器",
-      "path": "Clippings/chezmoi：你的 dotfiles 管理神器.md"
-    },
-    {
-      "basename": "QSLSの站",
-      "path": "Clippings/QSLSの站.md"
     }
   ],
   "omittedPaths": [],

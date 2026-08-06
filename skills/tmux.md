@@ -9,7 +9,7 @@ summary: Tmux 终端复用器快捷键速查、配置要点及插件管理，适
 sources:
   - https://gist.github.com/ryerh/14b7c24dfd623ef8edc7
 created: 2026-06-29
-updated: 2026-07-26
+updated: 2026-08-05T03:30:00Z
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -24,6 +24,8 @@ relationships:
   - target: "[[skills/terminal-music]]"
     type: related_to
   - target: "[[skills/zellij-terminal-multiplexer]]"
+    type: related_to
+  - target: "[[concepts/tmux-pane-split-for-agents]]"
     type: related_to
 ---
 

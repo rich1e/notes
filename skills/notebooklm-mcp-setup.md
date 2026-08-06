@@ -6,14 +6,16 @@ tags:
   - claude-code
   - notebooklm
   - llm
-summary: 通过 notebooklm-mcp-server 把 Google NotebookLM 笔记本接入 Claude Code，支持笔记本查询、资料源添加、Studio 内容生成。
+  - deprecated
+summary: ⚠ DEPRECATED — superseded by [[entities/gemini-notebook-mcp-cli]] (unified CLI + 43-tool MCP). Use [[skills/gemini-notebook-mcp-cli-setup]] instead. This page kept only for users still on the legacy `notebooklm-mcp-server`.
 sources:
   - https://joydig.com/notebooklm-mcp-server-claude-code/
 created: 2026-07-26
-updated: 2026-07-28
-tier: supporting
-lifecycle: draft
-lifecycle_changed: "2026-07-26"
+updated: 2026-08-06
+tier: peripheral
+lifecycle: archived
+lifecycle_changed: "2026-08-06"
+lifecycle_reason: "Superseded by [[skills/gemini-notebook-mcp-cli-setup]] — the unified package ships both nlm CLI and notebooklm-mcp, supports 43 tools, and replaces the 4-step legacy install. See [[entities/gemini-notebook-mcp-cli]] for full migration context."
 base_confidence: 0.55
 provenance:
   extracted: 0.75
@@ -24,9 +26,36 @@ relationships:
     type: related_to
   - target: "[[concepts/mcp-server-protocol-quirks]]"
     type: related_to
+  - target: "[[skills/gemini-notebook-mcp-cli-setup]]"
+    type: replaced_by
+  - target: "[[entities/gemini-notebook-mcp-cli]]"
+    type: replaced_by
 ---
 
-# NotebookLM MCP Server — 让 Claude 直接查 Google NotebookLM
+# NotebookLM MCP Server — DEPRECATED ⚠
+
+> **This skill describes the legacy `notebooklm-mcp-server` package. It has been superseded by the unified [[entities/gemini-notebook-mcp-cli]] package (single wheel ships both `nlm` CLI and `notebooklm-mcp` MCP server).**
+>
+> **Use [[skills/gemini-notebook-mcp-cli-setup]] instead.** That page covers `nlm login` (CDP-driven browser auth), `nlm setup add <client>` (auto-configures 9+ AI tools), named profiles, the 43-tool surface, and the multi-probe `auth_status` health checks.
+>
+> The 4-step recipe below is kept for users who have not yet migrated. If you're new to this, go to the new page; if you're troubleshooting an old install, the steps below still work but expect to upgrade soon.
+
+## Why deprecate
+
+The legacy `notebooklm-mcp-server`:
+
+- Exposes only **2 tools** (`notebook_list`, `notebook_query`) — no source management, no Studio artifacts, no sharing, no research, no batch
+- Requires **manual cookie paste** into `notebooklm-mcp-auth` — hostile UX
+- Has no multi-account support
+- Has no setup wizard — you hand-edit `~/.claude.json` paths
+
+[[entities/gemini-notebook-mcp-cli]] v0.9.7 ships all of this and is the de facto standard. The migration path is in [[skills/gemini-notebook-mcp-cli-setup#migrating-from-legacy-notebooklm-mcp-server]].
+
+---
+
+# Legacy 4-step install (kept for migration only)
+
+## 什么是 NotebookLM MCP Server
 
 > NotebookLM 擅长"消化文档做问答"，Claude 擅长"推理和代码"。MCP 桥接后两者无缝协作。
 
@@ -108,15 +137,15 @@ Claude 调用 `notebook_query` 工具，基于笔记本实际资料给出回答�
 ## 典型工作流
 
 ```
-┌──────────────┐   add_source   ┌──────────────┐
+┌─────────────────┐   add_source    ┌──────────────┐
 │  文档/网页/视频 │ ──────────────→ │  NotebookLM  │
-└──────────────┘                 └──────┬───────┘
-                                       │ query
-                                       ↓
-                              ┌──────────────┐
-                              │ Claude Code  │
-                              │  (推理+代码)  │
-                              └──────────────┘
+└─────────────────┘                 └──────┬───────┘
+                                           │ query
+                                           ↓
+                                    ┌──────────────┐
+                                    │ Claude Code  │
+                                    │  (推理+代码) │
+                                    └──────────────┘
 ```
 
 1. **存**：把文档/网页/视频导入 NotebookLM（自带 RAG）

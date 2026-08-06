@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-03T04:05:01Z",
+  "last_updated": "2026-08-06T00:00:00Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -125,6 +125,34 @@
         "synthesis/Research: CloudFlare ImgBed.md"
       ],
       "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
+    },
+    "Claude Code Agent Teams": {
+      "type": "research",
+      "topic": "Claude Code Agent Teams",
+      "researched_at": "2026-08-05T04:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "primary_source": "Anthropic 官方文档 docs.claude.com/en/docs/claude-code/agent-teams（v2.1.178+）+ defuddle 抓取 36KB",
+      "pages_created": [
+        "sources/anthropic-claude-code-agent-teams-docs.md",
+        "sources/cnblogs-agent-teams-complete-guide.md",
+        "sources/csdn-agent-teams-multi-process.md",
+        "concepts/agent-team-display-modes.md",
+        "concepts/agent-team-race-condition-task-claim.md",
+        "concepts/agent-team-mailbox-protocol.md",
+        "concepts/agent-team-cost-overhead.md",
+        "entities/claude-code-agent-teams-feature.md",
+        "synthesis/Research: Claude Code Agent Teams.md"
+      ],
+      "pages_updated": [
+        "concepts/claude-code-agent-teams.md",
+        "concepts/tmux-pane-split-for-agents.md",
+        "concepts/claude-code-three-modes.md",
         "index.md",
         "log.md",
         "hot.md",
@@ -1053,6 +1081,92 @@
       ],
       "pages_updated": [],
       "last_ingested": "2026-08-04T11:35:00Z"
+    },
+    "https://www.youtube.com/watch?v=cSkoaCCmq0w": {
+      "ingested_at": "2026-08-05T03:30:00Z",
+      "source_url": "https://www.youtube.com/watch?v=cSkoaCCmq0w",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-youtube-com-watch-v-cskoa-ccmq0w.md",
+        "concepts/claude-code-three-modes.md",
+        "concepts/claude-code-agent-teams.md",
+        "concepts/tmux-pane-split-for-agents.md"
+      ],
+      "pages_updated": [
+        "entities/claude-code.md",
+        "skills/tmux.md"
+      ],
+      "last_ingested": "2026-08-05T03:30:00Z"
+    },
+    "_raw/github-bmad-code-org-bmad-method.txt": {
+      "ingested_at": "2026-08-05T06:57:06Z",
+      "size_bytes": 2130468,
+      "modified_at": "2026-08-05T06:57:06Z",
+      "content_hash": "sha256:e9576407155b8233e47a601ead20efa87eb8a817d3d78b9a29d2ae4dd7b847f0",
+      "source_type": "github_repo",
+      "github_repo": "bmad-code-org/bmad-method",
+      "github_branch": "main",
+      "archived_to": "_raw/_archived/github-bmad-code-org-bmad-method.txt",
+      "project": null,
+      "pages_created": [
+        "entities/bmad-method.md",
+        "entities/bmad-named-agent.md",
+        "entities/bmad-party-mode.md",
+        "concepts/bmad-delivery-loop.md",
+        "concepts/bmad-named-agent-architecture.md",
+        "concepts/bmad-party-mode-modes.md",
+        "concepts/bmad-advanced-elicitation.md",
+        "concepts/bmad-build-workflow.md",
+        "concepts/bmad-preventing-agent-conflicts.md",
+        "concepts/bmad-clarify-analyze-plan.md",
+        "skills/bmad-install-and-setup.md",
+        "skills/bmad-customize-skill.md",
+        "references/bmad-method-github-readme.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-05T06:57:06Z"
+    },
+    "_raw/github-code-yeongyu-oh-my-openagent.txt": {
+      "ingested_at": "2026-08-05T07:20:18Z",
+      "size_bytes": 4521485,
+      "modified_at": "2026-08-05T07:20:18Z",
+      "content_hash": "sha256:a2e135e2e0c8832f7467063ed75f9adba1ca1d74a5c3957c09ea7ff69345f2f7",
+      "source_type": "github_repo",
+      "github_repo": "code-yeongyu/oh-my-openagent",
+      "github_branch": "main",
+      "archived_to": "_raw/_archived/github-code-yeongyu-oh-my-openagent.txt",
+      "project": null,
+      "pages_created": [
+        "entities/oh-my-openagent.md",
+        "entities/sisyphus-agent.md",
+        "entities/hephaestus-agent.md",
+        "concepts/omo-ultrawork-mode.md",
+        "concepts/omo-discipline-agents.md",
+        "concepts/omo-agent-category-routing.md",
+        "concepts/omo-hashline-edits.md",
+        "concepts/omo-team-mode.md",
+        "concepts/omo-skill-embedded-mcps.md",
+        "concepts/omo-intent-gate.md",
+        "concepts/omo-editions-ultimate-vs-light.md",
+        "skills/omo-install-and-setup.md",
+        "references/omo-github-readme.md",
+        "references/omo-team-mode-config-schema.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-05T07:20:18Z"
     }
   },
   "projects": {
@@ -1112,11 +1226,44 @@
         "projects/trek/references/database-schema.md",
         "projects/trek/references/environment-variables.md"
       ]
+    },
+    "/tmp/gemini-notebook-mcp-cli/README.md": {
+      "content_hash": "sha256:c4eebdcb4e0896c12720a50ee86f2077d3ced72fb94c3d8a7a5009cb6a7b6e7a",
+      "last_ingested": "2026-08-06T00:00:00Z",
+      "pages_produced": [
+        "entities/gemini-notebook-mcp-cli",
+        "skills/gemini-notebook-mcp-cli-setup",
+        "entities/jacob-bd",
+        "entities/notebooklm",
+        "concepts/cdp-cookie-extraction",
+        "concepts/multi-profile-google-auth",
+        "concepts/mcp-multi-tool-installer",
+        "concepts/auth-status-semantics",
+        "concepts/rpc-drift-hot-patch",
+        "references/gemini-notebook-mcp-cli-tools",
+        "references/gemini-notebook-mcp-cli-known-issues"
+      ],
+      "pages_updated": [
+        "skills/notebooklm-mcp-setup"
+      ],
+      "source_type": "github-repo",
+      "project": null,
+      "repository": "jacob-bd/gemini-notebook-mcp-cli",
+      "repository_version": "v0.9.7",
+      "primary_files": [
+        "README.md",
+        "CLAUDE.md",
+        "pyproject.toml",
+        "docs/MCP_GUIDE.md",
+        "docs/AUTHENTICATION.md",
+        "docs/CLI_GUIDE.md",
+        "docs/KNOWN_ISSUES.md"
+      ]
     }
   },
   "stats": {
-    "total_sources_ingested": 66,
-    "total_pages": 189,
+    "total_sources_ingested": 74,
+    "total_pages": 240,
     "total_projects": 1,
     "last_full_rebuild": null
   }

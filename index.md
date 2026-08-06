@@ -4,10 +4,25 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-04T11:35:00Z*
+*This index is automatically maintained. Last updated: 2026-08-06T00:00:00Z*
 
 ## Concepts
 
+- [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
+- [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
+- [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
+- [[concepts/omo-agent-category-routing]] — omo 4 category 路由：visual-engineering / deep / quick / ultrabrain 自动选模型
+- [[concepts/omo-hashline-edits]] — omo Hash-Anchored Edit Tool：LINE#ID 内容哈希防 stale-line error（Grok Fast 1: 6.7% → 68.3%）
+- [[concepts/omo-team-mode]] — omo Team Mode v4.0：lead + 8 members + tmux 可视化 + 12 team_* 工具
+- [[concepts/omo-skill-embedded-mcps]] — omo Skill-Embedded MCPs：skill 自带 MCP，spinning up on-demand，context 不被吃
+- [[concepts/omo-intent-gate]] — omo IntentGate：行动前分析真实用户意图，Light Edition 仅识别 ultrawork/ulw 关键词
+- [[concepts/omo-editions-ultimate-vs-light]] — omo 两个 Edition：Ultimate（OpenCode 11 agents / 54 hooks）+ Light（Codex CLI 8 组件）
+- [[concepts/bmad-named-agent-architecture]] — BMad 三腿凳：Skill（能力）/ Named Agent（persona 连续性）/ Customization（个性化），抽掉任一腿体验崩
+- [[concepts/bmad-party-mode-modes]] — BMad Party Mode 4 种运行模式：session / auto / subagent / agent-team，区别在"谁在思考"
+- [[concepts/bmad-build-workflow]] — BMad `bmad-build` canonical 实施工作流：先压缩 intent → 路由最小安全路径 → 跑更久少监督 → 在正确层诊断失败
+- [[concepts/bmad-advanced-elicitation]] — BMad 高级 Elicitation：用命名推理方法（Pre-mortem / 第一性原理 / 红蓝对抗 / 苏格拉底式）对 LLM 输出做结构化二次审视
+- [[concepts/bmad-preventing-agent-conflicts]] — BMad 用 architecture documentation + ADR 防止多 agent 同时实施系统时的冲突技术决策
+- [[concepts/bmad-clarify-analyze-plan]] — BMad Analysis 阶段 4 种 artifact：brainstorming / research / product brief / PRFAQ 的差异与何时用哪个
 - [[concepts/serverless-image-hosting]] — 无服务器图床范式：边缘 serverless 函数 + 外包对象存储（R2/S3/Telegram）+ KV/D1 元数据，成本趋零、免运维、可移植
 - [[concepts/telegram-as-blob-storage]] — 把 Telegram 当免费对象存储：上传即发消息、读取即 getFile，受 20MB/速率/政策限制的「脆弱白嫖」范式
 - [[concepts/tmux-config-importance-override]] — `#!important` 后缀标记让 perl sed 阶段保留用户原文 bind/set，绕过主 conf 后写覆盖
@@ -16,6 +31,15 @@ title: Wiki Index
 - [[concepts/obsidian-wiki-vault-structure]] — obsidian-wiki 框架规定的目录布局：9 类目（concepts/entities/skills/references/synthesis/journal/projects/misc/sources）+ 4 系统文件（index.md/log.md/hot.md/.manifest.json）+ _meta/_insights/_raw 等内部目录
 - [[concepts/wiki-framework-self-reference]] — Ingest 框架本源仓库（Ar9av/obsidian-wiki）时的特殊拓扑：vault 已在用此框架，直接 distill 等于重复入库，只保留 3 页索引
 - [[concepts/tmux-pane-maximize-stateful]] — `<prefix> +` 比 `resize-pane -Z` 强：maximize 到专用 window 后仍可 split，跨 window 保留状态
+- [[concepts/claude-code-three-modes]] — Claude Code 三种工作模式：Default（单会话）/ Subagents（主+短命子）/ Agent Teams（多独立长会话），核心差异是会话数而非能力
+- [[concepts/claude-code-agent-teams]] — Agent Teams 工程机制：team leader 委派 + agent 上下文隔离 + race-condition 任务锁 + 按 agent 模型分级调度 + shared memory MD
+- [[concepts/agent-team-display-modes]] — Agent Team 显示模式 5 选：in-process / split-panes / auto / tmux / iterm2
+- [[concepts/agent-team-race-condition-task-claim]] — Agent Team 任务认领的 File Lock 机制：防多 teammate 抢同一任务的 race condition
+- [[concepts/agent-team-mailbox-protocol]] — Agent Team Mailbox 协议：每个 agent 一个 JSON inbox 文件，逐条校验 + 错误条目自动丢弃
+- [[concepts/agent-team-cost-overhead]] — Agent Team 的 Token 成本权衡：随 teammate 数线性扩展，官方推荐 3-5 teammates
+- [[concepts/tmux-pane-split-for-agents]] — Claude Code Agent Teams 场景下 tmux split-pane 配置：每个 agent 一个独立 pane + settings.json 全局 tmux.splitPanes + 强制启动顺序 tmux→claude
+- [[concepts/nlm-artifact-id-required-for-download]] — gemini-notebook-mcp `download_artifact` 必须显式传 `artifact_id`，否则可能静默取回旧产物
+- [[concepts/nlm-studio-create-source-scoping]] — `studio_create` 的 `source_ids`（硬边界）vs `custom_prompt`（软引导）语义，及 CLI `--focus` 与 MCP `custom_prompt` 命名差异
 - [[concepts/tmux-prefix-double-binding]] — `C-b`（默认）+ `C-a`（GNU Screen 兼容）双 prefix 共存，`send-prefix -2` 转发
 - [[concepts/tmux-local-override-pattern]] — 主 conf 不可改、`.local` 走 `tmux_conf_*` 变量覆写、`#!important` 解决冲突
 - [[concepts/ptp-ieee1588]] — IEEE 1588 精确时间协议，四时间戳法实现纳秒级分布式时钟同步
@@ -84,6 +108,11 @@ title: Wiki Index
 - [[concepts/deterministic-agent-memory]] — 确定性 agent 记忆：同问题同答案、stale 显式标注、引用可点回源码、与概率型 claude-mem 互补
 - [[concepts/no-llm-hot-path]] — Hot path 不放 LLM：确定性算法跑 hot,LLM 只在 generate/verify/consolidate 等 cold path opt-in
 - [[concepts/commit-gate-guardrails]] — Commit gate guardrails:drift(代码改了 spec 没改)+ decisions(决策未经人审)+ check_architecture(编辑时 layer 校验)三类独立 opt-in
+- [[concepts/cdp-cookie-extraction]] — CDP cookie extraction:Chrome DevTools Protocol 驱 managed browser,harvest cookies/CSRF/session from logged-in session(无 OAuth 时的唯一可靠路径)
+- [[concepts/multi-profile-google-auth]] — N 个 Google 账号并发:N 隔离 Chromium profile + N 独立 auth.json + 单 default 指针(MCP 服务只能用一个,切换需 reload)
+- [[concepts/mcp-multi-tool-installer]] — `nlm setup add <client>` 模式:一条命令配置 7+ AI 工具的 MCP server,免手编 7 种 JSON 配置
+- [[concepts/auth-status-semantics]] — 5-state auth 健康词典:configured/not_configured/stale/unverified/error,关键在区分"凭据坏"与"监测查不到",防 AI agent 误循环让用户重登
+- [[concepts/rpc-drift-hot-patch]] — undocumented API RPC ID 漂移存活:typed RPCDriftError + `--debug` 暴露新 ID + `NOTEBOOKLM_RPC_OVERRIDES` env var 无需发版热修
 
 ## Entities
 
@@ -113,6 +142,13 @@ title: Wiki Index
 - [[entities/Ar9av]] — obsidian-wiki 框架作者（GitHub @Ar9av / X @_ar9av），MIT 协议，PyPI 包名 `obsidian-wiki`
 - [[entities/gpakosz-tmux]] — gpakosz 自 2012 年维护的 tmux 配置（Oh my tmux!）：Powerline 主题、双 prefix、`<prefix> +` 跨 window maximize、`.local` 覆写层、WTFPLv2+MIT 双协议
 - [[entities/claude-code]] — Anthropic 终端式 AI 编码 agent，承担逻辑与组件架构，通过 MCP 接外部服务、通过提示缓存控制 token
+- [[entities/claude-code-agent-teams-feature]] — Claude Code Agent Teams 多 agent 协作功能（v2.1.178+，实验性）
+- [[entities/bmad-method]] — BMad Method 框架（BMad Code, LLC, MIT）：AI 驱动敏捷交付 + Clarify→Plan→Build→Learn 闭环 + 5 命名 agent + 4 层 customization
+- [[entities/bmad-named-agent]] — BMad 5 命名 agent（Mary BA / John PM / Sally UX / Winston Architect / Amelia Dev）：硬编码身份 + 可定制层平衡
+- [[entities/bmad-party-mode]] — BMad Party Mode：把命名 agent 召进同一对话房间开会，4 种模式 + 自建 cast + 持久化自定义 party
+- [[entities/oh-my-openagent]] — omo（code-yeongyu, SUL-1.0）：OpenCode 多模型 agent 编排框架；Ultimate + Light 两版
+- [[entities/sisyphus-agent]] — omo 主 orchestrator agent：claude-opus-5 / kimi-k3 / glm-5 驱动，"推石上山"不停直到完成
+- [[entities/hephaestus-agent]] — omo autonomous deep worker：gpt-5.6-sol 多 provider（OpenAI/Copilot/Vercel/OpenCode），medium effort
 - [[entities/google-labs-code-design]] — Google Labs 官方 DESIGN.md 规范仓库 + @google/design.md CLI（26.5K stars、Apache-2.0）
 - [[entities/awesome-design-md]] — VoltAgent 团队维护的 74 个真实站点 DESIGN.md 精选集（105K stars）
 - [[entities/voltagent]] — awesome-design-md 仓库与 getdesign.md 目录服务的运营组织
@@ -128,15 +164,22 @@ title: Wiki Index
 - [[entities/make]] — Make（原 Integromat）：纯云工作流自动化 SaaS，可视化 scenario 画布最强
 - [[entities/treehouse]] — treehouse：kunchenguid 出品的 AI agent 并行 worktree 池 CLI（Go v2.1.1），无守护进程，durable lease + 原子 state 自愈 + safe-by-default destroy
 - [[entities/openlore]] — OpenLore：clay-good 出品的 AI agent 静态分析记忆层（TypeScript v2.1.x），hot path 0 LLM，MCP 73 tools / 6 capability family，substrate 默认 13 tools，commit gate + 架构不变量 guardrail
+- [[entities/gemini-notebook-mcp-cli]] — gemini-notebook-mcp-cli(jacob-bd,MIT v0.9.7):统一 CLI + 43-tool MCP server,取代旧 notebooklm-mcp-server,CDP 浏览器自动登录 + 多 profile + `nlm setup add` 多工具安装
+- [[entities/jacob-bd]] — Jacob Ben-David:gemini-notebook-mcp-cli 维护者,自陈"非开发者用 AI 编码助手"并欢迎有经验 Python 开发者贡献重构
+- [[entities/notebooklm]] — Google NotebookLM / Gemini Notebook 产品本体;Google 正在 rebranding 重定向部分账户到 notebook.google.com,v0.9.3+ 客户端 per-profile 自动检测主机
 
 ## Skills
 
 - [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
+- [[skills/bmad-install-and-setup]] — BMad Method 安装：`npx bmad-method install`；前置 Node.js 20.12+ / Python 3.10+ / uv；v7 起 uv 必用
+- [[skills/omo-install-and-setup]] — omo 安装：让 LLM agent 帮你装（Ultimate 涉及 11 agent 模型选择 + per-provider 鉴权）；推荐 $49/月订阅 vs Claude Code $200
+- [[skills/bmad-customize-skill]] — BMad TOML 覆盖系统：`/bmad-customize <skill>` + 两层 override（团队 committed + 个人 gitignored）+ 4 层 TOML 解析器
 - [[skills/claude-code-token-optimization]] — Claude Code Token 优化策略（提示缓存 + 会话管理）
 - [[skills/wiki-token-threshold-mechanics]] — wiki-status token 阈值机制:全量指标是"永不发生的最坏情况",真实 query 只 ~18K,超阈值多为假警报,根治靠调阈值而非降 tier
 - [[skills/obsidian-wiki-daily-cron-macos]] — 用 launchd 装 obsidian-wiki 每日维护定时任务:改 LaunchAgents 副本而非 repo 模板、RunAtLoad 补跑语义、bootstrap 取代废弃 load、改时间需 bootout+bootstrap 重载、幂等 zshrc 提醒
 - [[skills/claude-code-settings]] — Claude Code 四级配置作用域与权限系统
 - [[skills/ios-sideloading-fundamentals]] — iOS 证书类型、JIT 原理、SideStore/LiveContainer 机制完整解析
+- [[skills/gemini-notebook-mcp-cli-setup]] — gemini-notebook-mcp-cli 安装 + `nlm setup add` 多工具配置 + `nlm login` CDP 自动登录 + named profile;取代旧的 notebooklm-mcp-setup 4 步手编法
 - [[skills/ios-emulator-setup]] — iOS 上的 3DS（ManicEMU）与 Switch（MeloNX）模拟器安装与 JIT 配置
 - [[skills/hackintosh-mini-build]] — 5000 元黑苹果小机箱（对标 Mac Studio），程序员装机指南
 - [[skills/tmux]] — Tmux 快捷键速查、推荐配置、关闭会话的 4 种替代方式（kill-server / kill-session -a / :kill-session / exit 级联）
@@ -174,6 +217,7 @@ title: Wiki Index
 ## Synthesis
 
 - [[synthesis/Research: chezmoi]] — chezmoi 3 轮研究综合：三态模型 + 17 前缀 + Go 模板 + age/GPG + 四动词工作流
+- [[synthesis/Research: Claude Code Agent Teams]] — Claude Code Agent Teams 3 轮调研综合：Opus 4.6 引入、4 组件架构、5 显示模式、9 已知限制、linear scaling token 成本
 - [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — 频域合成(傅里叶/本轮链)与时域参数化(缓动函数)的正交关系,两条路线控制维度不同
 - [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 摆轮+擒纵是 PD 反馈控制器的物理实现,游丝=K_p,阻尼=K_d,与 spring 动画同源
 - [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 两个 macOS 用户的"模块化替代默认"范式,软件/硬件两侧的同构工匠精神
@@ -214,6 +258,9 @@ title: Wiki Index
 ## References
 
 - [[references/mechanical-watch-mechanics]] — 机械表七大部件与能量链原理速查
+- [[references/bmad-method-github-readme]] — BMad Method 仓库 README + 完整文件树（407 文件 / 481.6k tokens，gitingest 抓取）
+- [[references/omo-github-readme]] — omo 仓库 README（526 文件 / 1.1M tokens）：SUL-1.0 许可 + 20 项 highlights + 5 discipline agents + Team Mode v4.0 + 4 category routing
+- [[references/omo-team-mode-config-schema]] — omo Team Mode `team_mode` 11 字段配置详解（enabled/parallel/members/cap/base_dir/mailbox poll）
 - [[references/ique-dsi-menu-software]] — iQue DSi 所有内置软件图标一览及软件位置移动方法
 - [[references/ique-dsi-system-settings]] — iQue DSi 主机设置四页全部选项（软件管理/亮度/用户信息/亲子管理/互联网）
 - [[references/ique-dsi-wifi-glossary]] — iQue DSi 网络术语表（SSID/WEP/WPA/AOSS/WPS等）
@@ -222,6 +269,8 @@ title: Wiki Index
 - [[references/ptp-book-overview]] — PTP技术书（Lularible），41节从思想实验到 LinuxPTP 源码到 ptp-lite 实现
 - [[references/macos-window-switchers]] — macOS 窗口切换器对比速查：AltTab / BetterCmdTab / Contexts / Witch 在许可证/macOS 兼容/布局/触发方式上的差异
 - [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接
+- [[references/gemini-notebook-mcp-cli-tools]] — gemini-notebook-mcp-cli 43 个 MCP 工具速查(notebooks/sources/query/chat/studio/downloads/research/sharing/auth/server/batch/pipeline/tag),按 group 列出可隐藏子集
+- [[references/gemini-notebook-mcp-cli-known-issues]] — 9 类脆弱性:`bl` 参数 / cookie 过期 / ~50次/天速率限制 / undocumented API RPC ID 漂移 / CSRF 提取失败 / Claude Desktop profile 怪癖 / Chrome 136+ 远调试封锁 / auth-loop env var 陷阱 / browser-bound replay
 - [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 + 5次作业 + 3周自选项目，SwiftUI 核心课
 - [[references/chezmoi-official-site]] — chezmoi.io 官方首页：五大特性 + 单命令引导 + 当前版本
 - [[references/dot-cli-commands]] — dot CLI 53 条命令完整参考（Core/Diagnostics/Security/AI/Secrets 等 8 类）
@@ -239,6 +288,7 @@ title: Wiki Index
 - [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
 - [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
 - [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
+- [[sources/anthropic-claude-code-agent-teams-docs]] — Anthropic 官方文档（v2.1.178+）：Agent Teams 4 组件 + 5 显示模式 + 3 hooks + 9 已知限制
 - [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka Manning 2024 书 + GitHub 仓库：PyTorch 实现 GPT 全流程
 - [[sources/stanford-cs336-spring2025]] — Stanford CS336 (Hashimoto & Liang) Spring 2025：5 作业 + 19 讲座，数据/架构/系统/对齐全覆盖
 - [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》13 讲：中文母语零基础友好
@@ -299,6 +349,7 @@ title: Wiki Index
 - [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
 - [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Google Stitch + Claude Code MCP 协作实操：两种鉴权路径（API key header vs OAuth proxy），`-s user` 等价 `--global`，`.env` 文件干扰 OAuth 的故障清单
 - [[misc/web-brainz-fun-bitcoin-seizure]] — brain-zhang 博文：美国政府大额比特币没收案不是攻破密码算法，而是利用弱私钥生成漏洞（MT19937/CVE-2023-39910），以 2025 DOJ 没收陈志/太子集团 12.7 万 BTC 为中心案例
+- [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — YouTube 教程：Claude Code Opus 4.6 引入 Agent Teams，与 Default/Subagents 形成三模式分工；含 tmux split-pane、race-condition 任务锁、按 agent 模型分级调度、shared memory MD 跨会话桥
 - [[sources/awesome-design-md-repo]] — VoltAgent/awesome-design-md：74 个真实站点 DESIGN.md（Claude / Vercel / Notion / Stripe 等）的 inspired interpretation
 - [[sources/google-design-md-spec]] — google-labs-code/design.md：DESIGN.md 官方格式规范 + `@google/design.md` CLI（lint / diff）
 - [[sources/stitch-design-md-docs]] — Stitch 官方 DESIGN.md 文档（JS-rendered SPA，机器读不到正文）
