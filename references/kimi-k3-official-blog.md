@@ -16,7 +16,6 @@ provenance:
 base_confidence: 0.95
 lifecycle: draft
 lifecycle_changed: 2026-07-23
-    type: uses
 relationships:
   - target: "[[entities/kimi-k3]]"
     type: derived_from

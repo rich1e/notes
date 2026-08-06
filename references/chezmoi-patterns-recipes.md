@@ -21,7 +21,6 @@ provenance:
 base_confidence: 0.50
 lifecycle: draft
 lifecycle_changed: 2026-07-25
-    type: uses
 relationships:
   - target: "[[concepts/chezmoi-templating]]"
     type: uses

@@ -16,13 +16,11 @@ provenance:
 base_confidence: 0.50
 lifecycle: draft
 lifecycle_changed: 2026-07-25
-    type: related_to
 relationships:
   - target: "[[concepts/chezmoi-templating]]"
     type: uses
   - target: "[[entities/chezmoi]]"
     type: related_to
-
 ---
 
 # chezmoi × 密码管理器：Bitwarden 模板注入与跨平台主密码保管
