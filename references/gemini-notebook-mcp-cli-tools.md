@@ -192,3 +192,4 @@ Auto-labeling requires 5+ sources. `reorganize` can target unlabeled-only (`unla
 - [[entities/gemini-notebook-mcp-cli]] — the package itself
 - [[skills/gemini-notebook-mcp-cli-setup]] — install + setup recipe
 - [[references/gemini-notebook-mcp-cli-known-issues]] — failure catalog
+- [[concepts/mcp-multi-tool-installer]] — the `nlm setup add <client>` pattern for wiring this CLI's MCP server into 7+ AI tools

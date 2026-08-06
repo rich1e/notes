@@ -33,6 +33,8 @@ relationships:
     type: related_to
   - target: "[[concepts/commit-gate-guardrails]]"
     type: related_to
+  - target: "[[skills/treehouse-cli]]"
+    type: related_to
 ---
 
 # OpenLore CLI 日常用法
@@ -252,3 +254,4 @@ OpenLore 默认:
 - [[concepts/deterministic-agent-memory]] —— 确定性 fact layer 原则
 - [[concepts/no-llm-hot-path]] —— hot/cold 路径划分
 - [[concepts/commit-gate-guardrails]] —— CI/pre-commit 拦截范式
+- [[skills/treehouse-cli]] —— 同为 AI agent 本地基础设施 CLI 速查;treehouse 管"在哪写"(worktree 池),OpenLore 管"该写哪里"（静态分析 orient）

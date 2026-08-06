@@ -15,7 +15,7 @@ summary: "omo 仓库 README + highlights 完整表（20 项特性 × 2 版本对
 provenance:
   extracted: 0.92
   inferred: 0.04
- ambiguous: 0.04
+  ambiguous: 0.04
 base_confidence: 0.82
 lifecycle: reviewed
 lifecycle_changed: "2026-08-05"

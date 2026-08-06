@@ -32,6 +32,8 @@ relationships:
     type: related_to
   - target: "[[concepts/atomic-state-recovery]]"
     type: related_to
+  - target: "[[skills/openlore-cli]]"
+    type: related_to
 ---
 
 # treehouse CLI 日常用法
@@ -252,3 +254,4 @@ worktree 总是 detached HEAD,reset 到"local 或 origin default branch 中**更
 - [[concepts/worktree-durable-lease]]
 - [[concepts/atomic-state-recovery]]
 - [[concepts/safe-destroy-by-default]]
+- [[skills/openlore-cli]] —— 同为 AI agent 本地基础设施 CLI 速查;treehouse 管"在哪写"（worktree 池），OpenLore 管"该写哪里"（静态分析 orient）

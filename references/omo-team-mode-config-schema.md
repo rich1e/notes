@@ -16,7 +16,7 @@ summary: "omo Team Mode `team_mode` 配置 11 字段详细：enabled / tmux_visu
 provenance:
   extracted: 0.95
   inferred: 0.03
- ambiguous: 0.02
+  ambiguous: 0.02
 base_confidence: 0.88
 lifecycle: reviewed
 lifecycle_changed: "2026-08-05"

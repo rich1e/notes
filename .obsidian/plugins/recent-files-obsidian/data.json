@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "gemini-notebook-mcp-cli-setup",
-      "path": "skills/gemini-notebook-mcp-cli-setup.md"
+      "basename": "gemini-notebook-mcp-cli-tools",
+      "path": "references/gemini-notebook-mcp-cli-tools.md"
     },
     {
-      "basename": "nlm-artifact-id-required-for-download",
-      "path": "concepts/nlm-artifact-id-required-for-download.md"
+      "basename": "gemini-notebook-mcp-cli-known-issues",
+      "path": "references/gemini-notebook-mcp-cli-known-issues.md"
     },
     {
-      "basename": "gemini-notebook-mcp-cli",
-      "path": "entities/gemini-notebook-mcp-cli.md"
+      "basename": "2021dev-网络通信基础",
+      "path": "Chronicle/2021/2021dev-网络通信基础.md"
     },
     {
-      "basename": "index",
-      "path": "index.md"
+      "basename": "2022 learn",
+      "path": "Chronicle/2022/2022 learn.md"
     },
     {
-      "basename": "Research: Claude Code Agent Teams",
-      "path": "synthesis/Research: Claude Code Agent Teams.md"
+      "basename": "Alienware",
+      "path": "Chronicle/2022/Alienware.md"
     },
     {
-      "basename": "claude-code-agent-teams-ppt-content",
-      "path": "_staging/misc/claude-code-agent-teams-ppt-content.md"
+      "basename": "Book Sync",
+      "path": "Chronicle/2022/Book Sync.md"
     },
     {
-      "basename": "claude-code-agent-teams",
-      "path": "concepts/claude-code-agent-teams.md"
+      "basename": "Fiddler Everywhere Crack 尝试",
+      "path": "Chronicle/2022/Fiddler Everywhere Crack 尝试.md"
     },
     {
-      "basename": "notebooklm-mcp-setup",
-      "path": "skills/notebooklm-mcp-setup.md"
+      "basename": "单机版启动缓慢调查",
+      "path": "Chronicle/2023/单机版启动缓慢调查.md"
     },
     {
-      "basename": "claude-code-token-optimization",
-      "path": "skills/claude-code-token-optimization.md"
+      "basename": "自建 OSS",
+      "path": "Chronicle/2023/自建 OSS.md"
     },
     {
-      "basename": "chezmoi-bitwarden-secrets",
-      "path": "skills/chezmoi-bitwarden-secrets.md"
+      "basename": "BEM 命名规范",
+      "path": "Chronicle/2023/BEM 命名规范.md"
     },
     {
-      "basename": "tmux完全指南：让多个Claude Code Agent同时工作的终端基础",
-      "path": "Clippings/tmux完全指南：让多个Claude Code Agent同时工作的终端基础.md"
+      "basename": "Blog",
+      "path": "Chronicle/2023/Blog.md"
     },
     {
-      "basename": "chezmoi",
-      "path": "entities/chezmoi.md"
+      "basename": "Book",
+      "path": "Chronicle/2023/Book.md"
     },
     {
-      "basename": "chezmoi-three-state-model",
-      "path": "concepts/chezmoi-three-state-model.md"
+      "basename": "Clash",
+      "path": "Chronicle/2023/Clash.md"
     },
     {
-      "basename": "tmux-prefix-double-binding",
-      "path": "concepts/tmux-prefix-double-binding.md"
+      "basename": "Electron：WebSwapCGLLayer warning",
+      "path": "Chronicle/2023/Electron：WebSwapCGLLayer warning.md"
     },
     {
-      "basename": "tmux-key-notation-btab",
-      "path": "concepts/tmux-key-notation-btab.md"
+      "basename": "Homebrew",
+      "path": "Chronicle/2023/Homebrew.md"
     },
     {
-      "basename": "tmux-gpakos-config",
-      "path": "skills/tmux-gpakos-config.md"
+      "basename": "Javascript 函数式编程指南",
+      "path": "Chronicle/2023/Javascript 函数式编程指南.md"
     },
     {
-      "basename": "开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略",
-      "path": "Clippings/开源 Claude Code 自动记忆管理插件 Claude-Mem 完整上手攻略.md"
+      "basename": "Lodash",
+      "path": "Chronicle/2023/Lodash.md"
     },
     {
-      "basename": "agent-operating-system",
-      "path": "concepts/agent-operating-system.md"
+      "basename": "Mac & Electron 跨端开发体验",
+      "path": "Chronicle/2023/Mac & Electron 跨端开发体验.md"
     },
     {
-      "basename": "姚期智万字长文演讲！解析“ AI 研究的下一个层次”",
-      "path": "Clippings/姚期智万字长文演讲！解析“ AI 研究的下一个层次”.md"
+      "basename": "Mac & Vim",
+      "path": "Chronicle/2023/Mac & Vim.md"
     },
     {
-      "basename": "taxonomy",
-      "path": "_meta/taxonomy.md"
+      "basename": "Mac Update",
+      "path": "Chronicle/2023/Mac Update.md"
     },
     {
-      "basename": "tmux",
-      "path": "skills/tmux.md"
+      "basename": "Vue3 组件库",
+      "path": "Chronicle/2023/Vue3 组件库.md"
     },
     {
-      "basename": "Research: DESIGN.md 工作流",
-      "path": "synthesis/Research: DESIGN.md 工作流.md"
+      "basename": "Pnpm + git-worktree",
+      "path": "Chronicle/2026/Pnpm + git-worktree.md"
     },
     {
-      "basename": "stitch-design-system",
-      "path": "projects/dayfold/references/stitch-design-system.md"
+      "basename": "NeoDS-模拟器使用指南",
+      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
     },
     {
-      "basename": "google-stitch",
-      "path": "entities/google-stitch.md"
+      "basename": "macOS-U盘清理与Spotlight保护目录问题",
+      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
     },
     {
-      "basename": "dayfold",
-      "path": "projects/dayfold/dayfold.md"
+      "basename": "Chezmoi 简明教程",
+      "path": "Chronicle/2026/Chezmoi 简明教程.md"
     },
     {
-      "basename": "google-design-md-spec",
-      "path": "sources/google-design-md-spec.md"
+      "basename": "brew script",
+      "path": "Chronicle/2026/brew script.md"
     },
     {
-      "basename": "design-md-format-spec",
-      "path": "concepts/design-md-format-spec.md"
+      "basename": "如何抓取socket流量包？",
+      "path": "Chronicle/2025/如何抓取socket流量包？.md"
     },
     {
-      "basename": "stitch-design-md-docs",
-      "path": "sources/stitch-design-md-docs.md"
+      "basename": "ideviceinstaller 调试 IOS 应用软件",
+      "path": "Chronicle/2025/ideviceinstaller 调试 IOS 应用软件.md"
     },
     {
-      "basename": "awesome-design-md",
-      "path": "entities/awesome-design-md.md"
+      "basename": "uniapp",
+      "path": "Chronicle/2025/uniapp.md"
     },
     {
-      "basename": "voltagent",
-      "path": "entities/voltagent.md"
+      "basename": "Uniapp develop",
+      "path": "Chronicle/2025/Uniapp develop.md"
     },
     {
-      "basename": "web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration",
-      "path": "misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration.md"
+      "basename": "Message Center - WEB",
+      "path": "Chronicle/2024/Message Center - WEB.md"
     },
     {
-      "basename": "design-system-as-ai-context",
-      "path": "concepts/design-system-as-ai-context.md"
+      "basename": "Message Center - App",
+      "path": "Chronicle/2024/Message Center - App.md"
     },
     {
-      "basename": "claude-code",
-      "path": "entities/claude-code.md"
+      "basename": "2024 手机模拟器游戏火热🔥",
+      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
     },
     {
-      "basename": "andrej-karpathy-zero-to-hero",
-      "path": "sources/andrej-karpathy-zero-to-hero.md"
+      "basename": "深入浅出 Greasemonkey",
+      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
     },
     {
-      "basename": "andrej-karpathy",
-      "path": "entities/andrej-karpathy.md"
+      "basename": "砸壳",
+      "path": "Chronicle/2024/砸壳.md"
     },
     {
-      "basename": "li-hongyi-genai-2025",
-      "path": "sources/li-hongyi-genai-2025.md"
+      "basename": "IPATool 使用",
+      "path": "Chronicle/2024/IPATool 使用.md"
+    },
+    {
+      "basename": "Batch Link Report",
+      "path": "Dashboard/Batch Link Report.md"
+    },
+    {
+      "basename": "Auto Link Suggestions",
+      "path": "Dashboard/Auto Link Suggestions.md"
+    },
+    {
+      "basename": "Vault Health Check",
+      "path": "Dashboard/Vault Health Check.md"
+    },
+    {
+      "basename": "Tag Links Generator",
+      "path": "Dashboard/Tag Links Generator.md"
+    },
+    {
+      "basename": "HomePage",
+      "path": "Dashboard/HomePage.md"
     },
     {
       "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "hot",
-      "path": "hot.md"
+      "basename": "index",
+      "path": "index.md"
     },
     {
-      "basename": "dot-cli-commands",
-      "path": "references/dot-cli-commands.md"
+      "basename": "_insights",
+      "path": "_insights.md"
     },
     {
-      "basename": "sebastienrousseau-dotfiles",
-      "path": "entities/sebastienrousseau-dotfiles.md"
+      "basename": "gemini-notebook-mcp-cli",
+      "path": "entities/gemini-notebook-mcp-cli.md"
     },
     {
-      "basename": "vitepress-multilingual-docs",
-      "path": "skills/vitepress-multilingual-docs.md"
+      "basename": "bmad-method-github-readme",
+      "path": "references/bmad-method-github-readme.md"
     },
     {
-      "basename": "trusted-shell-platform",
-      "path": "entities/trusted-shell-platform.md"
+      "basename": "chezmoi-bitwarden-keychain",
+      "path": "references/chezmoi-bitwarden-keychain.md"
     },
     {
-      "basename": "shell-alias-taxonomy",
-      "path": "concepts/shell-alias-taxonomy.md"
+      "basename": "chezmoi-encryption-backends",
+      "path": "references/chezmoi-encryption-backends.md"
     },
     {
-      "basename": "dotfile-manager",
-      "path": "concepts/dotfile-manager.md"
+      "basename": "chezmoi-nix-darwin-integration",
+      "path": "references/chezmoi-nix-darwin-integration.md"
     },
     {
-      "basename": "zustand-core-architecture × zustand",
-      "path": "synthesis/zustand-core-architecture × zustand.md"
-    },
-    {
-      "basename": "zellij-terminal-multiplexer",
-      "path": "skills/zellij-terminal-multiplexer.md"
-    },
-    {
-      "basename": "Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具",
-      "path": "Clippings/Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具.md"
-    },
-    {
-      "basename": "ios-sideloading-fundamentals",
-      "path": "skills/ios-sideloading-fundamentals.md"
-    },
-    {
-      "basename": "web-github-com-livecontainer-issues-1456",
-      "path": "misc/web-github-com-livecontainer-issues-1456.md"
-    },
-    {
-      "basename": "使用 chezmoi & vscode, 管理你的 dotfiles",
-      "path": "Clippings/使用 chezmoi & vscode, 管理你的 dotfiles.md"
+      "basename": "chezmoi-official-site",
+      "path": "references/chezmoi-official-site.md"
     }
   ],
   "omittedPaths": [],
