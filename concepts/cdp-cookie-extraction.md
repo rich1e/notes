@@ -1,5 +1,5 @@
 ---
-title: "CDP Cookie Extraction — Chrome DevTools Protocol as the auth bridge"
+title: "CDP Cookie Extraction — 以 Chrome DevTools Protocol 作为认证桥梁"
 category: concepts
 tags:
   - cdp
@@ -7,7 +7,7 @@ tags:
   - mcp
   - google
   - browser-automation
-summary: When a service has no OAuth, drive a managed browser via Chrome DevTools Protocol and harvest cookies/CSRF/session from the logged-in session.
+summary: 当某个服务没有 OAuth 时,通过 Chrome DevTools Protocol 驱动一个受管理的浏览器,从已登录的会话中获取 cookie/CSRF/session。
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/docs/AUTHENTICATION.md
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/CLAUDE.md
@@ -32,11 +32,11 @@ relationships:
     type: related_to
 ---
 
-# CDP Cookie Extraction — Chrome DevTools Protocol as the auth bridge
+# CDP Cookie Extraction — 以 Chrome DevTools Protocol 作为认证桥梁
 
-> When a service exposes no OAuth flow but does enforce cookie-based auth (Google NotebookLM, many internal admin tools, etc.), the only reliable programmatic path is **drive a real Chromium via Chrome DevTools Protocol, log in interactively once, then reuse the saved browser profile to harvest fresh cookies on every token rotation.**
+> 当一个服务不提供任何 OAuth 流程,却强制使用基于 cookie 的认证(Google NotebookLM、许多内部管理工具等)时,唯一可靠的编程路径就是**通过 Chrome DevTools Protocol 驱动一个真实的 Chromium 实例,交互式登录一次,然后复用保存下来的浏览器 profile,在每次 token 轮换时重新提取新鲜的 cookie。**
 
-## The pattern
+## 这个模式
 
 ```
 ┌────────────────────────────────┐
@@ -56,61 +56,61 @@ relationships:
 └────────────────────────────────┘
 ```
 
-The CLI does NOT see your real browser session — it spins up a **dedicated** Chromium profile so your day-to-day browsing state, extensions, and other Google logins stay untouched.
+这个 CLI **不会**接触你真实的浏览器会话——它会启动一个**专用**的 Chromium profile,这样你日常的浏览状态、扩展程序以及其他 Google 登录都不会受到影响。
 
-## Why CDP and not Puppeteer/Playwright/Selenium?
+## 为什么用 CDP,而不是 Puppeteer/Playwright/Selenium?
 
-| Dimension | CDP (raw) | Puppeteer | Playwright | Selenium |
+| 维度 | CDP(原生) | Puppeteer | Playwright | Selenium |
 |-----------|-----------|-----------|------------|----------|
-| Cookie + header access via Network domain | ✅ native | ✅ via CDP | ✅ via CDP | ⚠️ requires DevTools shim |
-| Persistent profile control | ✅ | ✅ | ✅ | ⚠️ |
-| Multi-browser support | ⚠️ Chromium-family only | ⚠️ | ✅ Firefox/Safari/WebKit | ✅ |
-| Zero extra deps | ✅ `websocket-client` is enough | ❌ large | ❌ even larger | ❌ Java |
+| 通过 Network domain 访问 cookie + header | ✅ 原生 | ✅ 经由 CDP | ✅ 经由 CDP | ⚠️ 需要 DevTools shim |
+| 持久化 profile 控制 | ✅ | ✅ | ✅ | ⚠️ |
+| 多浏览器支持 | ⚠️ 仅限 Chromium 系 | ⚠️ | ✅ Firefox/Safari/WebKit | ✅ |
+| 零额外依赖 | ✅ 只需 `websocket-client` | ❌ 体积大 | ❌ 体积更大 | ❌ 需要 Java |
 
-`gemini-notebook-mcp-cli` uses raw CDP via `websocket-client` (one of the listed deps). That's deliberate — the entire auth subsystem is ~300 lines because they only need Network + Page domains.
+`gemini-notebook-mcp-cli` 通过 `websocket-client`(所列依赖之一)使用原生 CDP。这是刻意为之的选择——整个认证子系统只有约 300 行代码,因为它只需要用到 Network 和 Page 这两个 domain。
 
-## What gets extracted (NotebookLM case)
+## 具体提取了什么(以 NotebookLM 为例)
 
-From one `nlm login` invocation, the CLI harvests four pieces and caches them in `profiles/<name>/auth.json`:
+一次 `nlm login` 调用后,CLI 会采集四项内容,并缓存到 `profiles/<name>/auth.json`:
 
-1. **Cookies** — `__Secure-1PSID`, `__Secure-3PSID`, `SID`, `HSID`, `SSID`, `APISID`, `SAPISID`, etc.
-2. **CSRF token** (`SNlM0e`) — embedded in the homepage HTML, parsed with regex
-3. **Session ID** (`FdrFJe`) — also homepage-derived
-4. **Account email** — read from the account chooser / profile chip
+1. **Cookies** — `__Secure-1PSID`、`__Secure-3PSID`、`SID`、`HSID`、`SSID`、`APISID`、`SAPISID` 等
+2. **CSRF token**(`SNlM0e`) — 嵌在首页 HTML 中,用正则解析出来
+3. **Session ID**(`FdrFJe`) — 同样从首页解析得到
+4. **账号邮箱** — 从账号选择器/profile 头像处读取
 
-v0.1.9+ removed the requirement to manually pass CSRF/session — they're auto-extracted on MCP startup. v0.9.3+ also auto-records the host your account lands on (`notebook.google.com` vs `notebook.google.com` post-rebrand) and routes subsequent requests there.
+v0.1.9+ 版本去掉了手动传入 CSRF/session 的要求——它们会在 MCP 启动时自动提取。v0.9.3+ 还会自动记录你的账号落在哪个域名上(改版前后是 `notebook.google.com` 对 `notebook.google.com`),并把后续请求路由到那个域名。
 
-## The "remote debugging" trap
+## "远程调试"这个陷阱
 
-Chrome 136+ restricted remote debugging on the **default profile** for security. The CLI works around this automatically by:
+Chrome 136+ 出于安全考虑,限制了**默认 profile** 上的远程调试。CLI 会自动绕开这个限制,做法是:
 
-1. Always launching with a dedicated profile directory (`chrome-profiles/<name>/`)
-2. Adding `--remote-allow-origins=*` to the Chromium command line
+1. 始终使用专用的 profile 目录启动(`chrome-profiles/<name>/`)
+2. 在 Chromium 命令行中添加 `--remote-allow-origins=*`
 
-Users don't need to do anything — but if you're adapting the pattern, **do not** try to attach to the user's existing default profile; you will fail to connect.
+用户不需要做任何操作——但如果你在借用这个模式做自己的实现,**不要**尝试挂接到用户已有的默认 profile;那样会连接失败。
 
-## Refresh strategy
+## 刷新策略
 
-Cookies last ~2-4 weeks, CSRF lasts minutes, session ID rotates per MCP init. The CLI handles this transparently:
+Cookie 大约能存活 2-4 周,CSRF 只能存活几分钟,session ID 每次 MCP 初始化都会轮换。CLI 对此完全透明地处理:
 
-| Token | Lifetime | Refresh mechanism |
+| Token | 生命周期 | 刷新机制 |
 |-------|----------|-------------------|
-| Cookies | weeks | re-launch CDP against saved profile → re-extract |
-| CSRF (`SNlM0e`) | minutes | re-fetch homepage → re-parse on every MCP startup |
-| Session ID | per-session | re-fetch homepage → re-parse on every MCP startup |
-| Build label (`bl`) | per Google deploy | re-extracted during login / CSRF refresh |
+| Cookies | 数周 | 针对已保存的 profile 重新启动 CDP → 重新提取 |
+| CSRF(`SNlM0e`) | 数分钟 | 重新抓取首页 → 每次 MCP 启动时重新解析 |
+| Session ID | 每个会话 | 重新抓取首页 → 每次 MCP 启动时重新解析 |
+| Build label(`bl`) | 每次 Google 部署变化 | 登录/CSRF 刷新时重新提取 |
 
-If full re-auth fails (Google login fully expired, or genuine device-bound replay where cookies fail outside the browser), `nlm doctor auth-replay` distinguishes `stale_cookies` (just re-login) from `browser_bound_replay` (switch to `NOTEBOOKLM_RPC_TRANSPORT=cdp` for browser-backed fetch).
+如果完整重新认证失败(Google 登录彻底过期,或存在真正的设备绑定重放问题——cookie 在浏览器外无法生效),`nlm doctor auth-replay` 会区分出 `stale_cookies`(直接重新登录即可)和 `browser_bound_replay`(需要切换到 `NOTEBOOKLM_RPC_TRANSPORT=cdp` 走浏览器代理的请求方式)。
 
-## The experimental CDP-RPC escape hatch
+## 实验性的 CDP-RPC 应急通道
 
-When cookies alone won't authenticate (browser-bound replay), the package offers `NOTEBOOKLM_RPC_TRANSPORT=cdp` — this runs the Gemini Notebook `fetch` POSTs *inside* the saved browser session via `fetch` via CDP. The browser supplies its live cookies. Off by default; opt in only after `nlm doctor auth-replay` returns `browser_bound_replay`.
+当仅靠 cookie 无法完成认证时(浏览器绑定重放问题),该包提供了 `NOTEBOOKLM_RPC_TRANSPORT=cdp`——这会让 Gemini Notebook 的 `fetch` POST 请求*在*已保存的浏览器会话*内部*通过 CDP 发起 `fetch`。浏览器提供其实时的 cookie。默认关闭;只有在 `nlm doctor auth-replay` 返回 `browser_bound_replay` 之后才建议开启。
 
 ```bash
 NOTEBOOKLM_RPC_TRANSPORT=cdp nlm notebook list
 ```
 
-For MCP clients, add the env var to the server config:
+对于 MCP 客户端,把这个环境变量加到 server 配置里:
 
 ```json
 {
@@ -123,21 +123,21 @@ For MCP clients, add the env var to the server config:
 }
 ```
 
-Uploads, downloads, and artifact file transfers still use the normal HTTP paths — only `batchexecute` RPC + notebook chat are tunneled through the browser.
+上传、下载和产物文件传输仍走正常的 HTTP 路径——只有 `batchexecute` RPC 和笔记本聊天会被隧道到浏览器中。
 
-## Why this pattern generalizes
+## 为什么这个模式可以泛化
 
-The same recipe works for any internal Google product (or any other browser-only auth service) where:
+同样的方案适用于任何满足以下条件的内部 Google 产品(或任何其他仅支持浏览器认证的服务):
 
-1. You can drive Chromium on the user's machine
-2. The user is willing to log in interactively once
-3. Cookies are accepted by the backend APIs
+1. 你能够在用户机器上驱动 Chromium
+2. 用户愿意交互式登录一次
+3. 后端 API 接受 cookie 认证
 
-[[entities/gemini-notebook-mcp-cli]] is the textbook example. The same pattern appears in [[entities/claude-mem]] (uses Playwright for session capture) and OpenClaw's browser manager. **It's the de facto auth pattern when OAuth isn't an option.**
+[[entities/gemini-notebook-mcp-cli]] 是这个模式的教科书式范例。同样的模式还出现在 [[entities/claude-mem]] 中(使用 Playwright 做会话捕获)以及 OpenClaw 的浏览器管理器中。**当 OAuth 不可用时,这就是事实上的标准认证模式。**
 
-## Related concepts
+## 相关概念
 
-- [[concepts/multi-profile-google-auth]] — how to isolate N Google accounts in N managed browser profiles
-- [[concepts/auth-status-semantics]] — the 5-state health vocabulary used to surface auth problems
-- [[concepts/mcp-server-protocol-quirks]] — broader MCP auth landscape (API key, OAuth proxy, cookies)
-- [[references/gemini-notebook-mcp-cli-known-issues]] — what to do when it breaks
+- [[concepts/multi-profile-google-auth]] — 如何在 N 个受管理的浏览器 profile 中隔离 N 个 Google 账号
+- [[concepts/auth-status-semantics]] — 用于呈现认证问题的 5 状态健康词汇表
+- [[concepts/mcp-server-protocol-quirks]] — 更广义的 MCP 认证生态(API key、OAuth 代理、cookie)
+- [[references/gemini-notebook-mcp-cli-known-issues]] — 出问题时该怎么办

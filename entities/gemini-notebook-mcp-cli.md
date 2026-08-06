@@ -1,5 +1,5 @@
 ---
-title: gemini-notebook-mcp-cli — Unified CLI + MCP for Google NotebookLM
+title: gemini-notebook-mcp-cli — 面向 Google NotebookLM 的统一 CLI + MCP
 category: entities
 tags:
   - mcp
@@ -8,7 +8,7 @@ tags:
   - google
   - ai-coding
   - python
-summary: Unified `nlm` CLI + 43-tool MCP server for Google NotebookLM, MIT, by Jacob Ben-David. Supersedes the legacy `notebooklm-mcp-server`.
+summary: 由 Jacob Ben-David 开发的统一 `nlm` CLI + 43 工具 MCP server,面向 Google NotebookLM,MIT 许可。取代了旧版的 `notebooklm-mcp-server`。
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli
 created: 2026-08-06
@@ -48,111 +48,111 @@ relationships:
     type: related_to
 ---
 
-# gemini-notebook-mcp-cli — Unified CLI + MCP for Google NotebookLM
+# gemini-notebook-mcp-cli — 面向 Google NotebookLM 的统一 CLI + MCP
 
-> **The de facto standard** for programmatic access to Google NotebookLM. Single PyPI package (`notebooklm-mcp-cli`) ships both a 43-tool MCP server (`notebooklm-mcp`) and a full Typer-based CLI (`nlm`). MIT licensed, 13+ named contributors.
+> **事实标准**,用于以编程方式访问 Google NotebookLM。单个 PyPI 包(`notebooklm-mcp-cli`)同时提供一个 43 工具的 MCP server(`notebooklm-mcp`)和一个完整的基于 Typer 的 CLI(`nlm`)。MIT 许可,已有 13 位以上具名贡献者。
 
-## Identity
+## 身份信息
 
-| Field | Value |
+| 字段 | 值 |
 |-------|-------|
-| **Package** | `notebooklm-mcp-cli` |
-| **CLI binary** | `nlm` |
-| **MCP binary** | `notebooklm-mcp` |
-| **MCP server name** | `gemini-notebook-mcp` (the executable name is kept for backwards compat) |
-| **License** | MIT |
+| **包名** | `notebooklm-mcp-cli` |
+| **CLI 二进制文件** | `nlm` |
+| **MCP 二进制文件** | `notebooklm-mcp` |
+| **MCP server 名称** | `gemini-notebook-mcp`(可执行文件名沿用旧名以保持向后兼容) |
+| **许可证** | MIT |
 | **Python** | ≥ 3.11 |
-| **Author** | Jacob Ben-David (`jacob-bd`) |
-| **Status** | Beta (v0.9.7) — but de-facto production for personal use |
+| **作者** | Jacob Ben-David(`jacob-bd`) |
+| **状态** | Beta(v0.9.7)——但对个人使用场景而言已是事实上的生产可用 |
 
-## Two products, one package
+## 一个包,两个产品
 
-The same PyPI wheel gives you:
+同一个 PyPI wheel 给你两样东西:
 
 ```bash
-nlm              # CLI: scriptable, JSON output, aliases, batch ops
-notebooklm-mcp   # MCP server: 43 tools, multi-client auto-config
+nlm              # CLI:可脚本化、JSON 输出、别名、批量操作
+notebooklm-mcp   # MCP server:43 个工具,多客户端自动配置
 ```
 
-Most users install once, then use `nlm` for scripting and let Claude Code/Cursor/Gemini CLI/Antigravity/Codex/Cline/OpenClaw access notebooks via the MCP server.
+大多数用户安装一次之后,用 `nlm` 做脚本自动化,同时让 Claude Code/Cursor/Gemini CLI/Antigravity/Codex/Cline/OpenClaw 通过 MCP server 访问笔记本。
 
-## What it adds vs the legacy `notebooklm-mcp-server`
+## 相比旧版 `notebooklm-mcp-server` 增加了什么
 
-The vault previously tracked [[skills/notebooklm-mcp-setup]] (the original `notebooklm-mcp-server` by an unmaintained joydig tutorial). The CLI replaces it with a much larger surface:
+该 vault 之前追踪的是 [[skills/notebooklm-mcp-setup]](原始的 `notebooklm-mcp-server`,来自一份无人维护的 joydig 教程)。这个新 CLI 用一个规模大得多的能力面取代了它:
 
-| Dimension | Legacy `notebooklm-mcp-server` | New `notebooklm-mcp-cli` |
+| 维度 | 旧版 `notebooklm-mcp-server` | 新版 `notebooklm-mcp-cli` |
 |-----------|------------------------------|--------------------------|
-| Tools | 2 (notebook list, query) | **43** (full coverage) |
-| Auth | `--manual` cookie paste only | Auto CDP browser login + manual fallback |
-| Multi-account | ✗ | Named profiles (`--profile work`) |
-| Setup | Hand-edit `~/.claude.json` | `nlm setup add <client>` for 7+ tools |
-| Skills | ✗ | `nlm skill install` for 9 agent targets |
-| Batch | ✗ | `batch` + `cross_notebook_query` + `pipeline` |
-| Studio generation | ✗ | Audio, video, slides, infographic, mindmap, quiz, flashcards, reports |
-| Health checks | ✗ | `nlm doctor`, multi-probe `auth_status` |
-| Transport | stdio only | stdio / HTTP / SSE |
+| 工具数量 | 2(笔记本列表、查询) | **43**(全面覆盖) |
+| 认证方式 | 仅支持 `--manual` 手动粘贴 cookie | 自动 CDP 浏览器登录 + 手动回退 |
+| 多账号 | ✗ | 具名 profile(`--profile work`) |
+| 安装配置 | 手动编辑 `~/.claude.json` | `nlm setup add <client>` 支持 7+ 个工具 |
+| Skill | ✗ | `nlm skill install` 支持 9 种 agent 目标 |
+| 批量操作 | ✗ | `batch` + `cross_notebook_query` + `pipeline` |
+| Studio 生成 | ✗ | 音频、视频、幻灯片、信息图、思维导图、测验、闪卡、报告 |
+| 健康检查 | ✗ | `nlm doctor`、多探测器式的 `auth_status` |
+| 传输方式 | 仅 stdio | stdio / HTTP / SSE |
 
-## Core architectural decisions
+## 核心架构决策
 
-1. **Thin-wrapper layering** — `cli/` and `mcp/` are thin UX wrappers; all business logic lives in `services/`; only `services/` may import `core/`. This is the canonical "ports & adapters" pattern applied to a CLI+MCP product. Source: `CLAUDE.md` Layering Rules.
-2. **CDP-driven auth** — Authentication goes through Chrome DevTools Protocol against a managed browser session (`~/.notebooklm-mcp-cli/chrome-profiles/<name>/`). No OAuth flow exists because Google does not expose one; CDP is the only reliable bridge.
-3. **Internal-API reliance with graceful degradation** — Google does not document `batchexecute` RPC IDs (`wXbhsf`-style strings). The package detects drift via `RPCDriftError`, supports `NOTEBOOKLM_RPC_OVERRIDES` env var for hot-patching without a release, and auto-retries `RESOURCE_EXHAUSTED` (RPC code 8) with exponential backoff.
-4. **Profile isolation by directory** — Each Google account gets `profiles/<name>/auth.json` + a separate Chromium profile. The MCP server always uses the active default profile (`auth.default_profile`), so `nlm login switch` changes the MCP server's identity instantly.
-5. **Unified tools over tool-spam** — `source_add`, `studio_create`, `download_artifact`, `note`, `label`, `batch`, `pipeline` are **action-parameterized** rather than separate tools per subtype. Keeps total tool count manageable; trades discoverability for compactness.
+1. **薄封装分层** — `cli/` 和 `mcp/` 只是薄的 UX 封装层;所有业务逻辑都在 `services/` 中;只有 `services/` 可以导入 `core/`。这是"端口与适配器"模式在 CLI+MCP 产品上的经典应用。来源:`CLAUDE.md` 的 Layering Rules 一节。
+2. **CDP 驱动的认证** — 认证过程通过 Chrome DevTools Protocol,针对一个受管理的浏览器会话(`~/.notebooklm-mcp-cli/chrome-profiles/<name>/`)完成。不存在 OAuth 流程,因为 Google 没有提供一个;CDP 是唯一可靠的桥梁。
+3. **依赖内部 API,并优雅降级** — Google 并未公开文档化 `batchexecute` RPC ID(形如 `wXbhsf` 的字符串)。该包通过 `RPCDriftError` 检测漂移,支持通过 `NOTEBOOKLM_RPC_OVERRIDES` 环境变量在不发版的情况下热修复,并对 `RESOURCE_EXHAUSTED`(RPC 错误码 8)自动做指数回退重试。
+4. **按目录隔离 profile** — 每个 Google 账号都拥有 `profiles/<name>/auth.json` 和独立的 Chromium profile。MCP server 始终使用当前的默认 profile(`auth.default_profile`),因此 `nlm login switch` 能立刻改变 MCP server 的身份。
+5. **统一工具而非工具堆砌** — `source_add`、`studio_create`、`download_artifact`、`note`、`label`、`batch`、`pipeline` 都是**用参数区分动作**的,而不是每个子类型对应一个独立工具。这样能把工具总数控制在可管理的范围内,以可发现性换取了紧凑性。
 
-## Installation footprint
+## 安装占用情况
 
 ```bash
-uv tool install notebooklm-mcp-cli   # gives you both nlm + notebooklm-mcp
+uv tool install notebooklm-mcp-cli   # 同时给你 nlm 和 notebooklm-mcp
 ```
 
-- PyPI: `notebooklm-mcp-cli` (single wheel since v0.2.0)
-- uv tool directory: `~/.local/bin/nlm` + `~/.local/bin/notebooklm-mcp`
-- State directory: `~/.notebooklm-mcp-cli/{config.toml, aliases.json, profiles/, chrome-profiles/}`
-- v0.9.3+ auto-handles the `notebook.google.com` ↔ `notebook.google.com` rebrand by recording the host your account actually lands on, per-profile.
+- PyPI 包名:`notebooklm-mcp-cli`(自 v0.2.0 起为单一 wheel)
+- uv tool 目录:`~/.local/bin/nlm` + `~/.local/bin/notebooklm-mcp`
+- 状态目录:`~/.notebooklm-mcp-cli/{config.toml, aliases.json, profiles/, chrome-profiles/}`
+- v0.9.3+ 通过按 profile 记录你的账号实际落在哪个域名上,自动处理 `notebook.google.com` ↔ `notebook.google.com` 改版问题。
 
-## Tested matrix
+## 已测试的矩阵
 
-- ✅ Free / Pro personal accounts
-- ✅ Google AI Ultra ($249/mo) tier
-- ⚠️ Google Workspace / NotebookLM Enterprise — **untested**; the package has `NOTEBOOKLM_BASE_URL` for custom hosts but no first-party Enterprise validation. PR #114 added the configurable base URL.
-- ✅ Windows, macOS, Linux
-- ✅ WSL2 (PR #138, Kyle Brodeur)
+- ✅ 免费版 / Pro 个人账号
+- ✅ Google AI Ultra($249/月)套餐
+- ⚠️ Google Workspace / NotebookLM Enterprise — **未经测试**;该包提供了 `NOTEBOOKLM_BASE_URL` 用于自定义 host,但没有官方的 Enterprise 验证。PR #114 添加了这个可配置的 base URL。
+- ✅ Windows、macOS、Linux
+- ✅ WSL2(PR #138,Kyle Brodeur)
 
-## What it does NOT do
+## 它不做的事
 
-- **HTTPS / caller auth** — The HTTP transport exposes the server without TLS or per-user authentication. The author warns against deploying it on a public network; see `docs/REMOTE_MCP.md` for the limitations.
-- **Per-user multi-tenancy** — Single Google account per MCP process. Multi-account is via profiles (sequential, not concurrent in one process).
-- **Upstream API guarantees** — All 43 tools depend on undocumented internal APIs. The author explicitly disclaims production support.
+- **HTTPS / 调用方认证** — HTTP 传输方式在暴露 server 时没有 TLS,也没有按用户的认证机制。作者提醒不要把它部署在公共网络上;具体限制见 `docs/REMOTE_MCP.md`。
+- **多租户** — 每个 MCP 进程只支持单个 Google 账号。多账号是通过 profile 实现的(在同一进程中是顺序切换,而非并发)。
+- **对上游 API 的保证** — 全部 43 个工具都依赖未公开文档的内部 API。作者明确声明不提供生产级支持保证。
 
-## Credits (from README)
+## 致谢(来自 README)
 
-13+ named contributors with first-time attribution:
+13 位以上具名的首次贡献者:
 
-- Jacob Ben-David (author + maintainer)
-- Le Anh Tuan — HTTP transport, debug logging, perf
-- David Szabo-Pele — `source_get_content`, Linux auth
-- Tony Hansmann — `nlm setup`, `nlm doctor`, CLI Guide
-- Fabiana Furtado — batch + cross-notebook query + pipelines + smart select/tagging (PR #90)
-- Amy-Ra-lph — TOCTOU-safe credential storage, cookie redaction in logs, SHA-pinned CI (PRs #205–207)
-- Robiton — Enterprise base-URL (PR #114)
-- Kyle Brodeur — WSL2 auth (PR #138)
-- pjeby — connection pooling, fast startup (PR #54)
-- beausea — `NOTEBOOKLM_HL` configurable locale (PR #59)
-- JumpLao — extended audio/video/image formats (PR #82)
-- cbruyndoncx — `cited_text` in query output (PR #81)
-- zxyasfas — cited-only research import (PR #188)
-- Serdar Akın — multi-probe `AuthHealthChecker` to fix false `"stale"` reports (PR #219)
+- Jacob Ben-David(作者 + 维护者)
+- Le Anh Tuan — HTTP 传输、debug 日志、性能优化
+- David Szabo-Pele — `source_get_content`、Linux 认证
+- Tony Hansmann — `nlm setup`、`nlm doctor`、CLI 使用指南
+- Fabiana Furtado — 批量操作 + 跨笔记本查询 + pipeline + 智能选择/打标签(PR #90)
+- Amy-Ra-lph — TOCTOU 安全的凭证存储、日志中的 cookie 脱敏、SHA 锚定的 CI(PR #205–207)
+- Robiton — Enterprise base-URL(PR #114)
+- Kyle Brodeur — WSL2 认证(PR #138)
+- pjeby — 连接池、快速启动(PR #54)
+- beausea — 可配置的 `NOTEBOOKLM_HL` 语言区域(PR #59)
+- JumpLao — 扩展的音频/视频/图片格式支持(PR #82)
+- cbruyndoncx — 查询输出中的 `cited_text`(PR #81)
+- zxyasfas — 仅导入被引用来源的研究结果(PR #188)
+- Serdar Akın — 多探测器式 `AuthHealthChecker`,修复错误的 `"stale"` 报告(PR #219)
 
-The README also includes a "Vibe Coding Alert" — the author openly states the project is AI-assisted and welcomes refactoring PRs from experienced Python developers.
+README 中还有一个"Vibe Coding Alert"(氛围编程警示)段落——作者公开表示这个项目是由 AI 辅助完成的,并欢迎经验丰富的 Python 开发者提交重构 PR。
 
-## Key related pages
+## 关键相关页面
 
-- [[skills/gemini-notebook-mcp-cli-setup]] — install + `nlm setup add` recipe
-- [[references/gemini-notebook-mcp-cli-tools]] — 43-tool reference
-- [[references/gemini-notebook-mcp-cli-known-issues]] — `bl` param, cookie rotation, API drift
-- [[concepts/cdp-cookie-extraction]] — the auth primitive this builds on
-- [[concepts/mcp-multi-tool-installer]] — `nlm setup add` as a pattern
-- [[concepts/mcp-server-protocol-quirks]] — `--global` / `-s user` / project vs user scope still applies
+- [[skills/gemini-notebook-mcp-cli-setup]] — 安装 + `nlm setup add` 配方
+- [[references/gemini-notebook-mcp-cli-tools]] — 43 工具参考
+- [[references/gemini-notebook-mcp-cli-known-issues]] — `bl` 参数、cookie 轮换、API 漂移
+- [[concepts/cdp-cookie-extraction]] — 这个项目所依托的认证原语
+- [[concepts/mcp-multi-tool-installer]] — 把 `nlm setup add` 当作一种模式来看
+- [[concepts/mcp-server-protocol-quirks]] — `--global` / `-s user` / project vs user scope 依然适用
 - [[concepts/nlm-artifact-id-required-for-download]] — `download_artifact` 必须显式传 `artifact_id`，否则取到旧产物
 - [[concepts/nlm-studio-create-source-scoping]] — `source_ids`（硬边界）vs `custom_prompt`（软引导）+ CLI `--focus` 命名差异

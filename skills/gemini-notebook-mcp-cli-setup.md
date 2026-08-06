@@ -1,5 +1,5 @@
 ---
-title: "Setup gemini-notebook-mcp-cli — install + nlm setup add + nlm login"
+title: "安装 gemini-notebook-mcp-cli — install + nlm setup add + nlm login"
 category: skills
 tags:
   - mcp
@@ -7,7 +7,7 @@ tags:
   - notebooklm
   - install
   - google
-summary: Install gemini-notebook-mcp-cli, configure MCP for any AI tool with `nlm setup add`, then authenticate via CDP-driven browser login.
+summary: 安装 gemini-notebook-mcp-cli,通过 `nlm setup add` 为任意 AI 工具配置 MCP,再通过 CDP 驱动的浏览器登录完成认证。
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/docs/GETTING_STARTED.md
@@ -44,37 +44,37 @@ relationships:
     type: replaces
 ---
 
-# Setup gemini-notebook-mcp-cli
+# 安装 gemini-notebook-mcp-cli
 
-> **Replaces** the legacy [[skills/notebooklm-mcp-setup]] recipe. If you installed the old `notebooklm-mcp-server`, follow the migration at the bottom of this page.
+> **取代**旧版 [[skills/notebooklm-mcp-setup]] 方案。如果你之前安装的是老版本的 `notebooklm-mcp-server`,请按本页底部的迁移说明操作。
 
-## 5-minute install
+## 5 分钟安装
 
 ```bash
-# 1. Install (uv is recommended; pip and pipx also work)
+# 1. 安装(推荐用 uv;pip 和 pipx 也可以)
 uv tool install notebooklm-mcp-cli
 
-# 2. Verify
+# 2. 验证
 nlm --version                  # → notebooklm-mcp-cli 0.9.x
 which notebooklm-mcp            # → ~/.local/bin/notebooklm-mcp
 
-# 3. Auto-configure MCP for your AI tool (no JSON editing)
-nlm setup add claude-code      # or: claude-desktop, gemini, cursor, windsurf,
+# 3. 为你的 AI 工具自动配置 MCP(不需要手动编辑 JSON)
+nlm setup add claude-code      # 或者: claude-desktop, gemini, cursor, windsurf,
                                 # github-copilot, cline, antigravity, opencode
-nlm setup list                  # verify
+nlm setup list                  # 验证
 
-# 4. Authenticate (launches a managed browser session)
+# 4. 认证(会启动一个受管理的浏览器会话)
 nlm login
 
-# 5. Restart your AI tool, then ask:
-#    "List all my Gemini Notebook notebooks"
+# 5. 重启你的 AI 工具,然后问它:
+#    "列出我所有的 Gemini Notebook 笔记本"
 ```
 
-That's it — 5 commands, no manual JSON, no cookie pasting (the CDP browser flow handles auth).
+就这样——5 条命令,不需要手动编辑 JSON,也不需要粘贴 cookie(CDP 浏览器流程会处理认证)。
 
-## How auth actually works
+## 认证实际是怎么工作的
 
-`nlm login` does NOT use OAuth (Google does not expose one for NotebookLM). It launches a dedicated Chromium browser profile (`~/.notebooklm-mcp-cli/chrome-profiles/default/`) via Chrome DevTools Protocol, you log into Google there once, and the cookies + CSRF token + session ID are extracted and cached in `~/.notebooklm-mcp-cli/profiles/default/auth.json`. Subsequent logins reuse the saved browser profile — just extracting fresh cookies, no human in the loop.
+`nlm login` **不**使用 OAuth(Google 没有为 NotebookLM 提供 OAuth)。它会通过 Chrome DevTools Protocol 启动一个专用的 Chromium 浏览器 profile(`~/.notebooklm-mcp-cli/chrome-profiles/default/`),你在里面登录一次 Google 账号,随后 cookie + CSRF token + session ID 会被提取出来并缓存到 `~/.notebooklm-mcp-cli/profiles/default/auth.json`。后续登录会复用已保存的浏览器 profile——只是重新提取新鲜的 cookie,不需要人工介入。
 
 ```
 ┌────────────────────┐   CDP launch    ┌──────────────────────────┐
@@ -91,151 +91,151 @@ That's it — 5 commands, no manual JSON, no cookie pasting (the CDP browser flo
                                        └──────────────────────────┘
 ```
 
-Auth lifecycle is fully automated in v0.1.9+:
-- Cookies rotate on each request → auto-refresh via CDP against the saved profile
-- CSRF token expires in minutes → auto-extracted on MCP startup
-- Session ID rotates per session → auto-extracted on MCP startup
-- Build label (`bl` param) → auto-extracted during login / CSRF refresh
+v0.1.9+ 版本中,认证生命周期已完全自动化:
+- cookie 每次请求都会轮换 → 针对已保存的 profile 通过 CDP 自动刷新
+- CSRF token 数分钟后过期 → 在 MCP 启动时自动提取
+- session ID 每个会话都会轮换 → 在 MCP 启动时自动提取
+- Build label(`bl` 参数) → 在登录/CSRF 刷新期间自动提取
 
-If you want to inspect auth state:
+如果你想查看认证状态:
 
 ```bash
-nlm login --check                 # live status (bypasses cache)
-nlm doctor                        # all-in-one diagnostic
+nlm login --check                 # 实时状态(绕过缓存)
+nlm doctor                        # 一站式诊断
 ```
 
-The MCP server also exposes `server_info` which reports one of 5 auth states — see [[concepts/auth-status-semantics]].
+MCP server 还暴露了 `server_info`,会报告 5 种认证状态中的一种——参见 [[concepts/auth-status-semantics]]。
 
-## `nlm setup add <client>` — the multi-tool installer
+## `nlm setup add <client>` — 多工具安装器
 
-The killer feature. Instead of hand-editing 7 different JSON config files for 7 different AI tools, one command per tool:
+这是杀手级功能。不需要为 7 个不同的 AI 工具手动编辑 7 个不同的 JSON 配置文件,每个工具只需一条命令:
 
 ```bash
-nlm setup add claude-code         # writes to ~/.claude.json via `claude mcp add`
-nlm setup add claude-desktop      # auto-detects regular + Relay AI/3P profiles
-nlm setup add gemini              # writes ~/.gemini/settings.json
-nlm setup add cursor              # writes ~/.cursor/mcp.json
-nlm setup add windsurf            # writes ~/.codeium/windsurf/mcp_config.json
-nlm setup add github-copilot      # writes .vscode/mcp.json
+nlm setup add claude-code         # 通过 `claude mcp add` 写入 ~/.claude.json
+nlm setup add claude-desktop      # 自动检测 regular + Relay AI/3P 两套 profile
+nlm setup add gemini              # 写入 ~/.gemini/settings.json
+nlm setup add cursor              # 写入 ~/.cursor/mcp.json
+nlm setup add windsurf            # 写入 ~/.codeium/windsurf/mcp_config.json
+nlm setup add github-copilot      # 写入 .vscode/mcp.json
 nlm setup add cline
 nlm setup add antigravity
 nlm setup add opencode
-nlm setup add json                # interactive wizard for any other tool
+nlm setup add json                # 面向其他任意工具的交互式向导
 ```
 
-For Claude Desktop, the CLI is profile-aware:
-- Auto-detects `regular` vs `Relay AI / 3P` profiles
-- Refuses to write while Claude is running (Claude rewrites config on shutdown and would clobber the change)
-- Never creates a missing profile; only modifies detected ones
-- Removal only offers profiles containing `gemini-notebook-mcp` or a recognized legacy entry — unrelated MCPs are not touched
+对于 Claude Desktop,该 CLI 具有 profile 感知能力:
+- 自动检测 `regular` 和 `Relay AI / 3P` 两套 profile
+- Claude 正在运行时拒绝写入(Claude 会在退出时重写配置,从而覆盖掉这次改动)
+- 从不为不存在的 profile 创建新配置;只修改已检测到的 profile
+- 移除操作只会列出包含 `gemini-notebook-mcp` 或某个已识别旧条目的 profile——不相关的 MCP 不会被触碰
 
-The `nlm setup add json` mode is a wizard: it asks uvx-vs-binary, full-path-vs-name, with-or-without `mcpServers` wrapper, and prints the JSON snippet for copy-paste.
+`nlm setup add json` 模式是一个向导:它会依次询问 uvx 还是 binary、完整路径还是名称、是否带 `mcpServers` 外层包装,然后打印出 JSON 片段供你复制粘贴。
 
-The pattern generalizes — see [[concepts/mcp-multi-tool-installer]].
+这个模式是可以泛化的——参见 [[concepts/mcp-multi-tool-installer]]。
 
-## Multi-account support
+## 多账号支持
 
-Work + personal Google accounts in parallel:
+同时使用工作和个人 Google 账号:
 
 ```bash
-nlm login --profile work         # opens browser — log in with work account
-nlm login --profile personal     # opens browser — log in with personal account
+nlm login --profile work         # 打开浏览器 —— 用工作账号登录
+nlm login --profile personal     # 打开浏览器 —— 用个人账号登录
 nlm login profile list           # → work: jane@corp.com, personal: jane@gmail.com
 
-nlm login switch personal        # change MCP server's default
-nlm notebook list --profile work # one-off override
+nlm login switch personal        # 切换 MCP server 的默认账号
+nlm notebook list --profile work # 一次性覆盖
 
-# rename / delete
+# 重命名 / 删除
 nlm login profile rename work company
 nlm login profile delete old
 ```
 
-Each profile is fully isolated: separate `profiles/<name>/auth.json`, separate Chromium profile directory, separate captured email. You can be logged into multiple Google accounts simultaneously without any browser-level session juggling.
+每个 profile 都是完全隔离的:各自独立的 `profiles/<name>/auth.json`、各自独立的 Chromium profile 目录、各自独立采集到的邮箱。你可以同时登录多个 Google 账号,不需要在浏览器层面做任何会话倒腾。
 
-The MCP server always uses the active default profile, so `nlm login switch <name>` instantly re-aims the running MCP at a different Google account — see [[concepts/multi-profile-google-auth]].
+MCP server 始终使用当前的默认 profile,因此 `nlm login switch <name>` 能让运行中的 MCP 立刻改指向另一个 Google 账号——参见 [[concepts/multi-profile-google-auth]]。
 
-## Skill installation for non-MCP tools
+## 为非 MCP 工具安装 skill
 
-Some AI tools (Cline, Antigravity, OpenClaw, Codex, OpenCode, Claude Code, Gemini CLI, Alef Agent) benefit from a SKILL.md that teaches the agent how to use the MCP. Install it for your tool:
+某些 AI 工具(Cline、Antigravity、OpenClaw、Codex、OpenCode、Claude Code、Gemini CLI、Alef Agent)可以从一份 SKILL.md 中受益,它能教会 agent 如何使用这个 MCP。为你的工具安装它:
 
 ```bash
-nlm skill install claude-code    # user-level (requires tool detected first)
-nlm skill install claude-code --level project   # project-local
+nlm skill install claude-code    # 用户级(需要先检测到该工具)
+nlm skill install claude-code --level project   # 项目本地级
 nlm skill install codex
 nlm skill install gemini-cli
-nlm skill install agents         # generic .agents/skills/ target
-nlm skill install alef-agent     # separate ~/.alef-agent/workspace/skills/ target
-nlm skill list                   # show status across all targets
-nlm skill update                 # refresh installed skills
+nlm skill install agents         # 通用的 .agents/skills/ 目标
+nlm skill install alef-agent     # 单独的 ~/.alef-agent/workspace/skills/ 目标
+nlm skill list                   # 显示所有目标的状态
+nlm skill update                 # 刷新已安装的 skill
 ```
 
-## Selective tool exposure (context window control)
+## 按需暴露工具(上下文窗口控制)
 
-The MCP exposes **43 tools** by default — that's a lot of context. Use group-or-name filters:
+该 MCP 默认暴露 **43 个工具**——这会占用相当多的上下文。可以用分组或按名称的过滤器:
 
 ```bash
-# Read-only setup: hide mutating groups
+# 只读设置:隐藏会修改数据的分组
 export NOTEBOOKLM_DISABLED_GROUPS="notebooks_manage,sources_manage,studio,research,sharing,notes"
 
-# Hide one extra tool but keep studio_status visible
+# 隐藏某一个额外工具,但保留 studio_status 可见
 export NOTEBOOKLM_DISABLED_TOOLS="tag"
 export NOTEBOOKLM_ENABLED_TOOLS="studio_status"
 
-# Resolution order: DISABLED_GROUPS → DISABLED_TOOLS → ENABLED_TOOLS
+# 解析顺序: DISABLED_GROUPS → DISABLED_TOOLS → ENABLED_TOOLS
 ```
 
-Available groups: `notebooks_read`, `notebooks_manage`, `sources_read`, `sources_manage`, `chat`, `query_multi`, `organization`, `automation`, `notes`, `auth`, `server`, `sharing`, `research`, `studio`. Unknown groups are ignored; changes take effect on server restart. See [[concepts/mcp-server-protocol-quirks]] for the broader context-window-control patterns.
+可用分组:`notebooks_read`、`notebooks_manage`、`sources_read`、`sources_manage`、`chat`、`query_multi`、`organization`、`automation`、`notes`、`auth`、`server`、`sharing`、`research`、`studio`。未知分组会被忽略;改动在 server 重启后生效。更广泛的上下文窗口控制模式参见 [[concepts/mcp-server-protocol-quirks]]。
 
-## Verification
+## 验证
 
-After install + auth, the canonical smoke test:
+安装 + 认证完成后,标准的冒烟测试是:
 
 ```bash
-nlm notebook list --json         # CLI: returns JSON array of notebooks
+nlm notebook list --json         # CLI:返回笔记本的 JSON 数组
 ```
 
-In your AI assistant, the equivalent natural-language test:
+在你的 AI 助手中,等价的自然语言测试是:
 
-> "List all my Gemini Notebook notebooks"
+> "列出我所有的 Gemini Notebook 笔记本"
 
-If `notebook_list` returns your real notebooks, you're wired up. If you get auth errors, see [[references/gemini-notebook-mcp-cli-known-issues]].
+如果 `notebook_list` 返回了你真实的笔记本,说明配置已经打通。如果遇到认证错误,参见 [[references/gemini-notebook-mcp-cli-known-issues]]。
 
-## Migrating from legacy `notebooklm-mcp-server`
+## 从旧版 `notebooklm-mcp-server` 迁移
 
-If you previously installed the **separate** `notebooklm-cli` + `notebooklm-mcp-server` packages (the joydig-era setup documented at [[skills/notebooklm-mcp-setup]]):
+如果你之前安装的是**独立**的 `notebooklm-cli` + `notebooklm-mcp-server` 两个包(joydig 时代的方案,记录在 [[skills/notebooklm-mcp-setup]] 中):
 
 ```bash
-# 1. Check what's installed
+# 1. 检查已安装的内容
 uv tool list | grep notebooklm
-# Look for: notebooklm-cli (old) and/or notebooklm-mcp-server (old)
+# 留意: notebooklm-cli(旧)和/或 notebooklm-mcp-server(旧)
 
-# 2. Remove the old packages
+# 2. 移除旧包
 uv tool uninstall notebooklm-cli
 uv tool uninstall notebooklm-mcp-server
 
-# 3. Reinstall the unified package (--force fixes uv symlink races)
+# 3. 重新安装统一包(--force 可修复 uv 的符号链接竞争问题)
 uv tool install --force notebooklm-mcp-cli
 
-# 4. Re-authenticate (cookies usually survive, but verify)
+# 4. 重新认证(cookie 通常还能用,但要验证一下)
 nlm login --check
-nlm login     # only if --check reports stale
+nlm login     # 只有在 --check 报告已失效时才需要
 
-# 5. If you had another browser-automation NotebookLM MCP registered under a
-#    different name (e.g. "notebooklm"), remove it BEFORE adding the new one.
-#    Agents like Hermes get confused when two servers expose overlapping
-#    tool names (notebook_create, source_add, notebook_query).
-nlm setup add claude-code   # registers as "gemini-notebook-mcp"
+# 5. 如果你之前用另一个名字(例如 "notebooklm")注册过其他基于浏览器自动化的
+#    NotebookLM MCP,请在添加新的之前先把它移除。
+#    像 Hermes 这样的 agent 在两个 server 暴露了重叠的工具名
+#    (notebook_create、source_add、notebook_query)时会感到困惑。
+nlm setup add claude-code   # 注册为 "gemini-notebook-mcp"
 ```
 
-After migration, restart your AI tool so it picks up the new MCP registration.
+迁移完成后,重启你的 AI 工具,让它加载新的 MCP 注册信息。
 
-## Uninstalling
+## 卸载
 
 ```bash
-uv tool uninstall notebooklm-mcp-cli    # remove the binaries
-rm -rf ~/.notebooklm-mcp-cli            # remove cached state (optional)
+uv tool uninstall notebooklm-mcp-cli    # 移除二进制文件
+rm -rf ~/.notebooklm-mcp-cli            # 移除缓存的状态(可选)
 
-# Remove from each AI tool:
+# 从每个 AI 工具中移除:
 nlm setup remove claude-code
 nlm setup remove cursor
 # ...

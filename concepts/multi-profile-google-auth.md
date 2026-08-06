@@ -1,12 +1,12 @@
 ---
-title: "Multi-Profile Google Auth — N accounts, N isolated browser profiles"
+title: "Multi-Profile Google Auth — N 个账号,N 个隔离的浏览器 profile"
 category: concepts
 tags:
   - authentication
   - google
   - profiles
   - mcp
-summary: Drive N Google accounts concurrently by giving each one its own Chromium profile directory + its own auth.json, with a separate "active default" pointer.
+summary: 为每个 Google 账号分配独立的 Chromium profile 目录和独立的 auth.json,再用一个单独的"当前默认"指针,从而并发驱动 N 个 Google 账号。
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/docs/AUTHENTICATION.md
 created: 2026-08-06
@@ -28,101 +28,101 @@ relationships:
     type: related_to
 ---
 
-# Multi-Profile Google Auth — N accounts, N isolated browser profiles
+# Multi-Profile Google Auth — N 个账号,N 个隔离的浏览器 profile
 
-> One MCP server, N Google accounts, all live simultaneously. No browser-level session juggling, no OAuth token multiplexing — just **N isolated filesystem directories + N isolated Chromium profiles + a "default" pointer**.
+> 一个 MCP server,N 个 Google 账号,全部同时存活。不需要在浏览器层面倒腾会话,也不需要做 OAuth token 多路复用——只需要 **N 个隔离的文件系统目录 + N 个隔离的 Chromium profile + 一个"默认"指针**。
 
-## The pattern
+## 这个模式
 
 ```
 ~/.notebooklm-mcp-cli/
 ├── config.toml                      # auth.default_profile = "personal"
-├── profiles/                        # auth data per profile
+├── profiles/                        # 每个 profile 的认证数据
 │   ├── default/auth.json
 │   ├── work/auth.json
 │   └── personal/auth.json
-└── chrome-profiles/                 # Chromium profile dirs per profile
+└── chrome-profiles/                 # 每个 profile 对应的 Chromium 目录
     ├── default/
     ├── work/
     └── personal/
 ```
 
-Each profile pair is fully self-contained: own cookies, own CSRF/session tokens, own account email, own Chromium profile (cookies, history, login state — none of it shared). The active default is a single line in `config.toml`; the MCP server reads it on startup and uses that one.
+每一对 profile 都是完全自包含的:各自的 cookie、各自的 CSRF/session token、各自的账号邮箱、各自的 Chromium profile(cookie、历史记录、登录状态——彼此完全不共享)。当前默认账号只是 `config.toml` 里的一行;MCP server 启动时读取这一行,并使用对应的那个 profile。
 
-## The CLI verbs
+## CLI 命令
 
 ```bash
-nlm login --profile work            # create + auth a new profile
-nlm login --profile personal        # create + auth another
-nlm login profile list              # list with email addresses
-nlm login switch personal           # change default (instant for MCP)
+nlm login --profile work            # 创建并认证一个新 profile
+nlm login --profile personal        # 再创建并认证一个
+nlm login profile list              # 列出所有 profile 及对应邮箱
+nlm login switch personal           # 切换默认(对 MCP 即时生效)
 nlm login profile rename work company
 nlm login profile delete old-profile
 
-# One-off override without changing default
+# 一次性覆盖,不改变默认值
 nlm notebook list --profile work
 ```
 
-`nlm login switch <name>` is the magic verb — it rewrites `config.toml` and the running MCP server re-reads its default on the next call. No restart required.
+`nlm login switch <name>` 是关键命令——它会重写 `config.toml`,正在运行的 MCP server 会在下一次调用时重新读取其默认值。不需要重启。
 
-## Why isolated Chromium profiles are non-negotiable
+## 为什么隔离的 Chromium profile 是不可妥协的
 
-If you tried to drive a single Chromium instance with N Google accounts:
+如果你试图用单个 Chromium 实例同时驱动 N 个 Google 账号:
 
-1. **Cookie collision** — Google session cookies for account A would clobber account B
-2. **Anti-fraud detection** — Google's risk engine flags rapid account switching from the same fingerprint
-3. **Login state pollution** — Logging out of one logs out all
-4. **Browser data leakage** — Extensions, history, autofill from one account visible to the next
+1. **cookie 会互相冲突** — 账号 A 的 Google 会话 cookie 会覆盖账号 B 的
+2. **触发反欺诈检测** — Google 的风控引擎会标记来自同一指纹的快速账号切换
+3. **登录状态互相污染** — 退出其中一个账号会导致所有账号一起退出
+4. **浏览器数据泄露** — 一个账号的扩展、历史记录、自动填充会暴露给下一个账号
 
-Chromium's `--user-data-dir` flag is the escape hatch — each directory is a fully isolated browser install. The CLI always passes `--user-data-dir=~/.notebooklm-mcp-cli/chrome-profiles/<name>/`.
+Chromium 的 `--user-data-dir` 参数就是这个问题的应急出口——每个目录都是一个完全隔离的浏览器安装实例。该 CLI 始终会传入 `--user-data-dir=~/.notebooklm-mcp-cli/chrome-profiles/<name>/`。
 
-## The "MCP always uses default" subtlety
+## "MCP 始终使用默认账号"这个微妙之处
 
-The MCP server cannot pick a profile per-call — it picks one at startup and sticks with it. To run two Google accounts concurrently in two MCP servers (e.g., for a personal Claude Code and a work Claude Code), you need two separate MCP server processes with two different `auth.default_profile` settings. The package does not currently support this — but you can hack it by:
+MCP server 不能按每次调用去挑选 profile——它在启动时选定一个,之后就一直用这个。要在两个 MCP server 中并发运行两个 Google 账号(例如一个个人用的 Claude Code、一个工作用的 Claude Code),你需要两个独立的 MCP server 进程,并分别设置不同的 `auth.default_profile`。该软件包目前并不原生支持这一点——但你可以这样绕过去:
 
 ```bash
-# Terminal 1: work
+# 终端 1:工作账号
 NOTEBOOKLM_PROFILE=work nlm mcp-serve
 
-# Terminal 2: personal
+# 终端 2:个人账号
 NOTEBOOKLM_PROFILE=personal nlm mcp-serve
 ```
 
-(Requires `--transport http` and distinct ports.) See [[concepts/cdp-cookie-extraction]] for the transport details.
+(需要 `--transport http` 并使用不同端口。)传输细节参见 [[concepts/cdp-cookie-extraction]]。
 
-## What gets duplicated, what doesn't
+## 哪些内容会被复制,哪些不会
 
-| Resource | Per-profile? | Notes |
+| 资源 | 是否按 profile 隔离? | 说明 |
 |----------|-------------|-------|
-| Cookies | ✅ | isolated by Chromium profile |
-| CSRF + session tokens | ✅ | parsed from the profile's session |
-| Captured email | ✅ | for display in `profile list` |
-| Saved browser login | ✅ | Chrome's persistent cookies |
-| `config.toml` (default pointer) | ✗ single | points to ONE profile at a time |
-| MCP server identity | ✗ single | always acts as the default profile |
-| UI / CLI flag overrides | per-invocation | `--profile work` on any `nlm` call |
+| Cookies | ✅ | 由 Chromium profile 隔离 |
+| CSRF + session token | ✅ | 从该 profile 的会话中解析得到 |
+| 采集到的邮箱 | ✅ | 用于在 `profile list` 中显示 |
+| 保存的浏览器登录状态 | ✅ | Chrome 的持久化 cookie |
+| `config.toml`(默认指针) | ✗ 全局唯一 | 同一时刻只指向一个 profile |
+| MCP server 身份 | ✗ 全局唯一 | 始终作为默认 profile 运行 |
+| UI / CLI flag 覆盖 | 按每次调用 | 任意 `nlm` 调用上加 `--profile work` |
 
-## Failure modes worth knowing
+## 值得了解的失效模式
 
-| Symptom | Cause | Fix |
+| 症状 | 原因 | 解决办法 |
 |---------|-------|-----|
-| `nlm login --profile work` opens browser but no Google login UI | Existing Chromium instance using the same profile dir | Quit all Chromium windows; the CLI launches a fresh dedicated profile so this rarely happens |
-| `profile list` shows wrong email | Stale `auth.json` from before re-auth | Re-run `nlm login --profile <name>` |
-| Two profiles show the same email | You logged into both with the same account | Delete one |
-| MCP server acts as wrong account after `nlm login switch` | The MCP process cached the old profile at startup | Restart the MCP server (or use `refresh_auth` to force re-read) |
+| `nlm login --profile work` 打开了浏览器但没有 Google 登录界面 | 已有 Chromium 实例占用了同一个 profile 目录 | 退出所有 Chromium 窗口;CLI 会启动一个全新的专用 profile,所以这种情况很少见 |
+| `profile list` 显示的邮箱不对 | 重新认证之前留下的旧 `auth.json` | 重新运行 `nlm login --profile <name>` |
+| 两个 profile 显示同一个邮箱 | 你用同一个账号登录了两个 profile | 删除其中一个 |
+| `nlm login switch` 之后,MCP server 用的账号仍是旧的 | MCP 进程在启动时缓存了旧 profile | 重启 MCP server(或用 `refresh_auth` 强制重新读取) |
 
-## Generalization
+## 泛化
 
-The pattern works for any service where:
+这个模式适用于任何满足以下条件的服务:
 
-1. Auth is browser-cookie-based (no OAuth)
-2. Each user has a single identity at any moment
-3. The user might want to switch identities without re-logging-in interactively
+1. 认证基于浏览器 cookie(没有 OAuth)
+2. 每个用户在任意时刻只有一个身份
+3. 用户可能想在不重新交互登录的情况下切换身份
 
-Anything CDP-driven inherits this naturally: [[entities/gemini-notebook-mcp-cli]] is the textbook case; [[entities/claude-mem]] uses a single-profile variant.
+任何基于 CDP 驱动的实现都天然继承了这个模式:[[entities/gemini-notebook-mcp-cli]] 是教科书式的案例;[[entities/claude-mem]] 使用的是单 profile 的简化变体。
 
-## Related
+## 相关
 
-- [[concepts/cdp-cookie-extraction]] — the underlying auth primitive
-- [[concepts/auth-status-semantics]] — how to surface profile health to the user
-- [[entities/gemini-notebook-mcp-cli]] — the production implementation
+- [[concepts/cdp-cookie-extraction]] — 底层的认证原语
+- [[concepts/auth-status-semantics]] — 如何向用户呈现 profile 健康状态
+- [[entities/gemini-notebook-mcp-cli]] — 生产环境实现

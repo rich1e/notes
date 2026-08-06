@@ -1,12 +1,12 @@
 ---
-title: "Jacob Ben-David — author of gemini-notebook-mcp-cli"
+title: "Jacob Ben-David — gemini-notebook-mcp-cli 的作者"
 category: entities
 tags:
   - people
   - python
   - mcp
   - notebooklm
-summary: Maintainer of gemini-notebook-mcp-cli, MIT-licensed, openly states the project is AI-assisted and welcomes refactoring PRs from experienced Python developers.
+summary: gemini-notebook-mcp-cli 的维护者,MIT 许可,公开表示该项目是 AI 辅助完成的,并欢迎经验丰富的 Python 开发者提交重构 PR。
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli
 created: 2026-08-06
@@ -24,25 +24,25 @@ relationships:
     type: related_to
 ---
 
-# Jacob Ben-David — author of gemini-notebook-mcp-cli
+# Jacob Ben-David — gemini-notebook-mcp-cli 的作者
 
-## Identity
+## 身份信息
 
-| Field | Value |
+| 字段 | 值 |
 |-------|-------|
 | GitHub | [`jacob-bd`](https://github.com/jacob-bd) |
-| Project | gemini-notebook-mcp-cli |
-| Repository | github.com/jacob-bd/gemini-notebook-mcp-cli |
-| License held | MIT (author) |
-| Self-description | "non-developer using AI coding assistants" |
+| 项目 | gemini-notebook-mcp-cli |
+| 仓库 | github.com/jacob-bd/gemini-notebook-mcp-cli |
+| 持有许可 | MIT(作者) |
+| 自我描述 | "使用 AI 编程助手的非开发者" |
 
-## Why he's notable in the vault
+## 为什么他在这个 vault 中值得关注
 
-He maintains the de facto standard for programmatic access to Google NotebookLM — a 43-tool MCP server + full Typer-based CLI that the Gemini Notebook community has consolidated around. The package supersedes older joydig-era `notebooklm-mcp-server` guides.
+他维护着以编程方式访问 Google NotebookLM 的事实标准——一个 43 工具的 MCP server 加一个完整的基于 Typer 的 CLI,Gemini Notebook 社区已经围绕它形成了共识。该软件包取代了更早期 joydig 时代的 `notebooklm-mcp-server` 系列教程。
 
-## Self-described engineering stance
+## 自我描述的工程立场
 
-The README includes an unusual "Vibe Coding Alert" section worth quoting verbatim:
+README 中有一段不同寻常的"Vibe Coding Alert"(氛围编程警示),值得原文引用:
 
 > Full transparency: this project was built by a non-developer using AI coding assistants. If you're an experienced Python developer, you might look at this codebase and wince. That's okay.
 >
@@ -50,23 +50,23 @@ The README includes an unusual "Vibe Coding Alert" section worth quoting verbati
 >
 > **This is where you come in.** If you see something that makes you cringe, please consider contributing rather than just closing the tab. This is open source specifically because human expertise is irreplaceable. Whether it's refactoring, better error handling, type hints, or architectural guidance - PRs and issues are welcome.
 
-This framing — explicit acknowledgment that the code is AI-assisted, with a direct invitation for experienced reviewers — is a useful pattern for any solo maintainer of a popular library. It signals humility without apologizing for shipping, and converts "you should have done X better" energy into PRs.
+这种坦诚——明确承认代码是 AI 辅助完成的,并直接邀请经验丰富的人来 review——对任何一位维护着热门开源库的独立维护者来说,都是一个值得借鉴的做法。它传达出谦逊,但并不为发布这件事道歉,还把"你本该做得更好"式的吐槽能量转化成了 PR。
 
-## Notable design decisions attributable to him
+## 可归于他的一些值得关注的设计决策
 
-- **Unified-package architecture** — single `notebooklm-mcp-cli` wheel ships both `nlm` and `notebooklm-mcp` binaries (replaces the legacy `notebooklm-cli` + `notebooklm-mcp-server` split)
-- **Profile-based multi-account** — `nlm login --profile work` as a first-class workflow
-- **Multi-tool installer** — `nlm setup add <client>` for 9+ AI clients instead of hand-editing JSON
-- **Auto-resilient auth** — v0.1.9+ auto-refreshes CSRF/session/cookies; v0.9.3+ auto-handles the `notebook.google.com` ↔ `notebook.google.com` rebrand
-- **5-state auth health vocabulary** — `configured` / `not_configured` / `stale` / `unverified` / `error`, designed to keep AI agents from looping users into false re-auth prompts
-- **Multi-probe `AuthHealthChecker`** — Serdar Akın PR #219, to distinguish "stale credentials" from "monitoring can't tell"
+- **统一打包架构** — 单个 `notebooklm-mcp-cli` wheel 同时提供 `nlm` 和 `notebooklm-mcp` 两个二进制文件(取代了旧版 `notebooklm-cli` + `notebooklm-mcp-server` 的分裂状态)
+- **基于 profile 的多账号支持** — `nlm login --profile work` 作为一等公民式的工作流
+- **多工具安装器** — `nlm setup add <client>` 面向 9 个以上的 AI 客户端,而不需要手动编辑 JSON
+- **自愈式认证** — v0.1.9+ 自动刷新 CSRF/session/cookie;v0.9.3+ 自动处理 `notebook.google.com` ↔ `notebook.google.com` 的改版问题
+- **5 状态认证健康词汇表** — `configured` / `not_configured` / `stale` / `unverified` / `error`,专门设计用来防止 AI agent 因误报而反复循环地要求用户重新认证
+- **多探测器式的 `AuthHealthChecker`** — 出自 Serdar Akın 的 PR #219,用于区分"凭证确实失效"与"监控本身判断不出来"
 
-## Major contributors
+## 主要贡献者
 
-13+ named contributors with first-time credit; see [[entities/gemini-notebook-mcp-cli]] for the full list.
+已有 13 位以上具名的首次贡献者;完整名单见 [[entities/gemini-notebook-mcp-cli]]。
 
-## Where to find him
+## 在哪里可以找到他
 
 - GitHub: [@jacob-bd](https://github.com/jacob-bd)
-- Buy Me a Coffee: [buymeacoffee.com/jacobbd](https://buymeacoffee.com/jacobbd) (the README explicitly notes "testing every Gemini Notebook feature takes real time and resources")
-- Project issues: github.com/jacob-bd/gemini-notebook-mcp-cli/issues
+- Buy Me a Coffee: [buymeacoffee.com/jacobbd](https://buymeacoffee.com/jacobbd)(README 中明确写道"测试 Gemini Notebook 的每一个功能都需要真实的时间和资源")
+- 项目 issue: github.com/jacob-bd/gemini-notebook-mcp-cli/issues
