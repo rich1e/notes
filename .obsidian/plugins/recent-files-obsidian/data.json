@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "ai-component-library-runtime",
+      "path": "projects/flow-design-system/concepts/ai-component-library-runtime.md"
+    },
+    {
+      "basename": "designable-iframe-component-bridge",
+      "path": "projects/flow-design-system/concepts/designable-iframe-component-bridge.md"
+    },
+    {
+      "basename": "Research: Claude Code Agent Teams",
+      "path": "synthesis/Research: Claude Code Agent Teams.md"
+    },
+    {
+      "basename": "dynamic-require-resolveweak-loading",
+      "path": "projects/flow-design-system/concepts/dynamic-require-resolveweak-loading.md"
+    },
+    {
+      "basename": "add-new-builtin-component-three-repo-sop",
+      "path": "projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop.md"
+    },
+    {
+      "basename": "triple-repo-component-contract",
+      "path": "projects/flow-design-system/concepts/triple-repo-component-contract.md"
+    },
+    {
+      "basename": "flow-design-system",
+      "path": "projects/flow-design-system/flow-design-system.md"
+    },
+    {
+      "basename": "ai-vs-core-component-source-routing",
+      "path": "projects/flow-design-system/concepts/ai-vs-core-component-source-routing.md"
+    },
+    {
+      "basename": "environment-variables",
+      "path": "projects/trek/references/environment-variables.md"
+    },
+    {
+      "basename": "gemini-notebook-mcp-cli",
+      "path": "entities/gemini-notebook-mcp-cli.md"
+    },
+    {
+      "basename": "nlm-artifact-id-required-for-download",
+      "path": "concepts/nlm-artifact-id-required-for-download.md"
+    },
+    {
       "basename": "gemini-notebook-mcp-cli-tools",
       "path": "references/gemini-notebook-mcp-cli-tools.md"
     },
@@ -147,58 +195,6 @@
     {
       "basename": "Batch Link Report",
       "path": "Dashboard/Batch Link Report.md"
-    },
-    {
-      "basename": "Auto Link Suggestions",
-      "path": "Dashboard/Auto Link Suggestions.md"
-    },
-    {
-      "basename": "Vault Health Check",
-      "path": "Dashboard/Vault Health Check.md"
-    },
-    {
-      "basename": "Tag Links Generator",
-      "path": "Dashboard/Tag Links Generator.md"
-    },
-    {
-      "basename": "HomePage",
-      "path": "Dashboard/HomePage.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
-    },
-    {
-      "basename": "_insights",
-      "path": "_insights.md"
-    },
-    {
-      "basename": "gemini-notebook-mcp-cli",
-      "path": "entities/gemini-notebook-mcp-cli.md"
-    },
-    {
-      "basename": "bmad-method-github-readme",
-      "path": "references/bmad-method-github-readme.md"
-    },
-    {
-      "basename": "chezmoi-bitwarden-keychain",
-      "path": "references/chezmoi-bitwarden-keychain.md"
-    },
-    {
-      "basename": "chezmoi-encryption-backends",
-      "path": "references/chezmoi-encryption-backends.md"
-    },
-    {
-      "basename": "chezmoi-nix-darwin-integration",
-      "path": "references/chezmoi-nix-darwin-integration.md"
-    },
-    {
-      "basename": "chezmoi-official-site",
-      "path": "references/chezmoi-official-site.md"
     }
   ],
   "omittedPaths": [],

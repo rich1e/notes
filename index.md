@@ -8,6 +8,11 @@ title: Wiki Index
 
 ## Concepts
 
+- [[concepts/triple-repo-component-contract]] — za 商品中心三仓协作契约：新增业务组件的 9 步 SOP（核心仓建目录+注册 + BFF 仓建 config/schema + 强制刷新），目录名 = name 字段 = componentType 三方严格对齐
+- [[concepts/designable-iframe-component-bridge]] — 核心仓通过 DESIGNABLE_INITIALIZE_MESSAGE postMessage 上送组件库（categories/presets/components），设计器 useBroadcastEffect 收消息 → engine.resource.from()；单次性 + iframe 缓存是常踩的坑
+- [[concepts/ai-component-library-runtime]] — acme-core-goods-ai（Koa BFF）的 AI 组件库 controller 结构：library/components/<name>/{config,schema}.ts 双文件 + buildComponents(isLimitUser) 汇总 + 路由 /public/v1/component-library/{query-config,components/query-schema}
+- [[concepts/ai-vs-core-component-source-routing]] — 设计器组件面板的双源路由：tenantFrom ∈ {tenantA, tenantB} 且 versionNum≠3 且 gcVersion≠v3 → AI 后端 query-config；否则走 iframe postMessage。proxy target 写死 test 环境是开发态的常见坑
+- [[concepts/dynamic-require-resolveweak-loading]] — 运行时通过 require.resolveWeak('@/modules/template/builtin-components/<name>') 按目录名动态加载业务组件，与 preview/config.ts components 白名单配合实现「零注册中心」组件系统
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -170,6 +175,7 @@ title: Wiki Index
 
 ## Skills
 
+- [[skills/add-new-builtin-component-three-repo-sop]] — 在 za 商品中心新增 display 业务组件的 9 步实操清单（核心仓建目录与 6 文件 + 注册 preview/config.ts + tsc 校验 + BFF 仓建 config+schema + curl 验证 + 改 proxy target 联调 + 强制刷新验证 + 改回 target）
 - [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
 - [[skills/bmad-install-and-setup]] — BMad Method 安装：`npx bmad-method install`；前置 Node.js 20.12+ / Python 3.10+ / uv；v7 起 uv 必用
 - [[skills/omo-install-and-setup]] — omo 安装：让 LLM agent 帮你装（Ultimate 涉及 11 agent 模型选择 + per-provider 鉴权）；推荐 $49/月订阅 vs Claude Code $200
@@ -254,6 +260,13 @@ title: Wiki Index
 - [[projects/trek/concepts/auth-system]] — JWT + OIDC + WebAuthn Passkeys + TOTP MFA + OAuth 2.1
 - [[projects/trek/references/database-schema]] — SQLite 表结构（users/trips/days/places/addons 等）
 - [[projects/trek/references/environment-variables]] — 全量环境变量配置参考
+- [[projects/flow-design-system/flow-design-system]] — 商品中心模板组件系统：3 仓协作（核心运行时 + 设计器 + AI 组件库 BFF），新增一个 display 业务组件需在 3 仓分别注册
+- [[projects/flow-design-system/concepts/triple-repo-component-contract]] — 9 步 SOP 详解
+- [[projects/flow-design-system/concepts/designable-iframe-component-bridge]] — iframe postMessage 桥的细节
+- [[projects/flow-design-system/concepts/ai-component-library-runtime]] — AI 组件库 controller 结构
+- [[projects/flow-design-system/concepts/ai-vs-core-component-source-routing]] — CORE/AI 双源判定
+- [[projects/flow-design-system/concepts/dynamic-require-resolveweak-loading]] — 运行时按目录名动态加载
+- [[projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop]] — 9 步实操清单
 
 ## References
 

@@ -30,6 +30,8 @@ relationships:
     type: related_to
   - target: "[[entities/awesome-design-md]]"
     type: related_to
+  - target: "[[projects/flow-design-system/concepts/triple-repo-component-contract]]"
+    type: related_to
 ---
 
 # 设计系统作为 AI 上下文

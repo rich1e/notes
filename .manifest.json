@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-06T00:00:00Z",
+  "last_updated": "2026-08-07T15:38:09Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -1167,6 +1167,35 @@
         ".manifest.json"
       ],
       "last_ingested": "2026-08-05T07:20:18Z"
+    },
+    "_raw/2026-08-07-153809-flowimage-1.txt": {
+      "ingested_at": "2026-08-07T15:38:09Z",
+      "size_bytes": 88745,
+      "modified_at": "2026-08-07T15:38:09Z",
+      "content_hash": "sha256:3eb2a358157367999a909b1732776d415fb46864df42b557a2d6e4fbe6086dd2",
+      "source_type": "user_draft",
+      "capture_source": "claude-session",
+      "project": "flow-design-system",
+      "archived_to": null,
+      "raw_missing_after_ingest": "原始 transcript 在 2026-08-07 ingest 后无法定位到磁盘（疑似外力删除/移动）；content_hash 仍保留以证明 distillation 真实发生过；wiki 页 7 张已完整保留。",
+      "pages_created": [
+        "projects/flow-design-system/flow-design-system",
+        "projects/flow-design-system/concepts/triple-repo-component-contract",
+        "projects/flow-design-system/concepts/designable-iframe-component-bridge",
+        "projects/flow-design-system/concepts/ai-component-library-runtime",
+        "projects/flow-design-system/concepts/ai-vs-core-component-source-routing",
+        "projects/flow-design-system/concepts/dynamic-require-resolveweak-loading",
+        "projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop"
+      ],
+      "pages_updated": [
+        "concepts/design-system-as-ai-context",
+        "concepts/ai-tool-specialization",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-07T15:38:09Z"
     }
   },
   "projects": {
@@ -1227,6 +1256,19 @@
         "projects/trek/references/environment-variables.md"
       ]
     },
+    "flow-design-system": {
+      "ingested_at": "2026-08-07T15:38:09Z",
+      "source": "_raw/2026-08-07-153809-flowimage-1.txt",
+      "pages_in_vault": [
+        "projects/flow-design-system/flow-design-system",
+        "projects/flow-design-system/concepts/triple-repo-component-contract",
+        "projects/flow-design-system/concepts/designable-iframe-component-bridge",
+        "projects/flow-design-system/concepts/ai-component-library-runtime",
+        "projects/flow-design-system/concepts/ai-vs-core-component-source-routing",
+        "projects/flow-design-system/concepts/dynamic-require-resolveweak-loading",
+        "projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop"
+      ]
+    },
     "/tmp/gemini-notebook-mcp-cli/README.md": {
       "content_hash": "sha256:c4eebdcb4e0896c12720a50ee86f2077d3ced72fb94c3d8a7a5009cb6a7b6e7a",
       "last_ingested": "2026-08-06T00:00:00Z",
@@ -1262,9 +1304,9 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 74,
-    "total_pages": 240,
-    "total_projects": 1,
+    "total_sources_ingested": 75,
+    "total_pages": 246,
+    "total_projects": 2,
     "last_full_rebuild": null
   }
 }
