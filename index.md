@@ -302,6 +302,8 @@ title: Wiki Index
 - [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
 - [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
 - [[sources/anthropic-claude-code-agent-teams-docs]] — Anthropic 官方文档（v2.1.178+）：Agent Teams 4 组件 + 5 显示模式 + 3 hooks + 9 已知限制
+- [[sources/cnblogs-agent-teams-complete-guide]] — 博客园 _朝晖：Claude Code Agent Teams 中文完整教程（环境变量启用 / 4 类典型用法 / 3 层 teammates 模型 / 生命周期 / token 成本对比）
+- [[sources/csdn-agent-teams-multi-process]] — CSDN 技术博客：从工程实现角度解析 Agent Teams Swarm / TaskList / Mailbox / IPC 进程通信
 - [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka Manning 2024 书 + GitHub 仓库：PyTorch 实现 GPT 全流程
 - [[sources/stanford-cs336-spring2025]] — Stanford CS336 (Hashimoto & Liang) Spring 2025：5 作业 + 19 讲座，数据/架构/系统/对齐全覆盖
 - [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》13 讲：中文母语零基础友好
