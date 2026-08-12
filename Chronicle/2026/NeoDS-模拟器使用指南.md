@@ -623,5 +623,7 @@ hexdump -C mslug3.neo | head -20
     - [NeoDS Update 帖子](https://gbatemp.net/threads/neods-update.374204/)
     - [NeoDS Names & Compatibility List](https://gbatemp.net/threads/neods-names-compatibility-list.102177/)
     - [NeoDS - A Guide to Using One of the Greatest DS Emulators](https://gbatemp.net/threads/neods-a-guide-to-using-one-of-the-greatest-ds-emulators.291225/)
+    - [neoDS - Update! | GBAtemp.net](https://gbatemp.net/threads/neods-update.374204/page-3#post-5430813)
+    
 - GBADev 论坛：https://www.gbadev.org/
 

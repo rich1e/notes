@@ -12,7 +12,7 @@ sources:
   - https://segmentfault.com/a/1190000021857936
   - https://jixun.uk/posts/2016/r4isdhc-simple-review/
 created: 2026-06-29
-updated: 2026-07-25
+updated: 2026-08-12T13:15:00Z
 lifecycle_changed: "2026-07-25"
 tier: supporting
 lifecycle: draft
@@ -24,8 +24,16 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/neogeo-mame]]"
+    type: related_to
   - target: "[[journal/nds-flashcard-memories]]"
     type: related_to
+  - target: "[[concepts/dstwo-contact-fix]]"
+    type: related_to
+  - target: "[[misc/web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036]]"
+    type: related_to
+  - target: "[[concepts/dstwo-plugin-system]]"
+    type: related_to
+  - target: "[[misc/web-wiki-gbatemp-net-wiki-dstwo-plugin]]"
     type: related_to
 ---
 
@@ -95,7 +103,7 @@ relationships:
 
 **金银铜卡关系**：金银铜卡实际上是同一马甲的不同版本（寨厂复用），选购时务必看背面网址识别。
 
-**DSTWO 体验**：最好的烧录卡是 DSTWO，比一般烧录卡贵，因为上面有缓存，模拟 GBA 不卡。3DSLL 上插 DSTWO 是稳定方案。
+**DSTWO 体验**：最好的烧录卡是 DSTWO，比一般烧录卡贵，因为上面有缓存，模拟 GBA 不卡。3DSLL 上插 DSTWO 是稳定方案。**DSTWO 的核心溢价 = 3 文件 plugin 协议**（vault [[concepts/dstwo-plugin-system]]）：microSD `/_dstwoplug/` 目录放 BMP（16bit 40x42）+ INI + .nds/.plg 三件套，菜单显示为应用市场式图标列表，这是其他烧录卡没有的"应用市场"模式。也是 100+ 官方 + 社区 plugin（Emulators/Utilities/Multimedia/Games）能跑的前提。完整协议 + 故障模式 + .plg vs .nds 区分见 [[concepts/dstwo-plugin-system]]，plugin 清单见 [[misc/web-wiki-gbatemp-net-wiki-dstwo-plugin]]。
 
 **红蓝破解卡**：当年 3DS 时代有红蓝破解卡。红卡同上一台机器卖掉；蓝卡与烧录卡接近，刷一个内核即可当烧录卡用，目前插在 NDSI 上。
 

@@ -106,3 +106,4 @@ Todo Enforcer + Goal Audit: done?
 - [[entities/hephaestus-agent]] — Deep Worker
 - [[concepts/omo-ultrawork-mode]] — 触发机制
 - [[concepts/omo-team-mode]] — Team Mode 是 5 disciplines 的并行升级版
+- [[synthesis/concepts-bmad-named-agent-architecture × concepts-omo-discipline-agents]] — synthesis：BMad persona 三腿凳 vs omo 5 专家分工的设计哲学对比

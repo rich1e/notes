@@ -109,3 +109,4 @@ Phase 编号文件夹 collapse 成两条 lane——按字母序对应概念顺�
 - [[entities/bmad-named-agent]] — 各阶段的主人
 - [[concepts/bmad-advanced-elicitation]] — Learn 阶段的 reasoning 工具
 - [[concepts/bmad-preventing-agent-conflicts]] — 闭环在多 agent 实施时的架构护栏
+- [[synthesis/concepts-bmad-delivery-loop × concepts-agent-operating-system]] — synthesis：BMad 4 阶段工作流节奏 vs AOS 5 层跨会话 memory 架构

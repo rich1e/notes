@@ -90,3 +90,4 @@ relationships:
 - [[entities/bmad-method]] — 框架本体
 - [[skills/bmad-customize-skill]] — Customization 腿的操作指南
 - [[concepts/bmad-delivery-loop]] — 三腿凳如何支持 4 阶段闭环
+- [[synthesis/concepts-bmad-named-agent-architecture × concepts-omo-discipline-agents]] — synthesis：BMad persona 三腿凳 vs omo 5 专家分工的设计哲学对比

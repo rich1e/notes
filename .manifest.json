@@ -1196,6 +1196,122 @@
         ".manifest.json"
       ],
       "last_ingested": "2026-08-07T15:38:09Z"
+    },
+    "https://gbatemp.net/threads/dstwo-not-making-proper-contact-with-my-ds-lite.634036/": {
+      "ingested_at": "2026-08-12T03:50:00Z",
+      "source_url": "https://gbatemp.net/threads/dstwo-not-making-proper-contact-with-my-ds-lite.634036/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "raw_source": "Clippings/DSTWO not making proper contact with my DS Lite?.md",
+      "raw_fetch_fallback": "原始 URL 被 Cloudflare challenge 拦截（defuddle/WebFetch/curl 三路 403）；改用 Obsidian Web Clipper 预先存档的本地 markdown 副本（21KB）作为输入。",
+      "pages_created": [
+        "concepts/dstwo-contact-fix",
+        "misc/web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036"
+      ],
+      "pages_updated": [
+        "entities/nds-flashcard",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T03:50:00Z"
+    },
+    "https://gbatemp.net/threads/neods-a-guide-to-using-one-of-the-greatest-ds-emulators.291225/": {
+      "ingested_at": "2026-08-12T03:55:00Z",
+      "source_url": "https://gbatemp.net/threads/neods-a-guide-to-using-one-of-the-greatest-ds-emulators.291225/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "raw_source": "session-1786506390286/001-navigate.md (superpowers-chrome MCP 持久 Chrome 捕获)",
+      "raw_fetch_fallback": "Cloudflare challenge 拦截 defuddle/WebFetch/curl 三路 403；改用 superpowers-chrome MCP 真实浏览器 navigate 后导出 markdown（2,165 行）作为输入。",
+      "pages_created": [
+        "concepts/mame-rom-to-neods-conversion",
+        "misc/web-gbatemp-net-threads-neods-a-guide-to-using-one-of-the-greatest-ds-emulators-291225"
+      ],
+      "pages_updated": [
+        "entities/neogeo-mame",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T03:55:00Z"
+    },
+    "https://gbatemp.net/threads/help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds.612585/": {
+      "ingested_at": "2026-08-12T12:50:00Z",
+      "source_url": "https://gbatemp.net/threads/help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds.612585/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "raw_source": "_raw/web-gbatemp-net-threads-612585-neods-bios-menu-20260812.md (Wayback Machine 2025-05-21 快照蒸馏)",
+      "raw_fetch_fallback": "Cloudflare challenge 全路拦截（defuddle/WebFetch/superpowers-chrome/curl 全 403）；改用 Wayback Machine 镜像 200 OK，python html parser 蒸馏 20 帖到 _raw/ 本地副本（5.5KB）。",
+      "content_hash": "sha256:0be77a8a0a961f8674d3832c7eb5d7a59f563db4067722c0d3bdc4cf621ed1e1",
+      "pages_created": [
+        "misc/web-gbatemp-net-threads-help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds-612585",
+        "skills/neods-bios-menu-access"
+      ],
+      "pages_updated": [
+        "entities/neogeo-mame",
+        "concepts/mame-rom-to-neods-conversion",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T12:55:00Z"
+    },
+    "https://wiki.gbatemp.net/wiki/DSTwo_Plugin": {
+      "ingested_at": "2026-08-12T13:10:00Z",
+      "source_url": "https://wiki.gbatemp.net/wiki/DSTwo_Plugin",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "raw_source": "_raw/web-wiki-gbatemp-net-wiki-dstwo-plugin-20260812.md (Wayback Machine 2025-03-20 快照蒸馏)",
+      "raw_fetch_fallback": "Cloudflare challenge 全路拦截（defuddle/WebFetch/curl 全 403）；改用 Wayback Machine 镜像 200 OK，python html parser 蒸馏整个 wiki 页面到 _raw/ 本地副本（15KB）。",
+      "content_hash": "sha256:f4104811ee22949c741c5ad4f2704a4a7b71252edac07e5a4b5ba9cbffcb3de6",
+      "pages_created": [
+        "misc/web-wiki-gbatemp-net-wiki-dstwo-plugin",
+        "concepts/dstwo-plugin-system"
+      ],
+      "pages_updated": [
+        "entities/nds-flashcard",
+        "concepts/mame-rom-to-neods-conversion",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T13:15:00Z"
+    },
+    "https://www.gamebrew.org/wiki/NeoDS": {
+      "ingested_at": "2026-08-12T13:20:00Z",
+      "source_url": "https://www.gamebrew.org/wiki/NeoDS",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "raw_source": "_raw/web-gamebrew-org-wiki-neods-20260812.md (Wayback Machine 2024-12-26 快照蒸馏,oldid=186632)",
+      "raw_fetch_fallback": "gamebrew.org 服务器 403 拦截；改用 Wayback Machine 镜像 200 OK，python html parser 蒸馏整个 wiki 页面到 _raw/ 本地副本（6.7KB）。",
+      "content_hash": "sha256:28d00b5f9716b0634b67fa71246e4bd801150ce976ea23caf8a0fea31c3e1e54",
+      "pages_created": [
+        "misc/web-gamebrew-org-wiki-neods"
+      ],
+      "pages_updated": [
+        "entities/neogeo-mame",
+        "concepts/mame-rom-to-neods-conversion",
+        "skills/neods-bios-menu-access",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T13:20:00Z"
     }
   },
   "projects": {
@@ -1301,11 +1417,35 @@
         "docs/CLI_GUIDE.md",
         "docs/KNOWN_ISSUES.md"
       ]
+    },
+    "https://gbatemp.net/threads/help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds.612585/": {
+      "ingested_at": "2026-08-12T12:50:00Z",
+      "source_url": "https://gbatemp.net/threads/help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds.612585/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "fetch_strategy": "wayback-fallback",
+      "fetch_note": "Cloudflare challenge blocks live site (defuddle/WebFetch/superpowers-chrome/curl all 403). Fallback to Wayback Machine 2025-05-21 snapshot (200 OK) — distilled to _raw/web-gbatemp-net-threads-612585-neods-bios-menu-20260812.md (5.5KB, 20 posts).",
+      "content_hash": "sha256:0be77a8a0a961f8674d3832c7eb5d7a59f563db4067722c0d3bdc4cf621ed1e1",
+      "pages_created": [
+        "misc/web-gbatemp-net-threads-help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds-612585.md",
+        "skills/neods-bios-menu-access.md"
+      ],
+      "pages_updated": [
+        "entities/neogeo-mame.md",
+        "concepts/mame-rom-to-neods-conversion.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "last_ingested": "2026-08-12T12:55:00Z"
     }
   },
   "stats": {
-    "total_sources_ingested": 75,
-    "total_pages": 246,
+    "total_sources_ingested": 80,
+    "total_pages": 255,
     "total_projects": 2,
     "last_full_rebuild": null
   }

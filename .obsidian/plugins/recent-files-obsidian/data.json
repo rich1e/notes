@@ -1,16 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "NeoDS-模拟器使用指南",
+      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
+    },
+    {
+      "basename": "mame-rom-to-neods-conversion",
+      "path": "concepts/mame-rom-to-neods-conversion.md"
+    },
+    {
+      "basename": "web-wiki-gbatemp-net-wiki-dstwo-plugin",
+      "path": "misc/web-wiki-gbatemp-net-wiki-dstwo-plugin.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
+    },
+    {
+      "basename": "neogeo-mame",
+      "path": "entities/neogeo-mame.md"
+    },
+    {
+      "basename": "concepts-dstwo-plugin-system × concepts-mame-rom-to-neods-conversion",
+      "path": "synthesis/concepts-dstwo-plugin-system × concepts-mame-rom-to-neods-conversion.md"
+    },
+    {
+      "basename": "dstwo-plugin-system",
+      "path": "concepts/dstwo-plugin-system.md"
+    },
+    {
+      "basename": "nds-flashcard",
+      "path": "entities/nds-flashcard.md"
+    },
+    {
+      "basename": "web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036",
+      "path": "misc/web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036.md"
+    },
+    {
+      "basename": "dstwo-contact-fix",
+      "path": "concepts/dstwo-contact-fix.md"
+    },
+    {
+      "basename": "log",
+      "path": "log.md"
+    },
+    {
+      "basename": "designable-iframe-component-bridge",
+      "path": "projects/flow-design-system/concepts/designable-iframe-component-bridge.md"
+    },
+    {
+      "basename": "zustand-core-architecture × zustand",
+      "path": "synthesis/zustand-core-architecture × zustand.md"
+    },
+    {
+      "basename": "triple-repo-component-contract",
+      "path": "projects/flow-design-system/concepts/triple-repo-component-contract.md"
     },
     {
       "basename": "ai-component-library-runtime",
       "path": "projects/flow-design-system/concepts/ai-component-library-runtime.md"
     },
     {
-      "basename": "designable-iframe-component-bridge",
-      "path": "projects/flow-design-system/concepts/designable-iframe-component-bridge.md"
+      "basename": "flow-design-system",
+      "path": "projects/flow-design-system/flow-design-system.md"
     },
     {
       "basename": "Research: Claude Code Agent Teams",
@@ -23,14 +75,6 @@
     {
       "basename": "add-new-builtin-component-three-repo-sop",
       "path": "projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop.md"
-    },
-    {
-      "basename": "triple-repo-component-contract",
-      "path": "projects/flow-design-system/concepts/triple-repo-component-contract.md"
-    },
-    {
-      "basename": "flow-design-system",
-      "path": "projects/flow-design-system/flow-design-system.md"
     },
     {
       "basename": "ai-vs-core-component-source-routing",
@@ -137,10 +181,6 @@
       "path": "Chronicle/2026/Pnpm + git-worktree.md"
     },
     {
-      "basename": "NeoDS-模拟器使用指南",
-      "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
-    },
-    {
       "basename": "macOS-U盘清理与Spotlight保护目录问题",
       "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
     },
@@ -159,42 +199,6 @@
     {
       "basename": "ideviceinstaller 调试 IOS 应用软件",
       "path": "Chronicle/2025/ideviceinstaller 调试 IOS 应用软件.md"
-    },
-    {
-      "basename": "uniapp",
-      "path": "Chronicle/2025/uniapp.md"
-    },
-    {
-      "basename": "Uniapp develop",
-      "path": "Chronicle/2025/Uniapp develop.md"
-    },
-    {
-      "basename": "Message Center - WEB",
-      "path": "Chronicle/2024/Message Center - WEB.md"
-    },
-    {
-      "basename": "Message Center - App",
-      "path": "Chronicle/2024/Message Center - App.md"
-    },
-    {
-      "basename": "2024 手机模拟器游戏火热🔥",
-      "path": "Chronicle/2024/2024 手机模拟器游戏火热🔥.md"
-    },
-    {
-      "basename": "深入浅出 Greasemonkey",
-      "path": "Chronicle/2024/深入浅出 Greasemonkey.md"
-    },
-    {
-      "basename": "砸壳",
-      "path": "Chronicle/2024/砸壳.md"
-    },
-    {
-      "basename": "IPATool 使用",
-      "path": "Chronicle/2024/IPATool 使用.md"
-    },
-    {
-      "basename": "Batch Link Report",
-      "path": "Dashboard/Batch Link Report.md"
     }
   ],
   "omittedPaths": [],

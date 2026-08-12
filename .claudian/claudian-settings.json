@@ -6,6 +6,7 @@
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
+  "titleGenerationLocale": "",
   "titleGenerationModel": "",
   "excludedTags": [],
   "mediaFolder": "",
@@ -24,6 +25,7 @@
   "locale": "zh-CN",
   "providerConfigs": {
     "claude": {
+      "enabled": true,
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
@@ -31,7 +33,10 @@
       "enableChrome": false,
       "enableBangBash": false,
       "customModels": "",
+      "defaultModel": "opus",
       "lastModel": "haiku",
+      "modelEnvironmentType": "",
+      "titleModelEnvironmentType": "",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -47,7 +52,11 @@
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {},
       "modelAliases": {},
-      "visibleModels": null
+      "visibleModels": null,
+      "discoveredModels": [],
+      "enableUltraEffort": false,
+      "catalogTimestamp": 0,
+      "catalogFingerprint": ""
     },
     "opencode": {
       "cliPath": "",
@@ -72,9 +81,25 @@
       "preferredThinkingByModel": {},
       "toolMode": "all",
       "visibleModels": []
+    },
+    "grok": {
+      "catalogsByHost": {},
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "planBasePermissionMode": "normal",
+      "preferredReasoningByModel": {},
+      "visibleModels": null
     }
   },
   "settingsProvider": "claude",
+  "lastSelectedChatModel": {
+    "providerId": "claude",
+    "model": "haiku"
+  },
   "savedProviderModel": {
     "claude": "haiku"
   },
@@ -86,12 +111,20 @@
     "claude": "off"
   },
   "savedProviderPermissionMode": {},
+  "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",
-  "maxTabs": 3,
+  "maxWarmAgentProcesses": 5,
   "enableAutoScroll": true,
   "deferMathRenderingDuringStreaming": true,
   "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
+  "enableDualPane": true,
+  "enableFilePane": true,
+  "dualPaneSide": "right",
+  "sessionManagerOrganization": "list",
+  "sessionManagerSort": "last-updated",
+  "pinnedLinkedNotePaths": [],
   "hiddenProviderCommands": {},
+  "maxTabs": 3,
   "tabBarPosition": "input"
 }

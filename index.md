@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-06T00:00:00Z*
+*This index is automatically maintained. Last updated: 2026-08-12T05:49:00Z*
 
 ## Concepts
 
@@ -118,14 +118,17 @@ title: Wiki Index
 - [[concepts/mcp-multi-tool-installer]] — `nlm setup add <client>` 模式:一条命令配置 7+ AI 工具的 MCP server,免手编 7 种 JSON 配置
 - [[concepts/auth-status-semantics]] — 5-state auth 健康词典:configured/not_configured/stale/unverified/error,关键在区分"凭据坏"与"监测查不到",防 AI agent 误循环让用户重登
 - [[concepts/rpc-drift-hot-patch]] — undocumented API RPC ID 漂移存活:typed RPCDriftError + `--debug` 暴露新 ID + `NOTEBOOKLM_RPC_OVERRIDES` env var 无需发版热修
+- [[concepts/dstwo-contact-fix]] — DSTWO 接触不良 4 路径修复:清洁卡槽 → microSD 楔片 → PCB 抬升 → 卡槽更换,侵入度递进 + host vs cart 诊断分叉
+- [[concepts/mame-rom-to-neods-conversion]] — NeoDS 把 MAME 街机 ROM 转 .neo 单文件:BIOS 嵌入机制（每个 .neo 自带）、uni-bios 菜单键位 remap（A+B+X vs 桌面 MAME 的 A+B+C）、目录陷阱(仅扫 microSD 根)、MAME ROM 命名漂移 → 第三方 NeoDS Names Compatibility List 是 2016 年后唯一可靠参考 + Fork 链(0.2.0 主线 → 0.21.b 社区现行版)
+- [[concepts/dstwo-plugin-system]] — DSTWO 烧录卡 plugin 协议:3 个同名文件 (16bit BMP 40x42 + INI + .nds/.plg) 放 microSD /_dstwoplug/ 目录,BMP 16bit 约束来自 DS 硬件 GBA slot 渲染管线,3 种故障模式 (No INI / NOT 16bit / No BMP) 全部由文件名一致性导致
 
 ## Entities
 
 - [[entities/cloudflare-imgbed]] — 开源自托管图床（MarSeventh，MIT）：Serverless+Docker 双部署、六大存储后端、Vue 3 前端，脱胎自 Telegraph-Image
 - [[entities/sanyue-imghub]] — CloudFlare ImgBed 的前端仓库（Vue 3 + Element Plus），前后端分离可独立换皮
 - [[entities/feather-ios-sideload]] — iOS 付费开发者签名工具 Feather
-- [[entities/nds-flashcard]] — NDS 烧录卡（R4 / DSTWO）使用指南
-- [[entities/neogeo-mame]] — NEOGEO / MAME 模拟器配置
+- [[entities/nds-flashcard]] — NDS 烧录卡（R4 / DSTWO）使用指南；含 R4iSDHC 完整 FAQ、4 卡版本对比（r4hk/dsone/r4com/r4cn）、DSTWO 卡扣/接触问题的 4 路径修复反链 + DSTWO 3 文件 plugin 协议 (应用市场式 launcher)
+- [[entities/neogeo-mame]] — NEOGEO / MAME 模拟器配置；含 BIOS/uni-bios 菜单键/地区模式/配置层级 + NDS 端 NeoDS homebrew fork 链(0.2.0→0.2.1.b) + 键位 remap (A+B+X) + 桌面 MAME 6 维差异对照
 - [[entities/ique-dsi]] — 神游 DSi（iQue DSi）主机，型号 TWL-001(CHN)，双摄/Wi-Fi/内置软件
 - [[entities/nintendo-wansui]] — iQue DSi 内置任天狗狗虚拟宠物游戏
 - [[entities/ios17-app-development-book]] — iOS 17 App Development for Beginners（书籍），Arpit Kulsreshtha 著，Swift 5.9/SwiftUI/Xcode 15
@@ -213,6 +216,7 @@ title: Wiki Index
 - [[skills/chezmoi-bitwarden-secrets]] — chezmoi Bitwarden 密钥注入 + 跨平台 Keychain/DPAPI 自动解锁 + git-filter-repo 历史清理
 - [[skills/vitepress-multilingual-docs]] — VitePress 22 语言文档站：SEO/PWA/无障碍/多语言同步策略
 - [[skills/chezmoi-vscode-integration]] — chezmoi edit/diff 配 VSCode（`code --wait` + `--diff`），dotfile 体验接近 IDE
+- [[skills/neods-bios-menu-access]] — NeoDS v0.2.0 上 uni-bios 通用 BIOS 菜单（ROM 加载瞬间 A+B+X）与内置 cheat 菜单（游戏中 R+Start）的键位组合，与桌面 MAME/NeoGeo 实体的 A+B+C 不同
 - [[skills/zellij-terminal-multiplexer]] — Rust 终端复用器，状态栏 + 提示键开箱即用，YAML 布局 + WebAssembly 插件
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装：uv + cookbook auth + `claude mcp add --global`，23 个笔记本手工验证可读
 - [[skills/claude-code-mcp-auth-patterns]] — Claude Code MCP 两种鉴权范式：API key 头（轻量 5 分钟）vs OAuth Proxy（重度自动 refresh），含 `.env` 干扰 OAuth 的故障清单
@@ -356,6 +360,9 @@ title: Wiki Index
 - [[synthesis/concepts-agent-operating-system × entities-claude-code]] — AOS 五层记忆 × 宿主原生能力:Claude Code 只原生兜底 KB(CLAUDE.md)+ Working Memory(Auto Memory)两层,Handoff/Semantic/ADR 三层靠工具补齐,是"框架该补什么"的覆盖矩阵
 - [[synthesis/concepts-llm-training-pipeline × concepts-transformer-architecture]] — 架构 × 训练两条正交轴:架构(静态)给容量、训练(动态)给能力,能力涌现只在训练轴上;架构近年趋稳,前沿主战场移到训练
 - [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — 可扩展性两支柱:claude-mem 用 hook 扩展"记什么"、settings 用作用域控制"在哪生效",共享同一"装错 scope 静默失效"陷阱家族(npm -g / MCP --global / CLAUDE.md 覆盖)
+- [[synthesis/concepts-bmad-named-agent-architecture × concepts-omo-discipline-agents]] — BMad persona 三腿凳（Skill/Named Agent/Customization）vs omo 5 专家分工（Sisyphus+4 disciplines）：同一 agent persona 问题的两种截然不同的设计哲学
+- [[synthesis/concepts-bmad-delivery-loop × concepts-agent-operating-system]] — BMad 4 阶段交付闭环（Clarify→Plan→Build→Learn）vs AOS 5 层跨会话 memory：前者管工作流节奏，后者管状态持久化，合体才能让 AI agent 跨越单次会话
+- [[synthesis/concepts-dstwo-plugin-system × concepts-mame-rom-to-neods-conversion]] — 在 DS 上玩 NeoGeo 的两条路径：通用 .neo 单文件路径 vs DSTWO 专属 plugin 部署，目标相同但部署架构完全不同
 
 ## Misc
 
@@ -365,6 +372,11 @@ title: Wiki Index
 - [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — Google Stitch + Claude Code MCP 协作实操：两种鉴权路径（API key header vs OAuth proxy），`-s user` 等价 `--global`，`.env` 文件干扰 OAuth 的故障清单
 - [[misc/web-brainz-fun-bitcoin-seizure]] — brain-zhang 博文：美国政府大额比特币没收案不是攻破密码算法，而是利用弱私钥生成漏洞（MT19937/CVE-2023-39910），以 2025 DOJ 没收陈志/太子集团 12.7 万 BTC 为中心案例
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — YouTube 教程：Claude Code Opus 4.6 引入 Agent Teams，与 Default/Subagents 形成三模式分工；含 tmux split-pane、race-condition 任务锁、按 agent 模型分级调度、shared memory MD 跨会话桥
+- [[misc/web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036]] — GBAtemp 论坛：DSTWO supercard 在 DS Lite 上接触不良的诊断 + 4 种 fix 路径（清洁卡槽 / microSD 楔片 / PCB 抬升 / 卡槽更换），Cloudflare challenge 拦截下用本地 Clipper 副本蒸馏
+- [[misc/web-gbatemp-net-threads-neods-a-guide-to-using-one-of-the-greatest-ds-emulators-291225]] — GBAtemp NeoDS v0.2.0 完整教程(Nathan Drake 2011):NDS 跑 NeoGeo 街机的 4 阶段流程(下载→MAME ROM 转 .neo→microSD 部署→运行),含 2016 年起的兼容性过时警告 + 第三方 NeoDS Names 映射表
+- [[misc/web-gbatemp-net-threads-help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds-612585]] — GBAtemp NeoDS BIOS 菜单求助帖(Nikokaro 2022):ROM 加载瞬间 A+B+X 触发 uni-bios + 游戏中 R+Start 触发 cheat,Cloudflare 拦截用 Wayback 2025-05-21 镜像 fallback
+- [[misc/web-wiki-gbatemp-net-wiki-dstwo-plugin]] — GBAtemp WikiTemp DSTwo Plugin 索引页(2025-03-20 快照):SuperCard DSTWO 3 文件 plugin 协议 + 100+ 插件清单 (Emulators/Utilities/Multimedia/Games),Cloudflare 拦截用 Wayback fallback
+- [[misc/web-gamebrew-org-wiki-neods]] — GameBrew NeoDS 主页(2024-12-26 快照 oldid=186632):作者链 Ben Ingram → j03lpr86/nitendo/indy13 + 当前版本 0.2.1.b (2020-08-26) + 4 个 fork + 完整 changelog + GitHub Yardape8000/NeoDS + DLDI patch 步骤
 - [[sources/awesome-design-md-repo]] — VoltAgent/awesome-design-md：74 个真实站点 DESIGN.md（Claude / Vercel / Notion / Stripe 等）的 inspired interpretation
 - [[sources/google-design-md-spec]] — google-labs-code/design.md：DESIGN.md 官方格式规范 + `@google/design.md` CLI（lint / diff）
 - [[sources/stitch-design-md-docs]] — Stitch 官方 DESIGN.md 文档（JS-rendered SPA，机器读不到正文）

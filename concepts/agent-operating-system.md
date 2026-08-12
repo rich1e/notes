@@ -173,3 +173,4 @@ uses:
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]]
 - [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]]
 - [[synthesis/concepts-agent-operating-system × entities-claude-code]] — synthesis:AOS 五层 vs 宿主原生记忆的覆盖矩阵
+- [[synthesis/concepts-bmad-delivery-loop × concepts-agent-operating-system]] — synthesis：BMad 4 阶段工作流节奏 vs AOS 5 层跨会话 memory 架构
