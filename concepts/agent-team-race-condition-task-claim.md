@@ -72,7 +72,7 @@ T3: read TaskList  → task X is pending  → claim X  ← RACE
 | 概念 | 失败语义 | 与 Agent Team lock 的关系 |
 |---|---|---|
 | [[concepts/deterministic-agent-memory]] | `fresh/stale/ambiguous/not-found` | 同 query 同答案（静态） |
-| [[concepts/openlore]] | `verified/approved_not_synced/drafts_pending` | 文档态机 |
+| [[entities/openlore]] | `verified/approved_not_synced/drafts_pending` | 文档态机 |
 | **Agent Team file lock** | `pending/in-progress/completed` | 任务态机（动态） |
 
 三者是 vault "显式失败 / 状态分桶"哲学的**三个应用层**：

@@ -9,8 +9,9 @@ summary: 专为付费 Apple 开发者设计的 iOS 机上签名工具，支持 A
 sources:
   - https://www.onmyodev.com/2026/03/feather/
   - https://www.onmyodev.com/2026/05/ios-sideloading-faq/
+  - "[[Clippings/Feather 签名工具.md]]"
 created: 2026-06-29
-updated: 2026-07-26
+updated: 2026-08-13
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"
@@ -54,18 +55,25 @@ provenance:
 ### 其他
 - 签名时可修改图标、名称、包名、软件属性
 
+### 强制 Liquid Glass（iOS 26 UI 风格）
+
+签名选项底部可启用：在签名时修改框架信息强制目标软件使用 **iOS 26 Liquid Glass** 界面风格。适合老设备体验新系统观感，或反向把老 App 「假装」成新版。
+
 ## 安装流程
 
 1. 从 [GitHub Releases](https://github.com/claration/Feather/releases) 下载 `.ipa`
-2. 用已有签名工具（全能签/轻松签/Xcode）完成首次签名安装
-3. **不可安装在 LiveContainer 中**
+2. 用已有签名工具（全能签/轻松签/Xcode）完成首次签名安装 — **不可安装在 LiveContainer 中**
+3. Feather 签名安装包后用 Feather 自身或其他工具装机
 
 ## 使用流程
 
-1. **导入证书**：需先解压证书压缩包（Feather 不识别压缩包）
-2. **获取安装包**：通过软件源下载，或直接导入本地 `.ipa`
-3. **签名**：点击软件右侧"签名"按钮，可选择证书、修改属性、启用 PPQ 保护
-4. **安装**：已签名软件显示剩余天数，点击即安装
+1. **导入证书**：需先**解压**证书压缩包（Feather 不识别 `.zip`，必须先解压看到 `.p12`/`.mobileprovision`）
+2. **获取安装包**：三种方式 —
+   - 通过软件源（AltSource / SideStore Community Picks）下载
+   - 直接导入本地 `.ipa`
+   - 输入 URL 让 Feather 帮你下载
+3. **签名**：点击软件右侧"签名"按钮，可选择证书、修改属性（图标 / 名称 / 包名 / 软件属性）、启用 **PPQ 保护**、**强制 Liquid Glass**
+4. **安装**：已签名软件显示剩余天数，点击即安装（Pairing File + 本地回环，**不经过外部服务器**）
 
 ## 局限
 

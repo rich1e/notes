@@ -24,6 +24,7 @@ relationships:
     type: related_to
   - target: "[[concepts/omo-editions-ultimate-vs-light]]"
     type: related_to
+summary: "omo 安装指南：强烈推荐让 LLM agent 代为安装（避免人工配置 11 agent 订阅/模型/鉴权出错），推荐 $49/月（ChatGPT+Kimi+GLM）vs Claude Code $200 的订阅组合。"
 ---
 
 # omo 安装与设置（让 LLM agent 帮你装）
@@ -132,7 +133,7 @@ ultrawork    # 或 ulw
 | [[skills/claude-code-settings]] | omo 安装涉及 11 agent 模型选择——比 Claude Code settings 更复杂 |
 | [[skills/bmad-install-and-setup]] | 类似让 LLM agent 帮你装的策略 |
 | [[concepts/mcp-server-protocol-quirks]] | Light Edition 走 plugin-scoped MCPs 避开全局坑 |
-| [[concepts/claude-code-token-optimization]] | Skill-Embedded MCPs 直接落地 token 节流 |
+| [[skills/claude-code-token-optimization]] | Skill-Embedded MCPs 直接落地 token 节流 |
 
 ## Related
 

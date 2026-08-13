@@ -28,6 +28,7 @@ relationships:
     type: related_to
   - target: "[[concepts/omo-intent-gate]]"
     type: related_to
+summary: "omo Ultrawork 模式：输入单词 ultrawork（或 ulw）触发全 agent 流水线，Sisyphus 接管持续推进直到审计确认 done，用户无需了解底层细节。"
 ---
 
 # omo Ultrawork 模式（一词触发全 agent）

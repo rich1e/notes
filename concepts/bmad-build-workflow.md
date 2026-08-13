@@ -92,7 +92,7 @@ Intent interview 人在环，但**不是 recurring checkpoint 那种打断**。�
 
 | vault 已有 | 在 bmad-build 中的体现 |
 |---|---|
-| [[concepts/claude-code-token-optimization]] | "跑更久更少监督" = token 优化的人力侧 |
+| [[skills/claude-code-token-optimization]] | "跑更久更少监督" = token 优化的人力侧 |
 | [[concepts/deterministic-agent-memory]] | "在正确层诊断失败" = deterministic agent memory 的"失败显式分桶" |
 | [[concepts/bmad-preventing-agent-conflicts]] | Build 工作流的"上游 planning"= 防 agent 冲突的架构护栏 |
 | [[concepts/ai-tool-specialization]] | 5 阶段由 5 命名 agent 各守 = build 阶段由 Amelia 主推 |

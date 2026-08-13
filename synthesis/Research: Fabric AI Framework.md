@@ -14,8 +14,9 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-07-09
+lifecycle: reviewed
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 ---
 
 # Research: Fabric AI Framework

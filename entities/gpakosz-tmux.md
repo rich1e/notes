@@ -113,7 +113,7 @@ cp .tmux/.tmux.conf.local ~/.tmux.conf.local
 
 - 扩展 [[skills/tmux]] —— 后者是通用速查,本页是 gpakosz 这套具体配置
 - 互补 [[skills/zellij-terminal-multiplexer]] —— 同类(终端复用器)但 Rust/YAML 实现
-- [[concepts/terminal-music]] / [[skills/claude-code-settings]] —— 上层"tmux 在哪个工作流里用"
+- [[skills/terminal-music]] / [[skills/claude-code-settings]] —— 上层"tmux 在哪个工作流里用"
 
 ## 相关
 

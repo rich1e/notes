@@ -12,8 +12,9 @@ created: 2026-07-08T07:14:00Z
 updated: 2026-07-08T07:14:00Z
 summary: Totoro-jam 出品的开源文档项目，从 React/Linux/Go/Redis/PostgreSQL 等生产代码库提炼 46 个代码级编程模式，每个模式附精确到行号的源码引用与多语言实现。
 tier: core
-lifecycle: draft
-lifecycle_changed: 2026-07-08
+lifecycle: reviewed
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.75
 provenance:
   extracted: 0.95

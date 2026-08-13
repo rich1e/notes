@@ -7,7 +7,7 @@ created: 2026-07-30
 description: The following article is from 商学院 Author 姚期智 导读 当所有人还在卷大模型时，图灵奖得主姚期智已经指向了 AI 的下一个层次  ——不是更快的芯片，而是用
 tags:
   - clippings
-  - AI
+  - llm
 ---
 The following article is from 商学院 Author 姚期智
 

@@ -24,6 +24,7 @@ relationships:
     type: related_to
   - target: "[[concepts/omo-discipline-agents]]"
     type: related_to
+summary: "omo Hash-Anchored Edit Tool：用 LINE#ID（行号+内容哈希）替代纯行号定位，防止 agent 在多步编辑后因行偏移产生 stale-line error（Grok Fast 1: 6.7% → 68.3%）。"
 ---
 
 # omo Hashline Edits（LINE#ID 内容哈希防 stale-line error）

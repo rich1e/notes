@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-07T15:38:09Z",
+  "last_updated": "2026-08-13T01:43:16Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -256,12 +256,14 @@
       ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Feather 签名工具.md": {
-      "content_hash": "sha256:5d7c09bf637ff3bcc1ba25127cc55f59e937ae3c87063a12dce1418d9b42afb2",
-      "last_ingested": "2026-07-26T00:27:09.603164+00:00",
+      "content_hash": "sha256:31f5a7789dfc2548eccdcfa6f43175862cb29912e361489c9907e40d5063accf",
+      "last_ingested": "2026-08-13T01:43:16Z",
       "pages_produced": [
-        "entities/feather-ios-sideload",
-        "skills/ios-sideloading-fundamentals"
-      ]
+        "entities/feather-ios-sideload.md",
+        "skills/ios-sideloading-fundamentals.md"
+      ],
+      "source_type": "document",
+      "ingest_status": "modified"
     },
     "/Users/rich1e/workspace/code/notes/Clippings/NEOGEO.md": {
       "content_hash": "sha256:c8e621ef1e53ce662a552b849325a152ba418c0509119492dde277d8ae7a7f8a",
@@ -271,50 +273,56 @@
       ]
     },
     "/Users/rich1e/workspace/code/notes/Clippings/nds折腾.md": {
-      "content_hash": "sha256:8ae2142ba23b1cb97f00aa8d6c67a00374590319734d1c91aa5a24f1e30081cc",
-      "last_ingested": "2026-07-25T03:01:00.000000+00:00",
+      "content_hash": "sha256:0ff358a01bf1389d52ed177daa3c3f8b2e4780b9bda49ecb10abeed9624166d6",
+      "last_ingested": "2026-08-13T01:43:16Z",
       "pages_produced": [
-        "entities/nds-flashcard"
-      ]
+        "journal/nds-flashcard-memories.md"
+      ],
+      "source_type": "document",
+      "ingest_status": "modified"
     },
     "/Users/rich1e/workspace/code/notes/Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md": {
       "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 4988,
       "modified_at": "2026-06-29T16:31:36Z",
-      "content_hash": "sha256:4c3cb4aed364646561f7dd5b264c62f81f1fa4d0dcfde0818dde0fbb5d573772",
+      "content_hash": "sha256:19e0a77e3b326b1c9c86ea5c808415dcc0fea8a604987b62258410ced55619b9",
       "source_type": "document",
       "project": null,
       "pages_created": [],
       "pages_updated": [
         "journal/nds-flashcard-memories.md"
       ],
-      "last_ingested": "2026-07-26T00:27:26.387183+00:00",
+      "last_ingested": "2026-08-13T01:43:16Z",
       "pages_produced": [
-        "journal/nds-flashcard-memories"
-      ]
+        "journal/nds-flashcard-memories.md"
+      ],
+      "ingest_status": "modified"
     },
     "/Users/rich1e/workspace/code/notes/Clippings/序章-起承转结.md": {
-      "content_hash": "sha256:5b6b1373a2fe5b0747800929e8c85f13519a3bdf071d3983e1d29dcb74fbf353",
-      "last_ingested": "2026-07-26T00:27:16.974669+00:00",
+      "content_hash": "sha256:9c53610a26c4a615db605caa2476218045aefcd97e3fd88cc694b811541d52ec",
+      "last_ingested": "2026-08-13T01:43:16Z",
       "pages_produced": [
-        "journal/fire-emblem-new-mystery-prologue"
-      ]
+        "journal/fire-emblem-new-mystery-prologue.md"
+      ],
+      "source_type": "document",
+      "ingest_status": "modified"
     },
     "/Users/rich1e/workspace/code/notes/Clippings/浅谈 R4iSDHC 用户体验.md": {
       "ingested_at": "2026-07-25T08:30:00Z",
       "size_bytes": 2494,
       "modified_at": "2026-06-29T16:55:43Z",
-      "content_hash": "sha256:eb175ec7046276383ed33183c2bb93d666524ada21f6340cfd76f6ed7b7c9fef",
+      "content_hash": "sha256:efb4fa80666e97c32ea38052438ca8714ddfbfc042a5963b51e655871f5b15eb",
       "source_type": "document",
       "project": null,
       "pages_created": [],
       "pages_updated": [
         "entities/nds-flashcard.md"
       ],
-      "last_ingested": "2026-07-25T02:54:57.655400+00:00",
+      "last_ingested": "2026-08-13T01:43:16Z",
       "pages_produced": [
-        "entities/nds-flashcard.md"
-      ]
+        "skills/r4isdhc-user-experience.md"
+      ],
+      "ingest_status": "modified"
     },
     "/Users/rich1e/workspace/code/notes/buckets/books/iOS 17 App Development for Beginners Get started with iOS app development using Swift 5.9, SwiftUI, and Xcode 15 (Arpit Kulsreshtha) (z-library.sk, 1lib.sk, z-lib.sk).epub": {
       "ingested_at": "2026-07-01T00:00:00Z",
@@ -1312,6 +1320,27 @@
         ".manifest.json"
       ],
       "last_ingested": "2026-08-12T13:20:00Z"
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/姚期智万字长文演讲！解析“ AI 研究的下一个层次”.md": {
+      "content_hash": "sha256:c2404da4d10c0161bc8ee1be91bcb38462716e0660096ed0580f891c5776a53f",
+      "last_ingested": "2026-08-13T01:43:16Z",
+      "pages_produced": [
+        "concepts/ai-research-direction-yao-qizhi.md",
+        "entities/yao-qizhi.md",
+        "synthesis/Science for AI × AI for Science.md"
+      ],
+      "source_type": "document",
+      "ingest_status": "modified"
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/tmux完全指南：让多个Claude Code Agent同时工作的终端基础.md": {
+      "content_hash": "sha256:d8d9367e2ed41a7fdfc01fbfd101e29e9106948b7d247a60b7d88bb03076f0bd",
+      "last_ingested": "2026-08-13T01:43:16Z",
+      "pages_produced": [
+        "skills/tmux-agent-teams-pane-workflow.md",
+        "concepts/agent-team-display-modes.md"
+      ],
+      "source_type": "document",
+      "ingest_status": "modified"
     }
   },
   "projects": {
@@ -1445,7 +1474,7 @@
   },
   "stats": {
     "total_sources_ingested": 80,
-    "total_pages": 255,
+    "total_pages": 353,
     "total_projects": 2,
     "last_full_rebuild": null
   }

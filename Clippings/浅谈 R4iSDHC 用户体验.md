@@ -8,7 +8,7 @@ description: 首先是拆壳图：基本上和其他 R4 烧录卡没啥区别。
 tags:
   - clippings
   - flashcard
-  - DSTWO
+  - flashcard
 ---
 首先是拆壳图：
 

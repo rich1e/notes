@@ -9,7 +9,7 @@ description: 开幕雷击 重新梳理我的NDSL折腾流程 下载内核， 解
 tags:
   - clippings
   - nds
-  - DSTWO
+  - flashcard
 ---
 开幕雷击  
 

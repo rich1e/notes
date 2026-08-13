@@ -6,6 +6,7 @@ sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on 2026-08-03: 1 orphan rescue + 71 lifecycle promote + 0 tag alias (false positive)。
 lifecycle: draft
 lifecycle_changed: 2026-08-03
+base_confidence: 0.9
 tier: peripheral
 created: 2026-08-03T13:25:00Z
 updated: 2026-08-03T13:25:00Z

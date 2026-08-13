@@ -114,7 +114,7 @@ Tasks:        "What each agent does"
 
 | vault 已有 | 在 BMad 防 agent 冲突中的体现 |
 |---|---|
-| [[concepts/agent-team-preventing-conflicts]]（vault 内可能已有的对应）| BMad 用 ADR + standards 实现同一目标 |
+| [[concepts/bmad-preventing-agent-conflicts]]（本页）| BMad 用 ADR + standards 实现同一目标 |
 | [[concepts/claude-code-hooks-lifecycle]] | hooks 也是"统一行为"的载体——但 hooks 是运行时，ADR 是设计时 |
 | [[concepts/agent-team-mailbox-protocol]] | Mailbox 让 agent 间通信**有标准**——避免 ad-hoc schema |
 | [[concepts/agent-team-race-condition-task-claim]] | "任务分配冲突"是 BMad 防冲突的另一面——不让多个 agent 抢同一任务 |

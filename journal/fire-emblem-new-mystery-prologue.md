@@ -7,8 +7,9 @@ tags:
 summary: FE 新黑暗龙序章（起承转结）四部分关卡攻略，H 难度限定序章，涵盖胜利条件、敌军配置、援军、特殊装备与三向分支选择。
 sources:
   - http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/x.htm
+  - "[[Clippings/序章-起承转结.md]]"
 created: 2026-06-29
-updated: 2026-07-26
+updated: 2026-08-13
 lifecycle_changed: "2026-07-25"
 tier: peripheral
 lifecycle: draft

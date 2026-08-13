@@ -8,8 +8,9 @@ created: 2026-07-10T14:30:00Z
 updated: 2026-07-10T14:30:00Z
 summary: Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 App 开发 + 5次作业 + 3周自选项目，SwiftUI 协议导向编程核心课程。
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: "2026-07-10"
+lifecycle: reviewed
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 tier: core
 provenance:
   extracted: 0.80

@@ -27,9 +27,9 @@ relationships:
   - target: "[[concepts/mcp-server-protocol-quirks]]"
     type: related_to
   - target: "[[skills/gemini-notebook-mcp-cli-setup]]"
-    type: replaced_by
+    type: related_to
   - target: "[[entities/gemini-notebook-mcp-cli]]"
-    type: replaced_by
+    type: related_to
 ---
 
 # NotebookLM MCP Server — DEPRECATED ⚠

@@ -7,7 +7,7 @@ created: 2026-06-03
 description: 说来遗憾，整个NDS世代对我来说是完全错过了的。那时见过的掌机只有GBA SP和PSP两种，等我知道有NDS这个存在时，3DS都已经发售一段时间了。我手头的NDS也是在入手3DS之后好久才买的。毕竟当年3DS插张烧录卡就能玩NDS游戏（现在甚至都不需要烧录卡，只要装一…
 tags:
   - clippings
-  - DSTWO
+  - flashcard
   - flashcard
 ---
 说来遗憾，整个NDS世代对我来说是完全错过了的。那时见过的掌机只有GBA SP和PSP两种，等我知道有NDS这个存在时，3DS都已经发售一段时间了。

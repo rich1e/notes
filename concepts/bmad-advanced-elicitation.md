@@ -79,7 +79,7 @@ Vague requests 产生 vague revisions。**命名方法强制特定攻击角度**
 
 | vault 已有 | 在 BMad 高级 Elicitation 中的体现 |
 |---|---|
-| [[concepts/agent-team-party-mode]] | Party Mode 多 persona 对话 = elicitation 的"多视角"变体 |
+| [[entities/bmad-party-mode]] | Party Mode 多 persona 对话 = elicitation 的"多视角"变体 |
 | [[entities/openlore]] | OpenLore 的"deterministic verification"是更硬的 elicitation；BMad 高级 Elicitation 是软的 LLM-based |
 | [[concepts/deterministic-agent-memory]] | Elicitation 改善**生成**——deterministic agent memory 保证**查询**——两者互补 |
 | [[concepts/bmad-delivery-loop]] | Elicitation 在 Learn 阶段特别有价值——retrospective 反复追问根因 |

@@ -66,7 +66,7 @@ relationships:
 | [[concepts/ai-agent]] | "感知-规划-行动"循环对应 Skill 腿（行动能力） |
 | [[concepts/agent-operating-system]] | 三腿 = AOS 的 5 层 memory 在"agent 产品化"上的简化 |
 | [[concepts/ai-tool-specialization]] | Named Agent 腿是工具栈专业化的"具名化" |
-| [[concepts/claude-code-settings]] | Customization 腿的 TOML resolver 与 Claude Code settings 四级作用域是同源设计 |
+| [[skills/claude-code-settings]] | Customization 腿的 TOML resolver 与 Claude Code settings 四级作用域是同源设计 |
 | [[concepts/mcp-server-protocol-quirks]] | Customization 腿支持加 MCP 集成——和 Claude Code MCP 的坑同源 |
 
 ## Customization 是"first-class citizen"

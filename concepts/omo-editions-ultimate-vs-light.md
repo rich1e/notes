@@ -24,6 +24,7 @@ relationships:
     type: related_to
   - target: "[[skills/omo-install-and-setup]]"
     type: related_to
+summary: "omo 两个发行版对比：Ultimate（OpenCode harness，11 agents / 54 hooks / 5 MCP，全功能）vs Light（Codex CLI，8 组件，轻量便携），相同 SUL-1.0 许可。"
 ---
 
 # omo Editions 对比（Ultimate vs Light）
@@ -88,7 +89,7 @@ relationships:
 | vault 已有 | 在两个 Edition 中的体现 |
 |---|---|
 | [[concepts/ai-tool-specialization]] | 两个 Edition 各自专业化——Ultimate 多 agent / Light portable 组件 |
-| [[concepts/claude-code-token-optimization]] | Light Edition 也走 Skill-Embedded MCPs，token 节流同策略 |
+| [[skills/claude-code-token-optimization]] | Light Edition 也走 Skill-Embedded MCPs，token 节流同策略 |
 | [[concepts/mcp-server-protocol-quirks]] | 两个 Edition 都有 plugin-scoped MCPs，避开全局注册的坑 |
 | [[entities/bmad-method]] | 类似的"core + module"分版本策略 |
 

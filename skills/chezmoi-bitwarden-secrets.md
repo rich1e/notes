@@ -81,3 +81,4 @@ Git Bash 中可通过 `powershell.exe` 读取并转成临时 `BW_PASSWORD`，再
 - [[concepts/chezmoi-workflow]]
 - [[entities/chezmoi]]
 - [[concepts/chezmoi-attribute-prefixes]]
+- [[references/chezmoi-encryption-backends]] — GPG / Keyring / KeePassXC 加密后端对比

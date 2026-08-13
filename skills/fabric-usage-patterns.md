@@ -9,9 +9,10 @@ updated: 2026-07-09T08:00:00Z
 tier: peripheral
 summary: >-
   Fabric CLI 的实际使用技巧：YouTube 分析、内容提炼、Obsidian 集成、REST API 服务模式、Shell 别名配置。
-lifecycle: draft
+lifecycle: reviewed
 base_confidence: 0.75
-lifecycle_changed: 2026-07-09
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 ---
 
 # Fabric 使用场景与工作流集成

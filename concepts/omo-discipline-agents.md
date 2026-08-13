@@ -25,6 +25,7 @@ relationships:
     type: related_to
   - target: "[[entities/oh-my-openagent]]"
     type: related_to
+summary: "omo 的 5 专家 agent 架构：Sisyphus 作为 orchestrator 协调 Hephaestus（深度执行）/ Oracle / Librarian / Explore / Prometheus，按职能而非 persona 划分。"
 ---
 
 # omo Discipline Agents（Sisyphus 协调 specialists）
@@ -97,7 +98,7 @@ Todo Enforcer + Goal Audit: done?
 | [[concepts/agent-team-cost-overhead]] | 5+ specialists = linear token scaling |
 | [[concepts/ai-tool-specialization]] | 每个 agent tuned to its model's strengths = 工具专业化 |
 | [[concepts/claude-code-three-modes]] | Sisyphus orchestrator = Default 模式；specialists = Agent Teams 子集 |
-| [[concepts/claude-code-token-optimization]] | Skill-Embedded MCPs 让 specialists 不重复加载 MCP context |
+| [[skills/claude-code-token-optimization]] | Skill-Embedded MCPs 让 specialists 不重复加载 MCP context |
 
 ## Related
 

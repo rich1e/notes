@@ -20,12 +20,13 @@ lifecycle: draft
 lifecycle_changed: "2026-08-05"
 tier: supporting
 relationships:
-  - target: "[[concepts/claude-code-token-optimization]]"
+  - target: "[[skills/claude-code-token-optimization]]"
     type: related_to
   - target: "[[concepts/mcp-server-protocol-quirks]]"
     type: related_to
   - target: "[[entities/oh-my-openagent]]"
     type: related_to
+summary: "omo 的 MCP context 优化策略：MCP servers 随 skill 按需 spin up 而非常驻主 context，避免 tools/schemas 占满 context window，任务结束自动 spin down。"
 ---
 
 # omo Skill-Embedded MCPs（skill 自带 MCP）
@@ -54,7 +55,7 @@ MCP servers（web 搜索 / docs 检索 / GitHub 代码搜索等）每个都暴�
 
 | vault 已有 | 在 Skill-Embedded MCPs 中的体现 |
 |---|---|
-| [[concepts/claude-code-token-optimization]] | 直接落地"token 节流"的工程方案 |
+| [[skills/claude-code-token-optimization]] | 直接落地"token 节流"的工程方案 |
 | [[concepts/mcp-server-protocol-quirks]] | 反转 vault MCP 默认全局注册的策略——按 skill scope |
 | [[entities/claude-code-agent-teams-feature]] | 推测 Team Mode 每个 member 自己 spin up MCPs [[inferred]] |
 | [[concepts/ai-tool-specialization]] | MCP 跟着 skill 而非跟着 session——专业化更细 |
@@ -91,6 +92,6 @@ omo Light Edition（Codex CLI）有 **5 个 plugin-scoped MCPs**：
 ## Related
 
 - [[entities/oh-my-openagent]] — 框架本体
-- [[concepts/claude-code-token-optimization]] — 直接落地 vault token 优化哲学
+- [[skills/claude-code-token-optimization]] — 直接落地 vault token 优化哲学
 - [[concepts/mcp-server-protocol-quirks]] — MCP 注册策略反转
 - [[concepts/omo-editions-ultimate-vs-light]] — Light Edition 也有 plugin-scoped MCPs

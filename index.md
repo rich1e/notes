@@ -4,15 +4,10 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-12T05:49:00Z*
+*This index is automatically maintained. Last updated: 2026-08-13T01:43:00Z*
 
 ## Concepts
 
-- [[concepts/triple-repo-component-contract]] — za 商品中心三仓协作契约：新增业务组件的 9 步 SOP（核心仓建目录+注册 + BFF 仓建 config/schema + 强制刷新），目录名 = name 字段 = componentType 三方严格对齐
-- [[concepts/designable-iframe-component-bridge]] — 核心仓通过 DESIGNABLE_INITIALIZE_MESSAGE postMessage 上送组件库（categories/presets/components），设计器 useBroadcastEffect 收消息 → engine.resource.from()；单次性 + iframe 缓存是常踩的坑
-- [[concepts/ai-component-library-runtime]] — acme-core-goods-ai（Koa BFF）的 AI 组件库 controller 结构：library/components/<name>/{config,schema}.ts 双文件 + buildComponents(isLimitUser) 汇总 + 路由 /public/v1/component-library/{query-config,components/query-schema}
-- [[concepts/ai-vs-core-component-source-routing]] — 设计器组件面板的双源路由：tenantFrom ∈ {tenantA, tenantB} 且 versionNum≠3 且 gcVersion≠v3 → AI 后端 query-config；否则走 iframe postMessage。proxy target 写死 test 环境是开发态的常见坑
-- [[concepts/dynamic-require-resolveweak-loading]] — 运行时通过 require.resolveWeak('@/modules/template/builtin-components/<name>') 按目录名动态加载业务组件，与 preview/config.ts components 白名单配合实现「零注册中心」组件系统
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -178,7 +173,6 @@ title: Wiki Index
 
 ## Skills
 
-- [[skills/add-new-builtin-component-three-repo-sop]] — 在 za 商品中心新增 display 业务组件的 9 步实操清单（核心仓建目录与 6 文件 + 注册 preview/config.ts + tsc 校验 + BFF 仓建 config+schema + curl 验证 + 改 proxy target 联调 + 强制刷新验证 + 改回 target）
 - [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
 - [[skills/bmad-install-and-setup]] — BMad Method 安装：`npx bmad-method install`；前置 Node.js 20.12+ / Python 3.10+ / uv；v7 起 uv 必用
 - [[skills/omo-install-and-setup]] — omo 安装：让 LLM agent 帮你装（Ultimate 涉及 11 agent 模型选择 + per-provider 鉴权）；推荐 $49/月订阅 vs Claude Code $200
@@ -331,6 +325,7 @@ title: Wiki Index
 - [[synthesis/consolidation-2026-07-07]] — 2026-07-07 自动合并报告（wiki-lint --consolidate）：PTP 反斜杠修复、chapter1 孤儿拯救
 - [[synthesis/Research: Fabric AI Framework]] — Fabric AI 框架研究综合：Patterns 设计哲学、290+ Pattern 分类、多提供商架构、REST API
 - [[synthesis/consolidation-2026-07-23]] — 2026-07-23 自动合并报告（wiki-lint --consolidate）：21 个破损链接修复、6 个孤儿救援、4 个 Fabric lifecycle 修复、8 个 tag 规范化
+- [[synthesis/consolidation-2026-08-12]] — 2026-08-12 自动合并报告（wiki-lint --consolidate）：12 处破损链接修复、1 orphan rescue、11 页 lifecycle draft→reviewed、4 tag alias 规范化、2 relationship 类型修复
 - [[synthesis/consolidation-2026-08-04]] — 2026-08-04 自动合并报告（wiki-lint --consolidate）：13 处 xk-ai-talk-desk-ui wikilink 双前缀断链修复、4 个孤儿救援、6 处 bad_type 关系（example_of/documented_by → related_to）
 - [[synthesis/consolidation-2026-07-26]] — 2026-07-26 自动合并报告（wiki-lint --consolidate）：3 真破损修复 + 10 孤儿救援
 - [[synthesis/consolidation-2026-07-30]] — 2026-07-30 自动合并报告（wiki-lint --consolidate）：孤儿救援与断链修复
@@ -385,6 +380,11 @@ title: Wiki Index
 
 ## Journal
 
+- [[concepts/ai-research-direction-yao-qizhi]] — 姚期智 2026 WAIC 演讲：AI 受图灵机/物理定律边界约束，「Science for AI + 量子 AI」是未来 5-10 年新范式
+- [[entities/yao-qizhi]] — 图灵奖得主（2000），Dolev-Yao 攻击者模型 + Yao's Millionaires' Problem 奠基人，量子 AI 倡导者
+- [[synthesis/Science for AI × AI for Science]] — 姚期智两轴并立：AI for Science（已发生，AlphaFold/宇宙弦功率谱/单位距离问题）vs Science for AI（5-10 年，量子 AI + 数学 + 物理赋能 AI）
+- [[skills/tmux-agent-teams-pane-workflow]] — Claude Code Agent Teams tmux 模式实战：3 个 pane 操作（zoom/detach/scroll）+ CLAUDE.md 共享上下文协议 + Delegate 模式 + 5 大故障排查 + 远程服务器场景
+- [[skills/r4isdhc-user-experience]] — R4iSDHC 内核 UX 教训：菜单只扫一层目录 + 4 槽 RTS 仅 2 槽可用，HxD 改 R4i.sav 强制开启 4 槽的方法
 - [[journal/fire-emblem-new-mystery-prologue]] — FE 新·黑暗龙序章四部分攻略
 - [[journal/fire-emblem-mystery-chapter1]] — FE 新·黑暗龙第1章攻略：マルスの旅立ち
 - [[journal/nds-flashcard-memories]] — NDS 世代烧录卡横评回忆录

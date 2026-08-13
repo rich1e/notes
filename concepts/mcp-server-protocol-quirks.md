@@ -172,3 +172,5 @@ claude mcp add -s user notebooklm-mcp -- /home/$USER/.local/bin/notebooklm-mcp
 ## Related
 
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]]
+- [[concepts/mcp-multi-tool-installer]] — `nlm setup add <client>` 多工具分发模式
+- [[skills/claude-code-mcp-auth-patterns]] — 实战：MCP 鉴权与 scope 配置

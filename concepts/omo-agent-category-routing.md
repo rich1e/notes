@@ -26,6 +26,7 @@ relationships:
     type: related_to
   - target: "[[entities/hephaestus-agent]]"
     type: related_to
+summary: "omo 根据工作类型自动选模型的路由机制：visual-engineering / deep / quick / ultrabrain 四 category，避免每次手动指定模型。"
 ---
 
 # omo Agent Category Routing（4 类工作自动选模型）

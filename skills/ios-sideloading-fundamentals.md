@@ -4,8 +4,9 @@ category: skills
 tags: [ios, sideload, security]
 sources:
   - "https://www.onmyodev.com/2026/05/ios-sideloading-faq/"
+  - "[[Clippings/Feather 签名工具.md]]"
 created: 2026-07-02
-updated: 2026-08-03T05:47:33Z
+updated: 2026-08-13T01:40:00Z
 summary: iOS 侧载完整机制：调试/发布证书区别、Entitlements 权限体系、描述文件有效期、SideStore 与 LiveContainer 的原理与适用场景、JIT 开启条件。
 base_confidence: 0.83
 lifecycle: reviewed
@@ -128,6 +129,15 @@ JIT（Just-in-time Compilation）允许运行时动态写入可执行内存，iO
 | 需要 Personal VPN / iCloud 同步等 Entitlements | Feather（付费证书）|
 | 注入 `.dylib` 插件 | LiveContainer / Feather |
 | 不想频繁续签 | Feather（付费证书，1 年有效）|
+| 老设备体验 iOS 26 Liquid Glass UI 风格 | Feather（强制 Liquid Glass 选项）|
+
+## Feather 的几个易踩坑细节
+
+- **导入证书需先解压**：Feather 不识别 `.zip`/`.7z` 压缩包，必须先解压出 `.p12`/`.mobileprovision` 再导入。
+- **不可安装在 LiveContainer 中**：Feather 自身签名时要装在「真实环境」，不能装在 LiveContainer 的沙盒里，否则签名工具链失败。
+- **机上安装走本地回环**：通过 Pairing File + StosVPN/LocalDevVPN 实现「设备自连接自己」，安装过程不经过外部服务器（更隐私 + 不依赖中央服务存活）。
+- **强制 Liquid Glass**：在签名选项底部可启用 — 修改框架信息让目标软件使用 iOS 26 Liquid Glass 界面风格，适合老设备体验新观感或反向把老 App「假装」成新版。
+- **PPQ 保护**：苹果对付费开发者签名盗版软件零容忍（包名撞库付费 App → 证书拉黑）。PPQ 在包名后加随机字符串绕过此检测。
 
 ## 相关页面
 

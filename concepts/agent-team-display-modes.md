@@ -11,8 +11,9 @@ tags:
 summary: "Claude Code Agent Teams 的 teammateMode 五种值：in-process / split-panes / auto / tmux / iterm2。CLI flag --teammate-mode 单次设置，与 settings.json 等效。"
 sources:
   - "https://docs.claude.com/en/docs/claude-code/agent-teams"
+    - "https://blog.csdn.net/qq_60735796/article/details/157912075"
 created: "2026-08-05T04:30:00Z"
-updated: "2026-08-05T04:30:00Z"
+updated: "2026-08-13T01:40:00Z"
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -88,6 +89,22 @@ sudo apt install tmux
 | **状态保留** | teammate 隐藏后保持 running | tmux pane 始终可见 |
 | **平台支持** | 任何 terminal | 不支持 VS Code 集成 / Windows Terminal / Ghostty |
 | **适用** | 单屏便携 | macOS + 大屏 |
+
+## tmux 模式的 Pane 工作流（实战）
+
+选 `"tmux"` 后 Claude Code 会自动为每个 Teammate 创建一个 pane。**3 个高频操作**：
+
+| 操作 | 快捷键 | 用途 |
+|---|---|---|
+| **Zoom** | `Ctrl+B z` | 当前 pane 放大到全屏 → 再按一次恢复 |
+| **Detach / Reattach** | `Ctrl+B d` / `tmux a -t <name>` | 让 Agent 在后台持续工作（关终端也不停） |
+| **Scroll 历史** | `Ctrl+B [` → `PgUp/PgDn` → `q` 退出 | 查看 Teammate 的完整输出历史 |
+
+**Lead 的 Delegate 模式**（防抢活）：在 Lead pane 中按 `Shift+Tab` 进入 Delegate 模式 — Lead 只能用协调工具，**不能自己写代码**，专注分配任务。
+
+**CLAUDE.md 是 Teammate 的唯一上下文来源**（Teammate 不继承 Lead 的对话历史），所以项目级信息必须在 `CLAUDE.md` 里写清楚 — 包括文件分工（不同 Teammate 写不同文件，避免 git conflict）。
+
+完整实战 skill（含 `.tmux.conf` 推荐配置、5 大故障排查、远程服务器场景）见 [[skills/tmux-agent-teams-pane-workflow]]。
 
 ## macOS 特别说明
 

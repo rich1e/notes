@@ -23,6 +23,7 @@ relationships:
     type: related_to
   - target: "[[concepts/omo-ultrawork-mode]]"
     type: related_to
+summary: "omo IntentGate：行动前分析用户真实意图而非字面解读，Ultimate 有完整 IntentGate，Light Edition 仅识别 ultrawork/ulw 关键词触发全 agent 模式。"
 ---
 
 # omo IntentGate（行动前分析真实意图）
@@ -54,7 +55,7 @@ Light Edition（Codex CLI）只识别 `ultrawork`/`ulw` 关键词——**没有�
 | [[entities/bmad-method]] | BMad 的 IntentGate-style——Mary 接收"Hey Mary, let's brainstorm"判断意图 |
 | [[concepts/bmad-named-agent-architecture]] | 8 步激活流程里"dispatch or present the menu"——dispatch 即 IntentGate |
 | [[concepts/claude-code-three-modes]] | 类似 Claude Code "intent matches capability" |
-| [[concepts/bmad-party-mode]] | Party Mode 也有 intent 判断——决定 4 种 mode 之一 |
+| [[entities/bmad-party-mode]] | Party Mode 也有 intent 判断——决定 4 种 mode 之一 |
 
 ## 与"关键词触发"的对比
 

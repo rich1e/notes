@@ -140,7 +140,7 @@ OMO_CODEX_SEND_ANONYMOUS_TELEMETRY=0
 | [[concepts/agent-team-cost-overhead]] | omo 推荐 $49/月 = vault token 优化实战示例 |
 | [[concepts/ai-tool-specialization]] | omo 4 category routing = 按工作类型选模型的最成熟实现 |
 | [[concepts/agent-team-race-condition-task-claim]] | Team Mode 任务分配应同样用 file lock |
-| [[concepts/claude-code-token-optimization]] | Skill-Embedded MCPs = MCP schema 不进主 context 的实现 |
+| [[skills/claude-code-token-optimization]] | Skill-Embedded MCPs = MCP schema 不进主 context 的实现 |
 
 ## Open Questions
 

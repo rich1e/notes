@@ -139,3 +139,4 @@ keyring 在用户登录时自动解锁，模板渲染即可拿到 token。
 
 - [[references/chezmoi-patterns-recipes.md]]
 - [[concepts/chezmoi-workflow.md]]
+- [[skills/chezmoi-bitwarden-secrets]] — Bitwarden 运行时注入与跨平台解锁实践

@@ -8,9 +8,10 @@ created: 2026-07-09T08:00:00Z
 updated: 2026-07-09T08:00:00Z
 summary: >-
   danielmiessler 出品的开源 AI 增强框架，通过可复用的 Prompt 模块（Patterns）解决 AI 集成难题，Go 编写，支持 20+ AI 提供商。
-lifecycle: draft
+lifecycle: reviewed
 base_confidence: 0.8
-lifecycle_changed: 2026-07-09
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 ---
 
 # Fabric

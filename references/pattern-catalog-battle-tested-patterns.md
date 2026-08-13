@@ -13,8 +13,9 @@ created: 2026-07-08T07:14:00Z
 updated: 2026-07-08T07:14:00Z
 summary: 46 个代码级编程模式按"数据结构 / 并发 / 系统 / 内存 / 行为"五类整理，每条带一句话定位 + 2 个生产级源码出处（行号精确）。
 tier: core
-lifecycle: draft
-lifecycle_changed: 2026-07-08
+lifecycle: reviewed
+lifecycle_changed: "2026-08-12"
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"
 base_confidence: 0.85
 provenance:
   extracted: 0.95

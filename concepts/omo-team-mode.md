@@ -28,6 +28,7 @@ relationships:
     type: derived_from
   - target: "[[references/omo-team-mode-config-schema]]"
     type: related_to
+summary: "omo Team Mode v4.0：lead agent + 最多 8 members + tmux 可视化，11 字段严格 resource cap（max_parallel_members=4 / max_wall_clock_minutes=120 等），比 Claude Code Agent Teams 更严格。"
 ---
 
 # omo Team Mode（v4.0 lead + 8 members）
