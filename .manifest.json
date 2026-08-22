@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-13T01:43:16Z",
+  "last_updated": "2026-08-14T01:32:25Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -1341,6 +1341,133 @@
       ],
       "source_type": "document",
       "ingest_status": "modified"
+    },
+    "https://www.xda-developers.com/the-last-generation-of-fully-upgradeable-pcs-is-being-built-right-now/": {
+      "ingested_at": "2026-08-13T01:54:02Z",
+      "source_url": "https://www.xda-developers.com/the-last-generation-of-fully-upgradeable-pcs-is-being-built-right-now/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-xda-developers-com-the-last-generation-of-fully-upgradeable-pcs.md"
+      ],
+      "pages_updated": [],
+      "content_hash": "sha256-url:28a6eac0b8d81741919352062b4a09f41e3439a4dfa21465eb43d4909cc94231",
+      "last_ingested": "2026-08-13T01:54:02Z"
+    },
+    "https://kashw1n.com/blog/nodejs-2025/": {
+      "ingested_at": "2026-08-13T09:39:13Z",
+      "source_url": "https://kashw1n.com/blog/nodejs-2025/",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "misc/web-kashw1n-com-blog-nodejs-2025.md"
+      ],
+      "pages_updated": [],
+      "content_hash": "sha256-url:01b028c379ea5c48ed87aa83d9b6d9158e870e290cb201fd6fecbb1fd9759905",
+      "last_ingested": "2026-08-13T09:39:13Z"
+    },
+    "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server": {
+      "ingested_at": "2026-08-13T10:22:03Z",
+      "source_url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "entities/imthenachoman-how-to-secure-a-linux-server.md",
+        "concepts/linux-server-hardening-checklist.md",
+        "skills/ssh-server-hardening.md",
+        "skills/fail2ban-setup.md",
+        "skills/sysctl-kernel-hardening.md",
+        "references/sysctl-hardening-table.md",
+        "concepts/fail2ban-vs-crowdsec.md",
+        "concepts/intrusion-detection-stack.md"
+      ],
+      "pages_updated": [],
+      "content_hash": "sha256-url:a7ea7305d1625eba76c1d7c569379c855d6275d409d61d40d7d8da8eed45e643",
+      "last_ingested": "2026-08-13T10:22:03Z"
+    },
+    "https://github.com/deepseek-ai/deepseek-harness": {
+      "ingested_at": "2026-08-14T01:32:25Z",
+      "source_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "pages_created": [
+        "entities/deepseek-harness.md",
+        "entities/cordis.md",
+        "concepts/cordis-plugin-framework.md",
+        "concepts/capability-seam.md",
+        "concepts/agent-scope-hierarchy.md",
+        "concepts/turn-step-flow.md",
+        "concepts/durable-session-log.md",
+        "concepts/ralph-loop.md",
+        "skills/deepseek-harness-dev-loop.md",
+        "references/dsh-package-hierarchy.md"
+      ],
+      "pages_updated": [],
+      "content_hash": "sha256-url:890a56b0d2aff0c91c90bfee3adfd87e27a25d9e9e9f50e04c210ad01604188a",
+      "last_ingested": "2026-08-14T01:32:25Z"
+    },
+    "https://github.com/awdr74100/figwright": {
+      "ingested_at": "2026-08-14T08:00:00Z",
+      "source_url": "https://github.com/awdr74100/figwright",
+      "source_type": "github_repo",
+      "github_repo": "awdr74100/figwright",
+      "github_branch": "main",
+      "github_commit": "4eb134065cc63e9851bf5c4058b5facda8851646",
+      "stub": false,
+      "project": "figwright",
+      "promotion_status": "project",
+      "fetch_strategy": "gitingest",
+      "fetch_note": "Public repo gitingest --depth=1 with unset GITHUB_TOKEN; 576 files / 2.4MB / digest 62K lines / AST 1161 nodes / 1342 edges.",
+      "content_hash": "sha256:8f5e0b590eefde2458b86e89bbac42e6e59451cb006f1ac692c82ffd50aa7f97",
+      "pages_created": [
+        "projects/figwright/figwright.md",
+        "entities/figwright.md",
+        "entities/awdr74100-roya.md",
+        "projects/figwright/concepts/provider-first-codegen.md",
+        "projects/figwright/concepts/mcp-local-relay-architecture.md",
+        "projects/figwright/concepts/loopback-security-host-origin-headers.md",
+        "projects/figwright/concepts/design-context-grounding.md",
+        "projects/figwright/skills/figma-codegen-workflow.md",
+        "projects/figwright/skills/figma-build-workflow.md",
+        "projects/figwright/references/figwright-tool-taxonomy.md",
+        "projects/figwright/references/figwright-shared-protocol.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ],
+      "last_ingested": "2026-08-14T08:00:00Z"
+    },
+    "https://www.ruanyifeng.com/blog/2020/08/rsync.html": {
+      "ingested_at": "2026-08-14T08:00:00Z",
+      "source_url": "https://www.ruanyifeng.com/blog/2020/08/rsync.html",
+      "source_type": "url",
+      "stub": false,
+      "project": null,
+      "promotion_status": "misc",
+      "fetch_strategy": "defuddle",
+      "fetch_note": "Live site returned 403 to curl, defuddle parse succeeded (17KB cleaned HTML body).",
+      "content_hash": "sha256:71f9c2b4c00e4e802f357eca3f4c4ca9330902c3aa4250f2ee1a565d219ddefe",
+      "pages_created": [
+        "misc/web-www-ruanyifeng-com-blog-2020-rsync.md",
+        "concepts/rsync.md",
+        "entities/ruanyifeng-blog.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ],
+      "last_ingested": "2026-08-14T08:00:00Z"
     }
   },
   "projects": {
@@ -1473,9 +1600,38 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 80,
-    "total_pages": 353,
-    "total_projects": 2,
+    "total_sources_ingested": 82,
+    "total_pages": 398,
+    "total_projects": 3,
     "last_full_rebuild": null
-  }
+  },
+  "cross_vault_imports": [
+    {
+      "source_vault": "/Users/rich1e/workspace/experience",
+      "topic": "外星人笔记本 ThrottleStop 降压降温",
+      "imported_at": "2026-08-23T00:00:00Z",
+      "pages_copied": [
+        "concepts/cpu-undervolting.md",
+        "concepts/throttlestop-fivr-undervolting.md",
+        "concepts/alienware-bios-undervolt-unlock.md",
+        "concepts/throttlestop-options.md",
+        "skills/throttlestop-alienware-thermals.md",
+        "entities/throttlestop.md",
+        "entities/kevin-glynn.md",
+        "entities/smokeless-umaf.md",
+        "references/ultrabookreview-throttlestop-guide-2026.md",
+        "references/techpowerup-m16-r1-undervolt-thread.md",
+        "references/dell-kb-alienware-high-cpu-temp.md",
+        "synthesis/research-throttlestop-alienware-thermals.md"
+      ],
+      "pages_updated_in_target": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "lifecycle_state": "draft",
+      "notes": "full mirror from experience vault; this vault now holds an independent copy. Future divergence needs manual reconciliation."
+    }
+  ]
 }

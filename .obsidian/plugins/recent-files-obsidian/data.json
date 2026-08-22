@@ -1,8 +1,76 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "throttlestop-alienware-thermals",
+      "path": "skills/throttlestop-alienware-thermals.md"
+    },
+    {
+      "basename": "research-throttlestop-alienware-thermals",
+      "path": "synthesis/research-throttlestop-alienware-thermals.md"
+    },
+    {
+      "basename": "dell-kb-alienware-high-cpu-temp",
+      "path": "references/dell-kb-alienware-high-cpu-temp.md"
+    },
+    {
+      "basename": "tmux",
+      "path": "skills/tmux.md"
+    },
+    {
+      "basename": "gpakosz-tmux",
+      "path": "entities/gpakosz-tmux.md"
+    },
+    {
+      "basename": "tmux-installer-safety-pattern",
+      "path": "concepts/tmux-installer-safety-pattern.md"
+    },
+    {
+      "basename": "Pnpm + git-worktree",
+      "path": "Chronicle/2026/Pnpm + git-worktree.md"
+    },
+    {
+      "basename": "Chezmoi 简明教程",
+      "path": "Chronicle/2026/Chezmoi 简明教程.md"
+    },
+    {
       "basename": "NeoDS-模拟器使用指南",
       "path": "Chronicle/2026/NeoDS-模拟器使用指南.md"
+    },
+    {
+      "basename": "ssh-server-hardening",
+      "path": "skills/ssh-server-hardening.md"
+    },
+    {
+      "basename": "rsync",
+      "path": "concepts/rsync.md"
+    },
+    {
+      "basename": "chezmoi-workflow",
+      "path": "concepts/chezmoi-workflow.md"
+    },
+    {
+      "basename": "_insights",
+      "path": "_insights.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "AGENTS.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
+      "basename": "log",
+      "path": "log.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "mame-rom-to-neods-conversion",
@@ -11,10 +79,6 @@
     {
       "basename": "web-wiki-gbatemp-net-wiki-dstwo-plugin",
       "path": "misc/web-wiki-gbatemp-net-wiki-dstwo-plugin.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "neogeo-mame",
@@ -39,10 +103,6 @@
     {
       "basename": "dstwo-contact-fix",
       "path": "concepts/dstwo-contact-fix.md"
-    },
-    {
-      "basename": "log",
-      "path": "log.md"
     },
     {
       "basename": "designable-iframe-component-bridge",
@@ -139,66 +199,6 @@
     {
       "basename": "Book",
       "path": "Chronicle/2023/Book.md"
-    },
-    {
-      "basename": "Clash",
-      "path": "Chronicle/2023/Clash.md"
-    },
-    {
-      "basename": "Electron：WebSwapCGLLayer warning",
-      "path": "Chronicle/2023/Electron：WebSwapCGLLayer warning.md"
-    },
-    {
-      "basename": "Homebrew",
-      "path": "Chronicle/2023/Homebrew.md"
-    },
-    {
-      "basename": "Javascript 函数式编程指南",
-      "path": "Chronicle/2023/Javascript 函数式编程指南.md"
-    },
-    {
-      "basename": "Lodash",
-      "path": "Chronicle/2023/Lodash.md"
-    },
-    {
-      "basename": "Mac & Electron 跨端开发体验",
-      "path": "Chronicle/2023/Mac & Electron 跨端开发体验.md"
-    },
-    {
-      "basename": "Mac & Vim",
-      "path": "Chronicle/2023/Mac & Vim.md"
-    },
-    {
-      "basename": "Mac Update",
-      "path": "Chronicle/2023/Mac Update.md"
-    },
-    {
-      "basename": "Vue3 组件库",
-      "path": "Chronicle/2023/Vue3 组件库.md"
-    },
-    {
-      "basename": "Pnpm + git-worktree",
-      "path": "Chronicle/2026/Pnpm + git-worktree.md"
-    },
-    {
-      "basename": "macOS-U盘清理与Spotlight保护目录问题",
-      "path": "Chronicle/2026/macOS-U盘清理与Spotlight保护目录问题.md"
-    },
-    {
-      "basename": "Chezmoi 简明教程",
-      "path": "Chronicle/2026/Chezmoi 简明教程.md"
-    },
-    {
-      "basename": "brew script",
-      "path": "Chronicle/2026/brew script.md"
-    },
-    {
-      "basename": "如何抓取socket流量包？",
-      "path": "Chronicle/2025/如何抓取socket流量包？.md"
-    },
-    {
-      "basename": "ideviceinstaller 调试 IOS 应用软件",
-      "path": "Chronicle/2025/ideviceinstaller 调试 IOS 应用软件.md"
     }
   ],
   "omittedPaths": [],

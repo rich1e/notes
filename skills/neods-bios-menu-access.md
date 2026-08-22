@@ -92,7 +92,7 @@ NDS 手柄布局不同：
 3. 选择金手指码 → 启用 / 关闭
 4. 再按 **`R + Start`** 退出菜单
 
-**注意**：vault [[concepts/mame-rom-to-neods-conversion]] 与 [[entities/nds-flashcard]] 的 R4iSDHC 内核 cheat 菜单是**两套机制**（R4 用 B 键、NeoDS 用 R+Start）。
+**注意**：vault [[concepts/mame-rom-to-neods-conversion]] 与 [[entities/nds-flashcard]] 的 [R4iSDHC](skills/r4isdhc-user-experience) 内核 cheat 菜单是**两套机制**（R4 用 B 键、NeoDS 用 R+Start）。
 
 **R 键双功能叠加**（来自 [[misc/web-gamebrew-org-wiki-neods]] 2024-12-26 infobox Controls 表 + Nikokaro 612585 POST 2）：
 - **单独按 R** = Select，新版 uni-bios 下 = **coin**（投币）

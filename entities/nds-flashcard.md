@@ -185,6 +185,8 @@ SD/TF 卡上没安装 R4i 内核。到 [www.r4isdhc.com](http://www.r4isdhc.com)
 
 来源：[浅谈 R4iSDHC 用户体验](https://jixun.uk/posts/2016/r4isdhc-simple-review/)
 
+> 详细 UX 教训与 4 槽 RTS 强制开启方法见 [[skills/r4isdhc-user-experience]]
+
 ### 系统内核操作痛点
 
 - **文件浏览器只能递归一层**：所有根目录和子目录一层的 `.nds` 文件会被列出，更深一层被无视。若用两层以上目录归类游戏，列表里看不到。

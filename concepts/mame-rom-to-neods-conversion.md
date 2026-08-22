@@ -97,11 +97,11 @@ NeoDS 模拟器把 NeoGeo 街机的 C 键 remap 到 NDS 的 X 键，所以触发
 
 ## 部署目录结构（关键陷阱）
 
-NeoDS 与 R4iSDHC 等普通 NDS 烧录卡（[[entities/nds-flashcard]]）的目录行为**相反**：
+NeoDS 与 [R4iSDHC](skills/r4isdhc-user-experience) 等普通 NDS 烧录卡（[[entities/nds-flashcard]]）的目录行为**相反**：
 
 | 项目 | R4iSDHC 内核 | NeoDS |
 |------|--------------|-------|
-| 游戏 ROM | microSD 根目录或一层子目录 | **仅 microSD 根目录** ^[inferred 验证：Nathan Drake 原帖明确]"This emulator searches the root of the MicroSD card for ROM files. Placement anywhere else will render them undetectable" |
+| 游戏 ROM | microSD 根目录或一层子目录（见 [skills/r4isdhc-user-experience](skills/r4isdhc-user-experience)） | **仅 microSD 根目录** ^[inferred 验证：Nathan Drake 原帖明确]"This emulator searches the root of the MicroSD card for ROM files. Placement anywhere else will render them undetectable" |
 | 模拟器本体 | microSD 根目录 | microSD `/NeoGeo/` 文件夹 |
 | 子目录扫描 | 一层递归 | 不递归游戏 |
 

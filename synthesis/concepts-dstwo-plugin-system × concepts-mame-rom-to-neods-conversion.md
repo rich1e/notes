@@ -51,7 +51,7 @@ MAME ROM(.zip) → NeoDsConvert.exe → .neo 单文件 → microSD 根目录 →
 - **部署单位**：`.neo` 单文件（每个游戏独立，BIOS 内嵌）
 - **目录结构**：严格要求 `.neo` 文件放在 microSD **根目录**（不支持子目录）
 - **启动流程**：烧录卡菜单 → 运行 `NeoDS.nds` → 在 NeoDS 内部界面选游戏
-- **适用**：R4、R4iSDHC、Cyclo DS 等所有支持 `.nds` 的标准烧录卡
+- **适用**：R4、[R4iSDHC](skills/r4isdhc-user-experience)、Cyclo DS 等所有支持 `.nds` 的标准烧录卡
 
 ### DSTWO 专属路径
 

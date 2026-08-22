@@ -88,6 +88,7 @@ DSTWO 系列的卡扣 / 接触不良问题，是 NDS 时代增强型烧录卡（
 - [[entities/nds-flashcard]] — NDS 烧录卡主条目，含 DSTWO 体验/R4iSDHC 完整 FAQ
 - [[misc/web-gbatemp-net-threads-dstwo-not-making-proper-contact-with-my-ds-lite-634036]] — 本概念的事实来源（GBAtemp 634036 主贴蒸馏）
 - [[journal/nds-flashcard-memories]] — NDS 世代烧录卡横评回忆录
+- [[skills/r4isdhc-user-experience]] — R4iSDHC 内核 UX 教训（菜单只扫一层 + 4 槽 RTS 灰禁 2 槽 + HxD 改 R4i.sav 强制开启 4 槽）
 
 ## Related
 

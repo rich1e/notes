@@ -4,10 +4,19 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-13T01:43:00Z*
+*This index is automatically maintained. Last updated: 2026-08-14T08:00:00Z*
 
 ## Concepts
 
+- [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service (ctx.<key>) / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
+- [[concepts/capability-seam]] — dsh 的 capability 设计模式：Service Definition + Service Provider + Consumer 三件套；一换 provider = 整个产品栈跟着换
+- [[concepts/agent-scope-hierarchy]] — Cordis scope 模型：global vs scoped 两层扁平 + scope key + agent.ctx + scoped dispatch + shadowing + setup window + lineage (作为数据不作为结构)
+- [[concepts/turn-step-flow]] — dsh agent loop 抽象：turn (drain admitted input) + step (1 模型请求 + N 工具) + round；waterfall/serial/registry-subject 三种事件语义
+- [[concepts/durable-session-log]] — append-only SessionEvent 序列作为 model history source of truth；invariant「Model-visible ⟺ logged」；fork/resume/transcript/telemetry 全部派生
+- [[concepts/ralph-loop]] — fresh-agent workflow 朝向 immutable objective；child 收不到 prior conversation seed；跨 round 靠 workspace + bounded handoff
+- [[concepts/linux-server-hardening-checklist]] — 7 层加固栈：threat modeling → SSH → 基础 → 网络防火墙 → 审计 → 内核 sysctl → 日志告警
+- [[concepts/fail2ban-vs-crowdsec]] — 应用层 IDS 选型对比：成熟度 / 学习曲线 / 社区共享 / 跨机同步 / 容器友好
+- [[concepts/intrusion-detection-stack]] — Linux IDS 工具全景：Network 层 (PSAD/Fail2Ban/CrowdSec) + Host 层 (AIDE/ClamAV/rkhunter/Lynis/OSSEC) + Log 层 (logwatch/ss)
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -116,9 +125,20 @@ title: Wiki Index
 - [[concepts/dstwo-contact-fix]] — DSTWO 接触不良 4 路径修复:清洁卡槽 → microSD 楔片 → PCB 抬升 → 卡槽更换,侵入度递进 + host vs cart 诊断分叉
 - [[concepts/mame-rom-to-neods-conversion]] — NeoDS 把 MAME 街机 ROM 转 .neo 单文件:BIOS 嵌入机制（每个 .neo 自带）、uni-bios 菜单键位 remap（A+B+X vs 桌面 MAME 的 A+B+C）、目录陷阱(仅扫 microSD 根)、MAME ROM 命名漂移 → 第三方 NeoDS Names Compatibility List 是 2016 年后唯一可靠参考 + Fork 链(0.2.0 主线 → 0.21.b 社区现行版)
 - [[concepts/dstwo-plugin-system]] — DSTWO 烧录卡 plugin 协议:3 个同名文件 (16bit BMP 40x42 + INI + .nds/.plg) 放 microSD /_dstwoplug/ 目录,BMP 16bit 约束来自 DS 硬件 GBA slot 渲染管线,3 种故障模式 (No INI / NOT 16bit / No BMP) 全部由文件名一致性导致
+- [[concepts/rsync]] — Linux 增量文件同步 CLI：本地/远程同步、镜像同步、增量备份；核心机制是 size+mtime 增量判定、-a 归档模式、--link-dest 硬链接增量备份
+- [[concepts/cpu-undervolting]] — CPU 降压原理 P=C×V²×f：Intel FIVR Offset / AMD Curve Optimizer 双路径；12 代 K/KF 部分被 Intel 收回，HX 需 BIOS 解锁
+- [[concepts/throttlestop-fivr-undervolting]] — ThrottleStop 通过 MSR 0x150 写 FIVR 电压轨的详细路径；mV Boost @ 800 mV 避免 idle 饿死
+- [[concepts/alienware-bios-undervolt-unlock]] — Alienware HX 平台 BIOS UnderVolt Protection setup var 解锁流程（Smokeless_UMAF / 1.13.0+ 走 grubx64）
+- [[concepts/throttlestop-options]] — ThrottleStop 主窗口 FIVR / TPL / Speed Shift / BD PROCHOT 等按钮速查
 
 ## Entities
 
+- [[entities/deepseek-harness]] — DeepSeek-AI 开源 agent harness (dsh), MIT, vendored Cordis, TS+pnpm monorepo, 24 个 package group
+- [[entities/cordis]] — Core Dispatch System plugin framework，dsh vendored 基座
+- [[entities/imthenachoman-how-to-secure-a-linux-server]] — GitHub 仓库：CC-BY-SA 4.0 Linux server 加固指南（imthenachoman）+ sysctl 子模块 + nginx 子模块 + 配套 moltenbit Ansible playbooks
+- [[entities/throttlestop]] — ThrottleStop 工具，v9.7（2024-12-28），1.71 MB portable freeware，unclewebb 个人维护 16 年（含 CVE-2025-7771 / WinRing0 AV 误报历史）
+- [[entities/kevin-glynn]] — ThrottleStop 作者 UncleWebb，TechPowerUp 2010 注册，跨 6 代到 14 代 Intel 电压行为第一手资料源
+- [[entities/smokeless-umaf]] — UEFI 下运行的 BIOS setup var 编辑器，用于解锁 OEM 隐藏选项（如 Alienware HX 的 UnderVolt Protection）
 - [[entities/cloudflare-imgbed]] — 开源自托管图床（MarSeventh，MIT）：Serverless+Docker 双部署、六大存储后端、Vue 3 前端，脱胎自 Telegraph-Image
 - [[entities/sanyue-imghub]] — CloudFlare ImgBed 的前端仓库（Vue 3 + Element Plus），前后端分离可独立换皮
 - [[entities/feather-ios-sideload]] — iOS 付费开发者签名工具 Feather
@@ -170,11 +190,19 @@ title: Wiki Index
 - [[entities/gemini-notebook-mcp-cli]] — gemini-notebook-mcp-cli(jacob-bd,MIT v0.9.7):统一 CLI + 43-tool MCP server,取代旧 notebooklm-mcp-server,CDP 浏览器自动登录 + 多 profile + `nlm setup add` 多工具安装
 - [[entities/jacob-bd]] — Jacob Ben-David:gemini-notebook-mcp-cli 维护者,自陈"非开发者用 AI 编码助手"并欢迎有经验 Python 开发者贡献重构
 - [[entities/notebooklm]] — Google NotebookLM / Gemini Notebook 产品本体;Google 正在 rebranding 重定向部分账户到 notebook.google.com,v0.9.3+ 客户端 per-profile 自动检测主机
+- [[entities/ruanyifeng-blog]] — 中文技术博客(ruanyifeng.com),产出多篇高质量 CLI/概念教程(rsync、SSH、cron 等);风格是参考性速查,带中文示例
+- [[entities/figwright]] — 双向 Figma MCP server(awdr74100, MIT):provider-first codegen + 本地 WebSocket 中继 + 112 tool + 免 Dev Mode 付费座位
+- [[entities/awdr74100-roya]] — Figwright 作者(GitHub @awdr74100),MIT 协议 figwright-mcp 主程
 
 ## Skills
 
+- [[skills/deepseek-harness-dev-loop]] — dsh 开发 loop：CI gates (test:coverage 是 100% per-file gate) + pre-push 检查匹配 evidence 到 surface + host sandbox narrowest escalation
+- [[skills/ssh-server-hardening]] — SSH 服务端硬化：sshd_config 关键指令 + Diffie-Hellman 弱密钥剔除 + Google Authenticator PAM 2FA
+- [[skills/fail2ban-setup]] — Fail2Ban / CrowdSec 设置：jail.local + 邮件告警 + recidive + UFW 联动 + CrowdSec hub scenarios
+- [[skills/sysctl-kernel-hardening]] — Linux sysctl 内核加固：网络栈 / ASLR / BPF / ptrace / 文件系统保护 5 大域
 - [[skills/stitch-upload-design-md]] — Stitch DESIGN.md 上传操作技巧（含 Auto Mode 凭证检测问题解法）
 - [[skills/bmad-install-and-setup]] — BMad Method 安装：`npx bmad-method install`；前置 Node.js 20.12+ / Python 3.10+ / uv；v7 起 uv 必用
+- [[skills/throttlestop-alienware-thermals]] — Alienware 笔记本 ThrottleStop 降压降温完整操作流程（BIOS 解锁 + FIVR 配置 + 稳定性验证 + 工具协同）
 - [[skills/omo-install-and-setup]] — omo 安装：让 LLM agent 帮你装（Ultimate 涉及 11 agent 模型选择 + per-provider 鉴权）；推荐 $49/月订阅 vs Claude Code $200
 - [[skills/bmad-customize-skill]] — BMad TOML 覆盖系统：`/bmad-customize <skill>` + 两层 override（团队 committed + 个人 gitignored）+ 4 层 TOML 解析器
 - [[skills/claude-code-token-optimization]] — Claude Code Token 优化策略（提示缓存 + 会话管理）
@@ -224,6 +252,7 @@ title: Wiki Index
 - [[synthesis/Research: Claude Code Agent Teams]] — Claude Code Agent Teams 3 轮调研综合：Opus 4.6 引入、4 组件架构、5 显示模式、9 已知限制、linear scaling token 成本
 - [[synthesis/concepts-fourier-series × concepts-animation-easing-functions]] — 频域合成(傅里叶/本轮链)与时域参数化(缓动函数)的正交关系,两条路线控制维度不同
 - [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 摆轮+擒纵是 PD 反馈控制器的物理实现,游丝=K_p,阻尼=K_d,与 spring 动画同源
+- [[synthesis/research-throttlestop-alienware-thermals]] — Alienware 笔记本 ThrottleStop 降压降温 3 轮研究综合：FIVR/MSR 0x150 原理、BIOS 解锁路径、mV Boost 技巧、8-15°C 降幅预期
 - [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 两个 macOS 用户的"模块化替代默认"范式,软件/硬件两侧的同构工匠精神
 
 ## Projects
@@ -265,9 +294,20 @@ title: Wiki Index
 - [[projects/flow-design-system/concepts/ai-vs-core-component-source-routing]] — CORE/AI 双源判定
 - [[projects/flow-design-system/concepts/dynamic-require-resolveweak-loading]] — 运行时按目录名动态加载
 - [[projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop]] — 9 步实操清单
+- [[projects/figwright/figwright]] — 双向 Figma MCP server 项目:3 packages (mcp/plugin/shared) + 2 skills (codegen/build);provider-first codegen 哲学 + 本地 loopback 中继 + 112 tool 三分类
+- [[projects/figwright/concepts/provider-first-codegen]] — 探测+复用哲学:analyze_project 探测栈,component_map/token_map/icon_map 三层基础,reuse>verify>rebuild
+- [[projects/figwright/concepts/mcp-local-relay-architecture]] — stdio + WebSocket + leader/follower 选举 + 心跳+幂等;多 MCP client 共享一个 plugin 连接
+- [[projects/figwright/concepts/loopback-security-host-origin-headers]] — 本地 MCP 三层防御:Host 头(防 DNS rebinding)+ Origin 头(CORS)+ CORS preflight-only 媒体类型
+- [[projects/figwright/concepts/design-context-grounding]] — get_design_context 抽象:节点+token 名+globalVars+componentProperties;trust over image
+- [[projects/figwright/skills/figma-codegen-workflow]] — 5 步工作流:get_design_context → component_map → token_map → assets → emit code
+- [[projects/figwright/skills/figma-build-workflow]] — 反向工作流:code/spec → Figma canvas(对称推断 SKILL.md 未完整抓取)
+- [[projects/figwright/references/figwright-tool-taxonomy]] — 112 tool 三分类(Read/Write/Grounding)索引
+- [[projects/figwright/references/figwright-shared-protocol]] — shared package 7+ 文件职责速查(codec/envelope/heartbeat/rpc/protocol/serialized-node/queries)
 
 ## References
 
+- [[references/dsh-package-hierarchy]] — dsh 的 24 个 package group 完整索引 + capability seam 映射 + 添加新 package checklist
+- [[references/sysctl-hardening-table]] — Linux kernel sysctl 加固参数索引（122 条），按 fs/kernel/net.core/net.ipv4/net.ipv6 五大域分组
 - [[references/mechanical-watch-mechanics]] — 机械表七大部件与能量链原理速查
 - [[references/bmad-method-github-readme]] — BMad Method 仓库 README + 完整文件树（407 文件 / 481.6k tokens，gitingest 抓取）
 - [[references/omo-github-readme]] — omo 仓库 README（526 文件 / 1.1M tokens）：SUL-1.0 许可 + 20 项 highlights + 5 discipline agents + Team Mode v4.0 + 4 category routing
@@ -297,6 +337,9 @@ title: Wiki Index
 - [[references/kimi-k3-video-review-lingdu]] — 零度解说实测视频：DeepSWE/LiveBench 基准、虚拟机 Agent 演示、3D 生成、越狱
 - [[references/kimi-k3-video-analysis-reportify]] — 哈佛老徐深度分析：Kimi 官方原文、Anthropic Fable-5 禁令、国产芯片全球化路径
 - [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
+- [[references/ultrabookreview-throttlestop-guide-2026]] — UltrabookReview 2026 ThrottleStop 指南（承接 2017 Notebookcheck 版本）：FIVR/TPL/Speed Shift/BD PROCHOT 全选项
+- [[references/techpowerup-m16-r1-undervolt-thread]] — TechPowerUp Alienware m16 R1 解锁 + mV Boost @ 800 MHz = +100 mV 模板
+- [[references/dell-kb-alienware-high-cpu-temp]] — Dell 官方对外星人 CPU 100°C 的立场（TCC 是设计不是故障）
 - [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
 - [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
 - [[sources/anthropic-claude-code-agent-teams-docs]] — Anthropic 官方文档（v2.1.178+）：Agent Teams 4 组件 + 5 显示模式 + 3 hooks + 9 已知限制
@@ -361,6 +404,8 @@ title: Wiki Index
 
 ## Misc
 
+- [[misc/web-kashw1n-com-blog-nodejs-2025]] — 2025 现代 Node.js 范式综述：ESM/node: 前缀、内置 fetch/test runner、Streams + Web Streams 互转、Worker Threads 真并行、--watch/--env-file 取代 nodemon/dotenv、permission model、SEA、diagnostics_channel
+- [[misc/web-xda-developers-com-the-last-generation-of-fully-upgradeable-pcs]] — XDA 2026 评论：soldered RAM + LPDDR 扩散到桌面是 AI 工作负载驱动，可升级 DIY PC 可能正成为最后一代；Framework Desktop 标志性妥协 + Intel Lunar Lake/Apple M-series/Snapdragon X 全面板载
 - [[misc/web-adamchanadam-github-io-agent-handoff-kit]] — Adam Chan 的 npm 工具 Agent Handoff Kit(v0.3.56):一句 init 铺好交接文件 + 分任务工作规则包,让本地 AI agent(Claude Code/Codex/Gemini CLI 等)跨会话「开工/收工」接力,高风险操作强制预演+确认;是 [[concepts/agent-operating-system]] Handoff 层的工具化落地
 - [[misc/web-zhuanlan-zhihu-com-p-2013213227740325799]] — 知乎「技术极简主义」文章：Claude Code 两层项目记忆机制,CLAUDE.md（开发者手写规则,四级作用域）+ MEMORY.md/Auto Memory（Claude 自维护,200 行限制、按需加载主题文件）,含 @ 导入、.claude/rules/ 模块化、子智能体记忆
 - [[misc/web-github-com-livecontainer-issues-1456]] — SideStore 内置 Refresh All 触发 Unable to manage profiles on the device（LiveContainer 3.7.14 Nightly + iPadOS 26.3）；维护者结论：iOS 26+ 必须用 RPPairing 替代旧 Lockdown 配对文件
@@ -372,6 +417,7 @@ title: Wiki Index
 - [[misc/web-gbatemp-net-threads-help-wanted-how-to-access-the-bios-menu-of-neods-neogeo-for-ds-612585]] — GBAtemp NeoDS BIOS 菜单求助帖(Nikokaro 2022):ROM 加载瞬间 A+B+X 触发 uni-bios + 游戏中 R+Start 触发 cheat,Cloudflare 拦截用 Wayback 2025-05-21 镜像 fallback
 - [[misc/web-wiki-gbatemp-net-wiki-dstwo-plugin]] — GBAtemp WikiTemp DSTwo Plugin 索引页(2025-03-20 快照):SuperCard DSTWO 3 文件 plugin 协议 + 100+ 插件清单 (Emulators/Utilities/Multimedia/Games),Cloudflare 拦截用 Wayback fallback
 - [[misc/web-gamebrew-org-wiki-neods]] — GameBrew NeoDS 主页(2024-12-26 快照 oldid=186632):作者链 Ben Ingram → j03lpr86/nitendo/indy13 + 当前版本 0.2.1.b (2020-08-26) + 4 个 fork + 完整 changelog + GitHub Yardape8000/NeoDS + DLDI patch 步骤
+- [[misc/web-www-ruanyifeng-com-blog-2020-rsync]] — 阮一峰 2020 rsync 中文教程:八章铺开(简介/安装/基本用法/排除/远程/增量备份/配置项);核心是 -a 归档、--delete 镜像、--link-dest 硬链接增量备份、增量备份脚本范式
 - [[sources/awesome-design-md-repo]] — VoltAgent/awesome-design-md：74 个真实站点 DESIGN.md（Claude / Vercel / Notion / Stripe 等）的 inspired interpretation
 - [[sources/google-design-md-spec]] — google-labs-code/design.md：DESIGN.md 官方格式规范 + `@google/design.md` CLI（lint / diff）
 - [[sources/stitch-design-md-docs]] — Stitch 官方 DESIGN.md 文档（JS-rendered SPA，机器读不到正文）

@@ -29,7 +29,7 @@ relationships:
 
 # Tmux Split-Pane 给 AI Agent 团队
 
-> Agent Teams（Claude Code Opus 4.6+ 多会话模式）默认所有 teammate 在**同一个终端**互相喊话——视频原话："5 个 agent 在同一房间互相喊话，根本没法看谁在做什么"。**tmux split-pane 是 5 种显示模式之一**：每个 teammate 一个 pane，可独立 inspect、interact、shutdown。详见 [[concepts/agent-team-display-modes]]。
+> Agent Teams（Claude Code Opus 4.6+ 多会话模式）默认所有 teammate 在**同一个终端**互相喊话——视频原话："5 个 agent 在同一房间互相喊话，根本没法看谁在做什么"。**tmux split-pane 是 5 种显示模式之一**：每个 teammate 一个 pane，可独立 inspect、interact、shutdown。详见 [[concepts/agent-team-display-modes]]；实战 skill（pane 操作 / CLAUDE.md 共享上下文 / Delegate 模式 / 5 大故障排查）见 [[skills/tmux-agent-teams-pane-workflow]]。
 
 ## 强制启动顺序
 
