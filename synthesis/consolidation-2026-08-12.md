@@ -7,6 +7,7 @@ summary: "wiki-lint --consolidate 自动维护报告：12 处破损链接修复�
 lifecycle: draft
 lifecycle_changed: "2026-08-12"
 tier: peripheral
+base_confidence: 0.9
 created: 2026-08-12T14:20:00Z
 updated: 2026-08-12T14:20:00Z
 ---

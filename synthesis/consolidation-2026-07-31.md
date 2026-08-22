@@ -7,6 +7,7 @@ summary: wiki-lint 全量修复报告(2026-07-31):补建 4 个缺失核心概念
 lifecycle: draft
 lifecycle_changed: "2026-07-31"
 tier: peripheral
+base_confidence: 0.9
 created: 2026-07-31T07:20:00Z
 updated: 2026-07-31T07:20:00Z
 ---

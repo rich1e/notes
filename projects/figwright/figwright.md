@@ -6,6 +6,9 @@ sources:
   - https://github.com/awdr74100/figwright
 created: 2026-08-14T08:00:00Z
 updated: 2026-08-14T08:00:00Z
+base_confidence: 0.5
+lifecycle: draft
+lifecycle_changed: "2026-08-14"
 summary: 双向 Figma MCP server(awdr74100, MIT, pnpm monorepo + 3 packages + 2 skills):provider-first codegen + 本地 WebSocket 中继 + 免 Dev Mode 付费座位
 ---
 
