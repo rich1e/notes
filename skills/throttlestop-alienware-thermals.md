@@ -1,7 +1,20 @@
 ---
+
 title: 外星人笔记本 ThrottleStop 降压降温
 category: skill
 tags: [throttlestop, undervolt, alienware, laptop, intel, 散热, 降压]
+relationships:
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+  - target: "[[references/ultrabookreview-throttlestop-guide-2026]]"
+    type: related_to
+  - target: "[[concepts/cpu-undervolting]]"
+    type: related_to
+  - target: "[[references/dell-kb-alienware-high-cpu-temp]]"
+    type: related_to
+  - target: "[[entities/smokeless-umaf]]"
+    type: related_to
+
 summary: 通过 ThrottleStop 的 FIVR 负压（offset voltage）对 Dell Alienware 笔记本进行 CPU 降压，以降低温度、缓解 thermal throttling 并延长续航。涵盖 BIOS 解锁、配置流程、稳定性验证、风险。
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
@@ -11,15 +24,14 @@ sources:
   - https://notebooktalk.net/topic/2310-m16r1m18r1-smokeless-umaf-bios-options
   - https://www.techpowerup.com/forums/threads/how-to-unlock-alienware-m16-r1-undervolt-for-throttlestop.319229/
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.7
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.6
   inferred: 0.3
-  ambiguous: 0.1
----
+  ambiguous: 0.1---
 
 # 外星人笔记本 ThrottleStop 降压降温
 
@@ -134,3 +146,12 @@ Alienware H/HX 默认在 **Intel Advanced Menu → OverClocking Performance Menu
 - [[throttlestop]] — 工具本体与作者 UncleWebb
 - [[kevin-glynn]] — ThrottleStop 作者
 - [[research-throttlestop-alienware-thermals]] — 完整 research synthesis
+
+## Related
+
+- [[references/techpowerup-m16-r1-undervolt-thread|How to unlock Alienware m16 R1 undervolt for ThrottleStop (TechPowerUp Forum)]] — shares #alienware/#throttlestop/#undervolt (references)
+- [[references/ultrabookreview-throttlestop-guide-2026|ThrottleStop Guide (UltrabookReview, 2026)]] — shares #intel/#throttlestop/#undervolt (references)
+- [[concepts/cpu-undervolting|CPU 降压（Undervolting）]] — shares #intel/#throttlestop (concepts)
+- [[references/dell-kb-alienware-high-cpu-temp|Dell KB — 外星人笔记本 CPU 高温排查]] — shares #alienware (references)
+- [[entities/smokeless-umaf|Smokeless_UMAF]] — shares #alienware (entities)
+

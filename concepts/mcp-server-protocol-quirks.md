@@ -1,4 +1,5 @@
 ---
+
 title: MCP Server 作用域陷阱 — `claude mcp add --global` 的两层存储
 category: concepts
 tags:
@@ -10,7 +11,7 @@ sources:
   - https://joydig.com/notebooklm-mcp-server-claude-code/
   - https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a
 created: 2026-07-26
-updated: 2026-07-28
+updated: 2026-08-23T09:05:00Z
 tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-26"
@@ -23,8 +24,7 @@ relationships:
   - target: "[[skills/claude-code-settings]]"
     type: related_to
   - target: "[[skills/notebooklm-mcp-setup]]"
-    type: related_to
----
+    type: related_to---
 
 # MCP Server 作用域陷阱 — `claude mcp add --global` 的两层存储
 
@@ -170,7 +170,7 @@ claude mcp add -s user notebooklm-mcp -- /home/$USER/.local/bin/notebooklm-mcp
 - [[skills/claude-code-settings]] — Claude Code 完整配置作用域
 
 ## Related
-
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]]
 - [[concepts/mcp-multi-tool-installer]] — `nlm setup add <client>` 多工具分发模式
 - [[skills/claude-code-mcp-auth-patterns]] — 实战：MCP 鉴权与 scope 配置
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-gemini-notebook-mcp-cli|MCP 协议怪癖 × gemini-notebook-mcp-cli 实现]] — synthesis

@@ -1,21 +1,27 @@
 ---
+
 title: ThrottleStop 与 FIVR 降压原理
 category: concept
 tags: [throttlestop, fivr, msr-0x150, undervolt, intel, 降压]
+relationships:
+  - target: "[[references/ultrabookreview-throttlestop-guide-2026]]"
+    type: related_to
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+
 summary: ThrottleStop 通过 MSR 0x150 写入负向 Offset Voltage 到 Intel FIVR 的 CPU Core/Cache 通道，从而实现 CPU 降压。配合 Speed Shift EPP、BD PROCHOT 等开关控制 throttling 行为。
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
   - https://maketecheasier.com/reduce-cpu-temperature-undervolting/
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.9
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.85
   inferred: 0.10
-  ambiguous: 0.05
----
+  ambiguous: 0.05---
 
 # ThrottleStop 与 FIVR 降压原理
 
@@ -90,3 +96,9 @@ AWCC 的 **TCC Offset**（0-15）：
 - [[throttlestop]]
 - [[kevin-glynn]]
 - [[research-throttlestop-alienware-thermals]]
+
+## Related
+
+- [[references/ultrabookreview-throttlestop-guide-2026|ThrottleStop Guide (UltrabookReview, 2026)]] — shares #intel/#throttlestop/#undervolt (references)
+- [[references/techpowerup-m16-r1-undervolt-thread|How to unlock Alienware m16 R1 undervolt for ThrottleStop (TechPowerUp Forum)]] — shares #throttlestop/#undervolt (references)
+

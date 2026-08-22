@@ -1,21 +1,31 @@
 ---
+
 title: ThrottleStop 选项速查
 category: concept
 tags: [throttlestop, fivr, tpl, speed-shift, bd-prochot, undervolt]
+relationships:
+  - target: "[[synthesis/research-throttlestop-alienware-thermals]]"
+    type: related_to
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+  - target: "[[references/ultrabookreview-throttlestop-guide-2026]]"
+    type: related_to
+  - target: "[[entities/kevin-glynn]]"
+    type: related_to
+
 summary: ThrottleStop 主窗口按按钮划分的功能速查：FIVR（电压） / TPL（功率上限） / Speed Shift（响应曲线） / BD PROCHOT（双向热信号） / C States（休眠）/ Benchmark（压力测试）。每个按钮具体影响与建议配置。
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
   - https://maketecheasier.com/reduce-cpu-temperature-undervolting/
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.8
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.8
   inferred: 0.1
-  ambiguous: 0.1
----
+  ambiguous: 0.1---
 
 # ThrottleStop 选项速查
 
@@ -91,3 +101,11 @@ BD = **Bi-Directional** PROCHOT。CPU 与 dGPU 共用散热时，Dell/HP 经常�
 - [[throttlestop-fivr-undervolting]]
 - [[cpu-undervolting]]
 - [[throttlestop]]
+
+## Related
+
+- [[synthesis/research-throttlestop-alienware-thermals|Research: Alienware 笔记本 ThrottleStop 降压降温]] — shares #fivr/#throttlestop/#undervolt (synthesis)
+- [[references/techpowerup-m16-r1-undervolt-thread|How to unlock Alienware m16 R1 undervolt for ThrottleStop (TechPowerUp Forum)]] — shares #throttlestop/#undervolt (references)
+- [[references/ultrabookreview-throttlestop-guide-2026|ThrottleStop Guide (UltrabookReview, 2026)]] — shares #throttlestop/#undervolt (references)
+- [[entities/kevin-glynn|Kevin Glynn (UncleWebb)]] — shares #fivr/#throttlestop (entities)
+

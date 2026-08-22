@@ -1,4 +1,5 @@
 ---
+
 title: "BMad 命名 Agent"
 category: entities
 tags:
@@ -9,7 +10,7 @@ tags:
 sources:
   - "https://github.com/bmad-code-org/bmad-method"
 created: "2026-08-05T07:00:00Z"
-updated: "2026-08-05T07:00:00Z"
+updated: 2026-08-23T09:05:00Z
 summary: "BMad Method 5 个命名 agent（Mary BA / John PM / Sally UX / Winston Architect / Amelia Dev），各守 BMad 流程一个阶段；以 emoji + 名字 + 阶段稳定身份 + 可定制层（role/principles/style/icon/menu）平衡。"
 provenance:
   extracted: 0.90
@@ -25,8 +26,7 @@ relationships:
   - target: "[[concepts/bmad-named-agent-architecture]]"
     type: related_to
   - target: "[[concepts/bmad-delivery-loop]]"
-    type: related_to
----
+    type: related_to---
 
 # BMad 命名 Agent
 
@@ -96,9 +96,9 @@ relationships:
 | [[concepts/claude-code-hooks-lifecycle]] | "8 步激活" = "hook 生命周期"的人格化版本 |
 
 ## Related
-
 - [[entities/bmad-method]] — 框架本体
 - [[concepts/bmad-named-agent-architecture]] — 三腿凳（skill / agent / customization）
 - [[concepts/bmad-delivery-loop]] — 5 agent 各守的阶段
 - [[entities/bmad-party-mode]] — 5 agent 进同一房间开会
 - [[skills/bmad-customize-skill]] — 团队定制 agent 行为
+- [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent|Agent Team 邮箱协议 × BMad 命名 Agent 派发]] — synthesis

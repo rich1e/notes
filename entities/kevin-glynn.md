@@ -1,7 +1,12 @@
 ---
+
 title: Kevin Glynn (UncleWebb)
 category: entity
 tags: [people, throttlestop, unclewebb, kevin-glynn, intel, fivr]
+relationships:
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+
 summary: ThrottleStop 作者 Kevin "UncleWebb" Glynn，活跃于 TechPowerUp 与 NotebookReview 论坛，独立维护 Windows 笔记本 Intel CPU 调参工具 16+ 年（自 2009 起）。是 FIVR / TPL / Speed Shift 调参生态最关键的第一手资料源。
 sources:
   - https://www.techpowerup.com/forums/members/unclewebb.html
@@ -9,15 +14,14 @@ sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
   - https://throttlestop.en.lo4d.com/windows
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.6
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.45
   inferred: 0.35
-  ambiguous: 0.20
----
+  ambiguous: 0.20---
 
 # Kevin Glynn (UncleWebb)
 
@@ -75,3 +79,8 @@ provenance:
 - [[throttlestop-alienware-thermals]]
 - [[ultrabookreview-throttlestop-guide-2026]]
 - [[research-throttlestop-alienware-thermals]]
+
+## Related
+
+- [[references/techpowerup-m16-r1-undervolt-thread|Techpowerup M16 R1 Undervolt Thread]] — shares #throttlestop (references)
+

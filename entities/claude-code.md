@@ -1,4 +1,5 @@
 ---
+
 title: "Claude Code"
 category: entities
 tags: [anthropic, ai-coding-agent, mcp, claude-code, entity]
@@ -8,7 +9,7 @@ sources:
   - "https://joydig.com/notebooklm-mcp-server-claude-code/"
 source_url: "https://www.claude.com/product/claude-code"
 created: "2026-07-28T00:00:00Z"
-updated: "2026-08-05T03:30:00Z"
+updated: 2026-08-23T09:05:00Z
 summary: "Anthropic 出品的终端式 AI 编码 agent。承担项目中逻辑、组件架构、代码生成的职责；通过 MCP 接外部服务（设计工具、文档、CI 等），通过提示缓存与上下文管理控制 token。Opus 4.6+ 引入 Agent Teams 多会话团队模式。"
 tier: core
 lifecycle: draft
@@ -32,8 +33,7 @@ relationships:
   - target: "[[concepts/claude-code-three-modes]]"
     type: related_to
   - target: "[[concepts/claude-code-agent-teams]]"
-    type: related_to
----
+    type: related_to---
 
 # Claude Code
 
@@ -78,10 +78,10 @@ Sachin Sharma 在 Google Stitch + Claude Code 一文中的定位很清晰：
 Claude Code 有三种会话结构 —— **Default**（单会话）、**Subagents**（主+短命子）、**Agent Teams**（多独立长会话）。能力上重叠 90%，核心差异在**会话管理 + token 节流**。详见 [[concepts/claude-code-three-modes]] 与 [[concepts/claude-code-agent-teams]]。
 
 ## Related
-
 - [[synthesis/concepts-agent-operating-system × entities-claude-code]] — synthesis:AOS 五层记忆里宿主原生只兜底两层
 - [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — synthesis:可扩展性两支柱与共享的作用域陷阱
 - [[concepts/claude-code-three-modes]] — Default / Subagents / Agent Teams 三模式抽象
 - [[concepts/claude-code-agent-teams]] — Agent Teams 工程机制（race lock、leader delegation、shared memory）
 - [[concepts/tmux-pane-split-for-agents]] — tmux 配置（Agent Teams 可视化前提）
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — Agent Teams 视频源
+- [[synthesis/concepts-design-system-as-ai-context × entities-claude-code|设计系统作为 AI 上下文 × Claude Code 消费]] — synthesis

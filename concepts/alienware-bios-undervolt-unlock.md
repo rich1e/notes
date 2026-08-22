@@ -1,21 +1,27 @@
 ---
+
 title: Alienware HX 平台 BIOS UnderVolt 解锁
 category: concept
 tags: [alienware, bios, undervolt-protection, smokeless-umaf, m16-r1, 13代hx]
+relationships:
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+  - target: "[[references/dell-kb-alienware-high-cpu-temp]]"
+    type: related_to
+
 summary: Dell 在 Alienware H/HX 平台默认把 UnderVolt Protection（setup 变量）锁住，使 ThrottleStop 看到 "Locked"。通过 Smokeless UMAF U 盘刷写可在 1.12.1 BIOS 显示该选项；1.13.0+ 选项消失，需 grubx64 改 setup var。
 sources:
   - https://notebooktalk.net/topic/2310-m16r1m18r1-smokeless-umaf-bios-options
   - https://www.techpowerup.com/forums/threads/how-to-unlock-alienware-m16-r1-undervolt-for-throttlestop.319229/
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.6
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.5
   inferred: 0.3
-  ambiguous: 0.2
----
+  ambiguous: 0.2---
 
 # Alienware HX 平台 BIOS UnderVolt 解锁
 
@@ -85,3 +91,9 @@ Dell 通过隐藏选项保留对 OEM/工程师的访问但屏蔽普通用户。�
 - [[throttlestop-fivr-undervolting]]
 - [[smokeless-umaf]]
 - [[research-throttlestop-alienware-thermals]]
+
+## Related
+
+- [[references/techpowerup-m16-r1-undervolt-thread|Techpowerup M16 R1 Undervolt Thread]] — shares #alienware (references)
+- [[references/dell-kb-alienware-high-cpu-temp|Dell Kb Alienware High Cpu Temp]] — shares #alienware (references)
+

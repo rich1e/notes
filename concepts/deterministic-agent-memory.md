@@ -1,4 +1,5 @@
 ---
+
 title: 确定性 agent 记忆(非概率的"事实层")
 category: concepts
 tags:
@@ -12,7 +13,7 @@ sources:
   - https://github.com/clay-good/OpenLore
   - _raw/_archived/github-clay-good-OpenLore.txt (gitingest export, clay-good/OpenLore, 2026-08-03)
 created: 2026-08-03T12:15:00Z
-updated: 2026-08-03T12:15:00Z
+updated: 2026-08-23T09:05:00Z
 summary: 用确定性算法(图分析 / BM25 / grep / git diff / 签名比对)而非 embedding 检索,给 agent 提供"事实层"记忆:同问题同答案、stale 显式标注、引用可点回源码。
 tier: supporting
 lifecycle: draft
@@ -32,8 +33,7 @@ relationships:
   - target: "[[concepts/claude-mem-memory-architecture]]"
     type: related_to
   - target: "[[concepts/agent-operating-system]]"
-    type: related_to
----
+    type: related_to---
 
 # 确定性 agent 记忆(非概率的"事实层")
 
@@ -141,3 +141,7 @@ not-found 不给相似替代
 - [[concepts/commit-gate-guardrails]] —— 落地到 CI
 - [[concepts/claude-mem-memory-architecture]] —— 互补的经验记忆层
 - [[concepts/agent-operating-system]] —— 上层五层 memory 框架
+
+## Related
+
+- [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method|确定性 Agent 记忆 × BMad 方法论]] — synthesis

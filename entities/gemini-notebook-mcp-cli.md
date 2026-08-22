@@ -1,4 +1,5 @@
 ---
+
 title: gemini-notebook-mcp-cli — 面向 Google NotebookLM 的统一 CLI + MCP
 category: entities
 tags:
@@ -12,7 +13,7 @@ summary: 由 Jacob Ben-David 开发的统一 `nlm` CLI + 43 工具 MCP server,�
 sources:
   - https://github.com/jacob-bd/gemini-notebook-mcp-cli
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-23T09:05:00Z
 tier: core
 lifecycle: reviewed
 lifecycle_changed: "2026-08-06"
@@ -45,8 +46,7 @@ relationships:
   - target: "[[concepts/nlm-artifact-id-required-for-download]]"
     type: related_to
   - target: "[[concepts/nlm-studio-create-source-scoping]]"
-    type: related_to
----
+    type: related_to---
 
 # gemini-notebook-mcp-cli — 面向 Google NotebookLM 的统一 CLI + MCP
 
@@ -156,3 +156,7 @@ README 中还有一个"Vibe Coding Alert"(氛围编程警示)段落——作者�
 - [[concepts/mcp-server-protocol-quirks]] — `--global` / `-s user` / project vs user scope 依然适用
 - [[concepts/nlm-artifact-id-required-for-download]] — `download_artifact` 必须显式传 `artifact_id`，否则取到旧产物
 - [[concepts/nlm-studio-create-source-scoping]] — `source_ids`（硬边界）vs `custom_prompt`（软引导）+ CLI `--focus` 命名差异
+
+## Related
+
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-gemini-notebook-mcp-cli|MCP 协议怪癖 × gemini-notebook-mcp-cli 实现]] — synthesis

@@ -401,6 +401,11 @@ title: Wiki Index
 - [[synthesis/concepts-bmad-named-agent-architecture × concepts-omo-discipline-agents]] — BMad persona 三腿凳（Skill/Named Agent/Customization）vs omo 5 专家分工（Sisyphus+4 disciplines）：同一 agent persona 问题的两种截然不同的设计哲学
 - [[synthesis/concepts-bmad-delivery-loop × concepts-agent-operating-system]] — BMad 4 阶段交付闭环（Clarify→Plan→Build→Learn）vs AOS 5 层跨会话 memory：前者管工作流节奏，后者管状态持久化，合体才能让 AI agent 跨越单次会话
 - [[synthesis/concepts-dstwo-plugin-system × concepts-mame-rom-to-neods-conversion]] — 在 DS 上玩 NeoGeo 的两条路径：通用 .neo 单文件路径 vs DSTWO 专属 plugin 部署，目标相同但部署架构完全不同
+- [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent]] — Agent Teams 线性 token 成本 × omo 产品化(4-category 路由 + 模型分级 + Team Mode 11 字段硬 cap):omo 用结构吸收线性成本的不可控性,但并未消除它
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-gemini-notebook-mcp-cli]] — MCP 协议"故意简洁"(鉴权甩上层) vs gemini-notebook-mcp-cli 实战鉴权复杂度全在 client 侧(CDP/多 profile/5-state 词典/RPC 漂移热修)
+- [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent]] — Mailbox 协议(JSON inbox + 逐条校验 + 自愈)是 Agent Teams 工程级 IPC;BMad 命名 Agent 是产品化 IPC(角色契约)。两者用截然不同的抽象层解决"多 agent 同时改同一文件"
+- [[synthesis/concepts-design-system-as-ai-context × entities-claude-code]] — DESIGN.md 编译视觉决策为 LLM 可读 schema,Claude Code 是最大消费方(通过 Stitch MCP/Figwright MCP 等 7+ 集成)
+- [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method]] — 确定性 agent 记忆哲学(hot path 0 LLM)在工程层落地;BMad 方法论(4 阶段交付闭环)在产品层落地。两者都用结构对抗 LLM 自由度,战场不同
 
 ## Misc
 

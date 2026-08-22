@@ -1,4 +1,5 @@
 ---
+
 title: "Agent Team Mailbox 协议"
 category: concepts
 tags:
@@ -12,7 +13,7 @@ summary: "Claude Code Agent Teams 的 teammate 间消息系统：每个 agent �
 sources:
   - "https://docs.claude.com/en/docs/claude-code/agent-teams"
 created: "2026-08-05T04:30:00Z"
-updated: "2026-08-05T04:30:00Z"
+updated: 2026-08-23T09:05:00Z
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -20,8 +21,7 @@ provenance:
 base_confidence: 0.78
 lifecycle: draft
 lifecycle_changed: "2026-08-05"
-tier: supporting
----
+tier: supporting---
 
 # Agent Team Mailbox 协议
 
@@ -96,8 +96,8 @@ tier: supporting
 - 若 v2.1.207 前遇 mailbox stuck → 直接 `rm` 文件（手动 reset）
 
 ## Related
-
 - [[concepts/claude-code-agent-teams]] — Agent Teams 总体概念
 - [[concepts/agent-team-race-condition-task-claim]] — File lock 防 race（同 IPC 通道）
 - [[concepts/worktree-durable-lease]] — 同 vault 文件系统 IPC 哲学
 - [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手
+- [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent|Agent Team 邮箱协议 × BMad 命名 Agent 派发]] — synthesis

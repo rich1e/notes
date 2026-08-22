@@ -1,4 +1,5 @@
 ---
+
 title: "设计系统作为 AI 上下文"
 category: concepts
 tags: [design-system, ai-context, design-tokens, concept, llm]
@@ -6,7 +7,7 @@ summary: "把设计系统（颜色 token、字号、布局规则）编码为 age
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
 created: "2026-07-28T00:00:00Z"
-updated: "2026-07-28T00:00:00Z"
+updated: 2026-08-23T09:05:00Z
 tier: core
 lifecycle: draft
 lifecycle_changed: "2026-07-28"
@@ -31,8 +32,7 @@ relationships:
   - target: "[[entities/awesome-design-md]]"
     type: related_to
   - target: "[[projects/flow-design-system/concepts/triple-repo-component-contract]]"
-    type: related_to
----
+    type: related_to---
 
 # 设计系统作为 AI 上下文
 
@@ -119,3 +119,7 @@ agent 启动时通过 CLAUDE.md 中的指令读取这份文件。
 - [[entities/claude-code]] — DESIGN.md 主要的"读者"
 - [[concepts/ai-tool-specialization]] — 上下游：把视觉与逻辑拆给不同 agent
 - [[skills/claude-code-token-optimization]] — DESIGN.md 进入缓存前缀的杠杆
+
+## Related
+
+- [[synthesis/concepts-design-system-as-ai-context × entities-claude-code|设计系统作为 AI 上下文 × Claude Code 消费]] — synthesis

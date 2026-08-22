@@ -1,7 +1,12 @@
 ---
+
 title: "Research: Alienware 笔记本 ThrottleStop 降压降温"
 category: synthesis
 tags: [research, throttlestop, alienware, undervolt, fivr, 散热, 降压]
+relationships:
+  - target: "[[skills/throttlestop-alienware-thermals]]"
+    type: related_to
+
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
   - https://maketecheasier.com/reduce-cpu-temperature-undervolting/
@@ -11,7 +16,7 @@ sources:
   - https://www.techpowerup.com/forums/threads/how-to-unlock-alienware-m16-r1-undervolt-for-throttlestop.319229/
   - https://wiki.archlinux.org/index.php/User:0xMrRobot/Alienware_m16_R1
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 summary: 对 Dell Alienware 笔记本 Intel H/HX 平台利用 ThrottleStop 降压降温的 3 轮研究综合。覆盖原理（FIVR / MSR 0x150 / P=C×V²×f）、Alienware BIOS 解锁路径（Smokeless UMAF / UnderVolt Protection）、mV Boost 关键技巧、安全边界、温度降幅预期（8-15°C @ 全核负载）。
 provenance:
   extracted: 0.7
@@ -19,8 +24,7 @@ provenance:
   ambiguous: 0.1
 base_confidence: 0.75
 lifecycle: draft
-lifecycle_changed: 2026-08-23
----
+lifecycle_changed: 2026-08-23---
 
 # Research: Alienware 笔记本 ThrottleStop 降压降温
 
@@ -71,3 +75,8 @@ Dell Alienware 笔记本 Intel H/HX 平台出厂默认电压偏保守，长时�
 - 跨 SKU 验证：M18 R1 / X17 R2 是否同样适用 mV Boost 模板
 - 温度降幅的正式基准（HWiNFO + Log 数小时 CPU Package Temp 曲线对比）
 - 非 Intel 路径：AMD R9 6900HX / 7040H 系列走 Ryzen Controller / Curve Optimizer 是否收益相同
+
+## Related
+
+- [[skills/throttlestop-alienware-thermals|Throttlestop Alienware Thermals]] — shares #alienware/#throttlestop/#undervolt (skills)
+

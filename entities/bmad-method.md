@@ -1,4 +1,5 @@
 ---
+
 title: "BMad Method 框架"
 category: entities
 tags:
@@ -10,7 +11,7 @@ tags:
 sources:
   - "https://github.com/bmad-code-org/bmad-method"
 created: "2026-08-05T07:00:00Z"
-updated: "2026-08-05T07:00:00Z"
+updated: 2026-08-23T09:05:00Z
 summary: "BMad Method（BMad Code, LLC 出品，MIT）是 AI 驱动敏捷交付框架：Clarify→Plan→Build→Learn 闭环 + 5 个命名 agent + 命名技能 + 4 层 customization。适用于新项目 + 既有 codebase。"
 provenance:
   extracted: 0.88
@@ -28,8 +29,7 @@ relationships:
   - target: "[[entities/bmad-named-agent]]"
     type: related_to
   - target: "[[entities/bmad-party-mode]]"
-    type: related_to
----
+    type: related_to---
 
 # BMad Method 框架
 
@@ -102,7 +102,6 @@ npx bmad-method install
 - "Web bundles"对 vault 工作流（macOS Claude Code 终端）的桥接价值——值得后续尝试
 
 ## Related
-
 - [[references/bmad-method-github-readme]] — 完整 README + 文件索引
 - [[concepts/bmad-delivery-loop]] — Clarify→Plan→Build→Learn 闭环
 - [[concepts/bmad-named-agent-architecture]] — 三腿凳模型
@@ -110,3 +109,4 @@ npx bmad-method install
 - [[entities/bmad-party-mode]] — 多 agent 房间
 - [[skills/bmad-install-and-setup]] — 安装流程
 - [[synthesis/concepts-ai-agent × entities-bmad-method]]（未来可生成） — 通用 AI agent 框架 × 具体落地产品
+- [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method|确定性 Agent 记忆 × BMad 方法论]] — synthesis

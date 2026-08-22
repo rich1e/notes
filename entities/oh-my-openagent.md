@@ -1,4 +1,5 @@
 ---
+
 title: "Oh My OpenAgent (omo)"
 category: entities
 tags:
@@ -10,7 +11,7 @@ tags:
 sources:
   - "https://github.com/code-yeongyu/oh-my-openagent"
 created: "2026-08-05T07:30:00Z"
-updated: "2026-08-05T07:30:00Z"
+updated: 2026-08-23T09:05:00Z
 summary: "oh-my-openagent（code-yeongyu, SUL-1.0）是 OpenCode 的多模型 agent 编排框架：11 个 discipline agents + 54+ 生命周期 hooks + 5 内置 MCP + Team Mode + ultrawork 单 keyword。Ultimate Edition 完整 + Light Edition (Codex CLI) 轻量。"
 provenance:
   extracted: 0.92
@@ -30,8 +31,7 @@ relationships:
   - target: "[[concepts/omo-team-mode]]"
     type: related_to
   - target: "[[concepts/omo-editions-ultimate-vs-light]]"
-    type: related_to
----
+    type: related_to---
 
 # Oh My OpenAgent (omo)
 
@@ -149,7 +149,6 @@ OMO_CODEX_SEND_ANONYMOUS_TELEMETRY=0
 - Anthropic blocked OpenCode 的具体故事背景——thdxr 推文链接是孤证 [[ambiguous]]
 
 ## Related
-
 - [[entities/sisyphus-agent]] / [[entities/hephaestus-agent]] — 核心 agents
 - [[concepts/omo-ultrawork-mode]] — 单 keyword 触发
 - [[concepts/omo-team-mode]] — v4.0 多 agent
@@ -162,3 +161,4 @@ OMO_CODEX_SEND_ANONYMOUS_TELEMETRY=0
 - [[references/omo-github-readme]] — README 索引
 - [[references/omo-team-mode-config-schema]] — 11 字段 team_mode 配置
 - `_raw/github-code-yeongyu-oh-my-openagent.txt` — 完整 gitingest 抓取（526 文件 / 1.1M tokens）
+- [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent|Agent Team 成本 × omo 编排器]] — synthesis

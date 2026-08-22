@@ -1,4 +1,5 @@
 ---
+
 title: "Agent Team 的 Token 成本权衡"
 category: concepts
 tags:
@@ -11,7 +12,7 @@ summary: "Claude Code Agent Teams token cost 随 teammate 数线性扩展（每�
 sources:
   - "https://docs.claude.com/en/docs/claude-code/agent-teams"
 created: "2026-08-05T04:30:00Z"
-updated: "2026-08-05T04:30:00Z"
+updated: 2026-08-23T09:05:00Z
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -19,8 +20,7 @@ provenance:
 base_confidence: 0.82
 lifecycle: draft
 lifecycle_changed: "2026-08-05"
-tier: supporting
----
+tier: supporting---
 
 # Agent Team 的 Token 成本权衡
 
@@ -125,9 +125,9 @@ YouTube 教程 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] 提到 "$1.15 / 4 �
 ```
 
 ## Related
-
 - [[concepts/claude-code-agent-teams]] — Agent Teams 总体
 - [[concepts/agent-team-race-condition-task-claim]] — File lock 防双扣 token 浪费
 - [[skills/claude-code-token-optimization]] — 通用 token 优化
 - [[concepts/ai-tool-specialization]] — 按模型分级调度
 - [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手
+- [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent|Agent Team 成本 × omo 编排器]] — synthesis

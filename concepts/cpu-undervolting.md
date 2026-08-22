@@ -1,21 +1,31 @@
 ---
+
 title: CPU 降压（Undervolting）
 category: concept
 tags: [undervolting, fivr, msr, intel, throttlestop, 降压, 散热]
+relationships:
+  - target: "[[entities/kevin-glynn]]"
+    type: related_to
+  - target: "[[references/ultrabookreview-throttlestop-guide-2026]]"
+    type: related_to
+  - target: "[[concepts/throttlestop-options]]"
+    type: related_to
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+
 summary: 通过降低 CPU 工作电压（Vcore）在保持频率的同时降低功耗与发热。原理 P=C×V²×f。Intel CPU 通过 FIVR/Offset Voltage 实现，AMD 通过 PBO Curve Optimizer。
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
   - https://www.dell.com/support/article/en-us/sln308057
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.85
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.75
   inferred: 0.15
-  ambiguous: 0.10
----
+  ambiguous: 0.10---
 
 # CPU 降压（Undervolting）
 
@@ -82,3 +92,11 @@ AMD 不开放同一套 MSR。降压走：
 - [[alienware-bios-undervolt-unlock]] — Alienware HX 的 BIOS setup 变量解锁
 - [[throttlestop]]
 - [[research-throttlestop-alienware-thermals]]
+
+## Related
+
+- [[entities/kevin-glynn|Kevin Glynn (UncleWebb)]] — shares #fivr/#intel/#throttlestop (entities)
+- [[references/ultrabookreview-throttlestop-guide-2026|ThrottleStop Guide (UltrabookReview, 2026)]] — shares #intel/#throttlestop (references)
+- [[concepts/throttlestop-options|Throttlestop Options]] — shares #fivr/#throttlestop (concepts)
+- [[references/techpowerup-m16-r1-undervolt-thread|How to unlock Alienware m16 R1 undervolt for ThrottleStop (TechPowerUp Forum)]] — shares #throttlestop (references)
+

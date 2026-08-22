@@ -1,7 +1,12 @@
 ---
+
 title: ThrottleStop
 category: entity
 tags: [throttlestop, tool, undervolt, intel, unclewebb, techpowerup, fivr, windows, freeware]
+relationships:
+  - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
+    type: related_to
+
 summary: Kevin "UncleWebb" Glynn 开发的 Windows 笔记本 CPU 调参工具（2009 起 / 当前 v9.7 / freeware）。通过 MSR 0x150 写 FIVR Offset Voltage 实现降压，配套 FIVR / TPL / Speed Shift / BD PROCHOT 等开关控制 thermal throttling。是 Intel XTU 受限情况下的事实标准替代品。
 sources:
   - https://www.techpowerup.com/throttlestop/
@@ -12,15 +17,14 @@ sources:
   - https://www.bleepingcomputer.com/news/security/avast-norton-and-other-avs-are-removing-the-winring0-driver/
   - https://m.kaspersky.co.uk/about/press-releases/kaspersky-uncovers-throttlestop-flaw-in-brazil-ransomware-attack
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.8
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.6
   inferred: 0.2
-  ambiguous: 0.2
----
+  ambiguous: 0.2---
 
 # ThrottleStop
 
@@ -127,3 +131,8 @@ provenance:
 - [[throttlestop-alienware-thermals]] — Alienware 完整流程
 - [[kevin-glynn]]
 - [[research-throttlestop-alienware-thermals]]
+
+## Related
+
+- [[references/techpowerup-m16-r1-undervolt-thread|Techpowerup M16 R1 Undervolt Thread]] — shares #throttlestop/#undervolt (references)
+

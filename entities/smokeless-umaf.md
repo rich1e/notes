@@ -1,21 +1,25 @@
 ---
+
 title: Smokeless_UMAF
 category: entity
 tags: [smokeless-umaf, bios, uefi, tool, alienware, undervolt-protection]
+relationships:
+  - target: "[[synthesis/research-throttlestop-alienware-thermals]]"
+    type: related_to
+
 summary: UEFI 模式下运行的 BIOS setup var 编辑器，常用于解锁 OEM 隐藏选项（如 Alienware HX 的 UnderVolt Protection）。基于 AMD 平台 Project UMAF 框架，Intel 平台通过临时镜像形式可用。
 sources:
   - https://notebooktalk.net/topic/2310-m16r1m18r1-smokeless-umaf-bios-options
   - https://www.techpowerup.com/forums/threads/how-to-unlock-alienware-m16-r1-undervolt-for-throttlestop.319229/
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-23T08:45:00Z
 base_confidence: 0.5
 lifecycle: draft
 lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.4
   inferred: 0.4
-  ambiguous: 0.2
----
+  ambiguous: 0.2---
 
 # Smokeless_UMAF
 
@@ -52,3 +56,8 @@ provenance:
 - [[throttlestop-alienware-thermals]]
 - [[alienware-bios-undervolt-unlock]]
 - [[throttlestop]]
+
+## Related
+
+- [[synthesis/research-throttlestop-alienware-thermals|Research Throttlestop Alienware Thermals]] — shares #alienware (synthesis)
+
