@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[entities/obsidian-wiki-framework]]"
-    type: authored
+    type: related_to
 ---
 
 # Ar9av

@@ -46,8 +46,9 @@ relationships:
   - target: "[[concepts/nlm-artifact-id-required-for-download]]"
     type: related_to
   - target: "[[concepts/nlm-studio-create-source-scoping]]"
-    type: related_to---
+    type: related_to
 
+---
 # gemini-notebook-mcp-cli — 面向 Google NotebookLM 的统一 CLI + MCP
 
 > **事实标准**,用于以编程方式访问 Google NotebookLM。单个 PyPI 包(`notebooklm-mcp-cli`)同时提供一个 43 工具的 MCP server(`notebooklm-mcp`)和一个完整的基于 Typer 的 CLI(`nlm`)。MIT 许可,已有 13 位以上具名贡献者。

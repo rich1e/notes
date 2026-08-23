@@ -21,8 +21,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.45
   inferred: 0.35
-  ambiguous: 0.20---
+  ambiguous: 0.20
 
+---
 # Kevin Glynn (UncleWebb)
 
 ## 身份

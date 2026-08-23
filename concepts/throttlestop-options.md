@@ -25,8 +25,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.8
   inferred: 0.1
-  ambiguous: 0.1---
+  ambiguous: 0.1
 
+---
 # ThrottleStop 选项速查
 
 > ThrottleStop 主窗口按功能切割成多个按钮。常规降温至少了解 FIVR / TPL / Speed Shift / BD PROCHOT 四个。

@@ -19,8 +19,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.4
   inferred: 0.4
-  ambiguous: 0.2---
+  ambiguous: 0.2
 
+---
 # Smokeless_UMAF
 
 ## 身份

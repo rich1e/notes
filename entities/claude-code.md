@@ -33,8 +33,9 @@ relationships:
   - target: "[[concepts/claude-code-three-modes]]"
     type: related_to
   - target: "[[concepts/claude-code-agent-teams]]"
-    type: related_to---
+    type: related_to
 
+---
 # Claude Code
 
 > Anthropic 的终端式 AI 编码 agent。设计感不强，逻辑/接线强。

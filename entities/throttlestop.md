@@ -24,8 +24,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.6
   inferred: 0.2
-  ambiguous: 0.2---
+  ambiguous: 0.2
 
+---
 # ThrottleStop
 
 ## 身份

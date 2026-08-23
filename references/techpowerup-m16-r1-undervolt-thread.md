@@ -23,8 +23,9 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.75
 lifecycle: draft
-lifecycle_changed: 2026-08-23---
+lifecycle_changed: 2026-08-23
 
+---
 # How to unlock Alienware m16 R1 undervolt for ThrottleStop
 
 来源：https://www.techpowerup.com/forums/threads/how-to-unlock-alienware-m16-r1-undervolt-for-throttlestop.319229/

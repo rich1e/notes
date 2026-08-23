@@ -15,8 +15,8 @@ provenance:
   inferred: 0.55
   ambiguous: 0.10
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-07-23
+lifecycle: reviewed
+lifecycle_changed: "2026-08-24"
 relationships:
   - target: "[[entities/battle-tested-patterns]]"
     type: derived_from

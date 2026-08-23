@@ -33,8 +33,9 @@ relationships:
   - target: "[[concepts/claude-mem-memory-architecture]]"
     type: related_to
   - target: "[[concepts/agent-operating-system]]"
-    type: related_to---
+    type: related_to
 
+---
 # 确定性 agent 记忆(非概率的"事实层")
 
 > "An agent's expensive failure mode isn't ignorance — it's confidence." —— OpenLore README

@@ -26,8 +26,9 @@ relationships:
   - target: "[[concepts/bmad-named-agent-architecture]]"
     type: related_to
   - target: "[[concepts/bmad-delivery-loop]]"
-    type: related_to---
+    type: related_to
 
+---
 # BMad 命名 Agent
 
 > BMad Method 把"AI agent"做成**有名字、有 emoji、有阶段的稳定身份**——你"hey Mary, let's brainstorm"，Mary 就激活、跳进 brainstorming、跳过菜单。这是 [[concepts/bmad-named-agent-architecture]] 三腿凳模型中的"persona 连续性"那条腿。

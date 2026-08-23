@@ -24,8 +24,9 @@ relationships:
   - target: "[[skills/claude-code-settings]]"
     type: related_to
   - target: "[[skills/notebooklm-mcp-setup]]"
-    type: related_to---
+    type: related_to
 
+---
 # MCP Server 作用域陷阱 — `claude mcp add --global` 的两层存储
 
 > Claude Code 配置 `~/.claude.json` 中 MCP server 存储分两层：顶层 `mcpServers`（全局）vs `projects.<路径>.mcpServers`（项目级），**`$HOME` 不被特殊处理**，规则与 `git config` 一致。

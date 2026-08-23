@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-23T16:57:00Z",
+  "last_updated": "2026-08-24T00:45:00Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -1661,7 +1661,7 @@
   },
   "stats": {
     "total_sources_ingested": 86,
-    "total_pages": 406,
+    "total_pages": 414,
     "total_projects": 3,
     "last_full_rebuild": null
   },

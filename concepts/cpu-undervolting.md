@@ -25,8 +25,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.75
   inferred: 0.15
-  ambiguous: 0.10---
+  ambiguous: 0.10
 
+---
 # CPU 降压（Undervolting）
 
 ## 物理动机

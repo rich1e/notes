@@ -21,8 +21,9 @@ provenance:
 base_confidence: 0.78
 lifecycle: draft
 lifecycle_changed: "2026-08-05"
-tier: supporting---
+tier: supporting
 
+---
 # Agent Team Mailbox 协议
 
 > Claude Code Agent Teams 的 teammate 间**直接消息**系统：每个 agent 一个 JSON 文件作 inbox。这是 subagent 模式"只能单向汇报"的关键差异——agent teams 让 teammate 间**对等通信**。
@@ -99,5 +100,5 @@ tier: supporting---
 - [[concepts/claude-code-agent-teams]] — Agent Teams 总体概念
 - [[concepts/agent-team-race-condition-task-claim]] — File lock 防 race（同 IPC 通道）
 - [[concepts/worktree-durable-lease]] — 同 vault 文件系统 IPC 哲学
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手
+- anthropic-claude-code-agent-teams-docs — 官方一手
 - [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent|Agent Team 邮箱协议 × BMad 命名 Agent 派发]] — synthesis

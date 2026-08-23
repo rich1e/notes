@@ -31,8 +31,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.6
   inferred: 0.3
-  ambiguous: 0.1---
+  ambiguous: 0.1
 
+---
 # 外星人笔记本 ThrottleStop 降压降温
 
 ## 适用场景

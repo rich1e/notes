@@ -21,8 +21,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.5
   inferred: 0.3
-  ambiguous: 0.2---
+  ambiguous: 0.2
 
+---
 # Alienware HX 平台 BIOS UnderVolt 解锁
 
 ## 背景

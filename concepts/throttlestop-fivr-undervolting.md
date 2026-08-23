@@ -21,8 +21,9 @@ lifecycle_changed: 2026-08-23
 provenance:
   extracted: 0.85
   inferred: 0.10
-  ambiguous: 0.05---
+  ambiguous: 0.05
 
+---
 # ThrottleStop 与 FIVR 降压原理
 
 ## 工具身份

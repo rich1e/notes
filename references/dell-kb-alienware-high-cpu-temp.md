@@ -20,8 +20,9 @@ provenance:
   ambiguous: 0.1
 base_confidence: 0.65
 lifecycle: draft
-lifecycle_changed: 2026-08-23---
+lifecycle_changed: 2026-08-23
 
+---
 # Dell KB — 外星人笔记本 CPU 高温排查
 
 来源：https://www.dell.com/support/kbdoc/en-us/000131532

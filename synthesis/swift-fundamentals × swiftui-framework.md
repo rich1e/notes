@@ -17,8 +17,8 @@ provenance:
   inferred: 0.60
   ambiguous: 0.10
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-07-23
+lifecycle: reviewed
+lifecycle_changed: "2026-08-24"
 relationships:
   - target: "[[concepts/swift-fundamentals]]"
     type: derived_from

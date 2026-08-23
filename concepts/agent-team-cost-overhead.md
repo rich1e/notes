@@ -20,8 +20,9 @@ provenance:
 base_confidence: 0.82
 lifecycle: draft
 lifecycle_changed: "2026-08-05"
-tier: supporting---
+tier: supporting
 
+---
 # Agent Team 的 Token 成本权衡
 
 > Agent Teams 的 token 成本**随 teammate 数线性增长**——每个 teammate 独立 context window。这是与 subagent 模式的**根本性成本差异**，也是 vault token 优化知识簇的新维度。
@@ -81,7 +82,7 @@ tier: supporting---
 
 ## 模型选择的 token 影响
 
-按 [[sources/anthropic-claude-code-agent-teams-docs]]，teammates 默认**不**继承 lead 的 `/model` 选择：
+按 anthropic-claude-code-agent-teams-docs，teammates 默认**不**继承 lead 的 `/model` 选择：
 
 - **Default teammate model** in `/config` — 改默认 teammate 模型
 - **`Default (leader's model)`** — 让 teammate 跟 lead
@@ -92,7 +93,7 @@ tier: supporting---
 - **简单干活 agent 给 Sonnet/Haiku** — 任务清单清楚后不需要顶级模型
 - **可混合** — 关键 backend agent 用 Sonnet，QA agent 用 Haiku 即够
 
-**Opus 4.6 价格**（Round 2 验证）: $5/M input, $25/M output（[[sources/anthropic-claude-code-agent-teams-docs]] 上下文推断）。这与 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] 提到的 "$10/$37.5" 1M context premium 价不同——后者可能指 1M context premium tier。
+**Opus 4.6 价格**（Round 2 验证）: $5/M input, $25/M output（anthropic-claude-code-agent-teams-docs 上下文推断）。这与 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] 提到的 "$10/$37.5" 1M context premium 价不同——后者可能指 1M context premium tier。
 
 ## Token 监控
 
@@ -129,5 +130,5 @@ YouTube 教程 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] 提到 "$1.15 / 4 �
 - [[concepts/agent-team-race-condition-task-claim]] — File lock 防双扣 token 浪费
 - [[skills/claude-code-token-optimization]] — 通用 token 优化
 - [[concepts/ai-tool-specialization]] — 按模型分级调度
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手
+- anthropic-claude-code-agent-teams-docs — 官方一手
 - [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent|Agent Team 成本 × omo 编排器]] — synthesis

@@ -32,8 +32,9 @@ relationships:
   - target: "[[entities/awesome-design-md]]"
     type: related_to
   - target: "[[projects/flow-design-system/concepts/triple-repo-component-contract]]"
-    type: related_to---
+    type: related_to
 
+---
 # 设计系统作为 AI 上下文
 
 > 设计系统不是给人看的文档，是给 AI agent 的硬约束输入。

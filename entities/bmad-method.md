@@ -29,8 +29,9 @@ relationships:
   - target: "[[entities/bmad-named-agent]]"
     type: related_to
   - target: "[[entities/bmad-party-mode]]"
-    type: related_to---
+    type: related_to
 
+---
 # BMad Method 框架
 
 > BMad Method 是 [BMad Code, LLC](https://bmadcode.com) 出品的**开源 AI 驱动敏捷交付框架**（MIT）。它把"用 LLM 写代码"扩展为"用 LLM 做整个交付周期"——从模糊想法 / 改动请求到能运行的软件，把决策显式化、context 持续携带、过程按工作量自动 size。
@@ -98,7 +99,7 @@ npx bmad-method install
 ## Open Questions
 
 - BMad v7 全面转 `uv run` 的迁移路径——本 vault 内无既有 Python 技能可参考
-- "bmad-loop unattended"的具体安全边界（如 review 自动批准 / 自动合并的约束）— README 提到但未深入 [[ambiguous]]
+- "bmad-loop unattended"的具体安全边界（如 review 自动批准 / 自动合并的约束）— README 提到但未深入 ambiguous
 - "Web bundles"对 vault 工作流（macOS Claude Code 终端）的桥接价值——值得后续尝试
 
 ## Related

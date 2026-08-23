@@ -19,9 +19,9 @@ provenance:
   inferred: 0.17
   ambiguous: 0.05
 base_confidence: 0.73
-lifecycle: draft
+lifecycle: reviewed
 tier: core
-lifecycle_changed: 2026-07-23
+lifecycle_changed: "2026-08-24"
 ---
 
 # Research: Kimi K3

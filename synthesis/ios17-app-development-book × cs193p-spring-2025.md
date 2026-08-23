@@ -16,8 +16,8 @@ provenance:
   inferred: 0.50
   ambiguous: 0.10
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-07-23
+lifecycle: reviewed
+lifecycle_changed: "2026-08-24"
 relationships:
   - target: "[[entities/ios17-app-development-book]]"
     type: derived_from

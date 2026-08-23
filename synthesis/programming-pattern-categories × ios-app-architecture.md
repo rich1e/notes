@@ -16,8 +16,8 @@ provenance:
   inferred: 0.65
   ambiguous: 0.10
 base_confidence: 0.72
-lifecycle: draft
-lifecycle_changed: 2026-07-23
+lifecycle: reviewed
+lifecycle_changed: "2026-08-24"
 relationships:
   - target: "[[concepts/programming-pattern-categories]]"
     type: derived_from

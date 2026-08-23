@@ -10,7 +10,7 @@ sources:
 created: 2026-08-23T16:15:00Z
 updated: 2026-08-23T16:15:00Z
 base_confidence: 0.85
-lifecycle: active
+lifecycle: draft
 lifecycle_changed: "2026-08-23"
 summary: iOS 移动端相册 UI 项目,八屏 React artifact 在 CoDesign 客户端内渲染,iPhone 14/15 Pro/Max 三机型并列预览,七屏+屏8(手账 · 相册墙)已验证
 ---

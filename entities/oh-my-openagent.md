@@ -31,8 +31,9 @@ relationships:
   - target: "[[concepts/omo-team-mode]]"
     type: related_to
   - target: "[[concepts/omo-editions-ultimate-vs-light]]"
-    type: related_to---
+    type: related_to
 
+---
 # Oh My OpenAgent (omo)
 
 > [code-yeongyu / oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) 是 **OpenCode 上的多模型 agent 编排框架**——SUL-1.0 许可证。**两个版本**：Ultimate Edition（OpenCode，11 agents / 54+ hooks / 5 MCP / Team Mode / ultrawork / hashline edits）+ Light Edition（Codex CLI，8 组件 portable）。
@@ -144,9 +145,9 @@ OMO_CODEX_SEND_ANONYMOUS_TELEMETRY=0
 
 ## Open Questions
 
-- "Hashline edits" 的具体 Git diff / 冲突解决语义——README 给 `LINE#ID` 格式但未给完整算法 [[ambiguous]]
-- `omo` npm bin alias 与同名包冲突——README 警告但未深究 [[ambiguous]]
-- Anthropic blocked OpenCode 的具体故事背景——thdxr 推文链接是孤证 [[ambiguous]]
+- "Hashline edits" 的具体 Git diff / 冲突解决语义——README 给 `LINE#ID` 格式但未给完整算法 ambiguous
+- `omo` npm bin alias 与同名包冲突——README 警告但未深究 ambiguous
+- Anthropic blocked OpenCode 的具体故事背景——thdxr 推文链接是孤证 ambiguous
 
 ## Related
 - [[entities/sisyphus-agent]] / [[entities/hephaestus-agent]] — 核心 agents

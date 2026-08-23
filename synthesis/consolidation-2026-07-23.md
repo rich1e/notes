@@ -4,8 +4,8 @@ category: synthesis
 tags: [maintenance, consolidation]
 sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on 2026-07-23.
-lifecycle: draft
-lifecycle_changed: 2026-07-23
+lifecycle: reviewed
+lifecycle_changed: "2026-08-24"
 tier: peripheral
 created: 2026-07-23T00:00:00Z
 updated: 2026-07-23T00:00:00Z
@@ -131,4 +131,4 @@ Pre-write git snapshot: `fcd71c4ecf5df4912ffae2c852fbfe12dd712e5b`
 - `macOS` 与 `macos` 互相对应（大小写规范化可以，但方向需统一）
 ## 相关页面
 
-- [[synthesis/consolidation-2026-07-07.md]]
+- synthesis/consolidation-2026-07-07
