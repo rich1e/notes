@@ -6,7 +6,7 @@ sources:
   - "https://github.com/twpayne/chezmoi/discussions/2673"
   - "https://chezmoi.io/"
   - "https://axionl.me/p/%E5%BD%92%E6%A1%A3-%E7%94%A8-chezmoi-%E7%AE%A1%E7%90%86%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/#gnome-keyring"
-  -"https://litearch.cn/obsidian/notes/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/%E7%BC%96%E7%A8%8B/Ops/17%E3%80%81chezmoi%20%E9%83%A8%E7%BD%B2%E7%BB%B4%E6%8A%A4%E6%95%99%E7%A8%8B.html"
+  - "https://litearch.cn/obsidian/notes/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/%E7%BC%96%E7%A8%8B/Ops/17%E3%80%81chezmoi%20%E9%83%A8%E7%BD%B2%E7%BB%B4%E6%8A%A4%E6%95%99%E7%A8%8B.html"
   - "https://www.shuzhiduo.com/A/kvJ3V17Xzg/"
   - "https://github.com/twpayne/chezmoi/discussions/2424"
 created: 2026-07-25T02:27:13Z
@@ -20,7 +20,6 @@ base_confidence: 0.70
 lifecycle: draft
 lifecycle_changed: 2026-07-25
 tier: core
-    type: related_to
 relationships:
   - target: "[[entities/chezmoi]]"
     type: related_to

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-14T01:32:25Z",
+  "last_updated": "2026-08-23T16:15:00Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -158,6 +158,35 @@
         "hot.md",
         ".manifest.json"
       ]
+    },
+    "_raw/2026-08-23-zsh-config-optimization-patterns.md": {
+      "content_hash": "sha256:0faa293b84cea58f2abe6528d6efad47fe6a493c9e883fe19dbd8c106250f9bb",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "concepts/zsh-shell-config-patterns.md",
+        "concepts/inshellisense-reload-compat.md",
+        "skills/safe-rm-wrapper-design.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
+    },
+    "_raw/2026-08-23-inshellisense-reload-isterm-guard.md": {
+      "content_hash": "sha256:310f876d468d3610f8f401f54c7a88ae13a43879b01c22eef3e489fe2ea1fa67",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "concepts/inshellisense-reload-compat.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
+    },
+    "_raw/2026-08-23-trash-wrapper-temp-file-pollution.md": {
+      "content_hash": "sha256:bbc47e62c6fe6a5be85d0f6db4530102a84d62f2f2e009679ba9a5bde0684f01",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "skills/safe-rm-wrapper-design.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
     }
   },
   "sources": {
@@ -1471,6 +1500,21 @@
     }
   },
   "projects": {
+    "figma": {
+      "source_cwd": "/Users/rich1e/store/project for X/figma",
+      "last_synced": "2026-08-23T16:15:00Z",
+      "last_commit_synced": null,
+      "not_git_repo": true,
+      "sync_method": "wiki-capture + wiki-update (manual session JSONL recovery)",
+      "design_id": "482ad7d4-a010-43d3-8517-078c4701af91",
+      "pages_in_vault": [
+        "projects/figma/figma.md",
+        "projects/figma/concepts/screen-08-photo-wall.md",
+        "projects/figma/skills/codesign-session-jsonl-recovery.md",
+        "projects/figma/skills/codesign-artifact-vite-scaffold.md"
+      ],
+      "lifecycle_state": "active"
+    },
     "jrfed-zaxd-mediation-tool": {
       "source_cwd": "/Users/rich1e/workspace/code/jrfed-zaxd-mediation-tool",
       "last_synced": "2026-07-01T12:00:00Z",
@@ -1600,8 +1644,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 82,
-    "total_pages": 398,
+    "total_sources_ingested": 85,
+    "total_pages": 401,
     "total_projects": 3,
     "last_full_rebuild": null
   },

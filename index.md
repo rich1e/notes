@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-14T08:00:00Z*
+*This index is automatically maintained. Last updated: 2026-08-23T18:30:00Z*
 
 ## Concepts
 
@@ -17,6 +17,8 @@ title: Wiki Index
 - [[concepts/linux-server-hardening-checklist]] — 7 层加固栈：threat modeling → SSH → 基础 → 网络防火墙 → 审计 → 内核 sysctl → 日志告警
 - [[concepts/fail2ban-vs-crowdsec]] — 应用层 IDS 选型对比：成熟度 / 学习曲线 / 社区共享 / 跨机同步 / 容器友好
 - [[concepts/intrusion-detection-stack]] — Linux IDS 工具全景：Network 层 (PSAD/Fail2Ban/CrowdSec) + Host 层 (AIDE/ClamAV/rkhunter/Lynis/OSSEC) + Log 层 (logwatch/ss)
+- [[concepts/zsh-shell-config-patterns]] — zsh 个人 dotfile 实战优化模式：HOMEBREW_PREFIX 缓存 / setopt 兼容性 / chezmoi 密钥集成 / alias vs 函数优先级 / fzf preview 公共变量 / inshellisense wrapper 末尾规则
+- [[concepts/inshellisense-reload-compat]] — inshellisense reload 需 ISTERM 守卫：源 init.zsh 是 shell wrapper 模式（source → 启动 is daemon → exit），再 source 会因 ISTERM=1 跳过但状态错乱；reload 普通 zsh 配置没事，改 inshellisense 自身配置需 exit+重进
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -245,6 +247,7 @@ title: Wiki Index
 - [[skills/claude-mem-memory-usage]] — 在 Claude 中用 claude-mem 管长期记忆：插件市场装（别用 npm -g）→ 自动注入 → search/timeline/get_observations 3 层查历史 → /knowledge-agent 知识大脑 → settings 调优
 - [[skills/treehouse-cli]] — treehouse CLI 日常用法：install/get/enter/return/prune/destroy 速查，ABA-safe 条件 return，损坏 state 恢复流程
 - [[skills/openlore-cli]] — OpenLore CLI 日常用法：install/orient/review/prove/enforce/mcp/drift,6 capability family,substrate preset 默认,commit gate 三件套
+- [[skills/safe-rm-wrapper-design]] — rm 包装为 trash 后脚本临时文件清理会污染 ~/.Trash：约定用 command rm 显式绕过 wrapper + 危险参数拦截 + trash-cli 选项速查
 
 ## Synthesis
 
@@ -269,6 +272,10 @@ title: Wiki Index
 - [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义左滑删除 + 速度阈值 + 圆角并入
 - [[projects/dayfold/references/source-tree]] — 源码目录布局与各模块职责
 - [[projects/dayfold/references/stitch-design-system]] — Stitch 设计系统资产索引（Project ID、Asset ID、已生成屏幕、本地文件布局）
+- [[projects/figma/figma]] — Photo Album Mobile UI 八屏 React artifact,CoDesign 自包含 JSX 在 iPhone 14/15 Pro/Max 三机型框中预览
+- [[projects/figma/concepts/screen-08-photo-wall]] — 三段分区(07/06/05)+ PaperClip/ThumbPin/Polaroid/WashiTape 四原语,纯内联 SVG
+- [[projects/figma/skills/codesign-session-jsonl-recovery]] — CoDesign session JSONL 作为源码 second source,按 create+str_replace+insert 回放完整重建
+- [[projects/figma/skills/codesign-artifact-vite-scaffold]] — CoDesign artifact.jsx 在 Vite 上加载的两处必改 + 最小脚手架
 - [[projects/xk-ai-talk-desk-ui/xk-ai-talk-desk-ui]] — AI 外呼热转坐席前端（React 19 + JsSIP + 信科 CC SDK）
 - [[projects/xk-ai-talk-desk-ui/concepts/call-center-sdk-integration]] — CC SDK 集成：useSoftbar Hook 封装 LaihuAPI
 - [[projects/xk-ai-talk-desk-ui/concepts/agent-state-machine]] — 坐席状态机（agentState + callState 双层设计）

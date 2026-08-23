@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "chezmoi-workflow",
+      "path": "concepts/chezmoi-workflow.md"
+    },
+    {
+      "basename": "chezmoi",
+      "path": "entities/chezmoi.md"
+    },
+    {
+      "basename": "zsh-shell-config-patterns",
+      "path": "concepts/zsh-shell-config-patterns.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
+    },
+    {
+      "basename": "figwright",
+      "path": "entities/figwright.md"
     },
     {
       "basename": "throttlestop-alienware-thermals",
@@ -47,10 +63,6 @@
     {
       "basename": "rsync",
       "path": "concepts/rsync.md"
-    },
-    {
-      "basename": "chezmoi-workflow",
-      "path": "concepts/chezmoi-workflow.md"
     },
     {
       "basename": "_insights",
@@ -187,18 +199,6 @@
     {
       "basename": "自建 OSS",
       "path": "Chronicle/2023/自建 OSS.md"
-    },
-    {
-      "basename": "BEM 命名规范",
-      "path": "Chronicle/2023/BEM 命名规范.md"
-    },
-    {
-      "basename": "Blog",
-      "path": "Chronicle/2023/Blog.md"
-    },
-    {
-      "basename": "Book",
-      "path": "Chronicle/2023/Book.md"
     }
   ],
   "omittedPaths": [],
