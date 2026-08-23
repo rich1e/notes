@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-23T16:15:00Z",
+  "last_updated": "2026-08-23T16:57:00Z",
   "research": {
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
@@ -187,6 +187,22 @@
       ],
       "source_type": "document",
       "project": "zsh-extend"
+    },
+    "_raw/2026-08-24-statusline-chezmoi-template-env-injection.md": {
+      "content_hash": "sha256:635763acadfb7f0fbec6da50cf1e0726f7b29f9d66f90299e775e883a11f3c4c",
+      "last_ingested": "2026-08-23T16:57:00Z",
+      "pages_produced": [
+        "skills/statusline-template-injection-defense.md",
+        "concepts/unrendered-chezmoi-template-env-leak.md",
+        "skills/claude-code-statusline.md",
+        "skills/chezmoi-keyring-template.md",
+        "skills/macos-keychain-getBase64Key.md"
+      ],
+      "pages_updated": [
+        "concepts/chezmoi-workflow.md"
+      ],
+      "source_type": "document",
+      "project": null
     }
   },
   "sources": {
@@ -1644,8 +1660,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 85,
-    "total_pages": 401,
+    "total_sources_ingested": 86,
+    "total_pages": 406,
     "total_projects": 3,
     "last_full_rebuild": null
   },

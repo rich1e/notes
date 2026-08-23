@@ -9,9 +9,10 @@ sources:
   - "https://litearch.cn/obsidian/notes/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/%E7%BC%96%E7%A8%8B/Ops/17%E3%80%81chezmoi%20%E9%83%A8%E7%BD%B2%E7%BB%B4%E6%8A%A4%E6%95%99%E7%A8%8B.html"
   - "https://www.shuzhiduo.com/A/kvJ3V17Xzg/"
   - "https://github.com/twpayne/chezmoi/discussions/2424"
+  - "rich1e session (2026-08-24)"
 created: 2026-07-25T02:27:13Z
-updated: 2026-07-26T10:00:00Z
-summary: chezmoi 工作流围绕 add/edit/diff/apply 四个动词；跨机同步可用 update，亦可用 czpush/czpull/czapply 三段式别名明确推送、拉取与部署边界。
+updated: 2026-08-24T00:00:00Z
+summary: chezmoi 工作流围绕 add/edit/diff/apply 四个动词；跨机同步可用 update，亦可用 czpush/czpull/czapply 三段式别名明确推送、拉取与部署边界。apply 是唯一渲染桥梁 —— 漏跑会让模板字符串原样进入 env，详见 [[concepts/unrendered-chezmoi-template-env-leak]]。
 provenance:
   extracted: 0.85
   inferred: 0.12
@@ -98,10 +99,25 @@ args = ["--wait", "--diff", "{{ .Destination }}", "{{ .Target }}"]
 
 详见 [[skills/chezmoi-vscode-integration]]。
 
+## Apply 不是可选：渲染态 × env 注入耦合
+
+`apply` 是 source-of-truth → runtime 的唯一渲染桥梁。三种常见场景会让 dotfile 处于"未渲染"状态，**模板字符串原样进入 env**：
+
+1. **新机首启**：dotfile 仓库已 clone 但 `chezmoi apply` 未跑
+2. **dotfile 改后**：源态改了，`chezmoi apply` 漏跑就重开 shell
+3. **模板语法错**：变量未定义 / 语法错误时 chezmoi 可能整行原样输出或空字符串
+
+下游消费者（statusline / API 客户端 / CLI 工具）的 env-first 路径会读到字面 `{{ keyring ... }}` 当密钥。HTTP 200 + `base_resp.status_code: 1004` 让 curl 看不见问题，状态面板常静默显示 `unavailable`。详见 [[concepts/unrendered-chezmoi-template-env-leak]] 和修复 pattern [[skills/statusline-template-injection-defense]]。
+
+**节奏补丁**：diff 通过后立刻 `czapply`，**不要**把 diff 当成"apply 已经自动跑了"。在 [[skills/chezmoi-vscode-integration]] 的 VSCode diff 工作流里这是高频陷阱（diff 看一眼觉得 OK → 关 VSCode → 没 apply → 重开 shell 时仍是旧模板）。
+
 ## 相关链接
 
 - [[concepts/chezmoi-three-state-model]]
 - [[concepts/dotfile-manager]]
 - [[concepts/chezmoi-attribute-prefixes]]
+- [[concepts/unrendered-chezmoi-template-env-leak]]
 - [[references/chezmoi-workflow-discussion]]
 - [[skills/chezmoi-vscode-integration]]
+- [[skills/statusline-template-injection-defense]]
+- [[skills/chezmoi-keyring-template]]

@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-23T18:30:00Z*
+*This index is automatically maintained. Last updated: 2026-08-23T16:57:00Z*
 
 ## Concepts
 
@@ -19,6 +19,7 @@ title: Wiki Index
 - [[concepts/intrusion-detection-stack]] — Linux IDS 工具全景：Network 层 (PSAD/Fail2Ban/CrowdSec) + Host 层 (AIDE/ClamAV/rkhunter/Lynis/OSSEC) + Log 层 (logwatch/ss)
 - [[concepts/zsh-shell-config-patterns]] — zsh 个人 dotfile 实战优化模式：HOMEBREW_PREFIX 缓存 / setopt 兼容性 / chezmoi 密钥集成 / alias vs 函数优先级 / fzf preview 公共变量 / inshellisense wrapper 末尾规则
 - [[concepts/inshellisense-reload-compat]] — inshellisense reload 需 ISTERM 守卫：源 init.zsh 是 shell wrapper 模式（source → 启动 is daemon → exit），再 source 会因 ISTERM=1 跳过但状态错乱；reload 普通 zsh 配置没事，改 inshellisense 自身配置需 exit+重进
+- [[concepts/unrendered-chezmoi-template-env-leak]] — chezmoi dotfile 用 `{{ keyring ... }}` 模板注入密钥到 env 时，若未被 `chezmoi apply` 渲染，字面模板字符串会成为"密钥"被下游读到：渲染态 × env 注入耦合 + 三层防御
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -248,6 +249,10 @@ title: Wiki Index
 - [[skills/treehouse-cli]] — treehouse CLI 日常用法：install/get/enter/return/prune/destroy 速查，ABA-safe 条件 return，损坏 state 恢复流程
 - [[skills/openlore-cli]] — OpenLore CLI 日常用法：install/orient/review/prove/enforce/mcp/drift,6 capability family,substrate preset 默认,commit gate 三件套
 - [[skills/safe-rm-wrapper-design]] — rm 包装为 trash 后脚本临时文件清理会污染 ~/.Trash：约定用 command rm 显式绕过 wrapper + 危险参数拦截 + trash-cli 选项速查
+- [[skills/statusline-template-injection-defense]] — statusline env-first + keychain-fallback 读密钥时，env 含未渲染 chezmoi `{{ keyring ... }}` 模板会让 Bearer token 失败（API 1004）：`grep -q "{{"` 启发式守卫 + keychain 回退接管
+- [[skills/claude-code-statusline]] — Claude Code statusline 配置基础：stdin JSON / stdout 单行 / env-first + keychain-fallback 模式 / 易感未渲染模板注入
+- [[skills/chezmoi-keyring-template]] — chezmoi `{{ keyring "service" "account" }}` 模板用法，从 OS keychain 读密钥替换 dotfile 模板；坑：未渲染时模板字符串进 env
+- [[skills/macos-keychain-getBase64Key]] — macOS `security find-generic-password -w` + `go-keyring-base64:` 前缀 + base64 解码的完整读取 pattern
 
 ## Synthesis
 
