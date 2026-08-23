@@ -29,7 +29,7 @@ Andrej Karpathy 是当代最有影响力的 AI 教育者之一。前 Tesla AI �
 
 ### 教育系列
 
-- **Neural Networks: Zero to Hero**（2022-2025，8+ 讲）—— 见 [[sources/andrej-karpathy-zero-to-hero]]
+- **Neural Networks: Zero to Hero**（2022-2025，8+ 讲）—— 见 andrej-karpathy-zero-to-hero
 - **Deep Dive into LLMs like ChatGPT**（2025-02，3.5 小时）
 - **Spelled-out intro to...** 系列：micrograd、makemore、GPT、tokenizer
 
@@ -53,7 +53,7 @@ Andrej Karpathy 是当代最有影响力的 AI 教育者之一。前 Tesla AI �
 
 ## 关联
 
-- [[sources/andrej-karpathy-zero-to-hero]]
+- andrej-karpathy-zero-to-hero
 - [[entities/sebastian-raschka]]
 - concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]

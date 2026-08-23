@@ -9,7 +9,7 @@ summary: 专为付费 Apple 开发者设计的 iOS 机上签名工具，支持 A
 sources:
   - https://www.onmyodev.com/2026/03/feather/
   - https://www.onmyodev.com/2026/05/ios-sideloading-faq/
-  - "[[Clippings/Feather 签名工具.md]]"
+  - "Clippings/Feather 签名工具"
 created: 2026-06-29
 updated: 2026-08-13
 tier: supporting

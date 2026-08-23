@@ -73,7 +73,7 @@ lifecycle_changed: 2026-07-27
 
 - **应用方向**：vLLM、TensorRT-LLM、量化、Agent 框架（LangGraph、CrewAI）、评测（Braintrust、Inspect）
 - **研究方向**：RLVR/GRPO、Mechanistic Interpretability、Scaling Laws、MoE、SSM/Mamba
-- **入门资源**：Stanford CS336（系统视角）+ [[sources/dakingrai-mech-interp-papers]]（interpretability）
+- **入门资源**：Stanford CS336（系统视角）+ dakingrai-mech-interp-papers（interpretability）
 
 ## 常见反模式
 
@@ -107,7 +107,7 @@ lifecycle_changed: 2026-07-27
 
 - concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]
-- [[sources/andrej-karpathy-zero-to-hero]]
-- [[sources/sebastian-raschka-llms-from-scratch-book]]
-- [[sources/stanford-cs336-spring2025]]
-- [[sources/li-hongyi-genai-2025]]
+- andrej-karpathy-zero-to-hero
+- sebastian-raschka-llms-from-scratch-book
+- stanford-cs336-spring2025
+- li-hongyi-genai-2025

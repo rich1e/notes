@@ -62,7 +62,7 @@ relationships:
 └─────────────────────────────────────────────────────┘
 ```
 
-来源：[[entities/google-labs-code-design.md|google-labs-code/design.md]](https://github.com/google-labs-code/design.md) 官方 spec。
+来源：entities/google-labs-code-design.md|google-labs-code/design(https://github.com/google-labs-code/design.md) 官方 spec。
 
 ## Token 类型
 
@@ -149,12 +149,12 @@ npx @google/design.md lint DESIGN.md         # 结构 + WCAG + 引用闭环
 npx @google/design.md diff DESIGN.md DESIGN-v2.md   # 两份之间做 token-level + prose regression
 ```
 
-CLI 输出 JSON，severity ∈ {error, warning, info}。详见 [[sources/google-design-md-spec]]。
+CLI 输出 JSON，severity ∈ {error, warning, info}。详见 google-design-md-spec。
 
 ## 相关页面
 
-- [[sources/google-design-md-spec]] — 官方规范来源
-- [[sources/awesome-design-md-repo]] — 74 个真实样本
+- google-design-md-spec — 官方规范来源
+- awesome-design-md-repo — 74 个真实样本
 - [[concepts/design-md-token-interpolation]] — `{path.to.token}` 引用机制
 - [[concepts/design-md-anti-patterns]] — "AI taste" 与反模式
 - [[concepts/design-system-as-ai-context]] — 上游：为什么 DESIGN.md 是 AI agent 的硬约束

@@ -53,4 +53,4 @@ relationships:
 - [[concepts/llm-training-pipeline]] — 指令微调是流水线中承上启下的一环
 - [[concepts/transformer-architecture]] — 被微调的底层模型架构
 - [[concepts/ai-agent]] — 强指令遵循是 Agent 能可靠调工具的前提
-- [[sources/li-hongyi-genai-2025]] — 含指令微调专讲
+- li-hongyi-genai-2025 — 含指令微调专讲

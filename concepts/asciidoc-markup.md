@@ -147,5 +147,5 @@ endif::[]
 - adoc Studio 完整指南：<https://www.adoc-studio.app/blog/asciidoc-guide>
 ## 相关页面
 
-- [[references/chezmoi-templating-guide.md]]
-- [[concepts/fabric-patterns.md]]
+- references/chezmoi-templating-guide
+- concepts/fabric-patterns

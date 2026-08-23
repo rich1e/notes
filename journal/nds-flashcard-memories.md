@@ -9,8 +9,8 @@ tags:
 summary: 错过 NDS 世代后补票的烧录卡折腾经历：DS Two、R4 COM 卡、SuperCard Mini SD、ChisFlash 的横向对比与使用体验。
 sources:
   - https://www.omega.im/866/
-  - "[[Clippings/电波的电玩记忆-NDS世代 – 电波万事屋.md]]"
-  - "[[Clippings/nds折腾.md]]"
+  - "Clippings/电波的电玩记忆-NDS世代 – 电波万事屋"
+  - "Clippings/nds折腾"
 created: 2026-06-29
 updated: 2026-08-13
 tier: peripheral

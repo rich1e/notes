@@ -59,7 +59,7 @@ relationships:
 ## 相关页面
 
 - [[concepts/instruction-tuning]] — 指令遵循是 Agent 可靠调工具的前提
-- [[sources/li-hongyi-genai-2025]] — 含 Agent 专讲
+- li-hongyi-genai-2025 — 含 Agent 专讲
 
 ## Related
 

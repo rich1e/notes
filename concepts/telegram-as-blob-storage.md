@@ -22,7 +22,7 @@ tier: supporting
 
 # 把 IM 平台当免费对象存储（Telegram as Blob Storage）
 
-一种「白嫖」存储模式：把 **Telegram / Discord 等 IM 平台**当免费、近乎无限的对象存储——**上传 = 给频道发一条消息**，**读取 = 调 getFile 拿回文件**。[[sources/telegraph-image-github]]（Telegraph-Image）是原型，[[entities/cloudflare-imgbed]] 把它列为多后端之一。
+一种「白嫖」存储模式：把 **Telegram / Discord 等 IM 平台**当免费、近乎无限的对象存储——**上传 = 给频道发一条消息**，**读取 = 调 getFile 拿回文件**。telegraph-image-github（Telegraph-Image）是原型，[[entities/cloudflare-imgbed]] 把它列为多后端之一。
 
 ## 机制
 
@@ -49,5 +49,5 @@ tier: supporting
 
 - [[concepts/serverless-image-hosting]] — 上层图床范式
 - [[entities/cloudflare-imgbed]] — 把此模式列为多后端之一
-- [[sources/telegraph-image-github]] — 该模式的原型实现
+- telegraph-image-github — 该模式的原型实现
 - [[synthesis/Research: CloudFlare ImgBed]] — 研究综合页

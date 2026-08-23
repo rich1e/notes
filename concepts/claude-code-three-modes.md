@@ -30,7 +30,7 @@ relationships:
 
 # Claude Code 三种工作模式
 
-> Claude Code（Anthropic 终端编码 agent）有三种根本不同的会话结构，对应三种典型使用场景。**核心差异不是"能力"而是"会话数 + 通信能力"**——能力上三者重叠 90%，区别在**会话如何管理 / teammate 间能否直接通信 / token 如何节流**。本概念综合 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]]（视频教程）与 [[sources/anthropic-claude-code-agent-teams-docs]]（Anthropic 官方 v2.1.178+ 文档）。
+> Claude Code（Anthropic 终端编码 agent）有三种根本不同的会话结构，对应三种典型使用场景。**核心差异不是"能力"而是"会话数 + 通信能力"**——能力上三者重叠 90%，区别在**会话如何管理 / teammate 间能否直接通信 / token 如何节流**。本概念综合 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]]（视频教程）与 anthropic-claude-code-agent-teams-docs（Anthropic 官方 v2.1.178+ 文档）。
 
 ## 三模式对照
 
@@ -89,7 +89,7 @@ relationships:
 
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — 视频源（Opus 4.6 引入 Agent Teams）
 - [[synthesis/Research: Claude Code Agent Teams]] — 三轮调研综合
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手文档
+- anthropic-claude-code-agent-teams-docs — 官方一手文档
 - [[concepts/claude-code-agent-teams]] — Agent Teams 工程机制详解
 - [[concepts/agent-team-display-modes]] — 5 种 teammateMode
 - [[concepts/agent-team-cost-overhead]] — Linear scaling token 成本

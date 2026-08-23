@@ -146,4 +146,4 @@ button-primary:
 
 - [[concepts/design-md-format-spec]] — 文件整体结构
 - [[concepts/design-system-as-ai-context]] — token 引用为何是 AI agent 的硬约束
-- [[sources/google-design-md-spec]] — 官方规范
+- google-design-md-spec — 官方规范

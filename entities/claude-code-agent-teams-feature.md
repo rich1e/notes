@@ -132,6 +132,6 @@ Anthropic 演示了用 **16 个 agents** 自主构建 C 编译器的用例（ant
 ## Related
 
 - [[synthesis/Research: Claude Code Agent Teams]] — 综合分析
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手文档
+- anthropic-claude-code-agent-teams-docs — 官方一手文档
 - [[concepts/claude-code-agent-teams]] — 概念抽象
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — 视频教程（与官方多处矛盾，已修正）

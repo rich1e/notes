@@ -28,7 +28,7 @@ tier: core
 
 - **作者/组织**: MarSeventh
 - **许可**: MIT
-- **上游**: 脱胎自 [[sources/telegraph-image-github]]（cf-pages/Telegraph-Image）
+- **上游**: 脱胎自 telegraph-image-github（cf-pages/Telegraph-Image）
 - **前端**: [[entities/sanyue-imghub]]（Vue 3 + Element Plus）
 - **桌面客户端**: MarSeventh/satellite
 
@@ -55,15 +55,15 @@ Telegraph-Image 只把图存到 Telegram、受制于单一后端与免费配额�
 - [[concepts/serverless-image-hosting]] — 所属架构范式
 - [[concepts/telegram-as-blob-storage]] — 其存储后端之一的模式
 - [[entities/sanyue-imghub]] — 前端项目
-- [[sources/cloudflare-imgbed-github]] / [[sources/cloudflare-imgbed-docs]] — 一手源
-- [[sources/telegraph-image-github]] — 上游
+- cloudflare-imgbed-github / cloudflare-imgbed-docs — 一手源
+- telegraph-image-github — 上游
 - [[synthesis/Research: CloudFlare ImgBed]] — 研究综合页
 
 ## 关联关系
 
 ```yaml
 extends:
-  - "[[sources/telegraph-image-github]]"      # 脱胎并补足上游局限
+  - "telegraph-image-github"      # 脱胎并补足上游局限
 uses:
   - "[[concepts/telegram-as-blob-storage]]"   # 多后端之一
   - "[[entities/sanyue-imghub]]"              # 前端

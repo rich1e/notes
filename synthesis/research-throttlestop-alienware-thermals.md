@@ -24,8 +24,9 @@ provenance:
   ambiguous: 0.1
 base_confidence: 0.75
 lifecycle: draft
-lifecycle_changed: 2026-08-23---
+lifecycle_changed: 2026-08-23
 
+---
 # Research: Alienware 笔记本 ThrottleStop 降压降温
 
 ## Overview

@@ -179,7 +179,7 @@ FinalDave / notaz / Reesy / Wintermute / chishm / MAME / Minizip / www.pockethea
 - **(O2)** Nitendo 0.21.b 的 `_NeoDs.ini` 配置文件机制详细格式?(vault 之前没记录)
 - **(O3)** Indy13 0.21 mod 的法/英 readme 翻译内容?(社区跨语言贡献)
 - **(O4)** NeoDS TWL 整合到 Twilight Menu++ 的具体路径?(Universal-Team 仓库)
-- **(O5)** gamebrew 提到 Google Groups neods 还有"兼容性列表在 discussion thread"—— 是 [[misc/web-gbatemp-net-threads-neods-names-compatibility-list-102177]] 之外的第二个官方兼容列表?
+- **(O5)** gamebrew 提到 Google Groups neods 还有"兼容性列表在 discussion thread"—— 是 web-gbatemp-net-threads-neods-names-compatibility-list-102177 之外的第二个官方兼容列表?
 
 ## Related
 

@@ -57,7 +57,7 @@ MCP servers（web 搜索 / docs 检索 / GitHub 代码搜索等）每个都暴�
 |---|---|
 | [[skills/claude-code-token-optimization]] | 直接落地"token 节流"的工程方案 |
 | [[concepts/mcp-server-protocol-quirks]] | 反转 vault MCP 默认全局注册的策略——按 skill scope |
-| [[entities/claude-code-agent-teams-feature]] | 推测 Team Mode 每个 member 自己 spin up MCPs [[inferred]] |
+| [[entities/claude-code-agent-teams-feature]] | 推测 Team Mode 每个 member 自己 spin up MCPs inferred |
 | [[concepts/ai-tool-specialization]] | MCP 跟着 skill 而非跟着 session——专业化更细 |
 
 ## Light Edition 的对应实现
@@ -85,9 +85,9 @@ omo Light Edition（Codex CLI）有 **5 个 plugin-scoped MCPs**：
 
 ## Open Questions
 
-- Skill-Embedded MCPs 的**生命周期管理**——是 skill exit 自动 spin down，还是有显式 close？[[ambiguous]]
+- Skill-Embedded MCPs 的**生命周期管理**——是 skill exit 自动 spin down，还是有显式 close？ambiguous
 - 与 [[concepts/agent-team-display-modes]] 的"deferred schemas"关系——Claude Code 的 `alwaysLoad: false` 似乎与 skill-embedded 同思路，但机制不同
-- 跨 skill **共享 MCP** 的机制——例如 Exa 同时给 search 和 analyze skill 用，是 spin up 两次还是 share？[[ambiguous]]
+- 跨 skill **共享 MCP** 的机制——例如 Exa 同时给 search 和 analyze skill 用，是 spin up 两次还是 share？ambiguous
 
 ## Related
 

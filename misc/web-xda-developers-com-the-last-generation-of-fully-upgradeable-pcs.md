@@ -80,20 +80,20 @@ AI 工作负载要求越来越快的内存 → OEM 把内存焊到芯片组上�
 
 > vault 暂无 PC 硬件架构的 concept 页（vault 强项是 AI agent / software 工程）。本节列出本文章可以蒸馏出的概念，留待未来有兴趣时建。
 
-- **[[concepts/on-package-memory-trend]]** (建议) — Intel Lunar Lake / Apple M-series / Snapdragon X 把内存推到处理器封装上/里，物理层动机（带宽/功耗/散热）vs 用户层的代价（不可升级）。
-- **[[concepts/lpddr-vs-sodimm-bandwidth-tradeoff]]** (建议) — LPDDR5X 在带宽/功耗/物理尺寸的全面优势 vs SO-DIMM 在可维修性/成本/扩展性的优势；Framework Desktop 是标志性妥协案例。
-- **[[concepts/right-to-repair-pc-hardware]]** (建议) — PC 硬件维修权的范围持续缩小，与欧盟维修权立法形成张力。
-- **[[concepts/cloud-gaming-as-appliance-shift]]** (建议) — GeForce Now / Xbox Cloud Gaming 把 PC 硬件价值从"你拥有的东西"重新定义为"你订阅的通道"。
-- **[[concepts/diy-pc-final-generation-thesis]]** (建议) — 2026 这一代可能真的是最后一代"完整可升级"桌面 PC 的论点（待 5-10 年后验证 ^[ambiguous]）。
+- **on-package-memory-trend** (建议) — Intel Lunar Lake / Apple M-series / Snapdragon X 把内存推到处理器封装上/里，物理层动机（带宽/功耗/散热）vs 用户层的代价（不可升级）。
+- **lpddr-vs-sodimm-bandwidth-tradeoff** (建议) — LPDDR5X 在带宽/功耗/物理尺寸的全面优势 vs SO-DIMM 在可维修性/成本/扩展性的优势；Framework Desktop 是标志性妥协案例。
+- **right-to-repair-pc-hardware** (建议) — PC 硬件维修权的范围持续缩小，与欧盟维修权立法形成张力。
+- **cloud-gaming-as-appliance-shift** (建议) — GeForce Now / Xbox Cloud Gaming 把 PC 硬件价值从"你拥有的东西"重新定义为"你订阅的通道"。
+- **diy-pc-final-generation-thesis** (建议) — 2026 这一代可能真的是最后一代"完整可升级"桌面 PC 的论点（待 5-10 年后验证 ^[ambiguous]）。
 
 ## Entities
 
-- **[[entities/framework-computer]]** (建议) — Framework Desktop 是本故事最关键的实体（标志性的"妥协"事件）。Framework Laptop 仍保留模块化设计。
-- **[[entities/intel-lunar-lake]]** (建议) — Intel Lunar Lake 是首批把内存推到封装内的 x86 处理器之一。
-- **[[entities/apple-m-series]]** (建议) — Apple M-series 从 M1 起就走统一内存架构（UMA）。
-- **[[entities/qualcomm-snapdragon-x]]** (建议) — Qualcomm Snapdragon X 是 Windows-on-ARM AI PC 的代表，全面板载内存。
-- **[[entities/nvidia-geforce-now]]** (建议) — 云游戏代表之一。
-- **[[entities/xbox-cloud-gaming]]** (建议) — 微软云游戏代表。
+- **framework-computer** (建议) — Framework Desktop 是本故事最关键的实体（标志性的"妥协"事件）。Framework Laptop 仍保留模块化设计。
+- **intel-lunar-lake** (建议) — Intel Lunar Lake 是首批把内存推到封装内的 x86 处理器之一。
+- **apple-m-series** (建议) — Apple M-series 从 M1 起就走统一内存架构（UMA）。
+- **qualcomm-snapdragon-x** (建议) — Qualcomm Snapdragon X 是 Windows-on-ARM AI PC 的代表，全面板载内存。
+- **nvidia-geforce-now** (建议) — 云游戏代表之一。
+- **xbox-cloud-gaming** (建议) — 微软云游戏代表。
 
 ## Open Questions
 

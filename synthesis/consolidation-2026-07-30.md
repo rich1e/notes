@@ -30,14 +30,14 @@ relationships: []
 
 | Source | Old | New |
 |---|---|---|
-| `synthesis/consolidation-2026-07-26.md` | `[[concepts/prompt-engineering-patterns]]` | `[[concepts/fabric-patterns]]` |
-| `synthesis/Research: DESIGN.md 工作流.md` (×5) | `[[misc/web-medium-com-devsecops-ai-...-integration]]` | `[[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]]` |
+| `synthesis/consolidation-2026-07-26.md` | `prompt-engineering-patterns` | `[[concepts/fabric-patterns]]` |
+| `synthesis/Research: DESIGN.md 工作流.md` (×5) | `web-medium-com-devsecops-ai-...-integration` | `[[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]]` |
 
 第二行修复了 4 处截断的 misc 链接 + 1 处原文(共 5 次出现)。
 
 ### Placeholder removals (20 去除占位符)
 
-`[[target\]]` / `[[target]]` / `[[page]]` / `[[concepts/...]]` 等 audit 报告占位符 → 转纯文本。涉及文件:
+`target\` / `target` / `page` / `...` 等 audit 报告占位符 → 转纯文本。涉及文件:
 
 - `synthesis/consolidation-2026-07-07.md` (1)
 - `synthesis/consolidation-2026-07-23.md` (3)
@@ -90,4 +90,4 @@ git clean -fd
 
 - [[synthesis/consolidation-2026-07-26]] — earlier consolidation report
 - [[synthesis/consolidation-2026-07-31]] — next consolidation report
-- [[log]] — full audit log
+- log — full audit log

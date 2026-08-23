@@ -95,7 +95,7 @@ Vague requests 产生 vague revisions。**命名方法强制特定攻击角度**
 
 ## Open Questions
 
-- 5 个 LLM 提议的方法**如何排序**——是按历史命中率还是按内容匹配？README 未给具体算法 [[ambiguous]]
+- 5 个 LLM 提议的方法**如何排序**——是按历史命中率还是按内容匹配？README 未给具体算法 ambiguous
 - "Accept or discard, repeat or continue" 中的"重复"是**用同一方法**重看还是**换方法**重看？
 
 ## Related

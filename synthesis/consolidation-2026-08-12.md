@@ -44,8 +44,8 @@ Pre-write snapshot: `eb0029cc3bbadc334577bdea86c0a75470e4bc35`
 | `concepts/agent-team-race-condition-task-claim.md` | `[[concepts/openlore]]` | `[[entities/openlore]]` |
 | `entities/gpakosz-tmux.md` | `[[concepts/terminal-music]]` | `[[skills/terminal-music]]` |
 | `concepts/omo-intent-gate.md` | `[[concepts/bmad-party-mode]]` | `[[entities/bmad-party-mode]]` |
-| `concepts/bmad-preventing-agent-conflicts.md` | `[[concepts/agent-team-preventing-conflicts]]`（已删页）| `[[concepts/bmad-preventing-agent-conflicts]]`（自引用 → 本页） |
-| `concepts/bmad-advanced-elicitation.md` | `[[concepts/agent-team-party-mode]]`（已删页）| `[[entities/bmad-party-mode]]` |
+| `concepts/bmad-preventing-agent-conflicts.md` | `agent-team-preventing-conflicts`（已删页）| `[[concepts/bmad-preventing-agent-conflicts]]`（自引用 → 本页） |
+| `concepts/bmad-advanced-elicitation.md` | `agent-team-party-mode`（已删页）| `[[entities/bmad-party-mode]]` |
 
 ---
 

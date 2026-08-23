@@ -94,7 +94,7 @@ v6.10 新增 `bmad-forge-idea` —— **用 Socratic 问题** 一次一个压力
 
 ## Open Questions
 
-- "product brief" 与 "PRFAQ" 的**功能边界**——两者都可作 stakeholder 文档，具体差异未在 README 详述 [[ambiguous]]
+- "product brief" 与 "PRFAQ" 的**功能边界**——两者都可作 stakeholder 文档，具体差异未在 README 详述 ambiguous
 - `bmad-forge-idea` 与 `bmad-brainstorming` 的**触发判断**——何时该走 Socratic 硬化、何时直接 brainstorm？
 
 ## Related

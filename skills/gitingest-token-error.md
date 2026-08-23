@@ -24,7 +24,7 @@ provenance:
 relationships:
   - target: "[[entities/obsidian-wiki-framework]]"
     type: uses
-  - target: "[[skills/wiki-ingest-with-token]]"
+  - target: "wiki-ingest-with-token"
     type: related_to
 ---
 

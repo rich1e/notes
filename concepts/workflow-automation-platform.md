@@ -63,5 +63,5 @@ tier: supporting
 ## 相关
 
 - [[entities/n8n]] · [[entities/zapier]] · [[entities/make]]
-- [[sources/n8n-github-repo]] · [[sources/n8n-queue-mode]]
+- n8n-github-repo · n8n-queue-mode
 - [[synthesis/Research: n8n]]

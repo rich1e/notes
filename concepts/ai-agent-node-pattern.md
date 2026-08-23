@@ -68,7 +68,7 @@ Chat memory 节点（保留对话状态）
 ## n8n 2.0 的关键升级
 
 - multi-agent 编排从「可选」升为「一等公民」
-- MCP client/server 一等节点（参 [[sources/n8n-2-0-release]]）
+- MCP client/server 一等节点（参 n8n-2-0-release）
 - Data Tables 把「轻量 stateful」场景内化（无需外部 DB）
 
 ## 设计取舍
@@ -81,6 +81,6 @@ Chat memory 节点（保留对话状态）
 
 - [[entities/n8n]]
 - [[concepts/workflow-automation-platform]]
-- [[sources/n8n-2-0-release]]
-- [[sources/czlonkowski-n8n-mcp]]（反向应用：让 Claude 帮你搭 n8n workflow）
+- n8n-2-0-release
+- czlonkowski-n8n-mcp（反向应用：让 Claude 帮你搭 n8n workflow）
 - [[synthesis/Research: n8n]]

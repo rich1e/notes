@@ -142,7 +142,7 @@ To Do: SELinux / AppArmor / disk encryption / CIS-CAT / debsums
 - [[references/sysctl-hardening-table]] — sysctl 完整加固表格
 - [[concepts/fail2ban-vs-crowdsec]] — 两套入侵检测的对比
 - [[concepts/intrusion-detection-stack]] — Linux 入侵检测工具栈全景
-- [[entities/moltenbit-ansible-playbooks]] — 配套 Ansible Playbooks
+- moltenbit-ansible-playbooks — 配套 Ansible Playbooks
 
 ## Open Questions
 

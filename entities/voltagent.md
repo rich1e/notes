@@ -47,10 +47,10 @@ README "AI Design + Build Ecosystem Tools" 章节显示 VoltAgent 是 awesome-de
 
 ## 在 vault 中的位置
 
-VoltAgent 是 [[entities/awesome-design-md]] 与 [[sources/getdesign-md-marketplace]] 的**共同上游**——理解这两个页面时需要看到这个统一运营方。它**不是** Google 官方组织，所以 awesome-design-md 仓库的设计 tokens 是 "inspired interpretation" 而非官方规范——这一身份定位对评估 IP 与准确性都很关键。
+VoltAgent 是 [[entities/awesome-design-md]] 与 getdesign-md-marketplace 的**共同上游**——理解这两个页面时需要看到这个统一运营方。它**不是** Google 官方组织，所以 awesome-design-md 仓库的设计 tokens 是 "inspired interpretation" 而非官方规范——这一身份定位对评估 IP 与准确性都很关键。
 
 ## 相关页面
 
 - [[entities/awesome-design-md]] — 旗下主要仓库
-- [[sources/getdesign-md-marketplace]] — 旗下运营服务
+- getdesign-md-marketplace — 旗下运营服务
 - [[entities/google-labs-code-design]] — 上游规范来源（不同组织）

@@ -65,5 +65,5 @@ n8n 是可视化拖拽工具，但**写复杂 workflow 仍要反复配置几十�
 
 - [[entities/n8n]]
 - [[concepts/ai-agent-node-pattern]]
-- [[sources/czlonkowski-n8n-mcp]]
+- czlonkowski-n8n-mcp
 - [[synthesis/Research: n8n]]

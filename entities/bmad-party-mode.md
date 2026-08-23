@@ -102,7 +102,7 @@ Party Mode 在 v6.10 加了一个 **anti-consensus club** 内置 persona 组（W
 
 ## Open Questions
 
-- "anti-consensus club" 的具体 persona 行为差异（Wildcard 是什么倾向？Killjoy 怎么反驳？）— README 只列名字未给详细角色定义 [[ambiguous]]
+- "anti-consensus club" 的具体 persona 行为差异（Wildcard 是什么倾向？Killjoy 怎么反驳？）— README 只列名字未给详细角色定义 ambiguous
 - "saved party" 跨项目共享的机制——是 git committed 还是 per-user？
 
 ## Related

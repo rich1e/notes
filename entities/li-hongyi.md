@@ -29,7 +29,7 @@ lifecycle_changed: 2026-07-27
 
 - **机器学习（ML）** — 早期经典，覆盖 ML 基础到深度学习
 - **深度学习** — CNN/RNN/Transformer 等
-- **生成式AI导论（2025 春）** — 见 [[sources/li-hongyi-genai-2025]]
+- **生成式AI导论（2025 春）** — 见 li-hongyi-genai-2025
 
 ## 2025《生成式AI导论》13 讲大纲
 
@@ -63,7 +63,7 @@ lifecycle_changed: 2026-07-27
 
 ## 关联
 
-- [[sources/li-hongyi-genai-2025]]
+- li-hongyi-genai-2025
 - [[entities/andrej-karpathy]]
 - [[entities/sebastian-raschka]]
 - [[concepts/llm-learning-path]]

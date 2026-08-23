@@ -79,7 +79,7 @@ npx @google/design.md diff DESIGN.md DESIGN-v2.md
 npx -p @google/design.md designmd lint DESIGN.md
 ```
 
-详见 [[sources/google-design-md-spec]]。
+详见 google-design-md-spec。
 
 ## 在 vault 中的位置
 
@@ -87,7 +87,7 @@ npx -p @google/design.md designmd lint DESIGN.md
 
 ## 相关页面
 
-- [[sources/google-design-md-spec]] — 来源详情
+- google-design-md-spec — 来源详情
 - [[entities/google-stitch]] — DESIGN.md 的原始生产者
 - [[entities/awesome-design-md]] — 最大样本集
 - [[concepts/design-md-format-spec]] — 本仓库定义的规范

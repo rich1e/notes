@@ -32,7 +32,7 @@ relationships:
     type: related_to
   - target: "[[entities/claude-code-agent-teams-feature]]"
     type: related_to
-  - target: "[[sources/anthropic-claude-code-agent-teams-docs]]"
+  - target: "anthropic-claude-code-agent-teams-docs"
     type: derived_from
 ---
 
@@ -40,7 +40,7 @@ relationships:
 
 > Agent Teams 是 Claude Code 在 Opus 4.6（Claude Code v2.1.178+）引入的多会话团队模式。与 Subagents 的"主会话 + 短命子"不同，**每个 teammate 拥有独立 Claude Code session（独立 context window）**——可被独立 inspect、interact、shutdown。下面是 6+ 个工程机制，每一个都对应 vault 已有概念的延伸。
 
-> **调研依据**：本概念页综合 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]]（22 分钟视频教程）与 [[sources/anthropic-claude-code-agent-teams-docs]]（Anthropic 官方文档）。**多处与 YouTube 矛盾的细节已按官方文档修正**（详见 [[synthesis/Research: Claude Code Agent Teams]] 的 Contradictions 段）。
+> **调研依据**：本概念页综合 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]]（22 分钟视频教程）与 anthropic-claude-code-agent-teams-docs（Anthropic 官方文档）。**多处与 YouTube 矛盾的细节已按官方文档修正**（详见 [[synthesis/Research: Claude Code Agent Teams]] 的 Contradictions 段）。
 
 ## 机制 1：必须显式触发
 
@@ -89,7 +89,7 @@ Anthropic 内置**任务级悲观锁**："whenever I take the task if I'm just i
 
 > "you can also define which model you want to use for those team members"
 
-Opus 4.6 价格 $5/M input, $25/M output（Round 2 验证——基本 200K context tier；1M context premium 价 [[ambiguous]]）。**不是每个 agent 都需要 Opus**——简单任务用 Sonnet/Haiku 显著省钱且通常更快。
+Opus 4.6 价格 $5/M input, $25/M output（Round 2 验证——基本 200K context tier；1M context premium 价 ambiguous）。**不是每个 agent 都需要 Opus**——简单任务用 Sonnet/Haiku 显著省钱且通常更快。
 
 策略：
 - **Opus 给 team lead** —— 它要做正确的 plan + 拆任务 + 写 prompt
@@ -115,7 +115,7 @@ Opus 4.6 价格 $5/M input, $25/M output（Round 2 验证——基本 200K conte
 
 ## 机制 7（官方新增）：File Lock + Mailbox IPC
 
-> 官方 [[sources/anthropic-claude-code-agent-teams-docs]] 明确：
+> 官方 anthropic-claude-code-agent-teams-docs 明确：
 
 - **Task claim** 用 file locking 防多 teammate 抢同一任务（[[concepts/agent-team-race-condition-task-claim]]）
 - **Mailbox** JSON 文件作 teammate 间 IPC（[[concepts/agent-team-mailbox-protocol]]）
@@ -161,7 +161,7 @@ project/
 
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — 视频源（与官方多处矛盾，已修正）
 - [[synthesis/Research: Claude Code Agent Teams]] — 三轮调研综合（10 页）
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手文档（v2.1.178+）
+- anthropic-claude-code-agent-teams-docs — 官方一手文档（v2.1.178+）
 - [[entities/claude-code-agent-teams-feature]] — Agent Teams 功能实体
 - [[concepts/claude-code-three-modes]] — 三模式抽象，Agent Teams 是其中之一
 - [[concepts/tmux-pane-split-for-agents]] — tmux 配置（已与官方字段对齐）

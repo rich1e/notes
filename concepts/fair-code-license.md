@@ -61,5 +61,5 @@ tier: supporting
 ## 相关
 
 - [[entities/n8n]]
-- [[sources/n8n-github-repo]]
+- n8n-github-repo
 - [[synthesis/Research: n8n]]

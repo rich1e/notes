@@ -32,7 +32,7 @@ relationships:
 ## 官方原话
 
 > "Task claiming uses file locking to prevent race conditions when multiple teammates try to claim the same task simultaneously."
-> —— [[sources/anthropic-claude-code-agent-teams-docs]]
+> —— anthropic-claude-code-agent-teams-docs
 
 ## 3 状态 + 2 模式 + 依赖
 
@@ -92,5 +92,5 @@ T3: read TaskList  → task X is pending  → claim X  ← RACE
 
 - [[concepts/claude-code-agent-teams]] — Agent Teams 总体概念
 - [[concepts/agent-team-mailbox-protocol]] — Mailbox JSON 文件协议（同级 IPC 通道）
-- [[sources/anthropic-claude-code-agent-teams-docs]] — 官方一手
-- [[sources/csdn-agent-teams-multi-process]] — IPC 工程视角
+- anthropic-claude-code-agent-teams-docs — 官方一手
+- csdn-agent-teams-multi-process — IPC 工程视角

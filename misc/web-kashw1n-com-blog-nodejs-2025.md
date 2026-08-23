@@ -291,21 +291,21 @@ dbChannel.subscribe((message) => {
 
 > vault 暂无现代 Node.js 主题的 concept 页（vault 强项是 AI agent + 软件工程）。本节列出本文可蒸馏的概念，留待未来有兴趣时建。
 
-- **[[concepts/esm-vs-cjs-migration]]** (建议) — CommonJS → ESM 迁移路径 + `node:` 前缀语义 + top-level await 的运行时成本 (^[inferred] module top-level await 延迟模块加载图)
-- **[[concepts/node-built-in-web-apis]]** (建议) — Node.js 把 Fetch / AbortController / ReadableStream / FormData / crypto 等 web API 拉进 runtime 的统一策略，与浏览器/边缘运行时打通
-- **[[concepts/node-built-in-test-runner]]** (建议) — `node:test` 与 Jest/Vitest 的功能对比、watch mode、--experimental-test-coverage 限制
-- **[[concepts/node-web-streams-interop]]** (建议) — Node.js Streams 与 Web Streams 的双向互转 `Readable.fromWeb` / `Readable.toWeb` 的应用场景（边缘运行时同构代码）
-- **[[concepts/worker-threads-vs-cluster]]** (建议) — Worker Threads 与 Cluster 的取舍：CPU-bound vs 多进程隔离
-- **[[concepts/single-executable-application]]** (建议) — Node.js SEA 原理 + 限制（动态 require 不支持）+ 与 Bun/Bun:Bundler 的对比
-- **[[concepts/permission-model-runtime]]** (建议) — Node.js `--experimental-permission` 的设计哲学（最小特权）vs 浏览器 web permissions API 的对比
+- **esm-vs-cjs-migration** (建议) — CommonJS → ESM 迁移路径 + `node:` 前缀语义 + top-level await 的运行时成本 (^[inferred] module top-level await 延迟模块加载图)
+- **node-built-in-web-apis** (建议) — Node.js 把 Fetch / AbortController / ReadableStream / FormData / crypto 等 web API 拉进 runtime 的统一策略，与浏览器/边缘运行时打通
+- **node-built-in-test-runner** (建议) — `node:test` 与 Jest/Vitest 的功能对比、watch mode、--experimental-test-coverage 限制
+- **node-web-streams-interop** (建议) — Node.js Streams 与 Web Streams 的双向互转 `Readable.fromWeb` / `Readable.toWeb` 的应用场景（边缘运行时同构代码）
+- **worker-threads-vs-cluster** (建议) — Worker Threads 与 Cluster 的取舍：CPU-bound vs 多进程隔离
+- **single-executable-application** (建议) — Node.js SEA 原理 + 限制（动态 require 不支持）+ 与 Bun/Bun:Bundler 的对比
+- **permission-model-runtime** (建议) — Node.js `--experimental-permission` 的设计哲学（最小特权）vs 浏览器 web permissions API 的对比
 
 ## Entities
 
 > vault 无相关 entity；本节列建议 future entities。
 
-- **[[entities/nodejs]]** (建议) — Node.js runtime 主体。
+- **nodejs** (建议) — Node.js runtime 主体。
 - **[[entities/jacob-bd]]** (vault 已有) — 与本文无关，但展示了「个人 vibe coder 写小工具」的同类作者范式。
-- **[[entities/node-tc-39]]** (建议) — TC39 与 Node.js evolution（CommonJS 退出策略 / `node:` 前缀的 RFC 来源）。
+- **node-tc-39** (建议) — TC39 与 Node.js evolution（CommonJS 退出策略 / `node:` 前缀的 RFC 来源）。
 
 ## Open Questions
 

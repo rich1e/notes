@@ -106,8 +106,8 @@ README 列出的 modes（不只是 `ultrawork`）：
 
 ## Open Questions
 
-- "ultrawork" 与 slash commands 的优先级——`/ultrawork` 与 `ultrawork` 是否等效？README 未给 [[ambiguous]]
-- 5 种 modes 的精确触发语法——是否都必须配 Prometheus interview？[[ambiguous]]
+- "ultrawork" 与 slash commands 的优先级——`/ultrawork` 与 `ultrawork` 是否等效？README 未给 ambiguous
+- 5 种 modes 的精确触发语法——是否都必须配 Prometheus interview？ambiguous
 
 ## Related
 

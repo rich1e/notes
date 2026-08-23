@@ -102,7 +102,7 @@ LLM 的常见错误是 reproduce whitespace 错（tab vs spaces、trailing space
 
 - **agent 必须先 read** 才能 edit——line#ID 来自 read 输出
 - **跨多文件编辑** 仍需分别 read + edit——Hashline 不解决并行协调
-- **冲突 merge**（多人同时改同一文件）未详述 [[ambiguous]]
+- **冲突 merge**（多人同时改同一文件）未详述 ambiguous
 
 ## Related
 

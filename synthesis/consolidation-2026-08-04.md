@@ -43,7 +43,7 @@ relationships:
 
 ## Action 1 — 断链修复(13 处)
 
-`xk-ai-talk-desk-ui` 项目内 4 个页的 wikilink 使用了**双前缀** `[[xk-ai-talk-desk-ui/...]]`,而项目页实际位于 `projects/xk-ai-talk-desk-ui/` 下,导致 Obsidian 解析失败。统一修正为 `[[projects/xk-ai-talk-desk-ui/...]]`:
+`xk-ai-talk-desk-ui` 项目内 4 个页的 wikilink 使用了**双前缀** `...`,而项目页实际位于 `projects/xk-ai-talk-desk-ui/` 下,导致 Obsidian 解析失败。统一修正为 `...`:
 
 | 文件 | 修复处数 |
 |---|---|

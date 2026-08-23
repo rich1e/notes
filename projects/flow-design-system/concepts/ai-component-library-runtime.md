@@ -30,7 +30,7 @@ relationships:
     type: related_to
   - target: "[[projects/flow-design-system/concepts/ai-vs-core-component-source-routing]]"
     type: related_to
-  - target: "[[concepts/api-design]]"
+  - target: "api-design"
     type: related_to
 ---
 

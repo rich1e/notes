@@ -4,7 +4,7 @@ category: skills
 tags: [ios, sideload, security]
 sources:
   - "https://www.onmyodev.com/2026/05/ios-sideloading-faq/"
-  - "[[Clippings/Feather 签名工具.md]]"
+  - "Clippings/Feather 签名工具"
 created: 2026-07-02
 updated: 2026-08-13T01:40:00Z
 summary: iOS 侧载完整机制：调试/发布证书区别、Entitlements 权限体系、描述文件有效期、SideStore 与 LiveContainer 的原理与适用场景、JIT 开启条件。

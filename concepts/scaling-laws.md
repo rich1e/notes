@@ -52,4 +52,4 @@ relationships:
 
 - [[concepts/transformer-architecture]] — scaling 的可扩展模型基础
 - [[concepts/llm-training-pipeline]] — scaling 指导训练资源配比
-- [[sources/stanford-cs336-spring2025]] — 含 Scaling 作业单元
+- stanford-cs336-spring2025 — 含 Scaling 作业单元

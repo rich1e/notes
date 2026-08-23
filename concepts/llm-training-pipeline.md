@@ -74,8 +74,8 @@ RLVR 是 2024 末–2025 的关键转向，代表作：DeepSeek-R1、OpenAI o1/o
 
 ## 学习路径建议
 
-- **入门先理解 pretraining**——这是 LLM 一切能力的来源；看完 [[sources/andrej-karpathy-zero-to-hero]] 的「Let's build GPT」就掌握核心。
-- **再学 SFT**——[[sources/sebastian-raschka-llms-from-scratch-book]] Ch 7 是最干净的入门。
+- **入门先理解 pretraining**——这是 LLM 一切能力的来源；看完 andrej-karpathy-zero-to-hero 的「Let's build GPT」就掌握核心。
+- **再学 SFT**——sebastian-raschka-llms-from-scratch-book Ch 7 是最干净的入门。
 - **最后学 RLHF/RLVR**——这是前沿、变化最快，建议直接看 DeepSeek-R1 论文与 Stanford CS336 L15-L17。
 
 ## 关联
@@ -85,8 +85,8 @@ RLVR 是 2024 末–2025 的关键转向，代表作：DeepSeek-R1、OpenAI o1/o
 - concepts/rlvr
 - [[concepts/mixture-of-experts]]
 - concepts/scaling-laws
-- [[sources/andrej-karpathy-zero-to-hero]]
-- [[sources/stanford-cs336-spring2025]]
+- andrej-karpathy-zero-to-hero
+- stanford-cs336-spring2025
 
 ## Related
 

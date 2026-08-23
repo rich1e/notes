@@ -105,4 +105,4 @@ rm() {
 ## 相关
 
 - [[concepts/zsh-shell-config-patterns]] — zsh 配置通用优化模式
-- [[entities/trash-cli]] — trash-cli 工具本体（待建）
+- trash-cli — trash-cli 工具本体（待建）

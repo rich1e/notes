@@ -90,8 +90,8 @@ summary: "omo 根据工作类型自动选模型的路由机制：visual-engineer
 
 ## Open Questions
 
-- 4 个 category 的**触发语义** —— 是由 agent 显式说，还是 harness 看任务内容自动判断？README 未详 [[ambiguous]]
-- category 路由的**性能数据** —— "GPT-5.6 Sol xhigh 比 Opus 5 强 30% 在 `ultrabrain` 上" 这类 benchmark 是否公开？[[ambiguous]]
+- 4 个 category 的**触发语义** —— 是由 agent 显式说，还是 harness 看任务内容自动判断？README 未详 ambiguous
+- category 路由的**性能数据** —— "GPT-5.6 Sol xhigh 比 Opus 5 强 30% 在 `ultrabrain` 上" 这类 benchmark 是否公开？ambiguous
 
 ## Related
 

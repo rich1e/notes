@@ -88,8 +88,8 @@ Sisyphus 默认跑 Opus 5 是贵的。**官方推荐**：
 
 ## Open Questions
 
-- "Hephaestus + Prometheus + Sisyphus 三角关系"的精确工作流——README 给出名字但未给完整 task flow [[ambiguous]]
-- Sisyphus 是否会自动**切换模型**（如 token 用完时降级到 Kimi）——README 暗示但未明说 [[ambiguous]]
+- "Hephaestus + Prometheus + Sisyphus 三角关系"的精确工作流——README 给出名字但未给完整 task flow ambiguous
+- Sisyphus 是否会自动**切换模型**（如 token 用完时降级到 Kimi）——README 暗示但未明说 ambiguous
 
 ## Related
 

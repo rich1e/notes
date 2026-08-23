@@ -27,14 +27,14 @@ tier: supporting
 
 ## Overview
 
-CloudFlare ImgBed（`MarSeventh/CloudFlare-ImgBed`，MIT）是一个**开源自托管的文件/图床**，代表了 [[concepts/serverless-image-hosting]] 范式：边缘 serverless 函数做路由、存储外包给对象存储或第三方、元数据存 KV/D1。它**脱胎自 [[sources/telegraph-image-github]]**（Telegraph-Image），并逐条补足了上游「只能存 Telegram、受制于单后端与免费配额」的局限，进化成一个「可运营」的多后端图床平台。
+CloudFlare ImgBed（`MarSeventh/CloudFlare-ImgBed`，MIT）是一个**开源自托管的文件/图床**，代表了 [[concepts/serverless-image-hosting]] 范式：边缘 serverless 函数做路由、存储外包给对象存储或第三方、元数据存 KV/D1。它**脱胎自 telegraph-image-github**（Telegraph-Image），并逐条补足了上游「只能存 Telegram、受制于单后端与免费配额」的局限，进化成一个「可运营」的多后端图床平台。
 
 ## Key Findings
 
-- **J1 — 双部署、六后端是核心卖点**：Cloudflare Serverless（Pages Functions/Workers）+ Docker 自托管两种形态；存储后端 Telegram / Discord / R2 / S3 / Hugging Face / WebDAV，支持多通道负载均衡 + 故障转移。见 [[sources/cloudflare-imgbed-github]]、[[sources/cloudflare-imgbed-docs]]。
-- **J2 — 技术架构清晰分层**：前端 **Vue 3 + Element Plus**（独立仓库 [[entities/sanyue-imghub]]）；后端 Pages Functions/Workers，Docker 下是 Node.js + **Hono**；图像处理 Pages 用同域 URL / Workers 用 Images binding / Docker 用 **Sharp**；数据层 **KV 或 D1**（Docker 用 SQLite）。见 [[sources/cloudflare-imgbed-docs]]。
+- **J1 — 双部署、六后端是核心卖点**：Cloudflare Serverless（Pages Functions/Workers）+ Docker 自托管两种形态；存储后端 Telegram / Discord / R2 / S3 / Hugging Face / WebDAV，支持多通道负载均衡 + 故障转移。见 cloudflare-imgbed-github、cloudflare-imgbed-docs。
+- **J2 — 技术架构清晰分层**：前端 **Vue 3 + Element Plus**（独立仓库 [[entities/sanyue-imghub]]）；后端 Pages Functions/Workers，Docker 下是 Node.js + **Hono**；图像处理 Pages 用同域 URL / Workers 用 Images binding / Docker 用 **Sharp**；数据层 **KV 或 D1**（Docker 用 SQLite）。见 cloudflare-imgbed-docs。
 - **J3 — 从「能存」到「可运营」**：相对上游新增 **PBKDF2 + HttpOnly Cookie 鉴权**、细粒度 **API Token**（过期/自动删除）、管理面板、内容审查、递归文件夹上传、随机图 API、URL 参数图像处理。这是 fork 相对上游的真正增量。见 [[entities/cloudflare-imgbed]]。
-- **J4 — 血缘决定形态**：上游 [[sources/telegraph-image-github]] 用 [[concepts/telegram-as-blob-storage]]（把 Telegram 当免费存储：上传即发消息、读取即 getFile），但被 **getFile ≤20MB、每频道 ~20 消息/分钟、Cloudflare 免费 tier 配额** 卡住。ImgBed 用「多后端 + 内置审查」逐条对冲——理解上游局限才理解 ImgBed 的设计动机。
+- **J4 — 血缘决定形态**：上游 telegraph-image-github 用 [[concepts/telegram-as-blob-storage]]（把 Telegram 当免费存储：上传即发消息、读取即 getFile），但被 **getFile ≤20MB、每频道 ~20 消息/分钟、Cloudflare 免费 tier 配额** 卡住。ImgBed 用「多后端 + 内置审查」逐条对冲——理解上游局限才理解 ImgBed 的设计动机。
 - **J5 — 「白嫖」升级为工程可用**：单看 Telegram-as-storage 是脆弱的白嫖；ImgBed 把它降级为「负载均衡通道之一」，同时提供可控的 R2/S3，用工程手段把政策风险对冲掉。^[inferred]
 
 ## Core Concepts
@@ -55,7 +55,7 @@ CloudFlare ImgBed（`MarSeventh/CloudFlare-ImgBed`，MIT）是一个**开源自�
 
 ## Sources Consulted
 
-- [[sources/cloudflare-imgbed-github]] — 主仓库
-- [[sources/cloudflare-imgbed-docs]] — 官方文档站（能力清单 + 架构）
-- [[sources/telegraph-image-github]] — 上游 Telegraph-Image
+- cloudflare-imgbed-github — 主仓库
+- cloudflare-imgbed-docs — 官方文档站（能力清单 + 架构）
+- telegraph-image-github — 上游 Telegraph-Image
 - [[entities/sanyue-imghub]] — 前端仓库（也作为源）

@@ -62,7 +62,7 @@ relationships:
 - Don't apply the pastel tints to anything other than feature cards
 ```
 
-这类 `Do / Don't` 段是 spec 的第 8 必备章节，由 [[entities/google-labs-code-design.md|google-labs-code/design.md]](https://github.com/google-labs-code/design.md) 强制要求。
+这类 `Do / Don't` 段是 spec 的第 8 必备章节，由 entities/google-labs-code-design.md|google-labs-code/design(https://github.com/google-labs-code/design.md) 强制要求。
 
 ## 反模式的几个常见分类
 

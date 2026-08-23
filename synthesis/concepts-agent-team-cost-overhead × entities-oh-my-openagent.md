@@ -64,7 +64,7 @@ lifecycle_changed: "2026-08-23"
 
 ## Open Questions
 
-- 4 category 路由的判定标准是什么?文档说"auto",但分类器本身的成本是否被计算? ^[[ambiguous]]
+- 4 category 路由的判定标准是什么?文档说"auto",但分类器本身的成本是否被计算? ^ambiguous
 - `max_wall_clock_minutes: 120` 是 wall clock 还是 active CPU time?若前者,120 min 在 8 agents × 并发下相当于 16h-agent-time 上限,实际线性在哪?
 - `$49/月订阅` 包含多少 Opus 4.6 token?若无限,omo 实际上把 linear cost 移到了产品定价而非用户决策。
 

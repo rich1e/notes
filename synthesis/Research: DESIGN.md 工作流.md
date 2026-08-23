@@ -108,7 +108,7 @@ npx @google/design.md diff DESIGN.md DESIGN-v2.md   # 两份之间做 token-leve
 
 输出 JSON，severity ∈ {error, warning, info}。仓库 [google-labs-code/design.md](https://github.com/google-labs-code/design.md) 26.5K stars、Apache-2.0。
 
-详见 [[sources/google-design-md-spec]] + [[entities/google-labs-code-design]]。
+详见 google-design-md-spec + [[entities/google-labs-code-design]]。
 
 ### F6. 与 Claude Code 集成的完整链路
 
@@ -169,7 +169,7 @@ WebSearch 报告该项目 2026-04 上线后 10 天内涨到 40K stars，最终 1
 
 ### C1. Stitch 官方 docs 是 JS-rendered SPA，机器读不到
 
-https://stitch.withgoogle.com/docs/design-md/overview/ 与 /specification/ 返回 200 但 defuddle/WebFetch 拿不到正文（Angular SPA）。本研究的 Stitch 相关信息主要靠下游交叉验证（awesome-design-md README、google-labs-code/design.md spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] 文章）。**这是客观限制，不是工具缺陷。** 详见 [[sources/stitch-design-md-docs]]。
+https://stitch.withgoogle.com/docs/design-md/overview/ 与 /specification/ 返回 200 但 defuddle/WebFetch 拿不到正文（Angular SPA）。本研究的 Stitch 相关信息主要靠下游交叉验证（awesome-design-md README、google-labs-code/design.md spec、Sachin Sharma 的 [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] 文章）。**这是客观限制，不是工具缺陷。** 详见 stitch-design-md-docs。
 
 ### C2. "300+ DESIGN.md" vs "74 个" 的数字脱节
 
@@ -193,10 +193,10 @@ awesome-design-md 仓库的 74 个文件覆盖 11 章节（含 Iteration Guide +
 
 ## Sources Consulted
 
-- [[sources/awesome-design-md-repo]] — 主仓库 README + 4 个站点样本（Vercel / Notion / Claude / Stripe）
-- [[sources/google-design-md-spec]] — 官方规范仓库 README + docs/spec.md
-- [[sources/stitch-design-md-docs]] — Stitch 官方 docs 入口（JS-rendered，机器读不到正文）
-- [[sources/getdesign-md-marketplace]] — VoltAgent 目录服务
+- awesome-design-md-repo — 主仓库 README + 4 个站点样本（Vercel / Notion / Claude / Stripe）
+- google-design-md-spec — 官方规范仓库 README + docs/spec.md
+- stitch-design-md-docs — Stitch 官方 docs 入口（JS-rendered，机器读不到正文）
+- getdesign-md-marketplace — VoltAgent 目录服务
 - [[misc/web-medium-com-devsecops-ai-how-google-stitch-claude-codes-mcp-integration]] — 上轮 ingest 的 Stitch + Claude Code 端到端实操文章
 
 ## 在 vault 中的位置

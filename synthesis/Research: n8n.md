@@ -30,14 +30,14 @@ n8n 是一款以「**fair-code 开源 + 自托管 + AI 原生**」为核心定�
 
 ## Key Findings
 
-- **三主流差异化清晰**——Zapier 集成最多最易用但纯云；Make 视觉最强但纯云；n8n 是唯一同时支持自托管、代码注入、AI 优先的开源选项 [[sources/n8n-github-repo]] [[sources/n8n-official-home]]
+- **三主流差异化清晰**——Zapier 集成最多最易用但纯云；Make 视觉最强但纯云；n8n 是唯一同时支持自托管、代码注入、AI 优先的开源选项 n8n-github-repo n8n-official-home
 - **License 是关键决策点**——Sustainable Use License 不是 OSI 开源，可自托管、可改、可用于内部 / 咨询 / 工作流解决方案，但**禁止做同质化竞品**转售 [[concepts/fair-code-license]]
-- **生产架构成熟**——Queue Mode 把 main + webhook + worker 解耦，Redis (BullMQ) 任务队列 + Postgres 元数据，官方 docker-compose 与 Helm chart 可用；常见 6 类可靠性陷阱都有明确解法 [[sources/n8n-queue-mode]]
-- **n8n 2.0 是「AI agent 平台化」分水岭**——multi-agent 编排 + MCP client/server 一等节点 + Data Tables，把 LangChain / MCP / 轻量 stateful 全包进 canvas [[sources/n8n-2-0-release]]
+- **生产架构成熟**——Queue Mode 把 main + webhook + worker 解耦，Redis (BullMQ) 任务队列 + Postgres 元数据，官方 docker-compose 与 Helm chart 可用；常见 6 类可靠性陷阱都有明确解法 n8n-queue-mode
+- **n8n 2.0 是「AI agent 平台化」分水岭**——multi-agent 编排 + MCP client/server 一等节点 + Data Tables，把 LangChain / MCP / 轻量 stateful 全包进 canvas n8n-2-0-release
 - **AI agent 节点模式**是把 LLM + 工具 + 记忆 + RAG + 编排作为可视化节点，trace 与审计天然友好；n8n 是该模式的主流商业实现 [[concepts/ai-agent-node-pattern]]
 - **反身性生态**：czlonkowski/n8n-mcp 让 Claude 用自然语言搭 n8n workflow——n8n 不仅让用户搭 agent 工作流，自身工作流也可由 agent 来搭 [[entities/czlonkowski-n8n-mcp]]
 - **数据点**：198.7K stars · 500+ 商业集成 / 1500+ 全社区节点 · 9000+ workflow 模板 · 4.7/5 G2 · SOC 2 + GDPR · Microsoft/NVIDIA/Meta 客户 [[entities/n8n]]
-- **生态风险**：MCP 协议版本分裂（`2024-11-05` vs `2025-03-26`）导致 Claude Desktop ↔ n8n MCP 不稳，需要 supergateway 代理——MCP 标准化未完成是潜在阻力 [[sources/czlonkowski-n8n-mcp]]
+- **生态风险**：MCP 协议版本分裂（`2024-11-05` vs `2025-03-26`）导致 Claude Desktop ↔ n8n MCP 不稳，需要 supergateway 代理——MCP 标准化未完成是潜在阻力 czlonkowski-n8n-mcp
 
 ## Core Concepts
 
@@ -62,11 +62,11 @@ n8n 是一款以「**fair-code 开源 + 自托管 + AI 原生**」为核心定�
 
 ### 一手
 
-- [[sources/n8n-github-repo]] — GitHub 仓库 README（198.7K stars / 1500+ 集成 / 双许可声明）
-- [[sources/n8n-official-home]] — n8n.io 官方主页（产品定位 / 商业客户 / 合规）
-- [[sources/n8n-queue-mode]] — docs.n8n.io Queue Mode 文档 + n8n-hosting docker-compose（生产架构）
-- [[sources/czlonkowski-n8n-mcp]] — czlonkowski/n8n-mcp GitHub 仓库（反身性 MCP 工具）
-- [[sources/n8n-2-0-release]] — n8n blog 2.0 release highlights + 二手汇编
+- n8n-github-repo — GitHub 仓库 README（198.7K stars / 1500+ 集成 / 双许可声明）
+- n8n-official-home — n8n.io 官方主页（产品定位 / 商业客户 / 合规）
+- n8n-queue-mode — docs.n8n.io Queue Mode 文档 + n8n-hosting docker-compose（生产架构）
+- czlonkowski-n8n-mcp — czlonkowski/n8n-mcp GitHub 仓库（反身性 MCP 工具）
+- n8n-2-0-release — n8n blog 2.0 release highlights + 二手汇编
 
 ### 二手
 

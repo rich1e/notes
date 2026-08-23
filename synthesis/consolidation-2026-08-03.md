@@ -23,7 +23,7 @@ updated: 2026-08-03T13:25:00Z
 - Contradiction callouts: 0(无 `relationships: contradicts` 条目)
 
 ## Orphan Rescue
-- `synthesis/consolidation-2026-07-30.md` — 末尾追加 "See also" 段,反链到 [[synthesis/consolidation-2026-07-26]]、[[synthesis/consolidation-2026-07-31]]、[[log]]
+- `synthesis/consolidation-2026-07-30.md` — 末尾追加 "See also" 段,反链到 [[synthesis/consolidation-2026-07-26]]、[[synthesis/consolidation-2026-07-31]]、log
 
 ## Lifecycle Auto-Promote(71 页,全部 age>30d + base_confidence>0.7)
 
@@ -36,7 +36,7 @@ updated: 2026-08-03T13:25:00Z
 | Zustand | 3 | [[concepts/zustand-core-architecture]]、[[concepts/zustand-middleware-system]]、[[concepts/zustand-react-integration]] |
 | AI / LLM | ~12 | [[concepts/claude-mem-memory-architecture]]、[[concepts/claude-code-hooks-lifecycle]]、[[concepts/llm-training-pipeline]] 等 |
 | Design.md / Stitch | ~10 | [[concepts/design-md-format-spec]]、[[concepts/design-md-token-interpolation]]、[[concepts/design-md-anti-patterns]] 等 |
-| chezmoi | ~7 | [[concepts/chezmoi-templating]]、[[concepts/chezmoi-attribute-prefixes]]、[[references/chezmoi-*]] 等 |
+| chezmoi | ~7 | [[concepts/chezmoi-templating]]、[[concepts/chezmoi-attribute-prefixes]]、chezmoi-* 等 |
 | n8n / workflow | ~4 | [[concepts/workflow-automation-platform]]、[[concepts/fair-code-license]] 等 |
 | Misc concepts/refs/skills | ~23 | 杂项 |
 

@@ -124,14 +124,14 @@ lifecycle_changed: 2026-07-27
 
 ### 一手来源（高置信度）
 
-- [[sources/andrej-karpathy-zero-to-hero]] — Karpathy GitHub Zero to Hero 仓库
-- [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka LLMs from Scratch GitHub + Manning
-- [[sources/stanford-cs336-spring2025]] — Stanford CS336 官方课程页面
-- [[sources/dakingrai-mech-interp-papers]] — Mechanistic Interpretability 论文清单
+- andrej-karpathy-zero-to-hero — Karpathy GitHub Zero to Hero 仓库
+- sebastian-raschka-llms-from-scratch-book — Raschka LLMs from Scratch GitHub + Manning
+- stanford-cs336-spring2025 — Stanford CS336 官方课程页面
+- dakingrai-mech-interp-papers — Mechanistic Interpretability 论文清单
 
 ### 中文与教学来源（中等置信度）
 
-- [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》课程大纲
+- li-hongyi-genai-2025 — 李宏毅 2025《生成式AI导论》课程大纲
 
 ### 二手汇编（低置信度，仅作背景）
 

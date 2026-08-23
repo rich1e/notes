@@ -23,7 +23,7 @@ tier: supporting
 relationships:
   - target: "[[concepts/agent-team-display-modes]]"
     type: derived_from
-  - target: "[[sources/anthropic-claude-code-agent-teams-docs]]"
+  - target: "anthropic-claude-code-agent-teams-docs"
     type: derived_from
 ---
 

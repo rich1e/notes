@@ -7,8 +7,8 @@ sources:
   - "[[concepts/transformer-architecture]]"
   - "[[concepts/instruction-tuning]]"
   - "[[concepts/scaling-laws]]"
-  - "[[entities/andrej-karpathy-zero-to-hero]]"
-  - "[[sources/sebastian-raschka-llms-from-scratch-book]]"
+  - "andrej-karpathy-zero-to-hero"
+  - "sebastian-raschka-llms-from-scratch-book"
 created: 2026-08-04T13:30:00Z
 updated: 2026-08-04T13:30:00Z
 summary: "架构(Transformer)与训练(三阶段 pipeline)是 LLM 学习的两条正交轴:架构是静态的'模型长什么样'、给容量;训练是动态的'模型怎么变成现在这样'、给能力。能力涌现只发生在训练轴上,这决定了'先学哪条轴'的路径。"
@@ -36,7 +36,7 @@ relationships:
 
 ## Where They Co-occur
 
-四个源页同时引用二者:[[concepts/instruction-tuning]](在固定架构上做 SFT)、[[concepts/scaling-laws]](架构容量 × 数据/算力如何联合决定 loss)、[[entities/andrej-karpathy-zero-to-hero]] 与 [[sources/sebastian-raschka-llms-from-scratch-book]](两份经典教程都是"先搭架构、再讲训练"的顺序)。它们反复把架构和训练摆在一起,却极少点破二者的分工。
+四个源页同时引用二者:[[concepts/instruction-tuning]](在固定架构上做 SFT)、[[concepts/scaling-laws]](架构容量 × 数据/算力如何联合决定 loss)、[[entities/andrej-karpathy]] 与 sebastian-raschka-llms-from-scratch-book(两份经典教程都是"先搭架构、再讲训练"的顺序)。它们反复把架构和训练摆在一起,却极少点破二者的分工。
 
 ## Cross-cutting Insight
 

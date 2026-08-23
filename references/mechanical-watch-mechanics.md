@@ -64,7 +64,7 @@ Bartosz Ciechanowski 交互文章 [Mechanical Watch](https://ciechanow.ski/mecha
 - 磁场干扰
 ## 相关页面
 
-- [[journal/fire-emblem-new-mystery-prologue.md]]
+- journal/fire-emblem-new-mystery-prologue
 
 ## Related
 

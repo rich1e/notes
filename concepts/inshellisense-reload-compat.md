@@ -85,7 +85,7 @@ _is_init="$HOME/.local/share/inshellisense/init/zsh/init.zsh"
 ## 相关
 
 - [[concepts/zsh-shell-config-patterns]] — zsh 配置通用优化模式
-- [[entities/inshellisense]] — 项目本体（待建）
+- inshellisense — 项目本体（待建）
 
 ## 替代方案
 

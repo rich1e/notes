@@ -67,6 +67,6 @@ n8n 在 [[concepts/workflow-automation-platform]] 中是「自托管 + 代码注
 ## 相关
 
 - [[concepts/workflow-automation-platform]] · [[concepts/fair-code-license]] · [[concepts/ai-agent-node-pattern]]
-- [[sources/n8n-github-repo]] · [[sources/n8n-official-home]] · [[sources/n8n-queue-mode]] · [[sources/n8n-2-0-release]]
+- n8n-github-repo · n8n-official-home · n8n-queue-mode · n8n-2-0-release
 - [[entities/czlonkowski-n8n-mcp]]
 - [[synthesis/Research: n8n]]

@@ -67,9 +67,9 @@ Light Edition（Codex CLI）只识别 `ultrawork`/`ulw` 关键词——**没有�
 
 ## Open Questions
 
-- IntentGate 的具体**判断算法**——是基于 keyword 兜底 + LLM 推断，还是纯 LLM？README 未给 [[ambiguous]]
-- "true user intent" 的**判定标准**——是 "用户想达成什么"，还是 "用户用什么表达想达成什么"？[[ambiguous]]
-- IntentGate 是否会**问澄清问题**——若用户意图完全模糊，是停下来问还是猜？[[ambiguous]]
+- IntentGate 的具体**判断算法**——是基于 keyword 兜底 + LLM 推断，还是纯 LLM？README 未给 ambiguous
+- "true user intent" 的**判定标准**——是 "用户想达成什么"，还是 "用户用什么表达想达成什么"？ambiguous
+- IntentGate 是否会**问澄清问题**——若用户意图完全模糊，是停下来问还是猜？ambiguous
 
 ## Related
 

@@ -128,7 +128,7 @@ Team Mode 解锁后，**两个 skill** 已经搭好：
 | teammates | 每个独立 Claude session | omo discipline agent |
 | 通信 | Mailbox JSON | Mailbox（`base_dir` + `mailbox_poll_interval_ms`） |
 | 显示 | 5 种 teammateMode | `tmux_visualization` boolean |
-| Task claim | File lock | 推测相同机制 [[ambiguous]] |
+| Task claim | File lock | 推测相同机制 ambiguous |
 | 上层 skill | （无官方） | `hyperplan` / `security-research` |
 
 **omo Team Mode = Claude Code Agent Teams 的 omo 封装 + 上层 skill 生态**。
@@ -151,13 +151,13 @@ omo 提供 **12 个** `team_*` 工具（README 提到但未列全部名字）：
 | [[entities/claude-code-agent-teams-feature]] | 直接借鉴但加上层 skill 生态 |
 | [[concepts/agent-team-display-modes]] | `tmux_visualization` 是 teammateMode 的子集 |
 | [[concepts/agent-team-mailbox-protocol]] | `base_dir` + `mailbox_poll_interval_ms` 是具体实现 |
-| [[concepts/agent-team-race-condition-task-claim]] | 应该用 file lock，但 README 未明 [[inferred]] |
+| [[concepts/agent-team-race-condition-task-claim]] | 应该用 file lock，但 README 未明 inferred |
 | [[concepts/agent-team-cost-overhead]] | 11 字段严格上限是 token 节流的具体措施 |
 
 ## Open Questions
 
 - 12 个 `team_*` 工具的**完整清单**——README 只列 4 个
-- Team Mode 与 [[entities/claude-code-agent-teams-feature]] 的**差异点**——omo 文档没说哪些是独有功能 [[ambiguous]]
+- Team Mode 与 [[entities/claude-code-agent-teams-feature]] 的**差异点**——omo 文档没说哪些是独有功能 ambiguous
 - Team Mode 与 **Hephaestus 单独调用** 怎么选？team 是为多 specialists + tmux 可视化场景的
 
 ## Related

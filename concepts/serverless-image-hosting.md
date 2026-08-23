@@ -46,5 +46,5 @@ tier: supporting
 
 - [[entities/cloudflare-imgbed]] — 代表实现
 - [[concepts/telegram-as-blob-storage]] — 存储层的一种「白嫖」变体
-- [[sources/cloudflare-imgbed-github]] / [[sources/cloudflare-imgbed-docs]] — 一手源
+- cloudflare-imgbed-github / cloudflare-imgbed-docs — 一手源
 - [[synthesis/Research: CloudFlare ImgBed]] — 研究综合页

@@ -46,7 +46,7 @@ relationships:
 
 ## 关键事实
 
-- 仓库**严格遵循** [[entities/google-labs-code-design.md|google-labs-code/design.md]](https://github.com/google-labs-code/design.md) 规范（`version: alpha` + 完整 YAML + 8 必备章节）。
+- 仓库**严格遵循** entities/google-labs-code-design.md|google-labs-code/design(https://github.com/google-labs-code/design.md) 规范（`version: alpha` + 完整 YAML + 8 必备章节）。
 - **扩展** spec：每个文件额外加 `Iteration Guide`（修改守则）与 `Known Gaps`（透明度声明）——spec 允许未知章节保留，所以扩展不会被 lint 拒绝。
 - **品牌保护**：所有 DESIGN.md 自称 `Inspired design analysis of [品牌]` 而非 "the official DESIGN.md"；README 末尾 *"We do not claim ownership of any site's visual identity"*。
 - **不收 PR**：CONTRIBUTING.md 明确 *"We cannot accept DESIGN.md pull requests"*——内容由团队 reverse-engineer 产出，保持质量一致。
@@ -58,8 +58,8 @@ relationships:
 
 ## 相关页面
 
-- [[sources/awesome-design-md-repo]] — 来源详情
-- [[sources/getdesign-md-marketplace]] — 配套目录服务
+- awesome-design-md-repo — 来源详情
+- getdesign-md-marketplace — 配套目录服务
 - [[entities/voltagent]] — 维护组织
 - [[entities/google-labs-code-design]] — 官方规范仓库
 - [[entities/google-stitch]] — DESIGN.md 的原始生产者

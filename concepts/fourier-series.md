@@ -140,8 +140,8 @@ $$
 
 ## 相关页面
 
-- [[concepts/animation-easing-functions.md]]
-- [[concepts/javascript-event-loop.md]]
+- concepts/animation-easing-functions
+- concepts/javascript-event-loop
 - [[concepts/animation-easing-functions]] — 缓动函数也用曲线合成思路
 
 ## Related

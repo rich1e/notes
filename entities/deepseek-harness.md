@@ -192,7 +192,7 @@ website/     VitePress projection of selected bilingual docs/ sources
 ## 相关页面
 
 - [[entities/cordis]] — 框架本体
-- [[entities/deepseek-ai]] — 母公司
+- deepseek-ai — 母公司
 - [[concepts/cordis-plugin-framework]] — dsh 的架构基础
 - [[concepts/capability-seam]] — 三件套抽象
 - [[references/dsh-package-hierarchy]] — 24 个 package group 全景

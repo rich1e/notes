@@ -38,7 +38,7 @@ Claude Code Agent Teams 是 Anthropic 在 Opus 4.6（2026-02）引入的**实验
 
 ### (K1) 启用方式：环境变量，非 settings 字段
 
-官方原话（[[sources/anthropic-claude-code-agent-teams-docs]]）：
+官方原话（anthropic-claude-code-agent-teams-docs）：
 
 ```json
 {
@@ -138,9 +138,9 @@ Agent Teams 在 Opus 4.6（2026-02 发布）引入。1M token context window 让
 
 | YouTube 主张 | 官方实际 | 来源 |
 |---|---|---|
-| `experimentalAgents: "on"` settings 字段 | `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` 环境变量 | [[sources/anthropic-claude-code-agent-teams-docs]] |
-| `tmux.splitPanes: true` settings 字段 | `teammateMode: "tmux"` 字符串值 | [[sources/anthropic-claude-code-agent-teams-docs]] |
-| "$1.15 / 4 分钟 / 5 agent" 准确 | dashboard 只算主 lead，真实成本应线性扩展 | [[sources/anthropic-claude-code-agent-teams-docs]] |
+| `experimentalAgents: "on"` settings 字段 | `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` 环境变量 | anthropic-claude-code-agent-teams-docs |
+| `tmux.splitPanes: true` settings 字段 | `teammateMode: "tmux"` 字符串值 | anthropic-claude-code-agent-teams-docs |
+| "$1.15 / 4 分钟 / 5 agent" 准确 | dashboard 只算主 lead，真实成本应线性扩展 | anthropic-claude-code-agent-teams-docs |
 
 ### Opus 4.6 价格未完全核实
 
@@ -150,11 +150,11 @@ Agent Teams 在 Opus 4.6（2026-02 发布）引入。1M token context window 让
 
 ### 中文教程的"3 层 teammates 模型"
 
-[[sources/cnblogs-agent-teams-complete-guide]] 提出 lead / 同事 / 观察员 3 层——**官方文档未采纳**，vault 暂不作为主框架。可能只是作者个人心智模型。
+cnblogs-agent-teams-complete-guide 提出 lead / 同事 / 观察员 3 层——**官方文档未采纳**，vault 暂不作为主框架。可能只是作者个人心智模型。
 
 ### 16-agent C 编译器演示
 
-Anthropic engineering blog 有演示（`anthropic.com/engineering/building-c-compiler`），证明 Agent Teams 的并行能力上限。**未独立 fetch 验证**——[[sources/anthropic-claude-code-agent-teams-docs]] 也未提及具体数字。
+Anthropic engineering blog 有演示（`anthropic.com/engineering/building-c-compiler`），证明 Agent Teams 的并行能力上限。**未独立 fetch 验证**——anthropic-claude-code-agent-teams-docs 也未提及具体数字。
 
 ### 文档版本演进快
 
@@ -165,10 +165,10 @@ Anthropic engineering blog 有演示（`anthropic.com/engineering/building-c-com
 
 | 来源 | 类型 | 关键贡献 |
 |---|---|---|
-| [[sources/anthropic-claude-code-agent-teams-docs]] | 官方一手（paper） | 4 组件 / 5 显示模式 / 9 限制 / 版本演进 |
+| anthropic-claude-code-agent-teams-docs | 官方一手（paper） | 4 组件 / 5 显示模式 / 9 限制 / 版本演进 |
 | [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] | YouTube 教程（blog） | 22 分钟演示，多处矛盾已修正 |
-| [[sources/cnblogs-agent-teams-complete-guide]] | 中文教程（blog） | 中文读者友好 + 3 层模型（不被官方采纳） |
-| [[sources/csdn-agent-teams-multi-process]] | CSDN 工程视角（blog） | IPC / 多进程视角（推测） |
+| cnblogs-agent-teams-complete-guide | 中文教程（blog） | 中文读者友好 + 3 层模型（不被官方采纳） |
+| csdn-agent-teams-multi-process | CSDN 工程视角（blog） | IPC / 多进程视角（推测） |
 
 ## 调研方法论
 

@@ -111,4 +111,4 @@ relationships:
 - 标准结构:[[concepts/obsidian-wiki-vault-structure]]
 - 框架作者:[[entities/Ar9av]]
 - 一般 ingest 流程(非自指场景):[[skills/wiki-ingest]]
-- 带 keychain token 的 ingest 流程:[[skills/wiki-ingest-with-token]]
+- 带 keychain token 的 ingest 流程:wiki-ingest-with-token

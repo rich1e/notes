@@ -20,6 +20,9 @@ title: Wiki Index
 - [[concepts/zsh-shell-config-patterns]] — zsh 个人 dotfile 实战优化模式：HOMEBREW_PREFIX 缓存 / setopt 兼容性 / chezmoi 密钥集成 / alias vs 函数优先级 / fzf preview 公共变量 / inshellisense wrapper 末尾规则
 - [[concepts/inshellisense-reload-compat]] — inshellisense reload 需 ISTERM 守卫：源 init.zsh 是 shell wrapper 模式（source → 启动 is daemon → exit），再 source 会因 ISTERM=1 跳过但状态错乱；reload 普通 zsh 配置没事，改 inshellisense 自身配置需 exit+重进
 - [[concepts/unrendered-chezmoi-template-env-leak]] — chezmoi dotfile 用 `{{ keyring ... }}` 模板注入密钥到 env 时，若未被 `chezmoi apply` 渲染，字面模板字符串会成为"密钥"被下游读到：渲染态 × env 注入耦合 + 三层防御
+- [[concepts/quantum-computing-foundations]] — 量子计算基础概念：qubit/叠加/纠缠/量子门；满足 [[synthesis/Science for AI × AI for Science]] 等 4 处 wikilink
+- [[concepts/extensibility]] — 软件扩展性模式：plugin registry / hook / capability seam / 零注册中心 require.resolveWeak；满足 3 处 wikilink
+- [[concepts/japanese-retro-gaming]] — 日本复古游戏生态：Famicom/SFC/PC Engine 本土化 + 区域锁 + 烧录卡生态
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -251,6 +254,8 @@ title: Wiki Index
 - [[skills/safe-rm-wrapper-design]] — rm 包装为 trash 后脚本临时文件清理会污染 ~/.Trash：约定用 command rm 显式绕过 wrapper + 危险参数拦截 + trash-cli 选项速查
 - [[skills/statusline-template-injection-defense]] — statusline env-first + keychain-fallback 读密钥时，env 含未渲染 chezmoi `{{ keyring ... }}` 模板会让 Bearer token 失败（API 1004）：`grep -q "{{"` 启发式守卫 + keychain 回退接管
 - [[skills/claude-code-statusline]] — Claude Code statusline 配置基础：stdin JSON / stdout 单行 / env-first + keychain-fallback 模式 / 易感未渲染模板注入
+- [[skills/wiki-lint]] — wiki-lint 技能概览：orphan/broken-link/frontmatter/stale/fragmented-cluster/visibility/provenance 多维审计 + --consolidate 自动修复（dry-run + git snapshot）
+- [[skills/wiki-ingest]] — wiki-ingest 技能概览：append/full/raw 三模式 + Content Trust Boundary + Source Inheritance 规则
 - [[skills/chezmoi-keyring-template]] — chezmoi `{{ keyring "service" "account" }}` 模板用法，从 OS keychain 读密钥替换 dotfile 模板；坑：未渲染时模板字符串进 env
 - [[skills/macos-keychain-getBase64Key]] — macOS `security find-generic-password -w` + `go-keyring-base64:` 前缀 + base64 解码的完整读取 pattern
 
@@ -262,6 +267,9 @@ title: Wiki Index
 - [[synthesis/references-mechanical-watch-mechanics × concepts-animation-easing-functions]] — 摆轮+擒纵是 PD 反馈控制器的物理实现,游丝=K_p,阻尼=K_d,与 spring 动画同源
 - [[synthesis/research-throttlestop-alienware-thermals]] — Alienware 笔记本 ThrottleStop 降压降温 3 轮研究综合：FIVR/MSR 0x150 原理、BIOS 解锁路径、mV Boost 技巧、8-15°C 降幅预期
 - [[synthesis/skills-hackintosh-mini-build × concepts-macos-window-switcher]] — 两个 macOS 用户的"模块化替代默认"范式,软件/硬件两侧的同构工匠精神
+- [[synthesis/concepts-atomic-state-recovery × projects-figma-skills-codesign-session-jsonl-recovery]] — Session JSONL 作为 second source 的工程共识:CoDesign/Claude Code Agent Teams/treehouse/dsh 4 个项目独立收敛到 append-only 日志回放模式
+- [[synthesis/concepts-chezmoi-workflow × concepts-dotfile-manager]] — Dotfile 管理工具三层谱系:基础(手动+git)/中级(Stow symlink farm)/高级(chezmoi 三态+模板+加密),决策树按密钥/跨机/跨 OS 维度选型
+- [[synthesis/concepts-chezmoi-templating × skills-statusline-template-injection-defense]] — chezmoi `{{ keyring ... }}` 模板注入密钥到 dotfile + statusline env-first + keychain-fallback 的耦合陷阱:未渲染时字面模板字符串当 Bearer token,修复必须在消费者侧(`grep -q "{{"` 启发式守卫)
 
 ## Projects
 

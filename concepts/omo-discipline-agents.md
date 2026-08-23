@@ -43,7 +43,7 @@ summary: "omo 的 5 专家 agent 架构：Sisyphus 作为 orchestrator 协调 He
 | **Librarian** | （README 未列具体模型）^[ambiguous] | 推测：知识库 / 文档检索 |
 | **Explore** | （README 未列具体模型）^[ambiguous] | 推测：codebase 探索 / 类似 Claude Code 的 Explore subagent |
 
-> Oracle / Librarian / Explore 的**精确角色 + 模型**在 README 未详述——仅 highlights 表列出名字。[[ambiguous]]
+> Oracle / Librarian / Explore 的**精确角色 + 模型**在 README 未详述——仅 highlights 表列出名字。ambiguous
 
 ## 工作流（Sisyphus 视角）
 

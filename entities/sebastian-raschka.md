@@ -34,7 +34,7 @@ Sebastian Raschka 是一位专注 LLM 教育的 AI 研究者与作者。著有�
 
 ## 主要项目
 
-- **rasbt/LLMs-from-scratch** — 见 [[sources/sebastian-raschka-llms-from-scratch-book]]
+- **rasbt/LLMs-from-scratch** — 见 sebastian-raschka-llms-from-scratch-book
 - **rasbt/LLMs-from-scratch-reasoning**（姊妹仓库）—— GRPO/RLVR、verifier、inference scaling
 - **rasbt/stat453-deep-learning** — 早期深度学习课程
 
@@ -58,7 +58,7 @@ Sebastian Raschka 是一位专注 LLM 教育的 AI 研究者与作者。著有�
 
 ## 关联
 
-- [[sources/sebastian-raschka-llms-from-scratch-book]]
+- sebastian-raschka-llms-from-scratch-book
 - [[entities/andrej-karpathy]]
 - concepts/transformer-architecture
 - [[concepts/llm-training-pipeline]]

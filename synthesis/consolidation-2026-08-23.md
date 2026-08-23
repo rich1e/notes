@@ -46,7 +46,7 @@ Pre-write snapshot: `e2acf4bbfa6f43e5930f6cf1aee39178625ebb87`
 
 ### 2. misc/ stub 链接(69 真 broken wikilinks)
 - 23 处是 misc web-archive 页提到的 entity/concept stub(framework-computer / apple-m-series / esm-vs-cjs-migration 等)
-- 46 处是 consolidation 报告里的 prose placeholder / shell var / template 占位符(`[[target\]]` `[[page]]` `[[concepts/...]]`)
+- 46 处是 consolidation 报告里的 prose placeholder / shell var / template 占位符(`target\` `page` `...`)
 - 建议:下次 `/wiki-research` 选 XDA/Kashw1n 主题时由 ingest 自动补 stub;consolidation 报告的占位符应在生成时自检
 
 ### 3. `wiki-synthesize` 13 天未跑

@@ -67,4 +67,4 @@ Pages with zero incoming wikilinks. All created 2026-07-01..07 — natural state
 - [[animation-easing-functions]] — animation-easing-functions
 ## 相关页面
 
-- [[synthesis/consolidation-2026-07-23.md]]
+- synthesis/consolidation-2026-07-23

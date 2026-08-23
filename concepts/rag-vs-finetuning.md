@@ -95,7 +95,7 @@ lifecycle_changed: 2026-07-27
 - [[concepts/llm-training-pipeline]]
 - [[concepts/llm-learning-path]]
 - concepts/instruction-tuning
-- [[sources/sebastian-raschka-llms-from-scratch-book]]
+- sebastian-raschka-llms-from-scratch-book
 
 ## Related
 

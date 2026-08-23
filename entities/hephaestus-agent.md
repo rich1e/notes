@@ -81,8 +81,8 @@ Sisyphus 委派 → Hephaestus 干。详见 [[entities/sisyphus-agent]]。
 ## Open Questions
 
 - 4 个 provider（OpenAI / Copilot / Vercel / OpenCode）的**性能差异**——README 列出但未给 benchmark
-- "medium effort" 在 OpenCode 中的具体定义——是 model config 还是 prompt wrapper？[[ambiguous]]
-- Hephaestus 失败时的 fallback 模型链——是否会自动降级到 Sonnet/Haiku？README 未给 [[ambiguous]]
+- "medium effort" 在 OpenCode 中的具体定义——是 model config 还是 prompt wrapper？ambiguous
+- Hephaestus 失败时的 fallback 模型链——是否会自动降级到 Sonnet/Haiku？README 未给 ambiguous
 
 ## Related
 

@@ -112,7 +112,7 @@ lifecycle_changed: 2026-07-27
 
 - [[concepts/llm-training-pipeline]]
 - concepts/transformer-architecture
-- [[sources/dakingrai-mech-interp-papers]]
+- dakingrai-mech-interp-papers
 
 ## Related
 

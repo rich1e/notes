@@ -102,7 +102,7 @@ updated: <ISO timestamp>
 
 ## 链接约定
 
-- **默认**:`[[page-name]]` 或 `[[category/page-name]]` —— Obsidian 风格 wikilink
+- **默认**:`page-name` 或 `page-name` —— Obsidian 风格 wikilink
 - **可切**:在 `~/.obsidian-wiki/config` 设 `OBSIDIAN_LINK_FORMAT=markdown`,改为标准 markdown `[text](url)` 链接
 
 ## 与本 vault 现状的关系
