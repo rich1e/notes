@@ -23,6 +23,10 @@ title: Wiki Index
 - [[concepts/quantum-computing-foundations]] — 量子计算基础概念：qubit/叠加/纠缠/量子门；满足 [[synthesis/Science for AI × AI for Science]] 等 4 处 wikilink
 - [[concepts/extensibility]] — 软件扩展性模式：plugin registry / hook / capability seam / 零注册中心 require.resolveWeak；满足 3 处 wikilink
 - [[concepts/japanese-retro-gaming]] — 日本复古游戏生态：Famicom/SFC/PC Engine 本土化 + 区域锁 + 烧录卡生态
+- [[concepts/agentic-design]] — open-codesign v0.2.0 Agentic Design 抽象：workspace-backed sessions + permissioned tool use (8 工具) + DESIGN.md shared memory,3 大支柱
+- [[concepts/jsonl-session-tree]] — pi-coding-agent 的 append-only JSONL 树形事件流：header + 8 entry 类型 + 7 AgentMessage 子类型 + compaction firstKeptEntryId 边界
+- [[concepts/skill-progressive-disclosure]] — 技能不烤进 system prompt,按需通过 skill(name) 工具加载完整 body;1536 字符 description 上限是产品设计
+- [[concepts/design-md-shared-memory]] — DESIGN.md 文件作为 agent shared memory：品牌 token + 设计系统决策,可读可改可 git 版本化
 - [[concepts/bmad-delivery-loop]] — BMad 4 阶段交付闭环：Clarify → Plan → Build → Learn，大小工作共享同一闭环仅深度不同
 - [[concepts/omo-ultrawork-mode]] — omo Ultrawork 模式：单 keyword 触发全 agent，Sisyphus 接管不停直到完成审计说 done
 - [[concepts/omo-discipline-agents]] — omo Discipline Agents：Sisyphus 协调 5 specialists（Hephaestus/Oracle/Librarian/Explore/Prometheus）
@@ -139,6 +143,9 @@ title: Wiki Index
 
 ## Entities
 
+- [[entities/open-codesign]] — OpenCoworkAI/open-codesign, MIT 开源设计 agent 桌面应用 (Electron + React 19 + BYOK),基于 pi-coding-agent 的 workspace-backed agent loop
+- [[entities/pi-coding-agent]] — Mario Zechner 的 agent loop 框架,open-codesign v0.2.0 直接以此为 AI 运行时
+- [[entities/mariozechner]] — pi-coding-agent / pi-mono 的作者
 - [[entities/deepseek-harness]] — DeepSeek-AI 开源 agent harness (dsh), MIT, vendored Cordis, TS+pnpm monorepo, 24 个 package group
 - [[entities/cordis]] — Core Dispatch System plugin framework，dsh vendored 基座
 - [[entities/imthenachoman-how-to-secure-a-linux-server]] — GitHub 仓库：CC-BY-SA 4.0 Linux server 加固指南（imthenachoman）+ sysctl 子模块 + nginx 子模块 + 配套 moltenbit Ansible playbooks
@@ -270,6 +277,7 @@ title: Wiki Index
 - [[synthesis/concepts-atomic-state-recovery × projects-figma-skills-codesign-session-jsonl-recovery]] — Session JSONL 作为 second source 的工程共识:CoDesign/Claude Code Agent Teams/treehouse/dsh 4 个项目独立收敛到 append-only 日志回放模式
 - [[synthesis/concepts-chezmoi-workflow × concepts-dotfile-manager]] — Dotfile 管理工具三层谱系:基础(手动+git)/中级(Stow symlink farm)/高级(chezmoi 三态+模板+加密),决策树按密钥/跨机/跨 OS 维度选型
 - [[synthesis/concepts-chezmoi-templating × skills-statusline-template-injection-defense]] — chezmoi `{{ keyring ... }}` 模板注入密钥到 dotfile + statusline env-first + keychain-fallback 的耦合陷阱:未渲染时字面模板字符串当 Bearer token,修复必须在消费者侧(`grep -q "{{"` 启发式守卫)
+- [[synthesis/Research: open-codesign]] — OpenCoworkAI/open-codesign 3 轮研究综合：v0.2.0 Agentic Design(workspace-backed sessions + 8 工具 + DESIGN.md shared memory)+ pi-coding-agent JSONL session tree + progressive skill disclosure
 
 ## Projects
 
@@ -326,6 +334,10 @@ title: Wiki Index
 
 ## References
 
+- [[references/open-codesign-readme]] — OpenCoworkAI/open-codesign README:Electron+React 19+Vite 6+Tailwind v4 monorepo,AI 基于 @mariozechner/pi-ai + pi-coding-agent,BYOK 多模型
+- [[references/open-codesign-changelog]] — open-codesign v0.1 → v0.2 "Agentic Design" 演进时间线 (2026-04-18 首次 release → 2026-05-09 workspace-backed sessions)
+- [[references/open-codesign-prompt-system-deepwiki]] — DeepWiki 4.2:markdown skills (YAML frontmatter + body,schemaVersion 1,1536 字符描述上限) + JSX design skills + progressive disclosure
+- [[references/pi-coding-agent-session-format]] — pi-coding-agent session JSONL tree 完整 schema:header (v3) + 8 entry 类型 + 7 AgentMessage 子类型 + compaction firstKeptEntryId 边界机制
 - [[references/dsh-package-hierarchy]] — dsh 的 24 个 package group 完整索引 + capability seam 映射 + 添加新 package checklist
 - [[references/sysctl-hardening-table]] — Linux kernel sysctl 加固参数索引（122 条），按 fs/kernel/net.core/net.ipv4/net.ipv6 五大域分组
 - [[references/mechanical-watch-mechanics]] — 机械表七大部件与能量链原理速查

@@ -1,8 +1,31 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-24T00:45:00Z",
+  "last_updated": "2026-08-24T01:30:00Z",
   "research": {
+    "OpenCoworkAI/open-codesign": {
+      "type": "research",
+      "topic": "OpenCoworkAI/open-codesign AI/Skills/Session",
+      "researched_at": "2026-08-24T01:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "primary_source": "GitHub README + CHANGELOG + DeepWiki 4.2 + pi-coding-agent session docs",
+      "pages_created": [
+        "synthesis/Research: open-codesign.md",
+        "references/open-codesign-readme.md",
+        "references/open-codesign-changelog.md",
+        "references/open-codesign-prompt-system-deepwiki.md",
+        "references/pi-coding-agent-session-format.md",
+        "concepts/agentic-design.md",
+        "concepts/jsonl-session-tree.md",
+        "concepts/skill-progressive-disclosure.md",
+        "concepts/design-md-shared-memory.md",
+        "entities/open-codesign.md",
+        "entities/pi-coding-agent.md",
+        "entities/mariozechner.md"
+      ],
+      "pages_updated": []
+    },
     "chezmoi": {
       "researched_at": "2026-07-25T02:27:13Z",
       "rounds_completed": 3,
@@ -1661,7 +1684,7 @@
   },
   "stats": {
     "total_sources_ingested": 86,
-    "total_pages": 414,
+    "total_pages": 426,
     "total_projects": 3,
     "last_full_rebuild": null
   },
