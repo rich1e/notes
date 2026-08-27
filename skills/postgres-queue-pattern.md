@@ -25,6 +25,8 @@ relationships:
     type: pattern_of
   - target: "[[concepts/database-as-platform]]"
     type: example_of
+  - target: "[[skills/sqlite-queue-pattern]]"
+    type: related_to
 ---
 
 # PostgreSQL 消息队列模式（SKIP LOCKED）

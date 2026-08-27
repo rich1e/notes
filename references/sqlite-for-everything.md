@@ -26,6 +26,8 @@ relationships:
     type: example_of
   - target: "[[references/postgresql-for-everything]]"
     type: related_to
+  - target: "[[concepts/postgres-extensions-ecosystem]]"
+    type: related_to
 ---
 
 # SQLite for Everything — JoeCode
@@ -149,7 +151,7 @@ SQLite 官方基准：**比文件系统快 35%**（≤100KB blob）。原因：�
 |---|---|---|
 | 部署模型 | 嵌入库，进程内 | 独立 daemon，网络连接 |
 | 写并发 | 单写者（WAL 模式提升读） | 多并发写者 |
-| 扩展生态 | 轻量扩展（sqlite-vec/FTS5） | 丰富扩展（pgvector/AGE/TimescaleDB）|
+| 扩展生态 | 轻量扩展（sqlite-vec/FTS5） | 丰富扩展（[[concepts/postgres-extensions-ecosystem\|pgvector/AGE/TimescaleDB]]）|
 | 测试便利性 | `:memory:`，微秒，无 Docker | Testcontainers，秒级 |
 | 缩放上限 | 单机，几十 GB 实战 | 多机，PB 级可行 |
 | 迁移路径 | 遇到单写者瓶颈 → PostgreSQL | 遇到单机瓶颈 → 分布式 |

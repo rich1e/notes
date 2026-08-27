@@ -16,6 +16,11 @@ provenance:
 lifecycle: draft
 lifecycle_changed: 2026-08-24
 tier: supporting
+relationships:
+  - target: "[[entities/opencoworkai]]"
+    type: related_to
+  - target: "[[entities/open-codesign]]"
+    type: derived_from
 ---
 
 # OpenCoworkAI/open-codesign README

@@ -29,6 +29,10 @@ relationships:
     type: related_to
   - target: "[[concepts/deterministic-agent-memory]]"
     type: related_to
+  - target: "[[entities/sqlite]]"
+    type: related_to
+  - target: "[[entities/postgresql]]"
+    type: related_to
 ---
 
 # Durable Session Log — Model History 的 Source of Truth
@@ -148,7 +152,7 @@ telemetry / billing / debugging 都是 log 的 query。
 
 - `SESSION_FORMAT_VERSION = 0`（无兼容性承诺）
 - 字段重命名、event type 删除 = 自由做
-- SQLite 同样用 monotonic `SCHEMA_VERSION`
+- [[entities/sqlite|SQLite]] 同样用 monotonic `SCHEMA_VERSION`
 - 旧的 on-disk 格式直接 reject（不写迁移代码）
 
 ## 与其他 session 抽象对比
@@ -172,7 +176,7 @@ telemetry / billing / debugging 都是 log 的 query。
 
 ## Open Questions
 
-1. **Log 的 storage backend** — SQLite 默认？是否支持 PostgreSQL？^[ambiguous]
+1. **Log 的 storage backend** — [[entities/sqlite|SQLite]] 默认？是否支持 [[entities/postgresql|PostgreSQL]]？^[ambiguous]
 2. **Retention policy** — session 多久过期？可配置吗？^[ambiguous]
 3. **Streaming render 策略** — chunks 是否在 fork 时合并？^[inferred] 应合并
 

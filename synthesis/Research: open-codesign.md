@@ -18,13 +18,18 @@ provenance:
 lifecycle: draft
 lifecycle_changed: 2026-08-24
 tier: supporting
+relationships:
+  - target: "[[entities/opencoworkai]]"
+    type: related_to
+  - target: "[[entities/open-codesign]]"
+    type: elaborates
 ---
 
 # Research: OpenCoworkAI/open-codesign
 
 ## Overview
 
-Open CoDesign(`OpenCoworkAI/open-codesign`)是 MIT 开源桌面应用(Electron + React 19 + Vite 6 + Tailwind v4),作为 Claude Design / v0 / Lovable / Bolt.new 的开源替代品。BYOK 多模型(Claude / GPT / Gemini / Kimi / GLM / Ollama),local-first。
+Open CoDesign(`[[entities/opencoworkai|OpenCoworkAI]]/open-codesign`)是 MIT 开源桌面应用(Electron + React 19 + Vite 6 + Tailwind v4),作为 Claude Design / v0 / Lovable / Bolt.new 的开源替代品。BYOK 多模型(Claude / GPT / Gemini / Kimi / GLM / Ollama),local-first。
 
 **v0.2.0 "Agentic Design" (2026-05-09)** 是项目里程碑:从"一次性生成器"转向"workspace-backed 设计 agent",以 **pi-coding-agent** 的 JSONL session 树为核心,叠加 8 个领域专用工具 + progressive skill disclosure + DESIGN.md shared memory。
 

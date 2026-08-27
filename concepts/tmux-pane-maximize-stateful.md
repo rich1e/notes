@@ -26,6 +26,8 @@ relationships:
     type: derived_from
   - target: "[[skills/tmux]]"
     type: related_to
+  - target: "[[skills/tmux-join-pane-swap-pane]]"
+    type: related_to
 ---
 
 # Tmux pane maximize 跨 window 保留状态
@@ -103,3 +105,4 @@ _maximize_pane() {
 
 - 实现:[[entities/gpakosz-tmux]]
 - 通用 tmux 速查:[[skills/tmux]]
+- swap-pane / join-pane 完整用法:[[skills/tmux-join-pane-swap-pane]]

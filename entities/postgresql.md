@@ -26,6 +26,10 @@ relationships:
     type: has_component
   - target: "[[skills/postgres-queue-pattern]]"
     type: enables
+  - target: "[[entities/sqlite]]"
+    type: related_to
+  - target: "[[references/postgresql-for-everything]]"
+    type: cited_in
 ---
 
 # PostgreSQL — 开源关系数据库的首选默认项

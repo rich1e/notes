@@ -143,7 +143,7 @@ LLM 从不在 hot path,但 cold path 可用,绝不被强制。
 
 ## 与 vault 已有架构的关系
 
-- **claude-mem**:PostToolUse **async** hook(不阻塞主交互)+ 失败可降级 + 本地 SQLite / Chroma——已经是 async 旁路而非 hot path 阻塞。OpenLore 是把同一原则推到更底层(graph)。
+- **claude-mem**:PostToolUse **async** hook(不阻塞主交互)+ 失败可降级 + 本地 [[entities/sqlite|SQLite]] / Chroma——已经是 async 旁路而非 hot path 阻塞。OpenLore 是把同一原则推到更底层(graph)。
 - **treehouse**:`get --lease` / `prune` / `destroy` 全是 hot path 操作,纯文件系统,无网络依赖。同源思路。
 - **agent-os 五层**:Knowledge Memory 层应该是确定性 fact layer(OpenLore);Semantic Memory 可以是 claude-mem 这种轻量概率层;二者在 hot/cold 上的取舍不同。
 

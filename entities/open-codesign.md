@@ -23,13 +23,15 @@ relationships:
     type: implements
   - target: "[[projects/figma/figma]]"
     type: related_to
+  - target: "[[entities/opencoworkai]]"
+    type: part_of
 ---
 
 # Open CoDesign
 
 ## 概述
 
-**仓库**: `OpenCoworkAI/open-codesign`(GitHub)
+**仓库**: `[[entities/opencoworkai|OpenCoworkAI]]/open-codesign`(GitHub)
 **协议**: MIT
 **类型**: Electron 桌面应用
 **定位**: Claude Design / v0 / Lovable / Bolt.new 的开源替代品
@@ -89,6 +91,7 @@ open-codesign 是该领域少数开源且 BYOK 选项,适合不愿锁定 SaaS �
 
 - [[references/open-codesign-readme]]
 - [[references/open-codesign-changelog]]
+- [[entities/opencoworkai]] — 发布此工具的组织
 - [[concepts/agentic-design]]
 - [[concepts/jsonl-session-tree]]
 - [[concepts/skill-progressive-disclosure]]

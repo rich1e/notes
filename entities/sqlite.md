@@ -27,6 +27,10 @@ relationships:
     type: related_to
   - target: "[[references/sqlite-for-everything]]"
     type: derived_from
+  - target: "[[skills/sqlite-queue-pattern]]"
+    type: related_to
+  - target: "[[concepts/sqlite-as-file-format]]"
+    type: related_to
 ---
 
 # SQLite
@@ -61,7 +65,7 @@ SQLite 是地球上**部署量最大的数据库引擎**，比其他所有数据
 ### 并发模型
 - **单写者**（WAL 模式下读者不阻塞写者）
 - 写操作序列化，并发消费者在写锁上等待
-- 不支持 `SKIP LOCKED`（PostgreSQL 队列模式的核心）
+- 不支持 `SKIP LOCKED`（[[entities/postgresql|PostgreSQL]] 队列模式的核心，见 [[skills/postgres-queue-pattern]]）
 - 适合读多写少、中低并发场景
 
 ## 内置能力（无需扩展）

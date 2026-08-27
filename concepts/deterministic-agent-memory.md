@@ -107,7 +107,7 @@ not-found 不给相似替代
 
 | 类型 | 持久化 | 触发 | 内容 |
 |---|---|---|---|
-| claude-mem | SQLite + Chroma | hook | observation、decision 摘要、session 摘要 |
+| claude-mem | [[entities/sqlite\|SQLite]] + Chroma | hook | observation、decision 摘要、session 摘要 |
 | OpenLore | JSON 图 + BM25 + 可选 vector | 主动调用 MCP | 函数签名、调用关系、spec 覆盖、决策 Evidence |
 
 详见 [[concepts/claude-mem-memory-architecture]] 与 [[concepts/agent-operating-system]]。

@@ -24,6 +24,9 @@ base_confidence: 0.7
 lifecycle: draft
 tier: supporting
 lifecycle_changed: "2026-07-29"
+relationships:
+  - target: "[[entities/sqlite]]"
+    type: uses
 ---
 
 # claude-mem
@@ -37,7 +40,7 @@ Claude Code 每次新会话都是"失忆"的——上一次的架构决策、踩
 ## 核心机制（三段）
 
 1. **捕获（capture）** — 通过 [[concepts/claude-code-hooks-lifecycle|6 个生命周期 hook]] 拦截工具调用，把 Read/Edit/Bash 异步压成结构化 observation。
-2. **压缩 + 存储** — observation 落 SQLite（`sessions`/`observations`/`summaries` 表）+ Chroma 向量库（混合语义+关键词检索），全部在 `~/.claude-mem/`。压缩用便宜模型（默认 `claude-haiku-4-5`）。
+2. **压缩 + 存储** — observation 落 [[entities/sqlite|SQLite]]（`sessions`/`observations`/`summaries` 表）+ Chroma 向量库（混合语义+关键词检索），全部在 `~/.claude-mem/`。压缩用便宜模型（默认 `claude-haiku-4-5`）。
 3. **注入（inject）** — 第二次会话起，`SessionStart` hook 把相关记忆注入新会话开头。详见 [[concepts/claude-mem-memory-architecture]]。
 
 ## 安装（一手确认）

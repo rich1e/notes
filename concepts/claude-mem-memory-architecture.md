@@ -23,6 +23,11 @@ base_confidence: 0.68
 lifecycle: draft
 tier: core
 lifecycle_changed: "2026-07-29"
+relationships:
+  - target: "[[entities/claude-mem]]"
+    type: derived_from
+  - target: "[[entities/sqlite]]"
+    type: uses
 ---
 
 # claude-mem 记忆架构
@@ -38,7 +43,7 @@ lifecycle_changed: "2026-07-29"
 - **压缩模型**：默认 `claude-haiku-4-5`（便宜快），可切 OpenRouter / Gemini。有 tier routing：简单任务用 haiku，复杂总结可路由到 sonnet（`CLAUDE_MEM_TIER_SMART_MODEL`）。
 - **observation 结构**：每条含 `title / subtitle / narrative / facts / concepts / files`，并分类型（bugfix ● / feature ◆ / refactor ↻ / decision / discovery / change）——类型定义来自可切换的 **mode**（`code` / `law-study` / `email-investigation` 等，含 30 种语言变体）。
 - **存储双库**：
-  - **SQLite** — `sessions` / `observations` / `summaries` 三类记录，结构化查询主力。
+  - **[[entities/sqlite|SQLite]]** — `sessions` / `observations` / `summaries` 三类记录，结构化查询主力。
   - **Chroma 向量库** — 本地模式（`CLAUDE_MEM_CHROMA_MODE=local`，端口 8000），做混合「语义 + 关键词」检索。
 - **总结时机**：`Stop` hook 在会话结束时把本会话 observation 汇总成 summary。
 
