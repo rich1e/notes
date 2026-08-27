@@ -1,3 +1,40 @@
+---
+title: Claude Code Agent Teams 完整指南（PPT 综合）
+category: misc
+tags:
+  - claude-code
+  - agent-teams
+  - multi-agent
+  - llm-tooling
+summary: >-
+  基于 20 份一手资料的 Claude Code Agent Teams 综合指南（5 幻灯片）：架构四柱（独立 context / Mailbox IPC / 文件锁 / Lead 调度）、配置方法（5 种显示模式）、实践场景（对抗式调试）、9 项限制、与 omo / BMad 三方案对比。
+sources:
+  - concepts/agent-team-mailbox-protocol
+  - concepts/agent-team-race-condition-task-claim
+  - concepts/agent-team-display-modes
+  - concepts/agent-team-cost-overhead
+  - synthesis/Research: Claude Code Agent Teams.md
+created: 2026-08-06
+updated: 2026-08-27T00:00:00Z
+tier: supporting
+lifecycle: reviewed
+lifecycle_changed: "2026-08-27"
+base_confidence: 0.88
+provenance:
+  extracted: 0.90
+  inferred: 0.08
+  ambiguous: 0.02
+relationships:
+  - target: "[[synthesis/Research: Claude Code Agent Teams]]"
+    type: derived_from
+  - target: "[[concepts/agent-team-mailbox-protocol]]"
+    type: elaborates
+  - target: "[[concepts/claude-code-agent-teams]]"
+    type: elaborates
+  - target: "[[concepts/claude-code-three-modes]]"
+    type: related_to
+---
+
 # Claude Code Agent Teams 完整指南
 
 > 基于 20 份一手资料的综合分析（资深 AI 技术架构师视角）
@@ -380,37 +417,8 @@ performance issue. Read /tmp/context.md first."
 
 ## 附录：参考资料来源
 
-### Claude Code Agent Teams 一手资料（10 份）
+参见 [[synthesis/Research: Claude Code Agent Teams]] 完整来源列表（20 份一手资料）。
 
-1. `b90e7ec7-4ff8-446c-b988-849df3ad5b48` — Claude Code Agent Teams 功能实体
-2. `b5644c08-8f26-41f1-874f-c10e517017c0` — Claude Code 三种工作模式
-3. `46d6ae55-6a67-43b5-acbf-892d9e57b80f` — Agent Teams 工程机制详解
-4. `01f6250a-9f0e-4264-b8df-eb20b9b7af87` — Research: Claude Code Agent Teams
-5. `b06252d7-4616-4a34-b345-ef851d97e743` — Agent Team Mailbox 协议
-6. `9a7f1f02-6fc0-4440-a10d-80b48553fbc1` — Anthropic 官方文档
-7. `56e556b2-2578-456d-abfd-58a1a2a4aa36` — File Lock 防任务抢占
-8. `6e6fcbce-c6b5-4865-a641-72b01dc71fda` — 5 种显示模式
-9. `8ddacaef-bc3a-4bc6-96ac-e6c9a1eee184` — Tmux Split-Pane 配置
-10. `6d193931-c1a4-4f5b-bc39-7567153f8146` — Token 成本
-
-### 竞品资料（5 份 omo + 1 份 BMad）
-
-11. `113f2cc2-aa38-42f3-b6e3-f4b75d923b42` — omo 框架本体
-12. `198a9e5d-7f16-4073-bb17-5218a09ecc61` — omo Team Mode v4.0
-13. `5de75b13-2378-472f-8f9f-56741bd3ea38` — omo 5 Discipline Agents
-14. `5fb873f9-2ed4-48e1-bebd-f9ddf0ef66c5` — omo Ultrawork
-15. `69781994-0025-4196-aa34-34cd1e974f71` — omo 4 Category Routing
-16. `235f51e5-edae-41a9-b368-b2366d5d22d3` — BMad Party Mode 4 种模式
-
-### Q&A 缓存（4 份）
-
-17. `7d1f1fc9-9194-4f37-99d6-07633de50664` — teammate 数量上限
-18. `af85db2d-7f7f-439e-b8f5-68ec208bf8d7` — 适用场景与缺陷
-19. `5b56a4e0-9956-4e16-a6b6-14d083359f43` — 替代方案概览
-20. `93436428-0d74-44f1-a129-1eab1f806d97` — 三大方案横向对比
-
----
-
-**生成方式**：基于 NotebookLM 中 20 份一手资料，通过资深 AI 架构师视角综合整理
-**生成时间**：2026-08-06
+**生成方式**：基于 NotebookLM 中 20 份一手资料，通过资深 AI 架构师视角综合整理  
+**生成时间**：2026-08-06  
 **文档版本**：v1.0

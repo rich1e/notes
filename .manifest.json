@@ -1,8 +1,57 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-24T01:30:00Z",
+  "last_updated": "2026-08-27T00:00:00Z",
+  "sources": {
+    "https://joecode.com/2026-08-19-sqlite3/": {
+      "type": "url",
+      "title": "SQLite for Everything — JoeCode",
+      "ingested_at": "2026-08-26T12:00:00Z",
+      "content_hash": "sha256:defuddle-joecode-sqlite-for-everything",
+      "pages_created": [
+        "references/sqlite-for-everything.md",
+        "entities/sqlite.md",
+        "skills/sqlite-queue-pattern.md",
+        "concepts/sqlite-as-file-format.md"
+      ],
+      "pages_updated": [
+        "concepts/database-as-platform.md"
+      ],
+      "source_type": "document",
+      "project": null
+    },
+    "https://www.raphaelbauer.com/posts/postgresql-everything/": {
+      "type": "url",
+      "title": "PostgreSQL for Everything — Raphael Bauer",
+      "ingested_at": "2026-08-26T10:00:00Z",
+      "pages_created": [
+        "references/postgresql-for-everything.md",
+        "entities/postgresql.md",
+        "concepts/database-as-platform.md",
+        "concepts/postgres-extensions-ecosystem.md",
+        "skills/postgres-queue-pattern.md"
+      ],
+      "pages_updated": []
+    }
+  },
   "research": {
+    "tmux join-pane & swap-pane 用法": {
+      "type": "research",
+      "topic": "tmux join-pane & swap-pane 用法",
+      "researched_at": "2026-08-27T00:00:00Z",
+      "rounds_completed": 2,
+      "sources_fetched": 4,
+      "primary_source": "man.openbsd.org/tmux + man7.org/tmux + tmuxcheatsheet.com + local man tmux",
+      "pages_created": [
+        "skills/tmux-join-pane-swap-pane.md",
+        "concepts/tmux-pane-layout-rearrangement.md"
+      ],
+      "pages_updated": [
+        "skills/tmux.md",
+        "index.md",
+        "log.md"
+      ]
+    },
     "OpenCoworkAI/open-codesign": {
       "type": "research",
       "topic": "OpenCoworkAI/open-codesign AI/Skills/Session",

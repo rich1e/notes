@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-23T16:57:00Z*
+*This index is automatically maintained. Last updated: 2026-08-26T12:00:00Z*
 
 ## Concepts
 
@@ -50,6 +50,7 @@ title: Wiki Index
 - [[concepts/obsidian-wiki-vault-structure]] — obsidian-wiki 框架规定的目录布局：9 类目（concepts/entities/skills/references/synthesis/journal/projects/misc/sources）+ 4 系统文件（index.md/log.md/hot.md/.manifest.json）+ _meta/_insights/_raw 等内部目录
 - [[concepts/wiki-framework-self-reference]] — Ingest 框架本源仓库（Ar9av/obsidian-wiki）时的特殊拓扑：vault 已在用此框架，直接 distill 等于重复入库，只保留 3 页索引
 - [[concepts/tmux-pane-maximize-stateful]] — `<prefix> +` 比 `resize-pane -Z` 强：maximize 到专用 window 后仍可 split，跨 window 保留状态
+- [[concepts/tmux-pane-layout-rearrangement]] — tmux 三层 pane 重排模型：swap（同 window）/ join（跨 window）/ break（独立），含 marked pane 机制和编号 vs ID 区别
 - [[concepts/claude-code-three-modes]] — Claude Code 三种工作模式：Default（单会话）/ Subagents（主+短命子）/ Agent Teams（多独立长会话），核心差异是会话数而非能力
 - [[concepts/claude-code-agent-teams]] — Agent Teams 工程机制：team leader 委派 + agent 上下文隔离 + race-condition 任务锁 + 按 agent 模型分级调度 + shared memory MD
 - [[concepts/agent-team-display-modes]] — Agent Team 显示模式 5 选：in-process / split-panes / auto / tmux / iterm2
@@ -140,9 +141,13 @@ title: Wiki Index
 - [[concepts/throttlestop-fivr-undervolting]] — ThrottleStop 通过 MSR 0x150 写 FIVR 电压轨的详细路径；mV Boost @ 800 mV 避免 idle 饿死
 - [[concepts/alienware-bios-undervolt-unlock]] — Alienware HX 平台 BIOS UnderVolt Protection setup var 解锁流程（Smokeless_UMAF / 1.13.0+ 走 grubx64）
 - [[concepts/throttlestop-options]] — ThrottleStop 主窗口 FIVR / TPL / Speed Shift / BD PROCHOT 等按钮速查
+- [[concepts/database-as-platform]] — "数据库即平台"设计哲学：优先用 SQLite/PostgreSQL 替代专用系统，覆盖 11+ 种使用场景，降低基础设施复杂度（进程内极简端 vs 多用户网络端）
+- [[concepts/postgres-extensions-ecosystem]] — PostgreSQL 扩展生态全景：pgvector（向量）/ pgai（AI）/ TimescaleDB（时序）/ Apache AGE+openCypher（图）/ LTREE（树）/ ParadeDB（全文检索增强）
+- [[concepts/sqlite-as-file-format]] — SQLite 作为通用文件格式：≤100KB blob 比文件系统快 35%，原子多文件更新，省 20% 空间，「数据库即 fopen()」设计目标
 
 ## Entities
 
+- [[entities/herdr]] — AI Agent 感知终端工作区管理器，鼠标优先，后台服务器持有进程，专为 Claude/Codex 设计；`brew install herdr`；含 Claude Code Skill 安装方式
 - [[entities/open-codesign]] — OpenCoworkAI/open-codesign, MIT 开源设计 agent 桌面应用 (Electron + React 19 + BYOK),基于 pi-coding-agent 的 workspace-backed agent loop
 - [[entities/pi-coding-agent]] — Mario Zechner 的 agent loop 框架,open-codesign v0.2.0 直接以此为 AI 运行时
 - [[entities/mariozechner]] — pi-coding-agent / pi-mono 的作者
@@ -206,6 +211,8 @@ title: Wiki Index
 - [[entities/ruanyifeng-blog]] — 中文技术博客(ruanyifeng.com),产出多篇高质量 CLI/概念教程(rsync、SSH、cron 等);风格是参考性速查,带中文示例
 - [[entities/figwright]] — 双向 Figma MCP server(awdr74100, MIT):provider-first codegen + 本地 WebSocket 中继 + 112 tool + 免 Dev Mode 付费座位
 - [[entities/awdr74100-roya]] — Figwright 作者(GitHub @awdr74100),MIT 协议 figwright-mcp 主程
+- [[entities/postgresql]] — PostgreSQL：1996 年起发展的开源 RDBMS 首选默认项，扩展生态（pgvector/TimescaleDB/AGE/LTREE）使其可替代 11 种专用系统
+- [[entities/sqlite]] — 全球部署量最大的嵌入式数据库，进程内函数调用，公有领域，支持承诺至 2050 年，内置 FTS5/JSON/递归 CTE，sqlite-vec 向量扩展 (tier: core, bc 0.85)
 
 ## Skills
 
@@ -228,6 +235,7 @@ title: Wiki Index
 - [[skills/hackintosh-mini-build]] — 5000 元黑苹果小机箱（对标 Mac Studio），程序员装机指南
 - [[skills/tmux]] — Tmux 快捷键速查、推荐配置、关闭会话的 4 种替代方式（kill-server / kill-session -a / :kill-session / exit 级联）
 - [[skills/tmux-gpakos-config]] — gpakosz/.tmux 实战：安装（自动/手动/XDG）、热重载、`.local` 定制、Powerline 字体、TMUX_CONF_LOCAL env、卸载
+- [[skills/tmux-join-pane-swap-pane]] — join-pane 跨窗口移动 pane + swap-pane 交换 pane 位置：完整选项、marked pane 工作流、break-pane 反转模式、典型场景
 - [[skills/terminal-music]] — macOS 终端本地音乐播放（afplay + shell 函数）
 - [[skills/ique-dsi-camera]] — iQue DSi趣照 11种趣味相机、相册、幻灯片、照片管理完整操作
 - [[skills/ique-dsi-sound]] — iQue DSi趣音 麦克风录音、声音变换、SD卡 AAC 音乐播放
@@ -265,6 +273,8 @@ title: Wiki Index
 - [[skills/wiki-ingest]] — wiki-ingest 技能概览：append/full/raw 三模式 + Content Trust Boundary + Source Inheritance 规则
 - [[skills/chezmoi-keyring-template]] — chezmoi `{{ keyring "service" "account" }}` 模板用法，从 OS keychain 读密钥替换 dotfile 模板；坑：未渲染时模板字符串进 env
 - [[skills/macos-keychain-getBase64Key]] — macOS `security find-generic-password -w` + `go-keyring-base64:` 前缀 + base64 解码的完整读取 pattern
+- [[skills/postgres-queue-pattern]] — PostgreSQL SKIP LOCKED 消息队列模式：无需 Kafka/RabbitMQ，支持多消费者、至少一次投递、指数退避重试
+- [[skills/sqlite-queue-pattern]] — SQLite BEGIN IMMEDIATE 写锁队列模式，无 broker 进程内消息队列，含完整 SQL 实现 + WAL 配置 + 心跳清理，适合数千 msg/s 量级
 
 ## Synthesis
 
@@ -373,6 +383,8 @@ title: Wiki Index
 - [[references/techpowerup-m16-r1-undervolt-thread]] — TechPowerUp Alienware m16 R1 解锁 + mV Boost @ 800 MHz = +100 mV 模板
 - [[references/dell-kb-alienware-high-cpu-temp]] — Dell 官方对外星人 CPU 100°C 的立场（TCC 是设计不是故障）
 - [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
+- [[references/postgresql-for-everything]] — Raphael Bauer 文章：PostgreSQL 可替代 11 种专用系统（ES/MongoDB/Kafka/Redis/Neo4j），三大支柱（稳定/安装便捷/极简基础设施）
+- [[references/sqlite-for-everything]] — JoeCode「SQLite for Everything」文章蒸馏：11 个替代场景 + SQLite vs PostgreSQL 对比 + FTS5/sqlite-vec/BEGIN IMMEDIATE 三大技术点 (bc 0.55, blog quality)
 - [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
 - [[sources/anthropic-claude-code-agent-teams-docs]] — Anthropic 官方文档（v2.1.178+）：Agent Teams 4 组件 + 5 显示模式 + 3 hooks + 9 已知限制
 - [[sources/cnblogs-agent-teams-complete-guide]] — 博客园 _朝晖：Claude Code Agent Teams 中文完整教程（环境变量启用 / 4 类典型用法 / 3 层 teammates 模型 / 生命周期 / token 成本对比）
@@ -441,6 +453,7 @@ title: Wiki Index
 
 ## Misc
 
+- [[misc/claude-code-agent-teams-ppt-content]] — Claude Code Agent Teams 完整指南（PPT 综合）：架构四柱（独立 context / Mailbox IPC / 文件锁 / Lead 调度）、5 种显示模式、对抗式调试杀手场景、9 项限制、与 omo / BMad 三方案横向对比及决策树
 - [[misc/web-kashw1n-com-blog-nodejs-2025]] — 2025 现代 Node.js 范式综述：ESM/node: 前缀、内置 fetch/test runner、Streams + Web Streams 互转、Worker Threads 真并行、--watch/--env-file 取代 nodemon/dotenv、permission model、SEA、diagnostics_channel
 - [[misc/web-xda-developers-com-the-last-generation-of-fully-upgradeable-pcs]] — XDA 2026 评论：soldered RAM + LPDDR 扩散到桌面是 AI 工作负载驱动，可升级 DIY PC 可能正成为最后一代；Framework Desktop 标志性妥协 + Intel Lunar Lake/Apple M-series/Snapdragon X 全面板载
 - [[misc/web-adamchanadam-github-io-agent-handoff-kit]] — Adam Chan 的 npm 工具 Agent Handoff Kit(v0.3.56):一句 init 铺好交接文件 + 分任务工作规则包,让本地 AI agent(Claude Code/Codex/Gemini CLI 等)跨会话「开工/收工」接力,高风险操作强制预演+确认;是 [[concepts/agent-operating-system]] Handoff 层的工具化落地
