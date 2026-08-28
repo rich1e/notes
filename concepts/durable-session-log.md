@@ -186,3 +186,4 @@ telemetry / billing / debugging 都是 log 的 query。
 - [[concepts/cordis-plugin-framework]] — events 的 Cordis 类型化机制
 - [[concepts/deterministic-agent-memory]] — vault 已有相似主题
 - [[entities/deepseek-harness]] — dsh 实现
+- [[synthesis/concepts-sqlite-as-file-format × concepts-durable-session-log]] — synthesis: SQLite fopen() 哲学与 session log 可重建性的交汇

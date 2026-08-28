@@ -102,3 +102,4 @@ CREATE TABLE assets (
 - [[entities/sqlite]]
 - [[concepts/database-as-platform]]
 - [[references/sqlite-for-everything]]
+- [[synthesis/concepts-sqlite-as-file-format × concepts-durable-session-log]] — synthesis: SQLite fopen() 哲学与 session log 可重建性的交汇

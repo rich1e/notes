@@ -149,6 +149,7 @@ title: Wiki Index
 
 - [[entities/herdr]] — AI Agent 感知终端工作区管理器，鼠标优先，后台服务器持有进程，专为 Claude/Codex 设计；`brew install herdr`；含 Claude Code Skill 安装方式
 - [[entities/open-codesign]] — OpenCoworkAI/open-codesign, MIT 开源设计 agent 桌面应用 (Electron + React 19 + BYOK),基于 pi-coding-agent 的 workspace-backed agent loop
+- [[entities/opencoworkai]] — OpenCoworkAI 组织：发布 open-codesign 的 MIT 团队，Claude Design / v0 / Lovable 的开源替代，BYOK + 本地优先
 - [[entities/pi-coding-agent]] — Mario Zechner 的 agent loop 框架,open-codesign v0.2.0 直接以此为 AI 运行时
 - [[entities/mariozechner]] — pi-coding-agent / pi-mono 的作者
 - [[entities/deepseek-harness]] — DeepSeek-AI 开源 agent harness (dsh), MIT, vendored Cordis, TS+pnpm monorepo, 24 个 package group
@@ -450,6 +451,11 @@ title: Wiki Index
 - [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent]] — Mailbox 协议(JSON inbox + 逐条校验 + 自愈)是 Agent Teams 工程级 IPC;BMad 命名 Agent 是产品化 IPC(角色契约)。两者用截然不同的抽象层解决"多 agent 同时改同一文件"
 - [[synthesis/concepts-design-system-as-ai-context × entities-claude-code]] — DESIGN.md 编译视觉决策为 LLM 可读 schema,Claude Code 是最大消费方(通过 Stitch MCP/Figwright MCP 等 7+ 集成)
 - [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method]] — 确定性 agent 记忆哲学(hot path 0 LLM)在工程层落地;BMad 方法论(4 阶段交付闭环)在产品层落地。两者都用结构对抗 LLM 自由度,战场不同
+- [[synthesis/concepts-database-as-platform × concepts-no-llm-hot-path]] — 两种「以简驭复」原则的同构性：用数据库替代专用系统，用确定性算法替代 LLM——都是把不必要的复杂度推出热路径
+- [[synthesis/concepts-agentic-design × concepts-design-md-shared-memory]] — DESIGN.md 是 agentic design 的「已编译状态」——把设计决策从人脑转移到文件，使 agent 能在不重复问设计问题的情况下持续工作
+- [[synthesis/skills-postgres-queue-pattern × skills-sqlite-queue-pattern]] — 同一队列模式在两种规模下的落地：SQLite BEGIN IMMEDIATE（进程内，<5K msg/s）vs PostgreSQL SKIP LOCKED（多消费者网络）
+- [[synthesis/concepts-sqlite-as-file-format × concepts-durable-session-log]] — SQLite 的「更好的 fopen()」哲学与 durable session log 的「model-visible ⟺ logged」invariant 指向同一个设计选择：零基础设施、可重建的持久化
+- [[synthesis/entities-sqlite × entities-postgresql]] — 同一「数据库替代专用系统」哲学的两个端点：SQLite（进程内，零基础设施）与 PostgreSQL（多用户网络，全功能生态）
 
 ## Misc
 

@@ -136,3 +136,4 @@ commit 789xyz — docs: clarify heading hierarchy
 - [[concepts/design-md-format-spec]] —— vault 已有 DESIGN.md 格式规范
 - [[concepts/design-system-as-ai-context]] —— 上位概念
 - [[entities/google-stitch]] —— 同源产品
+- [[synthesis/concepts-agentic-design × concepts-design-md-shared-memory]] — synthesis: DESIGN.md 是 agentic design 的「已编译状态」

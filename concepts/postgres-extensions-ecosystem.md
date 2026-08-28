@@ -15,8 +15,8 @@ sources:
 created: 2026-08-26T00:00:00Z
 updated: 2026-08-26T00:00:00Z
 tier: reference
-lifecycle: established
-lifecycle_changed: "2026-08-26"
+lifecycle: verified
+lifecycle_changed: "2026-08-28"
 base_confidence: 0.82
 provenance:
   extracted: 0.88

@@ -12,8 +12,8 @@ sources:
 created: 2026-08-26T00:00:00Z
 updated: 2026-08-26T00:00:00Z
 tier: core
-lifecycle: established
-lifecycle_changed: "2026-08-26"
+lifecycle: verified
+lifecycle_changed: "2026-08-28"
 base_confidence: 0.90
 provenance:
   extracted: 0.85
@@ -137,3 +137,4 @@ SELECT * FROM topics WHERE path <@ 'Science.Computer';
 - [[concepts/postgres-extensions-ecosystem]]
 - [[skills/postgres-queue-pattern]]
 - [[references/postgresql-for-everything]]
+- [[synthesis/entities-sqlite × entities-postgresql]] — synthesis: 同一哲学的进程内端与网络端

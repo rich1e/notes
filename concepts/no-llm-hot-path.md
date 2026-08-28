@@ -158,3 +158,4 @@ LLM 从不在 hot path,但 cold path 可用,绝不被强制。
 - [[concepts/claude-mem-memory-architecture]] —— 异步概率记忆的互补方案
 - [[concepts/agent-operating-system]] —— 五层框架
 - [[entities/treehouse]] —— 同思路的另一基础设施
+- [[synthesis/concepts-database-as-platform × concepts-no-llm-hot-path]] — synthesis: 两种「以简驭复」原则的同构性

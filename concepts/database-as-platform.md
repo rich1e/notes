@@ -14,8 +14,8 @@ sources:
 created: 2026-08-26T00:00:00Z
 updated: 2026-08-26T12:00:00Z
 tier: core
-lifecycle: established
-lifecycle_changed: "2026-08-26"
+lifecycle: verified
+lifecycle_changed: "2026-08-28"
 base_confidence: 0.80
 provenance:
   extracted: 0.75
@@ -137,3 +137,5 @@ SQLite（嵌入式，进程内，单文件）
 - [[skills/sqlite-queue-pattern]]
 - [[references/postgresql-for-everything]]
 - [[references/sqlite-for-everything]]
+- [[synthesis/concepts-database-as-platform × concepts-no-llm-hot-path]] — synthesis: 两种「以简驭复」原则的同构性
+- [[synthesis/entities-sqlite × entities-postgresql]] — synthesis: 同一哲学的进程内端与网络端

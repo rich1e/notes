@@ -167,3 +167,4 @@ WHERE status   = 'running'
 - [[skills/postgres-queue-pattern]]
 - [[concepts/database-as-platform]]
 - [[references/sqlite-for-everything]]
+- [[synthesis/skills-postgres-queue-pattern × skills-sqlite-queue-pattern]] — synthesis: 同一队列模式在两种规模下的落地

@@ -121,3 +121,4 @@ vault 中 [[projects/figma/figma]] 是用户本地的 figma 项目,运行于 ope
 - [[concepts/design-md-shared-memory]]
 - [[concepts/skill-progressive-disclosure]]
 - [[projects/figma/figma]]
+- [[synthesis/concepts-agentic-design × concepts-design-md-shared-memory]] — synthesis: DESIGN.md 是 agentic design 的「已编译状态」

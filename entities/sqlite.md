@@ -13,8 +13,8 @@ sources:
 created: 2026-08-26T00:00:00Z
 updated: 2026-08-26T00:00:00Z
 tier: core
-lifecycle: established
-lifecycle_changed: "2026-08-26"
+lifecycle: verified
+lifecycle_changed: "2026-08-28"
 base_confidence: 0.85
 provenance:
   extracted: 0.85
@@ -125,3 +125,4 @@ SQLite
 - [[references/sqlite-for-everything]]
 - [[skills/sqlite-queue-pattern]]
 - [[concepts/sqlite-as-file-format]]
+- [[synthesis/entities-sqlite × entities-postgresql]] — synthesis: 同一哲学的进程内端与网络端

@@ -13,8 +13,8 @@ sources:
 created: 2026-08-26T00:00:00Z
 updated: 2026-08-26T00:00:00Z
 tier: core
-lifecycle: established
-lifecycle_changed: "2026-08-26"
+lifecycle: verified
+lifecycle_changed: "2026-08-28"
 base_confidence: 0.85
 provenance:
   extracted: 0.80
@@ -201,3 +201,4 @@ WHERE status = 'processing'
 - [[concepts/database-as-platform]]
 - [[concepts/postgres-extensions-ecosystem]]
 - [[references/postgresql-for-everything]]
+- [[synthesis/skills-postgres-queue-pattern × skills-sqlite-queue-pattern]] — synthesis: 同一队列模式在两种规模下的落地
