@@ -10,3 +10,5 @@
 
 # Obsidian workspace state (local UI state, no need to track)
 .obsidian/workspace.json
+
+.obsidian/plugins/recent-files-obsidian/data.json
