@@ -189,3 +189,7 @@ README 与 benchmark 公开宣称 **25 → 16 round-trips**(excalidraw),**−26%
 - MCP 工具清单:`docs/mcp-tools.md`
 - 算法细节:`docs/ALGORITHMS.md`
 - Benchmark 公开数据:`docs/AGENT-BENCHMARKS.md`
+
+## Related
+
+- [[synthesis/concepts-deterministic-agent-memory × entities-openlore|确定性 Agent 记忆 × OpenLore]] — synthesis(哲学 vs 参考实现的成熟路径)

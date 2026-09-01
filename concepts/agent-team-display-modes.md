@@ -154,3 +154,4 @@ vault 已有 6 个 tmux 概念页（gpakosz cluster）— **本模式系统**把
 - [[concepts/claude-code-agent-teams]] — Agent Teams 总体
 - [[concepts/tmux-pane-split-for-agents]] — 视频教程视角（与本官方版对比有字段差异）
 - anthropic-claude-code-agent-teams-docs — 官方一手
+- [[synthesis/concepts-agent-team-display-modes × entities-claude-code-agent-teams-feature|Agent Teams 显示模式 × Agent Teams 特性]] — synthesis(隔离域选择)

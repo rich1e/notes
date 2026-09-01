@@ -64,3 +64,4 @@ relationships:
 - [[entities/google-labs-code-design]] — 官方规范仓库
 - [[entities/google-stitch]] — DESIGN.md 的原始生产者
 - [[concepts/design-md-format-spec]] — 仓库遵循的规范
+- [[synthesis/concepts-design-md-format-spec × entities-awesome-design-md|DESIGN.md 格式规范 × awesome-design-md]] — synthesis(规范 vs 最大下游样本集的校准回路)

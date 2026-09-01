@@ -132,3 +132,4 @@ YouTube 教程 [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] 提到 "$1.15 / 4 �
 - [[concepts/ai-tool-specialization]] — 按模型分级调度
 - anthropic-claude-code-agent-teams-docs — 官方一手
 - [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent|Agent Team 成本 × omo 编排器]] — synthesis
+- [[synthesis/concepts-agent-team-cost-overhead × entities-claude-code-agent-teams-feature|Agent Teams 成本曲线 × Agent Teams 特性]] — synthesis(线性扩展与功能门控的权衡)

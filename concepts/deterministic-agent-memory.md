@@ -146,3 +146,5 @@ not-found 不给相似替代
 ## Related
 
 - [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method|确定性 Agent 记忆 × BMad 方法论]] — synthesis
+- [[synthesis/concepts-deterministic-agent-memory × entities-openlore|确定性 Agent 记忆 × OpenLore]] — synthesis(哲学 vs 参考实现的成熟路径)
+- [[synthesis/concepts-agent-team-race-condition-task-claim × concepts-deterministic-agent-memory|任务竞态保护 × 确定性 Agent 记忆]] — synthesis(同一哲学在动态调度上的延伸)

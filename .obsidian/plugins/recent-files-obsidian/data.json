@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
       "basename": "chezmoi-workflow",
       "path": "concepts/chezmoi-workflow.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "zsh-shell-config-patterns",
       "path": "concepts/zsh-shell-config-patterns.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "figwright",

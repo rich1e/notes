@@ -289,6 +289,11 @@ title: Wiki Index
 - [[synthesis/concepts-chezmoi-workflow × concepts-dotfile-manager]] — Dotfile 管理工具三层谱系:基础(手动+git)/中级(Stow symlink farm)/高级(chezmoi 三态+模板+加密),决策树按密钥/跨机/跨 OS 维度选型
 - [[synthesis/concepts-chezmoi-templating × skills-statusline-template-injection-defense]] — chezmoi `{{ keyring ... }}` 模板注入密钥到 dotfile + statusline env-first + keychain-fallback 的耦合陷阱:未渲染时字面模板字符串当 Bearer token,修复必须在消费者侧(`grep -q "{{"` 启发式守卫)
 - [[synthesis/Research: open-codesign]] — OpenCoworkAI/open-codesign 3 轮研究综合：v0.2.0 Agentic Design(workspace-backed sessions + 8 工具 + DESIGN.md shared memory)+ pi-coding-agent JSONL session tree + progressive skill disclosure
+- [[synthesis/concepts-deterministic-agent-memory × entities-openlore]] — 确定性 agent 记忆(哲学)与 OpenLore(参考实现)的成熟路径：四阶段(概念→实现→skill→综合);同一哲学既能答"代码事实可重现"也能答"任务认领不可冲突"
+- [[synthesis/concepts-agent-team-display-modes × entities-claude-code-agent-teams-feature]] — 5 个 teammateMode 实际是 _隔离域_ 选择而非平行 UI 选项;推荐 tmux 是因为同时满足可观测性 + 可介入性
+- [[synthesis/concepts-agent-team-cost-overhead × entities-claude-code-agent-teams-feature]] — 线性扩展成本 × 实验特性门控 = 同一约束方程两侧;3-5 teammates 推荐数字背后是特性能力与经济曲线的拐点
+- [[synthesis/concepts-agent-team-race-condition-task-claim × concepts-deterministic-agent-memory]] — 文件锁作为 task claim 防 race 是确定性哲学在 _动态调度_ 上的延伸;OpenLore(读时确定性)与 Agent Teams(写时确定性)共享文件系统作为协调总线
+- [[synthesis/concepts-design-md-format-spec × entities-awesome-design-md]] — 规范(8 章节)vs 最大下游样本集(74 站点扩展到 11 章节)的 _校准回路_;awesome 列表是规范的校准数据源,而非单纯参考集合
 
 ## Projects
 
@@ -490,3 +495,10 @@ title: Wiki Index
 - [[journal/fire-emblem-new-mystery-prologue]] — FE 新·黑暗龙序章四部分攻略
 - [[journal/fire-emblem-mystery-chapter1]] — FE 新·黑暗龙第1章攻略：マルスの旅立ち
 - [[journal/nds-flashcard-memories]] — NDS 世代烧录卡横评回忆录
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — brew-weekly-blog 0831 周报生成 + darwin-skill 优化 session
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — Darwin 9 维评估在 brew-weekly-blog 上的实战:78.0 → 86.5 (+8.5)
+- [[concepts/three-segment-fallback-table]] — 「触发条件 / 一线修复 / 仍失败兜底」三段式 fallback 表的设计模式
+- [[concepts/darwin-ratchet-mechanism]] — Darwin 棘轮机制:严格 keep / revert + HL-4 触顶信号(连续 2 轮 Δ<2 见好就收)
+- [[skills/darwin-skill-evaluation-rubric]] — Darwin 9 维评分框架速查表(dim1-9 权重 / HL 操作精髓 / 实战数据)
+- [[skills/skill-runtime-neutrality-grep]] — Runtime 适配性审查的固定 grep 模式 + 修复模板
+- [[entities/homebrew-weekly-blog-skill]] — brew-weekly-blog skill 实体(7 步工作流 + 8 条反例黑名单 + 2026-08-31 经 darwin 优化到 86.5)

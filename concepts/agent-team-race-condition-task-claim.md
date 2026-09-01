@@ -94,3 +94,4 @@ T3: read TaskList  → task X is pending  → claim X  ← RACE
 - [[concepts/agent-team-mailbox-protocol]] — Mailbox JSON 文件协议（同级 IPC 通道）
 - anthropic-claude-code-agent-teams-docs — 官方一手
 - csdn-agent-teams-multi-process — IPC 工程视角
+- [[synthesis/concepts-agent-team-race-condition-task-claim × concepts-deterministic-agent-memory|任务竞态保护 × 确定性 Agent 记忆]] — synthesis(同一哲学在动态调度上的延伸)

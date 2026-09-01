@@ -157,4 +157,5 @@ CLI 输出 JSON，severity ∈ {error, warning, info}。详见 google-design-md-
 - awesome-design-md-repo — 74 个真实样本
 - [[concepts/design-md-token-interpolation]] — `{path.to.token}` 引用机制
 - [[concepts/design-md-anti-patterns]] — "AI taste" 与反模式
+- [[synthesis/concepts-design-md-format-spec × entities-awesome-design-md|DESIGN.md 格式规范 × awesome-design-md]] — synthesis(规范 vs 最大下游样本集的校准回路)
 - [[concepts/design-system-as-ai-context]] — 上游：为什么 DESIGN.md 是 AI agent 的硬约束

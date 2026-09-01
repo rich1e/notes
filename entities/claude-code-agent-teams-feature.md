@@ -135,3 +135,5 @@ Anthropic 演示了用 **16 个 agents** 自主构建 C 编译器的用例（ant
 - anthropic-claude-code-agent-teams-docs — 官方一手文档
 - [[concepts/claude-code-agent-teams]] — 概念抽象
 - [[misc/web-youtube-com-watch-v-cskoa-ccmq0w]] — 视频教程（与官方多处矛盾，已修正）
+- [[synthesis/concepts-agent-team-display-modes × entities-claude-code-agent-teams-feature|Agent Teams 显示模式 × Agent Teams 特性]] — synthesis(隔离域选择)
+- [[synthesis/concepts-agent-team-cost-overhead × entities-claude-code-agent-teams-feature|Agent Teams 成本曲线 × Agent Teams 特性]] — synthesis(线性扩展与功能门控)
