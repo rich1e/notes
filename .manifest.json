@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-09-03T03:30:00Z",
+  "last_updated": "2026-09-03T04:30:00Z",
   "sources": {
     "_raw/2026-09-02-nstextattachment-bounds-overflow.md": {
       "content_hash": "sha256:f7f20bd63b6d390d9a3bbe6040370ab409b0d0f43a2972a0cbd31b98b0fbf6ca",
@@ -1339,6 +1339,35 @@
         "hot.md"
       ],
       "last_ingested": "2026-08-14T08:00:00Z"
+    },
+    "https://fatbobman.com/zh/posts/mixing_text_and_graphics_with_text_in_swiftui/": {
+      "content_hash": "sha256:9ad1d458ec2a994bbe26d982240cd87f89235348143ff0b28f6d126205c4461d",
+      "last_ingested": "2026-09-03T03:50:00Z",
+      "pages_produced": [
+        "misc/web-fatbobman-com-mixing-text-and-graphics-with-text-in-swiftui.md"
+      ],
+      "source_type": "url",
+      "project": null
+    },
+    "https://fatbobman.com/zh/posts/a-deep-dive-into-swiftui-rich-text-layout/": {
+      "content_hash": "sha256:f14ab444156687bbde3bf90bacfb87cf7b49c3f8efb5f0b95db56518c00983fb",
+      "last_ingested": "2026-09-03T04:10:00Z",
+      "pages_produced": [
+        "references/fatbobman-swiftui-rich-text-layout.md"
+      ],
+      "source_type": "url",
+      "project": null
+    },
+    "https://github.com/swiftlang/swift-markdown": {
+      "content_hash": "sha256:bb354f5ee26f97a80bea96da70628d71c97b25e01e4e845afe4f5b1d0b6cf6e2",
+      "last_ingested": "2026-09-03T04:30:00Z",
+      "pages_produced": [
+        "entities/swift-markdown.md",
+        "concepts/persistent-copy-on-write-markup-tree.md",
+        "references/swift-markdown-package.md"
+      ],
+      "source_type": "url",
+      "project": null
     }
   },
   "research": {
@@ -1748,8 +1777,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 89,
-    "total_pages": 433,
+    "total_sources_ingested": 92,
+    "total_pages": 438,
     "total_projects": 3,
     "last_full_rebuild": null
   },

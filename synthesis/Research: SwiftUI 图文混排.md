@@ -154,3 +154,7 @@ Apple `AttributedString(markdown:)` (iOS 15+) 只覆盖粗体/斜体/链接,**�
 - [[references/uikit-nstextattachment-vs-appkit]]
 - [[references/cs193p-spring-2025]]
 - [[references/ios-design-patterns]]
+
+## Related
+
+- [[entities/swift-markdown]] — Apple 官方 Swift Markdown (cmark-gfm 集成),被 MarkdownView/RichText/DocC/X-Grok/Hugging Face Chat 采用

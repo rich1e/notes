@@ -82,6 +82,7 @@ SwiftUI 富文本/图文混排选型有**两个轴**:read-only 显示 vs 可编�
 
 ## Related
 
+- [[entities/swift-markdown]] — Apple 官方 markdown parser (cmark-gfm backend),vault 内所有 SwiftUI markdown 渲染方案的解析后端
 - [[skills/uiviewrepresentable-uitextview-rich-text]]
 - [[references/apple-developer-nstextattachment-docs]]
 - [[projects/dayfold/skills/auto-expanding-texteditor-scroll]]

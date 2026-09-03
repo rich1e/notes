@@ -6,7 +6,8 @@ title: Wiki Index
 
 *This index is automatically maintained. Last updated: 2026-08-26T12:00:00Z*
 
-## Concepts
+## Concepts- [[concepts/persistent-copy-on-write-markup-tree]] — Apple 不可变 + CoW + visitor 模式,SwiftSyntax/swift-markdown 设计哲学
+
 - [[concepts/swiftui-rich-text-rendering-comparison]] — SwiftUI 富文本方案对比矩阵:TextEditor / AttributedString / MarkdownUI / Down / UIKit bridged
 
 - [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service (ctx.<key>) / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
@@ -147,6 +148,7 @@ title: Wiki Index
 - [[concepts/sqlite-as-file-format]] — SQLite 作为通用文件格式：≤100KB blob 比文件系统快 35%，原子多文件更新，省 20% 空间，「数据库即 fopen()」设计目标
 
 ## Entities
+- [[entities/swift-markdown]] — Apple 官方 Swift Markdown 解析库(基于 cmark-gfm),持久化 CoW markup tree,被 MarkdownView/RichText/DocC 采用
 
 - [[entities/herdr]] — AI Agent 感知终端工作区管理器，鼠标优先，后台服务器持有进程，专为 Claude/Codex 设计；`brew install herdr`；含 Claude Code Skill 安装方式
 - [[entities/open-codesign]] — OpenCoworkAI/open-codesign, MIT 开源设计 agent 桌面应用 (Electron + React 19 + BYOK),基于 pi-coding-agent 的 workspace-backed agent loop
@@ -362,7 +364,8 @@ title: Wiki Index
 - [[projects/figwright/references/figwright-tool-taxonomy]] — 112 tool 三分类(Read/Write/Grounding)索引
 - [[projects/figwright/references/figwright-shared-protocol]] — shared package 7+ 文件职责速查(codec/envelope/heartbeat/rpc/protocol/serialized-node/queries)
 
-## References
+## References- [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 深度解析:MarkdownView → MarkdownText 失败 → RichText (NSTextView + View overlay + Mirror View.id) 3 代演进
+
 - [[references/apple-developer-nstextattachment-docs]] — Apple NSTextAttachment 三件套文档:类 + iOS 15+ NSTextAttachmentLayout 协议 + view provider
 
 - [[references/open-codesign-readme]] — OpenCoworkAI/open-codesign README:Electron+React 19+Vite 6+Tailwind v4 monorepo,AI 基于 @mariozechner/pi-ai + pi-coding-agent,BYOK 多模型
@@ -479,6 +482,7 @@ title: Wiki Index
 - [[synthesis/entities-sqlite × entities-postgresql]] — 同一「数据库替代专用系统」哲学的两个端点：SQLite（进程内，零基础设施）与 PostgreSQL（多用户网络，全功能生态）
 
 ## Misc
+- [[misc/web-fatbobman-com-mixing-text-and-graphics-with-text-in-swiftui]] — SwiftUI Text 图文混排 4 种方案(预制图缩放 / overlay 占位 / ImageRenderer / TextRenderer)
 
 - [[misc/claude-code-agent-teams-ppt-content]] — Claude Code Agent Teams 完整指南（PPT 综合）：架构四柱（独立 context / Mailbox IPC / 文件锁 / Lead 调度）、5 种显示模式、对抗式调试杀手场景、9 项限制、与 omo / BMad 三方案横向对比及决策树
 - [[misc/web-kashw1n-com-blog-nodejs-2025]] — 2025 现代 Node.js 范式综述：ESM/node: 前缀、内置 fetch/test runner、Streams + Web Streams 互转、Worker Threads 真并行、--watch/--env-file 取代 nodemon/dotenv、permission model、SEA、diagnostics_channel
