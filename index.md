@@ -307,6 +307,12 @@ title: Wiki Index
 - [[projects/dayfold/skills/soft-delete-with-trash]] — deletedAt 时间戳 + FetchRequest predicate 隔离
 - [[projects/dayfold/skills/warm-theme-tokens]] — Color.warmPaper / Font.warmHeadline / .warmCard() 视觉 token
 - [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义左滑删除 + 速度阈值 + 圆角并入
+- [[projects/dayfold/skills/dayone-photo-library-picker]] — Photos 自研深色多选：组级预热 + opportunistic 缩略图 + ≤2048px 回传 + 附件时间位置采纳
+- [[projects/dayfold/skills/auto-expanding-texteditor-scroll]] — UITextView 关内滚撑高 + 外层 ScrollView（阶段 H 后 imageFlow 与 ScrollViewReader 已移除）
+- [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 非滚动 UITextView 的 intrinsic 宽度反向撑宽整个 SwiftUI 层级
+- [[projects/dayfold/skills/nstextattachment-bounds-overflow]] — NSTextAttachment 在 UITextView 中被纵向拉伸：bounds.width 超过 textContainer.lineFragmentWidth 触发回行放大，须以 textContainer.size.width 算 attachment
+- [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]] — 图文混排下 ScrollViewReader.scrollTo(anchor: .bottom) 把标题/历史图/历史文本推出屏幕顶部的反行为
+- [[projects/dayfold/skills/simulator-runtime-log-capture]] — simctl --console-pty 抓 NSLog；strings 查不到 Swift 字面量不代表代码未执行
 - [[projects/dayfold/references/source-tree]] — 源码目录布局与各模块职责
 - [[projects/dayfold/references/stitch-design-system]] — Stitch 设计系统资产索引（Project ID、Asset ID、已生成屏幕、本地文件布局）
 - [[projects/figma/figma]] — Photo Album Mobile UI 八屏 React artifact,CoDesign 自包含 JSX 在 iPhone 14/15 Pro/Max 三机型框中预览
@@ -365,6 +371,7 @@ title: Wiki Index
 - [[references/ique-dsi-wifi-glossary]] — iQue DSi 网络术语表（SSID/WEP/WPA/AOSS/WPS等）
 - [[references/ique-dsi-shop]] — iQue DSi 商店与 iQue 点数购买、充值、限制说明
 - [[references/ios-design-patterns]] — GoF 23 种设计模式速查（创建/结构/行为）+ iOS 常见反模式清单
+- [[references/uikit-nstextattachment-vs-appkit]] — UIKit NSTextAttachment 没有 AppKit 风格的 imageBounds(for: ContentModeType: ...) override;iOS 15+ 用 NSTextAttachmentLayout 协议族
 - [[references/ptp-book-overview]] — PTP技术书（Lularible），41节从思想实验到 LinuxPTP 源码到 ptp-lite 实现
 - [[references/macos-window-switchers]] — macOS 窗口切换器对比速查：AltTab / BetterCmdTab / Contexts / Witch 在许可证/macOS 兼容/布局/触发方式上的差异
 - [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接

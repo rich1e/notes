@@ -53,6 +53,19 @@ Container `iCloud.com.Yuqi.dayfold`。
   （`Color.warmPaper` / `Font.warmHeadline` / `.warmCard()`）。
 - [[projects/dayfold/skills/swipe-to-delete-row]] — 自定义手势 + 速度阈值 + 角落圆角并入
   的左滑删除容器。
+- [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 图文混排编辑器：非滚动
+  UITextView 把被超宽 attachment 撑大的 contentSize 报成 intrinsic 宽度，撑宽整个 SwiftUI 层级；
+  须 override `intrinsicContentSize` 锁死横向。
+- [[projects/dayfold/skills/nstextattachment-bounds-overflow]] — 同根因的上游修复：
+  attachment.bounds.width 超过 textContainer.lineFragmentWidth 触发回行放大，
+  须用 `textContainer.size.width` 而非 `bounds.width` 算 attachment 目标尺寸。
+- [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]] — 图文混排下
+  `ScrollViewReader.scrollTo(anchor: .bottom)` 把标题与历史图片推出屏幕顶部的反行为；
+  改由内层 UITextView 自管 caret 可见性即可。
+- [[projects/dayfold/skills/dayone-photo-library-picker]] — 自研 Photos 框架深色多选选择器：
+  PHCachingImageManager 组级视口预热 + ≤2048px 选择器内降采样。
+- [[projects/dayfold/skills/simulator-runtime-log-capture]] — 模拟器运行时日志抓取
+  （`simctl launch --console-pty`）与"代码是否真在跑"的验证纪律。
 
 ## 设计系统（Stitch）
 

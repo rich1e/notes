@@ -5,6 +5,10 @@
       "path": "index.md"
     },
     {
+      "basename": "auto-expanding-texteditor-scroll",
+      "path": "projects/dayfold/skills/auto-expanding-texteditor-scroll.md"
+    },
+    {
       "basename": "chezmoi-workflow",
       "path": "concepts/chezmoi-workflow.md"
     },
@@ -187,18 +191,6 @@
     {
       "basename": "Book Sync",
       "path": "Chronicle/2022/Book Sync.md"
-    },
-    {
-      "basename": "Fiddler Everywhere Crack 尝试",
-      "path": "Chronicle/2022/Fiddler Everywhere Crack 尝试.md"
-    },
-    {
-      "basename": "单机版启动缓慢调查",
-      "path": "Chronicle/2023/单机版启动缓慢调查.md"
-    },
-    {
-      "basename": "自建 OSS",
-      "path": "Chronicle/2023/自建 OSS.md"
     }
   ],
   "omittedPaths": [],

@@ -1,283 +1,37 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-08-27T00:00:00Z",
+  "last_updated": "2026-09-03T01:54:05Z",
   "sources": {
-    "https://joecode.com/2026-08-19-sqlite3/": {
-      "type": "url",
-      "title": "SQLite for Everything — JoeCode",
-      "ingested_at": "2026-08-26T12:00:00Z",
-      "content_hash": "sha256:defuddle-joecode-sqlite-for-everything",
-      "pages_created": [
-        "references/sqlite-for-everything.md",
-        "entities/sqlite.md",
-        "skills/sqlite-queue-pattern.md",
-        "concepts/sqlite-as-file-format.md"
+    "_raw/2026-09-02-nstextattachment-bounds-overflow.md": {
+      "content_hash": "sha256:f7f20bd63b6d390d9a3bbe6040370ab409b0d0f43a2972a0cbd31b98b0fbf6ca",
+      "last_ingested": "2026-09-03T01:54:05Z",
+      "pages_produced": [
+        "projects/dayfold/skills/nstextattachment-bounds-overflow.md",
+        "projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment.md",
+        "references/uikit-nstextattachment-vs-appkit.md"
       ],
-      "pages_updated": [
-        "concepts/database-as-platform.md"
+      "source_type": "document",
+      "project": "dayfold"
+    },
+    "_raw/2026-09-02-swiftui-editor-scrollview-vs-attachment.md": {
+      "content_hash": "sha256:2dc0a01c4bc1c069ba5ac4a52c58cc22d6f6146f3cd801274470d4e4e386fe41",
+      "last_ingested": "2026-09-03T01:54:05Z",
+      "pages_produced": [
+        "projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment.md"
+      ],
+      "source_type": "document",
+      "project": "dayfold"
+    },
+    "_raw/2026-09-02-uikit-nstextattachment-imagebounds-api-gap.md": {
+      "content_hash": "sha256:74a869a780dd50114e56efa8603283391105f2774da13753092c8140adc4e6f4",
+      "last_ingested": "2026-09-03T01:54:05Z",
+      "pages_produced": [
+        "references/uikit-nstextattachment-vs-appkit.md"
       ],
       "source_type": "document",
       "project": null
     },
-    "https://www.raphaelbauer.com/posts/postgresql-everything/": {
-      "type": "url",
-      "title": "PostgreSQL for Everything — Raphael Bauer",
-      "ingested_at": "2026-08-26T10:00:00Z",
-      "pages_created": [
-        "references/postgresql-for-everything.md",
-        "entities/postgresql.md",
-        "concepts/database-as-platform.md",
-        "concepts/postgres-extensions-ecosystem.md",
-        "skills/postgres-queue-pattern.md"
-      ],
-      "pages_updated": []
-    }
-  },
-  "research": {
-    "tmux join-pane & swap-pane 用法": {
-      "type": "research",
-      "topic": "tmux join-pane & swap-pane 用法",
-      "researched_at": "2026-08-27T00:00:00Z",
-      "rounds_completed": 2,
-      "sources_fetched": 4,
-      "primary_source": "man.openbsd.org/tmux + man7.org/tmux + tmuxcheatsheet.com + local man tmux",
-      "pages_created": [
-        "skills/tmux-join-pane-swap-pane.md",
-        "concepts/tmux-pane-layout-rearrangement.md"
-      ],
-      "pages_updated": [
-        "skills/tmux.md",
-        "index.md",
-        "log.md"
-      ]
-    },
-    "OpenCoworkAI/open-codesign": {
-      "type": "research",
-      "topic": "OpenCoworkAI/open-codesign AI/Skills/Session",
-      "researched_at": "2026-08-24T01:30:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 4,
-      "primary_source": "GitHub README + CHANGELOG + DeepWiki 4.2 + pi-coding-agent session docs",
-      "pages_created": [
-        "synthesis/Research: open-codesign.md",
-        "references/open-codesign-readme.md",
-        "references/open-codesign-changelog.md",
-        "references/open-codesign-prompt-system-deepwiki.md",
-        "references/pi-coding-agent-session-format.md",
-        "concepts/agentic-design.md",
-        "concepts/jsonl-session-tree.md",
-        "concepts/skill-progressive-disclosure.md",
-        "concepts/design-md-shared-memory.md",
-        "entities/open-codesign.md",
-        "entities/pi-coding-agent.md",
-        "entities/mariozechner.md"
-      ],
-      "pages_updated": []
-    },
-    "chezmoi": {
-      "researched_at": "2026-07-25T02:27:13Z",
-      "rounds_completed": 3,
-      "sources_fetched": 9,
-      "pages_created": [
-        "references/chezmoi-official-site.md",
-        "references/chezmoi-templating-guide.md",
-        "references/chezmoi-source-state-attributes.md",
-        "references/chezmoi-workflow-discussion.md",
-        "concepts/dotfile-manager.md",
-        "concepts/chezmoi-three-state-model.md",
-        "concepts/chezmoi-attribute-prefixes.md",
-        "concepts/chezmoi-templating.md",
-        "concepts/chezmoi-workflow.md",
-        "entities/chezmoi.md",
-        "entities/gnu-stow.md",
-        "synthesis/Research: chezmoi.md"
-      ],
-      "pages_updated": []
-    },
-    "学习AI大模型": {
-      "researched_at": "2026-07-27T07:30:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 9,
-      "pages_created": [
-        "sources/andrej-karpathy-zero-to-hero.md",
-        "sources/sebastian-raschka-llms-from-scratch-book.md",
-        "sources/stanford-cs336-spring2025.md",
-        "sources/li-hongyi-genai-2025.md",
-        "sources/dakingrai-mech-interp-papers.md",
-        "concepts/llm-training-pipeline.md",
-        "concepts/llm-learning-path.md",
-        "concepts/rag-vs-finetuning.md",
-        "concepts/test-time-compute.md",
-        "concepts/mechanistic-interpretability.md",
-        "entities/andrej-karpathy.md",
-        "entities/sebastian-raschka.md",
-        "entities/li-hongyi.md",
-        "synthesis/Research: 学习AI大模型.md"
-      ],
-      "pages_updated": []
-    },
-    "DESIGN.md 工作流": {
-      "researched_at": "2026-07-28T01:00:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 5,
-      "pages_created": [
-        "sources/awesome-design-md-repo.md",
-        "sources/google-design-md-spec.md",
-        "sources/stitch-design-md-docs.md",
-        "sources/getdesign-md-marketplace.md",
-        "concepts/design-md-format-spec.md",
-        "concepts/design-md-token-interpolation.md",
-        "concepts/design-md-anti-patterns.md",
-        "entities/awesome-design-md.md",
-        "entities/google-labs-code-design.md",
-        "entities/voltagent.md",
-        "synthesis/Research: DESIGN.md 工作流.md"
-      ],
-      "pages_updated": [
-        "concepts/design-system-as-ai-context.md",
-        "skills/claude-code-mcp-auth-patterns.md",
-        "entities/google-stitch.md"
-      ]
-    },
-    "claude-mem 长期记忆": {
-      "researched_at": "2026-07-29T09:04:00Z",
-      "rounds_completed": 2,
-      "sources_fetched": 2,
-      "primary_source": "本地插件 v13.12.4（一手）+ GitHub README（交叉验证）",
-      "pages_created": [
-        "entities/claude-mem.md",
-        "concepts/claude-mem-memory-architecture.md",
-        "concepts/claude-code-hooks-lifecycle.md",
-        "skills/claude-mem-memory-usage.md",
-        "synthesis/Research: claude-mem 长期记忆.md"
-      ],
-      "pages_updated": []
-    },
-    "n8n": {
-      "type": "research",
-      "topic": "n8n",
-      "researched_at": "2026-07-30T06:45:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 5,
-      "pages_created": [
-        "concepts/workflow-automation-platform.md",
-        "concepts/fair-code-license.md",
-        "concepts/ai-agent-node-pattern.md",
-        "entities/n8n.md",
-        "entities/czlonkowski-n8n-mcp.md",
-        "sources/n8n-github-repo.md",
-        "sources/n8n-official-home.md",
-        "sources/n8n-queue-mode.md",
-        "sources/czlonkowski-n8n-mcp.md",
-        "sources/n8n-2-0-release.md",
-        "synthesis/Research: n8n.md"
-      ],
-      "pages_updated": [
-        "index.md",
-        "log.md",
-        "hot.md",
-        ".manifest.json"
-      ]
-    },
-    "CloudFlare ImgBed": {
-      "type": "research",
-      "topic": "CloudFlare ImgBed",
-      "researched_at": "2026-07-31T06:29:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 4,
-      "pages_created": [
-        "sources/cloudflare-imgbed-github.md",
-        "sources/cloudflare-imgbed-docs.md",
-        "sources/telegraph-image-github.md",
-        "concepts/serverless-image-hosting.md",
-        "concepts/telegram-as-blob-storage.md",
-        "entities/cloudflare-imgbed.md",
-        "entities/sanyue-imghub.md",
-        "synthesis/Research: CloudFlare ImgBed.md"
-      ],
-      "pages_updated": [
-        "index.md",
-        "log.md",
-        "hot.md",
-        ".manifest.json"
-      ]
-    },
-    "Claude Code Agent Teams": {
-      "type": "research",
-      "topic": "Claude Code Agent Teams",
-      "researched_at": "2026-08-05T04:30:00Z",
-      "rounds_completed": 3,
-      "sources_fetched": 4,
-      "primary_source": "Anthropic 官方文档 docs.claude.com/en/docs/claude-code/agent-teams（v2.1.178+）+ defuddle 抓取 36KB",
-      "pages_created": [
-        "sources/anthropic-claude-code-agent-teams-docs.md",
-        "sources/cnblogs-agent-teams-complete-guide.md",
-        "sources/csdn-agent-teams-multi-process.md",
-        "concepts/agent-team-display-modes.md",
-        "concepts/agent-team-race-condition-task-claim.md",
-        "concepts/agent-team-mailbox-protocol.md",
-        "concepts/agent-team-cost-overhead.md",
-        "entities/claude-code-agent-teams-feature.md",
-        "synthesis/Research: Claude Code Agent Teams.md"
-      ],
-      "pages_updated": [
-        "concepts/claude-code-agent-teams.md",
-        "concepts/tmux-pane-split-for-agents.md",
-        "concepts/claude-code-three-modes.md",
-        "index.md",
-        "log.md",
-        "hot.md",
-        ".manifest.json"
-      ]
-    },
-    "_raw/2026-08-23-zsh-config-optimization-patterns.md": {
-      "content_hash": "sha256:0faa293b84cea58f2abe6528d6efad47fe6a493c9e883fe19dbd8c106250f9bb",
-      "last_ingested": "2026-08-23T18:30:00Z",
-      "pages_produced": [
-        "concepts/zsh-shell-config-patterns.md",
-        "concepts/inshellisense-reload-compat.md",
-        "skills/safe-rm-wrapper-design.md"
-      ],
-      "source_type": "document",
-      "project": "zsh-extend"
-    },
-    "_raw/2026-08-23-inshellisense-reload-isterm-guard.md": {
-      "content_hash": "sha256:310f876d468d3610f8f401f54c7a88ae13a43879b01c22eef3e489fe2ea1fa67",
-      "last_ingested": "2026-08-23T18:30:00Z",
-      "pages_produced": [
-        "concepts/inshellisense-reload-compat.md"
-      ],
-      "source_type": "document",
-      "project": "zsh-extend"
-    },
-    "_raw/2026-08-23-trash-wrapper-temp-file-pollution.md": {
-      "content_hash": "sha256:bbc47e62c6fe6a5be85d0f6db4530102a84d62f2f2e009679ba9a5bde0684f01",
-      "last_ingested": "2026-08-23T18:30:00Z",
-      "pages_produced": [
-        "skills/safe-rm-wrapper-design.md"
-      ],
-      "source_type": "document",
-      "project": "zsh-extend"
-    },
-    "_raw/2026-08-24-statusline-chezmoi-template-env-injection.md": {
-      "content_hash": "sha256:635763acadfb7f0fbec6da50cf1e0726f7b29f9d66f90299e775e883a11f3c4c",
-      "last_ingested": "2026-08-23T16:57:00Z",
-      "pages_produced": [
-        "skills/statusline-template-injection-defense.md",
-        "concepts/unrendered-chezmoi-template-env-leak.md",
-        "skills/claude-code-statusline.md",
-        "skills/chezmoi-keyring-template.md",
-        "skills/macos-keychain-getBase64Key.md"
-      ],
-      "pages_updated": [
-        "concepts/chezmoi-workflow.md"
-      ],
-      "source_type": "document",
-      "project": null
-    }
-  },
-  "sources": {
     "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
       "content_hash": "sha256:bdcd82ad58a22efd239ca7fb5b2eb7520616887bfb8f0aa842dde7815052a764",
       "last_ingested": "2026-07-25T03:01:00.000000+00:00",
@@ -1587,6 +1341,249 @@
       "last_ingested": "2026-08-14T08:00:00Z"
     }
   },
+  "research": {
+    "tmux join-pane & swap-pane 用法": {
+      "type": "research",
+      "topic": "tmux join-pane & swap-pane 用法",
+      "researched_at": "2026-08-27T00:00:00Z",
+      "rounds_completed": 2,
+      "sources_fetched": 4,
+      "primary_source": "man.openbsd.org/tmux + man7.org/tmux + tmuxcheatsheet.com + local man tmux",
+      "pages_created": [
+        "skills/tmux-join-pane-swap-pane.md",
+        "concepts/tmux-pane-layout-rearrangement.md"
+      ],
+      "pages_updated": [
+        "skills/tmux.md",
+        "index.md",
+        "log.md"
+      ]
+    },
+    "OpenCoworkAI/open-codesign": {
+      "type": "research",
+      "topic": "OpenCoworkAI/open-codesign AI/Skills/Session",
+      "researched_at": "2026-08-24T01:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "primary_source": "GitHub README + CHANGELOG + DeepWiki 4.2 + pi-coding-agent session docs",
+      "pages_created": [
+        "synthesis/Research: open-codesign.md",
+        "references/open-codesign-readme.md",
+        "references/open-codesign-changelog.md",
+        "references/open-codesign-prompt-system-deepwiki.md",
+        "references/pi-coding-agent-session-format.md",
+        "concepts/agentic-design.md",
+        "concepts/jsonl-session-tree.md",
+        "concepts/skill-progressive-disclosure.md",
+        "concepts/design-md-shared-memory.md",
+        "entities/open-codesign.md",
+        "entities/pi-coding-agent.md",
+        "entities/mariozechner.md"
+      ],
+      "pages_updated": []
+    },
+    "chezmoi": {
+      "researched_at": "2026-07-25T02:27:13Z",
+      "rounds_completed": 3,
+      "sources_fetched": 9,
+      "pages_created": [
+        "references/chezmoi-official-site.md",
+        "references/chezmoi-templating-guide.md",
+        "references/chezmoi-source-state-attributes.md",
+        "references/chezmoi-workflow-discussion.md",
+        "concepts/dotfile-manager.md",
+        "concepts/chezmoi-three-state-model.md",
+        "concepts/chezmoi-attribute-prefixes.md",
+        "concepts/chezmoi-templating.md",
+        "concepts/chezmoi-workflow.md",
+        "entities/chezmoi.md",
+        "entities/gnu-stow.md",
+        "synthesis/Research: chezmoi.md"
+      ],
+      "pages_updated": []
+    },
+    "学习AI大模型": {
+      "researched_at": "2026-07-27T07:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 9,
+      "pages_created": [
+        "sources/andrej-karpathy-zero-to-hero.md",
+        "sources/sebastian-raschka-llms-from-scratch-book.md",
+        "sources/stanford-cs336-spring2025.md",
+        "sources/li-hongyi-genai-2025.md",
+        "sources/dakingrai-mech-interp-papers.md",
+        "concepts/llm-training-pipeline.md",
+        "concepts/llm-learning-path.md",
+        "concepts/rag-vs-finetuning.md",
+        "concepts/test-time-compute.md",
+        "concepts/mechanistic-interpretability.md",
+        "entities/andrej-karpathy.md",
+        "entities/sebastian-raschka.md",
+        "entities/li-hongyi.md",
+        "synthesis/Research: 学习AI大模型.md"
+      ],
+      "pages_updated": []
+    },
+    "DESIGN.md 工作流": {
+      "researched_at": "2026-07-28T01:00:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 5,
+      "pages_created": [
+        "sources/awesome-design-md-repo.md",
+        "sources/google-design-md-spec.md",
+        "sources/stitch-design-md-docs.md",
+        "sources/getdesign-md-marketplace.md",
+        "concepts/design-md-format-spec.md",
+        "concepts/design-md-token-interpolation.md",
+        "concepts/design-md-anti-patterns.md",
+        "entities/awesome-design-md.md",
+        "entities/google-labs-code-design.md",
+        "entities/voltagent.md",
+        "synthesis/Research: DESIGN.md 工作流.md"
+      ],
+      "pages_updated": [
+        "concepts/design-system-as-ai-context.md",
+        "skills/claude-code-mcp-auth-patterns.md",
+        "entities/google-stitch.md"
+      ]
+    },
+    "claude-mem 长期记忆": {
+      "researched_at": "2026-07-29T09:04:00Z",
+      "rounds_completed": 2,
+      "sources_fetched": 2,
+      "primary_source": "本地插件 v13.12.4（一手）+ GitHub README（交叉验证）",
+      "pages_created": [
+        "entities/claude-mem.md",
+        "concepts/claude-mem-memory-architecture.md",
+        "concepts/claude-code-hooks-lifecycle.md",
+        "skills/claude-mem-memory-usage.md",
+        "synthesis/Research: claude-mem 长期记忆.md"
+      ],
+      "pages_updated": []
+    },
+    "n8n": {
+      "type": "research",
+      "topic": "n8n",
+      "researched_at": "2026-07-30T06:45:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 5,
+      "pages_created": [
+        "concepts/workflow-automation-platform.md",
+        "concepts/fair-code-license.md",
+        "concepts/ai-agent-node-pattern.md",
+        "entities/n8n.md",
+        "entities/czlonkowski-n8n-mcp.md",
+        "sources/n8n-github-repo.md",
+        "sources/n8n-official-home.md",
+        "sources/n8n-queue-mode.md",
+        "sources/czlonkowski-n8n-mcp.md",
+        "sources/n8n-2-0-release.md",
+        "synthesis/Research: n8n.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
+    },
+    "CloudFlare ImgBed": {
+      "type": "research",
+      "topic": "CloudFlare ImgBed",
+      "researched_at": "2026-07-31T06:29:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "pages_created": [
+        "sources/cloudflare-imgbed-github.md",
+        "sources/cloudflare-imgbed-docs.md",
+        "sources/telegraph-image-github.md",
+        "concepts/serverless-image-hosting.md",
+        "concepts/telegram-as-blob-storage.md",
+        "entities/cloudflare-imgbed.md",
+        "entities/sanyue-imghub.md",
+        "synthesis/Research: CloudFlare ImgBed.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
+    },
+    "Claude Code Agent Teams": {
+      "type": "research",
+      "topic": "Claude Code Agent Teams",
+      "researched_at": "2026-08-05T04:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 4,
+      "primary_source": "Anthropic 官方文档 docs.claude.com/en/docs/claude-code/agent-teams（v2.1.178+）+ defuddle 抓取 36KB",
+      "pages_created": [
+        "sources/anthropic-claude-code-agent-teams-docs.md",
+        "sources/cnblogs-agent-teams-complete-guide.md",
+        "sources/csdn-agent-teams-multi-process.md",
+        "concepts/agent-team-display-modes.md",
+        "concepts/agent-team-race-condition-task-claim.md",
+        "concepts/agent-team-mailbox-protocol.md",
+        "concepts/agent-team-cost-overhead.md",
+        "entities/claude-code-agent-teams-feature.md",
+        "synthesis/Research: Claude Code Agent Teams.md"
+      ],
+      "pages_updated": [
+        "concepts/claude-code-agent-teams.md",
+        "concepts/tmux-pane-split-for-agents.md",
+        "concepts/claude-code-three-modes.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ]
+    },
+    "_raw/2026-08-23-zsh-config-optimization-patterns.md": {
+      "content_hash": "sha256:0faa293b84cea58f2abe6528d6efad47fe6a493c9e883fe19dbd8c106250f9bb",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "concepts/zsh-shell-config-patterns.md",
+        "concepts/inshellisense-reload-compat.md",
+        "skills/safe-rm-wrapper-design.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
+    },
+    "_raw/2026-08-23-inshellisense-reload-isterm-guard.md": {
+      "content_hash": "sha256:310f876d468d3610f8f401f54c7a88ae13a43879b01c22eef3e489fe2ea1fa67",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "concepts/inshellisense-reload-compat.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
+    },
+    "_raw/2026-08-23-trash-wrapper-temp-file-pollution.md": {
+      "content_hash": "sha256:bbc47e62c6fe6a5be85d0f6db4530102a84d62f2f2e009679ba9a5bde0684f01",
+      "last_ingested": "2026-08-23T18:30:00Z",
+      "pages_produced": [
+        "skills/safe-rm-wrapper-design.md"
+      ],
+      "source_type": "document",
+      "project": "zsh-extend"
+    },
+    "_raw/2026-08-24-statusline-chezmoi-template-env-injection.md": {
+      "content_hash": "sha256:635763acadfb7f0fbec6da50cf1e0726f7b29f9d66f90299e775e883a11f3c4c",
+      "last_ingested": "2026-08-23T16:57:00Z",
+      "pages_produced": [
+        "skills/statusline-template-injection-defense.md",
+        "concepts/unrendered-chezmoi-template-env-leak.md",
+        "skills/claude-code-statusline.md",
+        "skills/chezmoi-keyring-template.md",
+        "skills/macos-keychain-getBase64Key.md"
+      ],
+      "pages_updated": [
+        "concepts/chezmoi-workflow.md"
+      ],
+      "source_type": "document",
+      "project": null
+    }
+  },
   "projects": {
     "figma": {
       "source_cwd": "/Users/rich1e/store/project for X/figma",
@@ -1732,8 +1729,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 86,
-    "total_pages": 426,
+    "total_sources_ingested": 89,
+    "total_pages": 429,
     "total_projects": 3,
     "last_full_rebuild": null
   },
