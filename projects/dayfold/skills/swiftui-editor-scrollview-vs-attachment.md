@@ -111,6 +111,7 @@ ScrollView {
 
 ## Related
 
+- [[synthesis/Research: SwiftUI 图文混排]] — synthesis
 - [[projects/dayfold/skills/auto-expanding-texteditor-scroll]] — 整体复合滚动架构与阶段 H 演进
 - [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 同一阶段 H 的姊妹 bug（intrinsic 宽度撑宽）
 - [[projects/dayfold/skills/nstextattachment-bounds-overflow]] — 同一 session 的图片尺寸 bug

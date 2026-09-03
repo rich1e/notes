@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-09-03T01:54:05Z",
+  "last_updated": "2026-09-03T03:30:00Z",
   "sources": {
     "_raw/2026-09-02-nstextattachment-bounds-overflow.md": {
       "content_hash": "sha256:f7f20bd63b6d390d9a3bbe6040370ab409b0d0f43a2972a0cbd31b98b0fbf6ca",
@@ -1582,6 +1582,25 @@
       ],
       "source_type": "document",
       "project": null
+    },
+    "SwiftUI 中如何实现图文混排": {
+      "type": "research",
+      "topic": "SwiftUI 中如何实现图文混排",
+      "researched_at": "2026-09-03T03:30:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 15,
+      "primary_source": "Apple Developer Documentation + Stack Overflow consensus + dayfold vault pages",
+      "pages_created": [
+        "synthesis/Research: SwiftUI 图文混排.md",
+        "references/apple-developer-nstextattachment-docs.md",
+        "skills/uiviewrepresentable-uitextview-rich-text.md",
+        "concepts/swiftui-rich-text-rendering-comparison.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "log.md",
+        "hot.md"
+      ]
     }
   },
   "projects": {
@@ -1730,7 +1749,7 @@
   },
   "stats": {
     "total_sources_ingested": 89,
-    "total_pages": 429,
+    "total_pages": 433,
     "total_projects": 3,
     "last_full_rebuild": null
   },

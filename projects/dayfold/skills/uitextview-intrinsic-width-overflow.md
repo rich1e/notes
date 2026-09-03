@@ -79,6 +79,7 @@ final class EditorTextView: UITextView {
 
 ## Related
 
+- [[synthesis/Research: SwiftUI 图文混排]] — synthesis
 - [[projects/dayfold/skills/auto-expanding-texteditor-scroll]] — 本页所修正的复合滚动架构（阶段 H 后 `imageFlow` 与 ScrollViewReader 均已移除）
 - [[projects/dayfold/skills/entry-editor-image-dirty-tracking]] — 编辑器图片脏标记与持久化
 - [[projects/dayfold/skills/dayone-photo-library-picker]] — 图片来源的多选选图器

@@ -7,6 +7,7 @@ title: Wiki Index
 *This index is automatically maintained. Last updated: 2026-08-26T12:00:00Z*
 
 ## Concepts
+- [[concepts/swiftui-rich-text-rendering-comparison]] — SwiftUI 富文本方案对比矩阵:TextEditor / AttributedString / MarkdownUI / Down / UIKit bridged
 
 - [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service (ctx.<key>) / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
 - [[concepts/capability-seam]] — dsh 的 capability 设计模式：Service Definition + Service Provider + Consumer 三件套；一换 provider = 整个产品栈跟着换
@@ -216,6 +217,7 @@ title: Wiki Index
 - [[entities/sqlite]] — 全球部署量最大的嵌入式数据库，进程内函数调用，公有领域，支持承诺至 2050 年，内置 FTS5/JSON/递归 CTE，sqlite-vec 向量扩展 (tier: core, bc 0.85)
 
 ## Skills
+- [[skills/uiviewrepresentable-uitextview-rich-text]] — UIViewRepresentable 包装 UITextView 富文本编辑器:SwiftUI 编辑 + inline attachment 唯一方案
 
 - [[skills/deepseek-harness-dev-loop]] — dsh 开发 loop：CI gates (test:coverage 是 100% per-file gate) + pre-push 检查匹配 evidence 到 surface + host sandbox narrowest escalation
 - [[skills/ssh-server-hardening]] — SSH 服务端硬化：sshd_config 关键指令 + Diffie-Hellman 弱密钥剔除 + Google Authenticator PAM 2FA
@@ -278,6 +280,7 @@ title: Wiki Index
 - [[skills/sqlite-queue-pattern]] — SQLite BEGIN IMMEDIATE 写锁队列模式，无 broker 进程内消息队列，含完整 SQL 实现 + WAL 配置 + 心跳清理，适合数千 msg/s 量级
 
 ## Synthesis
+- [[synthesis/Research: SwiftUI 图文混排]] — 3-round research:编辑器必用 UIViewRepresentable + UITextView;iOS 15+ bounds 行为变更;NSTextAttachment 4032×3024 PNG = 48MB 内存陷阱
 
 - [[synthesis/Research: chezmoi]] — chezmoi 3 轮研究综合：三态模型 + 17 前缀 + Go 模板 + age/GPG + 四动词工作流
 - [[synthesis/Research: Claude Code Agent Teams]] — Claude Code Agent Teams 3 轮调研综合：Opus 4.6 引入、4 组件架构、5 显示模式、9 已知限制、linear scaling token 成本
@@ -360,6 +363,7 @@ title: Wiki Index
 - [[projects/figwright/references/figwright-shared-protocol]] — shared package 7+ 文件职责速查(codec/envelope/heartbeat/rpc/protocol/serialized-node/queries)
 
 ## References
+- [[references/apple-developer-nstextattachment-docs]] — Apple NSTextAttachment 三件套文档:类 + iOS 15+ NSTextAttachmentLayout 协议 + view provider
 
 - [[references/open-codesign-readme]] — OpenCoworkAI/open-codesign README:Electron+React 19+Vite 6+Tailwind v4 monorepo,AI 基于 @mariozechner/pi-ai + pi-coding-agent,BYOK 多模型
 - [[references/open-codesign-changelog]] — open-codesign v0.1 → v0.2 "Agentic Design" 演进时间线 (2026-04-18 首次 release → 2026-05-09 workspace-backed sessions)

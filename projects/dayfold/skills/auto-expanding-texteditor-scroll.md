@@ -88,6 +88,7 @@ ScrollViewReader { proxy in
 ```
 
 ## Related
+- [[synthesis/Research: SwiftUI 图文混排]] — synthesis
 - [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 阶段 H 图文混排改造与本页三处修正的来源
 - [[projects/dayfold/skills/dayone-photo-library-picker]] — 配套的照片多选与大图流来源
 - [[projects/dayfold/skills/entry-editor-image-dirty-tracking]] — 编辑器图片脏标记保存机制

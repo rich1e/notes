@@ -97,6 +97,7 @@ iOS UIKit 的 `NSTextAttachment` **没有** `imageBounds(for: ContentModeType: c
 
 ## Related
 
+- [[synthesis/Research: SwiftUI 图文混排]] — synthesis
 - [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 同一根因的「下游尺寸汇报」修复
 - [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]] — 同一 session 的姊妹 bug（外层滚动反行为）
 - [[references/uikit-nstextattachment-vs-appkit]] — UIKit 与 AppKit 的 NSTextAttachment API 差异

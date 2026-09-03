@@ -84,6 +84,7 @@ Apple 文档推荐用 `NSTextAttachmentLayout` 协议族做自定义 attachment 
 
 ## Related
 
+- [[synthesis/Research: SwiftUI 图文混排]] — synthesis
 - [[projects/dayfold/skills/nstextattachment-bounds-overflow]] — 同 session 触发的 bounds 计算修复
 - [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]] — 同一根因的「下游尺寸汇报」修复
 - [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]] — 同一 session 的外层滚动反行为
