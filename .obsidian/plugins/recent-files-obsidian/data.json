@@ -5,6 +5,14 @@
       "path": "index.md"
     },
     {
+      "basename": "consolidation-2026-07-30",
+      "path": "synthesis/consolidation-2026-07-30.md"
+    },
+    {
+      "basename": "hot",
+      "path": "hot.md"
+    },
+    {
       "basename": "auto-expanding-texteditor-scroll",
       "path": "projects/dayfold/skills/auto-expanding-texteditor-scroll.md"
     },
@@ -75,10 +83,6 @@
     {
       "basename": "AGENTS",
       "path": "AGENTS.md"
-    },
-    {
-      "basename": "hot",
-      "path": "hot.md"
     },
     {
       "basename": "log",

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-09-03T04:30:00Z",
+  "last_updated": "2026-09-03T05:20:00Z",
   "sources": {
     "_raw/2026-09-02-nstextattachment-bounds-overflow.md": {
       "content_hash": "sha256:f7f20bd63b6d390d9a3bbe6040370ab409b0d0f43a2972a0cbd31b98b0fbf6ca",
@@ -1368,6 +1368,46 @@
       ],
       "source_type": "url",
       "project": null
+    },
+    "https://github.com/gonzalezreal/swift-markdown-ui": {
+      "content_hash": "sha256:04d9e4d8045a6310349928a2f8d2e6c6fe1c41e0c952a800e312800fac9624f9",
+      "last_ingested": "2026-09-03T04:50:00Z",
+      "pages_produced": [
+        "entities/markdownui.md",
+        "references/swift-markdown-ui-package.md"
+      ],
+      "source_type": "url",
+      "project": null
+    },
+    "https://github.com/gonzalezreal/textual": {
+      "content_hash": "sha256:496aeba323398df389b43149d07945189ddafa226e8dd186832a40a0c5082615",
+      "last_ingested": "2026-09-03T05:00:00Z",
+      "pages_produced": [
+        "entities/textual.md",
+        "references/textual-package.md"
+      ],
+      "source_type": "url",
+      "project": null
+    },
+    "https://github.com/LiYanan2004/MarkdownView": {
+      "content_hash": "sha256:9d78d0a474e7c5c3818e7e1f0162788f4bdc144ab501a5d17e5749d7ee585f92",
+      "last_ingested": "2026-09-03T05:10:00Z",
+      "pages_produced": [
+        "entities/markdownview.md",
+        "references/markdownview-package.md"
+      ],
+      "source_type": "url",
+      "project": null
+    },
+    "https://github.com/rztime/RZColorfulSwift": {
+      "content_hash": "sha256:273231945b54753cf7e788c90c0cca92c8c62932ea4b4675b4805985e6203593",
+      "last_ingested": "2026-09-03T05:20:00Z",
+      "pages_produced": [
+        "entities/rzcolorfulswift.md",
+        "references/rzcolorfulswift-package.md"
+      ],
+      "source_type": "url",
+      "project": null
     }
   },
   "research": {
@@ -1777,8 +1817,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 92,
-    "total_pages": 438,
+    "total_sources_ingested": 98,
+    "total_pages": 450,
     "total_projects": 3,
     "last_full_rebuild": null
   },

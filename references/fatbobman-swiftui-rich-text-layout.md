@@ -172,6 +172,7 @@ View 嵌入后在复制时**会消失**。通过 `InlineView` 关联一个文本
 
 ## Related
 
+- [[entities/markdownview]] — LiYanan 自己的 SwiftUI markdown 渲染(本仓库的 description 是 1.0 早期,现在 production 验证)
 - [[entities/swift-markdown]] — 解析后端 (LiYanan 的 MarkdownView 1.0 核心依赖)
 - [[synthesis/Research: SwiftUI 图文混排]] — vault 既有研究综述
 - [[concepts/swiftui-rich-text-rendering-comparison]] — 全方案矩阵

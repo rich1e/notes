@@ -152,3 +152,7 @@ Swift Markdown 的设计模式(持久化 CoW markup tree + protocol-oriented + v
 - License verified from `LICENSE.txt` (Apache 2.0)
 - swift-tools-version from `Package.swift` first line (`// swift-tools-version:6.2`)
 - Architecture map verified by reading `ls Sources/Markdown/` and grep `^public`
+
+## Related
+
+- [[entities/markdownview]] — MarkdownView (LiYanan) 是 swift-markdown 在 SwiftUI 渲染层的 production 用户

@@ -157,4 +157,6 @@ Apple `AttributedString(markdown:)` (iOS 15+) 只覆盖粗体/斜体/链接,**�
 
 ## Related
 
+- [[entities/rzcolorfulswift]] — rztime 的中国本土 iOS 富文本工具库(链式 attributedString + markdown 互转 + 自动折叠);UIKit era 成熟方案,与本 vault 的现代 markdown render 方案互补
+- [[entities/markdownui]] — MarkdownUI 已宣布 maintenance mode (2024-2025 公告,讨论 #437),新开发在 Textual;原 Open Question #4 现已确认
 - [[entities/swift-markdown]] — Apple 官方 Swift Markdown (cmark-gfm 集成),被 MarkdownView/RichText/DocC/X-Grok/Hugging Face Chat 采用

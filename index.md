@@ -6,11 +6,12 @@ title: Wiki Index
 
 *This index is automatically maintained. Last updated: 2026-08-26T12:00:00Z*
 
-## Concepts- [[concepts/persistent-copy-on-write-markup-tree]] — Apple 不可变 + CoW + visitor 模式,SwiftSyntax/swift-markdown 设计哲学
+## Concepts
+- [[concepts/persistent-copy-on-write-markup-tree]] — Apple 不可变 + CoW + visitor 模式,SwiftSyntax/swift-markdown 设计哲学
 
 - [[concepts/swiftui-rich-text-rendering-comparison]] — SwiftUI 富文本方案对比矩阵:TextEditor / AttributedString / MarkdownUI / Down / UIKit bridged
 
-- [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service (ctx.<key>) / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
+- [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
 - [[concepts/capability-seam]] — dsh 的 capability 设计模式：Service Definition + Service Provider + Consumer 三件套；一换 provider = 整个产品栈跟着换
 - [[concepts/agent-scope-hierarchy]] — Cordis scope 模型：global vs scoped 两层扁平 + scope key + agent.ctx + scoped dispatch + shadowing + setup window + lineage (作为数据不作为结构)
 - [[concepts/turn-step-flow]] — dsh agent loop 抽象：turn (drain admitted input) + step (1 模型请求 + N 工具) + round；waterfall/serial/registry-subject 三种事件语义
@@ -147,7 +148,12 @@ title: Wiki Index
 - [[concepts/postgres-extensions-ecosystem]] — PostgreSQL 扩展生态全景：pgvector（向量）/ pgai（AI）/ TimescaleDB（时序）/ Apache AGE+openCypher（图）/ LTREE（树）/ ParadeDB（全文检索增强）
 - [[concepts/sqlite-as-file-format]] — SQLite 作为通用文件格式：≤100KB blob 比文件系统快 35%，原子多文件更新，省 20% 空间，「数据库即 fopen()」设计目标
 
-## Entities
+## Entities- [[entities/markdownview]] — LiYanan 的 SwiftUI markdown 渲染(被 X/Grok + Hugging Face Chat 采用),CommonMark + SVG + LaTeX + streaming
+
+- [[entities/textual]] — gonzalezreal MarkdownUI 继任者:SwiftUI text rendering engine,iOS 18+ / macOS 15+,基于 Foundation AttributedString + SwiftUI.Text pipeline
+
+- [[entities/markdownui]] — gonzalezreal MarkdownUI SwiftUI native Markdown 渲染,基于 cmark-gfm,已宣布 maintenance mode,继任 Textual
+
 - [[entities/swift-markdown]] — Apple 官方 Swift Markdown 解析库(基于 cmark-gfm),持久化 CoW markup tree,被 MarkdownView/RichText/DocC 采用
 
 - [[entities/herdr]] — AI Agent 感知终端工作区管理器，鼠标优先，后台服务器持有进程，专为 Claude/Codex 设计；`brew install herdr`；含 Claude Code Skill 安装方式
@@ -364,7 +370,11 @@ title: Wiki Index
 - [[projects/figwright/references/figwright-tool-taxonomy]] — 112 tool 三分类(Read/Write/Grounding)索引
 - [[projects/figwright/references/figwright-shared-protocol]] — shared package 7+ 文件职责速查(codec/envelope/heartbeat/rpc/protocol/serialized-node/queries)
 
-## References- [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 深度解析:MarkdownView → MarkdownText 失败 → RichText (NSTextView + View overlay + Mirror View.id) 3 代演进
+## References- [[references/markdownview-package]] — LiYanan2004/MarkdownView 仓库参考:Swift 6.2,11124 LOC,基于 swift-markdown + Highlightr + SwiftMath + RichText
+
+- [[references/textual-package]] — gonzalezreal/textual 仓库参考:Swift 6.0,13188 LOC,swiftui-math 依赖,InlineText + StructuredText
+
+- [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 深度解析:MarkdownView → MarkdownText 失败 → RichText (NSTextView + View overlay + Mirror View.id) 3 代演进
 
 - [[references/apple-developer-nstextattachment-docs]] — Apple NSTextAttachment 三件套文档:类 + iOS 15+ NSTextAttachmentLayout 协议 + view provider
 
