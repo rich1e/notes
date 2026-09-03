@@ -148,8 +148,8 @@ title: Wiki Index
 - [[concepts/postgres-extensions-ecosystem]] — PostgreSQL 扩展生态全景：pgvector（向量）/ pgai（AI）/ TimescaleDB（时序）/ Apache AGE+openCypher（图）/ LTREE（树）/ ParadeDB（全文检索增强）
 - [[concepts/sqlite-as-file-format]] — SQLite 作为通用文件格式：≤100KB blob 比文件系统快 35%，原子多文件更新，省 20% 空间，「数据库即 fopen()」设计目标
 
-## Entities- [[entities/markdownview]] — LiYanan 的 SwiftUI markdown 渲染(被 X/Grok + Hugging Face Chat 采用),CommonMark + SVG + LaTeX + streaming
-
+## Entities
+- [[entities/markdownview]] — LiYanan 的 SwiftUI markdown 渲染(被 X/Grok + Hugging Face Chat 采用),CommonMark + SVG + LaTeX + streaming
 - [[entities/textual]] — gonzalezreal MarkdownUI 继任者:SwiftUI text rendering engine,iOS 18+ / macOS 15+,基于 Foundation AttributedString + SwiftUI.Text pipeline
 
 - [[entities/markdownui]] — gonzalezreal MarkdownUI SwiftUI native Markdown 渲染,基于 cmark-gfm,已宣布 maintenance mode,继任 Textual
@@ -311,8 +311,59 @@ title: Wiki Index
 - [[synthesis/concepts/ai-tool-specialization × entities/oh-my-openagent]] — AI 工具专业化分工 × Oh-My-OpenAgent — 范式哲学与产品 SKU 化的关系
 - [[synthesis/concepts/auth-status-semantics × entities/gemini-notebook-mcp-cli]] — Auth-Status 语义 × Gemini Notebook MCP CLI — 5 状态认证健康词汇表的来源与价值
 - [[synthesis/concepts/linux-server-hardening-checklist × entities/imthenachoman-how-to-secure-a-linux-server]] — Linux Server Hardening 全栈指南 × 检查清单抽象 — 全栈指南 vs 可执行清单的耦合分工
-## Projects
+- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议理论 × LinuxPTP 工业实现：协议 vs 实现的工程空白（PI 伺服、PHC 桥接、硬件时间戳三级精度）
+- [[synthesis/trek-auth-system × trek-mcp-server]] — Trek 认证 × MCP 服务器：AI 客户端的认证特化（受众绑定、scope 切分、级联吊销、插件边界）
+- [[synthesis/zustand-core-architecture × zustand]] — Zustand 内部架构 × 库品牌：30 行不是省略，是有意暴露（vanilla 闭包 vs React 包装）
+- [[synthesis/arc-memory-management × swift-concurrency]] — ARC × Swift Concurrency：同一引用类型的两种正交安全机制（生命周期 vs 访问安全）
+- [[synthesis/macos-window-switcher × macos-window-switchers]] — macOS 窗口切换器 概念 × 对比：4 款独立工具为何解决同一问题（结构性局限）
+- [[synthesis/consolidation-2026-07-07]] — 2026-07-07 自动合并报告（wiki-lint --consolidate）：PTP 反斜杠修复、chapter1 孤儿拯救
+- [[synthesis/Research: Fabric AI Framework]] — Fabric AI 框架研究综合：Patterns 设计哲学、290+ Pattern 分类、多提供商架构、REST API
+- [[synthesis/consolidation-2026-07-23]] — 2026-07-23 自动合并报告（wiki-lint --consolidate）：21 个破损链接修复、6 个孤儿救援、4 个 Fabric lifecycle 修复、8 个 tag 规范化
+- [[synthesis/consolidation-2026-08-12]] — 2026-08-12 自动合并报告（wiki-lint --consolidate）：12 处破损链接修复、1 orphan rescue、11 页 lifecycle draft→reviewed、4 tag alias 规范化、2 relationship 类型修复
+- [[synthesis/consolidation-2026-08-04]] — 2026-08-04 自动合并报告（wiki-lint --consolidate）：13 处 xk-ai-talk-desk-ui wikilink 双前缀断链修复、4 个孤儿救援、6 处 bad_type 关系（example_of/documented_by → related_to）
+- [[synthesis/consolidation-2026-07-26]] — 2026-07-26 自动合并报告（wiki-lint --consolidate）：3 真破损修复 + 10 孤儿救援
+- [[synthesis/consolidation-2026-07-30]] — 2026-07-30 自动合并报告（wiki-lint --consolidate）：孤儿救援与断链修复
+- [[synthesis/consolidation-2026-07-31]] — 2026-07-31 自动合并报告（wiki-lint --consolidate）：8 处真实断链修复（补建 transformer/scaling-laws/instruction-tuning/ai-agent + zapier/make 实体页）
+- [[synthesis/consolidation-2026-08-03]] — 2026-08-03 自动合并报告（wiki-lint --consolidate）：1 孤儿救援 + 71 lifecycle draft→reviewed
+- [[synthesis/swift-fundamentals × swiftui-framework]] — Swift 类型系统是 SwiftUI 的运行时：函数式/POP 范式如何构成 SwiftUI DSL 的基础
+- [[synthesis/programming-pattern-categories × ios-app-architecture]] — 代码级五分类 × iOS 架构模式：横切面 vs 纵切面，三层模式语言覆盖不同粒度
+- [[synthesis/battle-tested-patterns × ios-design-patterns]] — GoF 对象模式 × battle-tested 代码模式：两套语言的坐标轴，组合使用才能覆盖两个维度
+- [[synthesis/ios17-app-development-book × cs193p-spring-2025]] — 书（地图）× 课（罗盘）：两条 iOS/SwiftUI 学习路径的互补结构
+- [[synthesis/fabric-patterns × claude-code-settings]] — Fabric Patterns × Claude Code 配置：AI Unix 管道哲学在 Prompt 层与工具层的平行实践
+- [[synthesis/Research: Kimi K3]] — Kimi K3 研究综合：3T 级 MoE、Delta Attention、代码第一、整体接近 Fable 5，2026-07-27 权重发布
+- [[synthesis/concepts-mixture-of-experts × entities-kimi-k3]] — MoE 通用架构 × K3 首个 3T 实证：K3 用 Quantile Balancing/Per-Head Muon/SiTU/Gated MLA 重塑路由器与激活控制
+- [[synthesis/concepts-kimi-delta-attention × entities-kimi-k3]] — KDA × K3：单点注意力创新嵌入全栈后变成「长程 Agent」系统基础
+- [[synthesis/concepts-dotfile-manager × entities-chezmoi]] — dotfile 五大流派 × chezmoi：中段定位的具体含义（比 Stow 复杂、比 Nix 简单、专注跨机器差异化）
+- [[synthesis/concepts-chezmoi-templating × concepts-chezmoi-attribute-prefixes]] — chezmoi 两条核心机制：模板（runtime 内容差异化）vs 命名前缀（文件系统语义元数据）
+- [[synthesis/concepts-ptp-clock-types × entities-white-rabbit]] — PTP 四种时钟角色 × White Rabbit 工业实现：sub-ns 精度 + SyncE + 大量 TLV 扩展
+- [[synthesis/Research: 学习AI大模型]] — LLM 学习系统化路径 3 轮研究综合：双轨 + 四阶段 + 三大资源坐标系 + 2025 Test-Time Compute 转向
+- [[synthesis/Research: claude-mem 长期记忆]] — claude-mem 研究综合：hook 驱动 capture→compress→inject 流水线，本地 SQLite+Chroma，第二次会话起注入，3 层检索省 10× token，本地免费/上云付费
+- [[synthesis/Research: n8n]] — n8n 三轮调研综合：fair-code 开源工作流自动化平台，2.0 升 multi-agent + MCP + Data Tables，Queue Mode 成熟生产方案
+- [[synthesis/Research: CloudFlare ImgBed]] — CloudFlare ImgBed 三轮调研综合：MIT 开源自托管图床，Serverless+Docker 双部署，六存储后端，脱胎自 Telegraph-Image 并补足其单后端/配额局限
+- [[synthesis/Research: treehouse]] — treehouse 研究综合：把 git worktree 池化成 AI agent runtime 的 5 条独立但勾连的设计线（池化、dead agent 终止、lease、safe-destroy、crash-safe + 自愈）与 3 条可复用原则
+- [[synthesis/Research: OpenLore]] — OpenLore 研究综合:静态分析驱动的代码知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate,4 条设计线 + 4 条可复用原则,与 claude-mem/treehouse 形成 agent 本地基础设施三件套
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent]] — AOS 五层 memory 框架 × agent 通用:框架对 agent 是约束还是赋能,五层中谁是 agent 自驱谁是框架强加
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]] — MCP 鉴权三层 + Stitch 实战:协议层故意简洁,鉴权复杂度甩给上层应用,OAuth proxy 对 .env 敏感
+- [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]] — AOS 必须把 sandbox 当作隐式第六层:compact checkpoint 应包含 sandbox state(worktree path / HEAD / lease / dirty),否则 session resume 会撕裂
+- [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]] — Durable lease 让 AOS Handoff 有了"原子承诺"语义:--if-lease-id 把"我是上次那个人"写成状态文件 CAS,防止多人续写 Handoff 时撕裂
+- [[synthesis/concepts-agent-operating-system × entities-claude-code]] — AOS 五层记忆 × 宿主原生能力:Claude Code 只原生兜底 KB(CLAUDE.md)+ Working Memory(Auto Memory)两层,Handoff/Semantic/ADR 三层靠工具补齐,是"框架该补什么"的覆盖矩阵
+- [[synthesis/concepts-llm-training-pipeline × concepts-transformer-architecture]] — 架构 × 训练两条正交轴:架构(静态)给容量、训练(动态)给能力,能力涌现只在训练轴上;架构近年趋稳,前沿主战场移到训练
+- [[synthesis/concepts-claude-mem-memory-architecture × skills-claude-code-settings]] — 可扩展性两支柱:claude-mem 用 hook 扩展"记什么"、settings 用作用域控制"在哪生效",共享同一"装错 scope 静默失效"陷阱家族(npm -g / MCP --global / CLAUDE.md 覆盖)
+- [[synthesis/concepts-bmad-named-agent-architecture × concepts-omo-discipline-agents]] — BMad persona 三腿凳（Skill/Named Agent/Customization）vs omo 5 专家分工（Sisyphus+4 disciplines）：同一 agent persona 问题的两种截然不同的设计哲学
+- [[synthesis/concepts-bmad-delivery-loop × concepts-agent-operating-system]] — BMad 4 阶段交付闭环（Clarify→Plan→Build→Learn）vs AOS 5 层跨会话 memory：前者管工作流节奏，后者管状态持久化，合体才能让 AI agent 跨越单次会话
+- [[synthesis/concepts-dstwo-plugin-system × concepts-mame-rom-to-neods-conversion]] — 在 DS 上玩 NeoGeo 的两条路径：通用 .neo 单文件路径 vs DSTWO 专属 plugin 部署，目标相同但部署架构完全不同
+- [[synthesis/concepts-agent-team-cost-overhead × entities-oh-my-openagent]] — Agent Teams 线性 token 成本 × omo 产品化(4-category 路由 + 模型分级 + Team Mode 11 字段硬 cap):omo 用结构吸收线性成本的不可控性,但并未消除它
+- [[synthesis/concepts-mcp-server-protocol-quirks × entities-gemini-notebook-mcp-cli]] — MCP 协议"故意简洁"(鉴权甩上层) vs gemini-notebook-mcp-cli 实战鉴权复杂度全在 client 侧(CDP/多 profile/5-state 词典/RPC 漂移热修)
+- [[synthesis/concepts-agent-team-mailbox-protocol × entities-bmad-named-agent]] — Mailbox 协议(JSON inbox + 逐条校验 + 自愈)是 Agent Teams 工程级 IPC;BMad 命名 Agent 是产品化 IPC(角色契约)。两者用截然不同的抽象层解决"多 agent 同时改同一文件"
+- [[synthesis/concepts-design-system-as-ai-context × entities-claude-code]] — DESIGN.md 编译视觉决策为 LLM 可读 schema,Claude Code 是最大消费方(通过 Stitch MCP/Figwright MCP 等 7+ 集成)
+- [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method]] — 确定性 agent 记忆哲学(hot path 0 LLM)在工程层落地;BMad 方法论(4 阶段交付闭环)在产品层落地。两者都用结构对抗 LLM 自由度,战场不同
+- [[synthesis/concepts-database-as-platform × concepts-no-llm-hot-path]] — 两种「以简驭复」原则的同构性：用数据库替代专用系统，用确定性算法替代 LLM——都是把不必要的复杂度推出热路径
+- [[synthesis/concepts-agentic-design × concepts-design-md-shared-memory]] — DESIGN.md 是 agentic design 的「已编译状态」——把设计决策从人脑转移到文件，使 agent 能在不重复问设计问题的情况下持续工作
+- [[synthesis/skills-postgres-queue-pattern × skills-sqlite-queue-pattern]] — 同一队列模式在两种规模下的落地：SQLite BEGIN IMMEDIATE（进程内，<5K msg/s）vs PostgreSQL SKIP LOCKED（多消费者网络）
+- [[synthesis/concepts-sqlite-as-file-format × concepts-durable-session-log]] — SQLite 的「更好的 fopen()」哲学与 durable session log 的「model-visible ⟺ logged」invariant 指向同一个设计选择：零基础设施、可重建的持久化
+- [[synthesis/entities-sqlite × entities-postgresql]] — 同一「数据库替代专用系统」哲学的两个端点：SQLite（进程内，零基础设施）与 PostgreSQL（多用户网络，全功能生态）
 
+## Projects
 - [[projects/dayfold/dayfold]] — 暖色风格 iOS 日记 App（SwiftUI + Core Data/CloudKit + MapKit + WeatherKit）+ Stitch 设计系统（暖灰深夜阅读室风格）
 - [[projects/dayfold/concepts/architecture-overview]] — 抽屉式根容器 + MVVM + 共享 CoreDataStack 单例
 - [[projects/dayfold/concepts/core-data-cloudkit-fallback]] — CloudKit 134400 降级本地存储实现
@@ -370,76 +421,8 @@ title: Wiki Index
 - [[projects/figwright/references/figwright-tool-taxonomy]] — 112 tool 三分类(Read/Write/Grounding)索引
 - [[projects/figwright/references/figwright-shared-protocol]] — shared package 7+ 文件职责速查(codec/envelope/heartbeat/rpc/protocol/serialized-node/queries)
 
-## References- [[references/markdownview-package]] — LiYanan2004/MarkdownView 仓库参考:Swift 6.2,11124 LOC,基于 swift-markdown + Highlightr + SwiftMath + RichText
-
-- [[references/textual-package]] — gonzalezreal/textual 仓库参考:Swift 6.0,13188 LOC,swiftui-math 依赖,InlineText + StructuredText
-
-- [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 深度解析:MarkdownView → MarkdownText 失败 → RichText (NSTextView + View overlay + Mirror View.id) 3 代演进
-
-- [[references/apple-developer-nstextattachment-docs]] — Apple NSTextAttachment 三件套文档:类 + iOS 15+ NSTextAttachmentLayout 协议 + view provider
-
-- [[references/open-codesign-readme]] — OpenCoworkAI/open-codesign README:Electron+React 19+Vite 6+Tailwind v4 monorepo,AI 基于 @mariozechner/pi-ai + pi-coding-agent,BYOK 多模型
-- [[references/open-codesign-changelog]] — open-codesign v0.1 → v0.2 "Agentic Design" 演进时间线 (2026-04-18 首次 release → 2026-05-09 workspace-backed sessions)
-- [[references/open-codesign-prompt-system-deepwiki]] — DeepWiki 4.2:markdown skills (YAML frontmatter + body,schemaVersion 1,1536 字符描述上限) + JSX design skills + progressive disclosure
-- [[references/pi-coding-agent-session-format]] — pi-coding-agent session JSONL tree 完整 schema:header (v3) + 8 entry 类型 + 7 AgentMessage 子类型 + compaction firstKeptEntryId 边界机制
-- [[references/dsh-package-hierarchy]] — dsh 的 24 个 package group 完整索引 + capability seam 映射 + 添加新 package checklist
-- [[references/sysctl-hardening-table]] — Linux kernel sysctl 加固参数索引（122 条），按 fs/kernel/net.core/net.ipv4/net.ipv6 五大域分组
-- [[references/mechanical-watch-mechanics]] — 机械表七大部件与能量链原理速查
-- [[references/bmad-method-github-readme]] — BMad Method 仓库 README + 完整文件树（407 文件 / 481.6k tokens，gitingest 抓取）
-- [[references/omo-github-readme]] — omo 仓库 README（526 文件 / 1.1M tokens）：SUL-1.0 许可 + 20 项 highlights + 5 discipline agents + Team Mode v4.0 + 4 category routing
-- [[references/omo-team-mode-config-schema]] — omo Team Mode `team_mode` 11 字段配置详解（enabled/parallel/members/cap/base_dir/mailbox poll）
-- [[references/ique-dsi-menu-software]] — iQue DSi 所有内置软件图标一览及软件位置移动方法
-- [[references/ique-dsi-system-settings]] — iQue DSi 主机设置四页全部选项（软件管理/亮度/用户信息/亲子管理/互联网）
-- [[references/ique-dsi-wifi-glossary]] — iQue DSi 网络术语表（SSID/WEP/WPA/AOSS/WPS等）
-- [[references/ique-dsi-shop]] — iQue DSi 商店与 iQue 点数购买、充值、限制说明
-- [[references/ios-design-patterns]] — GoF 23 种设计模式速查（创建/结构/行为）+ iOS 常见反模式清单
-- [[references/uikit-nstextattachment-vs-appkit]] — UIKit NSTextAttachment 没有 AppKit 风格的 imageBounds(for: ContentModeType: ...) override;iOS 15+ 用 NSTextAttachmentLayout 协议族
-- [[references/ptp-book-overview]] — PTP技术书（Lularible），41节从思想实验到 LinuxPTP 源码到 ptp-lite 实现
-- [[references/macos-window-switchers]] — macOS 窗口切换器对比速查：AltTab / BetterCmdTab / Contexts / Witch 在许可证/macOS 兼容/布局/触发方式上的差异
-- [[references/pattern-catalog-battle-tested-patterns]] — battle-tested-patterns 46 模式完整目录（数据结构/并发/系统/内存/行为），每条带"Proven In"精确行号链接
-- [[references/gemini-notebook-mcp-cli-tools]] — gemini-notebook-mcp-cli 43 个 MCP 工具速查(notebooks/sources/query/chat/studio/downloads/research/sharing/auth/server/batch/pipeline/tag),按 group 列出可隐藏子集
-- [[references/gemini-notebook-mcp-cli-known-issues]] — 9 类脆弱性:`bl` 参数 / cookie 过期 / ~50次/天速率限制 / undocumented API RPC ID 漂移 / CSRF 提取失败 / Claude Desktop profile 怪癖 / Chrome 136+ 远调试封锁 / auth-loop env var 陷阱 / browser-bound replay
-- [[references/cs193p-spring-2025]] — Stanford CS193P Spring 2025 课程参考：Paul Hegarty 主讲，6周叙事式 + 5次作业 + 3周自选项目，SwiftUI 核心课
-- [[references/chezmoi-official-site]] — chezmoi.io 官方首页：五大特性 + 单命令引导 + 当前版本
-- [[references/dot-cli-commands]] — dot CLI 53 条命令完整参考（Core/Diagnostics/Security/AI/Secrets 等 8 类）
-- [[references/chezmoi-templating-guide]] — 官方模板权威说明：Go text/template + sprig + 内置/数据/config 变量来源优先级
-- [[references/chezmoi-source-state-attributes]] — 17 个属性前缀 + 2 个后缀的完整参考
-- [[references/chezmoi-workflow-discussion]] — GitHub Discussions #2673：v3 方向 + 一周上手 + 七大常见坑
-- [[references/chezmoi-encryption-backends]] — chezmoi 加密三后端实操：GPG（非对称/对称）、Gnome Keyring（Linux+macOS Keychain）、KeePassXC（数据库化）
-- [[references/chezmoi-bitwarden-keychain]] — Bitwarden 模板注入密钥 + macOS Keychain / Windows DPAPI 免手输主密码 + git-filter-repo 历史清理
-- [[references/chezmoi-nix-darwin-integration]] — chezmoi + nix-darwin 分层组合：用户级配置 + 系统级声明，.chezmoidata.yaml profile + Justfile 维护命令
-- [[references/chezmoi-patterns-recipes]] — chezmoi 社区实战模式集：安装矩阵、文件名前缀、跨平台变量、加密矩阵、4 种 run_* 钩子、.chezmoiroot/.chezmoiignore 协作
-- [[references/kimi-k3-technical-overview]] — Kimi K3 技术深度分析：2.8T MoE、Delta Attention、QAT、基准、定价
-- [[references/kimi-k3-geopolitical-context]] — Kimi K3 地缘政治与市场背景：HBM 限制、算力绕过策略、DeepSeek 类比
-- [[references/kimi-k3-video-review-lingdu]] — 零度解说实测视频：DeepSWE/LiveBench 基准、虚拟机 Agent 演示、3D 生成、越狱
-- [[references/kimi-k3-video-analysis-reportify]] — 哈佛老徐深度分析：Kimi 官方原文、Anthropic Fable-5 禁令、国产芯片全球化路径
-- [[references/kimi-k3-official-blog]] — Kimi K3 官方发布博客：代码案例（MiniTriton/芯片设计）、知识工作、Stable LatentMoE 组件、完整基准表
-- [[references/ultrabookreview-throttlestop-guide-2026]] — UltrabookReview 2026 ThrottleStop 指南（承接 2017 Notebookcheck 版本）：FIVR/TPL/Speed Shift/BD PROCHOT 全选项
-- [[references/techpowerup-m16-r1-undervolt-thread]] — TechPowerUp Alienware m16 R1 解锁 + mV Boost @ 800 MHz = +100 mV 模板
-- [[references/dell-kb-alienware-high-cpu-temp]] — Dell 官方对外星人 CPU 100°C 的立场（TCC 是设计不是故障）
-- [[references/cve-2023-39910]] — Libbitcoin Explorer（bx）弱种子漏洞：`bx seed` 用 MT19937（2^32 熵）生成钱包种子，私钥可被 GPU 暴力枚举
-- [[references/postgresql-for-everything]] — Raphael Bauer 文章：PostgreSQL 可替代 11 种专用系统（ES/MongoDB/Kafka/Redis/Neo4j），三大支柱（稳定/安装便捷/极简基础设施）
-- [[references/sqlite-for-everything]] — JoeCode「SQLite for Everything」文章蒸馏：11 个替代场景 + SQLite vs PostgreSQL 对比 + FTS5/sqlite-vec/BEGIN IMMEDIATE 三大技术点 (bc 0.55, blog quality)
-- [[sources/andrej-karpathy-zero-to-hero]] — Karpathy「Neural Networks: Zero to Hero」8 讲视频 + notebooks，从 micrograd 到 GPT
-- [[sources/anthropic-claude-code-agent-teams-docs]] — Anthropic 官方文档（v2.1.178+）：Agent Teams 4 组件 + 5 显示模式 + 3 hooks + 9 已知限制
-- [[sources/cnblogs-agent-teams-complete-guide]] — 博客园 _朝晖：Claude Code Agent Teams 中文完整教程（环境变量启用 / 4 类典型用法 / 3 层 teammates 模型 / 生命周期 / token 成本对比）
-- [[sources/csdn-agent-teams-multi-process]] — CSDN 技术博客：从工程实现角度解析 Agent Teams Swarm / TaskList / Mailbox / IPC 进程通信
-- [[sources/sebastian-raschka-llms-from-scratch-book]] — Raschka Manning 2024 书 + GitHub 仓库：PyTorch 实现 GPT 全流程
-- [[sources/stanford-cs336-spring2025]] — Stanford CS336 (Hashimoto & Liang) Spring 2025：5 作业 + 19 讲座，数据/架构/系统/对齐全覆盖
-- [[sources/li-hongyi-genai-2025]] — 李宏毅 2025《生成式AI导论》13 讲：中文母语零基础友好
-- [[sources/dakingrai-mech-interp-papers]] — 机制可解释性论文清单（配 arXiv:2407.02646 综述）：Techniques/Evaluation/Findings/Tools 四分组
-- [[sources/n8n-github-repo]] — n8n-io/n8n GitHub 仓库：198.7K stars，TypeScript，双许可（Sustainable Use + Enterprise），1500+ 集成
-- [[sources/n8n-official-home]] — n8n.io 官方主页：500+ 商业集成、Microsoft/NVIDIA/Meta 企业客户、SOC 2/GDPR 合规
-- [[sources/n8n-queue-mode]] — docs.n8n.io Queue Mode 文档：main/webhook/worker 三角色解耦、Redis BullMQ + Postgres 生产架构
-- [[sources/czlonkowski-n8n-mcp]] — czlonkowski/n8n-mcp：npx 一行配置，让 Claude 用自然语言搭 n8n workflow
-- [[sources/n8n-2-0-release]] — n8n 2.0（2025-12）：multi-agent 编排 + MCP client/server 一等节点 + 内建 Data Tables
-- [[sources/cloudflare-imgbed-github]] — MarSeventh/CloudFlare-ImgBed 主仓库：Serverless+Docker 双部署、多存储后端、MIT
-- [[sources/cloudflare-imgbed-docs]] — CloudFlare ImgBed 官方文档站：完整能力清单 + 架构（Vue 3/Hono/KV·D1/PBKDF2）
-- [[sources/telegraph-image-github]] — cf-pages/Telegraph-Image 上游：Cloudflare Pages + Telegram Bot API 免费图床，其局限催生 ImgBed
-
-## Synthesis
-
-- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议理论 × LinuxPTP 工业实现：协议 vs 实现的工程空白（PI 伺服、PHC 桥接、硬件时间戳三级精度）
+## References
+- [[references/markdownview-package]] — LiYanan2004/MarkdownView 仓库参考:S- [[synthesis/ptp-ieee1588 × linuxptp]] — PTP 协议理论 × LinuxPTP 工业实现：协议 vs 实现的工程空白（PI 伺服、PHC 桥接、硬件时间戳三级精度）
 - [[synthesis/trek-auth-system × trek-mcp-server]] — Trek 认证 × MCP 服务器：AI 客户端的认证特化（受众绑定、scope 切分、级联吊销、插件边界）
 - [[synthesis/zustand-core-architecture × zustand]] — Zustand 内部架构 × 库品牌：30 行不是省略，是有意暴露（vanilla 闭包 vs React 包装）
 - [[synthesis/arc-memory-management × swift-concurrency]] — ARC × Swift Concurrency：同一引用类型的两种正交安全机制（生命周期 vs 访问安全）
@@ -516,7 +499,6 @@ title: Wiki Index
 - [[synthesis/Research: DESIGN.md 工作流]] — DESIGN.md 三轮研究综合：Google Labs 规范 + VoltAgent 74 个真实样本 + Stitch 自动产出 + Claude Code MCP 集成
 
 ## Journal
-
 - [[concepts/ai-research-direction-yao-qizhi]] — 姚期智 2026 WAIC 演讲：AI 受图灵机/物理定律边界约束，「Science for AI + 量子 AI」是未来 5-10 年新范式
 - [[entities/yao-qizhi]] — 图灵奖得主（2000），Dolev-Yao 攻击者模型 + Yao's Millionaires' Problem 奠基人，量子 AI 倡导者
 - [[synthesis/Science for AI × AI for Science]] — 姚期智两轴并立：AI for Science（已发生，AlphaFold/宇宙弦功率谱/单位距离问题）vs Science for AI（5-10 年，量子 AI + 数学 + 物理赋能 AI）
