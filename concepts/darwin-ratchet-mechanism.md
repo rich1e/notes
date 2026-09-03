@@ -17,6 +17,10 @@ base_confidence: 0.8
 lifecycle: draft
 lifecycle_changed: 2026-08-31
 ---
+relationships:
+  - target: "[[concepts/kimi-delta-attention]]"
+    type: related_to
+
 
 # Darwin Ratchet Mechanism
 
@@ -75,8 +79,9 @@ if last_delta < 2.0 and this_delta < 2.0:
 如果硬凑 MAX_ROUNDS=3,会进入「为凑分增冗余」反模式——加废话/加段落让 LLM 觉得更详细,实际质量不变。
 
 ## Related
+- [[concepts/kimi-delta-attention]]
 
-- [[skills-darwin-skill-evaluation-rubric]] — 评分依据
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — HL-4 实战记录
-- [[concepts-three-segment-fallback-table]] — 与 dim3 优化的关系
-- [[journal-2026-08-31-darwin-brew-weekly-optimization]] — 本次 session
+- [[skills/darwin-skill-evaluation-rubric]] — 评分依据
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — HL-4 实战记录
+- [[concepts/three-segment-fallback-table]] — 与 dim3 优化的关系
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — 本次 session

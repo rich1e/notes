@@ -103,8 +103,8 @@ curl "https://api.github.com/search/issues?q=repo:Homebrew/homebrew-core+is:pr+i
 
 ## Related
 
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — 完整优化记录
-- [[concepts-three-segment-fallback-table]] — 本次提炼的设计模式
-- [[entities-homebrew-weekly-blog-skill]] — 被优化的 skill
-- [[skills-darwin-skill-evaluation-rubric]] — 9 维评分框架
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — 完整优化记录
+- [[concepts/three-segment-fallback-table]] — 本次提炼的设计模式
+- [[entities/homebrew-weekly-blog-skill]] — 被优化的 skill
+- [[skills/darwin-skill-evaluation-rubric]] — 9 维评分框架
 - [[homebrew-weekly-20260831]] — 本次生成的周报(若 vault 已索引)

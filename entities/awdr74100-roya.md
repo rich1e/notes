@@ -16,7 +16,17 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 ---
-
+relationships:
+  - target: "[[projects/figwright/figwright]]"
+    type: related_to
+  - target: "[[projects/figwright/references/figwright-tool-taxonomy]]"
+    type: related_to
+  - target: "[[projects/figwright/references/figwright-shared-protocol]]"
+    type: related_to
+  - target: "[[projects/figwright/concepts/loopback-security-host-origin-headers]]"
+    type: related_to
+  - target: "[[projects/figwright/concepts/design-context-grounding]]"
+    type: related_to
 # Roya (@awdr74100)
 
 Figwright 项目作者。GitHub @awdr74100,根 `package.json` `author` 字段记 `Roya <a78945612385238@gmail.com>`。
@@ -32,3 +42,11 @@ Figwright 项目作者。GitHub @awdr74100,根 `package.json` `author` 字段记
 ## 相关
 
 - [[entities/figwright]] —— 主项目
+
+## Related
+- [[projects/figwright/concepts/design-context-grounding]]
+- [[projects/figwright/concepts/loopback-security-host-origin-headers]]
+- [[projects/figwright/references/figwright-shared-protocol]]
+- [[projects/figwright/references/figwright-tool-taxonomy]]
+
+- [[projects/figwright/figwright]]

@@ -24,6 +24,10 @@ relationships:
     type: related_to
   - target: "[[concepts/cdp-cookie-extraction]]"
     type: related_to
+  - target: "[[references/gemini-notebook-mcp-cli-tools]]"
+    type: related_to
+  - target: "[[synthesis/concepts-mcp-server-protocol-quirks]]"
+    type: related_to
 ---
 
 # NotebookLM / Gemini Notebook — Google's AI notebook product
@@ -58,6 +62,8 @@ The rebrand is partial and progressive: existing personal accounts may still lan
 Beyond branding, the rebrand signals Google's intent to position the product closer to the Gemini brand — suggesting deeper integration with the Gemini API surface over time. This is **speculative** ^[inferred] but consistent with Google's broader Gemini-everywhere strategy. Programmatic clients that hard-code `notebooklm.google.com` will silently break for users whose accounts have rolled over; the [[entities/gemini-notebook-mcp-cli]] `metadata.json` per-profile host detection is the correct mitigation pattern.
 
 ## Related
+- [[synthesis/concepts-mcp-server-protocol-quirks]]
+- [[references/gemini-notebook-mcp-cli-tools]]
 
 - [[entities/gemini-notebook-mcp-cli]] — production client, handles the rebrand
 - [[concepts/cdp-cookie-extraction]] — auth bridge (Google does not offer OAuth for NotebookLM)

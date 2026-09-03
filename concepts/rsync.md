@@ -16,7 +16,13 @@ lifecycle: draft
 lifecycle_changed: 2026-08-14
 tier: supporting
 ---
-
+relationships:
+  - target: "[[concepts/sqlite-as-file-format]]"
+    type: related_to
+  - target: "[[concepts/shell-alias-taxonomy]]"
+    type: related_to
+  - target: "[[entities/ruanyifeng-blog]]"
+    type: related_to
 # rsync
 
 **rsync** 是 Linux 平台的增量文件同步 CLI 工具。三大核心机制:
@@ -47,3 +53,9 @@ tier: supporting
 ## 源
 
 - 阮一峰博客:[[web-www-ruanyifeng-com-blog-2020-rsync]]
+
+## Related
+- [[entities/ruanyifeng-blog]]
+- [[concepts/shell-alias-taxonomy]]
+
+- [[concepts/sqlite-as-file-format]]

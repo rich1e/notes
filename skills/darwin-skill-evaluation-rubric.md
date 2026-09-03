@@ -57,7 +57,7 @@ lifecycle_changed: 2026-08-31
 - huashu-gpt-image: +10.85
 - huashu-weread-advisor: +14.9
 - claude-design: +16.5
-- (详见 [[synthesis-darwin-skill-brew-weekly-blog-optimization]] 的实战记录)
+- (详见 [[synthesis/darwin-skill-brew-weekly-blog-optimization]] 的实战记录)
 
 ## 配套工具
 
@@ -67,7 +67,7 @@ lifecycle_changed: 2026-08-31
 
 ## Related
 
-- [[concepts-three-segment-fallback-table]] — HL-2 的具体形态
-- [[concepts-darwin-ratchet-mechanism]] — HL-4 的机制
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — 实战示例
-- [[journal-2026-08-31-darwin-brew-weekly-optimization]] — 本次 session
+- [[concepts/three-segment-fallback-table]] — HL-2 的具体形态
+- [[concepts/darwin-ratchet-mechanism]] — HL-4 的机制
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — 实战示例
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — 本次 session

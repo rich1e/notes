@@ -22,7 +22,7 @@ lifecycle_changed: 2026-08-31
 
 ## Context
 
-[[skills-darwin-skill-evaluation-rubric]] 的 9 维评分框架已在多次 skill 优化中验证,但本实战是**第一次在「跨期上下文密集 + 数据依赖外部 API + 强叙事写作类」的复杂 skill 上跑完整流程**。brew-weekly-blog 不仅要执行工具命令,还要生成有文风的博客——dim8(实测表现)的评估本身就需要生成一份完整产物。
+[[skills/darwin-skill-evaluation-rubric]] 的 9 维评分框架已在多次 skill 优化中验证,但本实战是**第一次在「跨期上下文密集 + 数据依赖外部 API + 强叙事写作类」的复杂 skill 上跑完整流程**。brew-weekly-blog 不仅要执行工具命令,还要生成有文风的博客——dim8(实测表现)的评估本身就需要生成一份完整产物。
 
 评估时点:2026-08-31,目标 skill 文件体积 684 行,已有较成熟的反例黑名单(dim9 是已知强项)。
 
@@ -113,9 +113,9 @@ Round 1 Δ=+7.7,Round 2 Δ=+0.8。Round 2 < 2,触发见好就收。
 
 ## Related
 
-- [[skills-darwin-skill-evaluation-rubric]] — 9 维评分框架
-- [[concepts-three-segment-fallback-table]] — 三段式 fallback 设计模式(本次实战提炼)
-- [[skills-skill-runtime-neutrality-grep]] — Runtime 红线扫描的固化流程
-- [[concepts-darwin-ratchet-mechanism]] — ratchet 机制 + HL-4 触顶信号
-- [[entities-homebrew-weekly-blog-skill]] — 本次被优化的 skill 实体
-- [[journal-2026-08-31-darwin-brew-weekly-optimization]] — 本次实战的 session journal
+- [[skills/darwin-skill-evaluation-rubric]] — 9 维评分框架
+- [[concepts/three-segment-fallback-table]] — 三段式 fallback 设计模式(本次实战提炼)
+- [[skills/skill-runtime-neutrality-grep]] — Runtime 红线扫描的固化流程
+- [[concepts/darwin-ratchet-mechanism]] — ratchet 机制 + HL-4 触顶信号
+- [[entities/homebrew-weekly-blog-skill]] — 本次被优化的 skill 实体
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — 本次实战的 session journal

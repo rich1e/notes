@@ -25,6 +25,14 @@ relationships:
     type: related_to
   - target: "[[concepts/browser-process-model]]"
     type: related_to
+  - target: "[[references/open-codesign-prompt-system-deepwiki]]"
+    type: related_to
+  - target: "[[projects/figma/figma]]"
+    type: related_to
+  - target: "[[projects/figma/concepts/screen-08-photo-wall]]"
+    type: related_to
+  - target: "[[synthesis/ptp-ieee1588]]"
+    type: related_to
 ---
 
 # 移动端定时器精度问题
@@ -122,3 +130,10 @@ tick()
 
 - [[concepts/javascript-event-loop]] — 定时器作为宏任务的排队机制
 - [[concepts/browser-process-model]] — 渲染线程与 JS 引擎线程互斥关系
+
+## Related
+- [[synthesis/ptp-ieee1588]]
+- [[projects/figma/concepts/screen-08-photo-wall]]
+- [[projects/figma/figma]]
+
+- [[references/open-codesign-prompt-system-deepwiki]]

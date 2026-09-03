@@ -16,6 +16,10 @@ lifecycle: draft
 lifecycle_changed: 2026-08-14
 tier: supporting
 ---
+relationships:
+  - target: "[[concepts/rsync]]"
+    type: related_to
+
 
 # 阮一峰博客 (ruanyifeng.com)
 
@@ -35,3 +39,7 @@ tier: supporting
 ## 相关
 
 - [[rsync]] — 概念页,本博客最常被引用的工具主题之一
+
+## Related
+
+- [[concepts/rsync]]

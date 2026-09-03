@@ -25,6 +25,16 @@ relationships:
     type: related_to
   - target: "[[entities/gnu-stow]]"
     type: related_to
+  - target: "[[journal/2026-08-31-darwin-brew-weekly-optimization]]"
+    type: related_to
+  - target: "[[references/chezmoi-official-site]]"
+    type: related_to
+  - target: "[[references/dot-cli-commands]]"
+    type: related_to
+  - target: "[[references/chezmoi-bitwarden-keychain]]"
+    type: related_to
+  - target: "[[references/chezmoi-patterns-recipes]]"
+    type: related_to
 ---
 
 # Dotfile 管理工具谱系
@@ -74,3 +84,11 @@ relationships:
 - [[entities/gnu-stow]] — Stow 项目实体
 - [[concepts/unrendered-chezmoi-template-env-leak]] — chezmoi + statusline env-first 的耦合陷阱
 - [[skills/chezmoi-keyring-template]] — chezmoi `{{ keyring ... }}` 用法
+
+## Related
+- [[references/chezmoi-patterns-recipes]]
+- [[references/chezmoi-bitwarden-keychain]]
+- [[references/dot-cli-commands]]
+- [[references/chezmoi-official-site]]
+
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]]

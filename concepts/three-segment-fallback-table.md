@@ -17,7 +17,11 @@ base_confidence: 0.75
 lifecycle: draft
 lifecycle_changed: 2026-08-31
 ---
-
+relationships:
+  - target: "[[journal/2026-08-31-darwin-brew-weekly-optimization]]"
+    type: related_to
+  - target: "[[references/chezmoi-official-site]]"
+    type: related_to
 # 三段式 Fallback 表
 
 ## What It Is
@@ -85,7 +89,7 @@ LLM 在解析时能 step-by-step 匹配,失败后还有第二路径——这是 
 
 ## 实战来源
 
-2026-08-31 在 [[entities-homebrew-weekly-blog-skill]] 优化中提炼。当时 dim3(失败模式编码)是最低维度(6/10),仅在末尾「故障排除」章节零散提到。Round 1 把 7 条失败场景写成三段式 fallback 表,dim3 涨到 9/10,总分 +7.7 分。
+2026-08-31 在 [[entities/homebrew-weekly-blog-skill]] 优化中提炼。当时 dim3(失败模式编码)是最低维度(6/10),仅在末尾「故障排除」章节零散提到。Round 1 把 7 条失败场景写成三段式 fallback 表,dim3 涨到 9/10,总分 +7.7 分。
 
 7 条场景模板:
 
@@ -100,8 +104,10 @@ LLM 在解析时能 step-by-step 匹配,失败后还有第二路径——这是 
 每条都满足三段式的隐性约束:机器可检测信号 / 低成本一线修复 / 可接受退化兜底。
 
 ## Related
+- [[references/chezmoi-official-site]]
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]]
 
-- [[skills-darwin-skill-evaluation-rubric]] — dim3 的评分依据
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — 7 条场景的实战上下文
-- [[concepts-darwin-ratchet-mechanism]] — 触顶信号与三段式的质量关系
+- [[skills/darwin-skill-evaluation-rubric]] — dim3 的评分依据
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — 7 条场景的实战上下文
+- [[concepts/darwin-ratchet-mechanism]] — 触顶信号与三段式的质量关系
 - [[concepts-skill-failure-mode-encoding]] — 抽象层面的失败模式编码理论

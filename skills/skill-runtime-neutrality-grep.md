@@ -86,7 +86,7 @@ brew-weekly-blog 2026-08-31:Round 2 命中一条红线(README L14),修复 +0.8 �
 
 ## Related
 
-- [[skills-darwin-skill-evaluation-rubric]] — Runtime 适配性是 gate 项,不是 dim6 子项
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — 实战示例
-- [[entities-homebrew-weekly-blog-skill]] — 被修复的 skill 实体
-- [[journal-2026-08-31-darwin-brew-weekly-optimization]] — 本次 session
+- [[skills/darwin-skill-evaluation-rubric]] — Runtime 适配性是 gate 项,不是 dim6 子项
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — 实战示例
+- [[entities/homebrew-weekly-blog-skill]] — 被修复的 skill 实体
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — 本次 session

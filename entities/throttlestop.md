@@ -6,7 +6,16 @@ tags: [throttlestop, tool, undervolt, intel, unclewebb, techpowerup, fivr, windo
 relationships:
   - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
     type: related_to
-
+  - target: "[[references/ultrabookreview-throttlestop-guide-2026]]"
+    type: related_to
+  - target: "[[references/dell-kb-alienware-high-cpu-temp]]"
+    type: related_to
+  - target: "[[synthesis/research-throttlestop-alienware-thermals]]"
+    type: related_to
+  - target: "[[concepts/throttlestop-options]]"
+    type: related_to
+  - target: "[[concepts/throttlestop-fivr-undervolting]]"
+    type: related_to
 summary: Kevin "UncleWebb" Glynn 开发的 Windows 笔记本 CPU 调参工具（2009 起 / 当前 v9.7 / freeware）。通过 MSR 0x150 写 FIVR Offset Voltage 实现降压，配套 FIVR / TPL / Speed Shift / BD PROCHOT 等开关控制 thermal throttling。是 Intel XTU 受限情况下的事实标准替代品。
 sources:
   - https://www.techpowerup.com/throttlestop/
@@ -134,6 +143,11 @@ provenance:
 - [[research-throttlestop-alienware-thermals]]
 
 ## Related
+- [[concepts/throttlestop-fivr-undervolting]]
+- [[concepts/throttlestop-options]]
+- [[synthesis/research-throttlestop-alienware-thermals]]
+- [[references/dell-kb-alienware-high-cpu-temp]]
+- [[references/ultrabookreview-throttlestop-guide-2026]]
 
 - [[references/techpowerup-m16-r1-undervolt-thread|Techpowerup M16 R1 Undervolt Thread]] — shares #throttlestop/#undervolt (references)
 

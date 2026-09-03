@@ -8,7 +8,8 @@ relationships:
     type: related_to
   - target: "[[references/techpowerup-m16-r1-undervolt-thread]]"
     type: related_to
-
+  - target: "[[references/dell-kb-alienware-high-cpu-temp]]"
+    type: related_to
 summary: ThrottleStop 通过 MSR 0x150 写入负向 Offset Voltage 到 Intel FIVR 的 CPU Core/Cache 通道，从而实现 CPU 降压。配合 Speed Shift EPP、BD PROCHOT 等开关控制 throttling 行为。
 sources:
   - https://ultrabookreview.com/31385-the-throttlestop-guide
@@ -99,6 +100,7 @@ AWCC 的 **TCC Offset**（0-15）：
 - [[research-throttlestop-alienware-thermals]]
 
 ## Related
+- [[references/dell-kb-alienware-high-cpu-temp]]
 
 - [[references/ultrabookreview-throttlestop-guide-2026|ThrottleStop Guide (UltrabookReview, 2026)]] — shares #intel/#throttlestop/#undervolt (references)
 - [[references/techpowerup-m16-r1-undervolt-thread|How to unlock Alienware m16 R1 undervolt for ThrottleStop (TechPowerUp Forum)]] — shares #throttlestop/#undervolt (references)

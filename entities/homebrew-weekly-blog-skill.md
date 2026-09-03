@@ -17,6 +17,10 @@ base_confidence: 0.95
 lifecycle: draft
 lifecycle_changed: 2026-08-31
 ---
+relationships:
+  - target: "[[concepts/darwin-ratchet-mechanism]]"
+    type: related_to
+
 
 # Homebrew Weekly Blog Skill
 
@@ -63,8 +67,9 @@ lifecycle_changed: 2026-08-31
 - "Homebrew formulae/casks 内容创作"
 
 ## Related
+- [[concepts/darwin-ratchet-mechanism]]
 
-- [[synthesis-darwin-skill-brew-weekly-blog-optimization]] — 本 skill 的 darwin 优化记录
-- [[concepts-three-segment-fallback-table]] — 本 skill 提炼的设计模式
-- [[skills-darwin-skill-evaluation-rubric]] — 评估依据
-- [[journal-2026-08-31-darwin-brew-weekly-optimization]] — 本次 session
+- [[synthesis/darwin-skill-brew-weekly-blog-optimization]] — 本 skill 的 darwin 优化记录
+- [[concepts/three-segment-fallback-table]] — 本 skill 提炼的设计模式
+- [[skills/darwin-skill-evaluation-rubric]] — 评估依据
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]] — 本次 session

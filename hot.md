@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-09-03T01:54:05Z
+updated: 2026-09-03T02:18:00Z
 ---
 
 # Hot Cache
@@ -8,6 +8,8 @@ updated: 2026-09-03T01:54:05Z
 *A ~500-word semantic snapshot of recent activity. Updated after every major write operation.*
 
 ## Recent Activity
+
+- [2026-09-03 02:18] CROSS_LINK — 针对 /wiki-status 报告的 32 个 orphan 做精确 cross-link + 修复 broken-wikilinks,**16 页修改,68 链接添加,35 typed relations written**。**Part A 修复 broken-wikilinks (32 处)**:ingest 历史引入的损坏 — `[[concepts-foo]]` / `[[entities-foo]]` 等无 slash 引用,源自 2026-08-31 darwin-cluster ingest paste 错误。修复 7 页让 darwin-skill 5 页簇立刻相互连接(darwin-ratchet-mechanism ← darwin-skill-evaluation-rubric 等)。**Part B 添加 cross-links**:3 个簇聚焦 — throttlestop 簇(3 页 / 14 entries,alientware-bios / throttlestop-fivr / ruanyifeng-blog → techpowerup-m16-r1 / ultrabookreview / dell-kb 三篇 Dell/Alienware 散热 reference);darwin-skill 簇(4 页 / 14 entries,darwin-ratchet-mechanism ← darwin-skill-brew-weekly-blog-optimization 等);chezmoi 簇(2 synthesis 页 / 9 entries,chezmoi-templating × statusline-injection-defense ← chezmoi-official-site / dot-cli-commands 等)。**Orphan 减少 32 → 22**:22 个剩余 = 5 misc web 档案(staging)+ 7 synthesis consolidation/cross-link 报告(self-referential)+ 4 entity 未匹配(herdr, bmad-clarify-analyze-plan, Research: Fabric/Treehouse 在 homonym filter 后无 stem match)+ 3 concept (asciidoc 等)。**零回滚风险**:只 append Related段和 relationships: 块,绝不修改 body 内容。Pre-snapshot `4ef85218` 锁定,可 `git reset --hard 4ef85218` 回滚。QMD skipped(unset)。
 
 - [2026-09-03 01:54] INGEST_RAW — dayfold session (2026-09-02) 三篇姊妹 bugfix 草稿合并提炼,**3 页新建 + 1 页更新**。**核心**:[[projects/dayfold/skills/nstextattachment-bounds-overflow]]((UITextView 内嵌 NSTextAttachment 被纵向拉伸的根因+修复:`bounds.width > textContainer.lineFragmentWidth` 触发回行放大,layoutManager 用被撑大的 textContainer 重算布局渲染放大;改用 `textContainer.size.width` 而非 `bounds.width` 算 attachment 目标尺寸,commit `2843f9c`)+ [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]](图文混排下 `ScrollViewReader.scrollTo(anchor: .bottom)` 把标题/历史图/历史文本推出屏幕顶部的反行为,改由内层 UITextView 自管 caret 可见性即可,commit `1f07c0e`)+ [[references/uikit-nstextattachment-vs-appkit]](跨平台通用知识放全局 references:UIKit 没有 AppKit 风格的 `imageBounds(for: ContentModeType: containerSize: imageSize:)` override,唯一可控杠杆是 `attachmentBounds`;iOS 15+ `NSTextAttachmentLayout` 协议族作为现代替代)。**关键关系**:三草稿源自同一 dayfold session,互相之间全部 cross-link(refines / complements / uses),与 [[projects/dayfold/skills/uitextview-intrinsic-width-overflow]](阶段 H 的「下游尺寸汇报」修复)+ [[projects/dayfold/skills/auto-expanding-texteditor-scroll]](「阶段 H 已修正三处」摘要)形成 5 页图文混排编辑器集群。[[projects/dayfold/dayfold]] 模式与技巧列表 +2 行。3 _raw 草稿 → `_raw/_archived/`。vault KG +3 → 429 页。QMD skipped(unset)。
 

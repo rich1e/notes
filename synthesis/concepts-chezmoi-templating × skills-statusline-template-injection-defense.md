@@ -26,6 +26,16 @@ relationships:
     type: derived_from
   - target: "[[skills/statusline-template-injection-defense]]"
     type: related_to
+  - target: "[[journal/2026-08-31-darwin-brew-weekly-optimization]]"
+    type: related_to
+  - target: "[[references/omo-github-readme]]"
+    type: related_to
+  - target: "[[references/chezmoi-official-site]]"
+    type: related_to
+  - target: "[[references/dot-cli-commands]]"
+    type: related_to
+  - target: "[[references/chezmoi-bitwarden-keychain]]"
+    type: related_to
 ---
 
 # 密钥注入 dotfile 的耦合陷阱
@@ -98,3 +108,11 @@ fi
 - [[skills/macos-keychain-getBase64Key]] — `security` 命令 + base64 解码
 - [[skills/claude-code-statusline]] — Claude Code statusline 基础
 - [[concepts/chezmoi-workflow]] — chezmoi 四动词 + apply 渲染桥梁
+
+## Related
+- [[references/chezmoi-bitwarden-keychain]]
+- [[references/dot-cli-commands]]
+- [[references/chezmoi-official-site]]
+- [[references/omo-github-readme]]
+
+- [[journal/2026-08-31-darwin-brew-weekly-optimization]]
