@@ -2,7 +2,7 @@
 title: >-
   PhoneBar 通话流程与操作指南
 category: skills
-tags: [react, analytics, webrtc, ux]
+tags: [react, call-center, webrtc, design-system]
 sources: [projects/xk-ai-talk-desk-ui]
 summary: >-
   热转来电与手动外呼的完整操作路径，PhoneBar 各子组件在通话生命周期中的切换逻辑。

@@ -29,9 +29,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[concepts/agent-team-cost-overhead]]"
-    type: synthesizes
+    type: related_to
   - target: "[[entities/claude-code-agent-teams-feature]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/agent-team-display-modes]]"
     type: related_to
   - target: "[[concepts/agent-team-mailbox-protocol]]"
@@ -92,7 +92,7 @@ total_cost ≈ teammate_count × (context_window_per_teammate × token_price)
 
 - vault 没有 `claude-code-three-modes` vs `agent-teams` 的合成页——三种 Plan/Explore 模式与 Agent Teams 是 _正交_ 还是 _替代_ 关系?
 - `mailbox_count` 是否可以 _共享_ ——多个 teammate 共用一个 inbox + 自动分发?这会打破当前 1:1 模型但降低成本
-- token 消耗的 _具体数字_ 在 vault 里没有出现(只有定性"线性")——值得补一个实测 [[references/claude-code-agent-teams-token-bench]]
+- token 消耗的 _具体数字_ 在 vault 里没有出现(只有定性"线性")——值得补一个实测 <!-- broken link: no claude-code-agent-teams-token-bench page found -->
 - 9 个已知限制的 _具体清单_ 是 wiki-lint 候选
 
 ## Related

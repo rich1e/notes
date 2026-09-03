@@ -1,7 +1,7 @@
 ---
 title: CoDesign artifact.jsx 在 Vite 上加载的脚手架
 category: skills
-tags: [codesign, vite, react, scaffolding, debugging]
+tags: [codesign, vite, react, scaffolding, Bugfix]
 sources:
   - store/project for X/figma session (2026-08-23)
 created: 2026-08-23T16:15:00Z

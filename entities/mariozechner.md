@@ -18,7 +18,7 @@ lifecycle_changed: 2026-08-24
 tier: supporting
 relationships:
   - target: "[[entities/pi-coding-agent]]"
-    type: developed_by
+    type: derived_from
 ---
 
 # Mario Zechner

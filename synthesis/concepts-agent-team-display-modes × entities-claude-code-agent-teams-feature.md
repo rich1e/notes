@@ -29,9 +29,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[concepts/agent-team-display-modes]]"
-    type: synthesizes
+    type: related_to
   - target: "[[entities/claude-code-agent-teams-feature]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/agent-team-cost-overhead]]"
     type: related_to
   - target: "[[skills/tmux-agent-teams-pane-workflow]]"
@@ -85,7 +85,7 @@ relationships:
 - `teammateMode` 是否会支持"混合模式"——lead 跑 tmux、worker 跑 in-process 以降低总成本?
 - vault 当前对 `auto` 模式的 _真实选择逻辑_ 没有权威描述;是否存在公开算法?
 - `split-panes` 模式与 [[skills/tmux-agent-teams-pane-workflow]] 的 3-pane 操作有重叠,但 tmux skill 假设 _已经是 tmux 模式_。两者在 `split-panes` 模式下的关系是冗余还是替代?
-- 9 个已知限制的完整列表未在 vault 中集中——是 wiki-lint 候选,值得补一篇 [[references/claude-code-agent-teams-known-issues]]
+- 9 个已知限制的完整列表未在 vault 中集中——是 wiki-lint 候选,值得补一篇 <!-- broken link: no claude-code-agent-teams-known-issues page found -->
 
 ## Related
 

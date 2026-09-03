@@ -1,7 +1,7 @@
 ---
 title: "VoltAgent"
 category: entities
-tags: [open-source-org, ai-agent, ai-coding, design-system, entity]
+tags: [open-source-org, ai-agents, ai-coding, ux, entity]
 sources:
   - "https://github.com/VoltAgent"
   - "https://github.com/VoltAgent/voltagent"

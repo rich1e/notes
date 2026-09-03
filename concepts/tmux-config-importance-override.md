@@ -13,7 +13,9 @@ created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz 设计:`.local` 里写 `bind c new-window -c '#{pane_current_path}' #!important`,主 conf 用 perl sed 在 `bind`/`set` 行尾追加 `#!important` 后,会在 source 阶段被改写成"提前插入"到主 conf 之前,达到用户绑定"赢"的目的。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.78
 provenance:

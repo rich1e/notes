@@ -2,7 +2,7 @@
 title: >-
   Test-Time Compute / RLVR — 2025 推理模型新范式
 category: concepts
-tags: [llm, reasoning, alignment]
+tags: [Deepseek, reasoning, alignment]
 sources:
   - "http://cs336.stanford.edu/spring2025/"
   - "https://speech.ee.ntu.edu.tw/~hylee/genai/2025-spring.php"
@@ -16,7 +16,9 @@ provenance:
   inferred: 0.20
   ambiguous: 0.10
 base_confidence: 0.75
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.75"
 lifecycle_changed: 2026-07-27
 ---
 

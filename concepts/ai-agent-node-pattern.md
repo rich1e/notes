@@ -1,7 +1,7 @@
 ---
 title: "AI Agent 节点模式"
 category: concepts
-tags: [ai-agents, llm, langchain, mcp, n8n, workflow]
+tags: [ai-agents, Deepseek, langchain, mcp, n8n, automation]
 sources:
   - "https://docs.n8n.io/ai-agents/"
   - "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/langchain"

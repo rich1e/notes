@@ -57,5 +57,5 @@ tier: supporting
 
 - `/wiki-ingest` 的 SKILL.md 在 `.claude/skills/wiki-ingest/`
 - [[skills/wiki-lint]] — 入库后的健康审计
-- [[skills/wiki-status]] — 入库前后的状态查看
+- <!-- broken link: skill 'wiki-status' may not exist yet --> — 入库前后的状态查看
 - [[synthesis/consolidation-2026-08-24]] — 最近一次入库后的 --consolidate 报告

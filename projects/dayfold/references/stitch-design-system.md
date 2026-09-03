@@ -1,7 +1,7 @@
 ---
 title: "Dayfold Stitch 设计系统资产"
 category: references
-tags: [dayfold, google-stitch, design-system, ios, ui-design]
+tags: [dayfold, stitch, ux, mobile, ui-design]
 sources:
   - "dayfold/.stitch/designs/stitch-use.txt"
 summary: "Dayfold 项目的 Google Stitch 设计系统资产索引：DESIGN.md、设计系统 ID、生成屏幕记录及本地文件布局。"

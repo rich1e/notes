@@ -1,7 +1,7 @@
 ---
 title: iOS 模拟器安装与配置（ManicEMU / MeloNX）
 category: skills
-tags: [ios, retro-gaming, sideload]
+tags: [mobile, MAME, Feather]
 sources:
   - "https://www.onmyodev.com/2026/05/manicemu/"
   - "https://www.onmyodev.com/2026/05/melonx/"

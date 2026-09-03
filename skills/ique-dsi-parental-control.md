@@ -1,7 +1,7 @@
 ---
 title: iQue DSi 亲子管理设置指南
 category: skills
-tags: [nintendo, ique, security, dsi]
+tags: [nintendo, ique, security, nds]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-08-03T05:47:33Z

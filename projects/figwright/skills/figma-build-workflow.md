@@ -1,7 +1,7 @@
 ---
 title: figma-build 工作流
 category: skill
-tags: [figma, build, mcp, skill, figwright, ai-agent, design-tools]
+tags: [figma, build, mcp, skill, figwright, ai-agents, design-tools]
 sources:
   - https://github.com/awdr74100/figwright
 created: 2026-08-14T08:00:00Z

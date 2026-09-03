@@ -26,7 +26,7 @@ relationships:
   - target: "[[entities/postgresql]]"
     type: extends
   - target: "[[concepts/database-as-platform]]"
-    type: enables
+    type: uses
 ---
 
 # PostgreSQL 扩展生态全景

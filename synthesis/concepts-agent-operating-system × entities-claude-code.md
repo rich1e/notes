@@ -1,7 +1,7 @@
 ---
 title: agent-operating-system × claude-code
 category: synthesis
-tags: [ai-agents, agent-memory, claude-code, mcp, synthesis]
+tags: [ai-agents, agent-memory, Claude, mcp, synthesis]
 sources:
   - "[[concepts/agent-operating-system]]"
   - "[[entities/claude-code]]"

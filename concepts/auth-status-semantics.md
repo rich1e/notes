@@ -106,3 +106,7 @@ relationships:
 - [[concepts/cdp-cookie-extraction]] — 底层的 CDP 认证机制
 - [[concepts/multi-profile-google-auth]] — profile 如何与健康检查互动
 - [[entities/gemini-notebook-mcp-cli]] — 生产环境实现
+
+## Related
+
+- [[synthesis/concepts-auth-status-semantics × entities-gemini-notebook-mcp-cli]] — synthesis

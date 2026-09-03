@@ -28,7 +28,7 @@ tier: supporting
 `wiki-lint` 是 vault 维护技能，扫描整个 wiki 找出结构性问题：
 
 - **orphans** —— 零入链 wikilink 的页面（知识孤岛）
-- **broken wikilinks** —— `[[target]]` 指向不存在的页面
+- **broken wikilinks** —— `<!-- broken link: 'target' is a template placeholder -->` 指向不存在的页面
 - **missing frontmatter** —— 缺 title/category/tags/sources/created/updated
 - **stale content** —— `updated:` 时间戳过老
 - **fragmented tags** —— 同 tag 但互链不足（cohesion < 0.15）

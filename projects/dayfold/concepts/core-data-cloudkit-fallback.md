@@ -1,7 +1,7 @@
 ---
 title: Core Data + CloudKit 降级策略
 category: project
-tags: [ios, core-data, cloudkit, debugging]
+tags: [mobile, core-data, cloudkit, Bugfix]
 sources: [projects/dayfold]
 summary: >-
   NSPersistentCloudKitContainer 在无 iCloud 账号时返回 134400

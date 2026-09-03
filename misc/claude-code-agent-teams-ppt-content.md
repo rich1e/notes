@@ -28,9 +28,9 @@ relationships:
   - target: "[[synthesis/Research: Claude Code Agent Teams]]"
     type: derived_from
   - target: "[[concepts/agent-team-mailbox-protocol]]"
-    type: elaborates
+    type: extends
   - target: "[[concepts/claude-code-agent-teams]]"
-    type: elaborates
+    type: extends
   - target: "[[concepts/claude-code-three-modes]]"
     type: related_to
 ---

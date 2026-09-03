@@ -1,7 +1,7 @@
 ---
 title: "Session JSONL 作为 Second Source — 状态破坏时的二次证据路径"
 category: synthesis
-tags: [atomic-state-recovery, session-log, jsonl, codesign, claude-code, treehouse, synthesis]
+tags: [atomic-state-recovery, session-log, jsonl, codesign, Claude, treehouse, synthesis]
 sources:
   - "[[concepts/atomic-state-recovery]]"
   - "[[projects/figma/skills/codesign-session-jsonl-recovery]]"

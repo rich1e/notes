@@ -150,6 +150,8 @@ OMO_CODEX_SEND_ANONYMOUS_TELEMETRY=0
 - Anthropic blocked OpenCode 的具体故事背景——thdxr 推文链接是孤证 ambiguous
 
 ## Related
+- [[synthesis/concepts-ai-tool-specialization × entities-oh-my-openagent]] — synthesis
+
 - [[entities/sisyphus-agent]] / [[entities/hephaestus-agent]] — 核心 agents
 - [[concepts/omo-ultrawork-mode]] — 单 keyword 触发
 - [[concepts/omo-team-mode]] — v4.0 多 agent

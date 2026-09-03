@@ -1,7 +1,7 @@
 ---
 title: LLM 推测解码（Speculative Decoding）
 category: concepts
-tags: [llm, performance, automation]
+tags: [Deepseek, performance, workflow]
 sources:
   - "https://www.ifanr.com/1670249"
   - "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf"

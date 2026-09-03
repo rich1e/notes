@@ -1,7 +1,7 @@
 ---
 title: iOS 17 App Development for Beginners × Stanford CS193P Spring 2025
 category: synthesis
-tags: [ios, swift, swiftui, education, book]
+tags: [mobile, swift, swiftui, education, book]
 sources:
   - "entities/ios17-app-development-book"
   - "references/cs193p-spring-2025"

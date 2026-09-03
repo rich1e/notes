@@ -22,9 +22,9 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[entities/postgresql]]"
-    type: pattern_of
+    type: uses
   - target: "[[concepts/database-as-platform]]"
-    type: example_of
+    type: derived_from
   - target: "[[skills/sqlite-queue-pattern]]"
     type: related_to
 ---

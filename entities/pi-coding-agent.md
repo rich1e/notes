@@ -20,7 +20,7 @@ relationships:
   - target: "[[entities/open-codesign]]"
     type: related_to
   - target: "[[entities/mariozechner]]"
-    type: developed_by
+    type: derived_from
   - target: "[[concepts/jsonl-session-tree]]"
     type: implements
 ---

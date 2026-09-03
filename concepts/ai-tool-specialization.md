@@ -1,7 +1,7 @@
 ---
 title: "AI 工具栈的专业化分工"
 category: concepts
-tags: [ai-tooling, agentic-workflow, mcp, concept, llm]
+tags: [ai-coding, ai-agents, mcp, concept, Deepseek]
 summary: "让每个 AI 工具承担自己擅长的窄任务（Stitch = 视觉、Claude Code = 逻辑），通过 MCP 做协议级协作，而不是堆砌一个全能的 mega-agent。这是从旧模式（描述→生成→修）转向新模式（拆任务→专业化→组合）的关键。"
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
@@ -101,3 +101,9 @@ MCP 是专业化分工的**协议基础**——它让"窄而专"的 agent 能以
 - [[entities/google-stitch]] — 视觉侧的代表
 - [[entities/claude-code]] — 逻辑侧的代表
 - [[concepts/mcp-server-protocol-quirks]] — 让分工可组装的协议层基础
+
+## Related
+
+- [[synthesis/concepts-ai-tool-specialization × entities-oh-my-openagent]] — synthesis
+
+- [[synthesis/concepts-ai-tool-specialization × entities-bmad-method]] — synthesis

@@ -1,7 +1,7 @@
 ---
 title: iOS 数据持久化
 category: skills
-tags: [ios, core-data, swiftdata, persistence]
+tags: [mobile, core-data, swiftdata, persistence]
 relationships:
   - target: "[[projects/dayfold/dayfold]]"
     type: uses

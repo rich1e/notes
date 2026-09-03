@@ -15,7 +15,9 @@ created: 2026-08-03T12:10:00Z
 updated: 2026-08-03T12:10:00Z
 summary: 用 import/导出 + 函数签名 + 控制流 + IaC 声明构建仓库级知识图谱(call graph / types / tests / decisions / specs),不依赖 LLM,确定性可重放,可 query 也可 evaluate。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85
 provenance:

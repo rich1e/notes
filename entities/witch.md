@@ -1,7 +1,7 @@
 ---
 title: Witch — macOS 窗口切换器
 category: entities
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: Many Tricks 出品的付费窗口切换器，可同时存在多个切换器（app/window/tab 三种粒度独立）；支持横向/纵向/菜单栏三种布局与搜索式切换；适合 Windows 转 Mac 用户。
 sources:
   - https://manytricks.com/witch/

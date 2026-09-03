@@ -1,7 +1,7 @@
 ---
 title: Agent Team 成本 × omo 编排器
 category: synthesis
-tags: [ai-agent, agent-teams, cost, omo, synthesis]
+tags: [ai-agents, agent-teams, cost, omo, synthesis]
 sources:
   - concepts/agent-team-cost-overhead
   - entities/oh-my-openagent

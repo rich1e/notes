@@ -2,7 +2,7 @@
 title: >-
   Sebastian Raschka
 category: entities
-tags: [llm, education, book]
+tags: [Deepseek, education, book]
 sources:
   - "https://github.com/rasbt/LLMs-from-scratch"
   - "https://sebastianraschka.com/"
@@ -15,7 +15,9 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 tier: supporting
 lifecycle_changed: 2026-07-27
 ---

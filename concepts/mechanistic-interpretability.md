@@ -2,7 +2,7 @@
 title: >-
   Mechanistic Interpretability — 机制可解释性
 category: concepts
-tags: [llm, interpretability, research]
+tags: [Deepseek, interpretability, research]
 sources:
   - "https://github.com/Dakingrai/awesome-mechanistic-interpretability-lm-papers"
 created: 2026-07-27T07:30:00Z
@@ -14,7 +14,9 @@ provenance:
   inferred: 0.20
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.8"
 lifecycle_changed: 2026-07-27
 ---
 

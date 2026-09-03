@@ -1,7 +1,7 @@
 ---
 title: AltTab — macOS 窗口切换器
 category: entities
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: 开源 macOS 窗口切换器（lwouis 出品），免费版已覆盖核心需求，Pro 解锁多组快捷键与高级功能；兼容 macOS 10.13+，支持 21 种语言。
 sources:
   - https://alt-tab.app/zh-cn/features

@@ -1,7 +1,7 @@
 ---
 title: PTP 故障排查与诊断
 category: skills
-tags: [ptp, debugging, linuxptp, operations]
+tags: [ptp, Bugfix, linuxptp, operations]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
 updated: 2026-08-03T05:47:33Z

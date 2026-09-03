@@ -15,7 +15,9 @@ created: 2026-08-03T11:40:00Z
 updated: 2026-08-03T11:40:00Z
 summary: 为同时运行的多个 AI 编码 agent 各自分配一个隔离、可重用、可清理的 git worktree:detached HEAD 避免分支冲突,池复用保留依赖/构建缓存,durable lease 支持无人值守 long-running agent。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.83"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.83
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: 暖色主题色与字体
 category: project
-tags: [ios, swiftui, ux]
+tags: [mobile, swiftui, design-system]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

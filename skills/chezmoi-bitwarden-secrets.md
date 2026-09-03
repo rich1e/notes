@@ -1,7 +1,7 @@
 ---
 title: chezmoi Bitwarden 密钥注入与跨平台解锁
 category: skills
-tags: [chezmoi, security, cli, automation]
+tags: [chezmoi, security, CLI, workflow]
 sources:
   - "https://yangzh.cn/posts/posts/chezmoi-dotfiles-secrets.html"
   - "https://cn.x-cmd.com/install/chezmoi"

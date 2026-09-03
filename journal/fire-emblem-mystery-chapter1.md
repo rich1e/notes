@@ -1,7 +1,7 @@
 ---
 title: Fire Emblem 新·黑暗龙 第1章 マルスの旅立ち 攻略
 category: journal
-tags: [game, fire-emblem]
+tags: [game, Fire-Emblem]
 sources:
   - "http://www.fireemblem.net/fe/fe1/FE1R/TRCTICS/1.htm"
 created: 2026-07-02

@@ -1,7 +1,7 @@
 ---
 title: "Trusted Shell Platform"
 category: entities
-tags: [dotfiles, shell, tools, zsh]
+tags: [dotfiles, cli, tools, zsh]
 sources:
   - "https://github.com/sebastienrousseau/dotfiles.github.io"
   - "https://dotfiles.io"

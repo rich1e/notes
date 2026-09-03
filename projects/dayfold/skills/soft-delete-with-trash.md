@@ -1,7 +1,7 @@
 ---
 title: 软删除 + 回收箱
 category: project
-tags: [ios, swiftui, core-data, persistence, ux]
+tags: [mobile, swiftui, core-data, persistence, design-system]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

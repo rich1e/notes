@@ -8,7 +8,7 @@ tags:
   - dayfold
 relationships:
   - target: "[[projects/dayfold/skills/auto-expanding-texteditor-scroll]]"
-    type: refines
+    type: extends
   - target: "[[projects/dayfold/skills/uitextview-intrinsic-width-overflow]]"
     type: related_to
   - target: "[[projects/dayfold/skills/nstextattachment-bounds-overflow]]"

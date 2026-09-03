@@ -1,7 +1,7 @@
 ---
 title: Xcode IDE 入门
 category: skills
-tags: [xcode, ios, xcode-cloud]
+tags: [xcode, mobile, xcode-cloud]
 sources:
   - "buckets/books/iOS 17 App Development for Beginners.epub"
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"

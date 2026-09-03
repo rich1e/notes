@@ -14,7 +14,9 @@ created: 2026-08-03T16:05:00Z
 updated: 2026-08-03T16:05:00Z
 summary: gpakosz `<prefix> +` 比内置 `resize-pane -Z` 强:把 pane 升格到新 window 仍可继续 split;跨 window 切换后,被 maximize 的 pane 在新 window 里仍处 maximized 状态 —— 用 `maximized` window 名字 + `remain-on-exit` + `swap-pane` 还原实现。
 tier: peripheral
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.82"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.82
 provenance:

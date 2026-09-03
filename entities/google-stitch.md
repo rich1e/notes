@@ -1,7 +1,7 @@
 ---
 title: "Google Stitch"
 category: entities
-tags: [google-labs, ai-design, gemini, design-tool, entity]
+tags: [stitch, ai-design, gemini, design-tool, entity]
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
   - "https://stitch.withgoogle.com"

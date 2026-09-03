@@ -1,7 +1,7 @@
 ---
 title: "Agent Operating System (AOS)"
 category: concepts
-tags: [agent-architecture, memory, handoff, compact, ai-agents, llm]
+tags: [ai-agents, arc, handoff, compact, Deepseek]
 sources:
   - "_raw/agent-operating-system.txt"
 source_url: "_raw/agent-operating-system.txt"

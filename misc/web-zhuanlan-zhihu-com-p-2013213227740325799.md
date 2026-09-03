@@ -1,7 +1,7 @@
 ---
 title: "深入理解 Claude Code 的项目记忆机制：Auto Memory + CLAUDE.md"
 category: misc
-tags: [claude-code, memory, ai-tools]
+tags: [Claude, arc, ai-tools]
 sources:
   - "https://zhuanlan.zhihu.com/p/2013213227740325799"
 source_url: "https://zhuanlan.zhihu.com/p/2013213227740325799"

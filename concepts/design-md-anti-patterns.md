@@ -1,7 +1,7 @@
 ---
 title: "DESIGN.md 中的 AI 反模式与 Do's and Don'ts"
 category: concepts
-tags: [design-system, ai-coding, ai-taste, anti-pattern, concept]
+tags: [ux, ai-coding, ai-taste, anti-pattern, concept]
 summary: "DESIGN.md 第 8 必备章节 'Do's and Don'ts' 是约束 agent 行为的关键段：明示允许与禁止的设计决策，避免 AI 生成的 UI 漂向通用 gradient/glow/emoji 默认审美（俗称 'AI taste'）。"
 sources:
   - "https://github.com/VoltAgent/awesome-design-md"

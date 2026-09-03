@@ -1,7 +1,7 @@
 ---
 title: Fabric Patterns × Claude Code 配置管理
 category: synthesis
-tags: [ai-tools, prompt-engineering, claude-code, llm, productivity]
+tags: [ai-tools, prompt-engineering, Claude, Deepseek, productivity]
 sources:
   - "concepts/fabric-patterns"
   - "skills/claude-code-settings"

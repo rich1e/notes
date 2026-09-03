@@ -2,7 +2,7 @@
 title: >-
   LLM Training Pipeline — 大模型训练三阶段
 category: concepts
-tags: [llm, training, alignment]
+tags: [Deepseek, training, alignment]
 sources:
   - "https://github.com/karpathy/nn-zero-to-hero"
   - "http://cs336.stanford.edu/spring2025/"
@@ -15,7 +15,9 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 tier: core
 lifecycle_changed: 2026-07-27
 ---

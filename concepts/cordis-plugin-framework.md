@@ -166,3 +166,7 @@ Cordis 的独特之处：**typed events + waterfall 语义 + 自动 unwind** 三
 - [[concepts/capability-seam]] — 三件套的具体应用
 - [[concepts/agent-scope-hierarchy]] — scope 概念扩展
 - [[concepts/turn-step-flow]] — event 在 agent 循环中的应用
+
+## Related
+
+- [[synthesis/concepts-cordis-plugin-framework × entities-deepseek-harness]] — synthesis

@@ -1,7 +1,7 @@
 ---
 title: 设计系统作为 AI 上下文 × Claude Code 消费
 category: synthesis
-tags: [design-system, ai-context, claude-code, mcp, synthesis]
+tags: [ux, ai-context, Claude, mcp, synthesis]
 sources:
   - concepts/design-system-as-ai-context
   - entities/claude-code

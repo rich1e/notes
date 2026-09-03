@@ -2,7 +2,7 @@
 title: >-
   神策 SDK 双世界注入方案：MAIN world + isolated world 分离
 category: skills
-tags: [chrome-extension, analytics]
+tags: [chrome-extension, call-center]
 sources: [projects/jrfed-zaxd-mediation-tool]
 summary: >-
   神策 SDK 需要访问 window 对象，但 Content Script 默认运行在隔离世界。解决方案：用 world: MAIN 注入主世界脚本初始化 SDK，隔离世界通过 tracker.ts 工具函数触发上报。

@@ -15,7 +15,9 @@ created: 2026-08-03T11:15:00Z
 updated: 2026-08-03T11:15:00Z
 summary: Go 编写的 git worktree 池管理 CLI,为并行 AI 编码 agent 提供可重用、预热的隔离工作树,无守护进程,支持 durable lease、原子 state 自愈、safe-by-default destroy。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85
 provenance:

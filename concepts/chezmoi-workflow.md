@@ -1,7 +1,7 @@
 ---
 title: chezmoi Workflow — 四个动词 + 一次更新
 category: concepts
-tags: [chezmoi, dotfiles, workflow, concept]
+tags: [chezmoi, dotfiles, automation, concept]
 sources:
   - "https://github.com/twpayne/chezmoi/discussions/2673"
   - "https://chezmoi.io/"

@@ -2,7 +2,7 @@
 title: >-
   Obsidian Wiki daily cron 安装（macOS launchd）
 category: skills
-tags: [obsidian-wiki, launchd, automation, claude-code]
+tags: [obsidian-wiki, launchd, workflow, Claude]
 sources:
   - conversation:2026-08-05
 created: 2026-08-05T02:40:00Z

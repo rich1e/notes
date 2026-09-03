@@ -1,7 +1,7 @@
 ---
 title: Kimi K3 — Technical Overview (AI News Summary)
 category: references
-tags: [llm, chinese-ai, open-source]
+tags: [Deepseek, chinese-ai, open-source]
 sources:
   - "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"
 source_url: "https://artificialintelligence-news.com/2025/07/kimi-k3-3-trillion-parameters/"

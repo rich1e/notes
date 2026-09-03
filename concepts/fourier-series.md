@@ -12,7 +12,9 @@ updated: 2026-07-25
 summary: >-
   傅里叶分析：从单位圆与正弦/余弦出发，由 Euler 公式 $e^{ix}=\cos x+i\sin x$ 串联"复数正弦""本轮链"与傅里叶级数。任意周期函数都可用一组旋转圆链机械图像（半径=振幅、转速=角频率、初角=相位）合成。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: 2026-07-25
 base_confidence: 0.78
 provenance:

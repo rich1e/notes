@@ -1,7 +1,7 @@
 ---
 title: ARC 与内存安全
 category: concepts
-tags: [swift, arc, ios]
+tags: [swift, memory, mobile]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-08-03T05:47:33Z

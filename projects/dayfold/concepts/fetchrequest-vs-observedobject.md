@@ -1,7 +1,7 @@
 ---
 title: FetchRequest 与行内属性刷新
 category: project
-tags: [ios, swiftui, core-data, state-management]
+tags: [mobile, swiftui, core-data, state-management]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

@@ -1,7 +1,7 @@
 ---
 title: "Research: DESIGN.md 工作流"
 category: synthesis
-tags: [design-system, ai-coding, stitch, mcp, research]
+tags: [ux, ai-coding, stitch, mcp, research]
 sources:
   - "https://github.com/VoltAgent/awesome-design-md"
   - "https://github.com/google-labs-code/design.md"

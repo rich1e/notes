@@ -21,11 +21,11 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[concepts/database-as-platform]]"
-    type: exemplifies
+    type: extends
   - target: "[[concepts/postgres-extensions-ecosystem]]"
-    type: has_component
+    type: uses
   - target: "[[skills/postgres-queue-pattern]]"
-    type: enables
+    type: uses
   - target: "[[entities/sqlite]]"
     type: related_to
   - target: "[[references/postgresql-for-everything]]"

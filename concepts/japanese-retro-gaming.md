@@ -1,7 +1,7 @@
 ---
 title: "日本复古游戏 — 主机生态与本土化现象"
 category: concepts
-tags: [japan, retro-gaming, console, famicom, super-famicom, sfc, region-lock]
+tags: [japan, MAME, console, famicom, super-famicom, sfc, region-lock]
 sources: []
 summary: 日本复古游戏生态：Famicom / Super Famicom / PC Engine 等主机的本土化差异（卡带形状、颜色、audio 编码）、区域锁机制、烧录卡生态（DSTWO / iQue）的地域特殊性。
 base_confidence: 0.55

@@ -1,7 +1,7 @@
 ---
 title: design context grounding
 category: concept
-tags: [grounding, design-context, mcp-tool, figwright, ai-agent]
+tags: [grounding, design-context, mcp-tool, figwright, ai-agents]
 sources:
   - https://github.com/awdr74100/figwright
 created: 2026-08-14T08:00:00Z

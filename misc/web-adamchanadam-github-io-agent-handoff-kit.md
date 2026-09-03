@@ -1,7 +1,7 @@
 ---
 title: "Agent Handoff Kit — AI agent 跨会话接力工具"
 category: misc
-tags: [ai-tools, ai-agent, claude-code, memory]
+tags: [ai-tools, ai-agents, Claude, arc]
 sources:
   - "https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-guide.html"
 source_url: "https://adamchanadam.github.io/agent-handoff-kit/agent-handoff-kit-guide.html"

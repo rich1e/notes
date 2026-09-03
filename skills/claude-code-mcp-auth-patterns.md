@@ -1,7 +1,7 @@
 ---
 title: "Claude Code MCP 鉴权模式：API Key 头 vs OAuth Proxy"
 category: skills
-tags: [mcp, claude-code, oauth, api-key, stitch, skill]
+tags: [mcp, Claude, oauth, api-key, stitch, skill]
 summary: "两种把外部 MCP server 接进 Claude Code 的鉴权范式：(1) HTTP API key 作为 header 直接传，适合轻量服务；(2) Google Cloud OAuth + community proxy，适合长期重度使用。用 Stitch MCP 作为示例，分别给出命令、陷阱和故障清单。"
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"

@@ -1,7 +1,7 @@
 ---
 title: "Make (原 Integromat)"
 category: entities
-tags: [workflow-automation, saas, automation, no-code]
+tags: [workflow-automation, saas, workflow]
 sources:
   - "https://www.c-sharpcorner.com/article/zapier-vs-make-vs-n8n-the-ultimate-comparison-for-workflow-automation-in-2025/"
 created: 2026-07-31T07:15:00Z

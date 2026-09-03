@@ -1,7 +1,7 @@
 ---
 title: battle-tested-patterns × iOS 设计模式速查
 category: synthesis
-tags: [design-patterns, ios, swift, programming, reference]
+tags: [design-patterns, mobile, swift, develop, reference]
 sources:
   - "entities/battle-tested-patterns"
   - "references/ios-design-patterns"

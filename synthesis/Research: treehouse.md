@@ -15,7 +15,9 @@ created: 2026-08-03T11:50:00Z
 updated: 2026-08-03T11:50:00Z
 summary: 从 treehouse 的 12 个版本迭代看到一条清晰的演化主线:让 git worktree 池化 + 长期 lease + safe destroy + crash-safe state,每条线都先有"被现实撞出来的痛"再演进。可复用到任何"小型本地 runtime 状态"的工程上。
 tier: core
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85
 provenance:

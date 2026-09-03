@@ -1,14 +1,14 @@
 ---
 title: 自适应撑高 UITextEditor 与外层 ScrollView 复合滚动
 category: project
-tags: [ios, swiftui, uikit, scrollview, texteditor, app-architecture]
+tags: [mobile, swiftui, uikit, scrollview, texteditor, app-architecture]
 relationships:
   - target: "[[projects/dayfold/skills/dayone-photo-library-picker]]"
-    type: complements
+    type: related_to
   - target: "[[projects/dayfold/concepts/architecture-overview]]"
     type: uses
   - target: "[[projects/dayfold/skills/uitextview-intrinsic-width-overflow]]"
-    type: refined_by
+    type: derived_from
 sources: [projects/dayfold]
 summary: >-
   长文本输入 + 大图共存于同一滚动容器：UITextView 关闭自身滚动按

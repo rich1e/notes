@@ -1,7 +1,7 @@
 ---
 title: Contexts — macOS 窗口切换器
 category: entities
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: 边栏式 macOS 窗口切换器，自动隐藏边栏按 Space 分组列窗口；触控板边缘滑动 + 多显示器独立边栏；付费，免费试用；macOS Ventura+。
 sources:
   - https://contexts.co/

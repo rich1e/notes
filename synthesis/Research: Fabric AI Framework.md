@@ -1,7 +1,7 @@
 ---
 title: "Research: Fabric AI Framework"
 category: synthesis
-tags: [ai-tools, prompt-engineering, llm, open-source, research]
+tags: [ai-tools, prompt-engineering, Deepseek, open-source, research]
 sources:
   - "https://github.com/danielmiessler/Fabric"
   - "https://github.com/danielmiessler/fabric/tree/main/data/patterns"

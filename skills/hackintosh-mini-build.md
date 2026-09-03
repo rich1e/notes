@@ -1,7 +1,7 @@
 ---
 title: 黑苹果小机箱装机指南（对标 Mac Studio）
 category: skills
-tags: [macos, tools, programming]
+tags: [macOS, tools, develop]
 sources:
   - "https://blog.simplenaive.cn/posts/34.html"
   - "http://www.huerpu.cc:7000/?p=846"

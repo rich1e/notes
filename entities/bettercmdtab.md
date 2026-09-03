@@ -1,7 +1,7 @@
 ---
 title: BetterCmdTab — macOS 窗口切换器
 category: entities
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: rokartur 出品的免费开源 Cmd+Tab 替代品，永久免费、零遥测；三种布局（列表/网格/缩略图）+ 模糊搜索 + 标签下钻 + Space 过滤，macOS 13+。
 sources:
   - https://bettercmdtab.app/

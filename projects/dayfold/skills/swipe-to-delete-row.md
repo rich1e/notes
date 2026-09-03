@@ -1,7 +1,7 @@
 ---
 title: 自定义左滑删除容器
 category: project
-tags: [ios, swiftui, animation, ux, app-architecture]
+tags: [mobile, swiftui, animation, design-system, app-architecture]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

@@ -1,7 +1,7 @@
 ---
 title: Fabric (danielmiessler)
 category: entities
-tags: [ai-tools, prompt-engineering, llm, cli-tools, open-source]
+tags: [ai-tools, prompt-engineering, Deepseek, cli-tools, open-source]
 sources:
   - "https://github.com/danielmiessler/Fabric"
 created: 2026-07-09T08:00:00Z

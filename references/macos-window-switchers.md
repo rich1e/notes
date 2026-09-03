@@ -1,7 +1,7 @@
 ---
 title: macOS 窗口切换器对比速查
 category: references
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: 主流 macOS 窗口切换器横向对比：AltTab / BetterCmdTab / Contexts / Witch 在许可证、macOS 兼容、布局、触发方式与独家特性上的差异。
 sources:
   - https://bettercmdtab.app/

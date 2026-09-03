@@ -1,7 +1,7 @@
 ---
 title: Mixture-of-Experts × Kimi K3
 category: synthesis
-tags: [llm, model-architecture, open-source]
+tags: [Deepseek, model-architecture, open-source]
 sources:
   - "[[concepts/mixture-of-experts]]"
   - "[[entities/kimi-k3]]"

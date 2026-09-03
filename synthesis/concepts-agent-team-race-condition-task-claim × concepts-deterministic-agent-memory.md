@@ -30,9 +30,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[concepts/agent-team-race-condition-task-claim]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/deterministic-agent-memory]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/agent-team-mailbox-protocol]]"
     type: related_to
   - target: "[[entities/openlore]]"
@@ -84,7 +84,7 @@ relationships:
 ## Open Questions
 
 - vault 没有 _跨机 Agent Teams_ 的页——Anthropic 是否计划把文件系统锁换成 etcd/Consul?
-- `agent-team-race-condition-task-claim` 提到"lock 失败 → 重试或拒绝",但 _重试策略_ 没有权威描述——指数退避?固定延时?best-effort?值得补一篇 [[concepts/agent-team-claim-retry-strategy]]
+- `agent-team-race-condition-task-claim` 提到"lock 失败 → 重试或拒绝",但 _重试策略_ 没有权威描述——指数退避?固定延时?best-effort?值得补一篇 <!-- broken link: no agent-team-claim-retry-strategy page found -->
 - `deterministic-agent-memory` 与 `agent-operating-system` 的 co=9 未覆盖对:本合成是"哲学 × 子系统"案例,AOS 是"子系统全集"——本合成页是否应该被并入 AOS 主线?
 - 是否有 _第三方工具_(如 [[entities/hephaestus-agent]])实现了 _同一哲学的不同子系统_?对比能反推哲学的边界
 

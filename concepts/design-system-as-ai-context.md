@@ -2,7 +2,7 @@
 
 title: "设计系统作为 AI 上下文"
 category: concepts
-tags: [design-system, ai-context, design-tokens, concept, llm]
+tags: [ux, ai-context, design-tokens, concept, Deepseek]
 summary: "把设计系统（颜色 token、字号、布局规则）编码为 agent 可读的 DESIGN.md，作为 AI 编码 agent 的硬约束输入，避免 agent 在设计决策上反复猜测耗 token。"
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"

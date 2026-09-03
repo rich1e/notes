@@ -2,7 +2,7 @@
 title: >-
   RAG vs Fine-tuning vs Prompt Engineering — 何时用什么
 category: concepts
-tags: [llm, engineering, rag]
+tags: [Deepseek, engineering, rag]
 sources:
   - "https://github.com/rasbt/LLMs-from-scratch"
 created: 2026-07-27T07:30:00Z
@@ -15,7 +15,9 @@ provenance:
   inferred: 0.20
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.8"
 lifecycle_changed: 2026-07-27
 ---
 

@@ -103,11 +103,13 @@ npx bmad-method install
 - "Web bundles"对 vault 工作流（macOS Claude Code 终端）的桥接价值——值得后续尝试
 
 ## Related
+- [[synthesis/concepts-ai-tool-specialization × entities-bmad-method]] — synthesis
+
 - [[references/bmad-method-github-readme]] — 完整 README + 文件索引
 - [[concepts/bmad-delivery-loop]] — Clarify→Plan→Build→Learn 闭环
 - [[concepts/bmad-named-agent-architecture]] — 三腿凳模型
 - [[entities/bmad-named-agent]] — 5 个具名 agent
 - [[entities/bmad-party-mode]] — 多 agent 房间
 - [[skills/bmad-install-and-setup]] — 安装流程
-- [[synthesis/concepts-ai-agent × entities-bmad-method]]（未来可生成） — 通用 AI agent 框架 × 具体落地产品
+- <!-- broken link: this synthesis page does not exist -->（未来可生成） — 通用 AI agent 框架 × 具体落地产品
 - [[synthesis/concepts-deterministic-agent-memory × entities-bmad-method|确定性 Agent 记忆 × BMad 方法论]] — synthesis

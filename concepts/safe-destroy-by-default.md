@@ -14,7 +14,9 @@ created: 2026-08-03T11:35:00Z
 updated: 2026-08-03T11:35:00Z
 summary: 破坏性 CLI 默认 dry-run + 风险类别独立 opt-in;拒绝 blanket --force、跨池 wildcard、global delete-everything;treehouse v2.0.0 移除 --force 是教科书式安全 API 演进。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85
 provenance:

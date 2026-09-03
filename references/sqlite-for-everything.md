@@ -23,7 +23,7 @@ relationships:
   - target: "[[entities/sqlite]]"
     type: derived_from
   - target: "[[concepts/database-as-platform]]"
-    type: example_of
+    type: derived_from
   - target: "[[references/postgresql-for-everything]]"
     type: related_to
   - target: "[[concepts/postgres-extensions-ecosystem]]"

@@ -295,6 +295,11 @@ title: Wiki Index
 - [[synthesis/concepts-agent-team-race-condition-task-claim × concepts-deterministic-agent-memory]] — 文件锁作为 task claim 防 race 是确定性哲学在 _动态调度_ 上的延伸;OpenLore(读时确定性)与 Agent Teams(写时确定性)共享文件系统作为协调总线
 - [[synthesis/concepts-design-md-format-spec × entities-awesome-design-md]] — 规范(8 章节)vs 最大下游样本集(74 站点扩展到 11 章节)的 _校准回路_;awesome 列表是规范的校准数据源,而非单纯参考集合
 
+- [[synthesis/concepts/ai-tool-specialization × entities/bmad-method]] — AI 工具专业化分工 × BMad 方法论 — 协议层范式 × 上层产品化包装:同一个问题('多 agent 协作')从两个方向回答
+- [[synthesis/concepts/cordis-plugin-framework × entities/deepseek-harness]] — Cordis 插件架构 × DeepSeek Harness — 抽象三件套(Service/Event/Effect)与 dsh 的'every is a plugin'具体实现
+- [[synthesis/concepts/ai-tool-specialization × entities/oh-my-openagent]] — AI 工具专业化分工 × Oh-My-OpenAgent — 范式哲学与产品 SKU 化的关系
+- [[synthesis/concepts/auth-status-semantics × entities/gemini-notebook-mcp-cli]] — Auth-Status 语义 × Gemini Notebook MCP CLI — 5 状态认证健康词汇表的来源与价值
+- [[synthesis/concepts/linux-server-hardening-checklist × entities/imthenachoman-how-to-secure-a-linux-server]] — Linux Server Hardening 全栈指南 × 检查清单抽象 — 全栈指南 vs 可执行清单的耦合分工
 ## Projects
 
 - [[projects/dayfold/dayfold]] — 暖色风格 iOS 日记 App（SwiftUI + Core Data/CloudKit + MapKit + WeatherKit）+ Stitch 设计系统（暖灰深夜阅读室风格）

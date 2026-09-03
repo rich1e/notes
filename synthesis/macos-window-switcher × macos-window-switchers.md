@@ -1,7 +1,7 @@
 ---
 title: macOS 窗口切换器 — 概念定义 × 对比表 — 4 款独立工具为何解决同一问题
 category: synthesis
-tags: [macos, tools, productivity, comparison, ux]
+tags: [macOS, tools, productivity, comparison, design-system]
 sources:
   - "[[concepts/macos-window-switcher]]"
   - "[[references/macos-window-switchers]]"

@@ -1,7 +1,7 @@
 ---
 title: "Statusline 防御未渲染 chezmoi 模板注入 — env 启发式 + keychain 回退"
 category: skills
-tags: [claude-code, statusline, chezmoi, macos-keychain, gotcha, defense-in-depth]
+tags: [Claude, statusline, chezmoi, macos-keychain, gotcha, defense-in-depth]
 sources:
   - "rich1e session (2026-08-24)"
 created: 2026-08-24

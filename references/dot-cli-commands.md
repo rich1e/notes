@@ -1,7 +1,7 @@
 ---
 title: "dot CLI 命令参考"
 category: references
-tags: [dotfiles, shell, cli, tools]
+tags: [dotfiles, cli, CLI, tools]
 sources:
   - "https://github.com/sebastienrousseau/dotfiles.github.io"
   - "https://dotfiles.io"
@@ -13,7 +13,9 @@ provenance:
   inferred: 0.06
   ambiguous: 0.02
 base_confidence: 0.72
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.72"
 lifecycle_changed: 2026-07-27
 tier: peripheral
 relationships:

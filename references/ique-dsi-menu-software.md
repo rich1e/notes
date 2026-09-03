@@ -1,7 +1,7 @@
 ---
 title: iQue DSi 内置软件一览
 category: references
-tags: [nintendo, ique, programming, dsi]
+tags: [nintendo, ique, develop, nds]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-08-03T05:47:33Z

@@ -2,7 +2,7 @@
 title: >-
   李宏毅（Hung-yi Lee）
 category: entities
-tags: [llm, education, course]
+tags: [Deepseek, education, course]
 sources:
   - "https://speech.ee.ntu.edu.tw/~hylee/genai/2025-spring.php"
 created: 2026-07-27T07:30:00Z
@@ -15,7 +15,9 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.8"
 lifecycle_changed: 2026-07-27
 ---
 

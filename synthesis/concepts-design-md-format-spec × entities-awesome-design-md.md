@@ -30,9 +30,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[concepts/design-md-format-spec]]"
-    type: synthesizes
+    type: related_to
   - target: "[[entities/awesome-design-md]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/design-system-as-ai-context]]"
     type: related_to
   - target: "[[concepts/agentic-design]]"
@@ -84,8 +84,8 @@ relationships:
 
 ## Open Questions
 
-- vault 没有 _DESIGN.md 反向_ 工具(从 Figma/Sketch 自动生成 DESIGN.md)的页——是否值得补一篇 [[skills/design-md-from-figma]]
-- 8 章节 vs 11 章节的 _diff_ 没有单独页——值得一篇 [[references/design-md-section-evolution]]
+- vault 没有 _DESIGN.md 反向_ 工具(从 Figma/Sketch 自动生成 DESIGN.md)的页——是否值得补一篇 <!-- broken link: no design-md-from-figma page found -->
+- 8 章节 vs 11 章节的 _diff_ 没有单独页——值得一篇 <!-- broken link: no design-md-section-evolution page found -->
 - awesome-design-md 仓库本身 _是否_ 遵循 DESIGN.md 规范?若不,这是 _元规范_ 的 _良性违反_ 还是 _生态分裂_ 的信号?
 - DESIGN.md 与 [[concepts/design-system-as-ai-context]] 的关系(co 之外):后者是 _AI 消费侧_,前者是 _人类生产侧_——AI 工具链是否直接读 DESIGN.md 或需中间转换?
 

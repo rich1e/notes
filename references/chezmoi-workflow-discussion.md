@@ -2,7 +2,7 @@
 title: >-
   chezmoi v3 General Discussion — Workflow & Pitfalls
 category: references
-tags: [chezmoi, dotfiles, workflow, community]
+tags: [chezmoi, dotfiles, automation, community]
 sources:
   - "https://github.com/twpayne/chezmoi/discussions/2673"
 source_url: "https://github.com/twpayne/chezmoi/discussions/2673"

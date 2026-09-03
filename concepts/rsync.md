@@ -1,7 +1,7 @@
 ---
 title: rsync
 category: concept
-tags: [rsync, linux, file-sync, backup, cli]
+tags: [rsync, linux, file-sync, backup, CLI]
 sources:
   - https://www.ruanyifeng.com/blog/2020/08/rsync.html
 created: 2026-08-14T08:00:00Z

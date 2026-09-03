@@ -1,7 +1,7 @@
 ---
 title: "google-labs-code/design.md"
 category: entities
-tags: [github-repo, google-labs, design-system, open-spec, ai-coding, entity]
+tags: [github-repo, stitch, ux, open-spec, ai-coding, entity]
 sources:
   - "https://github.com/google-labs-code/design.md"
   - "https://registry.npmjs.org/@google/design.md"

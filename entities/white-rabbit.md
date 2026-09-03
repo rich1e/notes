@@ -1,7 +1,7 @@
 ---
 title: White Rabbit — 亚纳秒级时间同步
 category: entities
-tags: [ptp, time-sync, hardware, physics, cern]
+tags: [ptp, time-sync, handheld, physics, cern]
 sources: ["https://github.com/Lularible/ptp-book"]
 created: 2026-07-03T09:00:00Z
 updated: 2026-08-03T05:47:33Z

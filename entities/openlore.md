@@ -16,7 +16,9 @@ created: 2026-08-03T12:05:00Z
 updated: 2026-08-03T12:05:00Z
 summary: TypeScript 编写的本地优先 agent 记忆与治理工具:静态分析生成代码知识图谱(call graph / types / tests / decisions / IaC),通过 MCP 暴露 73 个工具,hot path 无 LLM,确定性输出,可做 commit gate。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85
 provenance:

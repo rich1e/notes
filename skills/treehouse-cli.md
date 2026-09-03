@@ -14,7 +14,9 @@ created: 2026-08-03T11:45:00Z
 updated: 2026-08-03T11:45:00Z
 summary: treehouse 命令速查:install / get / enter / status / return / prune / destroy 的常见用法、关键 flag、ABA-safe 条件 return、与 GitHub Actions release 渠道。
 tier: peripheral
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.9
 provenance:

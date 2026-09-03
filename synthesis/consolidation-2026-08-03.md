@@ -4,7 +4,9 @@ category: synthesis
 tags: [maintenance, consolidation]
 sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on 2026-08-03: 1 orphan rescue + 71 lifecycle promote + 0 tag alias (false positive)。
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.9
 tier: peripheral

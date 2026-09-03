@@ -2,7 +2,7 @@
 title: >-
   CC SDK 集成：useSoftbar Hook
 category: concepts
-tags: [react, webrtc, analytics]
+tags: [react, webrtc, call-center]
 sources: [projects/xk-ai-talk-desk-ui]
 summary: >-
   useSoftbar 封装信科 LaihuAPI，通过事件驱动模式管理通话生命周期，CC 与 WebRTC 双通道签入。

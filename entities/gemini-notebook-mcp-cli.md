@@ -160,4 +160,6 @@ README 中还有一个"Vibe Coding Alert"(氛围编程警示)段落——作者�
 
 ## Related
 
+- [[synthesis/concepts-auth-status-semantics × entities-gemini-notebook-mcp-cli]] — synthesis
+
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-gemini-notebook-mcp-cli|MCP 协议怪癖 × gemini-notebook-mcp-cli 实现]] — synthesis

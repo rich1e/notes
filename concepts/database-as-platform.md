@@ -23,9 +23,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/postgresql]]"
-    type: exemplified_by
+    type: extends
   - target: "[[entities/sqlite]]"
-    type: exemplified_by
+    type: extends
   - target: "[[concepts/postgres-extensions-ecosystem]]"
     type: enabled_by
 ---

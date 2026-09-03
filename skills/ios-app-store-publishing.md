@@ -1,7 +1,7 @@
 ---
 title: 发布到 App Store
 category: skills
-tags: [ios, app-store, xcode, security]
+tags: [mobile, app-store, xcode, security]
 sources: ["buckets/books/iOS 17 App Development for Beginners.epub"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-08-03T05:47:33Z

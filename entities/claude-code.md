@@ -2,7 +2,7 @@
 
 title: "Claude Code"
 category: entities
-tags: [anthropic, ai-coding-agent, mcp, claude-code, entity]
+tags: [anthropic, ai-coding-agent, mcp, Claude, entity]
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
   - "https://baoyu.io/blog/2026-04-06/claude-code-token-optimization"

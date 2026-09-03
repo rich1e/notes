@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Statusline 配置基础"
 category: skills
-tags: [claude-code, statusline, shell, configuration]
+tags: [Claude, statusline, cli, configuration]
 sources:
   - "rich1e session (2026-08-24)"
 created: 2026-08-24

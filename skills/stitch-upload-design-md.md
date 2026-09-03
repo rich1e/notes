@@ -1,7 +1,7 @@
 ---
 title: "Stitch DESIGN.md 上传操作技巧"
 category: skills
-tags: [google-stitch, design-system, claude-code, mcp, api-key]
+tags: [stitch, ux, Claude, mcp, api-key]
 sources:
   - "dayfold/.stitch/designs/stitch-use.txt"
 summary: "通过 Claude Code 把 DESIGN.md 上传到 Google Stitch 项目的完整操作流程，含 Auto Mode 凭证检测问题的解法。"

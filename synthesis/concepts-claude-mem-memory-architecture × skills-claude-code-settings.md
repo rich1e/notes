@@ -1,7 +1,7 @@
 ---
 title: claude-mem-memory-architecture × claude-code-settings
 category: synthesis
-tags: [claude-code, agent-memory, mcp, ai-agents, synthesis]
+tags: [Claude, agent-memory, mcp, ai-agents, synthesis]
 sources:
   - "[[concepts/claude-mem-memory-architecture]]"
   - "[[skills/claude-code-settings]]"

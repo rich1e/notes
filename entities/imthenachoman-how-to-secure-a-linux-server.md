@@ -149,3 +149,7 @@ To Do: SELinux / AppArmor / disk encryption / CIS-CAT / debsums
 1. **本指南的最新 commit 时间** — 没有直接的 last-updated 指示，需查 GitHub commits 页面
 2. **WIP 章节何时完成** — rkhunter / chrootkit / ClamAV / AIDE 标记 (WIP) 状态 ^[ambiguous]
 3. **作者是否维护 Debian/Ubuntu/CentOS 发行版专章** — 指南说 distribution-agnostic 但实际可能有偏向 ^[ambiguous]
+
+## Related
+
+- [[synthesis/concepts-linux-server-hardening-checklist × entities-imthenachoman-how-to-secure-a-linux-server]] — synthesis

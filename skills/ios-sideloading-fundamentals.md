@@ -1,7 +1,7 @@
 ---
 title: iOS 侧载基础：证书、JIT、SideStore 与 LiveContainer
 category: skills
-tags: [ios, sideload, security]
+tags: [mobile, Feather, security]
 sources:
   - "https://www.onmyodev.com/2026/05/ios-sideloading-faq/"
   - "Clippings/Feather 签名工具"

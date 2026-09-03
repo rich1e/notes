@@ -1,7 +1,7 @@
 ---
 title: "Google Stitch + Claude Code MCP 工作流"
 category: misc
-tags: [ai-coding, claude-code, google-stitch, mcp, design-system, agentic-workflow]
+tags: [ai-coding, Claude, stitch, mcp, ux, ai-agents]
 sources:
   - "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"
 source_url: "https://medium.com/devsecops-ai/how-google-stitch-claude-codes-mcp-integration-changed-the-way-i-build-products-63ecb8ed7f5a"

@@ -1,7 +1,7 @@
 ---
 title: SwiftUI 上下文注入与 FetchRequest 响应
 category: project
-tags: [ios, swiftui, core-data, debugging]
+tags: [mobile, swiftui, core-data, Bugfix]
 relationships:
   - target: "[[concepts/swiftui-framework]]"
     type: uses

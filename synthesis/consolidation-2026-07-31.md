@@ -4,7 +4,9 @@ category: synthesis
 tags: [maintenance, consolidation]
 sources: []
 summary: wiki-lint 全量修复报告(2026-07-31):补建 4 个缺失核心概念页 + 2 个竞品实体页消除 8 处断链,裁剪 2 处超长 summary,断链归零。
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: "2026-07-31"
 tier: peripheral
 base_confidence: 0.9

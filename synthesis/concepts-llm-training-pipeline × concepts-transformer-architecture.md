@@ -1,7 +1,7 @@
 ---
 title: llm-training-pipeline × transformer-architecture
 category: synthesis
-tags: [llm, deep-learning, ai-coding, synthesis]
+tags: [Deepseek, deep-learning, ai-coding, synthesis]
 sources:
   - "[[concepts/llm-training-pipeline]]"
   - "[[concepts/transformer-architecture]]"

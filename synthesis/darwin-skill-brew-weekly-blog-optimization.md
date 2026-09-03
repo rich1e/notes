@@ -2,7 +2,7 @@
 title: >-
   Darwin-Skill 9 维评估在 brew-weekly-blog 上的实战
 category: synthesis
-tags: [darwin-skill, skill-optimization, homebrew, brew-weekly-blog, evaluation-rubric, runtime-neutrality]
+tags: [darwin-skill, skill-optimization, Homebrew, brew-weekly-blog, evaluation-rubric, runtime-neutrality]
 sources:
   - conversation:2026-08-31
 created: 2026-08-31T13:30:00Z

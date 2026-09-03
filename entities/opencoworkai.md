@@ -20,10 +20,10 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/open-codesign]]"
-    type: authored
+    type: derived_from
   - target: "[[entities/pi-coding-agent]]"
     type: uses
-  - target: "[[synthesis/Research: OpenCoworkAI open-codesign]]"
+  - target: "<!-- broken link: Research: open-codesign page does not exist -->"
     type: related_to
 ---
 

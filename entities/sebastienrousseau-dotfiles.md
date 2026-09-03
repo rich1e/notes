@@ -1,7 +1,7 @@
 ---
 title: "sebastienrousseau/dotfiles — Trusted Shell Platform"
 category: entities
-tags: [dotfiles, shell, chezmoi, zsh, tools]
+tags: [dotfiles, cli, chezmoi, zsh, tools]
 sources:
   - "https://github.com/sebastienrousseau/dotfiles.github.io"
   - "https://dotfiles.io"
@@ -13,7 +13,9 @@ provenance:
   inferred: 0.08
   ambiguous: 0.02
 base_confidence: 0.72
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.72"
 lifecycle_changed: 2026-07-27
 tier: supporting
 relationships:

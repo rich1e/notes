@@ -1,10 +1,10 @@
 ---
 title: Day One 风格照片库多选与预热加载
 category: project
-tags: [ios, swiftui, photos, phasset, performance, app-architecture]
+tags: [mobile, swiftui, photos, phasset, performance, app-architecture]
 relationships:
   - target: "[[projects/dayfold/skills/entry-editor-image-dirty-tracking]]"
-    type: complements
+    type: related_to
   - target: "[[projects/dayfold/concepts/architecture-overview]]"
     type: uses
 sources: [projects/dayfold]

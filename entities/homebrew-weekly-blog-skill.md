@@ -2,7 +2,7 @@
 title: >-
   Homebrew Weekly Blog Skill
 category: entities
-tags: [brew-weekly-blog, homebrew, skill, agent-tooling, content-generation]
+tags: [brew-weekly-blog, Homebrew, skill, agent-tooling, content-generation]
 sources:
   - conversation:2026-08-31
 created: 2026-08-31T13:55:00Z

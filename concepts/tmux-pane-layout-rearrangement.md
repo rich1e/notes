@@ -22,9 +22,9 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[skills/tmux-join-pane-swap-pane]]"
-    type: explained_by
+    type: derived_from
   - target: "[[skills/tmux]]"
-    type: part_of
+    type: related_to
   - target: "[[concepts/tmux-pane-split-for-agents]]"
     type: related_to
   - target: "[[concepts/tmux-pane-maximize-stateful]]"

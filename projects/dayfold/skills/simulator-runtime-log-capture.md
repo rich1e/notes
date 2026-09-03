@@ -1,10 +1,10 @@
 ---
 title: iOS 模拟器运行时日志抓取与"代码是否真在跑"的验证
 category: skill
-tags: [ios, xcode, debugging, swift]
+tags: [mobile, xcode, Bugfix, swift]
 relationships:
   - target: "[[projects/dayfold/skills/uitextview-intrinsic-width-overflow]]"
-    type: complements
+    type: related_to
 sources: [projects/dayfold]
 summary: >-
   抓 iOS 模拟器 App 的 NSLog 须用 simctl launch --console-pty；strings 查不到

@@ -1,12 +1,12 @@
 ---
 title: 非滚动 UITextView 的 intrinsic 宽度反向撑宽 SwiftUI 层级
 category: project
-tags: [ios, swiftui, debugging, xcode, app-architecture]
+tags: [mobile, swiftui, Bugfix, xcode, app-architecture]
 relationships:
   - target: "[[projects/dayfold/skills/auto-expanding-texteditor-scroll]]"
-    type: refines
+    type: extends
   - target: "[[projects/dayfold/skills/entry-editor-image-dirty-tracking]]"
-    type: complements
+    type: related_to
   - target: "[[projects/dayfold/concepts/architecture-overview]]"
     type: uses
 sources: [projects/dayfold]

@@ -24,7 +24,7 @@ relationships:
   - target: "[[projects/figma/figma]]"
     type: related_to
   - target: "[[entities/opencoworkai]]"
-    type: part_of
+    type: related_to
 ---
 
 # Open CoDesign

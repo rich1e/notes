@@ -2,7 +2,7 @@
 title: >-
   LLM Learning Path — 从零到能用的系统化路径
 category: concepts
-tags: [llm, education, career]
+tags: [Deepseek, education, career]
 sources:
   - "https://github.com/rasbt/LLMs-from-scratch"
   - "https://github.com/karpathy/nn-zero-to-hero"
@@ -17,7 +17,9 @@ provenance:
   inferred: 0.20
   ambiguous: 0.10
 base_confidence: 0.75
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.75"
 lifecycle_changed: 2026-07-27
 ---
 

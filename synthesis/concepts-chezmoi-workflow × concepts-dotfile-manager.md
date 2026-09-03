@@ -1,7 +1,7 @@
 ---
 title: "Dotfile 管理工具谱系 — chezmoi vs stow vs dotbot vs 手动"
 category: synthesis
-tags: [chezmoi, stow, dotbot, dotfile-manager, cross-platform, workflow, synthesis]
+tags: [chezmoi, stow, dotbot, dotfile-manager, cross-platform, automation, synthesis]
 sources:
   - "[[concepts/dotfile-manager]]"
   - "[[concepts/chezmoi-workflow]]"

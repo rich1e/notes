@@ -1,7 +1,7 @@
 ---
 title: 从 CoDesign session JSONL 恢复 artifact.jsx
 category: skills
-tags: [codesign, recovery, jsonl, figma, debugging]
+tags: [codesign, recovery, jsonl, figma, Bugfix]
 sources:
   - store/project for X/figma session (2026-08-23)
 created: 2026-08-23T16:15:00Z

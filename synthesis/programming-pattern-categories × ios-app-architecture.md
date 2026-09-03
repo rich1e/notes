@@ -1,7 +1,7 @@
 ---
 title: 编程模式五大分类 × iOS 架构模式
 category: synthesis
-tags: [design-patterns, app-architecture, ios, swift, programming]
+tags: [design-patterns, app-architecture, mobile, swift, develop]
 sources:
   - "concepts/programming-pattern-categories"
   - "concepts/ios-app-architecture"

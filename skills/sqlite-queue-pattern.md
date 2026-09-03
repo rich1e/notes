@@ -21,9 +21,9 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[entities/sqlite]]"
-    type: pattern_of
+    type: uses
   - target: "[[concepts/database-as-platform]]"
-    type: example_of
+    type: derived_from
   - target: "[[skills/postgres-queue-pattern]]"
     type: related_to
 ---

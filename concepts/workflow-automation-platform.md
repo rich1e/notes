@@ -1,7 +1,7 @@
 ---
 title: "工作流自动化平台"
 category: concepts
-tags: [workflow-automation, low-code, automation, n8n, zapier, make]
+tags: [workflow-automation, workflow, n8n, zapier, make]
 sources:
   - "https://n8n.io/"
   - "https://github.com/n8n-io/n8n"

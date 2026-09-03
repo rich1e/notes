@@ -1,7 +1,7 @@
 ---
 title: macOS 窗口切换器（Window Switcher）
 category: concepts
-tags: [macos, tools, productivity]
+tags: [macOS, tools, productivity]
 summary: 替代 macOS 内置 Cmd+Tab 的应用/窗口/标签切换工具，核心价值是把"app 粒度"扩展为"window 粒度"，并加入标签下钻、Space 过滤、快速动作等增强。
 sources:
   - https://bettercmdtab.app/

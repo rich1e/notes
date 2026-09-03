@@ -26,7 +26,7 @@ relationships:
     type: related_to
   - target: "[[references/gemini-notebook-mcp-cli-tools]]"
     type: related_to
-  - target: "[[synthesis/concepts-mcp-server-protocol-quirks]]"
+  - target: "<!-- broken link: no concepts-mcp-server-protocol-quirks synthesis page -->"
     type: related_to
 ---
 

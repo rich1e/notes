@@ -1,7 +1,7 @@
 ---
 title: provider-first codegen
 category: concept
-tags: [codegen, ai-agent, design-tools, mcp, figwright, provider-first]
+tags: [codegen, ai-agents, design-tools, mcp, figwright, provider-first]
 sources:
   - https://github.com/awdr74100/figwright
 created: 2026-08-14T08:00:00Z

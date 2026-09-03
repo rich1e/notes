@@ -1,7 +1,7 @@
 ---
 title: Agent Team 邮箱协议 × BMad 命名 Agent 派发
 category: synthesis
-tags: [ai-agent, agent-teams, mailbox, bmad, named-agent, synthesis]
+tags: [ai-agents, agent-teams, mailbox, bmad, named-agent, synthesis]
 sources:
   - concepts/agent-team-mailbox-protocol
   - entities/bmad-named-agent

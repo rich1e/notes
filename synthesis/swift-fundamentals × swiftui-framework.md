@@ -1,7 +1,7 @@
 ---
 title: Swift 语言基础 × SwiftUI 框架
 category: synthesis
-tags: [swift, swiftui, ios, programming, app-architecture]
+tags: [swift, swiftui, mobile, develop, app-architecture]
 sources:
   - "concepts/swift-fundamentals"
   - "concepts/swiftui-framework"

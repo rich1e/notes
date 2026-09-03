@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[concepts/database-as-platform]]"
-    type: exemplified_by
+    type: extends
   - target: "[[entities/postgresql]]"
     type: related_to
   - target: "[[references/sqlite-for-everything]]"

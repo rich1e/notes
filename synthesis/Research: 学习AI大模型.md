@@ -2,7 +2,7 @@
 title: >-
   Research: 学习 AI 大模型 — 系统化路径与资源地图
 category: synthesis
-tags: [llm, education, research, career]
+tags: [Deepseek, education, research, career]
 sources:
   - "https://github.com/karpathy/nn-zero-to-hero"
   - "https://github.com/rasbt/LLMs-from-scratch"
@@ -18,7 +18,9 @@ provenance:
   inferred: 0.18
   ambiguous: 0.07
 base_confidence: 0.82
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.82"
 lifecycle_changed: 2026-07-27
 ---
 

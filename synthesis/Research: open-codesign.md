@@ -22,7 +22,7 @@ relationships:
   - target: "[[entities/opencoworkai]]"
     type: related_to
   - target: "[[entities/open-codesign]]"
-    type: elaborates
+    type: extends
 ---
 
 # Research: OpenCoworkAI/open-codesign

@@ -14,7 +14,9 @@ created: 2026-08-03T11:30:00Z
 updated: 2026-08-03T11:30:00Z
 summary: 用 temp + fsync + rename 三段式保证状态文件 crash-safe;解析失败时不硬错,而是扫描池目录里仍在的 worktree 重建条目,全部默认 leased,等用户显式确认,绝不冒险"释放未知的占用"。
 tier: supporting
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.83"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.83
 provenance:

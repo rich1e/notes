@@ -1,7 +1,7 @@
 ---
 title: "黑苹果装机 × macOS 窗口切换器"
 category: synthesis
-tags: [macos, tools, hardware, design-patterns, programming]
+tags: [macOS, tools, handheld, design-patterns, develop]
 sources:
   - "[[skills/hackintosh-mini-build]]"
   - "[[concepts/macos-window-switcher]]"

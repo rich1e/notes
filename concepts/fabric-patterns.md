@@ -1,7 +1,7 @@
 ---
 title: Fabric Patterns — AI 增强的可复用 Prompt 模块
 category: concepts
-tags: [prompt-engineering, ai-tools, llm, open-source]
+tags: [prompt-engineering, ai-tools, Deepseek, open-source]
 sources:
   - "https://github.com/danielmiessler/Fabric"
   - "https://github.com/danielmiessler/fabric/tree/main/data/patterns"

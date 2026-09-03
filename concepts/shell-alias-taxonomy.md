@@ -1,7 +1,7 @@
 ---
 title: "Shell 别名分类体系"
 category: concepts
-tags: [shell, dotfiles, zsh, tools]
+tags: [cli, dotfiles, zsh, tools]
 sources:
   - "https://github.com/sebastienrousseau/dotfiles.github.io"
   - "https://dotfiles.io"

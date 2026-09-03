@@ -1,7 +1,7 @@
 ---
 title: "macOS Keychain 读取 — security + base64 解码"
 category: skills
-tags: [macos, keychain, security-command, base64, secret-management]
+tags: [macOS, keychain, security-command, base64, secret-management]
 sources:
   - "rich1e session (2026-08-24)"
 created: 2026-08-24

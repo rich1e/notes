@@ -34,9 +34,9 @@ provenance:
   ambiguous: 0.05
 relationships:
   - target: "[[entities/openlore]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/deterministic-agent-memory]]"
-    type: synthesizes
+    type: related_to
   - target: "[[concepts/claude-mem-memory-architecture]]"
     type: related_to
   - target: "[[concepts/commit-gate-guardrails]]"

@@ -1,7 +1,7 @@
 ---
 title: "LiveContainer Issue #1456: SideStore \"Unable to manage profiles on the device\""
 category: misc
-tags: [ios, sideload, bug, troubleshooting]
+tags: [mobile, Feather, bug, troubleshooting]
 sources:
   - "https://github.com/LiveContainer/LiveContainer/issues/1456"
 source_url: "https://github.com/LiveContainer/LiveContainer/issues/1456"

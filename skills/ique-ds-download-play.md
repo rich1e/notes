@@ -1,7 +1,7 @@
 ---
 title: iQue DS 下载游戏操作指南
 category: skills
-tags: [nintendo, ique, nds, networking, dsi]
+tags: [nintendo, ique, NDS, networking, nds]
 sources: ["buckets/books/DSiSoftware.pdf"]
 created: 2026-07-01T00:00:00Z
 updated: 2026-07-01T00:00:00Z

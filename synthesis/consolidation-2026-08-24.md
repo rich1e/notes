@@ -81,7 +81,7 @@ All draft → reviewed (age >30d, base_confidence >0.7). Added `lifecycle_change
 
 ## Explicit Non-Actions
 
-- **Broken wikilinks (108 unique / 250 refs)**: heterogeneous mix of prose markers (`[[ambiguous]]`), filename refs, `sources/*` not in `_raw/_archived/`, and genuinely missing pages. Mass-stripping would lose information. Recommend `/cross-linker` pass with a curated list of true fixes.
+- **Broken wikilinks (108 unique / 250 refs)**: heterogeneous mix of prose markers (`<!-- broken link: [ambiguous] placeholder, no target -->`), filename refs, `sources/*` not in `_raw/_archived/`, and genuinely missing pages. Mass-stripping would lose information. Recommend `/cross-linker` pass with a curated list of true fixes.
 - **Orphans (16)**: all are maintenance-record pages (consolidation / cross-link / Research:* synthesis). By design zero-incoming-link. Acceptable.
 - **Missing/oversized summaries (59)**: soft warning only. New pages get summaries on ingest; older pages are exempt.
 - **Provenance drift (1)**: `misc/web-brainz-fun-bitcoin-seizure.md` ambiguous=0.20 > 0.15 — requires editorial review.

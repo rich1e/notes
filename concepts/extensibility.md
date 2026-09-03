@@ -1,7 +1,7 @@
 ---
 title: "扩展性模式 (Extensibility Patterns)"
 category: concepts
-tags: [extensibility, plugin, hook, capability-seam, architecture]
+tags: [extensibility, plugin, hook, capability-seam, design-patterns]
 sources: []
 summary: 软件系统通过扩展点（plugin / hook / capability seam / 模块加载器）允许第三方扩展而无需修改核心代码。常见模式：插件注册表（registry）、依赖反转（DI 容器）、事件总线、零注册中心 require.resolveWeak。
 base_confidence: 0.6
@@ -18,7 +18,7 @@ tier: supporting
 
 ## 占位说明
 
-此页面是 **stub**，由 `/wiki-lint --consolidate` cross-linker 阶段自动创建，用于满足 `[[concepts/extensibility]]` 的 3 处引用（来自 [[projects/flow-design-system]] 子页）。
+此页面是 **stub**，由 `/wiki-lint --consolidate` cross-linker 阶段自动创建，用于满足 `[[concepts/extensibility]]` 的 3 处引用（来自 <!-- broken link: no flow-design-system page --> 子页）。
 
 ## 概要
 

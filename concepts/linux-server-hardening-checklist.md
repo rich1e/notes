@@ -162,3 +162,7 @@ SSH 是**最常见的攻击面** — bot 一秒钟扫描一次 22 端口。加�
 - [[concepts/intrusion-detection-stack]] — Linux IDS 工具全景
 - [[concepts/dotfile-manager]] — 加固基础设施
 - [[concepts/chezmoi-templating]] — SSH 配置分发
+
+## Related
+
+- [[synthesis/concepts-linux-server-hardening-checklist × entities-imthenachoman-how-to-secure-a-linux-server]] — synthesis

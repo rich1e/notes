@@ -1,7 +1,7 @@
 ---
 title: "VoltAgent/awesome-design-md"
 category: entities
-tags: [github-repo, design-system, voltagent, ai-coding, entity]
+tags: [github-repo, ux, voltagent, ai-coding, entity]
 sources:
   - "https://github.com/VoltAgent/awesome-design-md"
 source_url: "https://github.com/VoltAgent/awesome-design-md"

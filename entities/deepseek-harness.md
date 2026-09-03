@@ -197,3 +197,7 @@ website/     VitePress projection of selected bilingual docs/ sources
 - [[concepts/capability-seam]] — 三件套抽象
 - [[references/dsh-package-hierarchy]] — 24 个 package group 全景
 - [[skills/deepseek-harness-dev-loop]] — 开发 loop 操作 skill
+
+## Related
+
+- [[synthesis/concepts-cordis-plugin-framework × entities-deepseek-harness]] — synthesis

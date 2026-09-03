@@ -1,7 +1,7 @@
 ---
 title: Stanford CS193P Spring 2025 — iOS App Development
 category: references
-tags: [ios, swift, swiftui, education, stanford]
+tags: [mobile, swift, swiftui, education, stanford]
 sources:
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"
 created: 2026-07-10T14:30:00Z

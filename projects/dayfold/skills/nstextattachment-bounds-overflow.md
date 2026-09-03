@@ -9,7 +9,7 @@ tags:
   - dayfold
 relationships:
   - target: "[[projects/dayfold/skills/uitextview-intrinsic-width-overflow]]"
-    type: complements
+    type: related_to
   - target: "[[projects/dayfold/skills/auto-expanding-texteditor-scroll]]"
     type: related_to
   - target: "[[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]]"

@@ -1,7 +1,7 @@
 ---
 title: Swift 语言基础
 category: concepts
-tags: [swift, ios, programming, type-system, actor]
+tags: [swift, mobile, develop, type-system, concurrency]
 sources:
   - "buckets/books/iOS 17 App Development for Beginners.epub"
   - "https://www.youtube.com/watch?v=kCjDulwChRQ"

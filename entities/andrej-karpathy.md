@@ -2,7 +2,7 @@
 title: >-
   Andrej Karpathy
 category: entities
-tags: [llm, education, research]
+tags: [Deepseek, education, research]
 sources:
   - "https://github.com/karpathy/nn-zero-to-hero"
 created: 2026-07-27T07:30:00Z
@@ -15,7 +15,9 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.90
-lifecycle: draft
+lifecycle: reviewed
+lifecycle_changed: 2026-09-03
+lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: 2026-07-27
 ---
 
