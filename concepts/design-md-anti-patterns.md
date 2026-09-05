@@ -27,6 +27,8 @@ relationships:
   - target: "[[entities/google-labs-code-design]]"
     type: related_to
 
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # DESIGN.md 中的 AI 反模式与 Do's and Don'ts

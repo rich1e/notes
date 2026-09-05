@@ -35,6 +35,8 @@ relationships:
     type: related_to
   - target: "[[concepts/agent-team-cost-overhead]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # Claude Code Agent Teams 功能

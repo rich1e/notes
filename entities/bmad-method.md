@@ -31,6 +31,8 @@ relationships:
   - target: "[[entities/bmad-party-mode]]"
     type: related_to
 
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 # BMad Method 框架
 

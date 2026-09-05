@@ -4,7 +4,7 @@ category: synthesis
 tags: [maintenance, consolidation, lint]
 sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on 2026-07-30.
-lifecycle: draft
+lifecycle: archived
 lifecycle_changed: 2026-07-30
 tier: peripheral
 created: 2026-07-30T03:27:35Z

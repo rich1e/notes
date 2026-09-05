@@ -25,6 +25,8 @@ relationships:
     type: related_to
   - target: "[[entities/bmad-method]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # BMad 架构护栏防多 Agent 冲突

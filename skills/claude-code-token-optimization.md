@@ -25,6 +25,8 @@ relationships:
     type: related_to
   - target: "[[concepts/prompt-caching]]"
     type: uses
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # Claude Code Token 优化策略

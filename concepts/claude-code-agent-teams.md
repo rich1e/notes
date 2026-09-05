@@ -34,6 +34,8 @@ relationships:
     type: related_to
   - target: "anthropic-claude-code-agent-teams-docs"
     type: derived_from
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # Claude Code Agent Teams 工程机制

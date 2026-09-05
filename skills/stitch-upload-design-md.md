@@ -20,6 +20,8 @@ relationships:
     type: uses
   - target: "[[skills/claude-code-mcp-auth-patterns]]"
     type: related_to
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # Stitch DESIGN.md 上传操作技巧

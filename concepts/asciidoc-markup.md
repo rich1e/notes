@@ -147,5 +147,6 @@ endif::[]
 - adoc Studio 完整指南：<https://www.adoc-studio.app/blog/asciidoc-guide>
 ## 相关页面
 
+- [[entities/swift-markdown]]
 - references/chezmoi-templating-guide
 - concepts/fabric-patterns

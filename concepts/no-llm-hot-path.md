@@ -33,6 +33,8 @@ relationships:
     type: related_to
   - target: "[[concepts/claude-mem-memory-architecture]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # Hot path 不放 LLM — 确定性 + 可选增强

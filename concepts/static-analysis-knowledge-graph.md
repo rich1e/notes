@@ -33,6 +33,8 @@ relationships:
     type: related_to
   - target: "[[concepts/commit-gate-guardrails]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # 静态分析驱动的代码知识图谱

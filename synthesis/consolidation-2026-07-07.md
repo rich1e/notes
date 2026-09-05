@@ -5,7 +5,7 @@ tags: [maintenance, consolidation]
 sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on 2026-07-07. Fixed 2 backslash artifacts in PTP page and added 1 cross-reference to rescue orphan chapter1 page.
 base_confidence: 0.7
-lifecycle: draft
+lifecycle: archived
 lifecycle_changed: 2026-07-07
 tier: peripheral
 created: 2026-07-07T14:30:00Z

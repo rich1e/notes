@@ -42,6 +42,8 @@ relationships:
     type: related_to
   - target: "[[entities/claude-code]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # OpenLore — AI 编码 agent 的静态分析记忆层

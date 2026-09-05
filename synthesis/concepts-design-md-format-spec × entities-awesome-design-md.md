@@ -37,6 +37,8 @@ relationships:
     type: related_to
   - target: "[[concepts/agentic-design]]"
     type: related_to
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # DESIGN.md 格式规范 × awesome-design-md

@@ -185,6 +185,7 @@ Anthropic engineering blog 有演示（`anthropic.com/engineering/building-c-com
 
 ## Related
 
+- [[synthesis/concepts-agent-operating-system × concepts-deterministic-agent-memory]]
 - [[entities/claude-code]] — 主体
 - [[concepts/claude-code-three-modes]] — 三模式抽象
 - [[concepts/agent-operating-system]] — Handoff 层支持

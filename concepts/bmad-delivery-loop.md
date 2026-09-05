@@ -26,6 +26,8 @@ relationships:
     type: related_to
   - target: "[[entities/bmad-named-agent]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # BMad 交付闭环（Clarify → Plan → Build → Learn）

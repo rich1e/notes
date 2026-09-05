@@ -26,6 +26,8 @@ relationships:
     type: related_to
   - target: "[[projects/flow-design-system/concepts/ai-vs-core-component-source-routing]]"
     type: related_to
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # AI 工具栈的专业化分工

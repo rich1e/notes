@@ -12,7 +12,8 @@
         "references/uikit-nstextattachment-vs-appkit.md"
       ],
       "source_type": "document",
-      "project": "dayfold"
+      "project": "dayfold",
+      "deleted": true
     },
     "_raw/2026-09-02-swiftui-editor-scrollview-vs-attachment.md": {
       "content_hash": "sha256:2dc0a01c4bc1c069ba5ac4a52c58cc22d6f6146f3cd801274470d4e4e386fe41",
@@ -21,7 +22,8 @@
         "projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment.md"
       ],
       "source_type": "document",
-      "project": "dayfold"
+      "project": "dayfold",
+      "deleted": true
     },
     "_raw/2026-09-02-uikit-nstextattachment-imagebounds-api-gap.md": {
       "content_hash": "sha256:74a869a780dd50114e56efa8603283391105f2774da13753092c8140adc4e6f4",
@@ -30,7 +32,8 @@
         "references/uikit-nstextattachment-vs-appkit.md"
       ],
       "source_type": "document",
-      "project": null
+      "project": null,
+      "deleted": true
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
       "content_hash": "sha256:bdcd82ad58a22efd239ca7fb5b2eb7520616887bfb8f0aa842dde7815052a764",
@@ -353,7 +356,8 @@
         "projects/trek/references/environment-variables.md"
       ],
       "pages_updated": [],
-      "last_ingested": "2026-07-26T03:00:00Z"
+      "last_ingested": "2026-07-26T03:00:00Z",
+      "deleted": true
     },
     "_raw/zustand.txt": {
       "ingested_at": "2026-07-02T01:00:00Z",
@@ -372,7 +376,8 @@
         "skills/zustand-typescript.md"
       ],
       "pages_updated": [],
-      "last_ingested": "2026-07-26T03:00:00Z"
+      "last_ingested": "2026-07-26T03:00:00Z",
+      "deleted": true
     },
     "https://github.com/Lularible/ptp-book": {
       "ingested_at": "2026-07-03T08:50:59Z",
@@ -565,7 +570,8 @@
         "concepts/swiftui-framework.md",
         "skills/xcode-ide-guide.md"
       ],
-      "last_ingested": "2026-07-26T03:00:00Z"
+      "last_ingested": "2026-07-26T03:00:00Z",
+      "deleted": true
     },
     "research:kimi-k3:2026-07-23": {
       "type": "research",
@@ -1814,12 +1820,28 @@
         ".manifest.json"
       ],
       "last_ingested": "2026-08-12T12:55:00Z"
+    },
+    "figwright": {
+      "source_cwd": null,
+      "last_synced": "2026-08-23T00:00:00Z",
+      "pages_in_vault": [
+        "projects/figwright/figwright.md",
+        "projects/figwright/concepts/loopback-security-host-origin-headers.md",
+        "projects/figwright/concepts/design-context-grounding.md",
+        "projects/figwright/concepts/mcp-local-relay-architecture.md",
+        "projects/figwright/concepts/provider-first-codegen.md",
+        "projects/figwright/skills/figma-codegen-workflow.md",
+        "projects/figwright/references/figwright-tool-taxonomy.md",
+        "projects/figwright/references/figwright-shared-protocol.md"
+      ],
+      "notes_origin": "figma-plugin-workspace",
+      "last_commit_synced": null
     }
   },
   "stats": {
     "total_sources_ingested": 98,
     "total_pages": 450,
-    "total_projects": 3,
+    "total_projects": 9,
     "last_full_rebuild": null
   },
   "cross_vault_imports": [

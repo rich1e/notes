@@ -29,6 +29,8 @@ relationships:
     type: related_to
   - target: "[[entities/google-labs-code-design]]"
     type: related_to
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # Research: DESIGN.md 工作流

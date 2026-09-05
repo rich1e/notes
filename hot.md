@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-09-04T11:55:00Z
+updated: 2026-09-05T01:30:00Z
 ---
 
 # Hot Cache
@@ -8,6 +8,9 @@ updated: 2026-09-04T11:55:00Z
 *A ~500-word semantic snapshot of recent activity. Updated after every major write operation.*
 
 ## Recent Activity
+
+- [2026-09-05 01:30] WIKI_CAPTURE — 多 vault 切换机制沉淀,**1 页新建 + 2 索引更新**。**核心**:[[concepts/multi-vault-routing]] — 把"多 vault 工作流"作为一等公民概念解释:symlink + `config.<name>` 文件布局 + `/wiki-switch`(持久默认,改 symlink)vs `@name`(单次路由,由 Config Resolution Protocol 处理,从不重写 symlink)双轨机制 + Config Resolution Protocol 4 级查找优先级(`@name` > `.env` walk-up > 全局 symlink > wiki-setup prompt) + 4 个 `/wiki-switch` 子动作(list/show/switch/new)+ 决策表(何时用哪个机制) + 用户当前 vault 状态盘点(`config.notes` 激活、`config.experience` 备用、`config.bak.orig` 备份)。**Wiki 空白填补**:之前 `[[concepts/obsidian-wiki-vault-structure]]` 只讲单 vault 内部 9 类目结构,本 vault 没有专门讲"多个 vault 之间如何切换"的页。**与既有 [[concepts/wiki-framework-self-reference]] 同属"vault 框架自我引用"范畴**——后者讲 vault ingest 自己用的框架时怎么办,本节讲 vault 同时维护多个 profile 时怎么办,都是框架 + vault 同址运行的拓扑特例。index.md 已追加 1 条 wikilink(concepts 段插入,邻近 `obsidian-wiki-vault-structure`)。
+
 
 - [2026-09-04 11:55] WIKI_CAPTURE — mmx-cli 图像生成实战（含林知微角色设定卡 3:4 1200×1600 生成）。**3 页新建 + 2 索引更新**：(1) [[skills/mmx-cli-image-generation]] — `mmx image generate` CLI 实战 + **3 个 SKILL.md 未写硬限制**（1500 字符提示词 API 报错 / `--yes` 需传值 / `--width --height` 必须同设）；(2) [[concepts/ai-cli-hard-limits]] — AI provider CLI 通用陷阱抽象（5 维模式表 + pipe JSON + parse error.message 纪律）；(3) [[entities/minimax]] — MiniMax 公司+模型矩阵概览。**实战产物**：`/Users/rich1e/workspace/test/character-sheet_001.jpg`（3:4 角色档案页，杂志级 editorial layout，林知微 LIN ZHIWEI）。**关键发现**：(a) mmx 报错时 HTTP 200 但 `error.message` 承载真因——只看退出码会误判成功；(b) **同命令 boolean flag 风格不统一**（`--quiet` 裸传 vs `--yes=true` 必传），是 agent 写脚本的隐性 bug；(c) 高质量角色档案页范式 = **SVG 排版稿（文字可控）+ mmx 主体图（画图能力）+ 后期合成**，把 mmx 的"文字弱项"隔离出去。**与既有 [[skills/claude-code-mcp-auth-patterns]] 同属"接外部 AI 能力 CLI"范畴**——鉴权 + 提示词硬限制是同一类文档-实测落差。index.md 已追加 3 条 wikilink（Skills + Concepts + Entities 各 1）。
 

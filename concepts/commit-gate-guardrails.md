@@ -35,6 +35,8 @@ relationships:
     type: related_to
   - target: "[[concepts/safe-destroy-by-default]]"
     type: related_to
+  - target: [[concepts-agent-operating-system × concepts-deterministic-agent-memory]]
+    type: related_to
 ---
 
 # Commit gate guardrails — 把 agent 行为关进 CI

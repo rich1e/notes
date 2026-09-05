@@ -25,6 +25,8 @@ relationships:
   - target: "[[entities/google-labs-code-design]]"
     type: related_to
 
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # VoltAgent/awesome-design-md

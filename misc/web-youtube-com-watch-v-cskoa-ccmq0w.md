@@ -144,6 +144,7 @@ tier: supporting
 
 ## Related
 
+- [[synthesis/concepts-agent-operating-system × concepts-deterministic-agent-memory]]
 - [[skills/claude-code-settings]] — settings.json 四级作用域；本视频建议**全局配置** agent teams
 - [[skills/claude-code-token-optimization]] — Subagents 模式的核心动机就是 token 节流
 - [[skills/tmux]] — 通用 tmux 速查；本文是 tmux 在 AI agent 场景的具体应用

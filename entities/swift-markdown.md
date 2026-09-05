@@ -142,6 +142,7 @@ Sources/Markdown/
 
 ## Related
 
+- [[concepts/asciidoc-markup]]
 - [[references/fatbobman-swiftui-rich-text-layout]] — MarkdownView 实战
 - [[synthesis/Research: SwiftUI 图文混排]] — vault 既有研究
 - [[concepts/swiftui-rich-text-rendering-comparison]] — 全 markdown 渲染方案对比

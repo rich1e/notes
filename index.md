@@ -51,6 +51,7 @@ title: Wiki Index
 - [[concepts/tmux-installer-safety-pattern]] — install.sh 的 5 道安全闸：拒绝 root、bash 必填、tmux 必装、PERMISSIVE+DRY_RUN、anti-piping TTY 复核
 - [[concepts/tmux-key-notation-btab]] — `B<Tab>` = `<prefix> Tab`、`B<C-c>` = `<prefix> C-c`：`B` 是 prefix 占位符
 - [[concepts/obsidian-wiki-vault-structure]] — obsidian-wiki 框架规定的目录布局：9 类目（concepts/entities/skills/references/synthesis/journal/projects/misc/sources）+ 4 系统文件（index.md/log.md/hot.md/.manifest.json）+ _meta/_insights/_raw 等内部目录
+- [[concepts/multi-vault-routing]] — 多 vault 切换机制：symlink + config.<name> + /wiki-switch（持久默认）vs @name（单次路由）的双轨路由
 - [[concepts/wiki-framework-self-reference]] — Ingest 框架本源仓库（Ar9av/obsidian-wiki）时的特殊拓扑：vault 已在用此框架，直接 distill 等于重复入库，只保留 3 页索引
 - [[concepts/tmux-pane-maximize-stateful]] — `<prefix> +` 比 `resize-pane -Z` 强：maximize 到专用 window 后仍可 split，跨 window 保留状态
 - [[concepts/tmux-pane-layout-rearrangement]] — tmux 三层 pane 重排模型：swap（同 window）/ join（跨 window）/ break（独立），含 marked pane 机制和编号 vs ID 区别

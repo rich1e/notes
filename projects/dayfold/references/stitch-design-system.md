@@ -20,6 +20,8 @@ relationships:
     type: uses
   - target: "[[projects/dayfold/dayfold]]"
     type: related_to
+  - target: [[concepts-design-system-as-ai-context × entities-google-stitch]]
+    type: related_to
 ---
 
 # Dayfold Stitch 设计系统资产
