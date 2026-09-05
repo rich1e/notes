@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-09-03T02:18:00Z
+updated: 2026-09-04T11:55:00Z
 ---
 
 # Hot Cache
@@ -8,6 +8,8 @@ updated: 2026-09-03T02:18:00Z
 *A ~500-word semantic snapshot of recent activity. Updated after every major write operation.*
 
 ## Recent Activity
+
+- [2026-09-04 11:55] WIKI_CAPTURE — mmx-cli 图像生成实战（含林知微角色设定卡 3:4 1200×1600 生成）。**3 页新建 + 2 索引更新**：(1) [[skills/mmx-cli-image-generation]] — `mmx image generate` CLI 实战 + **3 个 SKILL.md 未写硬限制**（1500 字符提示词 API 报错 / `--yes` 需传值 / `--width --height` 必须同设）；(2) [[concepts/ai-cli-hard-limits]] — AI provider CLI 通用陷阱抽象（5 维模式表 + pipe JSON + parse error.message 纪律）；(3) [[entities/minimax]] — MiniMax 公司+模型矩阵概览。**实战产物**：`/Users/rich1e/workspace/test/character-sheet_001.jpg`（3:4 角色档案页，杂志级 editorial layout，林知微 LIN ZHIWEI）。**关键发现**：(a) mmx 报错时 HTTP 200 但 `error.message` 承载真因——只看退出码会误判成功；(b) **同命令 boolean flag 风格不统一**（`--quiet` 裸传 vs `--yes=true` 必传），是 agent 写脚本的隐性 bug；(c) 高质量角色档案页范式 = **SVG 排版稿（文字可控）+ mmx 主体图（画图能力）+ 后期合成**，把 mmx 的"文字弱项"隔离出去。**与既有 [[skills/claude-code-mcp-auth-patterns]] 同属"接外部 AI 能力 CLI"范畴**——鉴权 + 提示词硬限制是同一类文档-实测落差。index.md 已追加 3 条 wikilink（Skills + Concepts + Entities 各 1）。
 
 - [2026-09-03 05:20] INGEST_URL — rztime/[RZColorfulSwift](https://github.com/rztime/RZColorfulSwift) 仓库 (cloned, 2723 LOC, Swift 6.0, iOS 11+)。**核心**:**中国本土传统 iOS 富文本工具库** — 链式 API 设置 NSAttributedString + markdown→HTML + HTML 互转 + 自动折叠 + 文本点击。**3 模块架构**:AttributeCore (TextAttribute/ImageAttribute/ParagraphStyle) + Core (TextLayout/UIView extensions) + Html (Markdown/HTML 转换)。**项目家族**:rztime 3 个相关 repo (RZColorful ObjC 原版 + RZColorfulSwift Swift 适配 + RZRichTextView 富文本编辑器)。**Vault 价值**:补充 UIKit era 的链式 attributedString 工具 — 与 MarkdownView/Textual 等 render 层共存。2 页创建:[[entities/rzcolorfulswift]] + [[references/rzcolorfulswift-package]]。QMD skipped(unset)。
 

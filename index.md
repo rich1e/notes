@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-08-26T12:00:00Z*
+*This index is automatically maintained. Last updated: 2026-09-04T00:00:00Z*
 
 ## Concepts
 - [[concepts/persistent-copy-on-write-markup-tree]] — Apple 不可变 + CoW + visitor 模式,SwiftSyntax/swift-markdown 设计哲学
@@ -224,6 +224,8 @@ title: Wiki Index
 - [[entities/postgresql]] — PostgreSQL：1996 年起发展的开源 RDBMS 首选默认项，扩展生态（pgvector/TimescaleDB/AGE/LTREE）使其可替代 11 种专用系统
 - [[entities/sqlite]] — 全球部署量最大的嵌入式数据库，进程内函数调用，公有领域，支持承诺至 2050 年，内置 FTS5/JSON/递归 CTE，sqlite-vec 向量扩展 (tier: core, bc 0.85)
 
+- [[entities/minimax]] — MiniMax：2022 年初成立的全球 AI foundation model 公司，MiniMax-M3 / Hailuo-2.3 / speech-2.8-hd / image-01 多模态模型矩阵，CLI 入口 `mmx-cli`
+
 ## Skills
 - [[skills/uiviewrepresentable-uitextview-rich-text]] — UIViewRepresentable 包装 UITextView 富文本编辑器:SwiftUI 编辑 + inline attachment 唯一方案
 
@@ -274,6 +276,10 @@ title: Wiki Index
 - [[skills/zellij-terminal-multiplexer]] — Rust 终端复用器，状态栏 + 提示键开箱即用，YAML 布局 + WebAssembly 插件
 - [[skills/notebooklm-mcp-setup]] — NotebookLM MCP 完整安装：uv + cookbook auth + `claude mcp add --global`，23 个笔记本手工验证可读
 - [[skills/claude-code-mcp-auth-patterns]] — Claude Code MCP 两种鉴权范式：API key 头（轻量 5 分钟）vs OAuth Proxy（重度自动 refresh），含 `.env` 干扰 OAuth 的故障清单
+
+- [[skills/mmx-cli-image-generation]] — `mmx image generate` CLI 实战：3:4→1200×1600 + `--prompt-optimizer` 提升稳定性；**3 个 SKILL.md 未写硬限制**（1500 字符提示词上限 / `--yes` 需传值 / `--width --height` 必须同设）
+
+- [[concepts/ai-cli-hard-limits]] — AI provider CLI 几乎都有"文档未写"的硬限制：提示词字符上限、flag 取值不规整、HTTP 200 包错；通用教训是 pipe JSON + 解析 error.message
 - [[skills/claude-mem-memory-usage]] — 在 Claude 中用 claude-mem 管长期记忆：插件市场装（别用 npm -g）→ 自动注入 → search/timeline/get_observations 3 层查历史 → /knowledge-agent 知识大脑 → settings 调优
 - [[skills/treehouse-cli]] — treehouse CLI 日常用法：install/get/enter/return/prune/destroy 速查，ABA-safe 条件 return，损坏 state 恢复流程
 - [[skills/openlore-cli]] — OpenLore CLI 日常用法：install/orient/review/prove/enforce/mcp/drift,6 capability family,substrate preset 默认,commit gate 三件套
