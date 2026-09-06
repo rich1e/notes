@@ -21,6 +21,8 @@ provenance:
 base_confidence: 0.9
 lifecycle: reviewed
 lifecycle_changed: 2026-09-02
+created: 2026-09-02T14:30:00Z
+updated: 2026-09-02T14:30:00Z
 ---
 
 # 非滚动 UITextView 的 intrinsic 宽度反向撑宽 SwiftUI 层级

@@ -17,7 +17,6 @@ updated: 2026-08-03T12:35:00Z
 summary: OpenLore 把"代码考古学"做到极致:静态分析驱动的知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate。3 条独立但勾连的设计线 + 4 条可复用原则,与 vault 已有 agent-os / claude-mem / treehouse 形成连贯基础设施图。
 tier: core
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.88"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.88

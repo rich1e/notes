@@ -2,7 +2,7 @@
 title: "量子计算基础概念"
 category: concepts
 tags: [quantum-computing, qubit, superposition, entanglement, foundation]
-sources: []
+sources: ["_placeholder/stub-by-wiki-lint"]
 summary: 量子计算的基础概念：qubit（叠加态）、entanglement（纠缠）、量子门（gate）、量子线路模型与经典图灵机的本质差异。基础背景信息。
 base_confidence: 0.5
 provenance:
@@ -12,6 +12,8 @@ provenance:
 lifecycle: draft
 lifecycle_changed: 2026-08-24
 tier: supporting
+created: 2026-08-24T00:00:00Z
+updated: 2026-08-24T00:00:00Z
 ---
 
 # 量子计算基础

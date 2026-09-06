@@ -224,6 +224,8 @@ LiYanan 是 SwiftUI 富文本领域最重要的实战作者。MarkdownView + Ric
 
 ## Related
 
+- [[synthesis/entities-markdownview × entities-textual]] — 同一作者 gonzalezreal 的代际演进对比（MarkdownView iOS 16+ / Textual iOS 18+））
+
 - [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 实战深度解析
 - [[entities/swift-markdown]] — Apple 解析后端
 - [[entities/markdownui]] — 同类 read-only markdown 库(对比)

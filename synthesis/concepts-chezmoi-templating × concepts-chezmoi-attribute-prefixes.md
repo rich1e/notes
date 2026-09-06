@@ -13,7 +13,6 @@ created: 2026-07-26T04:00:00Z
 updated: 2026-07-26T04:00:00Z
 summary: "chezmoi 的两条核心扩展机制对比：模板（按机器/环境差异化内容）vs 命名属性前缀（把元数据编进文件名）。前者是 runtime 渲染，后者是文件系统语义 — 两者互补但不重叠。"
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: "2026-07-26"
 provenance:

@@ -15,7 +15,6 @@ updated: 2026-08-03T11:20:00Z
 summary: 把 git worktree 池化为可重用资源:acquire 拿到一个已就绪的、保留依赖/缓存、互相不冲突的工作树,用完 return,reset 到 default branch HEAD 供下次 acquire。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85

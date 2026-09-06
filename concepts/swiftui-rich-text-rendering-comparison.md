@@ -82,6 +82,10 @@ SwiftUI 富文本/图文混排选型有**两个轴**:read-only 显示 vs 可编�
 
 ## Related
 
+- [[synthesis/entities-markdownview × entities-textual]] — gonzalezreal 同一作者的两代渲染引擎（生产验证 vs 前沿 SwiftUI）
+- [[references/fatbobman-swiftui-rich-text-layout]] — LiYanan 实战深度解析
+- [[references/swift-markdown-package]] — Apple 官方底层 parser
+
 - [[entities/rzcolorfulswift]] — rztime 的链式 API 工具库(iOS 11+,UIKit era);可在 UILabel/UITextView 一行设置 attributedText
 - [[entities/markdownview]] — LiYanan 的 MarkdownView (iOS 16+),被 X/Grok + Hugging Face Chat 采用;MarkdownUI(iOS 15+) vs MarkdownView(iOS 16+) vs Textual(iOS 18+) 三方比较
 - [[entities/textual]] — gonzalezreal 的 MarkdownUI 继任(2024+),SwiftUI text rendering engine, iOS 18+ / macOS 15+;MarkdownUI iOS 15+ Textual iOS 18+ 共存覆盖

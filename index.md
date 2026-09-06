@@ -11,6 +11,11 @@ title: Wiki Index
 
 - [[concepts/swiftui-rich-text-rendering-comparison]] — SwiftUI 富文本方案对比矩阵:TextEditor / AttributedString / MarkdownUI / Down / UIKit bridged
 
+- [[concepts/swiftui-keyboard-toolbar-safeareainset-pattern]] — 编辑器下方工具栏跟随键盘上移的正确做法：把工具栏放进 ScrollView 的 safeAreaInset(edge: .bottom);ZStack 浮层 + padding(keyboardHeight) 只能平移工具栏,不会让 ScrollView 内容收缩,会产生"工具栏漂浮在中间 + 内容覆盖"
+- [[concepts/swiftui-safeareabar-vs-safeareainset-pattern]] — iOS 26 .safeAreaBar(edge: .bottom) modifier，专门用于「容器内不滚动 + 底部固定栏 + 键盘跟随」场景；与既有 safeAreaInset（ScrollView 滚动容器）互补
+- [[concepts/swiftui-animatablemodifier-pattern]] — ViewModifier,Animatable 协议抽象：modifier 内部状态可被 SwiftUI 动画管线插值，是 toolbar 弹跳/进度/路径动画基石
+- [[concepts/swiftui-toolbaritem-placement-semantic-vs-positional]] — Apple ToolbarItemPlacement 双层体系：semantic 9 个（让系统决定位置）+ positional 9 个（显式指定位置）
+
 - [[concepts/cordis-plugin-framework]] — Cordis 三件套：Service / Typed Events (waterfall+serial+registry-subject) / Reversible Effects (dispose on plugin unload)
 - [[concepts/capability-seam]] — dsh 的 capability 设计模式：Service Definition + Service Provider + Consumer 三件套；一换 provider = 整个产品栈跟着换
 - [[concepts/agent-scope-hierarchy]] — Cordis scope 模型：global vs scoped 两层扁平 + scope key + agent.ctx + scoped dispatch + shadowing + setup window + lineage (作为数据不作为结构)
@@ -258,6 +263,7 @@ title: Wiki Index
 - [[skills/pictochat]] — PictoChat 涂鸦聊天最多16人，绘图工具与键盘操作
 - [[skills/ique-ds-download-play]] — iQue DS 下载游戏 1台对多台无线游戏广播
 - [[skills/xcode-ide-guide]] — Xcode 15 界面布局、快捷键、模拟器、Playground、Organizer、Xcode Cloud
+- [[skills/xcode-multiple-installation]] — macOS 多 Xcode 共存切换：`DEVELOPER_DIR` 环境变量 vs `sudo xcode-select` 的全局副作用与交互密码取舍
 - [[skills/ios-data-persistence]] — UserDefaults/Plist/SQLite/Core Data/SwiftData CRUD 完整指南
 - [[skills/ios-networking]] — URLSession/Alamofire REST 请求、JSON 解码、连接可达性检测
 - [[skills/ios-multithreading]] — GCD 三种队列、QoS 优先级、DispatchGroup、NSOperation
@@ -350,6 +356,8 @@ title: Wiki Index
 - [[synthesis/Research: treehouse]] — treehouse 研究综合：把 git worktree 池化成 AI agent runtime 的 5 条独立但勾连的设计线（池化、dead agent 终止、lease、safe-destroy、crash-safe + 自愈）与 3 条可复用原则
 - [[synthesis/Research: OpenLore]] — OpenLore 研究综合:静态分析驱动的代码知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate,4 条设计线 + 4 条可复用原则,与 claude-mem/treehouse 形成 agent 本地基础设施三件套
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent]] — AOS 五层 memory 框架 × agent 通用:框架对 agent 是约束还是赋能,五层中谁是 agent 自驱谁是框架强加
+- [[synthesis/entities-markdownview × entities-textual]] — gonzalezreal 同一作者两代 SwiftUI markdown 渲染引擎：MarkdownView (2022/iOS 16+/生产验证) vs Textual (2025/iOS 18+/系统 AttributedString)
+- [[synthesis/Research: SwiftUI Custom Animation Toolbar in iOS 26]] — 3 轮研究综合：AnimatableModifier 协议 / ToolbarItemPlacement 双层 / matchedTransitionSource zoom / Liquid Glass 动画 / 120Hz ProMotion 性能
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]] — MCP 鉴权三层 + Stitch 实战:协议层故意简洁,鉴权复杂度甩给上层应用,OAuth proxy 对 .env 敏感
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]] — AOS 必须把 sandbox 当作隐式第六层:compact checkpoint 应包含 sandbox state(worktree path / HEAD / lease / dirty),否则 session resume 会撕裂
 - [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]] — Durable lease 让 AOS Handoff 有了"原子承诺"语义:--if-lease-id 把"我是上次那个人"写成状态文件 CAS,防止多人续写 Handoff 时撕裂
@@ -387,6 +395,8 @@ title: Wiki Index
 - [[projects/dayfold/skills/nstextattachment-bounds-overflow]] — NSTextAttachment 在 UITextView 中被纵向拉伸：bounds.width 超过 textContainer.lineFragmentWidth 触发回行放大，须以 textContainer.size.width 算 attachment
 - [[projects/dayfold/skills/swiftui-editor-scrollview-vs-attachment]] — 图文混排下 ScrollViewReader.scrollTo(anchor: .bottom) 把标题/历史图/历史文本推出屏幕顶部的反行为
 - [[projects/dayfold/skills/simulator-runtime-log-capture]] — simctl --console-pty 抓 NSLog；strings 查不到 Swift 字面量不代表代码未执行
+- [[projects/dayfold/skills/ios26-xcode26-required]] — iOS 26 真机调试要求 Xcode 26.x：Xcode 16.x 缺 DDI，`devicectl` 报 `kAMDMobileImageMounterPersonalizedBundleMissingVariantError`
+- [[projects/dayfold/skills/ios-bundle-id-case-sensitivity]] — Bundle ID 大小写与 Profile 不匹配：自动签名回退到 wildcard profile，报"不支持某 capability"误导性错误
 - [[projects/dayfold/references/source-tree]] — 源码目录布局与各模块职责
 - [[projects/dayfold/references/stitch-design-system]] — Stitch 设计系统资产索引（Project ID、Asset ID、已生成屏幕、本地文件布局）
 - [[projects/figma/figma]] — Photo Album Mobile UI 八屏 React artifact,CoDesign 自包含 JSX 在 iPhone 14/15 Pro/Max 三机型框中预览
@@ -461,6 +471,8 @@ title: Wiki Index
 - [[synthesis/Research: treehouse]] — treehouse 研究综合：把 git worktree 池化成 AI agent runtime 的 5 条独立但勾连的设计线（池化、dead agent 终止、lease、safe-destroy、crash-safe + 自愈）与 3 条可复用原则
 - [[synthesis/Research: OpenLore]] — OpenLore 研究综合:静态分析驱动的代码知识图谱 + 确定性 fact layer + hot path 0 LLM + 编辑时架构 guardrail + commit gate,4 条设计线 + 4 条可复用原则,与 claude-mem/treehouse 形成 agent 本地基础设施三件套
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent]] — AOS 五层 memory 框架 × agent 通用:框架对 agent 是约束还是赋能,五层中谁是 agent 自驱谁是框架强加
+- [[synthesis/entities-markdownview × entities-textual]] — gonzalezreal 同一作者两代 SwiftUI markdown 渲染引擎：MarkdownView (2022/iOS 16+/生产验证) vs Textual (2025/iOS 18+/系统 AttributedString)
+- [[synthesis/Research: SwiftUI Custom Animation Toolbar in iOS 26]] — 3 轮研究综合：AnimatableModifier 协议 / ToolbarItemPlacement 双层 / matchedTransitionSource zoom / Liquid Glass 动画 / 120Hz ProMotion 性能
 - [[synthesis/concepts-mcp-server-protocol-quirks × entities-google-stitch]] — MCP 鉴权三层 + Stitch 实战:协议层故意简洁,鉴权复杂度甩给上层应用,OAuth proxy 对 .env 敏感
 - [[synthesis/concepts-agent-operating-system × concepts-ai-agent-sandbox]] — AOS 必须把 sandbox 当作隐式第六层:compact checkpoint 应包含 sandbox state(worktree path / HEAD / lease / dirty),否则 session resume 会撕裂
 - [[synthesis/concepts-agent-operating-system × concepts-worktree-durable-lease]] — Durable lease 让 AOS Handoff 有了"原子承诺"语义:--if-lease-id 把"我是上次那个人"写成状态文件 CAS,防止多人续写 Handoff 时撕裂
@@ -480,6 +492,12 @@ title: Wiki Index
 - [[synthesis/skills-postgres-queue-pattern × skills-sqlite-queue-pattern]] — 同一队列模式在两种规模下的落地：SQLite BEGIN IMMEDIATE（进程内，<5K msg/s）vs PostgreSQL SKIP LOCKED（多消费者网络）
 - [[synthesis/concepts-sqlite-as-file-format × concepts-durable-session-log]] — SQLite 的「更好的 fopen()」哲学与 durable session log 的「model-visible ⟺ logged」invariant 指向同一个设计选择：零基础设施、可重建的持久化
 - [[synthesis/entities-sqlite × entities-postgresql]] — 同一「数据库替代专用系统」哲学的两个端点：SQLite（进程内，零基础设施）与 PostgreSQL（多用户网络，全功能生态）
+- [[references/kavsoft-swiftui-custom-keyboard-toolbar]] — Kavsoft 教程：iOS 26 自定义键盘工具栏，safeAreaInset + 自建 ExpandableGlassMenu 通用组件，与 Apple Notes 编辑器底部栏同风格
+- [[references/volcengine-swiftui-keyboard-toolbar-zstack-offset]] — 火山引擎教程（架构老林）：ZStack + offset 键盘跟随工具栏；与 [[concepts/swiftui-keyboard-toolbar-safeareainset-pattern]] 直接冲突的反模式对照
+- [[references/swiftui-ios26-toolbar-transitions-morphing]] — iOS 26 SwiftUI Native Toolbar Transitions：DefaultToolbarItem + ToolbarSpacer + toolbar(id:) + view-attached toolbar，模仿 Apple Mail/Safari 工具栏随导航变形
+- [[references/daniill12321-customtoolbar-ios26-package]] — DaniilL12321 GitHub 仓库参考：189 LOC ContentView.swift 集中演示 5 个 iOS 26 API（safeAreaBar / glassEffect / AnyLayout / Animatable modifier / symbolEffect），MIT 协议
+- [[references/apple-developer-animatablmodifier-docs]] — Apple AnimatableModifier 官方文档蒸馏 + 与 Kavsoft/DaniilL12321 实战对照 + 3 个文档盲区标注
+- [[references/swiftui-toolbar-zoom-transition-serialcoder]] — matchedTransitionSource + navigationTransition(.zoom) toolbar 按钮 → sheet 放大过渡（iOS 18+，iOS 26 强化），SerialCoder.dev 教程蒸馏
 
 ## Misc
 - [[misc/web-fatbobman-com-mixing-text-and-graphics-with-text-in-swiftui]] — SwiftUI Text 图文混排 4 种方案(预制图缩放 / overlay 占位 / ImageRenderer / TextRenderer)

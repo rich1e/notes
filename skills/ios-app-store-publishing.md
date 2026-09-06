@@ -134,3 +134,5 @@ Waiting for Review → In Review → Approved/Rejected
 
 - [[skills/xcode-ide-guide]] — Xcode 15 Archive 操作
 - [[entities/ios17-app-development-book]] — 来源书籍
+- [[skills/xcode-multiple-installation]] — 多 Xcode 共存的 `DEVELOPER_DIR` 切换机制
+- [[projects/dayfold/skills/ios-bundle-id-case-sensitivity]] — Bundle ID 与 Profile 不匹配的签名失败案例

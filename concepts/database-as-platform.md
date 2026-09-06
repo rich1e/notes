@@ -27,7 +27,7 @@ relationships:
   - target: "[[entities/sqlite]]"
     type: extends
   - target: "[[concepts/postgres-extensions-ecosystem]]"
-    type: enabled_by
+    type: uses
 ---
 
 # 数据库即平台 — Database as Platform

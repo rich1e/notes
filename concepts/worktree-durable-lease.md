@@ -15,7 +15,6 @@ updated: 2026-08-03T11:25:00Z
 summary: 把 worktree 占用与"进程是否在里头运行"解耦的持久租约:LeaseID(128-bit 随机)、LeaseHolder(标签)、LeasedAt 时间戳三件套,持锁原子写;带 ABA 防护的 conditional return(--if-lease-id)。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.82"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.82

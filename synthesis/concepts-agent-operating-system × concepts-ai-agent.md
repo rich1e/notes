@@ -14,7 +14,6 @@ updated: 2026-08-03T13:35:00Z
 summary: AOS 五层 memory 框架是为 ai-agent 长期工作流设计的——framework 与被作用对象的关系:谁能成为"用户"、memory 谁来读、五层哪些是 agent 自驱哪些是框架强加。
 tier: core
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.78

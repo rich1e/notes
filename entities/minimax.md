@@ -17,7 +17,7 @@ provenance:
   ambiguous: 0.0
 relationships:
   - target: "[[skills/mmx-cli-image-generation]]"
-    type: documented_by
+    type: related_to
 ---
 
 # MiniMax

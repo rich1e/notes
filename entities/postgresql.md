@@ -29,7 +29,7 @@ relationships:
   - target: "[[entities/sqlite]]"
     type: related_to
   - target: "[[references/postgresql-for-everything]]"
-    type: cited_in
+    type: related_to
 ---
 
 # PostgreSQL — 开源关系数据库的首选默认项

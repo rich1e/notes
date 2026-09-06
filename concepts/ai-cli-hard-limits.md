@@ -17,7 +17,7 @@ provenance:
   ambiguous: 0.0
 relationships:
   - target: "[[skills/mmx-cli-image-generation]]"
-    type: example_of
+    type: related_to
 ---
 
 # AI CLI 调用硬限制

@@ -15,7 +15,6 @@ updated: 2026-08-03T13:45:00Z
 summary: AOS 框架的"工作树运行时"层 = ai-agent-sandbox —— sandbox 不是 AOS 五层之一,但实际承担"agent 在哪里写"的物理位置,AOS 必须把它当作隐式第六层来设计。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.78

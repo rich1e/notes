@@ -171,3 +171,4 @@ npx @_davideast/stitch-mcp serve -p YOUR_PROJECT_ID   # 本地 dev server 预览
 - [[entities/google-labs-code-design]] — 官方 lint CLI（`npx @google/design.md lint DESIGN.md`）
 - [[entities/awesome-design-md]] — 74 个真实站点 DESIGN.md 精选集，可直接复用到项目根
 - [[synthesis/Research: DESIGN.md 工作流]] — 综合研究页
+- [[concepts/ai-cli-hard-limits]] — AI provider CLI 通用隐藏陷阱抽象（HTTP 200 但 `error.message` 承载真因、boolean flag 风格不统一等），与本文"文档-实测落差"主题同构

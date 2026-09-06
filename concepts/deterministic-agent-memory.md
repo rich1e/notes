@@ -17,7 +17,6 @@ updated: 2026-08-23T09:05:00Z
 summary: 用确定性算法(图分析 / BM25 / grep / git diff / 签名比对)而非 embedding 检索,给 agent 提供"事实层"记忆:同问题同答案、stale 显式标注、引用可点回源码。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.82"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.82

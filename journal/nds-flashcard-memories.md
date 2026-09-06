@@ -23,8 +23,8 @@ provenance:
   ambiguous: 0.03
 relationships:
   - target: "[[entities/nds-flashcard]]"
-  - target: "[[entities/neogeo-mame]]"
     type: related_to
+  - target: "[[entities/neogeo-mame]]"
     type: related_to
 ---
 

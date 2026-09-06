@@ -155,6 +155,8 @@ Textual 直接验证了"iOS 18+ SwiftUI-native"路线 — 比 MarkdownUI 更向�
 
 ## Related
 
+- [[synthesis/entities-markdownview × entities-textual]] — 同一作者 gonzalezreal 的代际演进对比（MarkdownView iOS 16+ / Textual iOS 18+））
+
 - [[entities/markdownui]] — 精神前身
 - [[synthesis/Research: SwiftUI 图文混排]] — vault 既有研究综述
 - [[concepts/swiftui-rich-text-rendering-comparison]] — 全方案对比

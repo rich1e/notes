@@ -16,6 +16,8 @@ provenance:
 base_confidence: 0.9
 lifecycle: reviewed
 lifecycle_changed: 2026-09-02
+created: 2026-09-02T14:30:00Z
+updated: 2026-09-02T14:30:00Z
 ---
 
 # iOS 模拟器运行时日志抓取与"代码是否真在跑"的验证

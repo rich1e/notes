@@ -66,6 +66,9 @@ Container `iCloud.com.Yuqi.dayfold`。
   PHCachingImageManager 组级视口预热 + ≤2048px 选择器内降采样。
 - [[projects/dayfold/skills/simulator-runtime-log-capture]] — 模拟器运行时日志抓取
   （`simctl launch --console-pty`）与"代码是否真在跑"的验证纪律。
+- [[projects/dayfold/skills/ios26-xcode26-required]] — iOS 26 真机调试要求 Xcode 26.x：Xcode 16.x 缺 DDI，`devicectl` 报 `kAMDMobileImageMounterPersonalizedBundleMissingVariantError`。
+- [[projects/dayfold/skills/ios-bundle-id-case-sensitivity]] — `PRODUCT_BUNDLE_IDENTIFIER` 与 Developer 后台 App ID 大小写不一致时，自动签名回退到 wildcard profile，报"不支持 capability"误导性错误。
+- [[skills/xcode-multiple-installation]] — `DEVELOPER_DIR` 环境变量切换多 Xcode 版本，避免 `sudo xcode-select` 的全局副作用与交互密码。
 
 ## 设计系统（Stitch）
 

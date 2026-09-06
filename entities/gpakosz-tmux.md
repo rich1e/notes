@@ -16,7 +16,6 @@ updated: 2026-08-03T16:05:00Z
 summary: gpakosz 自 2012 年维护的"自洽、美观、多用"tmux 配置:Powerline 视觉主题、双 prefix (`C-b`/`C-a`)、`<prefix> +` 跨 window 保留状态的 pane maximize、可热重载的 `.tmux.conf.local` 覆写层、WTFPLv2 + MIT 双协议。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.9

@@ -15,7 +15,6 @@ updated: 2026-08-03T13:40:00Z
 summary: Stitch 是 MCP 协议的"复杂鉴权用户"——同时跑 API key header + OAuth proxy + auto refresh,把 MCP 的鉴权 layer 从"git config 类比"推到"OAuth 2.0 + proxy 链"实战级。
 tier: core
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.78

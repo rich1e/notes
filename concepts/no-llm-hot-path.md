@@ -16,7 +16,6 @@ updated: 2026-08-03T12:20:00Z
 summary: 把昂贵 / 非确定性 / 依赖网络的 LLM 调用挪出 hot path(每次 agent 都跑):确定性算法跑 hot,LLM 只在生成 / 验证 / 整合等冷路径 opt-in 介入。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.85

@@ -30,8 +30,6 @@ relationships:
     type: related_to
   - target: "[[projects/flow-design-system/concepts/ai-vs-core-component-source-routing]]"
     type: related_to
-  - target: "api-design"
-    type: related_to
 ---
 
 # AI 组件库运行时 — acme-core-goods-ai 的 controller 结构

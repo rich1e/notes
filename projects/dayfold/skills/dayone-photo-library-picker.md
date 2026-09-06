@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.90
 lifecycle: reviewed
 lifecycle_changed: 2026-09-02
+created: 2026-08-05T10:00:00Z
+updated: 2026-08-05T10:00:00Z
 ---
 
 # Day One 风格照片库多选与预热加载

@@ -28,7 +28,7 @@ relationships:
   - target: "[[concepts/tmux-pane-split-for-agents]]"
     type: related_to
   - target: "[[concepts/tmux-pane-layout-rearrangement]]"
-    type: explains
+    type: related_to
 ---
 
 # tmux join-pane & swap-pane 用法

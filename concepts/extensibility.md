@@ -2,7 +2,7 @@
 title: "扩展性模式 (Extensibility Patterns)"
 category: concepts
 tags: [extensibility, plugin, hook, capability-seam, design-patterns]
-sources: []
+sources: ["_placeholder/stub-by-wiki-lint"]
 summary: 软件系统通过扩展点（plugin / hook / capability seam / 模块加载器）允许第三方扩展而无需修改核心代码。常见模式：插件注册表（registry）、依赖反转（DI 容器）、事件总线、零注册中心 require.resolveWeak。
 base_confidence: 0.6
 provenance:
@@ -12,6 +12,8 @@ provenance:
 lifecycle: draft
 lifecycle_changed: 2026-08-24
 tier: supporting
+created: 2026-08-24T00:00:00Z
+updated: 2026-08-24T00:00:00Z
 ---
 
 # 扩展性模式

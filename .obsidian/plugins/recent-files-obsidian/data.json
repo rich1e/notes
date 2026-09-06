@@ -5,12 +5,60 @@
       "path": "index.md"
     },
     {
-      "basename": "consolidation-2026-07-30",
-      "path": "synthesis/consolidation-2026-07-30.md"
+      "basename": "bmad-method",
+      "path": "synthesis/concepts/ai-tool-specialization × entities/bmad-method.md"
+    },
+    {
+      "basename": "swiftui-ios26-toolbar-transitions-morphing",
+      "path": "references/swiftui-ios26-toolbar-transitions-morphing.md"
+    },
+    {
+      "basename": "kavsoft-swiftui-custom-keyboard-toolbar",
+      "path": "references/kavsoft-swiftui-custom-keyboard-toolbar.md"
+    },
+    {
+      "basename": "swiftui-keyboard-toolbar-safeareainset-pattern",
+      "path": "concepts/swiftui-keyboard-toolbar-safeareainset-pattern.md"
+    },
+    {
+      "basename": "SwiftUI实现底部工具栏随键盘弹出平滑变形动画的正确方案咨询",
+      "path": "Clippings/SwiftUI实现底部工具栏随键盘弹出平滑变形动画的正确方案咨询.md"
     },
     {
       "basename": "hot",
       "path": "hot.md"
+    },
+    {
+      "basename": "tmux完全指南：让多个Claude Code Agent同时工作的终端基础",
+      "path": "Clippings/tmux完全指南：让多个Claude Code Agent同时工作的终端基础.md"
+    },
+    {
+      "basename": "Witch",
+      "path": "Clippings/Witch.md"
+    },
+    {
+      "basename": "Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具",
+      "path": "Clippings/Zellij 详细教程：一个比 tmux 更友好、强大的终端复用工具.md"
+    },
+    {
+      "basename": "自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬",
+      "path": "Clippings/自己DIY组装一台MacBook Pro2019需要多少钱，有高性价比吗 – 群晖、NAS、PVE、飞牛、二手品牌机、垃圾佬.md"
+    },
+    {
+      "basename": "前端常见面试-存储缓存篇",
+      "path": "Clippings/前端常见面试-存储缓存篇.md"
+    },
+    {
+      "basename": "序章-起承转结",
+      "path": "Clippings/序章-起承转结.md"
+    },
+    {
+      "basename": "6個必調設定搞定 Claude Code Terminal Configuration 完整指南",
+      "path": "Clippings/6個必調設定搞定 Claude Code Terminal Configuration 完整指南.md"
+    },
+    {
+      "basename": "consolidation-2026-07-30",
+      "path": "synthesis/consolidation-2026-07-30.md"
     },
     {
       "basename": "auto-expanding-texteditor-scroll",
@@ -151,50 +199,6 @@
     {
       "basename": "dynamic-require-resolveweak-loading",
       "path": "projects/flow-design-system/concepts/dynamic-require-resolveweak-loading.md"
-    },
-    {
-      "basename": "add-new-builtin-component-three-repo-sop",
-      "path": "projects/flow-design-system/skills/add-new-builtin-component-three-repo-sop.md"
-    },
-    {
-      "basename": "ai-vs-core-component-source-routing",
-      "path": "projects/flow-design-system/concepts/ai-vs-core-component-source-routing.md"
-    },
-    {
-      "basename": "environment-variables",
-      "path": "projects/trek/references/environment-variables.md"
-    },
-    {
-      "basename": "gemini-notebook-mcp-cli",
-      "path": "entities/gemini-notebook-mcp-cli.md"
-    },
-    {
-      "basename": "nlm-artifact-id-required-for-download",
-      "path": "concepts/nlm-artifact-id-required-for-download.md"
-    },
-    {
-      "basename": "gemini-notebook-mcp-cli-tools",
-      "path": "references/gemini-notebook-mcp-cli-tools.md"
-    },
-    {
-      "basename": "gemini-notebook-mcp-cli-known-issues",
-      "path": "references/gemini-notebook-mcp-cli-known-issues.md"
-    },
-    {
-      "basename": "2021dev-网络通信基础",
-      "path": "Chronicle/2021/2021dev-网络通信基础.md"
-    },
-    {
-      "basename": "2022 learn",
-      "path": "Chronicle/2022/2022 learn.md"
-    },
-    {
-      "basename": "Alienware",
-      "path": "Chronicle/2022/Alienware.md"
-    },
-    {
-      "basename": "Book Sync",
-      "path": "Chronicle/2022/Book Sync.md"
     }
   ],
   "omittedPaths": [],

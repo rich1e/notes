@@ -11,7 +11,6 @@ created: 2026-07-26T04:00:00Z
 updated: 2026-07-26T04:00:00Z
 summary: "PTP 标准定义的四种时钟角色（GM/BC/TC/OC）在 White Rabbit 项目里全部落地为可部署硬件。White Rabbit 是 PTP 的工业级极端实现 — sub-ns 精度 + 多 TLV 扩展 + 跨域同步。"
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: "2026-07-26"
 provenance:

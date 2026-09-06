@@ -15,7 +15,6 @@ updated: 2026-08-03T13:50:00Z
 summary: treehouse 的 durable lease 是 AOS "Handoff (Task Memory)"层的具体运行时实现 —— 128-bit LeaseID + ABA 防护条件 return + 进程无关持久预留,把"agent 持有 worktree"从 subshell 模式推到长期无人值守。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.78"
 lifecycle_changed: 2026-08-03
 base_confidence: 0.78

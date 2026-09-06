@@ -63,3 +63,4 @@ provenance:
 - 安全设计 [[projects/figwright/concepts/loopback-security-host-origin-headers]]
 - 工具分类 [[projects/figwright/references/figwright-tool-taxonomy]]
 - 同类 [[entities/google-stitch]]
+- 作者 [[entities/awdr74100-roya]]

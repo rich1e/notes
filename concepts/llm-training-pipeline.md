@@ -16,7 +16,6 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 tier: core
 lifecycle_changed: 2026-07-27

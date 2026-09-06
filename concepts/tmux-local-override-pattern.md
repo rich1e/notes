@@ -15,7 +15,6 @@ updated: 2026-08-03T16:05:00Z
 summary: gpakosz 设计:`.tmux.conf`(主)不可改,`.tmux.conf.local` 是用户唯一编辑入口;主 conf 通过 source + 探测变量存在性(`_is_disabled`/`_is_true`)合并用户偏好。`#!important` 解决冲突。模式:上游可升级 + 用户可定制 + 单向注入。
 tier: core
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.9"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.9

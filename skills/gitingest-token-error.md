@@ -24,8 +24,6 @@ provenance:
 relationships:
   - target: "[[entities/obsidian-wiki-framework]]"
     type: uses
-  - target: "wiki-ingest-with-token"
-    type: related_to
 ---
 
 # gitingest token 校验报错 — 现象、回退、根因猜测

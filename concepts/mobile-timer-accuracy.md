@@ -31,8 +31,6 @@ relationships:
     type: related_to
   - target: "[[projects/figma/concepts/screen-08-photo-wall]]"
     type: related_to
-  - target: "[[synthesis/ptp-ieee1588]]"
-    type: related_to
 ---
 
 # 移动端定时器精度问题

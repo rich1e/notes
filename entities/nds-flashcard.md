@@ -13,7 +13,6 @@ sources:
   - https://jixun.uk/posts/2016/r4isdhc-simple-review/
 created: 2026-06-29
 updated: 2026-08-12T13:15:00Z
-lifecycle_changed: "2026-07-25"
 tier: supporting
 lifecycle: draft
 lifecycle_changed: "2026-06-29"

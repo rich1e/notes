@@ -14,7 +14,6 @@ updated: 2026-08-03T16:05:00Z
 summary: tmux 允许 `prefix` 与 `prefix2` 两个前缀键共存 —— gpakosz 配置把 `C-b`(默认)与 `C-a`(GNU Screen 兼容)同时启用,降低老用户迁移成本,文档统一用 `<prefix>` 而非具体按键描述。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.88"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.88

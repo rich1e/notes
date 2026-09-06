@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-06-29T09:16:46Z",
-  "last_updated": "2026-09-03T05:20:00Z",
+  "last_updated": "2026-09-06T16:00:00Z",
   "sources": {
     "_raw/2026-09-02-nstextattachment-bounds-overflow.md": {
       "content_hash": "sha256:f7f20bd63b6d390d9a3bbe6040370ab409b0d0f43a2972a0cbd31b98b0fbf6ca",
@@ -34,6 +34,60 @@
       "source_type": "document",
       "project": null,
       "deleted": true
+    },
+    "_raw/2026-09-06-xcode-multiple-installation.md": {
+      "content_hash": "sha256:291d2ff4ab380375137c4f22509579bde7318e25215200f7d03559a3f73b45bb",
+      "last_ingested": "2026-09-06T14:25:00Z",
+      "pages_produced": [
+        "skills/xcode-multiple-installation.md"
+      ],
+      "source_type": "document",
+      "project": null
+    },
+    "_raw/2026-09-06-ios26-xcode26-required.md": {
+      "content_hash": "sha256:9b422e3eae5678253cf7590b1a9dbf7d606c7f6794d9821ff5632d2e99b0e8fa",
+      "last_ingested": "2026-09-06T14:25:00Z",
+      "pages_produced": [
+        "projects/dayfold/skills/ios26-xcode26-required.md"
+      ],
+      "source_type": "document",
+      "project": "dayfold"
+    },
+    "_raw/2026-09-06-ios-bundle-id-case-sensitivity.md": {
+      "content_hash": "sha256:e4fa1000e012a797191c8168ab2092ab3f1cdd551d4b9bc434a26fa9661fc68d",
+      "last_ingested": "2026-09-06T14:25:00Z",
+      "pages_produced": [
+        "projects/dayfold/skills/ios-bundle-id-case-sensitivity.md"
+      ],
+      "source_type": "document",
+      "project": "dayfold"
+    },
+    "/Users/rich1e/Downloads/iOS 26 — SwiftUI Toolbar Transitions — Morphing in Toolbar - Freedium.mhtml": {
+      "content_hash": "sha256:339840c112cfbd495feeee00ff7737798e65eb747f3503ec8a89272c16ddb8bc",
+      "last_ingested": "2026-09-06T15:15:00Z",
+      "pages_produced": [
+        "references/swiftui-ios26-toolbar-transitions-morphing.md"
+      ],
+      "source_type": "document",
+      "project": null
+    },
+    "https://www.youtube.com/watch?v=W30FV6QBTok": {
+      "content_hash": "sha256:n/a-video-url",
+      "last_ingested": "2026-09-06T14:35:00Z",
+      "pages_produced": [
+        "references/kavsoft-swiftui-custom-keyboard-toolbar.md"
+      ],
+      "source_type": "video",
+      "project": null
+    },
+    "/Users/rich1e/workspace/code/notes/Clippings/SwiftUI实现底部工具栏随键盘弹出平滑变形动画的正确方案咨询.md": {
+      "content_hash": "sha256:dd07aa91a077782e494456a5ba7c00babd6fbc0737fcfdea7eebb32f0fdc3556",
+      "last_ingested": "2026-09-06T15:00:00Z",
+      "pages_produced": [
+        "references/volcengine-swiftui-keyboard-toolbar-zstack-offset.md"
+      ],
+      "source_type": "document",
+      "project": null
     },
     "/Users/rich1e/workspace/code/notes/Clippings/Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对.md": {
       "content_hash": "sha256:bdcd82ad58a22efd239ca7fb5b2eb7520616887bfb8f0aa842dde7815052a764",
@@ -1414,6 +1468,39 @@
       ],
       "source_type": "url",
       "project": null
+    },
+    "https://github.com/DaniilL12321/customToolbar_iOS26": {
+      "ingested_at": "2026-09-06T15:25:00Z",
+      "size_bytes": 10908,
+      "modified_at": "2026-09-06T15:25:00Z",
+      "content_hash": "gitingest",
+      "source_type": "github_repo",
+      "github_repo": "DaniilL12321/customToolbar_iOS26",
+      "github_branch": "main",
+      "project": null,
+      "pages_created": [
+        "concepts/swiftui-safeareabar-vs-safeareainset-pattern.md",
+        "references/daniill12321-customtoolbar-ios26-package.md"
+      ],
+      "pages_updated": []
+    },
+    "https://developer.apple.com/documentation/swiftui/animatablemodifier": {
+      "content_hash": "apple-docs",
+      "last_ingested": "2026-09-06T16:00:00Z",
+      "pages_produced": [
+        "references/apple-developer-animatablmodifier-docs.md"
+      ],
+      "source_type": "web",
+      "project": null
+    },
+    "https://serialcoder.dev/?p=18226": {
+      "content_hash": "web-url",
+      "last_ingested": "2026-09-06T16:00:00Z",
+      "pages_produced": [
+        "references/swiftui-toolbar-zoom-transition-serialcoder.md"
+      ],
+      "source_type": "web",
+      "project": null
     }
   },
   "research": {
@@ -1676,6 +1763,22 @@
         "log.md",
         "hot.md"
       ]
+    },
+    "How to Use the SwiftUI Custom Animation Toolbar in iOS 26": {
+      "type": "research",
+      "topic": "How to Use the SwiftUI Custom Animation Toolbar in iOS 26",
+      "researched_at": "2026-09-06T16:00:00Z",
+      "rounds_completed": 3,
+      "sources_fetched": 14,
+      "primary_source": "Apple 官方文档 (AnimatableModifier/ToolbarItemPlacement/Toolbars/ProMotion/Rendering) + SerialCoder.dev tutorial + WWDC25 + 5 个 vault 既有 iOS 26 toolbar 集群页面",
+      "pages_created": [
+        "synthesis/Research: SwiftUI Custom Animation Toolbar in iOS 26.md",
+        "concepts/swiftui-animatablemodifier-pattern.md",
+        "concepts/swiftui-toolbaritem-placement-semantic-vs-positional.md",
+        "references/apple-developer-animatablmodifier-docs.md",
+        "references/swiftui-toolbar-zoom-transition-serialcoder.md"
+      ],
+      "pages_updated": []
     }
   },
   "projects": {
@@ -1839,8 +1942,8 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 98,
-    "total_pages": 450,
+    "total_sources_ingested": 107,
+    "total_pages": 529,
     "total_projects": 9,
     "last_full_rebuild": null
   },
@@ -1872,5 +1975,8 @@
       "lifecycle_state": "draft",
       "notes": "full mirror from experience vault; this vault now holds an independent copy. Future divergence needs manual reconciliation."
     }
-  ]
+  ],
+  "notes": {
+    "manifest_drift_2026-09-06": "Drift detected: stats.total_pages was 458 but vault has 524 real-content pages. Cause: pages added externally between sessions (cross_vault_import, manual write, ai-cli / git pull of _meta/ templates) without going through wiki-ingest cache-update. Action: stats reconciled to real_pages on 2026-09-06; sources dict continues to track ingest provenance for the 105 sources it has, but does NOT claim to enumerate all 524 pages. Future ingests will continue to record sources as before; orphan drift will recur until explicit reconciliation runs."
+  }
 }

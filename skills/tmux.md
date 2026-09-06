@@ -171,3 +171,4 @@ set -g @prefix_highlight_show_copy_mode 'on'
 - [[skills/claude-code-settings]] — Tmux 与 Claude Code session 配合使用
 - [[skills/terminal-music]] — 终端中优雅听歌
 - [[skills/zellij-terminal-multiplexer]] — tmux 友好的现代替代：Rust 写、YAML 布局、状态栏开箱即用
+- [[entities/herdr]] — 专为 AI Agent 设计的终端复用器（鼠标优先、Agent 状态感知、后台服务器持有所有进程）

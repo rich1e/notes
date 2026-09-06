@@ -157,6 +157,7 @@ README 中还有一个"Vibe Coding Alert"(氛围编程警示)段落——作者�
 - [[concepts/mcp-server-protocol-quirks]] — `--global` / `-s user` / project vs user scope 依然适用
 - [[concepts/nlm-artifact-id-required-for-download]] — `download_artifact` 必须显式传 `artifact_id`，否则取到旧产物
 - [[concepts/nlm-studio-create-source-scoping]] — `source_ids`（硬边界）vs `custom_prompt`（软引导）+ CLI `--focus` 命名差异
+- [[entities/notebooklm]] — Google NotebookLM 产品本体（2025 rebrand 为 Gemini Notebook），与本 CLI 客户端是"产品"vs"工具"关系
 
 ## Related
 

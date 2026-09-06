@@ -11,7 +11,6 @@ created: 2026-07-26T04:00:00Z
 updated: 2026-07-26T04:00:00Z
 summary: "chezmoi 在 dotfile 管理五大流派中的定位：比 Stow 复杂、比 Nix home-manager 简单，提供三态模型 + 命名元数据 + 模板差异化，是「跨机器开发者配置」的最优解。"
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.72"
 lifecycle_changed: "2026-07-26"
 provenance:

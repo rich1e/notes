@@ -14,7 +14,6 @@ updated: 2026-08-03T16:05:00Z
 summary: gpakosz README 用 `B<Tab>`、`B<C-c>`、`B<C-f>` 等记号代替 `<prefix> Tab` / `<prefix> C-c` / `<prefix> C-f` —— `B` 是 prefix 占位符(Bind/Button),配合双 prefix 设计,文档层抽象掉 `C-b` vs `C-a` 的差异。
 tier: supporting
 lifecycle: reviewed
-lifecycle_changed: 2026-09-03
 lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.85"
 lifecycle_changed: "2026-08-03"
 base_confidence: 0.85

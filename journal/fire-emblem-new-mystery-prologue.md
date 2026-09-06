@@ -10,7 +10,6 @@ sources:
   - "Clippings/序章-起承转结"
 created: 2026-06-29
 updated: 2026-08-13
-lifecycle_changed: "2026-07-25"
 tier: peripheral
 lifecycle: draft
 lifecycle_changed: "2026-06-29"

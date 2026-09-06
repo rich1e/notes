@@ -23,7 +23,7 @@ relationships:
     type: derived_from
   - target: "[[entities/pi-coding-agent]]"
     type: uses
-  - target: "<!-- broken link: Research: open-codesign page does not exist -->"
+  - target: "[[references/open-codesign-readme]]"
     type: related_to
 ---
 

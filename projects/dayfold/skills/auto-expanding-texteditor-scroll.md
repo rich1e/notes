@@ -21,6 +21,8 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 lifecycle_changed: 2026-09-02
+created: 2026-09-02T14:30:00Z
+updated: 2026-09-02T14:30:00Z
 ---
 
 # 自适应撑高 UITextEditor 与外层 ScrollView 复合滚动
